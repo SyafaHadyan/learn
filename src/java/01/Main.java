@@ -3,6 +3,7 @@ public class Main {
         
         System.out.println("First");
         System.out.println("\t Second");
+        System.out.println("\"Third\"");
 
     }
     
