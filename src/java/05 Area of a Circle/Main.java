@@ -22,6 +22,8 @@ public class Main
             //Calculate area of a circle
             result = radius * radius * 22 / 7;
             
+
+            // TODO: fix this
             if (result > 0);
             {
                 System.out.println("Result" + ":" + " " + result);
