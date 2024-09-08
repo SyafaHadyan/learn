@@ -17,13 +17,13 @@ public class Main
             if (radius > 0)
             {
                 result = radius * radius * 22 / 7;
-                System.out.println("Result" + ":" + " " + result);
+                System.out.println("Result" + ":" + " " + result + "\n");
                 repeatcalculation = true;
             }
             else
             {
-                System.out.println("Radius cannnot be equal or less than 0.");
-                System.out.print("Do you want to try again? (Y/N)");
+                System.out.println("\n" + "Radius cannnot be equal or less than 0.");
+                System.out.print("Do you want to try again? (Y/N)" + ":" + " ");
                 String confirmrepeat = input.next();
                 if ( confirmrepeat.equalsIgnoreCase("Y"))
                 {
