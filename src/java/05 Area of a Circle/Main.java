@@ -5,41 +5,35 @@ public class Main
     public static void main(String[] args)
     {
         double result;
-        boolean repeatcalculation = false;
-        do{
-            Scanner input = new Scanner(System.in);
+        boolean repeatcalculation = true;
 
-            //Ask user
+        Scanner input = new Scanner(System.in);
+        while(repeatcalculation)
+        {
             System.out.print("Enter Radius" + ":" + " ");
             double radius = input.nextDouble();
-            input.close();
 
-            //Calculate area of a circle
-            result = radius * radius * 22 / 7;
-
-            //Check user input
             if (radius > 0)
             {
+                result = radius * radius * 22 / 7;
                 System.out.println("Result" + ":" + " " + result);
                 repeatcalculation = true;
             }
-            else if (radius <= 0)
+            else
             {
-                System.out.println("Radius cannnot be less or equal to 0.");
-                repeatcalculation = false;
-                Scanner repeatinput = new Scanner(System.in);
-                String confirmrepeat = repeatinput.toString();
+                System.out.println("Radius cannnot be equal or less than 0.");
                 System.out.println("Do you want to try again? (Y/N)");
-                repeatinput.close();
-                if ( confirmrepeat == "Y" || confirmrepeat == "y")
+                String confirmrepeat = input.next();
+                if ( confirmrepeat.equalsIgnoreCase("Y"))
                 {
                     repeatcalculation = true;
                 }
-                else if (confirmrepeat == "N" || confirmrepeat == "n")
+                else if (confirmrepeat.equalsIgnoreCase("N"))
                 {
                     repeatcalculation = false;
                 }
             }
-        }while (repeatcalculation);
-    }    
+        }
+        input.close();
+    }
 }
