@@ -28,8 +28,8 @@ public class Main
                 System.out.println("Radius cannnot be less or equal to 0.");
                 repeatcalculation = false;
                 Scanner repeatinput = new Scanner(System.in);
+                String confirmrepeat = repeatinput.toString();
                 System.out.println("Do you want to try again? (Y/N)");
-                String confirmrepeat = repeatinput.next();
                 repeatinput.close();
                 if ( confirmrepeat == "Y" || confirmrepeat == "y")
                 {
@@ -40,6 +40,6 @@ public class Main
                     repeatcalculation = false;
                 }
             }
-        }while (true);
+        }while (repeatcalculation);
     }    
 }
