@@ -22,7 +22,7 @@ public class Main
             }
             else
             {
-                System.out.println("\n" + "Radius cannnot be equal or less than 0.");
+                System.out.println("\n" + "Radius cannnot be equal or less than 0");
                 System.out.print("Do you want to try again? (Y/N)" + ":" + " ");
                 String confirmrepeat = input.next();
                 if ( confirmrepeat.equalsIgnoreCase("Y"))
@@ -33,6 +33,8 @@ public class Main
                 {
                     repeatcalculation = false;
                 }
+
+                System.out.println();
             }
         }
         input.close();
