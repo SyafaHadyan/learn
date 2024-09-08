@@ -30,7 +30,7 @@ public class Main
                 Scanner repeatinput = new Scanner(System.in);
                 System.out.println("Do you want to try again? (Y/N)");
                 String confirmrepeat = repeatinput.next();
-                input.close();
+                repeatinput.close();
                 if ( confirmrepeat == "Y" || confirmrepeat == "y")
                 {
                     repeatcalculation = true;
