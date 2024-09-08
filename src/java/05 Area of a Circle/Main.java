@@ -11,6 +11,7 @@ public class Main
         while(repeatcalculation)
         {
             System.out.print("Enter Radius" + ":" + " ");
+
             double radius = input.nextDouble();
 
             if (radius > 0)
@@ -22,7 +23,7 @@ public class Main
             else
             {
                 System.out.println("Radius cannnot be equal or less than 0.");
-                System.out.println("Do you want to try again? (Y/N)");
+                System.out.print("Do you want to try again? (Y/N)");
                 String confirmrepeat = input.next();
                 if ( confirmrepeat.equalsIgnoreCase("Y"))
                 {
