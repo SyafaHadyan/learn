@@ -47,7 +47,7 @@ public class Main
             }
             else
             {
-                System.out.println("Invalid input");
+                System.out.println("\n" + "Invalid input" + "\n");
                 repeat = true;
             }
         }
