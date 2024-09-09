@@ -20,7 +20,6 @@ public class Main
                     double hour = input.nextDouble();
                     System.out.println("\n" + "Minute" + ":" + " " + hour * 60);
                     System.out.println("Second" + ":" + " " + hour * 360 + "\n");
-                    System.out.println();
                     repeat = true;
                 }
                 else if (select.equalsIgnoreCase("M"))
