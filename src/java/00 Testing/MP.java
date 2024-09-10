@@ -19,7 +19,7 @@ public class MP
             {
                 System.out.println("Successfully logged in");
                 System.out.println("\n" + "Welcome to Admin Center" + "\n");
-                System.out.println("(0) Sell users' data" + "\n" + "(1) Log out");
+                System.out.println("Select an option" + "\n" + "(0) Sell users' data" + "\n" + "(1) Log out");
                 System.out.print("Enter" + ":" + " ");
                 int select = input.nextInt();
                 if (select == 0)
