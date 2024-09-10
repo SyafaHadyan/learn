@@ -1,5 +1,7 @@
 import java.util.*;
 import java.util.concurrent.*;
+import java.io.*;
+import java.lang.*;
 
 public class MP 
 {
@@ -15,13 +17,13 @@ public class MP
             String username = input.next();
             System.out.println("\n" + "Password" + ":" + " ");
             String password = input.next();
-            TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+            TimeUnit.SECONDS.sleep(3);
             System.out.println("Logging in");
-            TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+            TimeUnit.SECONDS.sleep(3);
             System.out.println("We never sell your user data");
-            TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+            TimeUnit.SECONDS.sleep(3);
             
-            if (username == "admin" && password == "admin");
+            if (username == "admin" && password == "admin")
             {
                 System.out.println("\n" + "Successfully logged in");
                 System.out.println("\n" + "Welcome to Admin Center" + "\n" + "(0) Sell users' data");
@@ -30,15 +32,15 @@ public class MP
                 if (select == "0")
                 {
                     System.out.println("\n" + "Loading users' data" + "...");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    TimeUnit.SECONDS.sleep(3);
                     System.out.println("Never tell users that we're selling their data!");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    TimeUnit.SECONDS.sleep(3);
                     System.out.println("Don't forget to promote Windows 11!");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    TimeUnit.SECONDS.sleep(3);
                     System.out.println("...");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    TimeUnit.SECONDS.sleep(3);
                     System.out.println("Successfully sold" + " " + ThreadLocalRandom.current().nextInt(1000, 5000) + " " + "users' data");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    TimeUnit.SECONDS.sleep(3);
                     System.out.println("Logging out" + "...");
                     repeat = false;
                 }
@@ -72,7 +74,7 @@ public class MP
                     else if (usrchs == "1")
                     {
                         System.out.println("\n" + "Logging out" + "...");
-                        TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                        TimeUnit.SECONDS.sleep(3);
                         System.out.println("Sucessfully logged out");
                         repeat = false;
                     }
@@ -80,7 +82,7 @@ public class MP
                 else if (choose == "1")
                 {
                     System.out.println("Logging out" + "...");
-                    TimeUnit.SECONDS.sleep(ThreadLocalRandom.current().nextInt(1, 5));
+                    Thread.sleep(5000);
                     System.out.println("Successfully logged out");
                     repeat = false;
                 }
