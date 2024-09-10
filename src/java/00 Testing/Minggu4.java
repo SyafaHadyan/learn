@@ -4,6 +4,10 @@ public class Minggu4
 {
     public static void main(String[] args)
     {
+        int a = 10;
+        int b = 20;
+        int z = a-- - --b + 5;
+        System.out.println(z);
         Scanner input = new Scanner(System.in);
         System.out.print("Enter Integer A" + ":" + " ");
         int inta = input.nextInt();
