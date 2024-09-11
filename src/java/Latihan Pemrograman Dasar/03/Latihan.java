@@ -20,6 +20,7 @@ public class Latihan
          * x = 110
          * y = 12
          * z = 49
+         * 
          */
     }
 }
