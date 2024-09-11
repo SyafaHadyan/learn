@@ -30,5 +30,16 @@ public class Latihan
         System.out.println(a_2);
         System.out.println(a_3);
         System.out.println(a_4);
+
+        /*
+         * Output:
+         * 
+         * 4
+         * 55
+         * 5
+         * 96
+         * 12
+         * 
+         */
     }
 }
