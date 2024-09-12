@@ -8,5 +8,7 @@ public class Variabel
         String s = "Belajar Java";
         System.out.println(nilai + nilai_2);
         System.out.println("Kita sedang " + s);
+
+        // Output: Kita sedang Belajar Java
     }
 }
