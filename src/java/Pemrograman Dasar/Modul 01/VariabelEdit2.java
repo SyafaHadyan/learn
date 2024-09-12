@@ -5,11 +5,11 @@ public class VariabelEdit2
         int nilai = 10;
         double nilai_2 = 5.3;
         int nilai_3 = 100;
-        double hasil = nilai + nilai_2;
+        double hasil = nilai_3 / (nilai + nilai_2);
         String s = "Belajar Java";
         System.out.println(nilai - nilai_2);
         System.out.println(nilai + nilai_2);
-        System.out.println(nilai_3 / hasil);
+        System.out.println(hasil);
         System.out.println("Kita sedang " + s);
         // char ch = 'Belajar Java' // Error, karena char tidak bisa memuat lebih dari 1
     }
