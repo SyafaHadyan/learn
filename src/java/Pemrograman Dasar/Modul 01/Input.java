@@ -3,7 +3,7 @@ import java.util.*;
 public class Input
 {
     public static void main(String[] args)
-    {
+	{
         Scanner input = new Scanner(System.in);
         int nilai1, nilai2, hasil;
         System.out.print("masukkan nilai 1: ");
