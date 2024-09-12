@@ -13,5 +13,13 @@ public class Input
         hasil = nilai1 + nilai2;
         System.out.print("maka hasil: " + hasil);
         input.close();
+
+        /*
+         * Output:
+         * 
+         * masukkan nilai 1: 32
+         * masukkan nilai 2: 3245
+         * maka hasil: 3277
+         */
     }
 }
