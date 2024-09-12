@@ -21,13 +21,15 @@ public class TugasPraktikum1
         double tariflistrik = beban * (k_final - k_initial);
         double pajak = tariflistrik * ppj / 100;
         double total = tariflistrik + pajak;
-        System.out.println("\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "=========================" + "\n");
+        String header = "\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "=========================";
+        System.out.printf("%.87s%s%s",header,"\n","\n");
         System.out.printf("%-25s%c%c%s\n","Nama lengkap",':',' ',fullname);
         System.out.printf("%-25s%c%c%s\n","Kelurahan",':',' ',kelurahan);
         System.out.printf("%-25s%c%c%d%c%s\n","Pemakaian bulan ini",':',' ',k_final - k_initial,' ',"kWh Meter");
         System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',tariflistrik);
         System.out.printf("%-25s%c%c%s%c%.2f\n","PPJ",':',' ',"Rp",' ',pajak);
         System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',total);
+        System.out.print("\n" + "================================ Portal Pembayaran PLN ================================");
         input.close();
     }
 }
