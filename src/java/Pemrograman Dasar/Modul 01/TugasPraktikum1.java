@@ -11,7 +11,7 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c","Kelurahan",':',' ');
         String kelurahan = input.nextLine();
         System.out.printf("%-25s%c%c","Posisi awal kWh",':',' ');
-        int k_initial = input.nextInt();
+        int k_initial = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","Posisi akhir kWh",':',' ');
         int k_final = input.nextInt();
         System.out.printf("%-25s%c%c","Biaya beban",':',' ');
