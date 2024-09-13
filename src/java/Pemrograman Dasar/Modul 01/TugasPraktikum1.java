@@ -36,25 +36,27 @@ public class TugasPraktikum1
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
         String pembayaran = input.nextLine();
         while (repeat)
-        if (pembayaran == "0")
         {
-            System.out.println();
-            repeat = false;
-        }
-        else if (pembayaran == "1")
-        {
-            System.out.println();
-            repeat = false;
-        }
-        else if (pembayaran == "2")
-        {
-            System.out.println();
-            repeat = false;
-        }
-        else
-        {
-            System.out.println();
-            repeat = true;
+            if (pembayaran == "0")
+            {
+                System.out.println();
+                repeat = false;
+            }
+            else if (pembayaran == "1")
+            {
+                System.out.println();
+                repeat = false;
+            }
+            else if (pembayaran == "2")
+            {
+                System.out.println();
+                repeat = false;
+            }
+            else
+            {
+                System.out.println();
+                repeat = true;
+            }
         }
         input.close();
     }
