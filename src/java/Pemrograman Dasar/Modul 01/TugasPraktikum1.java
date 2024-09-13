@@ -1,6 +1,5 @@
 import java.util.*;
-import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 public class TugasPraktikum1
 {
@@ -38,7 +37,10 @@ public class TugasPraktikum1
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
         System.out.printf("%s%-45s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
         int pembayaran = Integer.parseInt(input.nextLine());
-        int loading = ThreadLocalRandom.current().nextInt(1, 5 + 1);
+        int no_rek_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
+        int no_rek_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
+        int no_rek_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
+        int no_rek_3 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
@@ -53,7 +55,8 @@ public class TugasPraktikum1
             }
             else if (pembayaran == 1)
             {
-                System.out.println();
+                System.out.printf("%s%-45s%c%c%s%c%s%c%s%c%s\n","\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
+                System.out.printf("%-45s%c%c%s%s%s%s\n","Silahkan lakukan pembayaran ke nomor rekening",':',' ',no_rek_0,no_rek_1,no_rek_2,no_rek_3);
                 repeat = false;
             }
             else if (pembayaran == 2)
@@ -67,7 +70,7 @@ public class TugasPraktikum1
                 repeat = false; // Temporary
             }
         }
-        System.out.println("\n" + "Terima kasih telah menggunakan layanan pembayaran PLN");
+        System.out.print("\n" + "Terima kasih telah menggunakan layanan pembayaran PLN");
         input.close();
     }
 }
