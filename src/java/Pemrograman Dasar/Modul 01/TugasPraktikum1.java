@@ -13,11 +13,11 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c","Posisi awal kWh",':',' ');
         int k_initial = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","Posisi akhir kWh",':',' ');
-        int k_final = input.nextInt();
+        int k_final = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","Biaya beban",':',' ');
-        int beban = input.nextInt();
+        int beban = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
-        int ppj = input.nextInt();
+        int ppj = Integer.parseInt(input.nextLine());
         double tariflistrik = beban * (k_final - k_initial);
         double pajak = tariflistrik * ppj / 100;
         double total = tariflistrik + pajak;
