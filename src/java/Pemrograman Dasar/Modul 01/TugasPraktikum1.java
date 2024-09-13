@@ -36,25 +36,25 @@ public class TugasPraktikum1
         System.out.print("\n" + "================================ Portal Pembayaran PLN ================================");
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
         System.out.printf("%s%-45s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
-        String pembayaran = input.nextLine();
+        int pembayaran = Integer.parseInt(input.nextLine());
         int no_pembayaran_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_3 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         while (repeat)
         {
-            if (pembayaran == "0")
+            if (pembayaran == 0)
             {
                 System.out.printf("%-40s%c%c%s%c%s%c%s%c%s\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
                 System.out.println("Silahkan simpan dan bawa kode pembayaran ke PLN terdekat");
                 repeat = false;
             }
-            else if (pembayaran == "1")
+            else if (pembayaran == 1)
             {
                 System.out.println();
                 repeat = false;
             }
-            else if (pembayaran == "2")
+            else if (pembayaran == 2)
             {
                 System.out.println();
                 repeat = false;
@@ -62,7 +62,7 @@ public class TugasPraktikum1
             else
             {
                 System.out.println();
-                repeat = false; // Temporary
+                repeat = false; // Temporar
             }
         }
         input.close();
