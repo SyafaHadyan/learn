@@ -37,6 +37,7 @@ public class TugasPraktikum1
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
         System.out.printf("%s%-45s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
         int pembayaran = Integer.parseInt(input.nextLine());
+        int loading = ThreadLocalRandom.current().nextInt(1, 5 + 1)
         int no_pembayaran_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
@@ -45,6 +46,7 @@ public class TugasPraktikum1
         {
             if (pembayaran == 0)
             {
+                Thread.sleep(loading);
                 System.out.printf("%s%-45s%c%c%s%c%s%c%s%c%s\n","\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
                 System.out.println("Silahkan simpan dan bawa kode pembayaran ke PLN terdekat");
                 repeat = false;
@@ -65,6 +67,7 @@ public class TugasPraktikum1
                 repeat = false; // Temporary
             }
         }
+        System.out.println("\n" + "Terima kasih telah menggunakan layanan pembayaran PLN");
         input.close();
     }
 }
