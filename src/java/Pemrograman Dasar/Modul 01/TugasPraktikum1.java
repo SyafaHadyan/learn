@@ -45,7 +45,7 @@ public class TugasPraktikum1
         {
             if (pembayaran == 0)
             {
-                System.out.printf("%-40s%c%c%s%c%s%c%s%c%s\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
+                System.out.printf("%s%-45s%c%c%s%c%s%c%s%c%s\n","\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
                 System.out.println("Silahkan simpan dan bawa kode pembayaran ke PLN terdekat");
                 repeat = false;
             }
@@ -62,7 +62,7 @@ public class TugasPraktikum1
             else
             {
                 System.out.println();
-                repeat = false; // Temporar
+                repeat = false; // Temporary
             }
         }
         input.close();
