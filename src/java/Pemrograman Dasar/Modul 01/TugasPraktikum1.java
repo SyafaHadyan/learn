@@ -45,8 +45,9 @@ public class TugasPraktikum1
         int no_pembayaran_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_3 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
-        while (repeat)
+        do
         {
+            repeat = false;
             if (pembayaran == 0)
             {
                 System.out.printf("%s%-45s%c%c%s%c%s%c%s%c%s\n","\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
@@ -72,6 +73,7 @@ public class TugasPraktikum1
                 repeat = true;
             }
         }
+        while (repeat);
         System.out.print("\n" + "Terima kasih telah menggunakan layanan pembayaran PLN");
         input.close();
     }
