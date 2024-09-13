@@ -33,7 +33,23 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',total);
         System.out.print("\n" + "================================ Portal Pembayaran PLN ================================");
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
-        //String pembayaran = input.nextLine();
+        String pembayaran = input.nextLine();
+        if (pembayaran == "0")
+        {
+            System.out.println();
+        }
+        else if (pembayaran == "1")
+        {
+            System.out.println();
+        }
+        else if (pembayaran == "2")
+        {
+            System.out.println();
+        }
+        else
+        {
+            System.out.println();
+        }
         input.close();
     }
 }
