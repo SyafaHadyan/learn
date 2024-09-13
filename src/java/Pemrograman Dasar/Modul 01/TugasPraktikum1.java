@@ -5,7 +5,7 @@ public class TugasPraktikum1
 {
     public static void main(String[] args)
     {
-        boolean repeat = false;
+        boolean repeat = true;
         Scanner input = new Scanner(System.in);
         System.out.println("Selamat datang di portal pembayaran listrik PLN" + "\n" + "Silahkan masukkan data pengguna" + "\n");
         System.out.printf("%-25s%c%c","Nama lengkap",':',' ');
@@ -35,6 +35,7 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',total);
         System.out.print("\n" + "================================ Portal Pembayaran PLN ================================");
         System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Transfer Bank + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
+        System.out.printf("%s%-40s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
         String pembayaran = input.nextLine();
         int no_pembayaran_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_pembayaran_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
@@ -44,7 +45,8 @@ public class TugasPraktikum1
         {
             if (pembayaran == "0")
             {
-                System.out.println();
+                System.out.printf("%-40s%c%c%s%c%s%c%s%c%s\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
+                System.out.println("Silahkan simpan dan bawa kode pembayaran ke PLN terdekat");
                 repeat = false;
             }
             else if (pembayaran == "1")
