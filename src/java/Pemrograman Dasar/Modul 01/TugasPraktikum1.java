@@ -3,19 +3,44 @@ import java.util.concurrent.*;
 
 public class TugasPraktikum1
 {
+    static void randload()
+    {
+        int loading = ThreadLocalRandom.current().nextInt(1000, 5000 + 1);
+        try {
+            Thread.sleep(loading);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
     public static void main(String[] args)
     {
         boolean repeat = true;
+        boolean validinput = true;
+        int k_initial = 0;
+        int k_final = 0;
         Scanner input = new Scanner(System.in);
+        //while (validinput)
         System.out.println("Selamat datang di portal pembayaran listrik PLN" + "\n" + "Silahkan masukkan data pengguna" + "\n");
         System.out.printf("%-25s%c%c","Nama lengkap",':',' ');
         String fullname = input.nextLine();
         System.out.printf("%-25s%c%c","Kelurahan",':',' ');
         String kelurahan = input.nextLine();
-        System.out.printf("%-25s%c%c","Posisi awal kWh",':',' ');
-        int k_initial = Integer.parseInt(input.nextLine());
-        System.out.printf("%-25s%c%c","Posisi akhir kWh",':',' ');
-        int k_final = Integer.parseInt(input.nextLine());
+        while (validinput)
+        {
+            System.out.printf("%-25s%c%c","Posisi awal kWh",':',' ');
+            k_initial = Integer.parseInt(input.nextLine());
+            System.out.printf("%-25s%c%c","Posisi akhir kWh",':',' ');
+            k_final = Integer.parseInt(input.nextLine());
+            if (k_initial >= k_final)
+            {
+                System.out.println("kWh tidak valid");
+                validinput = true;
+            }
+            else
+            {
+                validinput = false;
+            }
+        }
         System.out.printf("%-25s%c%c","Biaya beban",':',' ');
         int beban = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
@@ -25,8 +50,9 @@ public class TugasPraktikum1
         double total = tariflistrik + pajak;
         double cicilan = total / 12;
         double transferbank = total + 2500;
-        String header = "\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "=========================";
-        System.out.printf("%.87s%s%s",header,"\n","\n");
+        String header = "\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "====================================================================================================";
+        System.out.printf("%.87s",header);
+        System.out.print("\n" + "\n");
         System.out.printf("%-25s%c%c%s\n","Nama lengkap",':',' ',fullname);
         System.out.printf("%-25s%c%c%s\n","Kelurahan",':',' ',kelurahan);
         System.out.printf("%-25s%c%c%d%c%s\n","Pemakaian bulan ini",':',' ',k_final - k_initial,' ',"kWh Meter");
@@ -48,6 +74,9 @@ public class TugasPraktikum1
             System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Virtual Account + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
             System.out.printf("%s%-45s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
             int pembayaran = Integer.parseInt(input.nextLine());
+            System.out.print("Membuat kode pembayaran" + "...");
+            randload();
+            System.out.println();
     
             if (pembayaran == 0)
             {
