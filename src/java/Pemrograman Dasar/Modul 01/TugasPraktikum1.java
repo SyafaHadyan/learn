@@ -6,9 +6,12 @@ public class TugasPraktikum1
     static void randload()
     {
         int loading = ThreadLocalRandom.current().nextInt(1000, 5000 + 1);
-        try {
+        try
+        {
             Thread.sleep(loading);
-        } catch (InterruptedException e) {
+        }
+        catch (InterruptedException e)
+        {
             e.printStackTrace();
         }
     }
@@ -46,10 +49,10 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
         int ppj = Integer.parseInt(input.nextLine());
         double tariflistrik = beban * (k_final - k_initial);
-        double pajak = tariflistrik * ppj / 100;
-        double total = tariflistrik + pajak;
+        double tax = tariflistrik * ppj / 100;
+        double total = tariflistrik + tax;
         double cicilan = total / 12;
-        double transferbank = total + 2500;
+        double virtualaccount = total + 2500;
         String header = "\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "====================================================================================================";
         System.out.printf("%.87s",header);
         System.out.print("\n" + "\n");
@@ -57,9 +60,9 @@ public class TugasPraktikum1
         System.out.printf("%-25s%c%c%s\n","Kelurahan",':',' ',kelurahan);
         System.out.printf("%-25s%c%c%d%c%s\n","Pemakaian bulan ini",':',' ',k_final - k_initial,' ',"kWh Meter");
         System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',tariflistrik);
-        System.out.printf("%-25s%c%c%s%c%.2f\n","PPJ",':',' ',"Rp",' ',pajak);
-        System.out.printf("%-25s%c%c%s%c%.2f\n","Tarif Listrik",':',' ',"Rp",' ',total);
-        System.out.print("\n" + "================================ Portal Pembayaran PLN ================================");
+        System.out.printf("%-25s%c%c%s%c%.2f\n","PPJ",':',' ',"Rp",' ',tax);
+        System.out.printf("%-25s%c%c%s%c%.2f%s\n","Tarif Listrik",':',' ',"Rp",' ',total,"\n");
+        System.out.print("================================ Portal Pembayaran PLN ================================");
         int no_rek_0 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_rek_1 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
         int no_rek_2 = ThreadLocalRandom.current().nextInt(1000, 9000 + 1);
@@ -71,7 +74,7 @@ public class TugasPraktikum1
         while (repeat)
         {
             repeat = false;
-            System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Virtual Account + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',transferbank,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
+            System.out.printf("%s%s%s%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%s%-45s%c%c%s%c%.2f%c%s","\n","\n","Pilih opsi pembayaran","\n","(0) Tunai",':',' ',"Rp",' ',total,"\n","(1) Virtual Account + Biaya Admin (Rp 2500)",':',' ',"Rp",' ',virtualaccount,"\n","(2) Cicilan 12 bulan",':',' ',"Rp",' ',cicilan,' ',"Per bulan");
             System.out.printf("%s%-45s%c%c","\n","Masukkan pilihan pembayaran",':',' ');
             int pembayaran = Integer.parseInt(input.nextLine());
             System.out.print("Membuat kode pembayaran" + "...");
