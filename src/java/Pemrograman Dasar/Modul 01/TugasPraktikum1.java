@@ -22,7 +22,6 @@ public class TugasPraktikum1
         int k_initial = 0;
         int k_final = 0;
         Scanner input = new Scanner(System.in);
-        //while (checkinput)
         System.out.println("Selamat datang di portal pembayaran listrik PLN" + "\n" + "Silahkan masukkan data pengguna" + "\n");
         System.out.printf("%-25s%c%c","Nama lengkap",':',' ');
         String fullname = input.nextLine();
