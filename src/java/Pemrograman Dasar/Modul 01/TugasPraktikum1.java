@@ -61,7 +61,7 @@ public class TugasPraktikum1
             }
             else if (beban == 0)
             {
-                System.out.println("Biaya benan tidak boleh sama dengan nol");
+                System.out.println("Biaya beban tidak boleh sama dengan nol");
                 checkinput = true;
             }
             else
