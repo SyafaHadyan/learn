@@ -130,7 +130,7 @@ public class TugasPraktikum1
             }
         }
         System.out.print("\n" + "Terima kasih telah menggunakan layanan pembayaran PLN");
-        System.out.printf("%-30s,%c%c%s%s%-30s%c%c%s","Program made by",':',' ',"Syafa Hadyan Rasendriya","\n","NIM",':',' ',"245150207111047");
+        System.out.printf("%s%s%-25s%c%c%s%s%-25s%c%c%s","\n","\n","Program made by",':',' ',"Syafa Hadyan Rasendriya","\n","NIM",':',' ',"245150207111047");
         input.close();
     }
 }
