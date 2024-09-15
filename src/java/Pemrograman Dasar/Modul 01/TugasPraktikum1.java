@@ -21,6 +21,7 @@ public class TugasPraktikum1
         boolean checkinput = true;
         int k_initial = 0;
         int k_final = 0;
+        int beban = 0;
         Scanner input = new Scanner(System.in);
         System.out.println("Selamat datang di portal pembayaran listrik PLN" + "\n" + "Silahkan masukkan data pengguna" + "\n");
         System.out.printf("%-25s%c%c","Nama lengkap",':',' ');
@@ -49,8 +50,21 @@ public class TugasPraktikum1
             }
         }
         checkinput = true;
-        System.out.printf("%-25s%c%c","Biaya beban",':',' ');
-        int beban = Integer.parseInt(input.nextLine());
+        while (checkinput)
+        {
+            System.out.printf("%-25s%c%c","Biaya beban",':',' ');
+            beban = Integer.parseInt(input.nextLine());
+            if (beban < 0)
+            {
+                System.out.println("Biaya beban tidak boleh kurang dari nol");
+                checkinput = true;
+            }
+            else if (beban == 0)
+            {
+                System.out.println("Biaya benan tidak boleh sama dengan nol");
+                checkinput = true;
+            }
+        }
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
         int ppj = Integer.parseInt(input.nextLine());
         double tariflistrik = beban * (k_final - k_initial);
