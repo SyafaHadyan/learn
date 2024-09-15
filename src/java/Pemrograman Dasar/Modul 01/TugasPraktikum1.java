@@ -5,7 +5,7 @@ public class TugasPraktikum1
 {
     static void randload()
     {
-        int loading = ThreadLocalRandom.current().nextInt(1000, 5000 + 1);
+        int loading = ThreadLocalRandom.current().nextInt(3000, 6000 + 1);
         try
         {
             Thread.sleep(loading);
