@@ -64,6 +64,10 @@ public class TugasPraktikum1
                 System.out.println("Biaya benan tidak boleh sama dengan nol");
                 checkinput = true;
             }
+            else
+            {
+                checkinput = false;
+            }
         }
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
         int ppj = Integer.parseInt(input.nextLine());
