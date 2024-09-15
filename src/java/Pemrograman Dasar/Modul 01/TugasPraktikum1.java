@@ -18,32 +18,38 @@ public class TugasPraktikum1
     public static void main(String[] args)
     {
         boolean repeat = true;
-        boolean validinput = true;
+        boolean checkinput = true;
         int k_initial = 0;
         int k_final = 0;
         Scanner input = new Scanner(System.in);
-        //while (validinput)
+        //while (checkinput)
         System.out.println("Selamat datang di portal pembayaran listrik PLN" + "\n" + "Silahkan masukkan data pengguna" + "\n");
         System.out.printf("%-25s%c%c","Nama lengkap",':',' ');
         String fullname = input.nextLine();
         System.out.printf("%-25s%c%c","Kelurahan",':',' ');
         String kelurahan = input.nextLine();
-        while (validinput)
+        while (checkinput)
         {
             System.out.printf("%-25s%c%c","Posisi awal kWh",':',' ');
             k_initial = Integer.parseInt(input.nextLine());
             System.out.printf("%-25s%c%c","Posisi akhir kWh",':',' ');
             k_final = Integer.parseInt(input.nextLine());
-            if (k_initial >= k_final)
+            if (k_initial > k_final)
             {
-                System.out.println("kWh tidak valid");
-                validinput = true;
+                System.out.println("kWh awal tidak boleh lebih besar dari kWh akhir");
+                checkinput = true;
+            }
+            else if (k_initial == k_final)
+            {
+                System.out.println("kWh awal tidak boleh sama dengan kWh akhir");
+                checkinput = true;
             }
             else
             {
-                validinput = false;
+                checkinput = false;
             }
         }
+        checkinput = true;
         System.out.printf("%-25s%c%c","Biaya beban",':',' ');
         int beban = Integer.parseInt(input.nextLine());
         System.out.printf("%-25s%c%c","PPJ (dalam persen)",':',' ');
@@ -53,9 +59,8 @@ public class TugasPraktikum1
         double total = tariflistrik + tax;
         double cicilan = total / 12;
         double virtualaccount = total + 2500;
-        String header = "\n" + "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "====================================================================================================";
-        System.out.printf("%.87s",header);
-        System.out.print("\n" + "\n");
+        String header = "=========================" + ' ' + "PLN Kelurahan" + ' ' + kelurahan + ' ' + "====================================================================================================";
+        System.out.printf("%s%.87s%s%s","\n",header,"\n","\n");
         System.out.printf("%-25s%c%c%s\n","Nama lengkap",':',' ',fullname);
         System.out.printf("%-25s%c%c%s\n","Kelurahan",':',' ',kelurahan);
         System.out.printf("%-25s%c%c%d%c%s\n","Pemakaian bulan ini",':',' ',k_final - k_initial,' ',"kWh Meter");
