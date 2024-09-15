@@ -95,7 +95,7 @@ public class TugasPraktikum1
             {
                 System.out.printf("%s%-45s%c%c%s%c%s%c%s%c%s\n","\n","Kode pembayaran anda adalah",':',' ',no_pembayaran_0,' ',no_pembayaran_1,' ',no_pembayaran_2,' ',no_pembayaran_3);
                 System.out.printf("%-45s%c%c%s%s%s%s\n","Silahkan lakukan pembayaran ke nomor",':',' ',no_rek_0,no_rek_1,no_rek_2,no_rek_3);
-                System.out.println("Kode pembayaran valid selama 24 jam");
+                System.out.println("Kode pembayaran anda valid selama 24 jam");
                 repeat = false;
             }
             else if (pembayaran == 2)
