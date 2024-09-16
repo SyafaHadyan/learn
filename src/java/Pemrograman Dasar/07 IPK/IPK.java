@@ -6,11 +6,11 @@ public class IPK
     {
         boolean CheckIPK = true;
         Scanner Input = new Scanner(System.in);
-        System.out.print("Masukkan IPK anda" + ':' + ' ');
-        float IPK = Float.parseFloat(Input.nextLine());
-        System.out.print("\n");
         while (CheckIPK)
         {
+            System.out.print("Masukkan IPK anda" + ':' + ' ');
+            float IPK = Float.parseFloat(Input.nextLine());
+            System.out.print("\n");
             if (IPK <= 3.5 && IPK >= 4)
             {
                 System.out.println("Sangat Memuaskan");
@@ -43,7 +43,7 @@ public class IPK
             }
             else if (IPK < 0 || IPK > 4)
             {
-                System.out.println("IPK tidak valid. Harap ulang kembali");
+                System.out.println("IPK tidak valid. Harap ulang kembali" + "\n");
                 CheckIPK = true;
             }
         }
