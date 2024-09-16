@@ -7,21 +7,29 @@ public class Learn03
     static void Game()
     {
         String Player = "Start";
+        boolean CheckInput = true;
         Scanner Input = new Scanner(System.in);
         System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor");
         int User = Integer.parseInt(Input.nextLine());
         Input.close();
-        if (User == 0)
+        while (CheckInput)
         {
-            Player = "Rock";
-        }
-        else if (User == 1)
-        {
-            Player = "Paper";
-        }
-        else if (User == 2)
-        {
-            Player = "Scissor";
+            if (User == 0)
+            {
+                Player = "Rock";
+            }
+            else if (User == 1)
+            {
+                Player = "Paper";
+            }
+            else if (User == 2)
+            {
+                Player = "Scissor";
+            }
+            else
+            {
+                System.out.println("Invalid input, please try again");
+            }
         }
         String [] Option = {"Rock", "Paper", "Scissor"};
         Random Rand = new Random();
