@@ -7,6 +7,7 @@ public class IPK
         Scanner Input = new Scanner(System.in);
         System.out.print("Masukkan IPK anda" + ':' + ' ');
         float IPK = Float.parseFloat(Input.nextLine());
+        System.out.print("\n");
         if (IPK <= 3.5 && IPK >= 4)
         {
             System.out.println("Sangat Memuaskan");
@@ -15,7 +16,14 @@ public class IPK
         {
             System.out.println("Memuaskan");
         }
-        else if
+        else if (IPK <= 2.5 && IPK >= 2.9)
+        {
+            System.out.println("Baik Sekali");
+        }
+        else if (IPK <= 2.0 && IPK >= 2.4)
+        {
+            System.out.println("Baik");
+        }
         Input.close();
     }
 }
