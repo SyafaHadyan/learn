@@ -80,11 +80,29 @@ public class Learn03
     public static void main(String[] args)
     {
         boolean GameRepeat = false;
+        boolean CheckInput = true;
+        int PlayDuration = 2;
         Scanner Input = new Scanner(System.in);
         System.out.println("Welcome to RPS!");
-        System.out.println("(0) Play once" + "\n" + "(1) Play indefinitely");
-        int PlayDuration = Integer.parseInt(Input.nextLine());
-        Input.close();
+        while (CheckInput)
+        {
+            System.out.println("(0) Play once" + "\n" + "(1) Play indefinitely");
+            PlayDuration = Integer.parseInt(Input.nextLine());
+            if (PlayDuration == 0)
+            {
+                CheckInput = false;
+            }
+            else if (PlayDuration == 1)
+            {
+                CheckInput = false;
+            }
+            else
+            {
+                System.out.println("Invalid input, please try again");
+                CheckInput = true;
+            }
+            Input.close();
+        }
         while (GameRepeat)
         {
 
