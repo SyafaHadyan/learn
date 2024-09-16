@@ -9,7 +9,7 @@ public class IPK
         while (CheckIPK)
         {
             System.out.print("Masukkan IPK anda" + ':' + ' ');
-            float IPK = Float.parseFloat(Input.nextLine());
+            double IPK = Double.parseDouble(Input.nextLine());
             System.out.print("\n");
             if (IPK >= 3.5 && IPK <= 4)
             {
