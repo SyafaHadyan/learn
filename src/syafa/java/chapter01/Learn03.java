@@ -21,7 +21,7 @@ public class Learn03
         }
         else if (User == 2)
         {
-            Player == "Scissor";
+            Player = "Scissor";
         }
         String [] Option = {"Rock", "Paper", "Scissor"};
         Random Rand = new Random();
