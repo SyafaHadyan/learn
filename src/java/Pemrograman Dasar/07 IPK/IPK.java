@@ -31,7 +31,7 @@ public class IPK
                 System.out.println("Baik");
                 CheckIPK = false;
             }
-            else if (IPK <= 1.9 && IPK > 0)
+            else if (IPK < 2 && IPK > 0)
             {
                 System.out.println("Kurang");
                 CheckIPK = false;
