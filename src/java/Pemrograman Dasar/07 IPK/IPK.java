@@ -24,6 +24,18 @@ public class IPK
         {
             System.out.println("Baik");
         }
+        else if (IPK <= 1.9 && IPK > 0)
+        {
+            System.out.println("Kurang");
+        }
+        else if (IPK == 0)
+        {
+            System.out.println("Anda tidak lulus");
+        }
+        else if (IPK < 0)
+        {
+            System.out.println("IPK tidak valid. Harap ulang kembali");
+        }
         Input.close();
     }
 }
