@@ -4,13 +4,7 @@ import java.util.*;
 import java.util.concurrent.*;
 public class Learn03
 {
-    static void Choose()
-    {
-        String [] Option = {"Rock", "Paper", "Scissor"};
-        Random rand = new Random();
-        String Choose = Option[rand.nextInt(Option.length)];
-    }
-    static void Logic()
+    static void Game()
     {
         Scanner Input = new Scanner(System.in);
         System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor");
@@ -19,15 +13,28 @@ public class Learn03
     }
     public static void main(String[] args)
     {
-        boolean Repeat = true;
+        boolean GameRepeat = false;
+        Scanner Input = new Scanner(System.in);
         System.out.println("Welcome to RPS!");
         System.out.println("(0) Play once" + "\n" + "(1) Play indefinitely");
         int PlayDuration = Integer.parseInt(Input.nextLine());
-        while (Repeat)
+        Input.close();
+        String [] Option = {"Rock", "Paper", "Scissor"};
+        Random Rand = new Random();
+        while (GameRepeat)
         {
+            String Result = Option[Rand.nextInt(Option.length)];
             if (PlayDuration == 0)
             {
-                Choose();
+                System.out.println();
+                Game();
+                GameRepeat = false;
+            }
+            else if (PlayDuration == 1)
+            {
+                System.out.println();
+                Game();
+                GameRepeat = true;
             }
         }
     }
