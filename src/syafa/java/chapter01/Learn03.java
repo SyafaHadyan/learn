@@ -144,21 +144,23 @@ public class Learn03
                 if (Match == 0)
                 {
                     System.out.println("You Lost");
-
+                    GameRepeat = true;
                 }
                 else if (Match == 1)
                 {
                     System.out.println("You won");
+                    GameRepeat = true;
                 }
                 else if (Match == 2)
                 {
                     System.out.println("Tie");
+                    GameRepeat = true;
                 }
                 else if (Match == 3)
                 {
                     System.out.println("Quit");
+                    GameRepeat = false;
                 }
-                GameRepeat = true;
             }
         }
         Input.close();
