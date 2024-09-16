@@ -135,7 +135,7 @@ public class Learn03
             /*
              * Todo:
              * 
-             * Add win/tie/lose count
+             * Add win/lose/tie count
              */
             else if (PlayDuration == 1)
             {
