@@ -10,9 +10,9 @@ public class Learn01
         int h = input.nextInt();
         int n = input.nextInt();
         int x = 0;
-        if (h < 0 || h > 23 || n < 0 || n > 1000)
+        input.close();
+        if (h < 0 || h > 23 || n < 0 || n > 1001)
         {
-            input.close();
             return;
         }
         else if (h + n > 23)
@@ -24,6 +24,5 @@ public class Learn01
             x = h + n;
         }
         System.out.println("Dengklek tidur pada jam" + ' ' + h + ' ' + "selama" + ' ' + n + ' ' + "jam, dan akan bangun pada jam" + ' ' + x);
-        input.close();
     }
 }
