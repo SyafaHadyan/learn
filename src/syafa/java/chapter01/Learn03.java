@@ -7,12 +7,11 @@ public class Learn03
     {
         String Player = "Start";
         boolean CheckInput = true;
-        int Match = 3;
+        int Match = -1;
         Scanner Input = new Scanner(System.in);
-
         while (CheckInput)
         {
-            System.out.print("Pick an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "\n" + "Enter" + ':' + ' ');
+            System.out.print("Pick an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "(3) Quit" + "\n" + "Enter" + ':' + ' ');
             int User = Integer.parseInt(Input.nextLine());
             if (User == 0)
             {
@@ -27,6 +26,11 @@ public class Learn03
             else if (User == 2)
             {
                 Player = "Scissor";
+                CheckInput = false;
+            }
+            else if (User == 3)
+            {
+                Player = "Quit";
                 CheckInput = false;
             }
             else
@@ -74,6 +78,10 @@ public class Learn03
             {
                 Match = 1;
             }
+        }
+        else if (Player == "Quit")
+        {
+            Match = 3;
         }
         /*
          * If the line of code below is enabled, the second round won't work.
@@ -127,8 +135,7 @@ public class Learn03
             /*
              * Todo:
              * 
-             * 1. Add win/tie/lose count
-             * 2. Option to quit
+             * Add win/tie/lose count
              */
             else if (PlayDuration == 1)
             {
@@ -143,9 +150,13 @@ public class Learn03
                 {
                     System.out.println("You won");
                 }
-                else if (Match == 3)
+                else if (Match == 2)
                 {
                     System.out.println("Tie");
+                }
+                else if (Match == 3)
+                {
+                    System.out.println("Quit");
                 }
                 GameRepeat = true;
             }
