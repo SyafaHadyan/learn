@@ -7,7 +7,7 @@ public class Learn03
     {
         String Player = "Start";
         boolean CheckInput = true;
-        int Match = 2;
+        int Match = 3;
         Scanner Input = new Scanner(System.in);
 
         while (CheckInput)
@@ -40,7 +40,7 @@ public class Learn03
         String Result = Option[Rand.nextInt(Option.length)];
         if (Player == Result)
         {
-            System.out.println("Tie");
+            Match = 2;
         }
         else if (Player == "Rock")
         {
@@ -79,7 +79,7 @@ public class Learn03
          * If the line of code below is enabled, the second round won't work.
          * I'll try to find a solution.
          */
-        //Input.close();
+        //Input.close(); // Temporary disabled
         return Match;
     }
     public static void main(String[] args)
@@ -124,7 +124,12 @@ public class Learn03
                 }
                 GameRepeat = false;
             }
-            // TODO: Add win/tie/lose count
+            /*
+             * Todo:
+             * 
+             * 1. Add win/tie/lose count
+             * 2. Option to quit
+             */
             else if (PlayDuration == 1)
             {
                 System.out.println();
@@ -132,10 +137,15 @@ public class Learn03
                 if (Match == 0)
                 {
                     System.out.println("You Lost");
+
                 }
                 else if (Match == 1)
                 {
                     System.out.println("You won");
+                }
+                else if (Match == 3)
+                {
+                    System.out.println("Tie");
                 }
                 GameRepeat = true;
             }
