@@ -7,7 +7,7 @@ public class Learn03
     {
         String Player = "Start";
         boolean CheckInput = true;
-        int Match;
+        int Match = 2;
         Scanner Input = new Scanner(System.in);
         System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor");
         int User = Integer.parseInt(Input.nextLine());
@@ -46,12 +46,10 @@ public class Learn03
         {
             if (Result == "Paper")
             {
-                System.out.println("You lost");
                 Match = 0;
             }
             else if (Result == "Scissor")
             {
-                System.out.println("You won");
                 Match = 1;
             }
         }
@@ -59,24 +57,25 @@ public class Learn03
         {
             if (Result == "Rock")
             {
-                System.out.println("You won");
+                Match = 1;
             }
             else if (Result == "Scissor")
             {
-                System.out.println("You lost");
+                Match = 0;
             }
         }
         else if (Player == "Scissor")
         {
             if (Result == "Rock")
             {
-                System.out.println("You lost");
+                Match = 0;
             }
             else if (Result == "Paper")
             {
-                System.out.println("You won");
+                Match = 1;
             }
         }
+        return Match;
     }
     public static void main(String[] args)
     {
@@ -93,6 +92,14 @@ public class Learn03
             {
                 System.out.println();
                 int Match = Game();
+                if (Match == 0)
+                {
+                    System.out.println("You Lost");
+                }
+                else if (Match == 1)
+                {
+                    System.out.println("You won");
+                }
                 GameRepeat = false;
             }
             else if (PlayDuration == 1)
@@ -100,6 +107,13 @@ public class Learn03
                 System.out.println();
                 int Match = Game();
                 if (Match == 0)
+                {
+                    System.out.println("You Lost");
+                }
+                else if (Match == 1)
+                {
+                    System.out.println("You won");
+                }
                 GameRepeat = true;
             }
         }
