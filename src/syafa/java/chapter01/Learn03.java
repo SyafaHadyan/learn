@@ -3,10 +3,11 @@ package syafa.java.chapter01;
 import java.util.*;
 public class Learn03
 {
-    static void Game()
+    public static int Game()
     {
         String Player = "Start";
         boolean CheckInput = true;
+        int Match;
         Scanner Input = new Scanner(System.in);
         System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor");
         int User = Integer.parseInt(Input.nextLine());
@@ -31,6 +32,7 @@ public class Learn03
             else
             {
                 System.out.println("Invalid input, please try again");
+                CheckInput = true;
             }
         }
         String [] Option = {"Rock", "Paper", "Scissor"};
@@ -45,10 +47,12 @@ public class Learn03
             if (Result == "Paper")
             {
                 System.out.println("You lost");
+                Match = 0;
             }
             else if (Result == "Scissor")
             {
                 System.out.println("You won");
+                Match = 1;
             }
         }
         else if (Player == "Paper")
@@ -88,13 +92,14 @@ public class Learn03
             if (PlayDuration == 0)
             {
                 System.out.println();
-                Game();
+                int Match = Game();
                 GameRepeat = false;
             }
             else if (PlayDuration == 1)
             {
                 System.out.println();
-                Game();
+                int Match = Game();
+                if (Match == 0)
                 GameRepeat = true;
             }
         }
