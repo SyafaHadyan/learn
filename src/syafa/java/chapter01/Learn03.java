@@ -9,7 +9,7 @@ public class Learn03
         boolean CheckInput = true;
         int Match = 2;
         Scanner Input = new Scanner(System.in);
-        System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor");
+        System.out.println("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "\n" + "Enter" + ':' + ' ');
         int User = Integer.parseInt(Input.nextLine());
         Input.close();
         while (CheckInput)
@@ -86,7 +86,7 @@ public class Learn03
         System.out.println("Welcome to RPS!");
         while (CheckInput)
         {
-            System.out.println("(0) Play once" + "\n" + "(1) Play indefinitely");
+            System.out.println("(0) Play once" + "\n" + "(1) Play indefinitely" + "\n" + "Enter" + ':' + ' ');
             PlayDuration = Integer.parseInt(Input.nextLine());
             if (PlayDuration == 0)
             {
