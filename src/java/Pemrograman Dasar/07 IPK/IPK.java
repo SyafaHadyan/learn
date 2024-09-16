@@ -11,22 +11,22 @@ public class IPK
             System.out.print("Masukkan IPK anda" + ':' + ' ');
             float IPK = Float.parseFloat(Input.nextLine());
             System.out.print("\n");
-            if (IPK <= 3.5 && IPK >= 4)
+            if (IPK >= 3.5 && IPK <= 4)
             {
                 System.out.println("Sangat Memuaskan");
                 CheckIPK = false;
             }
-            else if (IPK <= 3.0 && IPK >= 3.4)
+            else if (IPK >= 3.0 && IPK <= 3.4)
             {
                 System.out.println("Memuaskan");
                 CheckIPK = false;
             }
-            else if (IPK <= 2.5 && IPK >= 2.9)
+            else if (IPK >= 2.5 && IPK <= 2.9)
             {
                 System.out.println("Baik Sekali");
                 CheckIPK = false;
             }
-            else if (IPK <= 2.0 && IPK >= 2.4)
+            else if (IPK >= 2.0 && IPK <= 2.4)
             {
                 System.out.println("Baik");
                 CheckIPK = false;
