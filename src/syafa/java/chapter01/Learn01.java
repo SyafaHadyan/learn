@@ -14,6 +14,10 @@ public class Learn01
         {
             bangun = h + n - 24;
         }
+        else
+        {
+            bangun = h + n;
+        }
         System.out.println("Dengklek tidur pada jam" + ' ' + h + ' ' + "selama" + ' ' + n + ' ' + "jam, dan akan bangun pada jam" + ' ' + bangun);
         input.close();
     }
