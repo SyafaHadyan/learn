@@ -11,7 +11,7 @@ public class Learn03
         Scanner Input = new Scanner(System.in);
         while (CheckInput)
         {
-            System.out.print("Pick an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "(3) Quit" + "\n" + "Enter" + ':' + ' ');
+            System.out.print("Pick an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "\n" + "(3) Quit" + "\n" + "Enter" + ':' + ' ');
             int User = Integer.parseInt(Input.nextLine());
             if (User == 0)
             {
