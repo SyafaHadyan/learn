@@ -8,12 +8,12 @@ public class Learn03
         String Player = "Start";
         boolean CheckInput = true;
         int Match = 2;
-        Scanner Input = new Scanner(System.in);
-        System.out.print("Please choose an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "\n" + "Enter" + ':' + ' ');
-        int User = Integer.parseInt(Input.nextLine());
-        Input.close();
+
         while (CheckInput)
         {
+            Scanner Input = new Scanner(System.in);
+            System.out.print("Pick an option" + "\n" + "(0) Rock" + "\n" + "(1) Paper" + "\n" + "(2) Scissor" + "\n" + "Enter" + ':' + ' ');
+            int User = Integer.parseInt(Input.nextLine());
             if (User == 0)
             {
                 Player = "Rock";
@@ -75,6 +75,7 @@ public class Learn03
                 Match = 1;
             }
         }
+        //Input.close();
         return Match;
     }
     public static void main(String[] args)
@@ -101,7 +102,6 @@ public class Learn03
                 System.out.println("Invalid input, please try again");
                 CheckInput = true;
             }
-            Input.close();
         }
         while (GameRepeat)
         {
@@ -136,5 +136,6 @@ public class Learn03
                 GameRepeat = true;
             }
         }
+        //Input.close();
     }
 }
