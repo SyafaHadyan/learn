@@ -79,7 +79,7 @@ public class Learn03
     }
     public static void main(String[] args)
     {
-        boolean GameRepeat = false;
+        boolean GameRepeat = true;
         boolean CheckInput = true;
         int PlayDuration = 2;
         Scanner Input = new Scanner(System.in);
@@ -109,7 +109,6 @@ public class Learn03
             if (PlayDuration == 0)
             {
                 System.out.println();
-                Game();
                 int Match = Game();
                 if (Match == 0)
                 {
@@ -125,7 +124,6 @@ public class Learn03
             else if (PlayDuration == 1)
             {
                 System.out.println();
-                Game();
                 int Match = Game();
                 if (Match == 0)
                 {
