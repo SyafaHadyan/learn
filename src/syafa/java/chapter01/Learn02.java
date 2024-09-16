@@ -10,10 +10,10 @@ public class Learn02
         int Panjang = Integer.parseInt(input.nextLine());
         int Lebar = Integer.parseInt(input.nextLine());
         String Istana = input.nextLine();
-        int BatuBata = (Panjang + Lebar) * 113;
-        int Pilar = ((Panjang + Lebar) / 10) * 37;
+        int Keliling = (Panjang + Lebar) * 2;
+        int BatuBata = Keliling * 113;
+        int Pilar = (Keliling / 10) * 37;
         int TotalBatuBata = BatuBata + Pilar;
-        int Keliling = Panjang + Lebar;
         System.out.printf("%-25s%c%c%s%c%s%s","Nama istana",':',' ',"Istana",' ',Istana,"\n");
         System.out.printf("%-25s%c%c%d%c%s%s","Batu bata",':',' ',TotalBatuBata,' ',"buah","\n");
         System.out.printf("%-25s%c%c%d%c%s%s","Panjang",':',' ',Panjang,' ',"meter","\n");
