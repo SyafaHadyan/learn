@@ -1,7 +1,6 @@
 package syafa.java.chapter01;
 
 import java.util.*;
-import java.util.concurrent.*;
 public class Learn03
 {
     static void Game()
@@ -17,14 +16,17 @@ public class Learn03
             if (User == 0)
             {
                 Player = "Rock";
+                CheckInput = false;
             }
             else if (User == 1)
             {
                 Player = "Paper";
+                CheckInput = false;
             }
             else if (User == 2)
             {
                 Player = "Scissor";
+                CheckInput = false;
             }
             else
             {
