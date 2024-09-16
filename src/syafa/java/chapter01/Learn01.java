@@ -9,16 +9,21 @@ public class Learn01
         Scanner input = new Scanner(System.in);
         int h = input.nextInt();
         int n = input.nextInt();
-        int bangun = 0;
-        if (h + n > 23)
+        int x = 0;
+        if (h < 0 || h > 23 || n < 0 || n > 1000)
         {
-            bangun = h + n - 24;
+            input.close();
+            return;
+        }
+        else if (h + n > 23)
+        {
+            x = h + n - 24;
         }
         else
         {
-            bangun = h + n;
+            x = h + n;
         }
-        System.out.println("Dengklek tidur pada jam" + ' ' + h + ' ' + "selama" + ' ' + n + ' ' + "jam, dan akan bangun pada jam" + ' ' + bangun);
+        System.out.println("Dengklek tidur pada jam" + ' ' + h + ' ' + "selama" + ' ' + n + ' ' + "jam, dan akan bangun pada jam" + ' ' + x);
         input.close();
     }
 }
