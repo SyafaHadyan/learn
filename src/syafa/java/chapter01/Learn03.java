@@ -109,6 +109,7 @@ public class Learn03
             if (PlayDuration == 0)
             {
                 System.out.println();
+                Game();
                 int Match = Game();
                 if (Match == 0)
                 {
@@ -124,6 +125,7 @@ public class Learn03
             else if (PlayDuration == 1)
             {
                 System.out.println();
+                Game();
                 int Match = Game();
                 if (Match == 0)
                 {
