@@ -43,7 +43,13 @@ public class Learn03
         else if (Player == "Rock")
         {
             if (Result == "Paper")
-            System.out.println("You lost");
+            {
+                System.out.println("You lost");
+            }
+            else if (Result == "Scissor")
+            {
+                System.out.println("You won");
+            }
         }
     }
     public static void main(String[] args)
