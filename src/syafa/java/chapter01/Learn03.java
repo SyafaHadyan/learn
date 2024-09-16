@@ -38,7 +38,12 @@ public class Learn03
         String Result = Option[Rand.nextInt(Option.length)];
         if (Player == Result)
         {
-            System.out.println();
+            System.out.println("Tie");
+        }
+        else if (Player == "Rock")
+        {
+            if (Result == "Paper")
+            System.out.println("You lost");
         }
     }
     public static void main(String[] args)
