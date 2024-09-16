@@ -11,6 +11,7 @@ public class Learn02 {
         System.out.printf("%-25s%-1c%-1c%1.1d", "Hasil pembagian", ':', ' ', first / second);
         System.out.println();
         System.out.println();
+        System.out.println();
         input.close();
     }
 }
