@@ -82,12 +82,8 @@ public class Learn03
         else if (Player == "Quit")
         {
             Match = 3;
+            Input.close();
         }
-        /*
-         * If the line of code below is enabled, the second round won't work.
-         * I'll try to find a solution.
-         */
-        //Input.close(); // Temporary disabled
         return Match;
     }
     public static void main(String[] args)
@@ -97,7 +93,7 @@ public class Learn03
         int Win = 0;
         int Lose = 0;
         int Tie = 0;
-        int PlayDuration = 2;
+        int PlayDuration = -1;
         Scanner Input = new Scanner(System.in);
         System.out.println("Welcome to RPS!");
         while (CheckInput)
