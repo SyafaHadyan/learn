@@ -12,11 +12,15 @@ public class DiskonMember
         {
             System.out.printf("Apakah anda memiliki member?" + ' ' + "(Y/N)" + "\n" + "Masukkan" + ':' + ' ');
             String CheckMember = Input.nextLine();
-            System.out.println();
             if (CheckMember.equalsIgnoreCase("Y"))
             {
+                System.out.print("Masukkan nomor member anda" + ':' + ' ');
+                int Member = Integer.parseInt(Input.nextLine());
+                System.out.println();
+                System.out.println("Selamat datang" + ' ' + Member + '!');
                 double Diskon = 0.1 * TotalBelanja;
                 double HargaTotal = TotalBelanja - Diskon;
+                System.out.println();
                 System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
                 System.out.printf("%-30s%c%c%s%c%1.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
                 System.out.print("Terimakasih telah berbelanja");
@@ -38,5 +42,6 @@ public class DiskonMember
                 CheckInput = true;
             }
         }
+        Input.close();
     }
 }
