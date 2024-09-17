@@ -146,18 +146,21 @@ public class Learn03
                 int Match = Game();
                 if (Match == 0)
                 {
+                    Lose = Lose + 1;
                     System.out.println("You Lost");
                     System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
                 }
                 else if (Match == 1)
                 {
+                    Win = Win + 1;
                     System.out.println("You won");
                     System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
                 }
                 else if (Match == 2)
                 {
+                    Tie = Tie + 1;
                     System.out.println("Tie");
                     System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
@@ -165,7 +168,6 @@ public class Learn03
                 else if (Match == 3)
                 {
                     System.out.println("Quit");
-                    System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = false;
                 }
             }
