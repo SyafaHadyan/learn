@@ -10,7 +10,7 @@ public class DiskonMember
         double TotalBelanja = Double.parseDouble(Input.nextLine());
         while (CheckInput)
         {
-            System.out.printf("Apakah anda memiliki member?" + "(Y/N)" + "\n" + "Masukkan" + ':' + ' ');
+            System.out.printf("Apakah anda memiliki member?" + ' ' + "(Y/N)" + "\n" + "Masukkan" + ':' + ' ');
             String CheckMember = Input.nextLine();
             System.out.println();
             if (CheckMember.equalsIgnoreCase("Y"))
