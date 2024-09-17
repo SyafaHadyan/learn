@@ -94,6 +94,9 @@ public class Learn03
     {
         boolean GameRepeat = true;
         boolean CheckInput = true;
+        int Win = 0;
+        int Lose = 0;
+        int Tie = 0;
         int PlayDuration = 2;
         Scanner Input = new Scanner(System.in);
         System.out.println("Welcome to RPS!");
@@ -144,21 +147,25 @@ public class Learn03
                 if (Match == 0)
                 {
                     System.out.println("You Lost");
+                    System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
                 }
                 else if (Match == 1)
                 {
                     System.out.println("You won");
+                    System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
                 }
                 else if (Match == 2)
                 {
                     System.out.println("Tie");
+                    System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = true;
                 }
                 else if (Match == 3)
                 {
                     System.out.println("Quit");
+                    System.out.println("Win/Lose/Tie" + ':' + ' ' + Win + '/' + Lose + '/' + Tie);
                     GameRepeat = false;
                 }
             }
