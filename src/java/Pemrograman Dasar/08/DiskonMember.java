@@ -15,14 +15,13 @@ public class DiskonMember
             if (CheckMember.equalsIgnoreCase("Y"))
             {
                 System.out.print("Masukkan nomor member anda" + ':' + ' ');
-                int Member = Integer.parseInt(Input.nextLine());
+                Double Member = Double.parseDouble(Input.nextLine());
                 System.out.println();
-                System.out.println("Selamat datang" + ' ' + Member + '!');
+                System.out.printf("%s%c%.0f%c%s","Selamat datang",' ',Member,'!',"\n");
                 double Diskon = 0.1 * TotalBelanja;
                 double HargaTotal = TotalBelanja - Diskon;
-                System.out.println();
-                System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
-                System.out.printf("%-30s%c%c%s%c%1.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
+                System.out.printf("%-30s%c%c%s%c%.2f%s","Diskon member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
+                System.out.printf("%-30s%c%c%s%c%.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
                 System.out.print("Terimakasih telah berbelanja");
                 CheckInput = false;
             }
@@ -30,8 +29,9 @@ public class DiskonMember
             {
                 double Diskon = 0.01 * TotalBelanja;
                 double HargaTotal = TotalBelanja - Diskon;
-                System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon non-member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
-                System.out.printf("%-30s%c%c%s%c%1.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
+                System.out.println();
+                System.out.printf("%-30s%c%c%s%c%.2f%s","Diskon non-member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
+                System.out.printf("%-30s%c%c%s%c%.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
                 System.out.println("Segera gabung member untuk mendapatkan diskon eksklusif khusus member!");
                 System.out.print("Terimakasih telah berbelanja");
                 CheckInput = false;
