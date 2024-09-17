@@ -127,19 +127,18 @@ public class Learn03
                 int Match = Game();
                 if (Match == 0)
                 {
-                    System.out.println("You Lost");
+                    System.out.print("You Lost");
                 }
                 else if (Match == 1)
                 {
-                    System.out.println("You won");
+                    System.out.print("You won");
+                }
+                else if (Match == 2)
+                {
+                    System.out.print("Tie");
                 }
                 GameRepeat = false;
             }
-            /*
-             * Todo:
-             * 
-             * Add win/lose/tie count
-             */
             else if (PlayDuration == 1)
             {
                 System.out.println();
