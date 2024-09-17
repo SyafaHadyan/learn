@@ -26,7 +26,7 @@ public class DiskonMember
             {
                 double Diskon = 0.01 * TotalBelanja;
                 double HargaTotal = TotalBelanja - Diskon;
-                System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
+                System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon non-member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
                 System.out.printf("%-30s%c%c%s%c%1.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
                 System.out.print("Terimakasih telah berbelanja");
                 CheckInput = false;
