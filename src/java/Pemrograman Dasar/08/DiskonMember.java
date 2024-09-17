@@ -28,6 +28,7 @@ public class DiskonMember
                 double HargaTotal = TotalBelanja - Diskon;
                 System.out.printf("%-30s%c%c%s%c%1.2f%s","Diskon non-member anda adalah",':',' ',"Rp",' ',Diskon,"\n");
                 System.out.printf("%-30s%c%c%s%c%1.2f%s","Total belanja anda adalah",':',' ',"Rp",' ',HargaTotal,"\n");
+                System.out.println("Segera gabung member untuk mendapatkan diskon eksklusif khusus member!");
                 System.out.print("Terimakasih telah berbelanja");
                 CheckInput = false;
             }
