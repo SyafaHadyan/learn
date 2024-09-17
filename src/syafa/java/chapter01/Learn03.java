@@ -163,7 +163,7 @@ public class Learn03
                 else if (Match == 3)
                 {
                     System.out.println("Quit");
-                    System.out.print("Session result" + "\n" + "Win" + ':' + ' ' + Win + "\n" + "Lose" + ':' + ' ' + Lose + "\n" + "Tie" + ':' + ' ' + Tie);
+                    System.out.print("\n" + "Session result" + "\n" + "Win" + ':' + ' ' + Win + "\n" + "Lose" + ':' + ' ' + Lose + "\n" + "Tie" + ':' + ' ' + Tie);
                     GameRepeat = false;
                 }
             }
