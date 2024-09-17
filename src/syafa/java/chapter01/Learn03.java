@@ -95,7 +95,7 @@ public class Learn03
         int Tie = 0;
         int PlayDuration = -1;
         Scanner Input = new Scanner(System.in);
-        System.out.println("Welcome to RPS!");
+        System.out.println("Welcome to Rock Paper Scissor!");
         while (CheckInput)
         {
             System.out.print("(0) Play once" + "\n" + "(1) Play indefinitely" + "\n" + "Enter" + ':' + ' ');
