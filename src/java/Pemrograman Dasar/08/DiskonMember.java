@@ -8,8 +8,9 @@ public class DiskonMember
         Scanner Input = new Scanner(System.in);
         System.out.printf("%-30s%c%c","Masukkan total belanja",':',' ');
         double TotalBelanja = Double.parseDouble(Input.nextLine());
-        System.out.println("\n" + "Apakah anda memiliki member?" + "(Y/N)");
-        String CheckMember = Input.nextLine();        
+        System.out.printf("Apakah anda memiliki member?" + "(Y/N)" + "\n" + "Masukkan" + ':' + ' ');
+        String CheckMember = Input.nextLine();
+        System.out.println();
         while (CheckInput)
         {
             if (CheckMember.equalsIgnoreCase("Y"))
