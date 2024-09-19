@@ -20,5 +20,7 @@ public class OutputFormatting
         String formatted_third_int = String.format("%03d",third_int);
         String divider = "================================";
         System.out.printf("%s\n%-15s%s",divider,first_string,formatted_first_int);
+        System.out.printf("\n%-15s%s",second_string,formatted_second_int);
+        System.out.printf("\n%-15s%s\n%s",third_string,formatted_third_int,divider);
     }
 }
