@@ -17,11 +17,17 @@ public class JavaLoops02
         int f = input.nextInt();
         int g = input.nextInt();
         input.close();
-        series(a, b, c, d)
-        series(e, f, g, 0)
+        series(a, b, c, d);
+        series(e, f, g, 0);
     }
     private static void series(int a, int b, int c, int d)
     {
-        
+        int n = d;
+        int current = a;
+        for (int i = 0; i < n; i++) {
+            current = current + (int) Math.pow(2, i) * b;
+            System.out.print(current + " ");
+        }
+        System.out.println();
     }
 }
