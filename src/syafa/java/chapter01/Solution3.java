@@ -22,14 +22,10 @@ public class Solution3
         double subtotal = harga1 + harga2 + harga3;
         double uangpajak = subtotal * pajak / 100;
         double total = subtotal + uangpajak;
-
         String toko = "Toko Moklif";
         String tanggal = "14 September 2024";
-
-        // coding disini
-
-        // Ini jangan dihapus kalau ga mau ribet :D
         int width = 40;
+        input.close();
         System.out.println("========================================");
         System.out.printf("%" + (width / 2 + toko.length() / 2) + "s%n", toko);
         System.out.printf("%" + (width / 2 + tanggal.length() / 2) + "s%n", tanggal);
@@ -48,7 +44,5 @@ public class Solution3
         System.out.printf("%-20s%20.2f %n", "Bayar", uang);
         System.out.printf("%-20s%20.2f %n", "Kembali", uang - total);
         System.out.println("========================================");
-
-        // lanjut coding disini
     }
 }

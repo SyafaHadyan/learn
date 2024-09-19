@@ -9,16 +9,16 @@ public class Solution2
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        //String jam = input.nextLine();
-        //String[] items = jam.split(" ")
         int jam = input.nextInt();
         int menit = input.nextInt();
         input.nextLine();
         int durasi = input.nextInt();
-        int hours = durasi / 60;
-        int remainingMinutes = durasi % 60;
-        long Hours = (long ) Math.floor(remainingMinutes /60);
-
-        System.out.println("Dengklek belajar pukul "+ jam + ':' + menit +" selama " + durasi + " menit dan selesai pada pukul " + Hours + ':' + remainingMinutes + '.');
+        input.close();
+        int totalmenit = jam * 60 + menit + durasi;
+        int akhirjam = (totalmenit / 60) % 24;
+        int akhirmenit = totalmenit % 60;
+        String jamakhir = String.format("%02d", akhirjam);
+        String menitakhir = String.format("%02d", akhirmenit);
+        System.out.println("Dengklek belajar pukul" + ' ' + jam + ':' + menit + ' ' + "selama" + ' ' + durasi + ' ' + "menit dan selesai pada pukul" + ' ' + jamakhir + ':' + menitakhir + '.');
     }
 }
