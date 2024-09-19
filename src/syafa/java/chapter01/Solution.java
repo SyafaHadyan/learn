@@ -11,7 +11,7 @@ public class Solution
         Scanner Input = new Scanner(System.in);
         String Hello = Input.nextLine();
         int WhiteSpace = Integer.parseInt(Input.nextLine());
-
-        System.out.printf("%s%s%s%s%s","##",WhiteSpace,Hello,WhiteSpace,"##");
+        String Space = String.format("%" + WhiteSpace + "s", "");
+        System.out.printf("%s%s%s%s%s","##",Space,Hello,Space,"##");
     }
 }
