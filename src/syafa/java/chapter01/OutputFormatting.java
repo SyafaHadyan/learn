@@ -13,7 +13,6 @@ public class OutputFormatting
         input.nextLine();
         String third_string = input.next();
         int third_int = input.nextInt();
-        input.nextLine();
         input.close();
         String formatted_first_int = String.format("%03d",first_int);
         String formatted_second_int = String.format("%03d",second_int);
