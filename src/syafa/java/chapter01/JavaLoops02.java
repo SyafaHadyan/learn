@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class JavaLoops02
+{
+    public static void main(String[] args)
+    {
+        /*
+         * (a + b^c * d) * e
+         */
+        Scanner input = new Scanner(System.in);
+        int a = Integer.parseInt(input.nextLine());
+        int b = input.nextInt();
+        int c = input.nextInt();
+        int d = Integer.parseInt(input.nextLine());
+        int e = input.nextInt();
+        int f = input.nextInt();
+        int g = Integer.parseInt(input.nextLine());
+        input.close();
+    }
+}
