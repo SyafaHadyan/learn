@@ -17,12 +17,5 @@ public class JavaLoops02
         int f = input.nextInt();
         int g = input.nextInt();
         input.close();
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
-        System.out.println(e);
-        System.out.println(f);
-        System.out.print(g);
     }
 }
