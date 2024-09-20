@@ -5,25 +5,20 @@ public class ClassInstance
 {
     public static void main(String[] args)
     {
+        int initial_age = 0;
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
         int age_array[] = new int[test_case];
-        //int initial_age = 0;
         for (int i = 0; i < test_case; i++)
         {
             int age = Integer.parseInt(input.nextLine());
             age_array[i] = age;
 
         }
-        for (int i = 0; i < age_array.length; i++)
+        int iterate = age_array.length;
+        for (int i = 0; i <= age_array.length; i++)
         {
-            int initial_age = 0;
-            int iterate = i;
-            if (iterate == i - 1)
-            {
-                i = age_array.length;
-            }
-            initial_age = initial_age + age_array[iterate];
+            initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
                 if (initial_age < 0)
