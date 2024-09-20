@@ -21,6 +21,7 @@ public class ClassInstance
             if (initial_age < 0)
             {
                 System.out.println("Age is not valid, setting age to 0.");
+                initial_age = 0;
             }
             else if (initial_age < 13)
             {
