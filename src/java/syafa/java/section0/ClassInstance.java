@@ -36,7 +36,10 @@ public class ClassInstance
             age_array[i] = age;
 
         }
-        System.out.println(age_array.length);
+        for (int i = 0; i < age_array.length; i++)
+        {
+            System.out.println(age_array[i]);
+        }
         input.close();
     }
 }
