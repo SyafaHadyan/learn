@@ -16,7 +16,7 @@ public class ClassInstance
         }
         for (int i = 0; i <= age_array.length - 1; i++)
         {
-            int initial_age = 0;
+            int initial_age = age_array[i];
             initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
@@ -35,13 +35,13 @@ public class ClassInstance
                     System.out.println("You are a teenager.");
                     initial_age = initial_age + 3;
                 }
-                else if (initial_age > 18)
+                else
                 {
                     System.out.println("You are old.");
                     initial_age = initial_age + 3;
                 }
                 //i <= age_array.length - 1
-                if ((age_pass == 1) && (i != age_array.length))
+                if (i != age_array.length - 1)
                 {
                     System.out.println();
                 }
