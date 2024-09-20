@@ -8,11 +8,12 @@ public class SLWhileLoops
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
         input.close();
+        int result = 1;
         while (number >= 1)
         {
-            int factorial = number;
-            int result = number * number - 1;
+            result = result * number;
             number = number - 1;
         }
+        System.out.print(result);
     }
 }
