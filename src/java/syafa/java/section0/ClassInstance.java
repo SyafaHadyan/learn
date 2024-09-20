@@ -30,12 +30,12 @@ public class ClassInstance
         boolean user_input = true;
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
+        int initial_age_array[] = new int[test_case];
         //input.close();
         for (int i = 0; i < test_case; i++)
         {
             int age = Integer.parseInt(input.nextLine());
-            int initial_age_array[] = new int[test_case];
-            System.out.println(initial_age_array.length);
         }
+        System.out.println(initial_age_array.length);
     }
 }
