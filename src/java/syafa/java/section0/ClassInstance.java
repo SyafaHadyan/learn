@@ -8,7 +8,7 @@ public class ClassInstance
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
         int age_array[] = new int[test_case];
-        int initial_age = 0;
+        //int initial_age = 0;
         for (int i = 0; i < test_case; i++)
         {
             int age = Integer.parseInt(input.nextLine());
@@ -17,6 +17,7 @@ public class ClassInstance
         }
         for (int i = 0; i < age_array.length; i++)
         {
+            int initial_age = 0;
             initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
@@ -27,7 +28,7 @@ public class ClassInstance
                 }
                 else
                 {
-                    if (initial_age < 13)
+                    if (initial_age > 0 && initial_age < 13)
                     {
                         System.out.println("You are young.");
                     }
