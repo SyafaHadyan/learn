@@ -49,6 +49,7 @@ public class ClassInstance
                     else if (i == age_array.length)
                     {
                         return;
+                        input.close();
                     }
                 }
             }
