@@ -18,7 +18,9 @@ public class ClassInstance
         for (int i = 0; i < age_array.length; i++)
         {
             initial_age = initial_age + age_array[i];
-            if (initial_age < 0)
+            for (int age_pass = 0; age_pass < age_array.length; age_pass++)
+            {
+                if (initial_age < 0)
             {
                 System.out.println("Age is not valid, setting age to 0.");
                 initial_age = 0;
@@ -35,7 +37,8 @@ public class ClassInstance
             {
                 System.out.println("You are old.");
             }
-            System.out.println();
+            System.out.println();   
+            }
         }
         input.close();
     }
