@@ -15,7 +15,8 @@ public class ClassInstance
             age_array[i] = age;
 
         }
-        for (int i = 0; i < age_array.length + 1; i++)
+        int iterate = age_array.length + 1;
+        for (int i = 0; i < iterate; i++)
         {
             int initial_age = 0;
             initial_age = initial_age + age_array[i];
