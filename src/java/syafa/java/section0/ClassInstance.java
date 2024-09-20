@@ -7,7 +7,12 @@ public class ClassInstance
     {
         Scanner input = new Scanner(System.in);
         int age = Integer.parseInt(input.nextLine());
-        if (age < 13)
+        //input.close();
+        if (age < 0)
+        {
+            System.out.println("Age is not valid, setting age to 0.");
+        }
+        else if (age < 13)
         {
             System.out.println("You are young.");
         }
@@ -26,9 +31,11 @@ public class ClassInstance
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
         int initial_age = 0;
-        for (int i = 0; i <= test_case; i++)
+        //input.close();
+        for (int i = 0; i < test_case; i++)
         {
-            age_check();
+            int age = Integer.parseInt(input.nextLine());
         }
+
     }
 }
