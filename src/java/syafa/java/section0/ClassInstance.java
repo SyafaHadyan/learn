@@ -15,8 +15,7 @@ public class ClassInstance
             age_array[i] = age;
 
         }
-        int iterate = age_array.length;
-        for (int i = 0; i <= age_array.length; i++)
+        for (int i = 0; i <= age_array.length - 1; i++)
         {
             initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
@@ -43,7 +42,10 @@ public class ClassInstance
                 }
                 if (age_pass == 1)
                 {
-                    System.out.println();
+                    if (i != age_array.length)
+                    {
+                        System.out.println();
+                    }
                 }
             }
         }
