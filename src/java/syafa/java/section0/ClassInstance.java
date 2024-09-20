@@ -41,7 +41,7 @@ public class ClassInstance
                     System.out.println("You are old.");
                     initial_age = initial_age + 3;
                 }
-                System.out.println();
+                //System.out.println();
             }
         }
         input.close();
