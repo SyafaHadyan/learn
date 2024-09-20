@@ -46,11 +46,6 @@ public class ClassInstance
                     {
                         System.out.println();
                     }
-                    else if (i == age_array.length)
-                    {
-                        return;
-                        input.close();
-                    }
                 }
             }
         }
