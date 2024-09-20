@@ -11,5 +11,10 @@ public class JavaDateAndTime
         int year = input.nextInt();
         input.nextLine();
         input.close();
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR,year);
+        calendar.set(Calendar.YEAR,month);
+        calendar.set(Calendar.YEAR,day);
     }
 }
