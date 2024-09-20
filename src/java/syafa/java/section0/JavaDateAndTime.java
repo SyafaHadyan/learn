@@ -16,7 +16,7 @@ public class JavaDateAndTime
         calendar.set(Calendar.YEAR,year);
         calendar.set(Calendar.YEAR,month);
         calendar.set(Calendar.YEAR,day);
-
-        System.out.print(calendar);
+        Date date = calendar.getTime();
+        System.out.print(date);
     }
 }
