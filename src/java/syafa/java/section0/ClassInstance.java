@@ -15,15 +15,10 @@ public class ClassInstance
             age_array[i] = age;
 
         }
-        for (int i = 0; i < age_array.length; i++)
+        for (int i = 0; i < age_array.length + 1; i++)
         {
-            int num = i;
-            if (age_array.length - 1 == 1)
-            {
-                num = 2;
-            }
             int initial_age = 0;
-            initial_age = initial_age + age_array[num];
+            initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
                 if (initial_age < 0)
