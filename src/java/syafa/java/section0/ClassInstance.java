@@ -18,11 +18,12 @@ public class ClassInstance
         for (int i = 0; i < age_array.length; i++)
         {
             int initial_age = 0;
-            if (i == age_array.length - 1)
+            int iterate = i;
+            if (iterate == i - 1)
             {
                 i = age_array.length;
             }
-            initial_age = initial_age + age_array[i];
+            initial_age = initial_age + age_array[iterate];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
                 if (initial_age < 0)
