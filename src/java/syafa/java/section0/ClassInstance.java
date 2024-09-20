@@ -27,19 +27,20 @@ public class ClassInstance
                 }
                 if (initial_age < 13)
                 {
-                    System.out.print("You are young.");
+                    System.out.println("You are young.");
                     initial_age = initial_age + 3;
                 }
                 else if (initial_age >= 13 && initial_age < 18)
                 {
-                    System.out.print("You are a teenager.");
+                    System.out.println("You are a teenager.");
                     initial_age = initial_age + 3;
                 }
                 else if (initial_age > 18)
                 {
-                    System.out.print("You are old.");
+                    System.out.println("You are old.");
                     initial_age = initial_age + 3;
                 }
+                //i <= age_array.length - 1
                 if ((age_pass == 1) && (i != age_array.length))
                 {
                     System.out.println();
