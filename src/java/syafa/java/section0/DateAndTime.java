@@ -13,7 +13,8 @@ public class DateAndTime
         int year = input.nextInt();
         input.nextLine();
         input.close();
-        System.out.println(dayName("2015-03-05 00:00:00", "YYYY-MM-DD HH:MM:ss"));
+        String formattedDate = year + "-" + String.format("%02d", month) + "-" + String.format("%02d", day) + " 00:00:00";
+        System.out.println(dayName(formattedDate, "yyyy-MM-dd HH:mm:ss"));
     }
     public static String dayName(String inputDate, String format){
         Date date = null;
