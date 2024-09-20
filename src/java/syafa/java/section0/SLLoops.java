@@ -1,3 +1,5 @@
+package syafa.java.section0;
+
 import java.util.Scanner;
 
 public class SLLoops

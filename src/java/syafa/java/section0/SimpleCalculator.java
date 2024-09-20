@@ -1,3 +1,4 @@
+package syafa.java.section0;
 import java.util.*;
 
 public class SimpleCalculator
@@ -10,10 +11,13 @@ public class SimpleCalculator
         System.out.printf("%-25s%-3s","Enter second number",":");
         double second = Double.parseDouble(input.nextLine());
         double add = first + second;
-        double substract;
-        double multiply;
-        double divide;
+        double substract = first - second;
+        double multiply = first * second;
+        double divide = first / second;
 
         System.out.printf("%-5.0f%-5s%-5.0f%s%.8f",first," + ",second," = ",add);
+        System.out.printf("%-5.0f%-5s%-5.0f%s%.8f",first," - ",second," = ",substract);
+        System.out.printf("%-5.0f%-5s%-5.0f%s%.8f",first," x ",second," = ",multiply);
+        System.out.printf("%-5.0f%-5s%-5.0f%s%.8f",first," / ",second," = ",divide);
 	}
 }

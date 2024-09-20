@@ -1,4 +1,4 @@
-package syafa.java.chapter01;
+package syafa.java.section0;
 
 import java.util.*;
 

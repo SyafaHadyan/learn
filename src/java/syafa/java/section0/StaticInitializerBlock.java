@@ -17,4 +17,3 @@ public class StaticInitializerBlock
         System.out.print("java.lang.Exception: Breadth and height must be positive");
     }
 }
-}
