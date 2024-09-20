@@ -31,14 +31,17 @@ public class ClassInstance
                     if (initial_age < 13)
                     {
                         System.out.println("You are young.");
+                        initial_age = initial_age + 3;
                     }
                     else if (initial_age >= 13 && initial_age < 18)
                     {
                         System.out.println("You are a teenager.");
+                        initial_age = initial_age + 3;
                     }
                     else if (initial_age > 18)
                     {
                         System.out.println("You are old.");
+                        initial_age = initial_age + 3;
                     }
                     System.out.println();
                 }
