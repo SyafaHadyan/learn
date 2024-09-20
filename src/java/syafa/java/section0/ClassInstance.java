@@ -27,17 +27,16 @@ public class ClassInstance
     }
     public static void main(String[] args)
     {
-        boolean user_input = true;
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
         int age_array[] = new int[test_case];
-        //input.close();
         for (int i = 0; i < test_case; i++)
         {
             int age = Integer.parseInt(input.nextLine());
             age_array[i] = age;
 
         }
-        System.out.println(age_array);
+        System.out.println(age_array.length);
+        input.close();
     }
 }
