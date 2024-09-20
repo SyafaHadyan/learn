@@ -9,5 +9,7 @@ public class JavaDateAndTime
         int month = input.nextInt();
         int day = input.nextInt();
         int year = input.nextInt();
+        input.nextLine();
+        input.close();
     }
 }
