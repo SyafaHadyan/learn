@@ -26,25 +26,22 @@ public class ClassInstance
                     System.out.println("Age is not valid, setting age to 0.");
                     initial_age = 0;
                 }
-                else
+                if (initial_age < 13)
                 {
-                    if (initial_age < 13)
-                    {
-                        System.out.println("You are young.");
-                        initial_age = initial_age + 3;
-                    }
-                    else if (initial_age >= 13 && initial_age < 18)
-                    {
-                        System.out.println("You are a teenager.");
-                        initial_age = initial_age + 3;
-                    }
-                    else if (initial_age > 18)
-                    {
-                        System.out.println("You are old.");
-                        initial_age = initial_age + 3;
-                    }
-                    System.out.println();
+                    System.out.println("You are young.");
+                    initial_age = initial_age + 3;
                 }
+                else if (initial_age >= 13 && initial_age < 18)
+                {
+                    System.out.println("You are a teenager.");
+                    initial_age = initial_age + 3;
+                }
+                else if (initial_age > 18)
+                {
+                    System.out.println("You are old.");
+                    initial_age = initial_age + 3;
+                }
+                System.out.println();
             }
         }
         input.close();
