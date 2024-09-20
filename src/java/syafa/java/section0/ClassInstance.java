@@ -45,10 +45,6 @@ public class ClassInstance
                 {
                     System.out.println();
                 }
-                else if ((age_pass <= 1) && (i != age_array.length))
-                {
-                    System.out.println();
-                }
             }
         }
         input.close();
