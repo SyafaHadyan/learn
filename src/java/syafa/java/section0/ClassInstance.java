@@ -5,7 +5,6 @@ public class ClassInstance
 {
     public static void main(String[] args)
     {
-        int initial_age = 0;
         Scanner input = new Scanner(System.in);
         int test_case = Integer.parseInt(input.nextLine());
         int age_array[] = new int[test_case];
@@ -17,6 +16,7 @@ public class ClassInstance
         }
         for (int i = 0; i <= age_array.length - 1; i++)
         {
+            int initial_age = 0;
             initial_age = initial_age + age_array[i];
             for (int age_pass = 0; age_pass < 2; age_pass++)
             {
