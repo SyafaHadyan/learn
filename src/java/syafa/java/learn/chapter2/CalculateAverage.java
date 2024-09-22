@@ -14,6 +14,6 @@ public class CalculateAverage
         double thirdNumber = Double.parseDouble(input.nextLine());
         input.close();
         double average = (firstNumber + secondNumber + thirdNumber) / 3;
-        System.out.printf("%s%.3f%.3f%.3f%s%.8f","The average of",firstNumber,secondNumber,thirdNumber,"is",average);
+        System.out.printf("%s%c%.3f%c%.3f%c%.3f%c%s%%c.8f","The average of",firstNumber,' ',secondNumber,' ',thirdNumber,' ',"is",' ',average);
     }
 }
