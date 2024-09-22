@@ -12,5 +12,7 @@ public class CalculateAverage
         double secondNumber = Double.parseDouble(input.nextLine());
         System.out.printf("%-25s%-2c","Enter first number",':');
         double thirdNumber = Double.parseDouble(input.nextLine());
+        input.close();
+        double average = (firstNumber + secondNumber + thirdNumber) / 3;
     }
 }
