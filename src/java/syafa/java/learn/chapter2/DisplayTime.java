@@ -10,5 +10,8 @@ public class DisplayTime
         int initialTime = Integer.parseInt(input.nextLine());
         input.close();
         int minute = initialTime / 60;
+        int remainingSecond = initialTime % 60;
+        System.out.printf("%-20s%-2c%s%s%-20s%-2c%s","Minute",':',minute,"\n","Remaining seconds",':',remainingSecond);
+
     }
 }
