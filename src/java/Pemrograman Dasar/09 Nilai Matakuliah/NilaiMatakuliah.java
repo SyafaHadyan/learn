@@ -44,30 +44,35 @@ public class NilaiMatakuliah
             IPK = 4;
             System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
             System.out.printf("%-30s%-2c%d","IPK",':',IPK);
+            System.out.printf("%-30s%-2c%s","Nilai Huruf",':',"Sangat Baik");
         }
         else if (nilaiAkhir >= 75 && nilaiAkhir <= 84)
         {
             IPK = 3;
             System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
             System.out.printf("%-30s%-2c%d","IPK",':',IPK);
+            System.out.printf("%-30s%-2c%s","Nilai Huruf",':',"Baik");
         }
         else if (nilaiAkhir >= 65 && nilaiAkhir <= 74)
         {
             IPK = 2;
             System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
             System.out.printf("%-30s%-2c%d","IPK",':',IPK);
+            System.out.printf("%-30s%-2c%s","Nilai Huruf",':',"Cukup");
         }
         else if (nilaiAkhir >= 50 && nilaiAkhir <= 64)
         {
             IPK = 1;
             System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
             System.out.printf("%-30s%-2c%d","IPK",':',IPK);
+            System.out.printf("%-30s%-2c%s","Nilai Huruf",':',"Kurang");
         }
         else if (nilaiAkhir >= 0 && nilaiAkhir <= 49)
         {
             IPK = 0;
             System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
             System.out.printf("%-30s%-2c%d","IPK",':',IPK);
+            System.out.printf("%-30s%-2c%s","Nilai Huruf",':',"Gagal");
         }
     }
 }
