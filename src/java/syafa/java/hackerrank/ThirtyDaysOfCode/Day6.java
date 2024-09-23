@@ -7,9 +7,11 @@ public class Day6
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        String stringArray[] = new String[testCase];
+        for (int i = 0; i < stringArray.length; i++)
         {
             String str = input.nextLine();
+            stringArray[i] = str;
         }
     }
 }
