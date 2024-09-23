@@ -14,6 +14,7 @@ public class Day6
             stringArray[i] = str;
         }
         input.close();
-        int modulo = stringArray.length % 2;
+        int evenModulo = stringArray.length % 2;
+        int oddModulo = stringArray.length % 3;
     }
 }
