@@ -19,7 +19,6 @@ public class NilaiMatakuliah
             nilaiKuis = Double.parseDouble(input.nextLine());
             System.out.printf("%-30s%-2c","Masukkan nilai UAS",':');
             nilaiUAS = Double.parseDouble(input.nextLine());
-            double ipk = Double.parseDouble(input.nextLine());
             if (nilaiTugas <= 100 && nilaiKuis <= 100 && nilaiUAS <= 100)
             {
                 cekNilai = false;
