@@ -12,15 +12,18 @@ public class BilanganTerbesar
         System.out.printf("%-30s%-2c","Masukkan bilangan ketiga",':');
         int bilanganKetiga = Integer.parseInt(input.nextLine());
         input.close();
-        int BilanganTerbesar = bilanganPertama;
-        if(BilanganTerbesar < bilanganKedua)
+        int bilanganTerbesar = bilanganPertama;
+        String bilanganTerbesarKe = "bilangan kertama";
+        if(bilanganTerbesar < bilanganKedua)
         {
-            BilanganTerbesar = bilanganKedua;
+            bilanganTerbesar = bilanganKedua;
+            bilanganTerbesarKe = "bilangan kedua";
         }
-        else if (BilanganTerbesar < bilanganKetiga)
+        else if (bilanganTerbesar < bilanganKetiga)
         {
-            BilanganTerbesar = bilanganKetiga;
+            bilanganTerbesar = bilanganKetiga;
+            bilanganTerbesarKe = "bilangan ketiga";
         }
-        System.out.print();
+        System.out.printf("%-30s%c%d%c%s%c%s","Bilangan terbesar adalah bilangan",' ',bilanganTerbesar,' ',"yaitu",' ',bilanganTerbesarKe);
     }
 }
