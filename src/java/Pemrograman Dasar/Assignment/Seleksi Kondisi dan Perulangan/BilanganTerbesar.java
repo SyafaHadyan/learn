@@ -13,7 +13,7 @@ public class BilanganTerbesar
         int bilanganKetiga = Integer.parseInt(input.nextLine());
         input.close();
         int bilanganTerbesar = bilanganPertama;
-        String bilanganTerbesarKe = "bilangan kertama";
+        String bilanganTerbesarKe = "bilangan pertama";
         if(bilanganTerbesar < bilanganKedua)
         {
             bilanganTerbesar = bilanganKedua;
