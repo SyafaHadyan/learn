@@ -6,9 +6,9 @@ public class NilaiMatakuliah
     {
         Scanner input = new Scanner(System.in);
         boolean cekNilai = true;
-        double nilaiTugas;
-        double nilaiKuis;
-        double nilaiUAS;
+        double nilaiTugas = 0;
+        double nilaiKuis = 0;
+        double nilaiUAS = 0;
         double nilaiAkhir = 0;
         while (cekNilai)
         {
