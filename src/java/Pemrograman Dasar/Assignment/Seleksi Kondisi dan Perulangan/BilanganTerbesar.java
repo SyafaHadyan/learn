@@ -13,5 +13,14 @@ public class BilanganTerbesar
         int bilanganKetiga = Integer.parseInt(input.nextLine());
         input.close();
         int BilanganTerbesar = bilanganPertama;
+        if(BilanganTerbesar < bilanganKedua)
+        {
+            BilanganTerbesar = bilanganKedua;
+        }
+        else if (BilanganTerbesar < bilanganKetiga)
+        {
+            BilanganTerbesar = bilanganKetiga;
+        }
+        System.out.print();
     }
 }
