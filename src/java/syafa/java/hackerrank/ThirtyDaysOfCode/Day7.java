@@ -14,7 +14,7 @@ public class Day7
             numberArray[i] = number;
         }
         input.close();
-        for (int i = numberArray.length; i >= 1 ; i--)
+        for (int i = 1; i <= numberArray.length ; i++)
         {
             int numberArrayAt = numberArray[arrayLength - i];
             System.out.println(numberArrayAt);
