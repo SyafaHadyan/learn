@@ -11,5 +11,7 @@ public class BilanganTerbesar
         int bilanganKedua = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan bilangan ketiga",':');
         int bilanganKetiga = Integer.parseInt(input.nextLine());
+        input.close();
+        int BilanganTerbesar = bilanganPertama;
     }
 }
