@@ -39,7 +39,7 @@ public class NilaiMatakuliah
             nilaiAkhir = (nilaiKuis * 30 / 100) + (nilaiUAS * 50 / 100) + (nilaiTugas * 20 / 100);
         }
         System.out.printf("%-30s%-2c%.2f","Nilai akhir",':',nilaiAkhir);
-        int IPK = nilaiAkhir;
+        double IPK = nilaiAkhir;
         while (CekIPK)
         {
             if (IPK >= 3.5 && IPK <= 4)
