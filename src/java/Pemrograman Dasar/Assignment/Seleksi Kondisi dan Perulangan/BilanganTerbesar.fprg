@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="BilanganTerbesar"/>
+        <attribute name="authors" value="Syafa Hadyan Rasendriya"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-23 08:47:18 PM"/>
+        <attribute name="created" value="YXN1cztMQVBUT1AtUDhDQkg4RjA7MjAyNC0wOC0yODswODo1ODowOSBQTTsyNzY4"/>
+        <attribute name="edited" value="YXN1cztMQVBUT1AtUDhDQkg4RjA7MjAyNC0wOS0yMzswODo0NzoxOCBQTTsxNzsyOTI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Start" type="String" array="False" size=""/>
+            <declare name="Input" type="Boolean" array="False" size=""/>
+            <declare name="bilanganPertama" type="Integer" array="False" size=""/>
+            <declare name="bilanganKedua" type="Integer" array="False" size=""/>
+            <declare name="bilanganKetiga" type="Integer" array="False" size=""/>
+            <declare name="Average" type="Integer" array="False" size=""/>
+            <declare name="bilanganTerbesar" type="Integer" array="False" size=""/>
+            <declare name="bilanganTerkecil" type="Integer" array="False" size=""/>
+            <declare name="Quit" type="Boolean" array="False" size=""/>
+            <declare name="Repeat" type="Boolean" array="False" size=""/>
+            <do expression="Repeat">
+                <output expression="&quot;(Enter Key) Input&quot; &amp; ToChar(13) &amp; &quot;(Q) Quit&quot;" newline="True"/>
+                <input variable="Start"/>
+                <if expression="Start == &quot;Q&quot; || Start == &quot;q&quot;">
+                    <then>
+                        <assign variable="Input" expression="False"/>
+                    </then>
+                    <else>
+                        <if expression="Start == &quot;&quot;">
+                            <then>
+                                <assign variable="Input" expression="True"/>
+                            </then>
+                            <else>
+                                <assign variable="Input" expression="False"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <if expression="Input">
+                    <then>
+                        <assign variable="Quit" expression="False"/>
+                        <assign variable="Repeat" expression="True"/>
+                        <output expression="&quot;Masukkan bilangan pertama&quot;" newline="True"/>
+                        <input variable="bilanganPertama"/>
+                        <output expression="&quot;Masukkan bilangan kedua&quot;" newline="True"/>
+                        <input variable="bilanganKedua"/>
+                        <output expression="&quot;Masukkan bilangan ketiga&quot;" newline="True"/>
+                        <input variable="bilanganKetiga"/>
+                        <assign variable="Average" expression="(bilanganPertama + bilanganKedua + bilanganKetiga) / 3"/>
+                        <assign variable="bilanganTerbesar" expression="bilanganPertama"/>
+                        <if expression="bilanganPertama &lt; bilanganKedua">
+                            <then>
+                                <assign variable="bilanganTerbesar" expression="bilanganKedua"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="bilanganTerbesar &lt; bilanganKetiga">
+                            <then>
+                                <assign variable="bilanganTerbesar" expression="bilanganKetiga"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="bilanganTerkecil" expression="bilanganPertama"/>
+                        <if expression="bilanganPertama &gt; bilanganKedua">
+                            <then>
+                                <assign variable="bilanganTerkecil" expression="bilanganKedua"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <if expression="bilanganTerkecil &gt; bilanganKetiga">
+                            <then>
+                                <assign variable="bilanganTerkecil" expression="bilanganKetiga"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="Quit" expression="True"/>
+                    </else>
+                </if>
+                <if expression="Quit">
+                    <then>
+                        <assign variable="Repeat" expression="False"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Bilangan terbesar&quot; &amp; &quot;:&quot; &amp; &quot; &quot; &amp; bilanganTerbesar &amp; ToChar(13) &amp; &quot;Bilangan terkecil&quot; &amp; &quot;:&quot; &amp; &quot; &quot; &amp; bilanganTerkecil &amp; ToChar(13) &amp; &quot;Rata-rata&quot; &amp; &quot;:&quot; &amp; &quot; &quot; &amp; Average" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
