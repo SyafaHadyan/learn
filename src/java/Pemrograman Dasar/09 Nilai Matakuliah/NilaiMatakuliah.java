@@ -16,7 +16,7 @@ public class NilaiMatakuliah
         if (nilaiKuis > nilaiUAS)
         {
             nilaiAkhir = (40 / 100 * nilaiKuis) + (40 / 100 * nilaiUAS) + (20 / 100 * nilaiTugas);
-            System.out.println(nilaiAkhir)
+            System.out.println(nilaiAkhir);
         }
         else if (nilaiUAS >= nilaiKuis)
         {
