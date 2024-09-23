@@ -6,15 +6,18 @@ public class NilaiMatakuliah
     {
         Scanner input = new Scanner(System.in);
         boolean cekNilai = true;
+        double nilaiTugas;
+        double nilaiKuis;
+        double nilaiUAS;
         double nilaiAkhir = 0;
         while (cekNilai)
         {
             System.out.printf("%-30s%-2c","Masukkan nilai tugas",':');
-            double nilaiTugas = Double.parseDouble(input.nextLine());
+            nilaiTugas = Double.parseDouble(input.nextLine());
             System.out.printf("%-30s%-2c","Masukkan nilai kuis",':');
-            double nilaiKuis = Double.parseDouble(input.nextLine());
+            nilaiKuis = Double.parseDouble(input.nextLine());
             System.out.printf("%-30s%-2c","Masukkan nilai UAS",':');
-            double nilaiUAS = Double.parseDouble(input.nextLine());
+            nilaiUAS = Double.parseDouble(input.nextLine());
             input.close();
             if (nilaiTugas <= 100 && nilaiKuis <= 100 && nilaiUAS <= 100)
             {
