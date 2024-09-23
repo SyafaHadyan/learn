@@ -25,7 +25,8 @@ public class NilaiMatakuliah
             }
             else
             {
-                System.out.println("Nilai tidak valid, harap masukkan ulang nilai");
+                System.out.println("\n" + "Nilai tidak valid, harap masukkan ulang nilai" + "\n");
+                cekNilai = true;
             }
         }
         if (nilaiKuis > nilaiUAS)
