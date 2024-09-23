@@ -21,5 +21,6 @@ public class NilaiMatakuliah
         {
             nilaiAkhir = (30 / 100 * nilaiKuis) + (50 / 100 * nilaiUAS) + (20 / 100 * nilaiTugas);
         }
+        System.out.printf("%-30s,%-2c","Nilai akhir",':');
     }
 }
