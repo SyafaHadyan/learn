@@ -39,11 +39,9 @@ public class NilaiMatakuliah
             nilaiAkhir = (nilaiKuis * 30 / 100) + (nilaiUAS * 50 / 100) + (nilaiTugas * 20 / 100);
         }
         System.out.printf("%-30s%-2c%.2f","Nilai akhir",':',nilaiAkhir);
+        int IPK = nilaiAkhir;
         while (CekIPK)
         {
-            System.out.print("Masukkan IPK anda" + ':' + ' ');
-            double IPK = Double.parseDouble(Input.nextLine());
-            System.out.print("\n");
             if (IPK >= 3.5 && IPK <= 4)
             {
                 System.out.println("Sangat Memuaskan");
