@@ -13,5 +13,7 @@ public class Day6
             String str = input.nextLine();
             stringArray[i] = str;
         }
+        input.close();
+        int modulo = stringArray.length % 2;
     }
 }
