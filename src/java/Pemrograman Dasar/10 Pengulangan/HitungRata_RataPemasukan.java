@@ -12,13 +12,14 @@ public class HitungRata_RataPemasukan
         double rataRata = 0;
         for (int i = 1; i <= jumlahPemasukan; i++)
         {
-            System.out.printf("%-30s%d%-2c","Pemasukan ke ",i,':');
+            String pemasukanKe = "Pemasukan ke" + ' ' + i;
+            System.out.printf("%-30s%-2c",pemasukanKe,':');
             pemasukan = Double.parseDouble(input.nextLine());
             totalPemasukan = totalPemasukan + pemasukan;
         }
         input.close();
         rataRata = totalPemasukan / jumlahPemasukan;
-        System.out.printf("%-30s%-2c%s%.2f","Total pemasukan",':',"Rp ",totalPemasukan);
-        System.out.printf("%-30s%-2c%s%.2f","Rata-rata pemasukan",':',"Rp ",rataRata);
+        System.out.printf("%-30s%-2c%s%c%.2f\n","Total pemasukan",':',"Rp",' ',totalPemasukan);
+        System.out.printf("%-30s%-2c%s%c%.2f","Rata-rata pemasukan",':',"Rp",' ',rataRata);
     }
 }
