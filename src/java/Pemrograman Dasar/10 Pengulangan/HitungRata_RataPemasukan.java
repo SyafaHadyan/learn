@@ -15,5 +15,8 @@ public class HitungRata_RataPemasukan
             pemasukan = Double.parseDouble(input.nextLine());
             totalPemasukan = totalPemasukan + pemasukan;
         }
+        rataRata = totalPemasukan / jumlahPemasukan;
+        System.out.printf("%-30s%-2c%s%.2f","Total pemasukan",':',"Rp ",totalPemasukan);
+        System.out.printf("%-30s%-2c%s%.2f","Rata-rata pemasukan",':',"Rp ",rataRata);
     }
 }
