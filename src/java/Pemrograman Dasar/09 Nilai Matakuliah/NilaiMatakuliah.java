@@ -6,11 +6,11 @@ public class NilaiMatakuliah
     {
         Scanner input = new Scanner(System.in);
         boolean cekNilai = true;
-        boolean CekIPK = true;
         double nilaiTugas = 0;
         double nilaiKuis = 0;
         double nilaiUAS = 0;
         double nilaiAkhir = 0;
+        int IPK = 0;
         while (cekNilai)
         {
             System.out.printf("%-30s%-2c","Masukkan nilai tugas",':');
@@ -38,45 +38,12 @@ public class NilaiMatakuliah
         {
             nilaiAkhir = (nilaiKuis * 30 / 100) + (nilaiUAS * 50 / 100) + (nilaiTugas * 20 / 100);
         }
-        System.out.printf("%-30s%-2c%.2f","Nilai akhir",':',nilaiAkhir);
-        double IPK = nilaiAkhir;
-        while (CekIPK)
+        System.out.println("==============================");
+        if (nilaiAkhir >= 85 && nilaiAkhir <= 100)
         {
-            if (IPK >= 3.5 && IPK <= 4)
-            {
-                System.out.println("Sangat Memuaskan");
-                CekIPK = false;
-            }
-            else if (IPK >= 3.0 && IPK <= 3.4)
-            {
-                System.out.println("Memuaskan");
-                CekIPK = false;
-            }
-            else if (IPK >= 2.5 && IPK <= 2.9)
-            {
-                System.out.println("Baik Sekali");
-                CekIPK = false;
-            }
-            else if (IPK >= 2.0 && IPK <= 2.4)
-            {
-                System.out.println("Baik");
-                CekIPK = false;
-            }
-            else if (IPK < 2 && IPK > 0)
-            {
-                System.out.println("Kurang");
-                CekIPK = false;
-            }
-            else if (IPK == 0)
-            {
-                System.out.println("Anda tidak lulus");
-                CekIPK = false;
-            }
-            else if (IPK < 0 || IPK > 4)
-            {
-                System.out.println("IPK tidak valid. Harap ulang kembali" + "\n");
-                CekIPK = true;
-            }
+            IPK = 4;
+            System.out.printf("%-30s%-2c%.2f\n","Nilai akhir",':',nilaiAkhir);
+            System.out.printf("%-30s%-2c%d","IPK",':',IPK);
         }
     }
 }
