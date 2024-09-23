@@ -15,12 +15,12 @@ public class NilaiMatakuliah
         double nilaiAkhir = 0;
         if (nilaiKuis > nilaiUAS)
         {
-            nilaiAkhir = (40 / 100 * nilaiKuis) + (40 / 100 * nilaiUAS) + (20 / 100 * nilaiTugas);
+            nilaiAkhir = (nilaiKuis * 40 / 100) + (nilaiUAS * 40 / 100) + (nilaiTugas * 20 / 100);
             System.out.println(nilaiAkhir);
         }
         else if (nilaiUAS >= nilaiKuis)
         {
-            nilaiAkhir = (30 / 100 * nilaiKuis) + (50 / 100 * nilaiUAS) + (20 / 100 * nilaiTugas);
+            nilaiAkhir = (nilaiKuis * 30 / 100) + (nilaiUAS * 50 / 100) + (nilaiTugas * 20 / 100);
             System.out.println(nilaiAkhir);
         }
         System.out.printf("%-30s%-2c%.2f","Nilai akhir",':',nilaiAkhir);
