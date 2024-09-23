@@ -7,10 +7,17 @@ public class Day7
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
-        int numberArray[] = new int [arrayLength - 1];
+        int numberArray[] = new int [arrayLength];
+        for (int i = 0; i < arrayLength; i++)
+        {
+            int number = Integer.parseInt(input.nextLine());
+            numberArray[i] = number;
+        }
+        input.close();
         for (int i = numberArray.length; i >= 1 ; i--)
         {
-            System.out.println(numberArray);
+            int numberArrayAt = numberArray[arrayLength - i];
+            System.out.println(numberArrayAt);
         }
     }
 }
