@@ -13,7 +13,11 @@ public class Day7
         for (int i = 1; i <= numberArray.length ; i++)
         {
             String numberArrayAt = numberArray[arrayLength - i];
-            System.out.println(numberArrayAt);
+            System.out.print(numberArrayAt);
+            if (numberArray.length != 0)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
