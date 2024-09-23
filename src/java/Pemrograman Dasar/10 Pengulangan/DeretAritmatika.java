@@ -12,5 +12,9 @@ public class DeretAritmatika
         System.out.printf("%-25s%-2c","Masukkan batas deret",':');
         int batasDeret = Integer.parseInt(input.nextLine());
         input.close();
+        for (int i = sukuPertama; i < batasDeret; i += beda)
+        {
+            System.out.println(i);
+        }
     }
 }
