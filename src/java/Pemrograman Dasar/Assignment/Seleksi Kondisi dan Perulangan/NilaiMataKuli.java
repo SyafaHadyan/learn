@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class NilaiMataKuliah
+public class NilaiMataKuli
 {
     public static void main(String[] args)
     {
