@@ -20,7 +20,7 @@ public class N_04_ConditionalAssignment
             dataValid = true;
             System.out.printf("%.30s\n","==============================");
         }
-        else if (nama != cekNama || password != cekPassword)
+        else if (!nama.equals(cekNama) || !password.equals(cekPassword))
         {
             dataValid = false;
             System.out.print("Data tidak ditemukan");
