@@ -15,7 +15,7 @@ public class N_03_ConditionalAssignment
             String namaMahasiswa = input.nextLine();
             if (namaMahasiswa == "" || namaMahasiswa.equalsIgnoreCase("Korlap"))
             {
-                System.out.printf("%s%c%s%c%s","Nama yang anda masukkan",' ',namaMahasiswa,' ',"Salah, harap masukkan nama kembali");
+                System.out.printf("%s%c%s%c%s\n","Nama yang anda masukkan",' ',namaMahasiswa,' ',"Salah, harap masukkan nama kembali");
                 cekInput = true;
             }
             else
@@ -31,7 +31,7 @@ public class N_03_ConditionalAssignment
             }
             else
             {
-                System.out.printf("%s%c%d%c%s","Nim yang anda masukkan",' ',nimMahasiswa,' ',"Salah, harap masukkan nim kembali");
+                System.out.printf("%s%c%.0f%c%s\n","Nim yang anda masukkan",' ',nimMahasiswa,' ',"Salah, harap masukkan nim kembali");
                 cekInput = true;
             }
         }
