@@ -9,9 +9,12 @@ public class HitunganHari
         int jumlahHari = Integer.parseInt(input.nextLine());
         input.close();
         int i = 1;
-        for ( i = 1; i <= jumlahHari; i++)
+        for (i = 1; i <= jumlahHari; i++)
         {
-            
+            while (i <= 7)
+            {
+                System.out.println(i);
+            }
         }
     }
 }
