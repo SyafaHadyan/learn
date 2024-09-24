@@ -18,7 +18,7 @@ public class N_04_ConditionalAssignment
         if (nama.equals(cekNama) && password.equals(cekPassword))
         {
             dataValid = true;
-            System.out.printf("%.5s\n","==============================");
+            System.out.printf("%.30s\n","==============================");
         }
         else if (nama != cekNama || password != cekPassword)
         {
