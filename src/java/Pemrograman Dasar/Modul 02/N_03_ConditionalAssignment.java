@@ -23,7 +23,11 @@ public class N_03_ConditionalAssignment
                 cekInput = false;
             }
             System.out.printf("%-25s%-2c","Masukkan nim anda",':');
-            String nimMahasiswa = input.nextLine();
+            int nimMahasiswa = Integer.parseInt(input.nextLine());
+            if (nimMahasiswa != 0)
+            {
+                cekInput = false;
+            }
         }
     }
 }
