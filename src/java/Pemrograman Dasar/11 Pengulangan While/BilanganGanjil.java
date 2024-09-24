@@ -11,7 +11,7 @@ public class BilanganGanjil
         int batasBilangan = Integer.parseInt(input.nextLine());
         input.close();
         int moduloBilanganAwal = bilanganAwal % 3;
-        for (int i = moduloBilanganAwal; i <= batasBilangan; i += 3)
+        for (int i = moduloBilanganAwal; i <= batasBilangan; i += )
         {
             System.out.println(i);
         }
