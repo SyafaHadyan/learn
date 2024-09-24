@@ -17,7 +17,7 @@ public class HitunganHari
                 System.out.println(hariKe);
                 hariKe++;
             }
-            else if (i == 7)
+            else if (hariKe == 7)
             {
                 System.out.println(hariKe);
                 hariKe -= 6;
