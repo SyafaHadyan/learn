@@ -17,6 +17,7 @@ public class StrukturPengulanganDoWhile
             totalAngka += angkaAwal;
             angkaAwal++;
         }
+        while (angkaAwal <= angkaMaksimal);
         System.out.printf("%-25s%-2c%d","Total angka",':',totalAngka);
     }
 }
