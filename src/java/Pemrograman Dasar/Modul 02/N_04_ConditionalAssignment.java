@@ -18,7 +18,6 @@ public class N_04_ConditionalAssignment
         {
             dataValid = true;
             System.out.printf("%.5s\n","==============================");
-
         }
         else
         {
