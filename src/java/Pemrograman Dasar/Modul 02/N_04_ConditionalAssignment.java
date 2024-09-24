@@ -14,10 +14,8 @@ public class N_04_ConditionalAssignment
         System.out.printf("%-30s%-2c","Masukkan ulang password anda",':');
         String cekPassword = input.nextLine();
         input.close();
-        boolean dataValid = false;
         if (nama.equals(cekNama) && password.equals(cekPassword))
         {
-            dataValid = true;
             System.out.printf("%.30s\n","==============================");
             System.out.printf("\n%-30s%-2c%s\n","Nama anda adalah",':',nama);
             System.out.printf("%-30s%-2c%s\n","Password anda adalah",':',password);
@@ -25,7 +23,6 @@ public class N_04_ConditionalAssignment
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
         {
-            dataValid = false;
             System.out.print("Data tidak ditemukan");
         }
     }
