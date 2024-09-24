@@ -22,6 +22,5 @@ public class Day6
         {
             System.out.println("odd");
         }
-        System.out.println(stringArray.length);
     }
 }
