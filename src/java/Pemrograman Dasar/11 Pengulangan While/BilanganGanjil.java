@@ -10,7 +10,15 @@ public class BilanganGanjil
         System.out.printf("%-25s%-2c","Masukkan batas bilangan",':');
         int batasBilangan = Integer.parseInt(input.nextLine());
         input.close();
-        int moduloBilanganAwal = bilanganAwal % 3;
+        int moduloBilanganAwal = 0;
+        if (bilanganAwal % 2 == 0)
+        {
+            moduloBilanganAwal = bilanganAwal + 1;
+        }
+        else
+        {
+            moduloBilanganAwal = bilanganAwal;
+        }
         for (int i = moduloBilanganAwal; i <= batasBilangan; i += 2)
         {
             System.out.println(i);
