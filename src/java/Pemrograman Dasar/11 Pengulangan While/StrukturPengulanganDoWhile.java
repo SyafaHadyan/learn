@@ -10,5 +10,11 @@ public class StrukturPengulanganDoWhile
         System.out.printf("%-25s%-2c","Masukkan angka maksimal",':');
         int angkaMaksimal = Integer.parseInt(input.nextLine());
         input.close();
+        int totalAngka = 0;
+        do
+        {
+            System.out.println(angkaAwal);
+            angkaAwal++
+        }
     }
 }
