@@ -10,6 +10,7 @@ public class N_04_ConditionalAssignment
         System.out.printf("%-25s%-2c","Masukkan password anda",':');
         String password = input.nextLine();
         boolean cekInput = true;
+        boolean dataValid = false;
         String cekNama = "";
         String cekPassword = "";
         while (cekInput)
@@ -20,11 +21,11 @@ public class N_04_ConditionalAssignment
             cekPassword = input.nextLine();
             if (nama == cekNama)
             {
-                cekInput = false;
+                dataValid = true;
             }
             else
             {
-                
+                dataValid = false;
             }
         }
     }
