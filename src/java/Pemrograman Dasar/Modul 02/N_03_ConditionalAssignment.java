@@ -11,7 +11,7 @@ public class N_03_ConditionalAssignment
         System.out.println(s+" "+val);
         while (cekInput)
         {
-            System.out.printf("%-25s%-2c","Masukkan nama anda",':');
+            System.out.printf("%-20s%-2c","Masukkan nama anda",':');
             String namaMahasiswa = input.nextLine();
             if (namaMahasiswa == "" || namaMahasiswa.equalsIgnoreCase("Korlap"))
             {
@@ -22,7 +22,7 @@ public class N_03_ConditionalAssignment
             {
                 cekInput = false;
             }
-            System.out.printf("%-25s%-2c","Masukkan nim anda",':');
+            System.out.printf("%-20s%-2c","Masukkan nim anda",':');
             String nimMahasiswa = input.nextLine();
             if (nimMahasiswa.length() == 15)
             {
