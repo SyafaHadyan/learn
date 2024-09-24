@@ -30,7 +30,7 @@ public class N_03_ConditionalAssignment
             }
             else
             {
-                System.out.printf("%s%c%.0f%c%s\n","Nim yang anda masukkan",' ',nimMahasiswa,' ',"Salah, harap masukkan nim kembali");
+                System.out.printf("%s%c%s%c%s\n","Nim yang anda masukkan",' ',nimMahasiswa,' ',"Salah, harap masukkan nim kembali");
                 cekInput = true;
             }
         }
