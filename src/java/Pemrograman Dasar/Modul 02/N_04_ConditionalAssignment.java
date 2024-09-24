@@ -15,7 +15,7 @@ public class N_04_ConditionalAssignment
         String cekPassword = input.nextLine();
         input.close();
         boolean dataValid = false;
-        if (nama == cekNama && password == cekPassword)
+        if (nama.equals(cekNama) && password.equals(cekPassword))
         {
             dataValid = true;
             System.out.printf("%.5s\n","==============================");
