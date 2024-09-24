@@ -1,23 +1,23 @@
-import java.util.Scanner; public class N_06_IfElse
+import java.util.*;
+
+public class N_06_IfElse
 {
     public static void main(String[] args)
     {
         boolean ulang = true;
         while (ulang)
         {
+            int nilai = 0;
             Scanner in = new Scanner(System.in);
-            System.out.printf("%-30s%-2c","Masukkan nilai anda (-1) untuk keluar",':');
-            int nilai = in.nextInt();
-            /*
+            System.out.printf("%-30s%-2c","Masukkan nilai anda (Q) untuk keluar",':');
             try
             {
-                int nilai = in.nextInt();
+                nilai = in.nextInt();
             }
-            catch
+            catch (InputMismatchException e)
             {
-
+                //tryagain
             }
-             */
             if (nilai > 60)
             {
                 System.out.println("Anda lulus");
