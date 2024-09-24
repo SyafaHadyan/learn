@@ -14,6 +14,7 @@ public class N_04_ConditionalAssignment
         String cekNama = input.nextLine();
         System.out.printf("%-30s%-2c","Masukkan ulang password anda",':');
         String cekPassword = input.nextLine();
+        input.close();
         if (nama == cekNama && password == cekPassword)
         {
             dataValid = true;
