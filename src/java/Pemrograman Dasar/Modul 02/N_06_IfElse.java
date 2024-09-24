@@ -26,11 +26,6 @@ public class N_06_IfElse
             {
                 System.out.println("Anda harus mengulang !");
             }
-            else if (nilai == -1)
-            {
-                ulang = false;
-                in.close();
-            }
             else
             {
                 System.out.println("Anda gagal");
