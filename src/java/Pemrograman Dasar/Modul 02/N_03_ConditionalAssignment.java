@@ -17,6 +17,10 @@ public class N_03_ConditionalAssignment
             namaMahasiswa = input.nextLine();
             if (namaMahasiswa == "" || namaMahasiswa.equalsIgnoreCase("Korlap"))
             {
+                if(namaMahasiswa.equalsIgnoreCase("Korlap"))
+                {
+                    namaMahasiswa = "Does not exist";
+                }
                 System.out.printf("%s%c%c%s%c%c%s\n","Nama yang anda masukkan",' ','[',namaMahasiswa,']',' ',"Salah, harap masukkan nama kembali");
                 cekInput = true;
             }
