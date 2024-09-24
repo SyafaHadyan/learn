@@ -9,7 +9,7 @@ public class N_07_IfElse
         {
             int nilai = 0;
             Scanner in = new Scanner(System.in);
-            System.out.printf("%-30s%-2c","Masukkan nilai anda (Q) untuk keluar",':');
+            System.out.printf("%-40s%-2c","Masukkan nilai anda (Q) untuk keluar",':');
             try
             {
                 nilai = in.nextInt();
