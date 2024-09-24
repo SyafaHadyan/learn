@@ -11,9 +11,14 @@ public class HitunganHari
         int i = 1;
         for (i = 1; i <= jumlahHari; i++)
         {
-            while (i <= 7)
+            if (i < 7)
             {
                 System.out.println(i);
+            }
+            else if (i == 7)
+            {
+                System.out.println(i);
+                i = 0;
             }
         }
     }
