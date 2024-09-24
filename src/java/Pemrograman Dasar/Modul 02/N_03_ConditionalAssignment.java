@@ -23,6 +23,7 @@ public class N_03_ConditionalAssignment
                 cekInput = false;
             }
         }
+        cekInput = true;
         while (cekInput)
         {
             System.out.printf("%-20s%-2c","Masukkan nim anda",':');
@@ -36,6 +37,7 @@ public class N_03_ConditionalAssignment
                 System.out.printf("%s%c%c%s%c%c%s\n","Nim yang anda masukkan",' ','[',nimMahasiswa,']',' ',"Salah, harap masukkan nim kembali");
                 cekInput = true;
             }
+            input.close();
         }
     }
 }
