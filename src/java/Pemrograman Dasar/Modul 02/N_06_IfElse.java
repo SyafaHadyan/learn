@@ -16,7 +16,7 @@ public class N_06_IfElse
             }
             catch (InputMismatchException e)
             {
-                //tryagain
+                break;
             }
             if (nilai > 60)
             {
