@@ -11,6 +11,7 @@ public class BilanganGanjil
         int batasBilangan = Integer.parseInt(input.nextLine());
         input.close();
         int moduloBilanganAwal = 0;
+        int totalBilangan = 0;
         if (bilanganAwal % 2 == 0)
         {
             moduloBilanganAwal = bilanganAwal + 1;
@@ -22,6 +23,8 @@ public class BilanganGanjil
         for (int i = moduloBilanganAwal; i <= batasBilangan; i += 2)
         {
             System.out.println(i);
+            totalBilangan = totalBilangan + i;
         }
+        System.out.printf("%-7s%-2c%d","Total",':',totalBilangan);
     }
 }
