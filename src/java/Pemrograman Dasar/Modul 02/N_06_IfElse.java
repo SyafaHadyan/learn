@@ -5,7 +5,7 @@ import java.util.Scanner; public class N_06_IfElse
         boolean ulang = true;
         while (ulang)
         {
-            Scanner in = new Scanner(System.in); System.out.print("masukkan nilai: ");
+            Scanner in = new Scanner(System.in);
             System.out.printf("%-30s%-2c","Masukkan nilai anda (-1) untuk keluar",':');
             int nilai = in.nextInt();
             if (nilai > 60)
