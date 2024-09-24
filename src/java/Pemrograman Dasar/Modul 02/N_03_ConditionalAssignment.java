@@ -13,8 +13,12 @@ public class N_03_ConditionalAssignment
         {
             System.out.printf("%-25s%-2c","Masukkan nama anda",':');
             String namaMahasiswa = input.nextLine();
-            cekInput = true;
-            if (namaMahasiswa != "")
+            if (namaMahasiswa == "")
+            {
+                System.out.printf("%s%c%s%c%s","Nama yang anda masukkan",' ',namaMahasiswa,' ',"Salah, harap masukkan nama kembali");
+                cekInput = true;
+            }
+            else
             {
                 cekInput = false;
             }
