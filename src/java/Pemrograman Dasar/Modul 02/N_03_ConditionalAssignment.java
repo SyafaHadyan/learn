@@ -23,14 +23,16 @@ public class N_03_ConditionalAssignment
                 cekInput = false;
             }
             System.out.printf("%-25s%-2c","Masukkan nim anda",':');
-            int nimMahasiswa = Integer.parseInt(input.nextLine());
-            if (nimMahasiswa != 15)
+            double nimMahasiswa = Double.parseDouble(input.nextLine());
+            String nimMahasiswaString = Double.toString(nimMahasiswa);
+            if (nimMahasiswaString.length() == 15)
             {
                 cekInput = false;
             }
             else
             {
-                cekInput = false;
+                System.out.printf("%s%c%d%c%s","Nim yang anda masukkan",' ',nimMahasiswa,' ',"Salah, harap masukkan nim kembali");
+                cekInput = true;
             }
         }
     }
