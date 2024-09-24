@@ -14,7 +14,9 @@ public class StrukturPengulanganDoWhile
         do
         {
             System.out.println(angkaAwal);
-            angkaAwal++
+            totalAngka += angkaAwal;
+            angkaAwal++;
         }
+        System.out.printf("%-25s%-2c%d","Total angka",':',totalAngka);
     }
 }
