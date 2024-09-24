@@ -19,8 +19,8 @@ public class N_04_ConditionalAssignment
         {
             dataValid = true;
             System.out.printf("%.30s\n","==============================");
-            System.out.printf("\n%-20s%-2c%s\n","Nama anda adalah",':',nama);
-            System.out.printf("%-20s%-2c%s\n","Password anda adalah",':',password);
+            System.out.printf("\n%-30s%-2c%s\n","Nama anda adalah",':',nama);
+            System.out.printf("%-30s%-2c%s\n","Password anda adalah",':',password);
             System.out.printf("%.30s\n","==============================");
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
