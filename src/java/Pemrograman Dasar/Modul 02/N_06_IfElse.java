@@ -7,7 +7,16 @@ import java.util.Scanner; public class N_06_IfElse
         {
             Scanner in = new Scanner(System.in);
             System.out.printf("%-30s%-2c","Masukkan nilai anda (-1) untuk keluar",':');
-            int nilai = in.nextInt();
+            /*
+            try
+            {
+                int nilai = in.nextInt();
+            }
+            catch
+            {
+
+            }
+             */
             if (nilai > 60)
             {
                 System.out.println("Anda lulus");
