@@ -37,7 +37,7 @@ public class N_03_ConditionalAssignment
                 System.out.printf("%s%c%c%s%c%c%s\n","Nim yang anda masukkan",' ','[',nimMahasiswa,']',' ',"Salah, harap masukkan nim kembali");
                 cekInput = true;
             }
-            input.close();
         }
+        input.close();
     }
 }
