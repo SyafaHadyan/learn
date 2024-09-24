@@ -1,2 +1,2 @@
-01. Tidak ada kesalahan
-02. 
+01. Tidak ada kesalahan.
+02. Error: Tidak bisa mengubah String menjadi integer.
