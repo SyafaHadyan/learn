@@ -9,6 +9,15 @@ public class N_03_ConditionalAssignment
         String s = "filkom";
         String val = (s=="filkom")?"Brawijaya": "null";
         System.out.println(s+" "+val);
-
+        while (cekInput)
+        {
+            System.out.printf("%-25s%-2c","Masukkan nama anda",':');
+            String namaMahasiswa = input.nextLine();
+            cekInput = true;
+            if (namaMahasiswa != "")
+            {
+                cekInput = false;
+            }
+        }
     }
 }
