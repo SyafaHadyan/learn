@@ -19,10 +19,12 @@ public class N_04_ConditionalAssignment
         if (nama == cekNama && password == cekPassword)
         {
             dataValid = true;
+            System.out.printf("");
         }
         else
         {
             dataValid = false;
+            System.out.print("Data tidak ditemukan");
         }
     }
 }
