@@ -40,7 +40,7 @@ public class N_03_ConditionalAssignment
                 cekInput = true;
             }
         }
-        System.out.printf("%-20s%-2c%s\n","Nama anda adalah",':',namaMahasiswa);
+        System.out.printf("\n%-20s%-2c%s\n","Nama anda adalah",':',namaMahasiswa);
         System.out.printf("%-20s%-2c%s","Nim anda adalah",':',nimMahasiswa);
         input.close();
     }
