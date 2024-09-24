@@ -14,7 +14,13 @@ public class Day6
             stringArray[i] = str;
         }
         input.close();
-        int evenModulo = stringArray.length % 2;
-        int oddModulo = stringArray.length % 3;
+        if (stringArray.length % 2 == 0)
+        {
+            System.out.println("even");
+        }
+        else
+        {
+            System.out.println("odd");
+        }
     }
 }
