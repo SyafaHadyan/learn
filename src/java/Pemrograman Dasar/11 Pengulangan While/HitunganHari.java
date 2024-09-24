@@ -8,18 +8,19 @@ public class HitunganHari
         System.out.printf("%-25s%-2c","Masukkan jumlah hari",':');
         int jumlahHari = Integer.parseInt(input.nextLine());
         input.close();
-        int i = 0;
+        int i = 1;
+        int hariKe = i;
         for (i = 1; i <= jumlahHari; i++)
         {
-            int hariKe = i;
-            if (hariKe < 7)
+            if (hariKe <= 6)
             {
                 System.out.println(hariKe);
+                hariKe++;
             }
             else if (i == 7)
             {
                 System.out.println(hariKe);
-                hariKe = 1;
+                hariKe -= 6;
             }
         }
     }
