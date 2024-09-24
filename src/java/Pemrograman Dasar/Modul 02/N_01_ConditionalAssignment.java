@@ -1,4 +1,4 @@
-public class ConditionalAssignment
+public class N_01_ConditionalAssignment
 {
     public static void main(String[] args)
     {
