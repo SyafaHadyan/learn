@@ -10,8 +10,8 @@ public class Praktikum0
         System.out.println("1. menghitung luas dan keliling segitiga");
         System.out.printf("%s%-2c","Pilihan anda",':');
         int pilihanKonversi = Integer.parseInt(input.nextLine());
-        int hasilKeliling = 0;
-        int hasilLuas = 0;
+        double hasilKeliling = 0;
+        double hasilLuas = 0;
         boolean outputHasilPerhitungan = true;
         switch (pilihanKonversi)
         {
@@ -26,6 +26,8 @@ public class Praktikum0
             case 2:
                 System.out.printf("%s%-2c\n","Masukkan radius",':');
                 int radius = Integer.parseInt(input.nextLine());
+                hasilKeliling = 0;
+                hasilLuas = radius * radius * 3.14;
                 break;
             case 3:
                 break;
@@ -36,7 +38,7 @@ public class Praktikum0
         }
         if (outputHasilPerhitungan)
         {
-            System.out.printf("%s%-2c%d","Keliling",':',hasilKeliling);
+            System.out.printf("%s%-2c%.3f","Keliling",':',hasilKeliling);
         }
     }
 }
