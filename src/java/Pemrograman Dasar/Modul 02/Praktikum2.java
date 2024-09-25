@@ -5,6 +5,7 @@ public class Praktikum2
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        String mataUang = "Rp.";
         int jamKerja = 0;
         int upahPerJam = 5000;
         int lemburPerJam = 6000;
@@ -29,6 +30,7 @@ public class Praktikum2
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * jamKerja;
             }
+            System.out.printf("%-20s%c%c%c%s%c%d");
         }
     }
 }
