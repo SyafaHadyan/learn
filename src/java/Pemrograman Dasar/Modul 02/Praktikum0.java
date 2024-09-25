@@ -53,6 +53,7 @@ public class Praktikum0
                     System.out.print("Data tak ditemukan, program dihentikan ...");
                     outputHasilPerhitungan = false;
                     inputValid = false;
+                    input.close();
                     break;
             }
             if (outputHasilPerhitungan)
