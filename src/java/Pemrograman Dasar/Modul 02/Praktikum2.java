@@ -36,7 +36,7 @@ public class Praktikum2
             System.out.printf("%-20s%c%c%s%c%d\n","Lembur",'=',' ',mataUang,' ',lemburTotal);
             System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
             System.out.println("---------------------");
-            System.out.printf("%-20s%c%c%s%c%d\n","Total",'=',' ',mataUang,' ',total);
+            System.out.printf("%-20s%c%c%s%c%d\n\n","Total",'=',' ',mataUang,' ',total);
         }
     }
 }
