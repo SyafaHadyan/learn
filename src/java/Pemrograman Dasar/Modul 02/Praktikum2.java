@@ -10,12 +10,12 @@ public class Praktikum2
         int upahPerJam = 5000;
         int lemburPerJam = 6000;
         int dendaPerJam = 0;
-        int upahTotal = 0;
-        int lemburTotal = 0;
-        int dendaTotal = 0;
-        int total = 0;
         while (true)
         {
+            int upahTotal = 0;
+            int lemburTotal = 0;
+            int dendaTotal = 0;
+            int total = 0;
             System.out.printf("%-20s%-2c","Jam kerja",':');
             jamKerja = Integer.parseInt(input.nextLine());
             if (jamKerja >= 50 && jamKerja <= 60)
@@ -32,7 +32,7 @@ public class Praktikum2
             else if (jamKerja < 50)
             {
                 upahTotal = upahPerJam * jamKerja;
-                dendaTotal = dendaPerJam * jamKerja;
+                dendaTotal = dendaPerJam * (50 - jamKerja);
                 total = upahTotal + lemburTotal - dendaTotal;
             }
             System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
