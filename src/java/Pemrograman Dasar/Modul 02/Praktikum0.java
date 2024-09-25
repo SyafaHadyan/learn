@@ -17,9 +17,11 @@ public class Praktikum0
         final String unitKeliling = "cm"; // Ganti untuk unit lain
         final String unitLuas = "cm2"; // Ganti untuk unit lain
         boolean outputHasilPerhitungan = true;
+        boolean inputValid = true;
         switch (pilihanKonversi)
         {
             case 1:
+                namaPilihan = "persegi panjang";
                 System.out.printf("%s%-2c","Masukkan sisi 1",':');
                 int sisiSatu = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan sisi 2",':');
@@ -28,12 +30,14 @@ public class Praktikum0
                 hasilLuas = sisiSatu * sisiDua;
                 break;
             case 2:
+                namaPilihan = "lingkaran";
                 System.out.printf("%s%-2c","Masukkan radius",':');
                 int radius = Integer.parseInt(input.nextLine());
                 hasilKeliling = 2 * PI * radius;
                 hasilLuas = radius * radius * PI;
                 break;
             case 3:
+                namaPilihan = "segitiga";
                 System.out.printf("%s%-2c","Masukkan a",':');
                 int a = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan b",':');
@@ -46,6 +50,7 @@ public class Praktikum0
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
                 outputHasilPerhitungan = false;
+                inputValid = false;
                 break;
         }
         if (outputHasilPerhitungan)
