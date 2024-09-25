@@ -8,9 +8,9 @@ public class Praktikum0
         double hasilKeliling = 0;
         double hasilLuas = 0;
         String namaPilihan = "Bentuk";
-        final double PI = 3.14; // Ganti untuk menambahkan presisi
-        final String unitKeliling = "cm"; // Ganti untuk unit lain
-        final String unitLuas = "cm2"; // Ganti untuk unit lain
+        final double PI = 3.14;
+        final String unitKeliling = "cm";
+        final String unitLuas = unitKeliling + '2';
         boolean outputHasilPerhitungan = true;
         boolean inputValid = true;
         System.out.println("1. menghitung luas dan keliling persegi panjang");
