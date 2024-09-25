@@ -58,7 +58,7 @@ public class Praktikum0
             if (outputHasilPerhitungan)
             {
                 System.out.printf("%s%c%s%c%-2c%.3f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-                System.out.printf("%s%c%s%c%-2c%.3f%c%s","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+                System.out.printf("%s%c%s%c%-2c%.3f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
             }
         }
     }
