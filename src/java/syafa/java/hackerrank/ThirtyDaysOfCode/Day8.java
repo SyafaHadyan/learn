@@ -8,9 +8,10 @@ public class Day8
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
         int phoneNumberArray[] = new int[phoneBookInput];
-        for (int i = 1; i <= phoneBookInput; i++)
+        for (int i = 0; i <= phoneBookInput; i++)
         {
             String name = input.next();
+            
             int phoneNumber = input.nextInt();
             input.nextLine();
         }
