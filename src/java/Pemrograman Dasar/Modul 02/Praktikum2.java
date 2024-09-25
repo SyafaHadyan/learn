@@ -30,7 +30,7 @@ public class Praktikum2
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * jamKerja;
             }
-            System.out.printf("%-20s%c%c%c%s%c%d");
+            System.out.printf("-20s%c%c%s%c%d","Upah",'=',' ',mataUang,' ',upahTotal);
         }
     }
 }
