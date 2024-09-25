@@ -16,18 +16,11 @@ public class Praktikum1
         boolean ulang = true;
         while (ulang)
         {
-            System.out.printf("%-17s%-2c",outBerat,':');
             try
             {
+                System.out.printf("%-17s%-2c",outBerat,':');
                 beratBadan = Double.parseDouble(input.nextLine());
-            }
-            catch (NumberFormatException e)
-            {
-                return;
-            }
-            System.out.printf("%-17s%-2c",outTinggi,':');
-            try
-            {
+                System.out.printf("%-17s%-2c",outTinggi,':');
                 tinggiBadan = Double.parseDouble(input.nextLine());
             }
             catch (NumberFormatException e)
