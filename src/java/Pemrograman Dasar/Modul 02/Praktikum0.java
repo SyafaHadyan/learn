@@ -49,8 +49,8 @@ public class Praktikum0
         }
         if (outputHasilPerhitungan)
         {
-            System.out.printf("%s%-2c%.3f\n","Keliling",':',hasilKeliling);
-            System.out.printf("%s%-2c%.3f","Keliling",':',hasilLuas);
+            System.out.printf("%s%-2c%.3f%c%s\n","Keliling",':',hasilKeliling,' ',unitKeliling);
+            System.out.printf("%s%-2c%.3f%c%s","Keliling",':',hasilLuas,' ',unitLuas);
         }
     }
 }
