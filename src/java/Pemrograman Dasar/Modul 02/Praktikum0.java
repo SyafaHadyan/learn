@@ -15,6 +15,7 @@ public class Praktikum0
         boolean inputValid = true;
         int sisiSatu = 0;
         int sisiDua = 0;
+        int radius = 0;
         int a = 0;
         int b = 0;
         int c = 0;
@@ -46,15 +47,14 @@ public class Praktikum0
                 case 2:
                     try
                     {
-                        
+                        System.out.printf("%s%-2c","Masukkan radius",':');
+                        radius = Integer.parseInt(input.nextLine())
                     }
-                    catch (Exception e)
+                    catch (NumberFormatException e)
                     {
-                        // TODO: handle exception
+                        return;
                     }
-                    namaPilihan = "lingkaran";
-                    System.out.printf("%s%-2c","Masukkan radius",':');
-                    int radius = Integer.parseInt(input.nextLine());
+                    namaPilihan = "lingkaran";;
                     hasilKeliling = 2 * PI * radius;
                     hasilLuas = radius * radius * PI;
                     break;
