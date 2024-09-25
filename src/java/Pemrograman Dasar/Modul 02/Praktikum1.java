@@ -34,7 +34,7 @@ public class Praktikum1
             {
                 System.out.printf("%s%c%c%c%.2f%c%s","IMT",' ','=',' ',IMT,' ',"Termasuk kegemukan");
             }
-            System.out.print("\n");
+            System.out.print("\n\n");
         }
     }
 }
