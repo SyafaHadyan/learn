@@ -6,13 +6,16 @@ public class Praktikum2
     {
         Scanner input = new Scanner(System.in);
         int jamKerja = 0;
-        int upah = 0;
-        int lembur = 0;
-        int denda = 0;
+        int upahPerJam = 0;
+        int lemburPerJam = 0;
+        int upahTotal = 0;
+        int lemburTotal = 0;
+        int dendaTotal = 0;
         input.close();
         while (true)
         {
             jamKerja = Integer.parseInt(input.nextLine());
+            if (jamKerja >= 50 && jamKerja <= 60);
         }
     }
 }
