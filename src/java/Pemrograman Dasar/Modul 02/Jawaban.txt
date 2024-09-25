@@ -5,3 +5,4 @@
 05. Jawaban ada di source code.
 06. Jawaban ada di screenshot.
 07. Jawaban ada di screenshot.
+08. Jawaban ada di screenshot. Tidak ada kesalahan.
