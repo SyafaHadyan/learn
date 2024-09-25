@@ -33,6 +33,7 @@ public class Praktikum2
             {
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * (50 - jamKerja);
+                System.out.println(dendaTotal);
                 total = upahTotal + lemburTotal - dendaTotal;
             }
             System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
