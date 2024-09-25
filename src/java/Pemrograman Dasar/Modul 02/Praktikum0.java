@@ -54,7 +54,7 @@ public class Praktikum0
                     return;
             }
             System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
         }
     }
 }
