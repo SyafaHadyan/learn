@@ -9,7 +9,7 @@ public class Praktikum2
         int jamKerja = 0;
         int upahPerJam = 5000;
         int lemburPerJam = 6000;
-        int dendaPerJam = 0;
+        int dendaPerJam = 1000;
         while (true)
         {
             int upahTotal = 0;
@@ -33,7 +33,6 @@ public class Praktikum2
             {
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * (50 - jamKerja);
-                System.out.println(dendaTotal);
                 total = upahTotal + lemburTotal - dendaTotal;
             }
             System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
