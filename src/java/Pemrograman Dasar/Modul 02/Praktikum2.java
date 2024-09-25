@@ -7,7 +7,7 @@ public class Praktikum2
         Scanner input = new Scanner(System.in);
         int jamKerja = 0;
         int upahPerJam = 5000;
-        int lemburPerJam = 0;
+        int lemburPerJam = 6000;
         int upahTotal = 0;
         int lemburTotal = 0;
         int dendaTotal = 0;
@@ -15,13 +15,13 @@ public class Praktikum2
         while (true)
         {
             jamKerja = Integer.parseInt(input.nextLine());
-            if (jamKerja >= 50 && jamKerja <= 60);
+            if (jamKerja >= 50 && jamKerja <= 60)
             {
                 upahTotal = upahPerJam * jamKerja;
             }
             else if (jamKerja > 60)
             {
-                upahPerJam = 5000;
+                upahTotal = (upahPerJam * 50) + (lemburPerJam * (jamKerja - 60));
             }
         }
     }
