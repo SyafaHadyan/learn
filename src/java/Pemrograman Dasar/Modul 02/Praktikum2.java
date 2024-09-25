@@ -17,6 +17,14 @@ public class Praktikum2
             int dendaTotal = 0;
             int total = 0;
             System.out.printf("%-20s%-2c","Jam kerja",':');
+            try
+            {
+                
+            }
+            catch (Exception e)
+            {
+                // TODO: handle exception
+            }
             jamKerja = Integer.parseInt(input.nextLine());
             if (jamKerja >= 50 && jamKerja <= 60)
             {
