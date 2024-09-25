@@ -44,6 +44,14 @@ public class Praktikum0
                     hasilLuas = sisiSatu * sisiDua;
                     break;
                 case 2:
+                    try
+                    {
+                        
+                    }
+                    catch (Exception e)
+                    {
+                        // TODO: handle exception
+                    }
                     namaPilihan = "lingkaran";
                     System.out.printf("%s%-2c","Masukkan radius",':');
                     int radius = Integer.parseInt(input.nextLine());
