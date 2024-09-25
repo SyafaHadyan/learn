@@ -31,6 +31,12 @@ public class Praktikum0
                 hasilLuas = radius * radius * PI;
                 break;
             case 3:
+                System.out.printf("%s%-2c\n","Masukkan a",':');
+                int a = Integer.parseInt(input.nextLine());
+                System.out.printf("%s%-2c\n","Masukkan b",':');
+                int b = Integer.parseInt(input.nextLine());
+                System.out.printf("%s%-2c\n","Masukkan r",':');
+                int c = Integer.parseInt(input.nextLine());
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
