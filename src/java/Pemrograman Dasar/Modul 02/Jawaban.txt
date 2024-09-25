@@ -11,3 +11,7 @@
 11. Jawaban ada di screenshot.
 12. Jawaban ada di screenshot.
 13. `switch case` dan `if-else` kurang lebih fungsinya sama. Jika di `if-else` kita memakai `if (kondisi)`, `else if (kondisi)`, dan `else` [tanpa kondisi]. Di `switch case`, kita harus menentukan dulu variabel mana yang akan kita proses, dan di setiap `switch`-nya `(if-else)` setiap kondisi tergantung dengan `value` dari `variabel` yang telah dipilih di awal `switch(masukkanVariabelDiSini)`. Keduanya bisa di `stack` (`if-else` di dalam `if-else`, `if-else` di dalam `switch case`, `switch case` di dalam `switch case`, `switch case` di dalam `if-else`). `switch case` dan `if-else` dua-duanya bisa digunakan tergantung dari keperluan dan preferensi masing-masing.
+
+Praktikum
+
+1. Jawaban ada di source code
