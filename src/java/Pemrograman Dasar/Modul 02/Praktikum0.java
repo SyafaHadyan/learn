@@ -24,6 +24,14 @@ public class Praktikum0
         System.out.println("3. menghitung luas dan keliling segitiga");
         while(inputValid)
         {
+            try
+            {
+                
+            }
+            catch (Exception e)
+            {
+                // TODO: handle exception
+            }
             System.out.printf("%s%-2c","Pilihan anda",':');
             int pilihanKonversi = Integer.parseInt(input.nextLine());
             switch (pilihanKonversi)
