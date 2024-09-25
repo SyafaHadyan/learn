@@ -20,7 +20,7 @@ public class Day8
         {
             String searchName = input.nextLine();
             int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
-            System.out.println(nameMatch);
+            int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(searchName);
         }
     }
 }
