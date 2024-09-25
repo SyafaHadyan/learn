@@ -84,7 +84,7 @@ public class Praktikum0
                         return;
                     }
                     namaPilihan = "segitiga";
-                    hasilKeliling = a + b + c;
+                    hasilKeliling = a + b + r;
                     hasilLuas = a * b;
                     break;
                 default:
