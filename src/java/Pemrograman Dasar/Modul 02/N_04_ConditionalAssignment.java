@@ -10,6 +10,8 @@ public class N_04_ConditionalAssignment
         String cekPassword = "";
         String headerFooter = "============================================================";
         String leftBorder = "|";
+        String rightBorderMargin;
+        String rightBorder = String.format(leftBorder, args);
         double nim = 245150207111047.0;
         double IPK = 3.98;
         Scanner input = new Scanner(System.in);
