@@ -16,7 +16,6 @@ public class N_10_NestedIf
         {
             System.out.println("Filkom");
             System.out.println("UB");
-
         }
         else if (nilai % 2 == 1)
         {
