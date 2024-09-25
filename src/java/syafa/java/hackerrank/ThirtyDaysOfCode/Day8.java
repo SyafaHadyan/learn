@@ -16,9 +16,10 @@ public class Day8
             phoneNumberArray[i] = phoneNumber;
             input.nextLine();
         }
-        for (int i = 0; i < phoneNumberArray.length; i++)
+        for (int i = 0; i < phoneBookInput; i++)
         {
-            
+            String searchName = input.nextLine();
+            boolean contains = Arrays.stream(nameArray).anyMatch(searchName::equals);
         }
     }
 }
