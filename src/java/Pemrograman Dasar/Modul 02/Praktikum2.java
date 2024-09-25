@@ -23,8 +23,7 @@ public class Praktikum2
             }
             catch (NumberFormatException e)
             {
-                input.close();
-                return;
+                break;
             }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
