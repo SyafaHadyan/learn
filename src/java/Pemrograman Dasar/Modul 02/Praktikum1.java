@@ -4,6 +4,7 @@ public class Praktikum1
 {
     public static void main(String[] args)
     {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         String unitBerat = "(kg)";
         String unitTinggi = "(m)";
@@ -52,5 +53,6 @@ public class Praktikum1
             }
             System.out.print("\n\n");
         }
+        input.close();
     }
 }
