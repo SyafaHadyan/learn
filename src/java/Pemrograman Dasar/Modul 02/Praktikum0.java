@@ -12,6 +12,7 @@ public class Praktikum0
         int pilihanKonversi = Integer.parseInt(input.nextLine());
         double hasilKeliling = 0;
         double hasilLuas = 0;
+        final double PI = 3.14; // Ganti untuk menambahkan presisi
         boolean outputHasilPerhitungan = true;
         switch (pilihanKonversi)
         {
@@ -26,8 +27,8 @@ public class Praktikum0
             case 2:
                 System.out.printf("%s%-2c\n","Masukkan radius",':');
                 int radius = Integer.parseInt(input.nextLine());
-                hasilKeliling = 0;
-                hasilLuas = radius * radius * 3.14;
+                hasilKeliling = 2 * PI * radius;
+                hasilLuas = radius * radius * PI;
                 break;
             case 3:
                 break;
