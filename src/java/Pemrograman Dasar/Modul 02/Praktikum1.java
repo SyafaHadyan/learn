@@ -9,6 +9,7 @@ public class Praktikum1
         String unitTinggi = "(m)";
         String outBerat = "Berat badan" + ' ' + unitBerat;
         String outTinggi = "Tinggi badan" + ' ' + unitTinggi;
+        double IMT = 0;
         boolean ulang = true;
         while (ulang)
         {
@@ -16,7 +17,7 @@ public class Praktikum1
             double beratBadan = Double.parseDouble(input.nextLine());
             System.out.printf("%-17s%-2c",outTinggi,':');
             double tinggiBadan = Double.parseDouble(input.nextLine());
-            
+            IMT = beratBadan / (tinggiBadan * tinggiBadan);
         }
     }
 }
