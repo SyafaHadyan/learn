@@ -20,8 +20,8 @@ public class N_04_ConditionalAssignment
         input.close();
         String headerFooter = "============================================================";
         String leftBorder = "|";
-        String rightBorderNama = 59 - nama.length() + "s";
-        String rightBorderNama = String.format(leftBorder, args);
+        int BorderNama = 59 - nama.length();
+        String rightBorderNama = "%" + BorderNama + "s";
         double nim = 245150207111047.0;
         double IPK = 3.98;
         if (nama.equals(cekNama) && password.equals(cekPassword))
