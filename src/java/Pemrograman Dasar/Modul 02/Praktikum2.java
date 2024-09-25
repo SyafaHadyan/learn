@@ -27,13 +27,13 @@ public class Praktikum2
             {
                 
             }
-            if (jamKerja != 0)
+            if (jamKerja <= 0)
             {
-                valid = true;
+                valid = false;
             }
             else
             {
-                valid = false;
+                valid = true;
             }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
