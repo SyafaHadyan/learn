@@ -20,7 +20,7 @@ public class Praktikum1
             IMT = beratBadan / (tinggiBadan * tinggiBadan);
             if (IMT <= 18.5)
             {
-
+                System.out.printf("%s%c%c%c%.2f%c%s","IMT",' ','=',' ',IMT,' ',"Termasuk kurus");
             }
             else if (IMT > 18.5 && IMT <= 25)
             {
@@ -32,7 +32,7 @@ public class Praktikum1
             }
             else if (IMT > 30)
             {
-                
+
             }
         }
     }
