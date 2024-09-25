@@ -14,6 +14,7 @@ public class Praktikum2
         input.close();
         while (true)
         {
+            System.out.printf("%-20s%-2c","Jam kerja",':');
             jamKerja = Integer.parseInt(input.nextLine());
             if (jamKerja >= 50 && jamKerja <= 60)
             {
