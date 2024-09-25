@@ -25,7 +25,7 @@ public class Praktikum2
             }
             else if (jamKerja > 60)
             {
-                upahTotal = (upahPerJam * 50);
+                upahTotal = (upahPerJam * 60);
                 lemburTotal = lemburPerJam * (jamKerja - 60);
                 total = upahTotal + lemburTotal - dendaTotal;
             }
