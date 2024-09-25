@@ -10,20 +10,29 @@ public class Praktikum1
         String outBerat = "Berat badan" + ' ' + unitBerat;
         String outTinggi = "Tinggi badan" + ' ' + unitTinggi;
         double IMT = 0;
+        double beratBadan;
+        double tinggiBadan;
         boolean ulang = true;
         while (ulang)
         {
             System.out.printf("%-17s%-2c",outBerat,':');
             try
             {
-                double beratBadan = Double.parseDouble(input.nextLine());
+                beratBadan = Double.parseDouble(input.nextLine());
             }
             catch (NumberFormatException e)
             {
                 return;
             }
             System.out.printf("%-17s%-2c",outTinggi,':');
-            double tinggiBadan = Double.parseDouble(input.nextLine());
+            try
+            {
+                tinggiBadan = Double.parseDouble(input.nextLine());
+            }
+            catch (NumberFormatException e)
+            {
+                return;
+            }
             IMT = beratBadan / (tinggiBadan * tinggiBadan);
             if (IMT <= 18.5)
             {
