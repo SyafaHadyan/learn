@@ -50,5 +50,8 @@ public class N_12_SwitchCase
                 System.out.println("data tak ditemukan");
         }
         in.close();
+        /*
+         * Karena di setiap case tidak ada `break;`, maka setelah mengonversi uang (masuk ke case ke n yang dipilih) akan dilanjutkan terus (masuk case berikutnya) hingga `default`
+         */
     }
 }
