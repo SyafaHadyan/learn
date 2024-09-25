@@ -6,8 +6,8 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         System.out.println("1. menghitung luas dan keliling persegi panjang");
-        System.out.println("1. menghitung luas dan keliling lingkaran");
-        System.out.println("1. menghitung luas dan keliling segitiga");
+        System.out.println("2. menghitung luas dan keliling lingkaran");
+        System.out.println("3`. menghitung luas dan keliling segitiga");
         System.out.printf("%s%-2c","Pilihan anda",':');
         int pilihanKonversi = Integer.parseInt(input.nextLine());
         double hasilKeliling = 0;
