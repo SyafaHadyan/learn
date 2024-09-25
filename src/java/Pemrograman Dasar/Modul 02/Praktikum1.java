@@ -18,6 +18,22 @@ public class Praktikum1
             System.out.printf("%-17s%-2c",outTinggi,':');
             double tinggiBadan = Double.parseDouble(input.nextLine());
             IMT = beratBadan / (tinggiBadan * tinggiBadan);
+            if (IMT <= 18.5)
+            {
+
+            }
+            else if (IMT > 18.5 && IMT <= 25)
+            {
+                
+            }
+            else if (IMT > 25 && IMT <= 30)
+            {
+
+            }
+            else if (IMT > 30)
+            {
+                
+            }
         }
     }
 }
