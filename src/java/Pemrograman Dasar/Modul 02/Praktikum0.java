@@ -55,11 +55,11 @@ public class Praktikum0
                     inputValid = false;
                     break;
             }
-        }
-        if (outputHasilPerhitungan)
-        {
-            System.out.printf("%s%c%s%c%-2c%.3f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-            System.out.printf("%s%c%s%c%-2c%.3f%c%s","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+            if (outputHasilPerhitungan)
+            {
+                System.out.printf("%s%c%s%c%-2c%.3f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
+                System.out.printf("%s%c%s%c%-2c%.3f%c%s","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+            }
         }
     }
 }
