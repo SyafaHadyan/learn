@@ -18,7 +18,8 @@ public class N_08_NestedIf
             if (nilai % 2 == 1)
             {
                 System.out.println("UB");
-            } else
+            }
+            else
             {
                 System.out.println("Brawijaya");
             }
