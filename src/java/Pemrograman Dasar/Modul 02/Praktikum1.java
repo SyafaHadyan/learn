@@ -14,7 +14,14 @@ public class Praktikum1
         while (ulang)
         {
             System.out.printf("%-17s%-2c",outBerat,':');
-            double beratBadan = Double.parseDouble(input.nextLine());
+            try
+            {
+                double beratBadan = Double.parseDouble(input.nextLine());
+            }
+            catch (NumberFormatException e)
+            {
+                return;
+            }
             System.out.printf("%-17s%-2c",outTinggi,':');
             double tinggiBadan = Double.parseDouble(input.nextLine());
             IMT = beratBadan / (tinggiBadan * tinggiBadan);
