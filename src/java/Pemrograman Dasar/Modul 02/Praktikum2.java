@@ -25,7 +25,11 @@ public class Praktikum2
             }
             catch (NumberFormatException e)
             {
-                valid = false;
+                
+            }
+            if (jamKerja != 0)
+            {
+                valid = true;
             }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
@@ -51,6 +55,8 @@ public class Praktikum2
                 System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
                 System.out.println("---------------------");
                 System.out.printf("%-20s%c%c%s%c%d\n\n","Total",'=',' ',mataUang,' ',total);
+                valid = true;
+                ulang = true;
             }
         }
     }
