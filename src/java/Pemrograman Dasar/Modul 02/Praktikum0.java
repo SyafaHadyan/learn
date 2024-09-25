@@ -4,6 +4,7 @@ public class Praktikum0
 {
     public static void main(String[] args)
     {
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         double hasilKeliling = 0;
         double hasilLuas = 0;
