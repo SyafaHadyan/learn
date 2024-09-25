@@ -48,7 +48,7 @@ public class Praktikum0
                     try
                     {
                         System.out.printf("%s%-2c","Masukkan radius",':');
-                        radius = Integer.parseInt(input.nextLine())
+                        radius = Integer.parseInt(input.nextLine());
                     }
                     catch (NumberFormatException e)
                     {
