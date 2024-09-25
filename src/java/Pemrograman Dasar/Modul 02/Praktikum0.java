@@ -8,7 +8,7 @@ public class Praktikum0
         double hasilKeliling = 0;
         double hasilLuas = 0;
         String namaPilihan = "Bentuk";
-        final double PI = 3.14;
+        final double PI = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679;
         final String unitKeliling = "cm";
         final String unitLuas = unitKeliling + '2';
         boolean outputHasilPerhitungan = true;
