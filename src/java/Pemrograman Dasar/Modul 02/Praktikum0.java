@@ -13,6 +13,7 @@ public class Praktikum0
         final String unitKeliling = "cm";
         final String unitLuas = unitKeliling + '2';
         boolean inputValid = true;
+        int pilihanKonversi = 0;
         int sisiSatu = 0;
         int sisiDua = 0;
         int radius = 0;
@@ -26,14 +27,13 @@ public class Praktikum0
         {
             try
             {
-                
+                System.out.printf("%s%-2c","Pilihan anda",':');
+                pilihanKonversi = Integer.parseInt(input.nextLine());
             }
-            catch (Exception e)
+            catch (NumberFormatException e)
             {
-                // TODO: handle exception
+                return;
             }
-            System.out.printf("%s%-2c","Pilihan anda",':');
-            int pilihanKonversi = Integer.parseInt(input.nextLine());
             switch (pilihanKonversi)
             {
                 case 1:
