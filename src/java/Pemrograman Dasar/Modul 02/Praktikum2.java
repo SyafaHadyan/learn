@@ -27,6 +27,7 @@ public class Praktikum2
             else if (jamKerja < 50)
             {
                 upahTotal = upahPerJam * jamKerja;
+                dendaTotal = dendaPerJam * jamKerja;
             }
         }
     }
