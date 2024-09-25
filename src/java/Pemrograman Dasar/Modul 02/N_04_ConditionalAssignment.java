@@ -19,10 +19,11 @@ public class N_04_ConditionalAssignment
         double IPK = 3.98;
         if (nama.equals(cekNama) && password.equals(cekPassword))
         {
-            System.out.printf("%.20s%c%s%c%.20s\n",headerFooter,' ',"Biodata Mahasiswa",' ',headerFooter);
-            System.out.printf("\n%-30s%-2c%s\n","Nama mahasiswa",':',nama);
+            System.out.printf("%.20s%c%s%c%.20s\n\n",headerFooter,' ',"Biodata Mahasiswa",' ',headerFooter);
+            System.out.printf("%-30s%-2c%s\n","Nama mahasiswa",':',nama);
             System.out.printf("%-30s%-2c%s\n","Password",':',password);
             System.out.printf("%-30s%-2c%.0f\n","NIM mahasiswa",':',nim);
+            System.out.printf("%-30s%-2c%.0f\n","IPK mahasiswa",':',IPK);
             System.out.printf("\n%.59s\n",headerFooter);
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
