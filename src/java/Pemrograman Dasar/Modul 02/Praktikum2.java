@@ -19,13 +19,13 @@ public class Praktikum2
             System.out.printf("%-20s%-2c","Jam kerja",':');
             try
             {
-                
+                jamKerja = Integer.parseInt(input.nextLine());
             }
-            catch (Exception e)
+            catch (NumberFormatException e)
             {
-                // TODO: handle exception
+                input.close();
+                return;
             }
-            jamKerja = Integer.parseInt(input.nextLine());
             if (jamKerja >= 50 && jamKerja <= 60)
             {
                 upahTotal = upahPerJam * jamKerja;
