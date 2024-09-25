@@ -13,6 +13,8 @@ public class Praktikum0
         double hasilKeliling = 0;
         double hasilLuas = 0;
         final double PI = 3.14; // Ganti untuk menambahkan presisi
+        final String unitKeliling = "cm";
+        final String unitLuas = "cm2";
         boolean outputHasilPerhitungan = true;
         switch (pilihanKonversi)
         {
@@ -37,6 +39,8 @@ public class Praktikum0
                 int b = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan r",':');
                 int c = Integer.parseInt(input.nextLine());
+                hasilKeliling = a + b + c;
+                hasilLuas = a * b;
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
