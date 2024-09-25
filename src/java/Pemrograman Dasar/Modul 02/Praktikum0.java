@@ -15,6 +15,9 @@ public class Praktikum0
         boolean inputValid = true;
         int sisiSatu = 0;
         int sisiDua = 0;
+        int a = 0;
+        int b = 0;
+        int c = 0;
         System.out.println("1. menghitung luas dan keliling persegi panjang");
         System.out.println("2. menghitung luas dan keliling lingkaran");
         System.out.println("3. menghitung luas dan keliling segitiga");
@@ -48,20 +51,20 @@ public class Praktikum0
                     hasilLuas = radius * radius * PI;
                     break;
                 case 3:
-                    try {
-                        
+                    try
+                    {
+                        System.out.printf("%s%-2c","Masukkan a",':');
+                        a = Integer.parseInt(input.nextLine());
+                        System.out.printf("%s%-2c","Masukkan b",':');
+                        b = Integer.parseInt(input.nextLine());
+                        System.out.printf("%s%-2c","Masukkan r",':');
+                        c = Integer.parseInt(input.nextLine());
                     }
                     catch (NumberFormatException e)
                     {
-                        // TODO: handle exception
+                        return;
                     }
                     namaPilihan = "segitiga";
-                    System.out.printf("%s%-2c","Masukkan a",':');
-                    int a = Integer.parseInt(input.nextLine());
-                    System.out.printf("%s%-2c","Masukkan b",':');
-                    int b = Integer.parseInt(input.nextLine());
-                    System.out.printf("%s%-2c","Masukkan r",':');
-                    int c = Integer.parseInt(input.nextLine());
                     hasilKeliling = a + b + c;
                     hasilLuas = a * b;
                     break;
