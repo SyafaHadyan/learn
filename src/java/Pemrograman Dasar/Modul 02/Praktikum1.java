@@ -11,6 +11,7 @@ public class Praktikum1
         Scanner input = new Scanner(System.in);
         System.out.printf("%-17s%-2c",outBerat,':');
         double beratBadan = Double.parseDouble(input.nextLine());
+        System.out.printf("%-17s%-2c",outTinggi,':');
         double tinggiBadan = Double.parseDouble(input.nextLine());
     }
 }
