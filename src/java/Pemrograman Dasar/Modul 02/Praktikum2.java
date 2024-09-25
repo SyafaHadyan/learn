@@ -31,6 +31,10 @@ public class Praktikum2
             {
                 valid = true;
             }
+            else
+            {
+                valid = false;
+            }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
                 upahTotal = upahPerJam * jamKerja;
