@@ -12,7 +12,6 @@ public class Praktikum2
         int dendaPerJam = 0;
         int upahTotal = 0;
         int dendaTotal = 0;
-        input.close();
         while (true)
         {
             System.out.printf("%-20s%-2c","Jam kerja",':');
