@@ -8,6 +8,10 @@ public class N_04_ConditionalAssignment
         String password = "";
         String cekNama = "";
         String cekPassword = "";
+        String headerFooter = "============================================================";
+        String leftBorder = "|";
+        double nim = 245150207111047.0;
+        double IPK = 3.98;
         Scanner input = new Scanner(System.in);
         System.out.printf("%-30s%-2c","Masukkan nama anda",':');
         nama = input.nextLine();
@@ -18,18 +22,11 @@ public class N_04_ConditionalAssignment
         System.out.printf("%-30s%-2c","Masukkan ulang password anda",':');
         cekPassword = input.nextLine();
         input.close();
-        String headerFooter = "============================================================";
-        String leftBorder = "|";
-        int BorderNama = 59 - nama.length();
-        String rightBorderNama = "%" + BorderNama + "s";
-        double nim = 245150207111047.0;
-        double IPK = 3.98;
         if (nama.equals(cekNama) && password.equals(cekPassword))
         {
             System.out.printf("\n%.20s%c%s%c%.20s\n",headerFooter,' ',"Biodata Mahasiswa",' ',headerFooter);
             System.out.printf("%s\n",leftBorder,leftBorder);
-            System.out.printf("%-5s%-30s%-2c%s",leftBorder,"Nama mahasiswa",':',nama);
-            System.out.printf(rightBorderNama);
+            System.out.printf("%-5s%-30s%-2c%s\n",leftBorder,"Nama mahasiswa",':',nama);
             System.out.printf("%-5s%-30s%-2c%s\n",leftBorder,"Password",':',password);
             System.out.printf("%-5s%-30s%-2c%.0f\n",leftBorder,"NIM mahasiswa",':',nim);
             System.out.printf("%-5s%-30s%-2c%.2f\n",leftBorder,"IPK mahasiswa",':',IPK);
