@@ -28,7 +28,6 @@ public class Praktikum0
             switch (pilihanKonversi)
             {
                 case 1:
-                    namaPilihan = "persegi panjang";
                     try
                     {
                         System.out.printf("%s%-2c","Masukkan sisi 1",':');
@@ -40,6 +39,7 @@ public class Praktikum0
                     {
                         return;
                     }
+                    namaPilihan = "persegi panjang";
                     hasilKeliling = (sisiSatu * 2) + (sisiDua * 2);
                     hasilLuas = sisiSatu * sisiDua;
                     break;
