@@ -20,6 +20,7 @@ public class Praktikum0
                 int sisiSatu = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan sisi 2",':');
                 int sisiDua = Integer.parseInt(input.nextLine());
+                hasilke
                 break;
             case 2:
                 break;
@@ -32,7 +33,7 @@ public class Praktikum0
         }
         if (outputHasilPerhitungan)
         {
-            System.out.printf("%s%-2c%d","Keliling",':',hasilLuas);
+            System.out.printf("%s%-2c%d","Keliling",':',hasilKeliling);
         }
     }
 }
