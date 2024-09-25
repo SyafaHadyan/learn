@@ -17,26 +17,26 @@ public class Praktikum0
         switch (pilihanKonversi)
         {
             case 1:
-                System.out.printf("%s%-2c\n","Masukkan sisi 1",':');
+                System.out.printf("%s%-2c","Masukkan sisi 1",':');
                 int sisiSatu = Integer.parseInt(input.nextLine());
-                System.out.printf("%s%-2c\n","Masukkan sisi 2",':');
+                System.out.printf("%s%-2c","Masukkan sisi 2",':');
                 int sisiDua = Integer.parseInt(input.nextLine());
                 hasilKeliling = (sisiSatu * 2) + (sisiDua * 2);
                 hasilLuas = sisiSatu * sisiDua;
                 break;
             case 2:
-                System.out.printf("%s%-2c\n","Masukkan radius",':');
+                System.out.printf("%s%-2c","Masukkan radius",':');
                 int radius = Integer.parseInt(input.nextLine());
                 hasilKeliling = 2 * PI * radius;
                 hasilLuas = radius * radius * PI;
                 break;
             case 3:
-                System.out.printf("%s%-2c\n","Masukkan a",':');
+                System.out.printf("%s%-2c","Masukkan a",':');
                 int a = Integer.parseInt(input.nextLine());
-                System.out.printf("%s%-2c\n","Masukkan b",':');
+                System.out.printf("%s%-2c","Masukkan b",':');
                 int b = Integer.parseInt(input.nextLine());
-                System.out.printf("%s%-2c\n","Masukkan r",':');
-                int c = Integer.parseInt(input.nextLine());
+                System.out.printf("%s%-2c","Masukkan r",':');
+                int      = Integer.parseInt(input.nextLine());
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
