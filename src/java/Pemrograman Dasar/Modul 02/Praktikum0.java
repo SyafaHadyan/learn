@@ -11,6 +11,7 @@ public class Praktikum0
         System.out.printf("%s%-2c","Pilihan anda",':');
         int pilihanKonversi = Integer.parseInt(input.nextLine());
         int hasilLuasDanKeliling = 0;
+        boolean outputHasilPerhitungan = false;
         switch (pilihanKonversi)
         {
             case 1:
@@ -24,6 +25,7 @@ public class Praktikum0
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
+                outputHasilPerhitungan = false;
                 break;
         }
     }
