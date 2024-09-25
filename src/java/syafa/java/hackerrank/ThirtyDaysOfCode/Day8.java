@@ -6,5 +6,9 @@ public class Day8
     {
         Scanner input = new Scanner(System.in);
         int phoneBookInput = Integer.parseInt(input.nextLine());
+        for (int i = 1; i <= phoneBookInput; i++)
+        {
+            
+        }
     }
 }
