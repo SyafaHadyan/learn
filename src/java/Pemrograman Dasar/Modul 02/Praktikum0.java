@@ -24,6 +24,8 @@ public class Praktikum0
                 hasilLuas = sisiSatu * sisiDua;
                 break;
             case 2:
+                System.out.printf("%s%-2c\n","Masukkan radius",':');
+                int radius = Integer.parseInt(input.nextLine());
                 break;
             case 3:
                 break;
