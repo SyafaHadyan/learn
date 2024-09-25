@@ -8,12 +8,9 @@ public class N_10_NestedIf
         System.out.print("masukkan nilai: ");
         int nilai = in.nextInt();
         in.close();
-        if (nilai * 2 < 50)
+        if (nilai * 2 < 50 && nilai <= 20)
         {
             nilai += 10;
-        }
-        if (nilai <= 20)
-        {
             System.out.println("Filkom");
             if (nilai % 2 == 1)
             {
