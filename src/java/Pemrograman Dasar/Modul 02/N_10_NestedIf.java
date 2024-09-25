@@ -23,6 +23,11 @@ public class N_10_NestedIf
             System.out.println("PTIIK");
             System.out.println("UB");
         }
+        else if (nilai == 20)
+        {
+            System.out.println("Filkom");
+            System.out.println("Brawijaya");
+        }
         else
         {
             System.out.println("PTIIK");
