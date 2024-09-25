@@ -12,6 +12,7 @@ public class Praktikum0
         int pilihanKonversi = Integer.parseInt(input.nextLine());
         double hasilKeliling = 0;
         double hasilLuas = 0;
+        String namaPilihan = "Bentuk";
         final double PI = 3.14; // Ganti untuk menambahkan presisi
         final String unitKeliling = "cm"; // Ganti untuk unit lain
         final String unitLuas = "cm2"; // Ganti untuk unit lain
@@ -49,8 +50,8 @@ public class Praktikum0
         }
         if (outputHasilPerhitungan)
         {
-            System.out.printf("%s%-2c%.3f%c%s\n","Keliling",':',hasilKeliling,' ',unitKeliling);
-            System.out.printf("%s%-2c%.3f%c%s","Keliling",':',hasilLuas,' ',unitLuas);
+            System.out.printf("%s%c%s%c%-2c%.3f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
+            System.out.printf("%s%c%s%c%-2c%.3f%c%s","Keliling",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
         }
     }
 }
