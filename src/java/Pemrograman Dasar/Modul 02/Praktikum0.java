@@ -48,6 +48,13 @@ public class Praktikum0
                     hasilLuas = radius * radius * PI;
                     break;
                 case 3:
+                    try {
+                        
+                    }
+                    catch (NumberFormatException e)
+                    {
+                        // TODO: handle exception
+                    }
                     namaPilihan = "segitiga";
                     System.out.printf("%s%-2c","Masukkan a",':');
                     int a = Integer.parseInt(input.nextLine());
