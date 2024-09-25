@@ -16,9 +16,9 @@ public class Praktikum0
         switch (pilihanKonversi)
         {
             case 1:
-                System.out.printf("%s%-2c","Masukkan sisi 1",':');
+                System.out.printf("%s%-2c\n","Masukkan sisi 1",':');
                 int sisiSatu = Integer.parseInt(input.nextLine());
-                System.out.printf("%s%-2c","Masukkan sisi 2",':');
+                System.out.printf("%s%-2c\n","Masukkan sisi 2",':');
                 int sisiDua = Integer.parseInt(input.nextLine());
                 hasilKeliling = (sisiSatu * 2) + (sisiDua * 2);
                 hasilLuas = sisiSatu * sisiDua;
