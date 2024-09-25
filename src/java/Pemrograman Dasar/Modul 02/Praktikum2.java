@@ -6,7 +6,6 @@ public class Praktikum2
     {
         Scanner input = new Scanner(System.in);
         String mataUang = "Rp.";
-        int jamKerja = 0;
         int upahPerJam = 5000;
         int lemburPerJam = 6000;
         int dendaPerJam = 1000;
@@ -14,6 +13,7 @@ public class Praktikum2
         boolean valid = true;
         while (ulang)
         {
+            int jamKerja = 0;
             int upahTotal = 0;
             int lemburTotal = 0;
             int dendaTotal = 0;
