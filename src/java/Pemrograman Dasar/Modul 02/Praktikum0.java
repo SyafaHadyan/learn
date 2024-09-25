@@ -10,14 +10,16 @@ public class Praktikum0
         System.out.println("1. menghitung luas dan keliling segitiga");
         System.out.printf("%s%-2c","Pilihan anda",':');
         int pilihanKonversi = Integer.parseInt(input.nextLine());
-        int hasilLuasDanKeliling = 0;
-        boolean outputHasilPerhitungan = false;
+        int hasilKeliling = 0;
+        int hasilLuas = 0;
+        boolean outputHasilPerhitungan = true;
         switch (pilihanKonversi)
         {
             case 1:
                 System.out.printf("%s%-2c","Masukkan sisi 1",':');
-                
+                int sisiSatu = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan sisi 2",':');
+                int sisiDua = Integer.parseInt(input.nextLine());
                 break;
             case 2:
                 break;
@@ -27,6 +29,10 @@ public class Praktikum0
                 System.out.print("Data tak ditemukan, program dihentikan ...");
                 outputHasilPerhitungan = false;
                 break;
+        }
+        if (outputHasilPerhitungan)
+        {
+            System.out.printf("%s%-2c%d","Keliling",':',hasilLuas);
         }
     }
 }
