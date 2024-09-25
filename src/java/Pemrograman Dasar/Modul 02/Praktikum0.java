@@ -4,7 +4,6 @@ public class Praktikum0
 {
     public static void main(String[] args)
     {
-        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         double hasilKeliling = 0;
         double hasilLuas = 0;
@@ -19,7 +18,7 @@ public class Praktikum0
         int radius = 0;
         int a = 0;
         int b = 0;
-        int c = 0;
+        int r = 0;
         System.out.println("1. menghitung luas dan keliling persegi panjang");
         System.out.println("2. menghitung luas dan keliling lingkaran");
         System.out.println("3. menghitung luas dan keliling segitiga");
@@ -32,6 +31,7 @@ public class Praktikum0
             }
             catch (NumberFormatException e)
             {
+                input.close();
                 return;
             }
             switch (pilihanKonversi)
@@ -46,6 +46,7 @@ public class Praktikum0
                     }
                     catch (NumberFormatException e)
                     {
+                        input.close();
                         return;
                     }
                     namaPilihan = "persegi panjang";
@@ -60,6 +61,7 @@ public class Praktikum0
                     }
                     catch (NumberFormatException e)
                     {
+                        input.close();
                         return;
                     }
                     namaPilihan = "lingkaran";;
@@ -74,10 +76,11 @@ public class Praktikum0
                         System.out.printf("%s%-2c","Masukkan b",':');
                         b = Integer.parseInt(input.nextLine());
                         System.out.printf("%s%-2c","Masukkan r",':');
-                        c = Integer.parseInt(input.nextLine());
+                        r = Integer.parseInt(input.nextLine());
                     }
                     catch (NumberFormatException e)
                     {
+                        input.close();
                         return;
                     }
                     namaPilihan = "segitiga";
@@ -92,5 +95,6 @@ public class Praktikum0
             System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
             System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
         }
+        input.close();
     }
 }
