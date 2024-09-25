@@ -13,8 +13,8 @@ public class Praktikum0
         double hasilKeliling = 0;
         double hasilLuas = 0;
         final double PI = 3.14; // Ganti untuk menambahkan presisi
-        final String unitKeliling = "cm";
-        final String unitLuas = "cm2";
+        final String unitKeliling = "cm"; // Ganti untuk unit lain
+        final String unitLuas = "cm2"; // Ganti untuk unit lain
         boolean outputHasilPerhitungan = true;
         switch (pilihanKonversi)
         {
