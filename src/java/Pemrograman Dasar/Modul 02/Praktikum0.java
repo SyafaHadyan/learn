@@ -36,7 +36,7 @@ public class Praktikum0
                 System.out.printf("%s%-2c","Masukkan b",':');
                 int b = Integer.parseInt(input.nextLine());
                 System.out.printf("%s%-2c","Masukkan r",':');
-                int      = Integer.parseInt(input.nextLine());
+                int c = Integer.parseInt(input.nextLine());
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
@@ -45,7 +45,8 @@ public class Praktikum0
         }
         if (outputHasilPerhitungan)
         {
-            System.out.printf("%s%-2c%.3f","Keliling",':',hasilKeliling);
+            System.out.printf("%s%-2c%.3f\n","Keliling",':',hasilKeliling);
+            System.out.printf("%s%-2c%.3f","Keliling",':',hasilLuas);
         }
     }
 }
