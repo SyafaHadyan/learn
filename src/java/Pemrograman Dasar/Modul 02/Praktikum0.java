@@ -13,6 +13,8 @@ public class Praktikum0
         final String unitKeliling = "cm";
         final String unitLuas = unitKeliling + '2';
         boolean inputValid = true;
+        int sisiSatu = 0;
+        int sisiDua = 0;
         System.out.println("1. menghitung luas dan keliling persegi panjang");
         System.out.println("2. menghitung luas dan keliling lingkaran");
         System.out.println("3. menghitung luas dan keliling segitiga");
@@ -24,10 +26,17 @@ public class Praktikum0
             {
                 case 1:
                     namaPilihan = "persegi panjang";
-                    System.out.printf("%s%-2c","Masukkan sisi 1",':');
-                    int sisiSatu = Integer.parseInt(input.nextLine());
-                    System.out.printf("%s%-2c","Masukkan sisi 2",':');
-                    int sisiDua = Integer.parseInt(input.nextLine());
+                    try
+                    {
+                        System.out.printf("%s%-2c","Masukkan sisi 1",':');
+                        sisiSatu = Integer.parseInt(input.nextLine());
+                        System.out.printf("%s%-2c","Masukkan sisi 2",':');
+                        sisiDua = Integer.parseInt(input.nextLine());   
+                    }
+                    catch (NumberFormatException e)
+                    {
+                        return;
+                    }
                     hasilKeliling = (sisiSatu * 2) + (sisiDua * 2);
                     hasilLuas = sisiSatu * sisiDua;
                     break;
