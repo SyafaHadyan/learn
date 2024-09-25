@@ -7,7 +7,7 @@ public class Day8
         Scanner input = new Scanner(System.in);
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
-        int phoneNumber[] = new int[phoneBookInput];
+        int phoneNumberArray[] = new int[phoneBookInput];
         for (int i = 1; i <= phoneBookInput; i++)
         {
             String name = input.next();
