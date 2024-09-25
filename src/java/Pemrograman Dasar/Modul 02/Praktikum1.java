@@ -24,16 +24,17 @@ public class Praktikum1
             }
             else if (IMT > 18.5 && IMT <= 25)
             {
-                
+                System.out.printf("%s%c%c%c%.2f%c%s","IMT",' ','=',' ',IMT,' ',"Termasuk normal");
             }
             else if (IMT > 25 && IMT <= 30)
             {
-
+                System.out.printf("%s%c%c%c%.2f%c%s","IMT",' ','=',' ',IMT,' ',"Termasuk gemuk");
             }
             else if (IMT > 30)
             {
-
+                System.out.printf("%s%c%c%c%.2f%c%s","IMT",' ','=',' ',IMT,' ',"Termasuk kegemukan");
             }
+            System.out.print("\n");
         }
     }
 }
