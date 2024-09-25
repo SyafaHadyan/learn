@@ -14,12 +14,16 @@ public class N_04_ConditionalAssignment
         System.out.printf("%-30s%-2c","Masukkan ulang password anda",':');
         String cekPassword = input.nextLine();
         input.close();
+        String headerFooter = "============================================================";
+        double nim = 245150207111047.0;
+        double IPK = 3.98;
         if (nama.equals(cekNama) && password.equals(cekPassword))
         {
-            System.out.printf("%.30s\n","==============================");
-            System.out.printf("\n%-30s%-2c%s\n","Nama anda adalah",':',nama);
-            System.out.printf("%-30s%-2c%s\n","Password anda adalah",':',password);
-            System.out.printf("%.30s\n","==============================");
+            System.out.printf("%.20s%c%s%c%.20s\n",headerFooter,' ',"Biodata Mahasiswa",' ',headerFooter);
+            System.out.printf("\n%-30s%-2c%s\n","Nama mahasiswa",':',nama);
+            System.out.printf("%-30s%-2c%s\n","Password",':',password);
+            System.out.printf("%-30s%-2c%.0f\n","NIM mahasiswa",':',nim);
+            System.out.printf("\n%.59s\n",headerFooter);
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
         {
