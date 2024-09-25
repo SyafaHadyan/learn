@@ -21,18 +21,20 @@ public class Praktikum2
             if (jamKerja >= 50 && jamKerja <= 60)
             {
                 upahTotal = upahPerJam * jamKerja;
+                total = upahTotal + lemburTotal - dendaTotal;
             }
             else if (jamKerja > 60)
             {
                 upahTotal = (upahPerJam * 50);
                 lemburTotal = lemburPerJam * (jamKerja - 60);
+                total = upahTotal + lemburTotal - dendaTotal;
             }
             else if (jamKerja < 50)
             {
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * jamKerja;
+                total = upahTotal + lemburTotal - dendaTotal;
             }
-            total = upahTotal + lemburTotal - dendaTotal;
             System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
             System.out.printf("%-20s%c%c%s%c%d\n","Lembur",'=',' ',mataUang,' ',lemburTotal);
             System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
