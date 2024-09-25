@@ -13,6 +13,7 @@ public class Praktikum2
         int upahTotal = 0;
         int lemburTotal = 0;
         int dendaTotal = 0;
+        int total = 0;
         while (true)
         {
             System.out.printf("%-20s%-2c","Jam kerja",':');
@@ -30,10 +31,12 @@ public class Praktikum2
                 upahTotal = upahPerJam * jamKerja;
                 dendaTotal = dendaPerJam * jamKerja;
             }
+            total = upahTotal + lemburTotal - dendaTotal;
             System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
             System.out.printf("%-20s%c%c%s%c%d\n","Lembur",'=',' ',mataUang,' ',lemburTotal);
             System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
             System.out.println("---------------------");
+            System.out.printf("%-20s%c%c%s%c%d\n","Total",'=',' ',mataUang,' ',total);
         }
     }
 }
