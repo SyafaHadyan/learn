@@ -63,5 +63,6 @@ public class Praktikum2
                 ulang = true;
             }
         }
+        input.close();
     }
 }
