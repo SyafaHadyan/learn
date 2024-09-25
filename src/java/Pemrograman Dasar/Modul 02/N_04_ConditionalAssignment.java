@@ -23,7 +23,7 @@ public class N_04_ConditionalAssignment
             System.out.printf("%-30s%-2c%s\n","Nama mahasiswa",':',nama);
             System.out.printf("%-30s%-2c%s\n","Password",':',password);
             System.out.printf("%-30s%-2c%.0f\n","NIM mahasiswa",':',nim);
-            System.out.printf("%-30s%-2c%.0f\n","IPK mahasiswa",':',IPK);
+            System.out.printf("%-30s%-2c%.2f\n","IPK mahasiswa",':',IPK);
             System.out.printf("\n%.59s\n",headerFooter);
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
