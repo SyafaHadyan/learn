@@ -12,29 +12,22 @@ public class N_10_NestedIf
         {
             nilai += 10;
         }
-        if (nilai <= 20)
+        if (nilai <= 20 && nilai % 2 == 1)
         {
             System.out.println("Filkom");
-            if (nilai % 2 == 1)
-            {
-                System.out.println("UB");
-            }
-            else
-            {
-                System.out.println("Brawijaya");
-            }
+            System.out.println("UB");
+
+        }
+        else if (nilai % 2 == 1)
+        {
+            System.out.println("PTIIK");
+            System.out.println("UB");
         }
         else
         {
             System.out.println("PTIIK");
-            if (nilai % 2 == 1)
-            {
-                System.out.println("UB");
-            }
-            else
-            {
-                System.out.println("Brawijaya");
-            }
+            System.out.println("Brawijaya");
         }
+
     }
 }
