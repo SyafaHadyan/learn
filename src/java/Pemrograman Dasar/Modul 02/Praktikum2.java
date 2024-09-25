@@ -10,7 +10,9 @@ public class Praktikum2
         int upahPerJam = 5000;
         int lemburPerJam = 6000;
         int dendaPerJam = 1000;
-        while (true)
+        boolean ulang = true;
+        boolean valid = true;
+        while (ulang)
         {
             int upahTotal = 0;
             int lemburTotal = 0;
@@ -23,7 +25,7 @@ public class Praktikum2
             }
             catch (NumberFormatException e)
             {
-                break;
+                valid = false;
             }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
@@ -42,11 +44,15 @@ public class Praktikum2
                 dendaTotal = dendaPerJam * (50 - jamKerja);
                 total = upahTotal + lemburTotal - dendaTotal;
             }
-            System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
-            System.out.printf("%-20s%c%c%s%c%d\n","Lembur",'=',' ',mataUang,' ',lemburTotal);
-            System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
-            System.out.println("---------------------");
-            System.out.printf("%-20s%c%c%s%c%d\n\n","Total",'=',' ',mataUang,' ',total);
+            if (valid)
+            {
+                System.out.printf("%-20s%c%c%s%c%d\n","Upah",'=',' ',mataUang,' ',upahTotal);
+                System.out.printf("%-20s%c%c%s%c%d\n","Lembur",'=',' ',mataUang,' ',lemburTotal);
+                System.out.printf("%-20s%c%c%s%c%d\n","Denda",'=',' ',mataUang,' ',dendaTotal);
+                System.out.println("---------------------");
+                System.out.printf("%-20s%c%c%s%c%d\n\n","Total",'=',' ',mataUang,' ',total);
+            }
+            else if (!valid)
         }
     }
 }
