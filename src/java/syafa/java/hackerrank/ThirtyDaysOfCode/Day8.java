@@ -19,7 +19,7 @@ public class Day8
         for (int i = 0; i < phoneBookInput; i++)
         {
             String searchName = input.nextLine();
-            Arrays.asList(nameArray).contains(searchName);
+            int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
         }
     }
 }
