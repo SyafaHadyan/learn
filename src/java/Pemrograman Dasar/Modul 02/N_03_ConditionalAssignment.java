@@ -12,7 +12,7 @@ public class N_03_ConditionalAssignment
         String namaMahasiswa = "Syafa Hadyan Rasendriya";
         double nimMahasiswa = 245150207111047d;
         String inputNamaMahasiswa = "";
-        String inputNimMahasiswa = "";
+        double inputNimMahasiswa = 0d;
         while (cekInput)
         {
             System.out.printf("%-20s%-2c","Masukkan nama anda",':');
@@ -29,16 +29,9 @@ public class N_03_ConditionalAssignment
         cekInput = true;
         while (cekInput)
         {
-            System.out.printf("%-20s%-2c","Masukkan nim anda",':');
-            nimMahasiswa = input.nextLine();
-            if (nimMahasiswa.length() == 15)
+            if (inputNimMahasiswa == nimMahasiswa)
             {
                 cekInput = false;
-            }
-            else if (nimMahasiswa.length() != 15)
-            {
-                System.out.printf("%s%c%c%s%c%c%s\n","Nim yang anda masukkan",' ','[',nimMahasiswa,']',' ',"Salah, harap masukkan nim kembali dan cek jumlah digit nim anda");
-                cekInput = true;
             }
         }
         input.close();
