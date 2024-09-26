@@ -17,7 +17,7 @@ public class N_03_ConditionalAssignment
         {
             System.out.printf("%-20s%-2c","Masukkan nama anda",':');
             inputNamaMahasiswa = input.nextLine();
-            if (inputNamaMahasiswa == namaMahasiswa)
+            if (inputNamaMahasiswa.equals(namaMahasiswa))
             {
                 cekInput = false;
             }
