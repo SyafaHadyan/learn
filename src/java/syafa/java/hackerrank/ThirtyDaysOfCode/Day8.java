@@ -26,6 +26,7 @@ public class Day8
             output = nameArray[nameMatch];
             if (i == 0)
             {
+                output = nameArray[nameMatch];
                 finalOutput = nameArray[nameMatch];
             }
             else if (i > 1)
