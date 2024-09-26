@@ -23,16 +23,9 @@ public class Day8
             String searchName = input.nextLine();
             int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
             int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
-            if (i > 0)
-            {
-                output = nameArray[nameMatch];
-                finalOutput = nameArray[nameMatch];
-            }
-            else if (i > 0)
-            {
-                finalOutput = output + "\n" + nameArray[nameMatch];
-            }
+            output = nameArray[nameMatch];
+            finalOutput = nameArray[nameMatch];
         }
-        System.out.print(finalOutput);
+        //System.out.print(finalOutput);
     }
 }
