@@ -1,7 +1,10 @@
 import java.util.*;
-
 public class N_04_ConditionalAssignment
 {
+    static void ipkMahasiswa()
+    {
+
+    }
     public static void main(String[] args)
     {
         String nama = "";
