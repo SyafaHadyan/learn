@@ -8,6 +8,7 @@ public class N_07_IfElse
         while (ulang)
         {
             int nilai = 0;
+            @SuppressWarnings("resource")
             Scanner in = new Scanner(System.in);
             System.out.printf("%-40s%-2c","Masukkan nilai anda (Q) untuk keluar",':');
             try
