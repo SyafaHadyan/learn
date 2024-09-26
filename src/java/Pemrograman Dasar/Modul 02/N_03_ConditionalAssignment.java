@@ -2,6 +2,11 @@ import java.util.*;
 
 public class N_03_ConditionalAssignment
 {
+    class dataMahasiswa
+    {
+        String namaMahasiswa = "Syafa Hadyan Rasendriya";
+        double nimMahasiswa = 245150207111047d;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
