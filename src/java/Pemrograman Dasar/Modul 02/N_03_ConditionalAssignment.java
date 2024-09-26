@@ -33,6 +33,10 @@ public class N_03_ConditionalAssignment
             {
                 cekInput = false;
             }
+            else
+            {
+                System.out.printf("%s%c%c%.0f%c%c%s\n","NIM yang anda masukkan",' ','[',inputNimMahasiswa,']',' ',"Salah, harap masukkan NIM anda kembali");
+            }
         }
         input.close();
         System.out.printf("\n%-20s%-2c%s\n","Nama anda adalah",':',namaMahasiswa);
