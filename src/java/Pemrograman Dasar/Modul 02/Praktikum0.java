@@ -21,7 +21,7 @@ public class Praktikum0
         int r = 0;
         System.out.println("1. menghitung luas dan keliling persegi panjang");
         System.out.println("2. menghitung luas dan keliling lingkaran");
-        System.out.println("3. menghitung luas dan keliling segitiga");
+        System.out.println("3. menghitung luas dan keliling segitiga" + "\n");
         while(inputValid)
         {
             try
@@ -92,8 +92,8 @@ public class Praktikum0
                     input.close();
                     return;
             }
-            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+            System.out.printf("\n%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
+            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
         }
         input.close();
     }
