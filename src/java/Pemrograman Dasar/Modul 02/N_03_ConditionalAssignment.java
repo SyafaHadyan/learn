@@ -29,6 +29,8 @@ public class N_03_ConditionalAssignment
         cekInput = true;
         while (cekInput)
         {
+            System.out.printf("%-20s%-2c","Masukkan NIM anda",':');
+            inputNimMahasiswa = Double.parseDouble(input.nextLine());
             if (inputNimMahasiswa == nimMahasiswa)
             {
                 cekInput = false;
