@@ -34,6 +34,7 @@ public class Day8
                 finalOutput = output + nameArray[nameMatch];
             }
         }
+        System.out.println(output);
         System.out.print(finalOutput);
     }
 }
