@@ -21,17 +21,17 @@ public class N_07_IfElse
                 return;
             }
             if (nilai > 60)
-            {
+
                 System.out.println("Anda lulus");
-            }
-            else if (nilai >= 40)
-            {
+
                 System.out.println("Nilai kurang!");
-            }
-            else
-            {
+
+                System.out.println("Anda harus mengulang !");
+
+            //else
+
                 System.out.println("Anda gagal");
-            }
+
         }
     }
 }
