@@ -7,12 +7,12 @@ public class N_03_ConditionalAssignment
         Scanner input = new Scanner(System.in);
         final String s = "Filkom";
         String val = (s.equalsIgnoreCase("Filkom"))?"Brawijaya": "null";
-        System.out.println(s+" "+val);
         boolean cekInput = true;
         final String namaMahasiswa = "Syafa Hadyan Rasendriya";
         final double nimMahasiswa = 245150207111047d;
         String inputNamaMahasiswa = "";
         double inputNimMahasiswa = 0d;
+        System.out.println(s+" "+val);
         while (cekInput)
         {
             System.out.printf("%-20s%-2c","Masukkan nama anda",':');
