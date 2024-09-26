@@ -30,7 +30,7 @@ public class Day8
             }
             else if (i > 0)
             {
-                finalOutput = output + nameArray[nameMatch];
+                finalOutput = output + "\n" + nameArray[nameMatch];
             }
         }
         System.out.println(output);
