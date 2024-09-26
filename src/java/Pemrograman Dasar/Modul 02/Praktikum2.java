@@ -25,7 +25,8 @@ public class Praktikum2
             }
             catch (NumberFormatException e)
             {
-                
+                input.close();
+                return;
             }
             if (jamKerja <= 0)
             {
