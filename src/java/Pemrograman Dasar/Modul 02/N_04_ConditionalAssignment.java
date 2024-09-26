@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.concurrent.*;
 public class N_04_ConditionalAssignment
 {
     static void ipkMahasiswa()
