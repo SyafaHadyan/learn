@@ -9,6 +9,8 @@ public class Day8
         String nameArray[] = new String[phoneBookInput];
         int phoneNumberArray[] = new int[phoneBookInput];
         String result[] = new String[phoneBookInput];
+        int nameMatch = 0;
+        int phoneNumberMatch = 0;
         for (int i = 0; i < phoneBookInput; i++)
         {
             String name = input.next();
@@ -17,11 +19,12 @@ public class Day8
             phoneNumberArray[i] = phoneNumber;
             input.nextLine();
         }
+        input.close();
         for (int i = 0; i < phoneBookInput; i++)
         {
             String searchName = input.nextLine();
-            int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
-            int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
+            nameMatch = Arrays.asList(nameArray).indexOf(searchName);
+            phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
             try
             {
                 result[i] = nameMatch + "=" + phoneNumberMatch;
@@ -31,6 +34,7 @@ public class Day8
                 result[i] = "Not found";
             }
         }
+        System.out.println(result[1]);
         for (int i = 0; i < phoneBookInput; i++)
         {
             System.out.println(result[i]);
