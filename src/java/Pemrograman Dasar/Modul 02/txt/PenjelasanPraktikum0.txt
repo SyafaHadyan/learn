@@ -1,0 +1,1 @@
+println 3 pilihan bentuk yang akan dihitung keliling dan luasnya, user akan diminta untuk memasukkan value dari bentuk yang akan dihitung dan program akan terus mengulang hingga input dari user bukan angka.
