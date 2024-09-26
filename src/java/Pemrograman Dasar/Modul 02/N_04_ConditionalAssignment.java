@@ -8,7 +8,7 @@ public class N_04_ConditionalAssignment
         String password = "";
         String cekNama = "";
         String cekPassword = "";
-        String headerFooter = "=================================================================";
+        String headerFooter = "======================================================================";
         final String leftBorder = "|";
         final double nim = 245150207111047.0;
         double IPK = ThreadLocalRandom.current().nextDouble(3.50,4.00);
@@ -31,7 +31,7 @@ public class N_04_ConditionalAssignment
             System.out.printf("%-5s%-30s%-2c%.0f\n",leftBorder,"NIM mahasiswa",':',nim);
             System.out.printf("%-5s%-30s%-2c%.2f\n",leftBorder,"IPK mahasiswa",':',IPK);
             System.out.printf("%s\n",leftBorder);
-            System.out.printf("%.64s\n",headerFooter);
+            System.out.printf("%.69s\n",headerFooter);
         }
         else if (!nama.equals(cekNama) || !password.equals(cekPassword))
         {
