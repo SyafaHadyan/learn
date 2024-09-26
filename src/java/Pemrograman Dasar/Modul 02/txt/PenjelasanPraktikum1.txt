@@ -1,0 +1,1 @@
+User akan diminta untuk input berat badan dan input tinggi badan. Kemudian dihitung dengan berat badan / (tinggi badan * tinggi badan). output kurus jika IMT <= 18.5, normal jika IMT > 18.5 && IMT <= 25, gemuk jika IMT > 25 && IMT <= 30, kegemukan jika IMT > 30. Program akan terus mengulang hingga yang dimasukkan bukan angka.
