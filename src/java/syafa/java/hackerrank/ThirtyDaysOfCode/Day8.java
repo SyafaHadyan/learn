@@ -26,19 +26,11 @@ public class Day8
             int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
             try
             {
-                if (i == 0 || phoneBookInput == 1)
-                {
-                    output = nameArray[0];
-                    //finalOutput = nameArray[0];
-                }
-                else if (i > 0)
-                {
-                    finalOutput = output + "\n" + nameArray[nameMatch];
-                }
+                result[i] = nameMatch + "=" + phoneNumberMatch;
             }
-            catch (Exception e)
+            catch (ArrayIndexOutOfBoundsException e)
             {
-                output = "Not found";
+                result[i] = "Not found";
             }
         }
         System.out.print(finalOutput);
