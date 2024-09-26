@@ -2,10 +2,6 @@ import java.util.*;
 import java.util.concurrent.*;
 public class N_04_ConditionalAssignment
 {
-    static void ipkMahasiswa()
-    {
-
-    }
     public static void main(String[] args)
     {
         String nama = "";
@@ -13,9 +9,9 @@ public class N_04_ConditionalAssignment
         String cekNama = "";
         String cekPassword = "";
         String headerFooter = "============================================================";
-        String leftBorder = "|";
-        double nim = 245150207111047.0;
-        double IPK = 3.98;
+        final String leftBorder = "|";
+        final double nim = 245150207111047.0;
+        double IPK = ThreadLocalRandom.current().nextDouble(3.50,4.00);
         Scanner input = new Scanner(System.in);
         System.out.printf("%-30s%-2c","Masukkan nama anda",':');
         nama = input.nextLine();
