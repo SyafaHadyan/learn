@@ -2,11 +2,6 @@ import java.util.*;
 
 public class N_03_ConditionalAssignment
 {
-    class dataMahasiswa
-    {
-        String namaMahasiswa = "Syafa Hadyan Rasendriya";
-        double nimMahasiswa = 245150207111047d;
-    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -14,20 +9,21 @@ public class N_03_ConditionalAssignment
         String val = (s.equalsIgnoreCase("Filkom"))?"Brawijaya": "null";
         System.out.println(s+" "+val);
         boolean cekInput = true;
-        String namaMahasiswa = "";
-        String nimMahasiswa = "";
+        String namaMahasiswa = "Syafa Hadyan Rasendriya";
+        double nimMahasiswa = 245150207111047d;
+        String inputNamaMahasiswa = "";
+        String inputNimMahasiswa = "";
         while (cekInput)
         {
             System.out.printf("%-20s%-2c","Masukkan nama anda",':');
-            namaMahasiswa = input.nextLine();
-            if (namaMahasiswa == "")
+            inputNamaMahasiswa = input.nextLine();
+            if (inputNamaMahasiswa != namaMahasiswa)
             {
-                System.out.printf("%s%c%c%s%c%c%s\n","Nama yang anda masukkan",' ','[',namaMahasiswa,']',' ',"Salah, harap masukkan nama kembali");
-                cekInput = true;
+                cekInput = false;
             }
             else
             {
-                cekInput = false;
+                System.out.printf("%s%c%c%s%c%c%s\n","Nama yang anda masukkan",' ','[',inputNamaMahasiswa,']',' ',"Salah, harap masukkan nama lengkap anda kembali");
             }
         }
         cekInput = true;
