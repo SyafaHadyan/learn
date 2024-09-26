@@ -8,6 +8,8 @@ public class Day8
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
         int phoneNumberArray[] = new int[phoneBookInput];
+        String output = "";
+        String finalOutput = "";
         for (int i = 0; i < phoneBookInput; i++)
         {
             String name = input.next();
@@ -21,8 +23,15 @@ public class Day8
             String searchName = input.nextLine();
             int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
             int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
-            String output = nameArray[nameMatch];
-            String finalOutput = output + nameArray[nameMatch];
+            output = nameArray[nameMatch];
+            if (i > 0)
+            {
+                finalOutput = nameArray[nameMatch];
+            }
+            else if (i > 0)
+            {
+                finalOutput = output + "\n" + nameArray[nameMatch];
+            }
         }
     }
 }
