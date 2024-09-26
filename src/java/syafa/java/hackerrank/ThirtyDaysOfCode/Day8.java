@@ -23,17 +23,23 @@ public class Day8
             String searchName = input.nextLine();
             int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
             int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
-            if (i == 0 || phoneBookInput == 1)
+            try
             {
-                output = nameArray[0];
-                //finalOutput = nameArray[0];
+                if (i == 0 || phoneBookInput == 1)
+                {
+                    output = nameArray[0];
+                    //finalOutput = nameArray[0];
+                }
+                else if (i > 0)
+                {
+                    finalOutput = output + "\n" + nameArray[nameMatch];
+                }
             }
-            else if (i > 0)
+            catch (Exception e)
             {
-                finalOutput = output + "\n" + nameArray[nameMatch];
+                output = "Not found";
             }
         }
-        System.out.println(output);
         System.out.print(finalOutput);
     }
 }
