@@ -24,12 +24,12 @@ public class Day8
             int nameMatch = Arrays.asList(nameArray).indexOf(searchName);
             int phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
             output = nameArray[nameMatch];
-            if (i == 0)
+            if (i == 0 || phoneBookInput == 1)
             {
-                output = nameArray[nameMatch];
-                finalOutput = nameArray[nameMatch];
+                output = nameArray[0];
+                //finalOutput = nameArray[0];
             }
-            else if (i > 1)
+            else if (i > 0)
             {
                 finalOutput = output + nameArray[nameMatch];
             }
