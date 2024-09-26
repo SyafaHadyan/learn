@@ -10,7 +10,7 @@ public class N_06_IfElse
             int nilai = 0;
             @SuppressWarnings("resource")
             Scanner in = new Scanner(System.in);
-            System.out.printf("%-40s%-2c","Masukkan nilai anda (Q) untuk keluar",':');
+            System.out.printf("%-40s%-2c","Masukkan nilai anda",':');
             try
             {
                 nilai = in.nextInt();
