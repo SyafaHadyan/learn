@@ -5,12 +5,12 @@ public class N_03_ConditionalAssignment
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String s = "Filkom";
+        final String s = "Filkom";
         String val = (s.equalsIgnoreCase("Filkom"))?"Brawijaya": "null";
         System.out.println(s+" "+val);
         boolean cekInput = true;
-        String namaMahasiswa = "Syafa Hadyan Rasendriya";
-        double nimMahasiswa = 245150207111047d;
+        final String namaMahasiswa = "Syafa Hadyan Rasendriya";
+        final double nimMahasiswa = 245150207111047d;
         String inputNamaMahasiswa = "";
         double inputNimMahasiswa = 0d;
         while (cekInput)
