@@ -19,7 +19,6 @@ public class Day8
             phoneNumberArray[i] = phoneNumber;
             input.nextLine();
         }
-        input.close();
         for (int i = 0; i < phoneBookInput; i++)
         {
             String searchName = input.nextLine();
@@ -34,7 +33,7 @@ public class Day8
                 result[i] = "Not found";
             }
         }
-        System.out.println(result[1]);
+        input.close();
         for (int i = 0; i < phoneBookInput; i++)
         {
             System.out.println(result);
