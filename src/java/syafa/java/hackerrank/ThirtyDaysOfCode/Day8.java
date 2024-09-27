@@ -27,11 +27,8 @@ public class Day8
             {
                 result[i] = "Not found";
             }
-        }
-        input.close();
-        for (int i = 0; i < phoneBookInput; i++)
-        {
             System.out.println(result[i]);
         }
+        input.close();
     }
 }
