@@ -5,10 +5,10 @@ public class Praktikum2
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String mataUang = "Rp.";
-        int upahPerJam = 5000;
-        int lemburPerJam = 6000;
-        int dendaPerJam = 1000;
+        final String mataUang = "Rp.";
+        final int upahPerJam = 5000;
+        final int lemburPerJam = 6000;
+        final int dendaPerJam = 1000;
         int jamKerja = 0;
         int upahTotal = 0;
         int lemburTotal = 0;
