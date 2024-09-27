@@ -1,4 +1,4 @@
-//package java.syafa.java.hackerrank.KlinikKoding;
+package java.syafa.java.hackerrank.KlinikKoding;
 import java.util.*;
 
 public class MamPermen
