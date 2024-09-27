@@ -4,6 +4,7 @@ public class Day8
 {
     public static void main(String[] args)
     {
+        // TODO: Optimize the code
         Scanner input = new Scanner(System.in);
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
