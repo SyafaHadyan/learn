@@ -27,13 +27,13 @@ public class Day8
             result[i] = searchName;
             try
             {
-                result[i] = searchName + "=" + phoneNumber;
+                result[i] = searchName + "=" + phoneNumberArray[i];
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
                 result[i] = "Not found";
             }
-            if (searchName.equals(nameArray[i]))
+            if (!searchName.equals(nameArray[i]))
             {
                 result[i] = "Not found";
             }
