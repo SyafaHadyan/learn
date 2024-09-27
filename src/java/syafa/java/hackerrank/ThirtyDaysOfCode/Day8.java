@@ -22,15 +22,7 @@ public class Day8
         for (int i = 0; i < phoneBookInput; i++)
         {
             String searchName = input.nextLine();
-            result[i] = searchName;
-            try
-            {
-                result[i] = searchName + "=" + phoneNumberArray[i];
-            }
-            catch (ArrayIndexOutOfBoundsException e)
-            {
-                result[i] = "Not found";
-            }
+            result[i] = searchName + "=" + phoneNumberArray[i];
             if (!Arrays.stream(nameArray).anyMatch(searchName::equals))
             {
                 result[i] = "Not found";
