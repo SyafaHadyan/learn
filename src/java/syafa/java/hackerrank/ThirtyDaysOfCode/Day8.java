@@ -11,9 +11,6 @@ public class Day8
         String result[] = new String[phoneBookInput];
         String name = "";
         int phoneNumber = 0;
-        int nameMatch = 0;
-        int phoneNumberMatch = 0;
-        boolean contains = true;
         for (int i = 0; i < phoneBookInput; i++)
         {
             name = input.next();
