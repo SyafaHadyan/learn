@@ -9,24 +9,25 @@ public class Day8
         String nameArray[] = new String[phoneBookInput];
         int phoneNumberArray[] = new int[phoneBookInput];
         String result[] = new String[phoneBookInput];
+        String name = "";
+        int phoneNumber = 0;
         int nameMatch = 0;
         int phoneNumberMatch = 0;
         for (int i = 0; i < phoneBookInput; i++)
         {
-            String name = input.next();
+            name = input.next();
             nameArray[i] = name;
-            int phoneNumber = input.nextInt();
+            phoneNumber = input.nextInt();
             phoneNumberArray[i] = phoneNumber;
             input.nextLine();
         }
         for (int i = 0; i < phoneBookInput; i++)
         {
             String searchName = input.nextLine();
-            nameMatch = Arrays.asList(nameArray).indexOf(searchName);
-            phoneNumberMatch = Arrays.asList(phoneNumberArray).indexOf(nameMatch);
+            result[i] = searchName;
             try
             {
-                result[i] = nameMatch + "=" + phoneNumberMatch;
+                result[i] = searchName + "=" + phoneNumber;
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
@@ -36,7 +37,7 @@ public class Day8
         input.close();
         for (int i = 0; i < phoneBookInput; i++)
         {
-            System.out.println(result);
+            System.out.println(result[i]);
         }
     }
 }
