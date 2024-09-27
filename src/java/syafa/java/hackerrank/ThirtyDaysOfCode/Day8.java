@@ -13,6 +13,7 @@ public class Day8
         int phoneNumber = 0;
         int nameMatch = 0;
         int phoneNumberMatch = 0;
+        boolean contains = true;
         for (int i = 0; i < phoneBookInput; i++)
         {
             name = input.next();
@@ -33,7 +34,7 @@ public class Day8
             {
                 result[i] = "Not found";
             }
-            if (!searchName.equals(nameArray[i]))
+            if (!Arrays.stream(nameArray).anyMatch(searchName::equals))
             {
                 result[i] = "Not found";
             }
