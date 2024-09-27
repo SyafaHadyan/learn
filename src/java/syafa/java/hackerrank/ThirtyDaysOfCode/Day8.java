@@ -37,7 +37,7 @@ public class Day8
         System.out.println(result[1]);
         for (int i = 0; i < phoneBookInput; i++)
         {
-            System.out.println(result[i]);
+            System.out.println(result);
         }
     }
 }
