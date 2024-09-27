@@ -83,7 +83,7 @@ public class Praktikum0
                 }
                 namaPilihan = "segitiga";
                 hasilKeliling = a + b + r;
-                hasilLuas = a * b;
+                hasilLuas = a * b / 2;
                 break;
             default:
                 System.out.print("Data tak ditemukan, program dihentikan ...");
