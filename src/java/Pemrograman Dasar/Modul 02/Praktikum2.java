@@ -28,14 +28,6 @@ public class Praktikum2
                 input.close();
                 return;
             }
-            if (jamKerja <= 0)
-            {
-                valid = false;
-            }
-            else
-            {
-                valid = true;
-            }
             if (jamKerja >= 50 && jamKerja <= 60)
             {
                 upahTotal = upahPerJam * jamKerja;
