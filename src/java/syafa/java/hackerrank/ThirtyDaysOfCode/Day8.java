@@ -33,7 +33,7 @@ public class Day8
             {
                 result[i] = "Not found";
             }
-            if (searchName != nameArray[i])
+            if (searchName.equals(nameArray[i]))
             {
                 result[i] = "Not found";
             }
