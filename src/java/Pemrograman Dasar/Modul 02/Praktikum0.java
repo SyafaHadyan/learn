@@ -11,6 +11,7 @@ public class Praktikum0
         final double PI = 3.14159265358979323846;
         final String unitKeliling = "cm";
         final String unitLuas = unitKeliling + '2';
+        boolean inputValid = true;
         int pilihanKonversi = 0;
         int sisiSatu = 0;
         int sisiDua = 0;
@@ -88,9 +89,8 @@ public class Praktikum0
                 System.out.print("Data tak ditemukan, program dihentikan ...");
                 input.close();
                 return;
-            System.out.printf("\n%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-            System.out.printf("%s%c%s%c%-2c%.0f%c%s\n\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
         }
-        input.close();
+        System.out.printf("\n%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
+        System.out.printf("%s%c%s%c%-2c%.0f%c%s\n\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
     }
 }
