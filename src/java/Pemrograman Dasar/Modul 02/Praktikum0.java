@@ -90,6 +90,7 @@ public class Praktikum0
                 input.close();
                 return;
         }
+        input.close();
         System.out.printf("\n%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
         System.out.printf("%s%c%s%c%-2c%.0f%c%s\n\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
     }
