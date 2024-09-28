@@ -5,10 +5,8 @@ public class Praktikum1
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        final String unitBerat = "(kg)";
-        final String unitTinggi = "(m)";
-        final String outBerat = "Berat badan" + ' ' + unitBerat;
-        final String outTinggi = "Tinggi badan" + ' ' + unitTinggi;
+        final String outBerat = "Berat badan" + ' ' + "(kg)";
+        final String outTinggi = "Tinggi badan" + ' ' + "(m)";
         double IMT = 0;
         double beratBadan;
         double tinggiBadan;
