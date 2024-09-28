@@ -5,13 +5,13 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double hasilKeliling = 0;
-        double hasilLuas = 0;
-        String namaPilihan = "Bentuk";
         final double PI = 3.14159265358979323846;
         final String unitKeliling = "cm";
         final String unitLuas = unitKeliling + '2';
-        boolean inputValid = true;
+        String namaPilihanKeliling = "Keliling";
+        String namaPilihanLuas = "Luas";
+        double hasilKeliling = 0;
+        double hasilLuas = 0;
         int pilihanKonversi = 0;
         int sisiSatu = 0;
         int sisiDua = 0;
@@ -47,7 +47,8 @@ public class Praktikum0
                     input.close();
                     return;
                 }
-                namaPilihan = "persegi panjang";
+                namaPilihanKeliling += ' ' + "persegi panjang";
+                namaPilihanLuas += ' ' + "persegi panjang";
                 hasilKeliling = (sisiSatu * 2) + (sisiDua * 2);
                 hasilLuas = sisiSatu * sisiDua;
                 break;
@@ -62,7 +63,8 @@ public class Praktikum0
                     input.close();
                     return;
                 }
-                namaPilihan = "lingkaran";;
+                namaPilihanKeliling += ' ' + "lingkaran";
+                namaPilihanLuas += ' ' + "lingkaran";
                 hasilKeliling = 2 * PI * radius;
                 hasilLuas = radius * radius * PI;
                 break;
@@ -81,7 +83,8 @@ public class Praktikum0
                     input.close();
                     return;
                 }
-                namaPilihan = "segitiga";
+                namaPilihanKeliling += ' ' + "segitiga";
+                namaPilihanLuas += ' ' + "segitiga";
                 hasilKeliling = a + b + r;
                 hasilLuas = a * b / 2;
                 break;
@@ -91,7 +94,7 @@ public class Praktikum0
                 return;
         }
         input.close();
-        System.out.printf("\n%s%c%s%c%-2c%.0f%c%s\n","Keliling",' ',namaPilihan,' ',':',hasilKeliling,' ',unitKeliling);
-        System.out.printf("%s%c%s%c%-2c%.0f%c%s\n\n","Luas",' ',namaPilihan,' ',':',hasilLuas,' ',unitLuas);
+        System.out.printf("\n%-25s%c%c%c%.0f%c%s\n",namaPilihanKeliling,' ',':',' ',hasilKeliling,' ',unitKeliling);
+        System.out.printf("%-25s%c%c%c%.0f%c%s\n\n",namaPilihanLuas,' ',':',' ',hasilLuas,' ',unitLuas);
     }
 }
