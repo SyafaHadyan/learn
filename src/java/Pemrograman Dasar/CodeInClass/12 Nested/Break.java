@@ -19,9 +19,12 @@ public class Break
                 System.out.print("Break");
                 break;
             }
-            System.out.print(mulai);
-            System.out.println(' ' + "Terus");
-            mulai++;
+            else if (mulai != akhir)
+            {
+                System.out.print(mulai);
+                System.out.println(' ' + "Terus");
+                mulai++;
+            }
         }
     }
 }
