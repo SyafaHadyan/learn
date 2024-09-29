@@ -7,5 +7,9 @@ public class PrintChar
         Scanner input = new Scanner(System.in);
         String gambar = input.nextLine();
         int perulangan = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
     }
 }
