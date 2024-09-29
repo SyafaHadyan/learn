@@ -15,9 +15,11 @@ public class Break
         while (mulai <= akhir)
         {
             System.out.print(mulai);
-            if
+            if (mulai == keluar)
+            {
+                System.out.println("\n" + ' ' + "Break");
+            }
             System.out.println("\n" + ' ' + "Terus");
-            
         }
     }
 }
