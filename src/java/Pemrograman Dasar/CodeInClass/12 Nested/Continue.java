@@ -20,9 +20,18 @@ public class Continue
                 mulai++;
                 continue;
             }
-            System.out.print(mulai);
-            System.out.println(' ' + "Terus");
-            mulai++;
+            else if (mulai == akhir)
+            {
+                System.out.print(mulai);
+                System.out.println(' ' + "Akhir");
+                break;
+            }
+            else if (mulai != akhir)
+            {
+                System.out.print(mulai);
+                System.out.println(' ' + "Terus");
+                mulai++;
+            }
         }
     }
 }
