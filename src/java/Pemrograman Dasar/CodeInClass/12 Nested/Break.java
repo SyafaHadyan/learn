@@ -12,5 +12,12 @@ public class Break
         System.out.printf("%-10s%-2c","Break",':');
         int keluar = Integer.parseInt(input.nextLine());
         input.close();
+        while (mulai <= akhir)
+        {
+            System.out.print(mulai);
+            if
+            System.out.println("\n" + ' ' + "Terus");
+            
+        }
     }
 }
