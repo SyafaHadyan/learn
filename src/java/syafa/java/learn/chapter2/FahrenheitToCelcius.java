@@ -9,5 +9,6 @@ public class FahrenheitToCelcius
         double fahrenheit = Double.parseDouble(input.nextLine());
         input.close();
         double celcius = (5 / 9) * (fahrenheit- 32);
+        System.out.printf("%-20c%-2c%.5f","Celcius",':',celcius);
     }
 }
