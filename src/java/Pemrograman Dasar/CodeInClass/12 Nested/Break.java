@@ -20,6 +20,7 @@ public class Break
                 System.out.println("\n" + ' ' + "Break");
             }
             System.out.println("\n" + ' ' + "Terus");
+            mulai++;
         }
     }
 }
