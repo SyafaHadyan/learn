@@ -17,7 +17,8 @@ public class Continue
             if (mulai == keluar)
             {
                 System.out.println("Skip");
-                break;
+                mulai++;
+                continue;
             }
             System.out.print(mulai);
             System.out.println(' ' + "Terus");
