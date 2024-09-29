@@ -1,5 +1,6 @@
 import java.util.*;
 
+@SuppressWarnings("unused")
 public class Latihan 
 {
     public static void main(String[] args)
@@ -12,6 +13,7 @@ public class Latihan
         int b = 23;
         int c = 12;
         int d = 32;
+        @SuppressWarnings("unused")
         int e = 0;
 
         //a = b&&e; // Error
