@@ -3,6 +3,7 @@ import java.util.*;
 
 public class CekGemez
 {
+    @SuppressWarnings("resource")
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);

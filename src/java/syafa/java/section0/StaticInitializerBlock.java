@@ -7,7 +7,7 @@ public class StaticInitializerBlock
     Scanner input = new Scanner(System.in);
     double breadth = Double.parseDouble(input.nextLine());
     double height = Double.parseDouble(input.nextLine());
-    input.close();
+    //input.close();
     if (breadth >= 1 && height >= 1)
     {
         System.out.printf("%.0f",breadth * height);
