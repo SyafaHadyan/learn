@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PrintChar
+public class Draw
 {
     public static void main(String[] args)
     {
@@ -13,6 +13,10 @@ public class PrintChar
             for (int j = i; j > 0; j--)
             {
                 System.out.print(gambar);
+                if (j != 1)
+                {
+                    System.out.print(' ');
+                }
             }
             System.out.print("\n");
         }
