@@ -5,7 +5,9 @@ public class Draw
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        System.out.printf("%-20s%-2c","Masukkan gambar yang digambar",':');
         String gambar = input.nextLine();
+        System.out.printf("%-20s%-2c","Masukkan perulangan",':');
         int perulangan = Integer.parseInt(input.nextLine());
         input.close();
         for (int i = perulangan; i > 0; i--)
