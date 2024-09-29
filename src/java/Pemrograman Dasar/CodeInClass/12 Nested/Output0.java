@@ -7,7 +7,9 @@ public class Output0
         Scanner input = new Scanner(System.in);
         System.out.println("Kode yang akan dijalankan:" + "\n" + 
                             "int x, y;" + "\n" + 
-                            "for (x = x awal; x <= x maksimal; x++)" + "\n" + );
+                            "for (x = x awal; x <= x maksimal; x++)" + "\n" + 
+                            "\t" + "for (y = y awal; y >= y minimal; y--)" + "\n" + 
+                            "\t\t" + "System.out.printf(\"%d%d\",x,y)");
         System.out.printf("%-30s%-2c","Masukkan nilai x",':');
         int x = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai y",':');
