@@ -17,9 +17,9 @@ public class Break
             System.out.print(mulai);
             if (mulai == keluar)
             {
-                System.out.println("\n" + ' ' + "Break");
+                System.out.println(' ' + "Break");
             }
-            System.out.println("\n" + ' ' + "Terus");
+            System.out.println(' ' + "Terus");
             mulai++;
         }
     }
