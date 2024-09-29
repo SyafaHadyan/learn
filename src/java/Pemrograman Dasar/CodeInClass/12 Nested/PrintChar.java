@@ -9,7 +9,11 @@ public class PrintChar
         int perulangan = Integer.parseInt(input.nextLine());
         for (int i = perulangan; i >= 0; i--)
         {
-            
+            for (int j = i; j >=0; j--)
+            {
+                System.out.print(gambar);
+            }
+            System.out.print("\n");
         }
     }
 }
