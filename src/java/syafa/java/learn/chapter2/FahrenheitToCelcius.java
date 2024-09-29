@@ -6,7 +6,7 @@ public class FahrenheitToCelcius
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.printf("-15s%-2c","Fahrenheit",':');
+        System.out.printf("%-15s%-2c","Fahrenheit",':');
         double fahrenheit = Double.parseDouble(input.nextLine());
         input.close();
         double celcius = (5 / 9) * (fahrenheit- 32);
