@@ -14,12 +14,12 @@ public class Break
         input.close();
         while (mulai <= akhir)
         {
-            System.out.print(mulai);
             if (mulai == keluar)
             {
-                System.out.println(' ' + "Break");
+                System.out.print("Break");
                 break;
             }
+            System.out.print(mulai);
             System.out.println(' ' + "Terus");
             mulai++;
         }
