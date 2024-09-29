@@ -18,6 +18,7 @@ public class Break
             if (mulai == keluar)
             {
                 System.out.println(' ' + "Break");
+                break;
             }
             System.out.println(' ' + "Terus");
             mulai++;
