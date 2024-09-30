@@ -19,7 +19,10 @@ public class Output1
             {
                 for (int k = z; k < maksimalZ; k++)
                 {
-                    
+                    if (z == keluar)
+                    {
+                        break;
+                    }
                 }
             }
         }
