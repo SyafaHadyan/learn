@@ -33,9 +33,12 @@ public class PercabanganHubunganTigaAngka
         }
         if ((bilanganTengah < b && bilanganTengah < c) && (c > b))
         {
+            bilanganTengah = c;
+        }
+        if ((bilanganTengah > b && bilanganTengah > c) && (b > c))
+        {
             bilanganTengah = b;
         }
-        if ((bilanganTengah > b && bilanganTengah > c) && ())
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
