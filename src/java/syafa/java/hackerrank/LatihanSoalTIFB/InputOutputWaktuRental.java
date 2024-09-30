@@ -15,7 +15,7 @@ public class InputOutputWaktuRental
         if (selesai > 23)
         {
             selesai = selesai % 24;
-            total = selesai + (23 - mulai);
+            total = selesai + (24 - mulai);
         }
         else if (selesai == mulai)
         {
