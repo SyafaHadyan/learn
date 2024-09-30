@@ -17,5 +17,9 @@ public class PercabanganBesarKecil
         {
             System.out.print(masuk.toLowerCase());
         }
+        else
+        {
+            System.out.print("Input perintah salah");
+        }
     }
 }
