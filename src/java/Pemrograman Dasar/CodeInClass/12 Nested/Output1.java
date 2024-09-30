@@ -9,7 +9,10 @@ public class Output1
                             "int x, y, z;" + "\n" + 
                             "for (x = x awal; x < x maksimal; x++) {" + "\n" + 
                             "\t" + "for (y = y awal; y < y maksimal; y++) {" + "\n" + 
-                            "\t\t" + "for (z = z awal; z < z maksimal; z++) {" + "\n");
+                            "\t\t" + "for (z = z awal; z < z maksimal; z++) {" + "\n" + 
+                            "\t\t\t" + "if (z == break) break;" + "\n" + 
+                            "\t\t" + "}" + "\n" + 
+                            "System.out.print(\"Selamat\" + \"\\n\")");
         System.out.printf("%-30s%-2c","Masukkan nilai x",':');
         int x = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai y",':');
