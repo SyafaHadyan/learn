@@ -18,7 +18,10 @@ public class Output0
         int maksimalX = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai minimal y",':');
         int minimalY = Integer.parseInt(input.nextLine());
+        System.out.printf("%-30s%-2c","Tebak output yang akan keluar",':');
+        int tebak = Integer.parseInt(input.nextLine());
         input.close();
+        System.out.println("Nilai yang keluar" + ' ' + ':');
         for (int i = x; i <= maksimalX; i++)
         {
             for (int j = y; j >= minimalY; j--)
