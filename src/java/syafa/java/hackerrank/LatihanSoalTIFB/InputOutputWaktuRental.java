@@ -12,9 +12,9 @@ public class InputOutputWaktuRental
         int hargaPerJam = Integer.parseInt(input.nextLine());
         input.close();
         int total = selesai - mulai;
-        if (selesai >= 24)
+        if (selesai > 23)
         {
-            selesai = selesai % 24;
+            selesai = selesai % 23;
         }
         System.out.println("Halo" + ' ' + nama);
         System.out.println("Anda merental Game Corner pada jam" + ' ' + mulai + ' ' + '-' + ' ' + selesai);
