@@ -25,6 +25,7 @@ public class PercabanganBankDigital
         else if (fungsi.equalsIgnoreCase("Tabung"))
         {
             System.out.println("Penabungan berhasil");
+            System.out.print("Saldo" + " : Rp. " + (saldo + transaksi));
         }
     }
 }
