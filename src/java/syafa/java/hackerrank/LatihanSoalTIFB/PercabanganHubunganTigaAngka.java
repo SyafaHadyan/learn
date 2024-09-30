@@ -15,6 +15,8 @@ public class PercabanganHubunganTigaAngka
         int bilanganTerbesar = a;
         String tandaSatu = "<";
         String tandaDua = "<";
+
+        // Bilangan Terkecil
         if (bilanganTerkecil > b)
         {
             bilanganTerkecil = b;
@@ -23,6 +25,9 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
+
+        // Bilangan Tengah
+        if ((a < b && a < c) || )
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
