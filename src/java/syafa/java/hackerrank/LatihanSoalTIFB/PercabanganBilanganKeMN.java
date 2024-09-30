@@ -16,9 +16,10 @@ public class PercabanganBilanganKeMN
         int digitKeN = jumlahDigit - n;
         char digitKeZM = stringZ.charAt(digitKeM);
         char digitKeZN = stringZ.charAt(digitKeN);
-        System.out.println(jumlahDigit);
-        System.out.println(digitKeZM);
-        System.out.println(digitKeZN);
+        int intDigitKeZM = digitKeZM - '0';
+        int intDigitKeZN = digitKeZN - '0';
+        System.out.println(intDigitKeZM);
+        System.out.println(intDigitKeZN);
         //int digitkeM = Integer.parseInt(stringZ);
         //int digitkeM = stringZ.charAt(digitkeM - m - 1);
     }
