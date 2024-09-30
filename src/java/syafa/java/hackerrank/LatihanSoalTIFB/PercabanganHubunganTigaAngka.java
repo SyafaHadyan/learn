@@ -11,6 +11,7 @@ public class PercabanganHubunganTigaAngka
         int c = input.nextInt();
         input.close();
         int bilanganTerkecil = a;
+        int bilanganTengah = a;
         int bilanganTerbesar = a;
         if (bilanganTerkecil > b)
         {
@@ -20,6 +21,14 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
+        if (a > b && c < b || a < b && c > b)
+        {
+            bilanganTengah = b;
+        }
+        if (a > c && c > b || a < c && b > a)
+        {
+            bilanganTengah = c;
+        }
         if (bilanganTerbesar < b)
         {
             bilanganTerbesar = b;
@@ -28,6 +37,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerbesar = c;
         }
-        System.out.print(bilanganTerkecil + ' ' + ' ' + ' ' + ' ' + ' ' + bilanganTerbesar);
+        System.out.print(bilanganTerkecil + ' ' + " " + ' ' + bilanganTengah + ' ' + " " + ' ' + bilanganTerbesar);
     }
 }
