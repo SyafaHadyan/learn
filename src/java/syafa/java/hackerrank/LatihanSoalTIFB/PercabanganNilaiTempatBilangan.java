@@ -32,8 +32,11 @@ public class PercabanganNilaiTempatBilangan
             case 7:
                 System.out.print("Jutaan");
                 break;
-            default:
+            case 8:
                 System.out.print("Jutaan");
+                break;
+            default:
+                System.out.print("Satuan");
                 break;
         }
     }
