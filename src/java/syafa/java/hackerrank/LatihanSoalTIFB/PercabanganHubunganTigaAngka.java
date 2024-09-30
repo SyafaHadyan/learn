@@ -15,8 +15,6 @@ public class PercabanganHubunganTigaAngka
         int bilanganTerbesar = a;
         String tandaSatu = "<";
         String tandaDua = "<";
-
-        // Bilangan Terkecil
         if (bilanganTerkecil > b)
         {
             bilanganTerkecil = b;
@@ -25,8 +23,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
-
-        // Bilangan Tengah
         if ((bilanganTengah < b && bilanganTengah < c) && (b < c))
         {
             bilanganTengah = b;
@@ -43,8 +39,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTengah = c;
         }
-
-        // Bilangan Terbesar
         if (bilanganTerbesar < b)
         {
             bilanganTerbesar = b;
@@ -53,8 +47,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerbesar = c;
         }
-
-        // Tanda
         if (bilanganTerkecil == bilanganTengah)
         {
             tandaSatu = "=";
