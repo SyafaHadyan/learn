@@ -21,7 +21,7 @@ public class Output0
         System.out.printf("%-30s%-2c","Tebak output yang akan keluar",':');
         int tebak = Integer.parseInt(input.nextLine());
         input.close();
-        System.out.printf("%s%-2c","Nilai yang keluar"+ ':');
+        System.out.printf("%s%2c\n","Nilai yang keluar",':');
         for (int i = x; i <= maksimalX; i++)
         {
             for (int j = y; j >= minimalY; j--)
