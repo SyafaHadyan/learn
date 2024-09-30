@@ -10,5 +10,12 @@ public class PercabanganBankDigital
         String fungsi = input.nextLine();
         int transaksi = Integer.parseInt(input.nextLine());
         input.close();
+        if (fungsi.equalsIgnoreCase("Tarik"))
+        {
+            if (transaksi > saldo)
+            {
+                System.out.print("Penarikan gagal, saldo tidak cukup");
+            }
+        }
     }
 }
