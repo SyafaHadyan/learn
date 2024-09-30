@@ -43,14 +43,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTengah = c;
         }
-        if (bilanganTerkecil == bilanganTengah)
-        {
-            tandaSatu = "=";
-        }
-        if (bilanganTengah == bilanganTerbesar)
-        {
-            tandaDua = "=";
-        }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
