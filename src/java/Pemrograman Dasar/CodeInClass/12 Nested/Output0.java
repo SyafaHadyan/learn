@@ -29,6 +29,6 @@ public class Output0
                 System.out.printf("%d%d",x,y);
             }
         }
-        System.out.printf("%s%2c\n%d","Nilai yang keluar",':',tebak);
+        System.out.printf("\n%s%2c\n%d","Nilai yang anda tebak",':',tebak);
     }
 }
