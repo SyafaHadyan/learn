@@ -16,6 +16,10 @@ public class PercabanganBankDigital
             {
                 System.out.print("Penarikan gagal, saldo tidak cukup");
             }
+            else
+            {
+                System.out.print("Penarikan berhasil");
+            }
         }
     }
 }
