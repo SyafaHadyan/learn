@@ -40,6 +40,9 @@ public class PercabanganHubunganTigaAngka
             bilanganTengah = b;
         }
         if ((bilanganTengah > b && bilanganTengah > c) && (b < c))
+        {
+            bilanganTengah = c;
+        }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
