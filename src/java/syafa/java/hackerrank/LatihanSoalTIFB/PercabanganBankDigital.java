@@ -14,16 +14,16 @@ public class PercabanganBankDigital
         {
             if (transaksi > saldo)
             {
-                System.out.print("Penarikan gagal, saldo tidak cukup");
+                System.out.println("Penarikan gagal, saldo tidak cukup");
             }
             else
             {
-                System.out.print("Penarikan berhasil");
+                System.out.println("Penarikan berhasil");
             }
         }
         else if (fungsi.equalsIgnoreCase("Tabung"))
         {
-            System.out.print("Penabungan berhasil");
+            System.out.println("Penabungan berhasil");
         }
     }
 }
