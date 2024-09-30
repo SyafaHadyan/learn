@@ -12,9 +12,15 @@ public class Output1
         int maksimalY = Integer.parseInt(input.nextLine());
         int maksimalZ = Integer.parseInt(input.nextLine());
         input.close();
-        for (int i = x; i < args.length; i++)
+        for (int i = x; i < maksimalX; i++)
         {
-            
+            for (int j = y; j < maksimalY; j++)
+            {
+                for (int k = z; k < maksimalZ; k++)
+                {
+                    
+                }
+            }
         }
     }
 }
