@@ -11,5 +11,8 @@ public class PercabanganBilanganKeMN
         int n = Integer.parseInt(input.nextLine());
         input.close();
         String stringZ = Long.toString(z);
+        int jumlahDigit = stringZ.length();
+        //int digitkeM = Integer.parseInt(stringZ);
+        //int digitkeM = stringZ.charAt(digitkeM - m - 1);
     }
 }
