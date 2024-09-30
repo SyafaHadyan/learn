@@ -8,7 +8,8 @@ public class Output1
         System.out.print("Kode yang akan dijalankan" + "\n" + "\n" + 
                             "int x, y, z;" + "\n" + 
                             "for (x = x awal; x < x maksimal; x++) {" + "\n" + 
-                            "\t" + "for (y = y awal; y < y maksimal; y++) {" + "\n");
+                            "\t" + "for (y = y awal; y < y maksimal; y++) {" + "\n" + 
+                            "\t\t" + "for (z = z awal; z < z maksimal; z++) {" + "\n");
         System.out.printf("%-30s%-2c","Masukkan nilai x",':');
         int x = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai y",':');
