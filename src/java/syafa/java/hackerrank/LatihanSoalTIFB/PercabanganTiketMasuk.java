@@ -9,7 +9,7 @@ public class PercabanganTiketMasuk
         int harga = Integer.parseInt(input.nextLine());
         int saldo = Integer.parseInt(input.nextLine());
         input.close();
-        if (harga < saldo)
+        if (harga <= saldo)
         {
             System.out.print("Selamat bermain");
         }
