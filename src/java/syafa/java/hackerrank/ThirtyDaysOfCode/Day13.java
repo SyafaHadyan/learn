@@ -10,5 +10,8 @@ public class Day13
         String author = input.nextLine();
         String price = input.nextLine();
         input.close();
+        System.out.printf("%s%c%c%s","Title",':',' ',title);
+        System.out.printf("%s%c%c%s","Author",':',' ',author);
+        System.out.printf("%s%c%c%s","Price",':',' ',price);
     }
 }
