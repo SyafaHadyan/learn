@@ -11,10 +11,11 @@ public class InputOutputWaktuRental
         int selesai = Integer.parseInt(input.nextLine());
         int hargaPerJam = Integer.parseInt(input.nextLine());
         input.close();
+        int total;
         if (selesai > 23)
         {
             selesai = selesai % 24;
-            total = 23 - 
+            total = selesai + (23 - mulai); 
         }
         total = selesai - mulai;
         System.out.println("Halo" + ' ' + nama);
