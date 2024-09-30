@@ -15,42 +15,6 @@ public class PercabanganHubunganTigaAngka
         int bilanganTerbesar = a;
         String tandaSatu = "<";
         String tandaDua = "<";
-        if (bilanganTerkecil > b)
-        {
-            bilanganTerkecil = b;
-        }
-        if (bilanganTerkecil > c)
-        {
-            bilanganTerkecil = c;
-        }
-        if (bilanganTerbesar < b)
-        {
-            bilanganTerbesar = b;
-        }
-        if (bilanganTerbesar < c)
-        {
-            bilanganTerbesar = c;
-        }
-        if ((a > bilanganTerkecil && a < bilanganTerbesar) || (a < bilanganTerkecil && a > bilanganTerbesar))
-        {
-            bilanganTengah = a;
-        }
-        else if ((b > bilanganTerkecil && b < bilanganTerbesar) || (b < bilanganTerkecil && b > bilanganTerbesar))
-        {
-            bilanganTengah = b;
-        }
-        else
-        {
-            bilanganTengah = c;
-        }
-        if (bilanganTerkecil == bilanganTengah)
-        {
-            tandaSatu = "=";
-        }
-        if (bilanganTengah == bilanganTerbesar)
-        {
-            tandaDua = "=";
-        }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
