@@ -28,6 +28,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerbesar = c;
         }
-        System.out.print(bilanganTerkecil + ' ' + '' + bi + ' ' + '' + bilanganTerbesar);
+        System.out.print(bilanganTerkecil + ' ' + ' ' + ' ' + ' ' + ' ' + bilanganTerbesar);
     }
 }
