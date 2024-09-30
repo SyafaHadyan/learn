@@ -12,7 +12,9 @@ public class Output1
                             "\t\t" + "for (z = z awal; z < z maksimal; z++) {" + "\n" + 
                             "\t\t\t" + "if (z == break) break;" + "\n" + 
                             "\t\t" + "}" + "\n" + 
-                            "System.out.print(\"Selamat\" + \"\\n\")");
+                            "\t\t" + "System.out.print(\"Selamat\" + \"\\n\")" + "\n" + 
+                            "\t" + "}" + "\n" + 
+                            "\t" + "System.out.print(\"Datangt\" + \"\\n\")" + "\n" + );
         System.out.printf("%-30s%-2c","Masukkan nilai x",':');
         int x = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai y",':');
