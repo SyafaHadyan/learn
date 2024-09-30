@@ -33,6 +33,7 @@ public class PercabanganNilaiTempatBilangan
                 System.out.print("Jutaan");
                 break;
             default:
+                System.out.print("Jutaan");
                 break;
         }
     }
