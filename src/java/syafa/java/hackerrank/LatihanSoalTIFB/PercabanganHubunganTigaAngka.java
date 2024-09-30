@@ -20,33 +20,6 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
-        if (a > b && a > c)
-        {
-            if(b>c)
-            {
-                System.out.println(b);
-            }
-            else
-            {
-                System.out.println(c);
-            }
-        }
-        if (b > a && b > c) {
-        if(a>c){
-        System.out.println(a);
-        }
-        else{
-            System.out.println(c);
-        mm }
-        }
-        if (c > b && c > a) {
-        if(b>a){
-            System.out.println(b);
-            }
-        else{
-        System.out.println(a);
-        }
-        }
         if (bilanganTerbesar < b)
         {
             bilanganTerbesar = b;
