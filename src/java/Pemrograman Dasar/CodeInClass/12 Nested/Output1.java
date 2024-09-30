@@ -23,10 +23,11 @@ public class Output1
                     {
                         break;
                     }
-                    System.out.print("Selamat" + "\n");
                 }
-                System.out.print("Datang" + "\n");
+                System.out.print("Selamat" + "\n");
             }
+            System.out.print("Datang" + "\n");
         }
+        System.out.print("di TIF-FILKOMUB" + "\n");
     }
 }
