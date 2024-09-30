@@ -10,5 +10,6 @@ public class PercabanganBilanganKeMN
         int m = Integer.parseInt(input.nextLine());
         int n = Integer.parseInt(input.nextLine());
         input.close();
+        String stringZ = Long.toString(z);
     }
 }
