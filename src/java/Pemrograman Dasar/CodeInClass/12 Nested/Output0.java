@@ -26,7 +26,7 @@ public class Output0
         {
             for (int j = y; j >= minimalY; j--)
             {
-                System.out.printf("%d%d",x,y);
+                System.out.printf("%d%d",i,j);
             }
         }
         System.out.printf("\n%s%2c\n%d","Nilai yang anda tebak",':',tebak);
