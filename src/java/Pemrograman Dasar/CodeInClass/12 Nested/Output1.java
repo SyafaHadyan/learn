@@ -5,7 +5,7 @@ public class Output1
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("Kode yang akan dijalankan" + "\n" + "\n" + 
+        System.out.print("Kode yang akan dijalankan" + "\n\n" + 
                             "int x, y, z;" + "\n" + 
                             "for (x = x awal; x < x maksimal; x++) {" + "\n" + 
                             "\t" + "for (y = y awal; y < y maksimal; y++) {" + "\n" + 
@@ -14,7 +14,9 @@ public class Output1
                             "\t\t" + "}" + "\n" + 
                             "\t\t" + "System.out.print(\"Selamat\" + \"\\n\")" + "\n" + 
                             "\t" + "}" + "\n" + 
-                            "\t" + "System.out.print(\"Datang\" + \"\\n\")" + "\n" + );
+                            "\t" + "System.out.print(\"Datang\" + \"\\n\")" + "\n" + 
+                            "}" + "\n" + 
+                            "System.out.print(\"Datang\" + \"\\n\")" + "\n\n");
         System.out.printf("%-30s%-2c","Masukkan nilai x",':');
         int x = Integer.parseInt(input.nextLine());
         System.out.printf("%-30s%-2c","Masukkan nilai y",':');
