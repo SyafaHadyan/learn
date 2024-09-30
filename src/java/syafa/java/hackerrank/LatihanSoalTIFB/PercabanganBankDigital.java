@@ -12,9 +12,10 @@ public class PercabanganBankDigital
         input.close();
         if (fungsi.equalsIgnoreCase("Tarik"))
         {
-            if (transaksi > saldo)
+            if (transaksi >= saldo)
             {
-                System.out.print("Penarikan gagal, saldo tidak cukup");
+                System.out.println("Penarikan gagal, saldo tidak cukup");
+                System.out.print("Saldo" + " : Rp. " + saldo);
             }
             else
             {
