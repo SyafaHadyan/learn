@@ -6,13 +6,13 @@ public class PerulanganJumlahNBilanganPertama
     public static void main(String[] args)
     {
        Scanner input = new Scanner(System.in);
-       int perulangan = Integer.parseInt(input.nextLine());
+       double perulangan = Double.parseDouble(input.nextLine());
        input.close();
-       int hasil = 0;
+       Double hasil = 0d;
        for (int i = 1; i <= perulangan; i++)
        {
             hasil += i;
        }
-       System.out.print(hasil);
+       System.out.printf("%.0f",hasil);
     }
 }
