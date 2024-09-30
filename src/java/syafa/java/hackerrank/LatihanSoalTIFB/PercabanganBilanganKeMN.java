@@ -20,10 +20,12 @@ public class PercabanganBilanganKeMN
         int intDigitKeZN = digitKeZN - '0';
         System.out.println(intDigitKeZM);
         System.out.println(intDigitKeZN);
-        if (intDigitKeZM > intDigitKeZN)
+        int hasil = 0;
+        if (m > n)
         {
-            
+            hasil = intDigitKeZM + intDigitKeZN;
         }
+        System.out.print(hasil);
         //int digitkeM = Integer.parseInt(stringZ);
         //int digitkeM = stringZ.charAt(digitkeM - m - 1);
     }
