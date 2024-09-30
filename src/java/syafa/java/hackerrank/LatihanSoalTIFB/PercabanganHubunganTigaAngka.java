@@ -27,7 +27,10 @@ public class PercabanganHubunganTigaAngka
         }
 
         // Bilangan Tengah
-        if ((a < b && a < c) || )
+        if ((bilanganTengah < b && bilanganTengah < c) && (b < c))
+        {
+            bilanganTengah = b;
+        }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
