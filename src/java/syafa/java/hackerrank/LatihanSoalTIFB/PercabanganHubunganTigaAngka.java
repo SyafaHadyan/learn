@@ -42,13 +42,6 @@ public class PercabanganHubunganTigaAngka
         else
         {
             bilanganTengah = c;
-        }        if (bilanganTerkecil == bilanganTengah)
-        {
-            tandaSatu = "=";
-        }
-        if (bilanganTengah == bilanganTerbesar)
-        {
-            tandaDua = "=";
         }
         if (bilanganTerkecil == bilanganTengah)
         {
