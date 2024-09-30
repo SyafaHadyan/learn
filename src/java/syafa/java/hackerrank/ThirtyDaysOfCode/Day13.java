@@ -8,10 +8,10 @@ public class Day13
         Scanner input = new Scanner(System.in);
         String title = input.nextLine();
         String author = input.nextLine();
-        String price = input.nextLine();
+        int price = Integer.parseInt(input.nextLine());
         input.close();
-        System.out.printf("%s%c%c%s","Title",':',' ',title);
-        System.out.printf("%s%c%c%s","Author",':',' ',author);
-        System.out.printf("%s%c%c%s","Price",':',' ',price);
+        System.out.printf("%s%c%c%s\n","Title",':',' ',title);
+        System.out.printf("%s%c%c%s\n","Author",':',' ',author);
+        System.out.printf("%s%c%c%d","Price",':',' ',price);
     }
 }
