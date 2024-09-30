@@ -21,7 +21,7 @@ public class PercabanganHubunganTigaAngka
         }
         if (bilanganTerkecil > c)
         {
-            bilanganTerkecil = c
+            bilanganTerkecil = c;
         }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
