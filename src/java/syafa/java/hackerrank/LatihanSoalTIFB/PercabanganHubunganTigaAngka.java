@@ -23,11 +23,11 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
-        if (b > bilanganTerbesar)
+        if (bilanganTerbesar < b)
         {
             bilanganTerbesar = b;
         }
-        if (c > bilanganTerbesar)
+        if (bilanganTerbesar < c)
         {
             bilanganTerbesar = c;
         }
@@ -42,6 +42,13 @@ public class PercabanganHubunganTigaAngka
         else
         {
             bilanganTengah = c;
+        }        if (bilanganTerkecil == bilanganTengah)
+        {
+            tandaSatu = "=";
+        }
+        if (bilanganTengah == bilanganTerbesar)
+        {
+            tandaDua = "=";
         }
         if (bilanganTerkecil == bilanganTengah)
         {
