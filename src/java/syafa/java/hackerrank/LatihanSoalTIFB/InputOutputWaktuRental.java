@@ -15,9 +15,16 @@ public class InputOutputWaktuRental
         if (selesai > 23)
         {
             selesai = selesai % 24;
-            total = selesai + (23 - mulai); 
+            total = selesai + (23 - mulai);
         }
-        total = selesai - mulai;
+        else if (selesai == mulai)
+        {
+            total = 24;
+        }
+        else
+        {
+            total = selesai - mulai;
+        }
         System.out.println("Halo" + ' ' + nama);
         System.out.println("Anda merental Game Corner pada jam" + ' ' + mulai + ' ' + '-' + ' ' + selesai);
         System.out.println("Total durasi" + ' ' + total + ' ' + "jam");
