@@ -59,6 +59,10 @@ public class PercabanganHubunganTigaAngka
         {
             tandaSatu = "=";
         }
+        if (bilanganTengah == bilanganTerbesar)
+        {
+            tandaDua = "=";
+        }
         System.out.print(bilanganTerkecil + " " + tandaSatu + " " + bilanganTengah + " " + tandaDua + " " + bilanganTerbesar);
     }
 }
