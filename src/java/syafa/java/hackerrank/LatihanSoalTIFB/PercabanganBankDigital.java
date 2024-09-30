@@ -21,5 +21,9 @@ public class PercabanganBankDigital
                 System.out.print("Penarikan berhasil");
             }
         }
+        else if (fungsi.equalsIgnoreCase("Tabung"))
+        {
+            System.out.print("Penabungan berhasil");
+        }
     }
 }
