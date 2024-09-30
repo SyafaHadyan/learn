@@ -14,6 +14,8 @@ public class PercabanganBilanganKeMN
         int jumlahDigit = stringZ.length();
         int digitKeM = jumlahDigit - m - 1;
         int digitKeN = jumlahDigit - n - 1;
+        char digitKeZM = stringZ.charAt(digitKeM);
+        char digitKeZN = stringZ.charAt(digitKeN);
         //int digitkeM = Integer.parseInt(stringZ);
         //int digitkeM = stringZ.charAt(digitkeM - m - 1);
     }
