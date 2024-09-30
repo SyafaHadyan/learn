@@ -31,7 +31,7 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTengah = b;
         }
-        if ((bilanganTengah < b && bilanganTengah < c) && (c > b))
+        if ((bilanganTengah < b && bilanganTengah < c) && (c < b))
         {
             bilanganTengah = c;
         }
