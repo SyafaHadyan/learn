@@ -21,11 +21,15 @@ public class PercabanganHubunganTigaAngka
         {
             bilanganTerkecil = c;
         }
-        if (a > b && c < b || a < b && c > b)
+        if ((a > bilanganTerkecil && a < bilanganTerbesar) || (a < bilanganTerkecil && a > bilanganTerbesar))
+        {
+            bilanganTengah = a;
+        }
+        else if ((b > bilanganTerkecil && b < bilanganTerbesar) || (b < bilanganTerkecil && b > bilanganTerbesar))
         {
             bilanganTengah = b;
         }
-        if (a > c && c > b || a < c && b > a)
+        else
         {
             bilanganTengah = c;
         }
