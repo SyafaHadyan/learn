@@ -18,8 +18,6 @@ public class PercabanganBilanganKeMN
         char digitKeZN = stringZ.charAt(digitKeN);
         int intDigitKeZM = digitKeZM - '0';
         int intDigitKeZN = digitKeZN - '0';
-        System.out.println(intDigitKeZM);
-        System.out.println(intDigitKeZN);
         int hasil = 0;
         if (m > n)
         {
