@@ -23,6 +23,14 @@ public class PercabanganBilanganKeMN
         {
             hasil = intDigitKeZM + intDigitKeZN;
         }
+        else if (m < n)
+        {
+            hasil = intDigitKeZM - intDigitKeZN;
+        }
+        else if (m == n)
+        {
+            hasil = intDigitKeZM * intDigitKeZN;
+        }
         System.out.print(hasil);
         //int digitkeM = Integer.parseInt(stringZ);
         //int digitkeM = stringZ.charAt(digitkeM - m - 1);
