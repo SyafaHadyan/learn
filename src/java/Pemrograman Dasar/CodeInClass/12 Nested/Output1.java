@@ -11,6 +11,7 @@ public class Output1
         int maksimalX = Integer.parseInt(input.nextLine());
         int maksimalY = Integer.parseInt(input.nextLine());
         int maksimalZ = Integer.parseInt(input.nextLine());
+        int keluar = Integer.parseInt(input.nextLine());
         input.close();
         for (int i = x; i < maksimalX; i++)
         {
