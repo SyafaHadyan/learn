@@ -32,7 +32,5 @@ public class PercabanganBilanganKeMN
             hasil = intDigitKeZM * intDigitKeZN;
         }
         System.out.print(hasil);
-        //int digitkeM = Integer.parseInt(stringZ);
-        //int digitkeM = stringZ.charAt(digitkeM - m - 1);
     }
 }
