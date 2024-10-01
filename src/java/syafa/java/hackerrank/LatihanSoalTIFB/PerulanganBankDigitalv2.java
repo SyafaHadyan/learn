@@ -16,6 +16,8 @@ public class PerulanganBankDigitalv2
             masuk = input.nextLine()
             if (masuk.equalsIgnoreCase("Tabung"))
             {
+                masuk.toLowerCase();
+                masuk.replace("tabung ","");
                 saldo += Integer.parseInt(masuk);
                 output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                 outputArray.add(output);
