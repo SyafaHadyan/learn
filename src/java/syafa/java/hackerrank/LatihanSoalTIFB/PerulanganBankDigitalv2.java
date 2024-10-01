@@ -57,6 +57,7 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Cek"))
             {
+                output = "Saldo Rp." + ' ' + saldo;
                 outputArray.add(output);
             }   
         }
