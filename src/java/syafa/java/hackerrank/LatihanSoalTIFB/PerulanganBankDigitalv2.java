@@ -20,7 +20,7 @@ public class PerulanganBankDigitalv2
                 output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                 outputArray.add(output);
             }
-            else if (masuk.equalsIgnoreCase("Tarik"))
+            else if (masuk.contains("Tarik"))
             {
                 if (saldo < Integer.parseInt(masuk))
                 {
