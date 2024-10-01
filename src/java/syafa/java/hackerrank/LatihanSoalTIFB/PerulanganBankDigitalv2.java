@@ -11,7 +11,6 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         String masuk = "";
         String output = "";
-        // TODO: Put inputs into array then print
         do
         {
             masuk = input.nextLine()
