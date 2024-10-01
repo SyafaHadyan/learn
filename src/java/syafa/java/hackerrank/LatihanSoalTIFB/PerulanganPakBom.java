@@ -16,19 +16,19 @@ public class PerulanganPakBom
             {
                 System.out.print(i);
             }
-            else if (i % barisDuaSatu == 0)
+            else if (i % barisDuaSatu == 0 && i % barisDuaDua != 0)
             {
                 System.out.print("Pak");
             }
-            else if (i % barisDuaDua == 0)
+            else if (i % barisDuaDua == 0 && i % barisDuaSatu != 0)
             {
                 System.out.print("Bom");
             }
-            else if ((i % barisDuaSatu == 0) && (i % barisDuaDua == 0))
+            else if (i % barisDuaSatu == 0 && i % barisDuaDua == 0)
             {
                 System.out.print("PakBom");
             }
-            if (i != i)
+            if (i != barisSatu)
             {
                 System.out.print("\n");
             }
