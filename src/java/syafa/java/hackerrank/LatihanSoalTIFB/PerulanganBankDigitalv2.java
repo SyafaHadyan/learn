@@ -20,11 +20,19 @@ public class PerulanganBankDigitalv2
             }
             catch (InputMismatchException e)
             {
-                inputKedua = input.nextInt();
+                inputPertama = input.next();
             }
             try
             {
                 inputKedua = input.nextInt();
+            }
+            catch (InputMismatchException e)
+            {
+                inputKedua = input.nextInt();
+            }
+            try
+            {
+                inputKetiga = input.next();
             }
             catch (InputMismatchException e)
             {
