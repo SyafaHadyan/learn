@@ -11,5 +11,13 @@ public class PerulanganDiamonds
         char simbol = '*';
         int panjangSebelumTengah = ukuranDiamond / 2;
         int posisiTengah = panjangSebelumTengah + 1;
+        int spasiAwalAkhir = panjangSebelumTengah;
+        for (int i = 1; i <= panjangSebelumTengah; i++)
+        {
+            for (int j = spasiAwalAkhir; j > 0; j--)
+            {
+                
+            }
+        }
     }
 }
