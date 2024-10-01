@@ -93,7 +93,7 @@ Perbedaan antara level-level **cache** (L1, L2, L3) terutama terletak pada **kec
 ### Perbedaan Utama
 
 | **Level Cache** | **Lokasi**  | **Kecepatan** | **Kapasitas**  | **Fungsi** |
-|-----------------|----------------------------------|------------------|----------------|------------------------------------------|
+|:---|:---|:---|:---|:---|
 | **L1 Cache** | Di dalam inti CPU | Paling cepat  | Kecil (8 KB-64 KB) | Menyimpan instruksi dan data yang sering digunakan oleh CPU. |
 | **L2 Cache** | Di dalam atau dekat chip prosesor | Cepat| Lebih besar (256 KB-8 MB) | Menyimpan data yang sering diakses tetapi lebih jarang dibanding L1. |
 | **L3 Cache** | Di luar inti, berbagi dengan banyak inti | Lebih lambat dari L1 & L2 | Sangat besar (hingga puluhan MB) | Menyimpan data yang jarang diakses dan mempercepat akses antar inti CPU. |
