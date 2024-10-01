@@ -29,12 +29,14 @@ public class PerulanganBankDigitalv2
                 if (saldo < Integer.parseInt(masuk))
                 {
                     output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Gagal";
+                    outputArray.add(output);
                 }
                 else
                 {
                     saldo -= Integer.parseInt(masuk);
                     output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                     output = "Saldo Rp. " + saldo;
+                    outputArray.add(output);
                 }
                 outputArray.add(output);
             }
