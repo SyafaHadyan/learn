@@ -17,5 +17,6 @@ public class PerulanganBankDigitalv2
             output.add(masuk);
         }
         while (!fungsi.equalsIgnoreCase("Selesai"));
+        input.close();
     }
 }
