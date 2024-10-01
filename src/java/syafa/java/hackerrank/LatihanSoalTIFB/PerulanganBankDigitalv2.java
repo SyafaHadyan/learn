@@ -18,6 +18,7 @@ public class PerulanganBankDigitalv2
             if (masuk.equalsIgnoreCase("Tabung"))
             {
                 saldo += Integer.parseInt(masuk);
+                output = "Saldo Rp. " + saldo;
                 outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
