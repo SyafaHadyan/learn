@@ -25,6 +25,10 @@ public class PerulanganPakBom
             {
                 System.out.println("Bom");
             }
+            else if ((barisSatu % barisDuaSatu == 0) && (barisSatu % barisDuaDua == 0))
+            {
+                System.out.println("PakBom");
+            }
         }
     }
 }
