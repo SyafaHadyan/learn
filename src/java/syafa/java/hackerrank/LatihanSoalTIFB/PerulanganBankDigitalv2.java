@@ -13,7 +13,8 @@ public class PerulanganBankDigitalv2
         // TODO: Put inputs into array then print
         do
         {
-
+            String masuk = input.nextLine();
+            output.add(masuk);
         }
         while (!fungsi.equalsIgnoreCase("Selesai"));
     }
