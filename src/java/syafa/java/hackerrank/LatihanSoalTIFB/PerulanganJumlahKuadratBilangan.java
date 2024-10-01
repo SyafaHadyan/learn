@@ -31,6 +31,6 @@ public class PerulanganJumlahKuadratBilangan
         {
             hasil = a * b;
         }
-        System.out.print(hasil);
+        System.out.printf("%.0f",hasil);
     }
 }
