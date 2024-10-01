@@ -38,15 +38,11 @@ public class PerulanganBankDigitalv2
                 }
                 outputArray.add(output);
             }
-            else if (masuk.equalsIgnoreCase("Tarik"))
+            else if (masuk.equalsIgnoreCase("Transfer"))
             {
                 outputArray.add(output);
             }
-            else if (masuk.equalsIgnoreCase("Tarik"))
-            {
-                outputArray.add(output);
-            }
-            else if (masuk.equalsIgnoreCase("Tarik"))
+            else if (masuk.equalsIgnoreCase("cek"))
             {
                 outputArray.add(output);
             }
