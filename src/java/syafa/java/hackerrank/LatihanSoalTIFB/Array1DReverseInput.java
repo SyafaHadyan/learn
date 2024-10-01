@@ -13,5 +13,9 @@ public class Array1DReverseInput
             String masuk = input.nextLine();
             balikArray[i] = masuk;
         }
+        for (int i = 0; i < balikArray.length; i++)
+        {
+            //
+        }
     }
 }
