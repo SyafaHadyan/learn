@@ -11,22 +11,22 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         String masuk = "";
         String output = "";
+        String masukInput = "";
         do
         {
             masuk = input.nextLine();
+            masuk.toLowerCase();
             if (masuk.contains("tabung"))
             {
-                masuk.toLowerCase();
-                masuk.replace("tabung ","");
-                saldo += Integer.parseInt(masuk);
-                output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
+                masukInput = masuk.replace("tabung ","");
                 System.out.println(masuk);
+                //saldo += Integer.parseInt(masuk);
+                //output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                 outputArray.add(output);
             }
             else if (masuk.contains("tarik"))
             {
-                masuk.toLowerCase();
-                masuk.replace("tarik ","");
+                masukInput = masuk.replace("tarik ","");
                 if (saldo < Integer.parseInt(masuk))
                 {
                     output = "Penarikan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Gagal";
