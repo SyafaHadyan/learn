@@ -14,10 +14,33 @@ public class PerulanganBankDigitalv2
         do
         {
             masuk = input.nextLine();
-            output.add(masuk);
+            if (masuk.equalsIgnoreCase("Tabung"))
+            {
+                output.add(masuk);
+            }
+            else if (masuk.equalsIgnoreCase("Tarik"))
+            {
+                output.add(masuk);
+            }
+            else if (masuk.equalsIgnoreCase("Tarik"))
+            {
+                output.add(masuk);
+            }
+            else if (masuk.equalsIgnoreCase("Tarik"))
+            {
+                output.add(masuk);
+            }
+            else if (masuk.equalsIgnoreCase("Tarik"))
+            {
+                output.add(masuk);
+            }
+            else if (masuk.equalsIgnoreCase("Selesai"))
+            {
+                break;
+            }            
         }
         while (!masuk.equalsIgnoreCase("Selesai"));
-        System.out.println("Halo" + ' ' + nama + ' ' + "Saldo Rp. " + saldo);
         input.close();
+        System.out.println("Halo" + ' ' + nama + "\n" + "Saldo Rp. " + saldo);
     }
 }
