@@ -20,6 +20,26 @@ Teknologi RAM dibagi menjadi dua teknologi
 - Nilai biner disimpan menggunakan konfigurasi gerbang logika flip-flop tradisional.
 - Akan menyimpan datanya selama daya dipasok ke sana
 
+### SRAM vs DRAM
+
+#### Keduanya volatile
+
+- Listrik harus terus menerus disuplai ke memori untuk mempertahankan nilai bit.
+
+#### Sel Dinamis
+
+- Lebih sederhana untuk dibangun, lebih kecil.
+- Lebih padat (sel yang lebih kecil = lebih banyak sel per satuan luas).
+- Lebih murah.
+- Membutuhkan sirkuit penyegaran pendukung.
+- Cenderung dipilih untuk kebutuhan memori yang besar.
+- Digunakan untuk memori utama
+
+#### Sel Statis
+
+- Lebih cepat.
+- Digunakan untuk memori cache (baik on dan off chip)
+
 ## 1. Jenis Memori Semikonduktor
 
 - **RAM (Random-Access Memory)**: Memori yang dapat diakses secara acak dan bersifat volatil. Terdiri dari:
