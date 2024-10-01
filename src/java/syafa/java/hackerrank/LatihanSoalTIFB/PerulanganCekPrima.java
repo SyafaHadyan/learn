@@ -19,7 +19,7 @@ public class PerulanganCekPrima
         }
         if (cekBilangan == 1)
         {
-            cekPrima = "Prima";
+            cekPrima = "Bukan prima";
         }
         System.out.print(cekPrima);
     }
