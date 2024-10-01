@@ -14,10 +14,10 @@ public class PerulanganBankDigitalv2
         // TODO: Put inputs into array then print
         do
         {
-            masuk = input.nextLine();
+            masuk = input.nextLine()
             if (masuk.equalsIgnoreCase("Tabung"))
             {
-                saldo += masuk;
+                saldo += Integer.parseInt(masuk);
                 outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
