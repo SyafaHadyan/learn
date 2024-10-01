@@ -9,5 +9,7 @@ public class PerulanganDiamonds
         int ukuranDiamond = Integer.parseInt(input.nextLine());
         input.close();
         char simbol = '*';
+        int panjangSebelumTengah = ukuranDiamond / 2;
+        int posisiTengah = panjangSebelumTengah + 1;
     }
 }
