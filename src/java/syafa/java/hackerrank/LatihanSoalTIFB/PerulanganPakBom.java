@@ -9,19 +9,18 @@ public class PerulanganPakBom
         int barisSatu = Integer.parseInt(input.nextLine());
         int barisDuaSatu = input.nextInt();
         int barisDuaDua = input.nextInt();
-        input.nextLine();
         input.close();
         for (int i = 1; i <= barisSatu; i++)
         {
-            if (!(barisSatu % barisDuaSatu == 0) && !(barisSatu % barisDuaDua == 0))
+            if (barisSatu % barisDuaSatu != 0 && barisSatu % barisDuaDua != 0)
             {
                 System.out.print(i);
             }
-            else if (barisSatu % barisDuaSatu == 0)
+            else if (barisSatu % barisDuaSatu == 0 && barisSatu % barisDuaDua != 0)
             {
                 System.out.print("Pak");
             }
-            else if (barisSatu % barisDuaDua == 0)
+            else if (barisSatu % barisDuaDua == 0 && barisSatu % barisDuaSatu != 0)
             {
                 System.out.print("Bom");
             }
@@ -34,5 +33,9 @@ public class PerulanganPakBom
                 System.out.print("\n");
             }
         }
+        System.out.print("\n");
+        System.out.println(barisSatu);
+        System.out.println(barisDuaSatu);
+        System.out.print(barisDuaDua);
     }
 }
