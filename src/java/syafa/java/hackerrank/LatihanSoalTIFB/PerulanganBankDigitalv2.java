@@ -8,13 +8,16 @@ public class PerulanganBankDigitalv2
         Scanner input = new Scanner(System.in);
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
-        ArrayList<String> outputArray = new ArrayList<String>();
         String output = "";
+        String inputPertama = "";
+        int inputKedua = 0;
+        String inputKetiga = "";
+        ArrayList<String> outputArray = new ArrayList<String>();
         do
         {
-            String inputPertama = input.next();
-            int inputKedua = input.nextInt();
-            String inputKegita = input.next();
+            inputPertama = input.next();
+            inputKedua = input.nextInt();
+            inputKetiga = input.next();
             input.nextLine();
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
@@ -38,16 +41,16 @@ public class PerulanganBankDigitalv2
                 }
                 outputArray.add(output);
             }
-            else if (masuk.equalsIgnoreCase("Transfer"))
+            else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
                 outputArray.add(output);
             }
-            else if (masuk.equalsIgnoreCase("cek"))
+            else if (inputPertama.equalsIgnoreCase("Cek"))
             {
                 outputArray.add(output);
             }   
         }
-        while (!masuk.equalsIgnoreCase("Selesai"));
+        while (!inputPertama.equalsIgnoreCase("Selesai"));
         input.close();
         System.out.println("Halo" + ' ' + nama + "\n" + "Saldo Rp. " + saldo);
         System.out.print(outputArray);
