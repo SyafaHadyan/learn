@@ -17,27 +17,18 @@ public class PerulanganBankDigitalv2
             try 
             {
                 inputPertama = input.next();
-                inputKedua = input.nextInt();
-                inputKetiga = input.next();
             }
             catch (InputMismatchException e)
             {
-                try
-                {
-                    inputKedua = input.nextInt();
-                    inputKetiga = input.next();
-                }
-                catch (InputMismatchException f)
-                {
-                    try
-                    {
-                        inputKetiga = input.next();
-                    }
-                    catch (InputMismatchException g)
-                    {
-                        // TODO: handle exception
-                    }
-                }
+                inputKedua = input.nextInt();
+            }
+            try
+            {
+                inputKedua = input.nextInt();
+            }
+            catch (InputMismatchException e)
+            {
+                inputKetiga = input.next();
             }
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
