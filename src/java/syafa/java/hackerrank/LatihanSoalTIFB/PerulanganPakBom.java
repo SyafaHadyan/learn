@@ -13,9 +13,13 @@ public class PerulanganPakBom
         input.close();
         for (int i = 1; i <= barisSatu; i++)
         {
-            if (!(barisSatu % barisDuaSatu == 0 && !(barisSatu % barisDuaDua == 0)))
+            if (!(barisSatu % barisDuaSatu == 0) && !(barisSatu % barisDuaDua == 0))
             {
-                System.out.println();
+                System.out.println(i);
+            }
+            else if (barisSatu % barisDuaSatu == 0)
+            {
+                System.out.println("Pak");
             }
         }
     }
