@@ -33,7 +33,7 @@ Teknologi RAM dibagi menjadi dua teknologi
 - Lebih murah.
 - Membutuhkan sirkuit penyegaran pendukung.
 - Cenderung dipilih untuk kebutuhan memori yang besar.
-- Digunakan untuk memori utama
+- Digunakan untuk memori utama.
 
 #### Sel Statis
 
