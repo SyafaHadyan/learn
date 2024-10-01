@@ -17,13 +17,25 @@ public class PerulanganBankDigitalv2
             try 
             {
                 inputPertama = input.next();
-            } catch (InputMismatchException e)
-            {
-                // TODO: handle exception
             }
-            inputKedua = input.nextInt();
-            inputKetiga = input.next();
-            input.nextLine();
+            catch (InputMismatchException e)
+            {
+                try
+                {
+                    inputKedua = input.nextInt();
+                }
+                catch (InputMismatchException f)
+                {
+                    try
+                    {
+                        inputKetiga = input.next();
+                    }
+                    catch (InputMismatchException g)
+                    {
+                        // TODO: handle exception
+                    }
+                }
+            }
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 saldo += inputKedua;
