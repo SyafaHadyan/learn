@@ -8,6 +8,7 @@
 ## 2. Komponen-Komponen Komputer
 
 Menurut arsitektur Von Neumann, komponen utama hardware komputer terdiri dari tiga elemen:
+
 - **CPU (Central Processing Unit)**: Bertanggung jawab atas eksekusi instruksi, termasuk unit kontrol (CU) dan unit aritmatika logika (ALU).
 - **Memori**: Menyimpan data sementara yang dibutuhkan untuk menjalankan program.
 - **I/O Module**: Memasukkan data ke sistem dan menampilkan hasilnya.
