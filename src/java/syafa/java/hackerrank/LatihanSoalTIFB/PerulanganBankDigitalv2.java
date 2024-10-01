@@ -14,7 +14,11 @@ public class PerulanganBankDigitalv2
         String masukInput = "";
         do
         {
-            masuk = input.nextLine();
+            String inputPertama = input.next();
+            int inputKedua = input.nextInt();
+            String inputKegita = input.next();
+            input.nextLine();
+            masuk = input.next();
             masuk.toLowerCase();
             if (masuk.contains("tabung"))
             {
