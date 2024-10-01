@@ -15,8 +15,15 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         do
         {
-            inputPertama = input.next();
-            inputKedua = input.nextInt();
+            inputPertama = input.nextLine();
+            if (inputPertama.equalsIgnoreCase("cek"))
+            {
+                //
+            }
+            else if (inputPertama.equalsIgnoreCase("Tarik") || inputPertama.equalsIgnoreCase("Tabung"))
+            {
+                inputKedua = Integer.parseInt(input.nextLine());
+            }
             inputKetiga = input.next();
             input.nextLine();
             if (inputPertama.equalsIgnoreCase("Tabung"))
