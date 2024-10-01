@@ -54,5 +54,6 @@ public class PerulanganBankDigitalv2
         while (!masuk.equalsIgnoreCase("Selesai"));
         input.close();
         System.out.println("Halo" + ' ' + nama + "\n" + "Saldo Rp. " + saldo);
+        System.out.print(outputArray);
     }
 }
