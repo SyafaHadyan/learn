@@ -17,12 +17,15 @@ public class PerulanganBankDigitalv2
             try 
             {
                 inputPertama = input.next();
+                inputKedua = input.nextInt();
+                inputKetiga = input.next();
             }
             catch (InputMismatchException e)
             {
                 try
                 {
                     inputKedua = input.nextInt();
+                    inputKetiga = input.next();
                 }
                 catch (InputMismatchException f)
                 {
