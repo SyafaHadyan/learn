@@ -75,6 +75,10 @@ public class PerulanganBankDigitalv2
         for (int i = 0; i < outputArray.size(); i++)
         {
             System.out.print(outputArray.get(i));
+            if (i < outputArray.size())
+            {
+                System.out.print("\n");
+            }
         }
         System.out.print("\n" + "Transaksi selesai");
     }
