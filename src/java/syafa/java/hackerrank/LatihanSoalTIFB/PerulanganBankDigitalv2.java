@@ -8,15 +8,16 @@ public class PerulanganBankDigitalv2
         Scanner input = new Scanner(System.in);
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
-        String fungsi = "";
         ArrayList<String> output = new ArrayList<String>();
+        String masuk = "";
         // TODO: Put inputs into array then print
         do
         {
-            String masuk = input.nextLine();
+            masuk = input.nextLine();
             output.add(masuk);
         }
-        while (!fungsi.equalsIgnoreCase("Selesai"));
+        while (!masuk.equalsIgnoreCase("Selesai"));
+        System.out.println("Halo" + ' ' + nama + ' ' + "Saldo Rp. " + saldo);
         input.close();
     }
 }
