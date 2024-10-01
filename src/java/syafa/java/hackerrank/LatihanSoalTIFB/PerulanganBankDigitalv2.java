@@ -9,21 +9,15 @@ public class PerulanganBankDigitalv2
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
         ArrayList<String> outputArray = new ArrayList<String>();
-        String masuk = "";
         String output = "";
-        String masukInput = "";
         do
         {
             String inputPertama = input.next();
             int inputKedua = input.nextInt();
             String inputKegita = input.next();
             input.nextLine();
-            masuk = input.next();
-            masuk.toLowerCase();
-            if (masuk.contains("tabung"))
+            if (inputPertama.equalsIgnoreCase("Tabung"))
             {
-                masukInput = masuk.replace("tabung ","");
-                System.out.println(masuk);
                 //saldo += Integer.parseInt(masuk);
                 //output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                 outputArray.add(output);
