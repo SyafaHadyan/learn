@@ -23,6 +23,15 @@ public class PerulanganBankDigitalv2
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
+                if (saldo < Integer.parseInt(masuk))
+                {
+                    output = "Saldo tidak cukup";
+                }
+                else
+                {
+                    saldo -= Integer.parseInt(masuk)
+                    output = "Saldo Rp. " + saldo;
+                }
                 outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
