@@ -18,18 +18,19 @@ public class PerulanganBankDigitalv2
             if (masuk.equalsIgnoreCase("Tabung"))
             {
                 saldo += Integer.parseInt(masuk);
-                output = "Saldo Rp. " + saldo;
+                output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                 outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
                 if (saldo < Integer.parseInt(masuk))
                 {
-                    output = "Saldo tidak cukup";
+                    output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Gagal";
                 }
                 else
                 {
-                    saldo -= Integer.parseInt(masuk)
+                    saldo -= Integer.parseInt(masuk);
+                    output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
                     output = "Saldo Rp. " + saldo;
                 }
                 outputArray.add(output);
