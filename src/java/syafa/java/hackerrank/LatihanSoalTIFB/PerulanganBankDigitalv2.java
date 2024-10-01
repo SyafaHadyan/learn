@@ -43,6 +43,7 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
+                //Transfer Rp. 5000 ke Iqbal berhasil
                 outputArray.add(output);
             }
             else if (inputPertama.equalsIgnoreCase("Cek"))
