@@ -6,14 +6,14 @@ public class PerulanganJumlahKuadratBilangan
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int a = input.nextInt();
-        int b = input.nextInt();
+        double a = input.nextDouble();
+        double b = input.nextDouble();
         input.close();
-        int hasil = 0;
-        int jumlah = 0;
+        double hasil = 0d;
+        double jumlah = 0d;
         if (a > b)
         {
-            for (int i = a; i >= b; i--)
+            for (double i = a; i >= b; i--)
             {
                 jumlah = i * i;
                 hasil += jumlah;
@@ -21,7 +21,7 @@ public class PerulanganJumlahKuadratBilangan
         }
         else if (a < b)
         {
-            for (int i = a; i <= b; i++)
+            for (double i = a; i <= b; i++)
             {
                 jumlah = i * i;
                 hasil += jumlah;
