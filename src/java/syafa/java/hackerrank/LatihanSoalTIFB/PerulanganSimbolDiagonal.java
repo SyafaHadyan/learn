@@ -15,6 +15,7 @@ public class PerulanganSimbolDiagonal
             {
                 System.out.print(' ');
             }
+            System.out.println(simbol);
         }
     }
 }
