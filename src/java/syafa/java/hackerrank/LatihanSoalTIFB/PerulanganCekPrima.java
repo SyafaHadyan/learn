@@ -17,6 +17,10 @@ public class PerulanganCekPrima
                 break;
             }
         }
+        if (cekBilangan == 1)
+        {
+            cekPrima = "Prima";
+        }
         System.out.print(cekPrima);
     }
 }
