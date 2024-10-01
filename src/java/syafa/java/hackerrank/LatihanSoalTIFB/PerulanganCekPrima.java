@@ -14,6 +14,7 @@ public class PerulanganCekPrima
             if (cekBilangan % i != 0)
             {
                 cekPrima = "Prima";
+                break;
             }
         }
         System.out.print(cekPrima);
