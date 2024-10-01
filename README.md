@@ -6,4 +6,4 @@ This repository contains all the necessary files needed for the class.
 
 You probably need to head to `src/java/Pemrograman Dasar/` to get the necessary files.
 
-To get notes, head to `src/Note/'
+To get notes, head to `src/Note/`
