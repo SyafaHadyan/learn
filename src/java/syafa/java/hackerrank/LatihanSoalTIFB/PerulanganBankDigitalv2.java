@@ -22,6 +22,8 @@ public class PerulanganBankDigitalv2
             }
             else if (masuk.contains("Tarik"))
             {
+                masuk.toLowerCase();
+                masuk.replace("tarik ","");
                 if (saldo < Integer.parseInt(masuk))
                 {
                     output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Gagal";
