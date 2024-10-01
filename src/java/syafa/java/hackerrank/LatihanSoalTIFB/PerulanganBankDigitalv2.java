@@ -74,7 +74,7 @@ public class PerulanganBankDigitalv2
         System.out.println("Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo);
         for (int i = 0; i < outputArray.size(); i++)
         {
-            System.out.print(outputArray[i]);
+            System.out.print(outputArray.get(i));
         }
         System.out.print("\n" + "Transaksi selesai");
     }
