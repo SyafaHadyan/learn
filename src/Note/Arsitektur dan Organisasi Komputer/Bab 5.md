@@ -1,4 +1,4 @@
-# Bab 5 mengenai "Memori Internal
+# Bab 5 Memori Internal
 
 ## 1. Jenis Memori Semikonduktor
 
