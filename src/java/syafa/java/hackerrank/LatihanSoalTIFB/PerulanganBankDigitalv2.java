@@ -18,14 +18,16 @@ public class PerulanganBankDigitalv2
             inputPertama = input.nextLine();
             if (inputPertama.equalsIgnoreCase("cek"))
             {
-                //
+                break;
             }
             else if (inputPertama.equalsIgnoreCase("Tarik") || inputPertama.equalsIgnoreCase("Tabung"))
             {
                 inputKedua = Integer.parseInt(input.nextLine());
             }
-            inputKetiga = input.next();
-            input.nextLine();
+            else if (inputPertama.equalsIgnoreCase("Transfer"))
+            {
+                inputKetiga = input.nextLine();
+            }
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 saldo += inputKedua;
