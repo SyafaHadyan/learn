@@ -1,4 +1,4 @@
-# Bab 1
+# Bab 1 - Konsep Dasar dan Evolusi Komputer
 
 ## 1. Tujuan Pembelajaran
 
