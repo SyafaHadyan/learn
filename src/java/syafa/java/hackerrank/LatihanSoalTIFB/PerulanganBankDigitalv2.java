@@ -48,6 +48,11 @@ public class PerulanganBankDigitalv2
                 {
                     output = "Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal";
                 }
+                else
+                {
+                    output = "Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Berhasil";
+                    saldo -= inputKedua;
+                }
                 outputArray.add(output);
             }
             else if (inputPertama.equalsIgnoreCase("Cek"))
