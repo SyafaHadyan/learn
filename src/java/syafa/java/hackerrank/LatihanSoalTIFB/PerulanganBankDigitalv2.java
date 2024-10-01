@@ -13,7 +13,7 @@ public class PerulanganBankDigitalv2
         String output = "";
         do
         {
-            masuk = input.nextLine()
+            masuk = input.nextLine();
             if (masuk.equalsIgnoreCase("Tabung"))
             {
                 masuk.toLowerCase();
