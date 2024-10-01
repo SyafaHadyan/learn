@@ -18,8 +18,8 @@ public class PerulanganBankDigitalv2
             input.nextLine();
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
-                //saldo += Integer.parseInt(masuk);
-                //output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
+                saldo += inputKedua;
+                output = "Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil";
                 outputArray.add(output);
             }
             else if (masuk.contains("tarik"))
