@@ -32,41 +32,40 @@ public class PerulanganBankDigitalv2
             {
                 saldo += inputKedua;
                 output = "Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil";
-                outputArray.add(output);
+                outputArray.add("Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil");
             }
             else if (inputPertama.equalsIgnoreCase("Tarik"))
             {
                 if (saldo < inputKedua)
                 {
                     output = "Penarikan Rp." + ' ' + inputKedua + ' ' + "Gagal";
-                    outputArray.add(output);
+                    outputArray.add("Penarikan Rp." + ' ' + inputKedua + ' ' + "Gagal");
                 }
                 else
                 {
                     saldo -= inputKedua;
                     output = "Penarikan Rp." + ' ' + inputKedua + ' ' + "Berhasil";
-                    output = "Saldo Rp. " + saldo;
-                    outputArray.add(output);
+                    outputArray.add("Penarikan Rp." + ' ' + inputKedua + ' ' + "Berhasil");
                 }
-                outputArray.add(output);
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
                 if (inputKedua > saldo)
                 {
                     output = "Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal";
+                    outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal");
                 }
                 else
                 {
                     output = "Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Berhasil";
+                    outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Berhasil");
                     saldo -= inputKedua;
                 }
-                outputArray.add(output);
             }
             else if (inputPertama.equalsIgnoreCase("Cek"))
             {
                 output = "Saldo Rp." + ' ' + saldo;
-                outputArray.add(output);
+                outputArray.add("Saldo Rp." + ' ' + saldo);
             }   
         }
         while (!inputPertama.equalsIgnoreCase("Selesai"));
