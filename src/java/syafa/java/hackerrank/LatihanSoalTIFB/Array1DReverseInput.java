@@ -10,7 +10,8 @@ public class Array1DReverseInput
         String balikArray[] = new String[panjangArray];
         for (int i = 0; i < panjangArray; i++)
         {
-            //
+            String masuk = input.nextLine();
+            balikArray[i] = masuk;
         }
     }
 }
