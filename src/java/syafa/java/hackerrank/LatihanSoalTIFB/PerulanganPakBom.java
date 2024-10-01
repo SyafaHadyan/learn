@@ -11,5 +11,9 @@ public class PerulanganPakBom
         int barisDuaDua = input.nextInt();
         input.nextLine();
         input.close();
+        if (!(barisSatu % barisDuaSatu == 0 && !(barisSatu % barisDuaDua == 0)))
+        {
+            System.out.println();
+        }
     }
 }
