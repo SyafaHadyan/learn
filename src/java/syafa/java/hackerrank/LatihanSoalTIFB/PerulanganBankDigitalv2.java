@@ -8,5 +8,12 @@ public class PerulanganBankDigitalv2
         Scanner input = new Scanner(System.in);
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
+        String fungsi = "";
+        // TODO: Put inputs into array then print
+        do
+        {
+
+        }
+        while (!fungsi.equalsIgnoreCase("Selesai"));
     }
 }
