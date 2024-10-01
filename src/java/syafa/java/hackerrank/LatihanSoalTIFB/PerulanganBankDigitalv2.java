@@ -9,7 +9,7 @@ public class PerulanganBankDigitalv2
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
         String fungsi = "";
-        String output[] = new String[];
+        ArrayList<String> output = new ArrayList<String>();
         // TODO: Put inputs into array then print
         do
         {
