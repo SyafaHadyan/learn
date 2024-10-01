@@ -14,21 +14,16 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         do
         {
-            inputPertama = input.nextLine();
-            if (inputPertama.equalsIgnoreCase("cek"))
+            try 
             {
-                break;
-            }
-            else if (inputPertama.equalsIgnoreCase("Tarik") || inputPertama.equalsIgnoreCase("Tabung"))
+                inputPertama = input.next();
+            } catch (InputMismatchException e)
             {
-                inputKedua = Integer.parseInt(input.nextLine());
+                // TODO: handle exception
             }
-            else if (inputPertama.equalsIgnoreCase("Transfer"))
-            {
-                inputKedua = input.nextInt();
-                inputKetiga = input.nextLine();
-                input.nextLine();
-            }
+            inputKedua = input.nextInt();
+            inputKetiga = input.next();
+            input.nextLine();
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 saldo += inputKedua;
