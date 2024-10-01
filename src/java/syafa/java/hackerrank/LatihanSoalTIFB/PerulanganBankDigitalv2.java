@@ -14,15 +14,16 @@ public class PerulanganBankDigitalv2
         do
         {
             masuk = input.nextLine();
-            if (masuk.equalsIgnoreCase("Tabung"))
+            if (masuk.contains("tabung"))
             {
                 masuk.toLowerCase();
                 masuk.replace("tabung ","");
                 saldo += Integer.parseInt(masuk);
                 output = "Penabungan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
+                System.out.println(masuk);
                 outputArray.add(output);
             }
-            else if (masuk.contains("Tarik"))
+            else if (masuk.contains("tarik"))
             {
                 masuk.toLowerCase();
                 masuk.replace("tarik ","");
@@ -47,11 +48,7 @@ public class PerulanganBankDigitalv2
             else if (masuk.equalsIgnoreCase("cek"))
             {
                 outputArray.add(output);
-            }
-            else if (masuk.equalsIgnoreCase("Selesai"))
-            {
-                break;
-            }            
+            }   
         }
         while (!masuk.equalsIgnoreCase("Selesai"));
         input.close();
