@@ -17,23 +17,23 @@ public class PerulanganBankDigitalv2
             masuk = input.nextLine();
             if (masuk.equalsIgnoreCase("Tabung"))
             {
-                outputArray.add(masuk);
+                outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                outputArray.add(masuk);
+                outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                outputArray.add(masuk);
+                outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                outputArray.add(masuk);
+                outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                outputArray.add(masuk);
+                outputArray.add(output);
             }
             else if (masuk.equalsIgnoreCase("Selesai"))
             {
