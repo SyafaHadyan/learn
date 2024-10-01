@@ -8,31 +8,32 @@ public class PerulanganBankDigitalv2
         Scanner input = new Scanner(System.in);
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
-        ArrayList<String> output = new ArrayList<String>();
+        ArrayList<String> outputArray = new ArrayList<String>();
         String masuk = "";
+        String output = "";
         // TODO: Put inputs into array then print
         do
         {
             masuk = input.nextLine();
             if (masuk.equalsIgnoreCase("Tabung"))
             {
-                output.add(masuk);
+                outputArray.add(masuk);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                output.add(masuk);
+                outputArray.add(masuk);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                output.add(masuk);
+                outputArray.add(masuk);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                output.add(masuk);
+                outputArray.add(masuk);
             }
             else if (masuk.equalsIgnoreCase("Tarik"))
             {
-                output.add(masuk);
+                outputArray.add(masuk);
             }
             else if (masuk.equalsIgnoreCase("Selesai"))
             {
