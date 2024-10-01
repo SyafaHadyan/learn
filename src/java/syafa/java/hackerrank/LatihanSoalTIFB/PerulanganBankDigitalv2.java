@@ -14,7 +14,11 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         do
         {
-            try 
+            inputPertama = input.next();
+            inputKedua = input.nextInt();
+            inputKetiga = input.next();
+            /*
+            try
             {
                 inputPertama = input.next();
             }
@@ -38,6 +42,7 @@ public class PerulanganBankDigitalv2
             {
                 inputKetiga = input.next();
             }
+            */
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 saldo += inputKedua;
