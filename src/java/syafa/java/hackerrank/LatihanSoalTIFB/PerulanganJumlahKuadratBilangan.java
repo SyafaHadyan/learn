@@ -27,6 +27,10 @@ public class PerulanganJumlahKuadratBilangan
                 hasil += jumlah;
             }
         }
+        else if (a == b)
+        {
+            hasil = a * b;
+        }
         System.out.print(hasil);
     }
 }
