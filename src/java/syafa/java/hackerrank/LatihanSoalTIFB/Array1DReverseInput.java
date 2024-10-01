@@ -13,6 +13,7 @@ public class Array1DReverseInput
             String masuk = input.nextLine();
             balikArray[i] = masuk;
         }
+        input.close();
         for (int i = panjangArray - 1; i >= 0; i--)
         {
             System.out.print(balikArray[i]);
