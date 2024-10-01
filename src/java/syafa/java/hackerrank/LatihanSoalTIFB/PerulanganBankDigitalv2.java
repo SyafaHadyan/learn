@@ -25,8 +25,9 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
-                inputKedua = Integer.parseInt(input.nextLine());
+                inputKedua = input.nextInt();
                 inputKetiga = input.nextLine();
+                input.nextLine();
             }
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
