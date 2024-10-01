@@ -33,9 +33,5 @@ public class PerulanganPakBom
                 System.out.print("\n");
             }
         }
-        System.out.print("\n");
-        System.out.println(barisSatu);
-        System.out.println(barisDuaSatu);
-        System.out.print(barisDuaDua);
     }
 }
