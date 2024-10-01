@@ -8,12 +8,12 @@ public class PerulanganCekPrima
         Scanner input = new Scanner(System.in);
         int cekBilangan = Integer.parseInt(input.nextLine());
         input.close();
-        String cekPrima = "Bukan prima";
+        String cekPrima = "Prima";
         for (int i = 2; i < cekBilangan; i++)
         {
-            if (cekBilangan % i != 0)
+            if (cekBilangan % i == 0)
             {
-                cekPrima = "Prima";
+                cekPrima = "Bukan prima";
                 break;
             }
         }
