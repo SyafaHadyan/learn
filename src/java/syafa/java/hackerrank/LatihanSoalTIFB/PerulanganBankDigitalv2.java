@@ -43,7 +43,6 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
-                //Transfer Rp. 5000 ke Iqbal berhasil
                 if (inputKedua > saldo)
                 {
                     output = "Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal";
