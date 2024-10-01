@@ -22,18 +22,17 @@ public class PerulanganBankDigitalv2
                 output = "Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil";
                 outputArray.add(output);
             }
-            else if (masuk.contains("tarik"))
+            else if (inputKedua.equalsIgnoreCase("Tarik"))
             {
-                masukInput = masuk.replace("tarik ","");
-                if (saldo < Integer.parseInt(masuk))
+                if (saldo < inputKedua)
                 {
-                    output = "Penarikan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Gagal";
+                    output = "Penarikan Rp." + ' ' + inputKedua + ' ' + "Gagal";
                     outputArray.add(output);
                 }
                 else
                 {
-                    saldo -= Integer.parseInt(masuk);
-                    output = "Penarikan Rp." + ' ' + Integer.parseInt(masuk) + ' ' + "Berhasil";
+                    saldo -= inputKedua;
+                    output = "Penarikan Rp." + ' ' + inputKedua + ' ' + "Berhasil";
                     output = "Saldo Rp. " + saldo;
                     outputArray.add(output);
                 }
