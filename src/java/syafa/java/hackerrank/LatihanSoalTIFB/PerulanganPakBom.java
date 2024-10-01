@@ -12,23 +12,23 @@ public class PerulanganPakBom
         input.close();
         for (int i = 1; i <= barisSatu; i++)
         {
-            if (barisSatu % barisDuaSatu != 0 && barisSatu % barisDuaDua != 0)
+            if (i % barisDuaSatu != 0 && i % barisDuaDua != 0)
             {
                 System.out.print(i);
             }
-            else if (barisSatu % barisDuaSatu == 0 && barisSatu % barisDuaDua != 0)
+            else if (i % barisDuaSatu == 0)
             {
                 System.out.print("Pak");
             }
-            else if (barisSatu % barisDuaDua == 0 && barisSatu % barisDuaSatu != 0)
+            else if (i % barisDuaDua == 0)
             {
                 System.out.print("Bom");
             }
-            else if ((barisSatu % barisDuaSatu == 0) && (barisSatu % barisDuaDua == 0))
+            else if ((i % barisDuaSatu == 0) && (i % barisDuaDua == 0))
             {
                 System.out.print("PakBom");
             }
-            if (i != barisSatu)
+            if (i != i)
             {
                 System.out.print("\n");
             }
