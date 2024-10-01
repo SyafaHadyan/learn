@@ -7,7 +7,8 @@ public class Array1DReverseInput
     {
         Scanner input = new Scanner(System.in);
         int panjangArray = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        String balikArray[] = new String[panjangArray];
+        for (int i = 0; i < panjangArray; i++)
         {
             //
         }
