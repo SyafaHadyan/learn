@@ -1,5 +1,25 @@
 # Bab 5 Memori Internal
 
+## Jenis Memori
+
+Teknologi RAM dibagi menjadi dua teknologi
+
+- RAM Dinamisd (DRAM)
+- RAM Statis (SRAM)
+
+### RAM Dinamis (DRAM)
+
+- Dibuat dengan sel yang menyimpan data sebagai muatan pada kapasitor.
+- Ada atau tidaknya muatan dalam kapasitor diartikan sebagai biner 1 atau 0.
+- Membutuhkan penyegaran biaya berkala untuk menjaga penyimpanan data.
+- Syarat *dinamis* mengacu pada kecenderungan muatan yang disimpan bocor, bahkan dengan daya yang terus menerus diterapkan.
+
+### RAM Statis (SRAM)
+
+- Perangkat digital yang menggunakan elemen logika yang sama digunakan dalam prosesor.
+- Nilai biner disimpan menggunakan konfigurasi gerbang logika flip-flop tradisional.
+- Akan menyimpan datanya selama daya dipasok ke sana
+
 ## 1. Jenis Memori Semikonduktor
 
 - **RAM (Random-Access Memory)**: Memori yang dapat diakses secara acak dan bersifat volatil. Terdiri dari:
