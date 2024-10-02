@@ -7,7 +7,8 @@ public class MethodBuatPeta
     {
         Scanner input = new Scanner(System.in);
         int tinggiPeta = input.nextInt();
-        int lebarPeta = Integer.parseInt(input.nextLine());
+        int lebarPeta = input.nextInt();
+        input.nextLine();
         String simbol = input.nextLine();
         input.close();
         for (int i = 1; i <= tinggiPeta; i++)
