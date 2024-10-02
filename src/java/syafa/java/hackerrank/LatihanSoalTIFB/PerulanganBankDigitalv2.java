@@ -64,6 +64,6 @@ public class PerulanganBankDigitalv2
         {
             System.out.println(output);
         }
-        System.out.print("\n" + "Transaksi selesai");
+        System.out.print("Transaksi selesai");
     }
 }
