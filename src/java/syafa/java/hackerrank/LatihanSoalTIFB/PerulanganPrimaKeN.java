@@ -9,11 +9,20 @@ public class PerulanganPrimaKeN
         int cekBilangan = Integer.parseInt(input.nextLine());
         input.close();
         int bilanganPrimaSekarang = 0;
-        for (int i = 0; i < 100000; i++)
+        boolean prima;
+        for (int i = 2; i < 100000; i++)
         {
-            for (int j = 0; j < cekBilangan; j++)
+            for (int j = 2; j < 100000; j++)
             {
-                
+                if (i % j == 0)
+                {
+                    prima = false;
+                }
+                else
+                {
+                    prima = true;
+                    bilanganPrimaSekarang = i;
+                }
             }
         }
     }
