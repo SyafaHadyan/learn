@@ -7,10 +7,10 @@ public class MethodPrintMultifungsi
     {
         Scanner input = new Scanner(System.in);
         int jumlahInput = Integer.parseInt(input.nextLine());
-        String simbolArray[] = new String[jumlahInput];
         for (int i = 1; i <= jumlahInput; i++)
         {
             String kalimatArray[] = input.nextLine().split(" ");
+            String simbolArray[] = input.nextLine().split(" ");
         }
     }
 }
