@@ -21,11 +21,12 @@ public class PerulanganKalkulatorKompleks
                 hasil = x + y;
                 output = x + " + " + y + " = " + hasil;
                 outputArray[i] = output;
-
             }
             else if (operasi.equalsIgnoreCase("Kurang"))
             {
-                
+                hasil = x - y;
+                output = x + " - " + y + " = " + hasil;
+                outputArray[i] = output;
             }
             else if (operasi.equalsIgnoreCase("Kali"))
             {
