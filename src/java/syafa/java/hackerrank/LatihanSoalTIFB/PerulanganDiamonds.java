@@ -16,8 +16,9 @@ public class PerulanganDiamonds
         {
             for (int j = spasiAwalAkhir; j > 0; j--)
             {
-                
+                System.out.print(' ');
             }
+            System.out.println(simbol);
         }
     }
 }
