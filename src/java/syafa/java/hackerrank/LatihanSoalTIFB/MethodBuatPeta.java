@@ -17,6 +17,10 @@ public class MethodBuatPeta
             {
                 System.out.print(' ');
             }
+            if (i == lebarPeta)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
