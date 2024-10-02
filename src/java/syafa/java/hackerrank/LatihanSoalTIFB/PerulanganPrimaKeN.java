@@ -8,6 +8,7 @@ public class PerulanganPrimaKeN
         Scanner input = new Scanner(System.in);
         int cekBilangan = Integer.parseInt(input.nextLine());
         input.close();
+        int bilanganPrima = 0;
         int bilanganPrimaSekarang = 0;
         boolean prima;
         for (int i = 2; i < 100000; i++)
@@ -21,8 +22,13 @@ public class PerulanganPrimaKeN
                 else
                 {
                     prima = true;
-                    bilanganPrimaSekarang = i;
+                    bilanganPrimaSekarang++;
+                    bilanganPrima = i;
                 }
+            }
+            if (bilanganPrimaSekarang == cekBilangan)
+            {
+                System.out.print(bilanganPrima)
             }
         }
     }
