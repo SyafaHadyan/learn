@@ -16,7 +16,6 @@ public class PerulanganKalkulatorKompleks
             String operasi = input.next();
             double x = input.nextDouble();
             double y = input.nextDouble();
-            input.nextLine();
             if (operasi.equalsIgnoreCase("Tambah"))
             {
                 hasil = x + y;
