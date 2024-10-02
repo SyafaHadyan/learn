@@ -10,7 +10,7 @@ public class PerulanganPrimaKeN
         input.close();
         int bilanganPrima = 0;
         int bilanganPrimaSekarang = 0;
-        boolean prima;
+        //boolean prima;
         for (int i = 2; i < 100000; i++)
         {
             for (int j = 2; j < 100000; j++)
