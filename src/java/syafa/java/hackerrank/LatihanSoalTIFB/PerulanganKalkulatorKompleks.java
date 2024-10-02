@@ -14,7 +14,6 @@ public class PerulanganKalkulatorKompleks
         double x = 0d;
         double y = 0d;
         double hasil = 0d;
-        char operator = ' ';
         for (int i = 0; i < jumlahOperasi; i++)
         {
             String operasi = input.next();
@@ -24,33 +23,33 @@ public class PerulanganKalkulatorKompleks
             bilanganKedua[i] = y;
             if (operasi.equalsIgnoreCase("Tambah"))
             {
-                operator = '+';
                 hasil = x + y;
                 outputHasil[i] = hasil;
+                operatorArray[i] = '+';
             }
             else if (operasi.equalsIgnoreCase("Kurang"))
             {
-                operator = '-';
                 hasil = x - y;
                 outputHasil[i] = hasil;
+                operatorArray[i] = '-';
             }
             else if (operasi.equalsIgnoreCase("Kali"))
             {
-                operator = '*';
                 hasil = x * y;
                 outputHasil[i] = hasil;
+                operatorArray[i] = '*';
             }
             else if (operasi.equalsIgnoreCase("Bagi"))
             {
-                operator = '/';
                 hasil = x / y;
                 outputHasil[i] = hasil;
+                operatorArray[i] = '/';
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
-                operator = '%';
                 hasil = x % y;
                 outputHasil[i] = hasil;
+                operatorArray[i] = '%';
             }
         }
         input.close();
