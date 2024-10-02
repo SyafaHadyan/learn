@@ -14,7 +14,7 @@ public class PerulanganDiamonds
         int spasiAwalAkhir = panjangSebelumTengah;
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
-            for (int j = spasiAwalAkhir; j > 0; j--)
+            for (int j = spasiAwalAkhir - i + 1; j > 0; j--)
             {
                 System.out.print(' ');
             }
