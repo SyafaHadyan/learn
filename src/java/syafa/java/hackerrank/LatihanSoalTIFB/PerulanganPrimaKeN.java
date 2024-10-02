@@ -24,11 +24,12 @@ public class PerulanganPrimaKeN
                     prima = true;
                     bilanganPrimaSekarang++;
                     bilanganPrima = i;
+                    break;
                 }
             }
             if (bilanganPrimaSekarang == cekBilangan)
             {
-                System.out.print(bilanganPrima)
+                System.out.print(bilanganPrima);
             }
         }
     }
