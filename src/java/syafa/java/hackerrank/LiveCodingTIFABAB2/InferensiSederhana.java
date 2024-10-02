@@ -16,6 +16,7 @@ public class InferensiSederhana
         int elemen5 = input.nextInt();
         int elemen6 = input.nextInt();
         input.close();
+        String out = "";
         if (operasi.equalsIgnoreCase("lt"))
         {
             for (int i = 0; i < 7;)
@@ -23,6 +24,11 @@ public class InferensiSederhana
                 if (i == 0)
                 {
                     if (masuk < elemen0)
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
+                    else 
                     {
                         i++;
                         i = 2 * i - 1;
@@ -35,10 +41,20 @@ public class InferensiSederhana
                         i++;
                         i = 2 * i - 1;
                     }
+                    else 
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
                 }
                 else if (i == 2)
                 {
                     if (masuk < elemen2)
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
+                    else 
                     {
                         i++;
                         i = 2 * i - 1;
@@ -51,10 +67,20 @@ public class InferensiSederhana
                         i++;
                         i = 2 * i - 1;
                     }
+                    else 
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
                 }
                 else if (i == 4)
                 {
                     if (masuk < elemen4)
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
+                    else 
                     {
                         i++;
                         i = 2 * i - 1;
@@ -67,6 +93,11 @@ public class InferensiSederhana
                         i++;
                         i = 2 * i - 1;
                     }
+                    else 
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
                 }
                 else if (i == 6)
                 {
@@ -75,13 +106,18 @@ public class InferensiSederhana
                         i++;
                         i = 2 * i - 1;
                     }
+                    else 
+                    {
+                        i++;
+                        i = 2 * i - 1;
+                    }
                 }
                 else 
                 {
-                    i++;
-                    i = 2 * i - 1;
+                    out = "false";
                 }
             }
         }
+        System.out.print(out);
     }
 }
