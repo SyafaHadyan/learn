@@ -11,11 +11,14 @@ public class PerulanganBankDigitalv2
         String inputPertama;
         int inputKedua;
         String inputKetiga;
+        String halo;
         ArrayList<String> outputArray = new ArrayList<String>();
         while (true)
         {
             String[] masuk = input.nextLine().split(" ");
             inputPertama = masuk[0];
+            halo = "Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo;
+            outputArray.add(halo);
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 inputKedua = Integer.parseInt(masuk[1]);
@@ -59,7 +62,6 @@ public class PerulanganBankDigitalv2
                 break;
             }
         }
-        System.out.println("Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo);
         for (String output : outputArray)
         {
             System.out.println(output);
