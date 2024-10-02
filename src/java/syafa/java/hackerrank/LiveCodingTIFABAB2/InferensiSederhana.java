@@ -25,31 +25,38 @@ public class InferensiSederhana
                 {
                     if (masuk < elemen0)
                     {
-                        
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen1)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen2)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen3)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen4)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen5)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                     else if (masuk < elemen6)
                     {
-                        //
+                        i++;
+                        i = 2 * i -1;
                     }
                 }
             }
