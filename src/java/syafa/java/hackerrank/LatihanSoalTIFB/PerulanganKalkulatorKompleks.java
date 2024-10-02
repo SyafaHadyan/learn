@@ -43,7 +43,11 @@ public class PerulanganKalkulatorKompleks
         input.close();
         for (int i = 0; i < jumlahOperasi; i++)
         {
-            //
+            System.out.print(outputArray[i]);
+            if (i != jumlahOperasi - 1)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
