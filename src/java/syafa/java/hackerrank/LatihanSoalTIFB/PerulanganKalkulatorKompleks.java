@@ -31,8 +31,9 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
-                
+
             }
         }
+        input.close();
     }
 }
