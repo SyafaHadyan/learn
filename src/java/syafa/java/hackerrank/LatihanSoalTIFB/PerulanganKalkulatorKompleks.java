@@ -25,40 +25,30 @@ public class PerulanganKalkulatorKompleks
             {
                 operator = '+';
                 hasil = x + y;
-                output = x + " + " + y + " = ";
-                outputArray[i] = output;
                 outputHasil[i] = hasil;
             }
             else if (operasi.equalsIgnoreCase("Kurang"))
             {
                 operator = '-';
                 hasil = x - y;
-                output = x + " - " + y + " = ";
-                outputArray[i] = output;
                 outputHasil[i] = hasil;
             }
             else if (operasi.equalsIgnoreCase("Kali"))
             {
                 operator = '*';
                 hasil = x * y;
-                output = x + " * " + y + " = ";
-                outputArray[i] = output;
                 outputHasil[i] = hasil;
             }
             else if (operasi.equalsIgnoreCase("Bagi"))
             {
                 operator = '/';
                 hasil = x / y;
-                output = x + " / " + y + " = ";
-                outputArray[i] = output;
                 outputHasil[i] = hasil;
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
                 operator = '%';
                 hasil = x % y;
-                output = x + " % " + y + " = ";
-                outputArray[i] = output;
                 outputHasil[i] = hasil;
             }
         }
