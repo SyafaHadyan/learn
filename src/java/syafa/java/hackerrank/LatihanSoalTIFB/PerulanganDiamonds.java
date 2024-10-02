@@ -21,9 +21,9 @@ public class PerulanganDiamonds
             for (int j = 1; j <= panjangSebelumTengah; j++)
             {
                 System.out.print(simbol);
-                for (int k = 0; k < args.length; k++)
+                for (int k = panjangSebelumTengah; k >= 0; k--)
                 {
-                    //
+                    System.out.print(' ');
                 }
             }
         }
