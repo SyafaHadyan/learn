@@ -12,9 +12,13 @@ public class MethodHaloDunia
         Scanner input = new Scanner(System.in);
         int ulang = Integer.parseInt(input.nextLine());
         input.close();
-        for (int i = 1; i < ulang; i++)
+        for (int i = 1; i <= ulang; i++)
         {
             System.out.print("Halo Dunia");
+            if (i != ulang)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
