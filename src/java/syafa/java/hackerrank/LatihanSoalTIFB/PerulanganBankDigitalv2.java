@@ -42,13 +42,13 @@ public class PerulanganBankDigitalv2
                 inputKedua = Integer.parseInt(masuk[1]);
                 try
                 {
-                    inputKetiga = (masuk[2]) + (masuk[3]) + (masuk[4]);
+                    inputKetiga = (masuk[2]) + ' ' + (masuk[3]) + ' ' + (masuk[4]);
                 }
                 catch (ArrayIndexOutOfBoundsException e)
                 {
                     try
                     {
-                        inputKetiga = (masuk[2]) + (masuk[3]);
+                        inputKetiga = (masuk[2]) + ' ' + (masuk[3]);
                     }
                     catch (ArrayIndexOutOfBoundsException f)
                     {
