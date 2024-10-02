@@ -18,10 +18,14 @@ public class PerulanganDiamonds
             {
                 System.out.print(' ');
             }
-            System.out.println(simbol);
+            for (int j = 1; j <= panjangSebelumTengah; j++)
+            {
+                System.out.print(simbol);
+                for (int k = 0; k < args.length; k++)
+                {
+                    //
+                }
+            }
         }
-        System.out.println(panjangSebelumTengah);
-        System.out.println(posisiTengah);
-        System.out.print(spasiAwalAkhir);
     }
 }
