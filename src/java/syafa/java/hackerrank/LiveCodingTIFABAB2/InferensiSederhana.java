@@ -8,11 +8,13 @@ public class InferensiSederhana
         Scanner input = new Scanner(System.in);
         int masuk = Integer.parseInt(input.nextLine());
         String operasi = input.nextLine();
-        int elemen;
-        for (int i = 1; i <= 10; i++)
-        {
-            elemen = input.nextInt();
-        }
+        int elemen0 = input.nextInt();
+        int elemen1 = input.nextInt();
+        int elemen2 = input.nextInt();
+        int elemen3 = input.nextInt();
+        int elemen4 = input.nextInt();
+        int elemen5 = input.nextInt();
+        int elemen6 = input.nextInt();
         input.close();
     }
 }
