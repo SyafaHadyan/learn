@@ -20,6 +20,7 @@ public class PerulanganKalkulatorKompleks
             double y = input.nextDouble();
             if (operasi.equalsIgnoreCase("Tambah"))
             {
+                operator = '+';
                 hasil = x + y;
                 output = x + " + " + y + " = ";
                 outputArray[i] = output;
