@@ -20,5 +20,8 @@ public class PerulanganDiamonds
             }
             System.out.println(simbol);
         }
+        System.out.println(panjangSebelumTengah);
+        System.out.println(posisiTengah);
+        System.out.print(spasiAwalAkhir);
     }
 }
