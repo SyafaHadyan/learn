@@ -18,6 +18,11 @@ public class DengklekvsSengklek
             {
                 hasil[i] = "Seri";
             }
+            else if (dengklek.equalsIgnoreCase("Batu") && sengklek.equalsIgnoreCase("Gunting"))
+            {
+                hasil[i] = "Dengklek menang";
+            }
+            else if (de)
         }
     }
 }
