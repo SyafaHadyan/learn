@@ -1,1 +1,2 @@
 cd src/java/syafa/java/hackerrank/LiveCoding2TIFC
+cd "D:/GitHub/learn/src/java/syafa/java/hackerrank/LiveCoding2TIFC"
