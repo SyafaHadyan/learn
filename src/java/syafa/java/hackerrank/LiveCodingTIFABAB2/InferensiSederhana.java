@@ -8,7 +8,6 @@ public class InferensiSederhana
         Scanner input = new Scanner(System.in);
         int masuk = Integer.parseInt(input.nextLine());
         String operasi = input.nextLine();
-        char op = ' ';
         int elemen0 = input.nextInt();
         int elemen1 = input.nextInt();
         int elemen2 = input.nextInt();
@@ -19,7 +18,7 @@ public class InferensiSederhana
         input.close();
         if (operasi.equalsIgnoreCase("lt"))
         {
-            for (int i = 1; i <= 7;)
+            for (int i = 0; i < 7;)
             {
                 if (i == 0)
                 {
@@ -28,36 +27,59 @@ public class InferensiSederhana
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen1)
+                }
+                else if (i == 1)
+                {
+                    if (masuk < elemen1)
                     {
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen2)
+                }
+                else if (i == 2)
+                {
+                    if (masuk < elemen2)
                     {
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen3)
+                }
+                else if (i == 3)
+                {
+                    if (masuk < elemen3)
                     {
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen4)
+                }
+                else if (i == 4)
+                {
+                    if (masuk < elemen4)
                     {
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen5)
+                }
+                else if (i == 5)
+                {
+                    if (masuk < elemen5)
                     {
                         i++;
                         i = 2 * i -1;
                     }
-                    else if (masuk < elemen6)
+                }
+                else if (i == 6)
+                {
+                    if (masuk < elemen6)
                     {
                         i++;
                         i = 2 * i -1;
                     }
+                }
+                else 
+                {
+                    i++;
+                    i = 2 * i - 1
                 }
             }
         }
