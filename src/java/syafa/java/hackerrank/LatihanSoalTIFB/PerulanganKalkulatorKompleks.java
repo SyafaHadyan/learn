@@ -10,6 +10,7 @@ public class PerulanganKalkulatorKompleks
         double bilanganPertama[] = new double[jumlahOperasi];
         double bilanganKedua[] = new double[jumlahOperasi];
         double outputHasil[] = new double[jumlahOperasi];
+        char operatorArray[] = new char[jumlahOperasi];
         double x = 0d;
         double y = 0d;
         double hasil = 0d;
