@@ -12,9 +12,8 @@ public class DengklekvsSengklek
         int skorSengklek = 0;
         for (int i = 0; i < 4; i++)
         {
-            String dengklek = input.next();
             String sengklek = input.next();
-            input.nextLine();
+            String dengklek = input.next();
             if (dengklek.equalsIgnoreCase(sengklek))
             {
                 hasil[i] = "Seri";
@@ -66,11 +65,11 @@ public class DengklekvsSengklek
         }
         else if (skorDengklek > skorSengklek)
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + skorDengklek + " vs " + skorSengklek;
+            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + skorDengklek + " vs " + skorSengklek + '.';
         }
         else if (skorSengklek > skorDengklek)
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + skorSengklek + " vs " + skorDengklek;
+            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + skorSengklek + " vs " + skorDengklek + '.';
         }
         for (String output : hasil)
         {
