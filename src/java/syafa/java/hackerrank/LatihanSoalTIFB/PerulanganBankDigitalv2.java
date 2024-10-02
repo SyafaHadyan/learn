@@ -8,17 +8,16 @@ public class PerulanganBankDigitalv2
         Scanner input = new Scanner(System.in);
         String nama = input.nextLine();
         int saldo = Integer.parseInt(input.nextLine());
+        ArrayList<String> outputArray = new ArrayList<String>();
         String inputPertama;
         int inputKedua;
         String inputKetiga;
-        String halo;
-        ArrayList<String> outputArray = new ArrayList<String>();
+        String halo = "Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo;
+        outputArray.add(halo);
         while (true)
         {
             String[] masuk = input.nextLine().split(" ");
             inputPertama = masuk[0];
-            halo = "Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo;
-            outputArray.add(halo);
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 inputKedua = Integer.parseInt(masuk[1]);
