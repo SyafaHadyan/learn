@@ -29,6 +29,17 @@ public class DengklekvsSengklek
                     hasil[i] = "Sengklek menang";
                 }
             }
+            else if (dengklek.equalsIgnoreCase("Gunting"))
+            {
+                if (sengklek.equalsIgnoreCase("Batu"))
+                {
+                    hasil[i] = "Sengklek menang";
+                }
+                else if (sengklek.equalsIgnoreCase("Kertas"))
+                {
+                    hasil[i] = "Dengklek menang";
+                }
+            }
         }
     }
 }
