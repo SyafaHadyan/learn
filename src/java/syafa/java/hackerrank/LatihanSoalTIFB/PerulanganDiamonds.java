@@ -17,9 +17,13 @@ public class PerulanganDiamonds
             {
                 System.out.print(' ');
             }
-            for (int j = 0; j < args.length; j++)
+            for (int j = 1; j <= i; j++)
             {
-                //
+                System.out.print(simbol);
+                if (j > 1)
+                {
+                    System.out.print(' ');
+                }
             }
         }
             /*
