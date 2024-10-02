@@ -42,11 +42,18 @@ public class PerulanganBankDigitalv2
                 inputKedua = Integer.parseInt(masuk[1]);
                 try
                 {
-                    inputKetiga = (masuk[2]) + (masuk[3]);
+                    inputKetiga = (masuk[2]) + (masuk[3]) + (masuk[4]);
                 }
                 catch (ArrayIndexOutOfBoundsException e)
                 {
-                    inputKetiga = (masuk[2]);
+                    try
+                    {
+                        inputKetiga = (masuk[2]) + (masuk[3]);
+                    }
+                    catch (ArrayIndexOutOfBoundsException f)
+                    {
+                        inputKetiga = (masuk[2]);
+                    }
                 }
                 if (inputKedua > saldo)
                 {
