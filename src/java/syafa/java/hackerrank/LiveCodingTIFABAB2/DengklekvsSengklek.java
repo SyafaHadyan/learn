@@ -66,7 +66,11 @@ public class DengklekvsSengklek
         }
         else if (skorDengklek > skorSengklek)
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor d vs s.";
+            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + skorDengklek + " vs " + skorSengklek;
+        }
+        else if (skorSengklek > skorDengklek)
+        {
+            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + skorSengklek + " vs " + skorDengklek;
         }
         for (String output : hasil)
         {
