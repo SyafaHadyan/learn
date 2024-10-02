@@ -11,38 +11,13 @@ public class PerulanganBankDigitalv2
         String inputPertama = "";
         int inputKedua = 0;
         String inputKetiga = "";
+        boolean ulang = true;
         ArrayList<String> outputArray = new ArrayList<String>();
         do
         {
             inputPertama = input.next();
             inputKedua = input.nextInt();
             inputKetiga = input.next();
-            /*
-            try
-            {
-                inputPertama = input.next();
-            }
-            catch (InputMismatchException e)
-            {
-                inputPertama = input.next();
-            }
-            try
-            {
-                inputKedua = input.nextInt();
-            }
-            catch (InputMismatchException e)
-            {
-                inputKedua = input.nextInt();
-            }
-            try
-            {
-                inputKetiga = input.next();
-            }
-            catch (InputMismatchException e)
-            {
-                inputKetiga = input.next();
-            }
-            */
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
                 saldo += inputKedua;
@@ -75,9 +50,13 @@ public class PerulanganBankDigitalv2
             else if (inputPertama.equalsIgnoreCase("Cek"))
             {
                 outputArray.add("Saldo Rp." + ' ' + saldo);
-            }   
+            }
+            else if (inputPertama.equalsIgnoreCase("Selesai"))
+            {
+                ulang = false;
+            }
         }
-        while (!inputPertama.equalsIgnoreCase("Selesai"));
+        while (ulang);
         input.close();
         System.out.println("Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo);
         for (String output : outputArray)
