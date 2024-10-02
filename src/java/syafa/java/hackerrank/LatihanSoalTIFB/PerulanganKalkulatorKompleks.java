@@ -9,7 +9,6 @@ public class PerulanganKalkulatorKompleks
         int jumlahOperasi = Integer.parseInt(input.nextLine());
         double bilanganPertama[] = new double[jumlahOperasi];
         double bilanganKedua[] = new double[jumlahOperasi];
-        String outputArray[] = new String[jumlahOperasi];
         double outputHasil[] = new double[jumlahOperasi];
         double x = 0d;
         double y = 0d;
@@ -56,9 +55,7 @@ public class PerulanganKalkulatorKompleks
         input.close();
         for (int i = 0; i < jumlahOperasi; i++)
         {
-            //System.out.print(outputArray[i]);
             System.out.printf("%.0f%c%c%c%.0f%c%c%c%.2f",bilanganPertama[i],' ',operator,' ',bilanganKedua[i],' ','=',' ',outputHasil[i]);
-            //System.out.printf("%.2f",outputHasil[i]);
             if (i != jumlahOperasi - 1)
             {
                 System.out.print("\n");
