@@ -13,8 +13,8 @@ public class PerulanganKalkulatorKompleks
         for (int i = 0; i < jumlahOperasi; i++)
         {
             String operasi = input.next();
-            int x = input.nextInt();
-            int y = input.nextInt();
+            double x = input.nextDouble();
+            double y = input.nextDouble();
             input.nextLine();
             if (operasi.equalsIgnoreCase("Tambah"))
             {
