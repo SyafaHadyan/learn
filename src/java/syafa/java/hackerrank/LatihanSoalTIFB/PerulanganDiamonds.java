@@ -10,7 +10,7 @@ public class PerulanganDiamonds
         input.close();
         char simbol = '*';
         int panjangSebelumTengah = ukuranBentuk / 2;
-        int posisiTengah = panjangSebelumTengah + 1;
+        //int posisiTengah = panjangSebelumTengah + 1;
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
             for (int j = panjangSebelumTengah; j > 0; j--)
