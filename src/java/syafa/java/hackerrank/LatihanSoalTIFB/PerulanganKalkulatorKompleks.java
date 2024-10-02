@@ -57,7 +57,7 @@ public class PerulanganKalkulatorKompleks
         for (int i = 0; i < jumlahOperasi; i++)
         {
             //System.out.print(outputArray[i]);
-            System.out.printf("%.0f%c%c%c%.0f%c%c%c%.2f",x,' ',operator,' ',y,' ','=',' ',outputHasil[i]);
+            System.out.printf("%.0f%c%c%c%.0f%c%c%c%.2f",bilanganPertama[i],' ',operator,' ',bilanganKedua[i],' ','=',' ',outputHasil[i]);
             //System.out.printf("%.2f",outputHasil[i]);
             if (i != jumlahOperasi - 1)
             {
