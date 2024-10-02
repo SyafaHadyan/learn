@@ -36,7 +36,9 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Bagi"))
             {
-
+                hasil = x / y;
+                output = x + " / " + y + " = " + hasil;
+                outputArray[i] = output;
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
