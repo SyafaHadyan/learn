@@ -55,7 +55,7 @@ public class DengklekvsSengklek
         input.close();
         for (String output : hasil)
         {
-
+            System.out.println(output);
         }
     }
 }
