@@ -16,5 +16,15 @@ public class InferensiSederhana
         int elemen5 = input.nextInt();
         int elemen6 = input.nextInt();
         input.close();
+        if (operasi.equalsIgnoreCase("lt"))
+        {
+            for (int i = 0; i < args.length;)
+            {
+                if (i == 0)
+                {
+                    if (masuk < elemen0)
+                }
+            }
+        }
     }
 }
