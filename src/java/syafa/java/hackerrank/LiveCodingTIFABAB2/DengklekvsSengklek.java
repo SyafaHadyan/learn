@@ -7,9 +7,10 @@ public class DengklekvsSengklek
     {
         String hasil[] = new String[4];
         Scanner input = new Scanner(System.in);
+        String hasilPertandingan = "";
         int skorDengklek = 0;
         int skorSengklek = 0;
-        for (int i = 1; i <= 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             String dengklek = input.next();
             String sengklek = input.next();
@@ -23,10 +24,12 @@ public class DengklekvsSengklek
                 if (sengklek.equalsIgnoreCase("Gunting"))
                 {
                     hasil[i] = "Dengklek menang";
+                    skorDengklek++;
                 }
                 else if (sengklek.equalsIgnoreCase("Kertas"))
                 {
                     hasil[i] = "Sengklek menang";
+                    skorSengklek++;
                 }
             }
             else if (dengklek.equalsIgnoreCase("Gunting"))
@@ -34,10 +37,12 @@ public class DengklekvsSengklek
                 if (sengklek.equalsIgnoreCase("Batu"))
                 {
                     hasil[i] = "Sengklek menang";
+                    skorSengklek++;
                 }
                 else if (sengklek.equalsIgnoreCase("Kertas"))
                 {
                     hasil[i] = "Dengklek menang";
+                    skorDengklek++;
                 }
             }
             else if (dengklek.equalsIgnoreCase("Kertas"))
@@ -45,17 +50,28 @@ public class DengklekvsSengklek
                 if (sengklek.equalsIgnoreCase("Batu"))
                 {
                     hasil[i] = "Dengklek menang";
+                    skorDengklek++;
                 }
                 else if (sengklek.equalsIgnoreCase("Gunting"))
                 {
                     hasil[i] = "Sengklek menang";
+                    skorSengklek++;
                 }
             }
         }
         input.close();
+        if (skorDengklek == skorSengklek)
+        {
+            hasilPertandingan = "Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.";
+        }
+        else if (skorDengklek > skorSengklek)
+        {
+            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor d vs s.";
+        }
         for (String output : hasil)
         {
             System.out.println(output);
         }
+        System.out.print(hasilPertandingan);
     }
 }
