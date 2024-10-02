@@ -7,7 +7,8 @@ public class PerulanganKalkulatorKompleks
     {
         Scanner input = new Scanner(System.in);
         int jumlahOperasi = Integer.parseInt(input.nextLine());
-        double bilanganPertamaKedua[] = new double[jumlahOperasi];
+        double bilanganPertama[] = new double[jumlahOperasi];
+        double bilanganKedua[] = new double[jumlahOperasi];
         String outputArray[] = new String[jumlahOperasi];
         double outputHasil[] = new double[jumlahOperasi];
         double x = 0d;
