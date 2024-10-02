@@ -22,7 +22,7 @@ public class PerulanganBankDigitalv2
             {
                 inputKedua = Integer.parseInt(masuk[1]);
                 saldo += inputKedua;
-                outputArray.add("Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil");
+                outputArray.add("Penabungan Rp." + ' ' + inputKedua + ' ' + "berhasil");
             }
             else if (inputPertama.equalsIgnoreCase("Tarik"))
             {
@@ -34,7 +34,7 @@ public class PerulanganBankDigitalv2
                 else
                 {
                     saldo -= inputKedua;
-                    outputArray.add("Penarikan Rp." + ' ' + inputKedua + ' ' + "Berhasil");
+                    outputArray.add("Penarikan Rp." + ' ' + inputKedua + ' ' + "berhasil");
                 }
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
@@ -47,7 +47,7 @@ public class PerulanganBankDigitalv2
                 }
                 else
                 {
-                    outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Berhasil");
+                    outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "berhasil");
                     saldo -= inputKedua;
                 }
             }
