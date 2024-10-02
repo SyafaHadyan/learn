@@ -14,7 +14,6 @@ public class PerulanganKalkulatorKompleks
         double x = 0d;
         double y = 0d;
         double hasil = 0d;
-        String output = "";
         char operator = ' ';
         for (int i = 0; i < jumlahOperasi; i++)
         {
