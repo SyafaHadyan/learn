@@ -40,7 +40,7 @@ public class PerulanganBankDigitalv2
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
                 inputKedua = Integer.parseInt(masuk[1]);
-                inputKetiga = (masuk[2]);
+                inputKetiga = (masuk[2]) + (masuk[3]);
                 if (inputKedua > saldo)
                 {
                     outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "gagal");
