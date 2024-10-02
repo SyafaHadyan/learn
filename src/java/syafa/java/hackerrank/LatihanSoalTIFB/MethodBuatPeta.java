@@ -10,5 +10,13 @@ public class MethodBuatPeta
         int lebarPeta = input.nextInt();
         String simbol = input.nextLine();
         input.close();
+        for (int i = 1; i <= lebarPeta; i++)
+        {
+            System.out.print(simbol);
+            if (i != lebarPeta)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
