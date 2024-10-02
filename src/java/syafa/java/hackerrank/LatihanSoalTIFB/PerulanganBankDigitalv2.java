@@ -40,6 +40,7 @@ public class PerulanganBankDigitalv2
                 inputKedua = Integer.parseInt(masuk[1]);
                 if (inputKedua > saldo)
                 {
+                    inputKetiga = (masuk[2]);
                     outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal");
                 }
                 else
