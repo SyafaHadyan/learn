@@ -14,16 +14,17 @@ public class PerulanganBankDigitalv2
         ArrayList<String> outputArray = new ArrayList<String>();
         while (true)
         {
-            inputPertama = input.next();
-            inputKedua = input.nextInt();
-            inputKetiga = input.next();
+            String[] masuk = input.nextLine().split(" ");
+            inputPertama = masuk[0];
             if (inputPertama.equalsIgnoreCase("Tabung"))
             {
+                inputKedua = Integer.parseInt(masuk[1]);
                 saldo += inputKedua;
                 outputArray.add("Penabungan Rp." + ' ' + inputKedua + ' ' + "Berhasil");
             }
             else if (inputPertama.equalsIgnoreCase("Tarik"))
             {
+                inputKedua = Integer.parseInt(masuk[1]);
                 if (saldo < inputKedua)
                 {
                     outputArray.add("Penarikan Rp." + ' ' + inputKedua + ' ' + "Gagal");
@@ -36,6 +37,7 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Transfer"))
             {
+                inputKedua = Integer.parseInt(masuk[1]);
                 if (inputKedua > saldo)
                 {
                     outputArray.add("Transfer Rp." + ' ' + inputKedua + ' ' + "ke" + ' ' + inputKetiga + ' ' + "Gagal");
