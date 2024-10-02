@@ -19,7 +19,7 @@ public class PerulanganKalkulatorKompleks
             if (operasi.equalsIgnoreCase("Tambah"))
             {
                 hasil = x + y;
-                output = x + ' ' + y + " = " + hasil;
+                output = x + " + " + y + " = " + hasil;
                 outputArray[i] = output;
 
             }
@@ -46,7 +46,7 @@ public class PerulanganKalkulatorKompleks
             System.out.print(outputArray[i]);
             if (i != jumlahOperasi - 1)
             {
-                System.out.print(' ');
+                System.out.print("\n");
             }
         }
     }
