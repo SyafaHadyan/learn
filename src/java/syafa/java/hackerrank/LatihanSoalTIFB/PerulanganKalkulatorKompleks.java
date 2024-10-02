@@ -10,14 +10,16 @@ public class PerulanganKalkulatorKompleks
         double bilanganPertamaKedua[] = new double[jumlahOperasi];
         String outputArray[] = new String[jumlahOperasi];
         double outputHasil[] = new double[jumlahOperasi];
+        double x = 0d;
+        double y = 0d;
         double hasil = 0d;
         String output = "";
         char operator = ' ';
         for (int i = 0; i < jumlahOperasi; i++)
         {
             String operasi = input.next();
-            double x = input.nextDouble();
-            double y = input.nextDouble();
+            x = input.nextDouble();
+            y = input.nextDouble();
             if (operasi.equalsIgnoreCase("Tambah"))
             {
                 operator = '+';
@@ -28,6 +30,7 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Kurang"))
             {
+                operator = '-';
                 hasil = x - y;
                 output = x + " - " + y + " = ";
                 outputArray[i] = output;
@@ -35,6 +38,7 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Kali"))
             {
+                operator = '*';
                 hasil = x * y;
                 output = x + " * " + y + " = ";
                 outputArray[i] = output;
@@ -42,6 +46,7 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Bagi"))
             {
+                operator = '/';
                 hasil = x / y;
                 output = x + " / " + y + " = ";
                 outputArray[i] = output;
@@ -49,6 +54,7 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
+                operator = '%';
                 hasil = x % y;
                 output = x + " % " + y + " = ";
                 outputArray[i] = output;
@@ -59,8 +65,8 @@ public class PerulanganKalkulatorKompleks
         for (int i = 0; i < jumlahOperasi; i++)
         {
             //System.out.print(outputArray[i]);
-            System.out.printf("%.0f");
-            System.out.printf("%.2f",outputHasil[i]);
+            System.out.printf("%.0f%c%c%c%.0f%c%c%c%.2f",x,' ',operator,' ',y,' ','=',' ',outputHasil[i]);
+            //System.out.printf("%.2f",outputHasil[i]);
             if (i != jumlahOperasi - 1)
             {
                 System.out.print("\n");
