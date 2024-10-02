@@ -12,6 +12,7 @@ public class PerulanganKalkulatorKompleks
         double outputHasil[] = new double[jumlahOperasi];
         double hasil = 0d;
         String output = "";
+        char operator = ' ';
         for (int i = 0; i < jumlahOperasi; i++)
         {
             String operasi = input.next();
@@ -56,7 +57,8 @@ public class PerulanganKalkulatorKompleks
         input.close();
         for (int i = 0; i < jumlahOperasi; i++)
         {
-            System.out.print(outputArray[i]);
+            //System.out.print(outputArray[i]);
+            System.out.printf("%.0f");
             System.out.printf("%.2f",outputHasil[i]);
             if (i != jumlahOperasi - 1)
             {
