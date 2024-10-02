@@ -53,11 +53,11 @@ public class PerulanganBankDigitalv2
             }
             else if (inputPertama.equalsIgnoreCase("Selesai"))
             {
+                input.close();
                 ulang = false;
             }
         }
         while (ulang);
-        input.close();
         System.out.println("Halo" + ' ' + nama + ' ' + '-' + ' ' + "Saldo Rp." + ' ' + saldo);
         for (String output : outputArray)
         {
