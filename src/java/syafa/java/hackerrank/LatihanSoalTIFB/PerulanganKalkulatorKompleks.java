@@ -41,5 +41,9 @@ public class PerulanganKalkulatorKompleks
             }
         }
         input.close();
+        for (int i = 0; i < jumlahOperasi; i++)
+        {
+            //
+        }
     }
 }
