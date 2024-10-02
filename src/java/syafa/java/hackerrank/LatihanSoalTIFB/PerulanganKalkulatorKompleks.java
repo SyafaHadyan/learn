@@ -42,7 +42,9 @@ public class PerulanganKalkulatorKompleks
             }
             else if (operasi.equalsIgnoreCase("Mod"))
             {
-
+                hasil = x % y;
+                output = x + " % " + y + " = " + hasil;
+                outputArray[i] = output;
             }
         }
         input.close();
