@@ -16,10 +16,6 @@ public class MethodBuatPeta
             for (int j = 1; j <= lebarPeta; j++)
             {
                 System.out.print(simbol);
-                if (j != lebarPeta)
-                {
-                    System.out.print(' ');
-                }
             }
             if (i != tinggiPeta)
             {
