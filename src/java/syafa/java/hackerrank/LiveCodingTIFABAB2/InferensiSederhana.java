@@ -25,7 +25,7 @@ public class InferensiSederhana
                     if (masuk < elemen0)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 1)
@@ -33,7 +33,7 @@ public class InferensiSederhana
                     if (masuk < elemen1)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 2)
@@ -41,7 +41,7 @@ public class InferensiSederhana
                     if (masuk < elemen2)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 3)
@@ -49,7 +49,7 @@ public class InferensiSederhana
                     if (masuk < elemen3)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 4)
@@ -57,7 +57,7 @@ public class InferensiSederhana
                     if (masuk < elemen4)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 5)
@@ -65,7 +65,7 @@ public class InferensiSederhana
                     if (masuk < elemen5)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else if (i == 6)
@@ -73,13 +73,13 @@ public class InferensiSederhana
                     if (masuk < elemen6)
                     {
                         i++;
-                        i = 2 * i -1;
+                        i = 2 * i - 1;
                     }
                 }
                 else 
                 {
                     i++;
-                    i = 2 * i - 1
+                    i = 2 * i - 1;
                 }
             }
         }
