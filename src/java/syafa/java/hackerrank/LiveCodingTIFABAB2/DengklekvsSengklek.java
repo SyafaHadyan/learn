@@ -52,5 +52,10 @@ public class DengklekvsSengklek
                 }
             }
         }
+        input.close();
+        for (String output : hasil)
+        {
+
+        }
     }
 }
