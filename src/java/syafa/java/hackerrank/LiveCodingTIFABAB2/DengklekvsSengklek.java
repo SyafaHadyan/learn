@@ -5,7 +5,7 @@ public class DengklekvsSengklek
 {
     public static void main(String[] args)
     {
-        int hasil[] = new int[4];
+        String hasil[] = new String[4];
         Scanner input = new Scanner(System.in);
         int skorDengklek = 0;
         int skorSengklek = 0;
@@ -16,7 +16,7 @@ public class DengklekvsSengklek
             input.nextLine();
             if (dengklek.equalsIgnoreCase(sengklek))
             {
-                //
+                hasil[i] = "Seri";
             }
         }
     }
