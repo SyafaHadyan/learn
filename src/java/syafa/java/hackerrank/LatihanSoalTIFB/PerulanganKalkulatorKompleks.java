@@ -7,7 +7,10 @@ public class PerulanganKalkulatorKompleks
     {
         Scanner input = new Scanner(System.in);
         int jumlahOperasi = Integer.parseInt(input.nextLine());
-        for (int i = 1; i <= jumlahOperasi; i++)
+        String outputArray[] = new String[jumlahOperasi];
+        double hasil = 0d;
+        String output = "";
+        for (int i = 0; i < jumlahOperasi; i++)
         {
             String operasi = input.next();
             int x = input.nextInt();
@@ -15,7 +18,10 @@ public class PerulanganKalkulatorKompleks
             input.nextLine();
             if (operasi.equalsIgnoreCase("Tambah"))
             {
-                
+                hasil = x + y;
+                output = x + ' ' + y + " = " + hasil;
+                outputArray[i] = output;
+
             }
             else if (operasi.equalsIgnoreCase("Kurang"))
             {
