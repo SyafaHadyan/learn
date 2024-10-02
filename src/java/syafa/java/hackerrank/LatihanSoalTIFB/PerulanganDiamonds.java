@@ -6,18 +6,22 @@ public class PerulanganDiamonds
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int ukuranDiamond = Integer.parseInt(input.nextLine());
+        int ukuranBentuk = Integer.parseInt(input.nextLine());
         input.close();
         char simbol = '*';
-        int panjangSebelumTengah = ukuranDiamond / 2;
+        int panjangSebelumTengah = ukuranBentuk / 2;
         int posisiTengah = panjangSebelumTengah + 1;
-        int spasiAwalAkhir = panjangSebelumTengah;
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
+            for (int j = panjangSebelumTengah; j > 0; j--)
+            {
+                System.out.print(' ');
+            }
             for (int j = 0; j < args.length; j++)
             {
                 //
             }
+        }
             /*
             for (int j = spasiAwalAkhir - i + 1; j > 0; j--)
             {
@@ -32,6 +36,6 @@ public class PerulanganDiamonds
                 }
             }
             */
-        }
+
     }
 }
