@@ -20,6 +20,8 @@ public class PerulanganKalkulatorKompleks
             String operasi = input.next();
             x = input.nextDouble();
             y = input.nextDouble();
+            bilanganPertama[i] = x;
+            bilanganKedua[i] = y;
             if (operasi.equalsIgnoreCase("Tambah"))
             {
                 operator = '+';
