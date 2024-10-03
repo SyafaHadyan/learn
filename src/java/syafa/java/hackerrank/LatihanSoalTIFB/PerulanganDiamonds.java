@@ -17,17 +17,24 @@ public class PerulanganDiamonds
             for (int j = spasi; j > 0; j--)
             {
                 System.out.print(' ');
-                spasi--;
             }
             for (int j = 1; j <= i; j++)
             {
                 System.out.print(simbol);
-                if (j > 1)
+                if (j != i)
                 {
                     System.out.print(' ');
                 }
             }
             System.out.print("\n");
+        }
+        for (int i = 1; i <= posisiTengah; i++)
+        {
+            System.out.print(simbol);
+            if (j != 1)
+            {
+                System.out.print(' ');
+            }
         }
             /*
             for (int j = spasiAwalAkhir - i + 1; j > 0; j--)
