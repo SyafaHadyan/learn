@@ -12,6 +12,7 @@ public class Java1DArray
         {
             arrayOfNumbers[i] = input.nextInt();
         }
+        input.close();
         for (int i = 0; i < arrayLength; i++)
         {
             System.out.print(arrayOfNumbers[i]);
