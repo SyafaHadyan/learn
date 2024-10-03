@@ -9,19 +9,21 @@ public class MethodCekPrima
         Scanner input = new Scanner(System.in);
         int jumlahPengecekan = Integer.parseInt(input.nextLine());
         int cekBilangan = Integer.parseInt(input.nextLine());
-        input.close();
         String cekPrima = "Prima";
-        for (int i = 2; i < cekBilangan; i++)
+        for (int i = 0; i < args.length; i++)
         {
-            if (cekBilangan % i == 0)
+            for (int j = 2; j < cekBilangan; j++)
+            {
+                if (cekBilangan % j == 0)
+                {
+                    cekPrima = "Bukan prima";
+                    break;
+                }
+            }
+            if (cekBilangan == 1)
             {
                 cekPrima = "Bukan prima";
-                break;
             }
-        }
-        if (cekBilangan == 1)
-        {
-            cekPrima = "Bukan prima";
         }
         System.out.print(cekPrima);
     }
