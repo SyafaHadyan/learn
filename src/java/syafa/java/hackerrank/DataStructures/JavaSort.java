@@ -7,7 +7,10 @@ public class JavaSort
     {
         Scanner input = new Scanner(System.in);
         int amountOfStudents = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        int studentID = 0;
+        String studentName = "";
+        double CGPA = 0d;
+        for (int i = 0; i < amountOfStudents; i++)
         {
             
         }
