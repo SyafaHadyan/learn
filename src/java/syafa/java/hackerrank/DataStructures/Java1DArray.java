@@ -15,6 +15,10 @@ public class Java1DArray
         for (int i = 0; i < arrayLength; i++)
         {
             System.out.print(arrayOfNumbers[i]);
+            if (i < arrayLength - 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
