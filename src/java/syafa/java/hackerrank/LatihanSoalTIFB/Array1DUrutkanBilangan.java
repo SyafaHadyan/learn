@@ -7,12 +7,15 @@ public class Array1DUrutkanBilangan
     {
         Scanner input = new Scanner(System.in);
         int jumlahBilangan = Integer.parseInt(input.nextLine());
-        String masukStringArray[] = input.nextLine().split(" ")
+        String masukStringArray[] = input.nextLine().split(" ");
         input.close();
         int masukIntegerArray[] = new int[jumlahBilangan];
+        int masuk = 0;
         for (int i = 0; i < jumlahBilangan; i++)
         {
-            
+            masuk = Integer.parseInt(masukStringArray[i]);
+            masukIntegerArray[i] = masuk;
         }
+        Arrays.sort(masukIntegerArray);
     }
 }
