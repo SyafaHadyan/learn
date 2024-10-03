@@ -12,11 +12,13 @@ public class PerulanganDiamonds
         int panjangSebelumTengah = ukuranBentuk / 2;
         int posisiTengah = panjangSebelumTengah + 1;
         int spasi = panjangSebelumTengah;
+        char spasiArray[] = new char[panjangSebelumTengah];
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
             for (int j = spasi; j > 0; j--)
             {
                 System.out.print(' ');
+                j--;
             }
             for (int j = 1; j <= i; j++)
             {
