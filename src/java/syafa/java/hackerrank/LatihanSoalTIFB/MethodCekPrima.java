@@ -8,13 +8,14 @@ public class MethodCekPrima
     {
         Scanner input = new Scanner(System.in);
         int jumlahPengecekan = Integer.parseInt(input.nextLine());
-        int cekBilangan = input.nextInt();
+        int cekBilangan = 0;
         String hasilArray[] = new String[jumlahPengecekan];
         String cekBilanganArray[] = input.nextLine().split(" ");
         String cekPrima = "Prima";
         input.close();
         for (int i = 0; i < jumlahPengecekan; i++)
         {
+            cekBilangan = cekBilanganArray[i];
             for (int j = 2; j < cekBilangan; j++)
             {
                 if (cekBilangan % j == 0)
