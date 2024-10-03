@@ -26,6 +26,14 @@ public class JavaExceptionHandlingTrycatch
                 return;
             }
         }
+        try
+        {
+            secondNumber = Integer.parseInt(input.nextLine());
+        }
+        catch (NumberFormatException e)
+        {
+            // TODO: handle exception
+        }
         input.close();
         try
         {
