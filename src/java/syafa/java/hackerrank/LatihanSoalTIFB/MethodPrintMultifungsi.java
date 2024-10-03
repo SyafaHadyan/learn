@@ -19,7 +19,7 @@ public class MethodPrintMultifungsi
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
-                // TODO: handle exception
+                output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] + simbolArray[2];
             }
             outputArray[i] = output;
         }
