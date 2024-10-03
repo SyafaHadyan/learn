@@ -24,14 +24,13 @@ public class JavaList
             {
                 indexAt = input.nextInt();
                 numberArray.add(indexAt, input.nextInt());
-                input.nextLine();
             }
             else if (operation.equalsIgnoreCase("Delete"))
             {
                 indexAt = input.nextInt();
                 numberArray.remove(indexAt);
-                input.nextLine();
             }
+            input.nextLine();
         }
         input.close();
         for (int i = 0; i < numberArray.size(); i++)
