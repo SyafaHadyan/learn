@@ -8,10 +8,12 @@ public class MethodCekPrima
     {
         Scanner input = new Scanner(System.in);
         int jumlahPengecekan = Integer.parseInt(input.nextLine());
-        int cekBilangan = Integer.parseInt(input.nextLine());
+        String hasilArray[] = new String[jumlahPengecekan];
+        int cekBilangan = 0;
         String cekPrima = "Prima";
         for (int i = 0; i < args.length; i++)
         {
+            cekBilangan = input.nextInt();
             for (int j = 2; j < cekBilangan; j++)
             {
                 if (cekBilangan % j == 0)
@@ -24,7 +26,7 @@ public class MethodCekPrima
             {
                 cekPrima = "Bukan prima";
             }
+
         }
-        System.out.print(cekPrima);
     }
 }
