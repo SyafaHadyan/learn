@@ -10,7 +10,7 @@ public class JavaSort
         int studentIDArray[] = new int[amountOfStudents];
         String studentNamearray[] = new String[amountOfStudents];
         double CGPAArray[] = new double[amountOfStudents];
-        String dataInputArray[] = input.nextLine().split(" ");
+        String dataInputArray[] = new String[amountOfStudents * 3];
         int studentID = 0;
         String studentName = "";
         double CGPA = 0d;
@@ -21,6 +21,7 @@ public class JavaSort
             studentNamearray[i] = input.next();
             CGPAArray[i] = input.nextDouble();
             */
+            dataInputArray = input.nextLine().split(" ");
         }
         //Arrays.sort(dataInputArray);
         for (int i = 0; i < dataInputArray.length; i++)
