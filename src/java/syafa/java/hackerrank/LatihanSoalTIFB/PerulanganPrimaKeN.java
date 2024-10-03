@@ -9,14 +9,15 @@ public class PerulanganPrimaKeN
         int cekBilangan = Integer.parseInt(input.nextLine());
         input.close();
         int bilanganSekarang = 2;
-        int bilanganPrimaKe = 1;
-        int bilanganPrimaSekarang = 2;
+        int bilanganPrimaKe = 0;
+        int bilanganPrimaSekarang = 0;
         for (int i = 2; i <= bilanganSekarang; i++)
         {
             if ((i < bilanganSekarang) && (bilanganSekarang % i != 0))
             {
                 bilanganPrimaSekarang = bilanganSekarang;
                 bilanganPrimaKe++;
+                i = 2;
             }
             bilanganSekarang++;
             if (cekBilangan == bilanganPrimaKe)
