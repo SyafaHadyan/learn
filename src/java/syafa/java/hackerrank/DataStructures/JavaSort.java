@@ -16,10 +16,12 @@ public class JavaSort
         double CGPA = 0d;
         for (int i = 0; i < amountOfStudents; i++)
         {
+            /*
             studentIDArray[i] = input.nextInt();
             studentNamearray[i] = input.next();
             CGPAArray[i] = input.nextDouble();
+            */
         }
-        Arrays.sort(studentIDArray);
+        Arrays.sort(dataInputArray);
     }
 }
