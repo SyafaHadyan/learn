@@ -36,7 +36,8 @@ public class JavaList
         input.close();
         for (int i = 0; i < numberArray.size(); i++)
         {
-            System.out.print(numberArray.indexOf(i));
+            //System.out.print(numberArray.indexOf(i));
+            System.out.print(numberArray);
             if (i < numberArray.size() - 1)
             {
                 System.out.print(' ');
