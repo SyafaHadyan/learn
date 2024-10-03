@@ -8,13 +8,16 @@ public class JavaList
         Scanner input = new Scanner(System.in);
         int indexAt = 0;
         int operationInput = 0;
+        int numberOfOperations = 0;
+        String operation = "";
         int initialArrayLength = Integer.parseInt(input.nextLine());
         ArrayList<Integer> numberArray = new ArrayList<Integer>();
         for (int i = 0; i < initialArrayLength; i++)
         {
-            numberArray.add(Integer.parseInt(input.nextLine()));
+            numberArray.add(input.nextInt());
         }
-        String operation = input.nextLine();
+        numberOfOperations = Integer.parseInt(input.nextLine());
+        operation = input.nextLine();
         if (operation.equalsIgnoreCase("Insert"))
         {
             indexAt = input.nextInt();
