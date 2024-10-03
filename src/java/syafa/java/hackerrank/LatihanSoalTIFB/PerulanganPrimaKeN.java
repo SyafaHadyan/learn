@@ -19,6 +19,10 @@ public class PerulanganPrimaKeN
                 bilanganPrimaKe++;
             }
             bilanganSekarang++;
+            if (cekBilangan == bilanganPrimaKe)
+            {
+                break;
+            }
         }
         System.out.print(bilanganPrimaSekarang);
     }
