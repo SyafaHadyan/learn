@@ -10,10 +10,11 @@ public class PerulanganDiamonds
         input.close();
         char simbol = '*';
         int panjangSebelumTengah = ukuranBentuk / 2;
-        //int posisiTengah = panjangSebelumTengah + 1;
+        int posisiTengah = panjangSebelumTengah + 1;
+        int spasi = panjangSebelumTengah;
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
-            for (int j = panjangSebelumTengah; j > 0; j--)
+            for (int j = spasi; j > 0; j--)
             {
                 System.out.print(' ');
             }
@@ -25,6 +26,7 @@ public class PerulanganDiamonds
                     System.out.print(' ');
                 }
             }
+            System.out.print("\n");
         }
             /*
             for (int j = spasiAwalAkhir - i + 1; j > 0; j--)
