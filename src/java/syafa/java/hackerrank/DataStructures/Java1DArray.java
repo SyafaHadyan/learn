@@ -8,9 +8,13 @@ public class Java1DArray
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         int arrayOfNumbers[] = new int[arrayLength];
-        for (int i = 0; i < arrayOfNumbers.length; i++)
+        for (int i = 0; i < arrayLength; i++)
         {
             arrayOfNumbers[i] = input.nextInt();
+        }
+        for (int i = 0; i < arrayLength; i++)
+        {
+            System.out.print(arrayOfNumbers[i]);
         }
     }
 }
