@@ -22,10 +22,18 @@ public class JavaSort
             CGPAArray[i] = input.nextDouble();
             */
         }
-        Arrays.sort(dataInputArray);
+        //Arrays.sort(dataInputArray);
         for (int i = 0; i < dataInputArray.length; i++)
         {
             System.out.print(dataInputArray[i]);
+            if (i % 3 != 0)
+            {
+                System.out.print(" ");
+            }
+            else
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
