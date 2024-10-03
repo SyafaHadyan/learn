@@ -38,16 +38,17 @@ public class PerulanganDiamonds
                 System.out.print(' ');
             }
         }
+        System.out.print("\n");
         for (int i = panjangSebelumTengah; i >= 1; i--)
         {
-            for (int j = spasi; j > 0; j++)
+            for (int j = spasi; j < 0; j++)
             {
                 System.out.print(spasiArray[0]);
             }
             for (int j = i; j >= 1; j--)
             {
                 System.out.print(simbol);
-                if (j != i)
+                if (j != 1)
                 {
                     System.out.print(' ');
                 }
