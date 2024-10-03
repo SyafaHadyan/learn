@@ -12,12 +12,11 @@ public class JavaExceptionHandlingTrycatch
         try
         {
             firstNumber = Integer.parseInt(input.nextLine());
-            secondNumber = Integer.parseInt(input.nextLine());
-            input.close();
         }
-        catch (InputMismatchException e)
+        catch (NumberFormatException e)
         {
-            System.out.print("java.util.InputMismatchException");
+            secondNumber = Integer.parseInt(input.nextLine());
+            return;
         }
         try
         {
@@ -26,6 +25,7 @@ public class JavaExceptionHandlingTrycatch
         catch (ArithmeticException e)
         {
             System.out.print("java.lang.ArithmeticException: / by zero");
+            return;
         }
         System.out.print(divide);
     }
