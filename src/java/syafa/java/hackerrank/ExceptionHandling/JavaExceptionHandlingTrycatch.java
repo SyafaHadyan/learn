@@ -30,7 +30,7 @@ public class JavaExceptionHandlingTrycatch
         {
             secondNumber = Integer.parseInt(input.nextLine());
         }
-        catch (NumberFormatException e)
+        catch (Exception e)
         {
             System.out.print("java.util.InputMismatchException");
             input.close();
