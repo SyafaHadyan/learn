@@ -40,7 +40,7 @@ public class PerulanganDiamonds
             }
         }
         System.out.print("\n");
-        spasi = panjangSebelumTengah;
+        spasi = 1;
         for (int i = panjangSebelumTengah; i >= 1; i--)
         {
             for (int j = spasi; j >= 1; j--)
@@ -50,8 +50,8 @@ public class PerulanganDiamonds
             spasi++;
             for (int j = i; j >= 1; j--)
             {
-                System.out.print(simbol + " ");
-                if (i != j)
+                System.out.print(simbol);
+                if (i == i)
                 {
                     System.out.print(' ');
                 }
