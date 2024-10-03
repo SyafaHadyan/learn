@@ -11,7 +11,7 @@ public class MethodCekPrima
         String hasilArray[] = new String[jumlahPengecekan];
         int cekBilangan = 0;
         String cekPrima = "Prima";
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i <= jumlahPengecekan; i++)
         {
             cekBilangan = input.nextInt();
             for (int j = 2; j < cekBilangan; j++)
@@ -26,6 +26,7 @@ public class MethodCekPrima
             {
                 cekPrima = "Bukan prima";
             }
+            hasilArray[i] = cekBilangan + " = " + cekPrima;
 
         }
     }
