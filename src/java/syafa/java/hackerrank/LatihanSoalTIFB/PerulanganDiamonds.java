@@ -58,19 +58,5 @@ public class PerulanganDiamonds
             }
             System.out.print("\n");
         }
-            /*
-            for (int j = spasiAwalAkhir - i + 1; j > 0; j--)
-            {
-                System.out.print(' ');
-            }
-            for (int j = 1; j <= panjangSebelumTengah; j++)
-            {
-                System.out.print(simbol);
-                for (int k = panjangSebelumTengah; k >= 0; k--)
-                {
-                    System.out.print(' ');
-                }
-            }
-            */
     }
 }
