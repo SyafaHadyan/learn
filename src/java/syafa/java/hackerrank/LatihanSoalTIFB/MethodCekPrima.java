@@ -22,6 +22,10 @@ public class MethodCekPrima
                     cekPrima = "Bukan prima";
                     break;
                 }
+                if (cekBilangan % j != 0)
+                {
+                    cekPrima = "Prima";
+                }
             }
             hasilArray[i] = cekBilangan + " = " + cekPrima;
         }
