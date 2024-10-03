@@ -12,7 +12,6 @@ public class PerulanganDiamonds
         int panjangSebelumTengah = ukuranBentuk / 2;
         int posisiTengah = panjangSebelumTengah + 1;
         int spasi = panjangSebelumTengah;
-        char spasiArray[] = new char[panjangSebelumTengah];
         spasiArray[0] = ' ';
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
