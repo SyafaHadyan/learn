@@ -49,7 +49,7 @@ public class PerulanganDiamonds
             for (int j = i; j >= 1; j--)
             {
                 System.out.print(simbol);
-                if (i == i)
+                if (j != 0)
                 {
                     System.out.print(' ');
                 }
