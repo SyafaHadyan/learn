@@ -18,18 +18,20 @@ public class JavaList
         }
         input.nextLine();
         numberOfOperations = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < numberOfOperations; i++)
         {
             operation = input.nextLine();
             if (operation.equalsIgnoreCase("Insert"))
             {
                 indexAt = input.nextInt();
-                numberArray.add(indexAt, Integer.parseInt(input.nextLine()));
+                numberArray.add(indexAt, input.nextInt());
+                input.nextLine();
             }
             else if (operation.equalsIgnoreCase("Delete"))
             {
                 indexAt = input.nextInt();
                 numberArray.remove(indexAt);
+                input.nextLine();
             }
         }
         input.close();
