@@ -13,13 +13,13 @@ public class JavaExceptionHandlingTrycatch
         {
             firstNumber = Integer.parseInt(input.nextLine());
         }
-        catch (NumberFormatException e)
+        catch (Exception e)
         {
             try
             {
                 secondNumber = Integer.parseInt(input.nextLine());
             }
-            catch (NumberFormatException f)
+            catch (Exception f)
             {
                 System.out.print("java.util.InputMismatchException");
                 input.close();
@@ -33,6 +33,8 @@ public class JavaExceptionHandlingTrycatch
         catch (NumberFormatException e)
         {
             System.out.print("java.util.InputMismatchException");
+            input.close();
+            return;
         }
         input.close();
         try
