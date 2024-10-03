@@ -23,9 +23,10 @@ public class JavaExceptionHandlingTrycatch
         {
             divide = firstNumber / secondNumber;
         }
-        catch (Exception e)
+        catch (ArithmeticException e)
         {
-            // TODO: handle exception
+            System.out.print("java.lang.ArithmeticException: / by zero");
         }
+        System.out.print(divide);
     }
 }
