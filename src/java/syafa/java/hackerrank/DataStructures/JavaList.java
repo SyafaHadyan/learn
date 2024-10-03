@@ -40,7 +40,7 @@ public class JavaList
             System.out.print(numberArray.indexOf(i));
             if (i < numberArray.size() - 1)
             {
-                System.out.print("\n");
+                System.out.print(' ');
             }
         }
     }
