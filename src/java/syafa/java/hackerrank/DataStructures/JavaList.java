@@ -10,7 +10,7 @@ public class JavaList
         ArrayList<Integer> numberArray = new ArrayList<Integer>();
         for (int i = 0; i < initialArrayLength; i++)
         {
-            
+            numberArray.add(input.nextInt());
         }
     }
 }
