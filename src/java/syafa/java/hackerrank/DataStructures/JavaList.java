@@ -16,10 +16,11 @@ public class JavaList
         {
             numberArray.add(input.nextInt());
         }
+        input.nextLine();
         numberOfOperations = Integer.parseInt(input.nextLine());
-        operation = input.nextLine();
         for (int i = 0; i < args.length; i++)
         {
+            operation = input.nextLine();
             if (operation.equalsIgnoreCase("Insert"))
             {
                 indexAt = input.nextInt();
@@ -27,7 +28,8 @@ public class JavaList
             }
             else if (operation.equalsIgnoreCase("Delete"))
             {
-                //
+                indexAt = input.nextInt();
+                numberArray.remove(indexAt);
             }
         }
         input.close();
