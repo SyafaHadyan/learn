@@ -24,7 +24,7 @@ public class JavaSort
             dataInputArray = input.nextLine().split(" ");
         }
         //Arrays.sort(dataInputArray);
-        for (int i = 0; i < dataInputArray.length; i++)
+        for (int i = 0; i < amountOfStudents * 3; i++)
         {
             System.out.print(dataInputArray[i]);
             if (i % 2 != 0 || i == 0)
