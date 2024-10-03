@@ -16,12 +16,13 @@ public class PerulanganDiamonds
         spasiArray[0] = ' ';
         for (int i = 1; i <= panjangSebelumTengah; i++)
         {
-            for (int j = spasi; j > 0; j--)
-            {
-                System.out.print(spasiArray[0]);
-            }
             for (int j = 1; j <= i; j++)
             {
+                for (int k = 1; k <= spasi; j++)
+                {
+                    System.out.print(' ');
+                }
+                spasi--;
                 System.out.print(simbol);
                 if (j != i)
                 {
