@@ -1,5 +1,4 @@
 package syafa.java.hackerrank.LatihanSoalTIFB;
-
 import java.util.Scanner;
 
 public class MethodCekPrima
@@ -15,7 +14,7 @@ public class MethodCekPrima
         input.close();
         for (int i = 0; i < jumlahPengecekan; i++)
         {
-            cekBilangan = cekBilanganArray[i];
+            cekBilangan = Integer.parseInt(cekBilanganArray[i]);
             for (int j = 2; j < cekBilangan; j++)
             {
                 if (cekBilangan % j == 0)
@@ -23,10 +22,6 @@ public class MethodCekPrima
                     cekPrima = "Bukan prima";
                     break;
                 }
-            }
-            if (cekBilangan == 1)
-            {
-                cekPrima = "Bukan prima";
             }
             hasilArray[i] = cekBilangan + " = " + cekPrima;
         }
