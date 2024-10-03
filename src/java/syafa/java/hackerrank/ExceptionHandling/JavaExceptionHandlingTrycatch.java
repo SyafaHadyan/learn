@@ -22,9 +22,11 @@ public class JavaExceptionHandlingTrycatch
             catch (NumberFormatException f)
             {
                 System.out.print("java.util.InputMismatchException");
+                input.close();
                 return;
-            }            
+            }
         }
+        input.close();
         try
         {
             divide = firstNumber / secondNumber;
