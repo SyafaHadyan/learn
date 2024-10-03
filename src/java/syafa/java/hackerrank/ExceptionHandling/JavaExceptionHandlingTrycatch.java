@@ -32,7 +32,7 @@ public class JavaExceptionHandlingTrycatch
         }
         catch (NumberFormatException e)
         {
-            // TODO: handle exception
+            System.out.print("java.util.InputMismatchException");
         }
         input.close();
         try
