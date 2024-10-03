@@ -23,8 +23,15 @@ public class PerulanganPrimaKeN
         }
         System.out.print(bilanganPrimaSekarang);
     }
-    public static boolean cekPrima(int number)
+    private static boolean cekPrima(int bilanganSekarang)
     {
+        for (int i = 2; i <= bilanganSekarang; i++)
+        {
+            if (bilanganSekarang % i != 0)
+            {
+                return false;
+            }
+        }
         return true;
     }
 }
