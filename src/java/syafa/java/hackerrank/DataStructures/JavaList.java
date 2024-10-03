@@ -30,7 +30,14 @@ public class JavaList
                 indexAt = input.nextInt();
                 numberArray.remove(indexAt);
             }
-            input.nextLine();
+            try
+            {
+                input.nextLine();
+            }
+            catch (Exception e)
+            {
+                
+            }
         }
         input.close();
         for (int i = 0; i < numberArray.size(); i++)
