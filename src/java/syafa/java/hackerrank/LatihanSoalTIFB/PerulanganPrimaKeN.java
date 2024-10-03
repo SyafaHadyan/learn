@@ -25,7 +25,7 @@ public class PerulanganPrimaKeN
     }
     private static boolean cekPrima(int bilanganSekarang)
     {
-        for (int i = 2; i <= bilanganSekarang; i++)
+        for (int i = 2; i <= Math.sqrt(bilanganSekarang); i++)
         {
             if (bilanganSekarang % i != 0)
             {
