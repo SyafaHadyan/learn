@@ -26,11 +26,11 @@ public class JavaSort
         for (int i = 0; i < dataInputArray.length; i++)
         {
             System.out.print(dataInputArray[i]);
-            if (i % 3 != 0)
+            if (i % 2 != 0 || i == 0)
             {
                 System.out.print(" ");
             }
-            else
+            else if (i != 0)
             {
                 System.out.print("\n");
             }
