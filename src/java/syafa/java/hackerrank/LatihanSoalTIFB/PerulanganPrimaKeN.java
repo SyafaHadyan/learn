@@ -13,18 +13,18 @@ public class PerulanganPrimaKeN
         int bilanganPrimaSekarang = 0;
         for (int i = 2; i <= bilanganSekarang; i++)
         {
-            if ((i < bilanganSekarang) && (bilanganSekarang % i != 0))
+            if (cekPrima(bilanganSekarang))
             {
                 bilanganPrimaSekarang = bilanganSekarang;
                 bilanganPrimaKe++;
                 i = 2;
             }
             bilanganSekarang++;
-            if (cekBilangan == bilanganPrimaKe)
-            {
-                break;
-            }
         }
         System.out.print(bilanganPrimaSekarang);
+    }
+    public static boolean cekPrima(int number)
+    {
+        return true;
     }
 }
