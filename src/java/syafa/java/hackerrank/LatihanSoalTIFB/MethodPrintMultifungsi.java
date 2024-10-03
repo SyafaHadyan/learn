@@ -13,7 +13,14 @@ public class MethodPrintMultifungsi
         {
             String kalimatArray[] = input.nextLine().split(" ");
             String simbolArray[] = input.nextLine().split(" ");
-            output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[2];
+            try
+            {
+                output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[2];
+            }
+            catch (ArrayIndexOutOfBoundsException e)
+            {
+                // TODO: handle exception
+            }
             outputArray[i] = output;
         }
         for (int i = 0; i < outputArray.length; i++)
