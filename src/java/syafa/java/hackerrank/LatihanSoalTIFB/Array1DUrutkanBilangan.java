@@ -17,5 +17,13 @@ public class Array1DUrutkanBilangan
             masukIntegerArray[i] = masuk;
         }
         Arrays.sort(masukIntegerArray);
+        for (int i = 0; i < jumlahBilangan; i++)
+        {
+            System.out.print(masukIntegerArray[i]);
+            if ( i != jumlahBilangan - 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
