@@ -8,5 +8,6 @@ public class Java1DArray
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         input.close();
+        int arrayOfNumbers[] = new int[arrayLength];
     }
 }
