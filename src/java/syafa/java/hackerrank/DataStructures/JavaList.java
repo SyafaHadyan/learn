@@ -23,7 +23,7 @@ public class JavaList
             if (operation.equalsIgnoreCase("Insert"))
             {
                 indexAt = input.nextInt();
-                numberArray.add(Integer.parseInt(input.nextLine()));
+                numberArray.add(indexAt, Integer.parseInt(input.nextLine()));
             }
             else if (operation.equalsIgnoreCase("Delete"))
             {
