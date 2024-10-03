@@ -15,7 +15,9 @@ public class JavaSort
         double CGPAArray[] = new double[amountOfStudents];
         for (int i = 0; i < amountOfStudents; i++)
         {
-            studentID = input.nextInt();
+            studentIDArray[i] = input.nextInt();
+            studentNamearray[i] = input.next();
+            CGPAArray[i] = input.nextDouble();
         }
     }
 }
