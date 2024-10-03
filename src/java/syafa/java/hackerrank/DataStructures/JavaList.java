@@ -18,14 +18,17 @@ public class JavaList
         }
         numberOfOperations = Integer.parseInt(input.nextLine());
         operation = input.nextLine();
-        if (operation.equalsIgnoreCase("Insert"))
+        for (int i = 0; i < args.length; i++)
         {
-            indexAt = input.nextInt();
-            numberArray.add(Integer.parseInt(input.nextLine()));
-        }
-        else if (operation.equalsIgnoreCase("Delete"))
-        {
-            //
+            if (operation.equalsIgnoreCase("Insert"))
+            {
+                indexAt = input.nextInt();
+                numberArray.add(Integer.parseInt(input.nextLine()));
+            }
+            else if (operation.equalsIgnoreCase("Delete"))
+            {
+                //
+            }
         }
     }
 }
