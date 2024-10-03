@@ -15,8 +15,15 @@ public class JavaExceptionHandlingTrycatch
         }
         catch (NumberFormatException e)
         {
-            secondNumber = Integer.parseInt(input.nextLine());
-            return;
+            try
+            {
+                secondNumber = Integer.parseInt(input.nextLine());
+            }
+            catch (NumberFormatException f)
+            {
+                System.out.print("java.util.InputMismatchException");
+                return;
+            }            
         }
         try
         {
