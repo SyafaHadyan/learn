@@ -8,7 +8,12 @@ public class Array1DUrutkanBilangan
         Scanner input = new Scanner(System.in);
         int jumlahBilangan = Integer.parseInt(input.nextLine());
         String bilanganMasuk = input.nextLine();
-        String masuk[] = new String[jumlahBilangan];
         input.close();
+        String masukStringArray[] = new String[jumlahBilangan];
+        int masukIntegerArray[] = new int[jumlahBilangan];
+        for (int i = 0; i < jumlahBilangan; i++)
+        {
+            
+        }
     }
 }
