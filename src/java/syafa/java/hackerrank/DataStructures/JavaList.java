@@ -35,5 +35,9 @@ public class JavaList
             }
         }
         input.close();
+        for (int i = 0; i < numberArray.size(); i++)
+        {
+            //
+        }
     }
 }
