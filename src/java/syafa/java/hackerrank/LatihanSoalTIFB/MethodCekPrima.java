@@ -10,6 +10,7 @@ public class MethodCekPrima
         int jumlahPengecekan = Integer.parseInt(input.nextLine());
         int cekBilangan = input.nextInt();
         String hasilArray[] = new String[jumlahPengecekan];
+        String cekBilanganArray[] = input.nextLine().split(" ");
         String cekPrima = "Prima";
         input.close();
         for (int i = 0; i < jumlahPengecekan; i++)
