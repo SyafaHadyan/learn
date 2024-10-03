@@ -13,11 +13,14 @@ public class JavaSort
         int studentIDArray[] = new int[amountOfStudents];
         String studentNamearray[] = new String[amountOfStudents];
         double CGPAArray[] = new double[amountOfStudents];
+        String 
         for (int i = 0; i < amountOfStudents; i++)
         {
             studentIDArray[i] = input.nextInt();
             studentNamearray[i] = input.next();
             CGPAArray[i] = input.nextDouble();
         }
+        Arrays.sort(studentIDArray);
+        Arrays.sort
     }
 }
