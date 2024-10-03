@@ -8,15 +8,16 @@ public class PerulanganPrimaKeN
         Scanner input = new Scanner(System.in);
         int cekBilangan = Integer.parseInt(input.nextLine());
         input.close();
-        int bilanganSekarang = 2;
+        int bilanganSekarang = 1;
         int bilanganPrimaKe = 1;
         int bilanganPrimaSekarang = 2;
-        for (int i = bilanganSekarang; i < 100000; i++)
+        for (int i = bilanganSekarang; i <= 100000; i++)
         {
             if (bilanganSekarang % i != 0)
             {
+                bilanganSekarang++;
                 bilanganPrimaKe++;
-                bilanganPrimaSekarang = bilanganSekarang;
+                bilanganPrimaSekarang = i;
             }
             if (cekBilangan == bilanganPrimaKe)
             {
