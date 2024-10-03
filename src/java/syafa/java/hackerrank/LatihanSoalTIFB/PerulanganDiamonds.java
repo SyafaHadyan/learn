@@ -50,7 +50,7 @@ public class PerulanganDiamonds
             spasi++;
             for (int j = i; j >= 1; j--)
             {
-                System.out.print(simbol + ' ');
+                System.out.print(simbol + " ");
                 if (i != j)
                 {
                     System.out.print(' ');
