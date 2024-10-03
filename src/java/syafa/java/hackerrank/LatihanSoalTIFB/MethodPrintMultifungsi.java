@@ -30,6 +30,7 @@ public class MethodPrintMultifungsi
             }
             outputArray[i] = output;
         }
+        input.close();
         for (int i = 0; i < outputArray.length; i++)
         {
             System.out.print(outputArray[i]);
