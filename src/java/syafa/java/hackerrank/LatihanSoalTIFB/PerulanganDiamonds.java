@@ -18,11 +18,11 @@ public class PerulanganDiamonds
         {
             for (int j = 1; j <= i; j++)
             {
-                for (int k = 1; k <= spasi; j++)
+                for (int k = 1; k >= spasi; j++)
                 {
                     System.out.print(' ');
                 }
-                spasi--;
+                //spasi--;
                 System.out.print(simbol);
                 if (j != i)
                 {
