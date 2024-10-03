@@ -16,9 +16,13 @@ public class MethodPrintMultifungsi
             output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[2];
             outputArray[i] = output;
         }
-        for (String keluar : outputArray)
+        for (int i = 0; i < outputArray.length; i++)
         {
-            System.out.print(keluar);
+            System.out.print(outputArray[i]);
+            if (i != outputArray.length - 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
