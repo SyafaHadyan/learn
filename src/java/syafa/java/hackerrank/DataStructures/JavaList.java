@@ -12,5 +12,14 @@ public class JavaList
         {
             numberArray.add(input.nextInt());
         }
+        String operation = input.nextLine();
+        if (operation.equalsIgnoreCase("Insert"))
+        {
+            //
+        }
+        else if (operation.equalsIgnoreCase("Delete"))
+        {
+            //
+        }
     }
 }
