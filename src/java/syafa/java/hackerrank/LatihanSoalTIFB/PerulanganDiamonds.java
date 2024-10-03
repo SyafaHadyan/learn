@@ -17,6 +17,7 @@ public class PerulanganDiamonds
             for (int j = spasi; j > 0; j--)
             {
                 System.out.print(' ');
+                spasi--;
             }
             for (int j = 1; j <= i; j++)
             {
