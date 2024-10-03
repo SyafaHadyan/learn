@@ -23,5 +23,9 @@ public class JavaSort
             */
         }
         Arrays.sort(dataInputArray);
+        for (int i = 0; i < dataInputArray.length; i++)
+        {
+            System.out.print(dataInputArray[i]);
+        }
     }
 }
