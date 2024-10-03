@@ -31,7 +31,7 @@ public class PerulanganDiamonds
         for (int i = 1; i <= posisiTengah; i++)
         {
             System.out.print(simbol);
-            if (j != 1)
+            if (i != posisiTengah)
             {
                 System.out.print(' ');
             }
