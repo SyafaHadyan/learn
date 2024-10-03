@@ -7,7 +7,10 @@ public class Java1DArray
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
-        input.close();
         int arrayOfNumbers[] = new int[arrayLength];
+        for (int i = 0; i < arrayOfNumbers.length; i++)
+        {
+            arrayOfNumbers[i] = input.nextInt();
+        }
     }
 }
