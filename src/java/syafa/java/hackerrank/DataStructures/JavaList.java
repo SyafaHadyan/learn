@@ -7,7 +7,6 @@ public class JavaList
     {
         Scanner input = new Scanner(System.in);
         int indexAt = 0;
-        int operationInput = 0;
         int numberOfOperations = 0;
         String operation = "";
         int initialArrayLength = Integer.parseInt(input.nextLine());
