@@ -14,7 +14,8 @@ public class JalanMoklif
         String output = "";
         String namaHari = "";
         String boleh = "";
-        switch (hari) {
+        switch (hari)
+        {
             case 0:
                 namaHari = "Senin";
                 break;
