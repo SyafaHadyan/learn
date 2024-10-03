@@ -15,18 +15,25 @@ public class MethodPrintMultifungsi
             String simbolArray[] = input.nextLine().split(" ");
             try
             {
-                output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[1] + kalimatArray[3] + simbolArray[2];
+                output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[1] + kalimatArray[3] + simbolArray[1] + kalimatArray[4] + simbolArray[2];
             }
             catch (ArrayIndexOutOfBoundsException e)
             {
                 try
                 {
-                    output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[2];
+                    output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[1] + kalimatArray[3] + simbolArray[2];
                 }
                 catch (ArrayIndexOutOfBoundsException f)
                 {
-                    output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] + simbolArray[2];
-                }
+                    try
+                    {
+                        output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] +simbolArray[1] + kalimatArray[2] + simbolArray[2];
+                    }
+                    catch (ArrayIndexOutOfBoundsException fg)
+                    {
+                        output = simbolArray[0] + kalimatArray[0] + simbolArray[1] + kalimatArray[1] + simbolArray[2];
+                    }
+            }
             }
             outputArray[i] = output;
         }
