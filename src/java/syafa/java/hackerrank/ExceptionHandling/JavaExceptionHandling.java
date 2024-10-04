@@ -9,7 +9,7 @@ public class JavaExceptionHandling
         double first = 0d;
         double second = 0d;
         String result = "";
-        String resultArray[] = new String[5];
+        ArrayList<String> resultArray = new ArrayList<String>();
         int i = 0;
         while (input.hasNextDouble())
         {
@@ -19,11 +19,11 @@ public class JavaExceptionHandling
             {
                 if (first == 0 && second == 0)
                 {
-                    resultArray[i] = "java.lang.Exception: n and p should not be zero.";
+                    resultArray.add("java.lang.Exception: n and p should not be zero.");
                 }
                 else if (first < 0 || second < 0)
                 {
-                    resultArray[i] = "java.lang.Exception: n or p should not be negative.";
+                    resultArray.add("java.lang.Exception: n or p should not be negative.");
                 }
                 else
                 {
