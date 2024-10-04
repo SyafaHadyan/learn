@@ -19,8 +19,6 @@ public class Day6LetsReview
             {
                 inputCharacter.add(inputString.get(i).charAt(j));
             }
-            outputEven = "";
-            outputOdd = "";
             for (int j = 0; j < inputCharacter.size(); j++)
             {
                 if (j == 0 || j % 2 == 0)
@@ -40,7 +38,7 @@ public class Day6LetsReview
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
         {
-            System.out.print(outputArray.get(i));
+            System.out.print(outputArray.get(0));
             if (i < outputArray.size())
             {
                 System.out.print("\n");
