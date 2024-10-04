@@ -30,7 +30,7 @@ public class ValidUsernameRegularExpression
             usernameArray.add("Valid");
         }
         input.close();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < usernameArray.size(); i++)
         {
             System.out.print(usernameArray.get(i));
             if (i < usernameArray.size())
