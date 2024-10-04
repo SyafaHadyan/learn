@@ -10,7 +10,8 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
         ArrayList<String> outputArray = new ArrayList<String>();
-        String output = "";
+        String outputEven = "";
+        String outputOdd = "";
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
@@ -21,11 +22,11 @@ public class Day6LetsReview
                 {
                     if (k == 0 || k % 2 == 0)
                     {
-                        output += inputCharacter.get(k);
+                        outputEven += inputCharacter.get(k);
                     }
                     else if (k % 2 != 0)
                     {
-                        output += inputCharacter.get(k);
+                        outputOdd += inputCharacter.get(k);
                     }
                 }
             }
