@@ -10,7 +10,7 @@ public class JavaSubstringComparisons
         int split = Integer.parseInt(input.nextLine());
         input.close();
         ArrayList<Character>splitAt = new ArrayList<Character>();
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < split; i++)
         {
             for (int j = 0; j < args.length; j++)
             {
