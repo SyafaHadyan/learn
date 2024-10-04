@@ -14,24 +14,6 @@ public class JavaExceptionHandling
         {
             first = input.nextDouble();
             second = input.nextDouble();
-            /*
-            try
-            {
-                first = input.nextDouble();
-                second = input.nextDouble();
-            }
-            catch (Exception e)
-            {
-                try
-                {
-                    second = input.nextDouble();
-                }
-                catch (Exception f)
-                {
-                    //Nothing to handle for now
-                }
-            }
-            */
             try
             {
                 if (first == 0 || second == 0)
