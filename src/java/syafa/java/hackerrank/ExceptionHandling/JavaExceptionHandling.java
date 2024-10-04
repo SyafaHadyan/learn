@@ -32,7 +32,7 @@ public class JavaExceptionHandling
             {
                 resultArray[i] = "java.lang.Exception: n and p should not be zero.";
             }
-            resultArray[i] = Double.toString(Math.pow(first,second));
+            resultArray[i] = String.format("%.0f", Double.toString(Math.pow(first,second)));
         }
         input.close();
         for (int i = 0; i < resultArray.length; i++)
