@@ -13,7 +13,7 @@ public class JavaSubstringComparisons
         ArrayList<String>splitAt = new ArrayList<String>();
         for (int i = 0; i <= string.length(); i++)
         {
-            splitAt.add(string.substring(i,Math.min(string.length(), i + split)));
+            splitAt.add(string.substring(i,Math.min(string.length(),i + split)));
         }
         Collections.sort(splitAt);
         System.out.print(splitAt.getFirst() + "\n" + splitAt.getLast());
