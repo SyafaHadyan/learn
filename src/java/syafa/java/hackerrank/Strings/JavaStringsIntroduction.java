@@ -9,5 +9,6 @@ public class JavaStringsIntroduction
         String firstString = input.nextLine();
         String secondString = input.nextLine();
         input.close();
+        int sumLength = firstString.length() +  secondString.length();
     }
 }
