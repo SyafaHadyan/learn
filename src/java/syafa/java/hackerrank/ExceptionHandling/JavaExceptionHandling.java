@@ -13,14 +13,14 @@ public class JavaExceptionHandling
         {
             try
             {
-                first = input.nextInt();
-                second = input.nextInt();
+                first = input.nextDouble();
+                second = input.nextDouble();
             }
             catch (Exception e)
             {
                 try
                 {
-                    second = input.nextInt();
+                    second = input.nextDouble();
                 }
                 catch (Exception f)
                 {
