@@ -6,8 +6,8 @@ public class JavaExceptionHandling
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int first = 0;
-        int second = 0;
+        double first = 0;
+        double second = 0;
         String resultArray[] = new String[5];
         for (int i = 0; i < resultArray.length; i++)
         {
