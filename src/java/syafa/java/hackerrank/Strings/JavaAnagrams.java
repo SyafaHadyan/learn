@@ -10,10 +10,15 @@ public class JavaAnagrams
         String second = input.nextLine();
         input.close();
         String anagrams = "Not Anagrams";
+        boolean check = true;
         ArrayList<Character>firstStringLength = new ArrayList<Character>();
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
         first = first.toLowerCase();
         second = second.toLowerCase();
+        if (!(first.length() == second.length()))
+        {
+            check = false;
+        }
         for (int i = 0; i < first.length(); i++)
         {
             firstStringLength.add(first.charAt(i));
