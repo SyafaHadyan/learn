@@ -18,7 +18,10 @@ public class Day6LetsReview
                 inputCharacter.add(inputString.get(i).charAt(i));
                 for (int k = 0; k < inputCharacter.size(); k++)
                 {
-                    
+                    if (k == 0 || k % 2 == 0)
+                    {
+                        output.add(String.valueOf(inputCharacter.get(k)));
+                    }
                 }
             }
         }
