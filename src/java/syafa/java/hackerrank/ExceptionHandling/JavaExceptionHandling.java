@@ -10,7 +10,8 @@ public class JavaExceptionHandling
         double second = 0d;
         String result = "";
         String resultArray[] = new String[5];
-        for (int i = 0; i < resultArray.length; i++)
+        int i = 0;
+        while (input.hasNextDouble())
         {
             first = input.nextDouble();
             second = input.nextDouble();
@@ -34,12 +35,13 @@ public class JavaExceptionHandling
             {
                 resultArray[i] = "Exception";
             }
+            i++;
         }
         input.close();
-        for (int i = 0; i < resultArray.length; i++)
+        for (int j = 0; j < resultArray.length; i++)
         {
             System.out.printf("%s",resultArray[i]);
-            if (i != resultArray.length - 1)
+            if (j != resultArray.length - 1)
             {
                 System.out.print("\n");
             }
