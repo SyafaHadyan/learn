@@ -16,5 +16,7 @@ public class JavaAnagrams
             firstStringLength.add(first.charAt(i));
             secondStringLength.add(second.charAt(i));
         }
+        Collections.sort(firstStringLength);
+        Collections.sort(secondStringLength);
     }
 }
