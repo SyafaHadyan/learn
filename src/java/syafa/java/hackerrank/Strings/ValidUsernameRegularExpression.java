@@ -29,5 +29,14 @@ public class ValidUsernameRegularExpression
             }
             usernameArray.add("Valid");
         }
+        input.close();
+        for (int i = 0; i < args.length; i++)
+        {
+            System.out.print(usernameArray.get(i));
+            if (i < usernameArray.size())
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
