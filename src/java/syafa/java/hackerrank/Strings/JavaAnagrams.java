@@ -20,10 +20,11 @@ public class JavaAnagrams
         Collections.sort(secondStringLength);
         first = "";
         second = "";
-        for (int i = 0; i < first.length(); i++)
+        for (int i = 0; i < firstStringLength.size(); i++)
         {
             first += firstStringLength.get(i);
             second += secondStringLength.get(i);
         }
+        System.out.print(first + "\n" + second);
     }
 }
