@@ -30,20 +30,24 @@ public class JavaExceptionHandling
             try
             {
                 //resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
-                resultArray[i] = Math.pow(first,second);
-            }
-            catch (Exception e)
-            {
-                if (first == 0 && second == 0)
+                if (first == 0 || second == 0)
                 {
-                    //resultArray[i] = "java.lang.Exception: n and p should not be zero.";
+                    resultArray[i] = 00000;
                     break;
                 }
                 else if (first < 0 || second < 0)
                 {
-                    //resultArray[i] = "java.lang.Exception: n or p should not be negative.";
+                    resultArray[i] = 00000;
                     break;
                 }
+                else
+                {
+                    resultArray[i] = Math.pow(first,second);
+                }
+            }
+            catch (Exception e)
+            {
+
             }
         }
         input.close();
