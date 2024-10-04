@@ -33,5 +33,13 @@ public class Day6LetsReview
             outputArray.add(outputEven + " " + outputOdd);
         }
         input.close();
+        for (int i = 0; i < outputArray.size(); i++)
+        {
+            System.out.print(outputArray.get(i));
+            if (i < outputArray.size())
+            {
+                System.out.println("\n");
+            }
+        }
     }
 }
