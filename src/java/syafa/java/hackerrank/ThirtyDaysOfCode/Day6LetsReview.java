@@ -22,6 +22,10 @@ public class Day6LetsReview
                     {
                         output.add(String.valueOf(inputCharacter.get(k)));
                     }
+                    else if (k % 2 != 0)
+                    {
+                        output.add(String.valueOf(inputCharacter.get(k)));
+                    }
                 }
             }
         }
