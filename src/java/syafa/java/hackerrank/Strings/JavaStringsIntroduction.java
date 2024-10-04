@@ -10,5 +10,7 @@ public class JavaStringsIntroduction
         String secondString = input.nextLine();
         input.close();
         int sumLength = firstString.length() +  secondString.length();
+        char firstStringChar = firstString.charAt(0);
+        char secondStringChar = secondString.charAt(0);
     }
 }
