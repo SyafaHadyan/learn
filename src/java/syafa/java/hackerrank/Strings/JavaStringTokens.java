@@ -15,6 +15,10 @@ public class JavaStringTokens
             {
                 System.out.println(splitRegularArray.length - 1);
             }
+            if (splitRegularArray[i].equalsIgnoreCase(""))
+            {
+                break;
+            }
             System.out.print(splitRegularArray[i]);
             if (i < splitRegularArray.length)
             {
