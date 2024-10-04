@@ -8,6 +8,6 @@ public class JavaPrimalityTest
     {
         Scanner input = new Scanner(System.in);
         BigInteger number = new BigInteger(input.nextLine());
-        number.isProbablePrime(0);
+        System.out.print(number.isProbablePrime(100));
     }
 }
