@@ -15,8 +15,14 @@ public class ValidUsernameRegularExpression
             if (username.length() < 8)
             {
                 usernameArray.add("Invalid");
+                continue;
             }
             else if (username.contains("?"))
+            {
+                usernameArray.add("Invalid");
+                continue;
+            }
+            else if (Character.isLetter(username.charAt(0)))
             {
                 usernameArray.add("Invalid");
                 continue;
