@@ -10,32 +10,30 @@ public class JavaAnagrams
         String second = input.nextLine();
         input.close();
         String anagrams = "Not Anagrams";
-        boolean check = true;
         ArrayList<Character>firstStringLength = new ArrayList<Character>();
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
         first = first.toLowerCase();
         second = second.toLowerCase();
-        if (!(first.length() == second.length()))
+        if ((first.length() == second.length()))
         {
-            check = false;
-        }
-        for (int i = 0; i < first.length(); i++)
-        {
-            firstStringLength.add(first.charAt(i));
-            secondStringLength.add(second.charAt(i));
-        }
-        Collections.sort(firstStringLength);
-        Collections.sort(secondStringLength);
-        first = "";
-        second = "";
-        for (int i = 0; i < firstStringLength.size(); i++)
-        {
-            first += firstStringLength.get(i);
-            second += secondStringLength.get(i);
-        }
-        if (first.equalsIgnoreCase(second))
-        {
-            anagrams = "Anagrams";
+            for (int i = 0; i < first.length(); i++)
+            {
+                firstStringLength.add(first.charAt(i));
+                secondStringLength.add(second.charAt(i));
+            }
+            Collections.sort(firstStringLength);
+            Collections.sort(secondStringLength);
+            first = "";
+            second = "";
+            for (int i = 0; i < firstStringLength.size(); i++)
+            {
+                first += firstStringLength.get(i);
+                second += secondStringLength.get(i);
+            }
+            if (first.equalsIgnoreCase(second))
+            {
+                anagrams = "Anagrams";
+            }
         }
         System.out.print(anagrams);
     }
