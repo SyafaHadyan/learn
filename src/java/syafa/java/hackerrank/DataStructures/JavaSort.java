@@ -3,6 +3,7 @@ import java.util.*;
 
 public class JavaSort
 {
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
