@@ -10,5 +10,7 @@ public class JavaSubstring
         int start = input.nextInt();
         int end = input.nextInt();
         input.close();
+        String output = "";
+        end--;
     }
 }
