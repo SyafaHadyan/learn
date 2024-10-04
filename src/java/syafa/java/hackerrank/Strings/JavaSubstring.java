@@ -15,5 +15,6 @@ public class JavaSubstring
         {
             output += singleString.charAt(i);
         }
+        System.out.print(output);
     }
 }
