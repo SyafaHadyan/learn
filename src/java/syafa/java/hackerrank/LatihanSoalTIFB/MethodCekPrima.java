@@ -17,6 +17,10 @@ public class MethodCekPrima
             cekBilangan = Integer.parseInt(cekBilanganArray[i]);
             for (int j = 2; j < cekBilangan; j++)
             {
+                if (cekBilangan == 1)
+                {
+                    cekPrima = "Bukan prima";
+                }
                 if (cekBilangan % j == 0)
                 {
                     cekPrima = "Bukan prima";
