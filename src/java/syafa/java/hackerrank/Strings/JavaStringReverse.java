@@ -15,6 +15,6 @@ public class JavaStringReverse
             initialLengthArray[i] = initial.charAt(i);
             reversedInitial += initialLengthArray[i];
         }
-
+        System.out.println(reversedInitial);
     }
 }
