@@ -12,9 +12,9 @@ public class JavaSubstringComparisons
         ArrayList<Character>splitAt = new ArrayList<Character>();
         for (int i = 0; i < split; i++)
         {
-            for (int j = 0; j < args.length; j++)
+            for (int j = 0; j < splitAt.size(); j++)
             {
-                splitAt.add(string.charAt(i));
+                splitAt.add(string.charAt(j));
             }
         }
         for (int i = 0; i < splitAt.size(); i++)
