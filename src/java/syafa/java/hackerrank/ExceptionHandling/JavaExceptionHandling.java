@@ -6,8 +6,8 @@ public class JavaExceptionHandling
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double first = 0;
-        double second = 0;
+        double first = 0d;
+        double second = 0d;
         String resultArray[] = new String[5];
         for (int i = 0; i < resultArray.length; i++)
         {
@@ -29,9 +29,9 @@ public class JavaExceptionHandling
             }
             try
             {
-                resultArray[i] = String.format("%.0f", Double.toString(Math.pow(first,second)));
+                resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
             }
-            catch (IllegalFormatConversionException e)
+            catch (Exception e)
             {
                 if (first == 0 && second == 0)
                 {
