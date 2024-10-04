@@ -23,11 +23,11 @@ public class Day6LetsReview
             {
                 if (j == 0 || j % 2 == 0)
                 {
-                    outputEven += inputCharacter.get(j);
+                    outputEven.append(inputCharacter.get(j));
                 }
                 else
                 {
-                    outputOdd += inputCharacter.get(j);
+                    outputOdd.append(inputCharacter.get(j));
                 }
             }
             outputArray.add(outputEven + ' ' + outputOdd);
