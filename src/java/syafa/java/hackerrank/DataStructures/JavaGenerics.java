@@ -7,5 +7,9 @@ public class JavaGenerics
     {
         ArrayList<String> outputString = new ArrayList<String>();
         ArrayList<Integer> outputInteger = new ArrayList<Integer>();
+        for (int i = 0; i < 3; i++)
+        {
+            outputInteger.add(i + 1);
+        }
     }
 }
