@@ -11,6 +11,9 @@ public class JavaExceptionHandling
         String resultArray[] = new String[5];
         for (int i = 0; i < resultArray.length; i++)
         {
+            first = input.nextDouble();
+            second = input.nextDouble();
+            /*
             try
             {
                 first = input.nextDouble();
@@ -27,6 +30,7 @@ public class JavaExceptionHandling
                     //Nothing to handle for now
                 }
             }
+            */
             try
             {
                 if (first == 0 || second == 0)
@@ -46,7 +50,7 @@ public class JavaExceptionHandling
             }
             catch (Exception e)
             {
-
+                resultArray[i] = "Exception";
             }
         }
         input.close();
