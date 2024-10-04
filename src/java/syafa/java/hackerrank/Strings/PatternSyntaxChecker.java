@@ -1,7 +1,6 @@
 package syafa.java.hackerrank.Strings;
 import java.util.*;
-import java.util.regex.Pattern;
-import java.util.regex.PatternSyntaxException;
+import java.util.regex.*;
 
 public class PatternSyntaxChecker
 {
