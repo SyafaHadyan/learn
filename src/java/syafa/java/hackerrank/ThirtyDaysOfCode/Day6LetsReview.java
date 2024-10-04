@@ -33,6 +33,7 @@ public class Day6LetsReview
             outputArray.add(outputEven + ' ' + outputOdd);
             outputEven = "";
             outputOdd = "";
+            System.out.println(outputEven + ' ' + outputOdd);
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
