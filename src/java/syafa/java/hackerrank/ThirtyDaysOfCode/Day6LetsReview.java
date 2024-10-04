@@ -30,7 +30,8 @@ public class Day6LetsReview
                     outputOdd.append(inputCharacter.get(j));
                 }
             }
-            outputArray.add(outputEven + ' ' + outputOdd);
+            System.out.println(outputEven + "\n" + outputOdd);
+            outputArray.add(outputEven + " " + outputOdd);
             outputEven.delete(0,outputEven.length());
             outputOdd.delete(0,outputOdd.length());
         }
