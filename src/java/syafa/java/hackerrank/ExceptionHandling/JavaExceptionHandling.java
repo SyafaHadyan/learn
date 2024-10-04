@@ -28,20 +28,20 @@ public class JavaExceptionHandling
                 else
                 {
                     result = String.format("%.0f",Math.pow(first,second));
-                    resultArray[i] = result;
+                    resultArray.add(result);
                 }
             }
             catch (Exception e)
             {
-                resultArray[i] = "Exception";
+                resultArray.add("Exception");
             }
             i++;
         }
         input.close();
-        for (int j = 0; j < resultArray.length; i++)
+        for (int j = 0; j < resultArray.size(); i++)
         {
-            System.out.printf("%s",resultArray[i]);
-            if (j != resultArray.length - 1)
+            System.out.printf("%s",resultArray.get(i));
+            if (j != resultArray.size() - 1)
             {
                 System.out.print("\n");
             }
