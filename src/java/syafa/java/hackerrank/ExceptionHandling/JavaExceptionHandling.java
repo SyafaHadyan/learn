@@ -8,7 +8,7 @@ public class JavaExceptionHandling
         Scanner input = new Scanner(System.in);
         double first = 0d;
         double second = 0d;
-        String resultArray[] = new String[5];
+        double resultArray[] = new double[5];
         for (int i = 0; i < resultArray.length; i++)
         {
             try
@@ -36,12 +36,12 @@ public class JavaExceptionHandling
             {
                 if (first == 0 && second == 0)
                 {
-                    resultArray[i] = "java.lang.Exception: n and p should not be zero.";
+                    //resultArray[i] = "java.lang.Exception: n and p should not be zero.";
                     break;
                 }
                 else if (first < 0 || second < 0)
                 {
-                    resultArray[i] = "java.lang.Exception: n or p should not be negative.";
+                    //resultArray[i] = "java.lang.Exception: n or p should not be negative.";
                     break;
                 }
             }
