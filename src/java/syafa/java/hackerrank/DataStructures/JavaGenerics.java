@@ -13,9 +13,9 @@ public class JavaGenerics
         }
         outputString.add("Hello");
         outputString.add("World");
-        for (int i = 0; i < outputString.size() + outputInteger.size(); i++)
+        for (int i = 0; i < outputInteger.size(); i++)
         {
-            
+            System.out.println(outputInteger.get(i));
         }
     }
 }
