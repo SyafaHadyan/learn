@@ -31,14 +31,6 @@ public class Day6LetsReview
                 }
             }
         }
-        for (int i = 0; i < inputCharacter.size(); i++)
-        {
-            System.out.print(inputCharacter.get(i));
-            if (i < inputCharacter.size())
-            {
-                System.out.print(' ');
-            }
-        }
         System.out.print("\n" + outputEven + ' ' + outputOdd);
     }
 }
