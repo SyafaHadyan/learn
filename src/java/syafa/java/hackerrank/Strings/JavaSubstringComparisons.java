@@ -7,6 +7,7 @@ public class JavaSubstringComparisons
     {
         Scanner input = new Scanner(System.in);
         String string = input.nextLine();
+        int split = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
