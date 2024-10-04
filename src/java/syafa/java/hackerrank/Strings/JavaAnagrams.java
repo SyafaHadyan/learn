@@ -9,6 +9,7 @@ public class JavaAnagrams
         String first = input.nextLine();
         String second = input.nextLine();
         input.close();
+        String anagrams = "Not anagrams";
         ArrayList<Character>firstStringLength = new ArrayList<Character>();
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
         for (int i = 0; i < first.length(); i++)
@@ -25,6 +26,9 @@ public class JavaAnagrams
             first += firstStringLength.get(i);
             second += secondStringLength.get(i);
         }
-        System.out.print(first + "\n" + second);
+        if (first.equalsIgnoreCase(second))
+        {
+            anagrams = "Anagrams";
+        }
     }
 }
