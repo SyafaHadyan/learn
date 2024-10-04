@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Strings;
 import java.util.*;
+import java.util.regex.Pattern;
 
 public class PatternSyntaxChecker
 {
@@ -15,11 +16,11 @@ public class PatternSyntaxChecker
             check = input.nextLine();
             try 
             {
-                
+                Pattern.compile(check);
             }
             catch (Exception e)
             {
-                // TODO: handle exception
+                System.out.print("try");
             }
         }
     }
