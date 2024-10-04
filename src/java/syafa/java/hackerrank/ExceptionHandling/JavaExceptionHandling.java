@@ -36,6 +36,7 @@ public class JavaExceptionHandling
             else if (first < 0 || second < 0)
             {
                 resultArray[i] = "java.lang.Exception: n or p should not be negative.";
+                break;
             }
             resultArray[i] = String.format("%.0f", Double.toString(Math.pow(first,second)));
         }
