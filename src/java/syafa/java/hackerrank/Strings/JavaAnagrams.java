@@ -9,7 +9,7 @@ public class JavaAnagrams
         String first = input.nextLine();
         String second = input.nextLine();
         input.close();
-        String anagrams = "Not anagrams";
+        String anagrams = "Not Anagrams";
         ArrayList<Character>firstStringLength = new ArrayList<Character>();
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
         for (int i = 0; i < first.length(); i++)
