@@ -21,11 +21,11 @@ public class Day6LetsReview
                 {
                     if (k == 0 || k % 2 == 0)
                     {
-                        outputArray.add(String.valueOf(inputCharacter.get(k)));
+                        output += inputCharacter.get(k);
                     }
                     else if (k % 2 != 0)
                     {
-                        outputArray.add(String.valueOf(inputCharacter.get(k)));
+                        output += inputCharacter.get(k);
                     }
                 }
             }
