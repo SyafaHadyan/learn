@@ -11,12 +11,14 @@ public class JavaStringsIntroduction
         input.close();
         char compareFirstChar[] = new char[2];
         int sumLength = firstString.length() +  secondString.length();
+        String lexic = "Yes";
         compareFirstChar[0] = firstString.charAt(0);
         compareFirstChar[1] = secondString.charAt(0);
         Arrays.sort(compareFirstChar);
-        for (int i = 0; i < 2; i++)
+        if (compareFirstChar[0] == firstString.charAt(0))
         {
-            System.out.println(compareFirstChar[i]);
+            lexic = "No";
         }
+        System.out.print(sumLength + "\n" + lexic);
     }
 }
