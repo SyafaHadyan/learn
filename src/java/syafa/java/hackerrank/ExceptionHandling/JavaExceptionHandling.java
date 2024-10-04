@@ -6,8 +6,8 @@ public class JavaExceptionHandling
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double first = 0d;
-        double second = 0d;
+        double first;
+        double second;
         String result = "";
         ArrayList<String> resultArray = new ArrayList<String>();
         while (input.hasNextDouble())
