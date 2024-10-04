@@ -12,14 +12,20 @@ public class JavaExceptionHandling
         {
             try
             {
-                
+                first = input.nextInt();
+                second = input.nextInt();
             }
             catch (Exception e)
             {
-                // TODO: handle exception
+                try
+                {
+                    second = input.nextInt();
+                }
+                catch (Exception f)
+                {
+                    // TODO: handle exception
+                }
             }
-            first = input.nextInt();
-            second = input.nextInt();
             input.nextLine();
         }
         input.close();
