@@ -35,12 +35,12 @@ public class JavaExceptionHandling
             {
                 if (first == 0 || second == 0)
                 {
-                    resultArray[i] = "zero";
+                    resultArray[i] = "Exactly zero";
                     break;
                 }
                 else if (first < 0 || second < 0)
                 {
-                    resultArray[i] = "below zero";
+                    resultArray[i] = "Below zero";
                     break;
                 }
                 else
