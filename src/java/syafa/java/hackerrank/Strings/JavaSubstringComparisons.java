@@ -17,5 +17,13 @@ public class JavaSubstringComparisons
         }
         Collections.sort(splitAt);
         System.out.print(splitAt.getFirst() + "\n" + splitAt.getLast());
+        for (int i = 0; i <= splitAt.size(); i++)
+        {
+            System.out.print(splitAt.get(i));
+            if (i < splitAt.size())
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
