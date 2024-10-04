@@ -31,6 +31,7 @@ public class JavaExceptionHandling
             if (first <= 0 && second <= 0)
             {
                 resultArray[i] = "java.lang.Exception: n and p should not be zero.";
+                break;
             }
             resultArray[i] = String.format("%.0f", Double.toString(Math.pow(first,second)));
         }
