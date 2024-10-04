@@ -12,7 +12,7 @@ public class JavaSubstringComparisons
         ArrayList<Character>splitAt = new ArrayList<Character>();
         for (int i = 0; i < args.length; i++)
         {
-            
+            splitAt.add(string.charAt(i));
         }
     }
 }
