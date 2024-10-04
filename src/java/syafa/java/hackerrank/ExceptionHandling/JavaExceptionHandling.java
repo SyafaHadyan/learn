@@ -36,12 +36,10 @@ public class JavaExceptionHandling
                 if (first == 0 || second == 0)
                 {
                     resultArray[i] = 010;
-                    break;
                 }
                 else if (first < 0 || second < 0)
                 {
                     resultArray[i] = 101;
-                    break;
                 }
                 else
                 {
