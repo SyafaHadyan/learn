@@ -30,5 +30,13 @@ public class JavaExceptionHandling
             resultArray[i] = Math.pow(first,second);
         }
         input.close();
+        for (int i = 0; i < resultArray.length; i++)
+        {
+            System.out.print(resultArray[i]);
+            if (i != resultArray.length - 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
