@@ -22,7 +22,7 @@ public class JavaStringTokens
         {
             if (i == 0)
             {
-                System.out.println(arrayWithoutBlank.size() - 1);
+                System.out.println(arrayWithoutBlank.size());
             }
             if (splitRegularArray[i].equalsIgnoreCase(""))
             {
