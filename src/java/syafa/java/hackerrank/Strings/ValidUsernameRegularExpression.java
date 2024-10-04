@@ -12,9 +12,14 @@ public class ValidUsernameRegularExpression
         for (int i = 0; i < amountOfUsername; i++)
         {
             username = input.nextLine();
-            if (!(username.contains("?")))
+            if (username.length() < 8)
             {
-
+                usernameArray.add("Invalid");
+            }
+            else if (username.contains("?"))
+            {
+                usernameArray.add("Invalid");
+                continue;
             }
         }
     }
