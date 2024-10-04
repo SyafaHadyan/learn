@@ -18,10 +18,13 @@ public class PatternSyntaxChecker
             try 
             {
                 Pattern.compile(check);
+                validArray.add("Valid");
             }
             catch (PatternSyntaxException e)
             {
                 System.out.print("try");
+                validArray.add("Invalid");
+                break;
             }
         }
     }
