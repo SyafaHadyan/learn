@@ -8,7 +8,7 @@ public class JavaExceptionHandling
         Scanner input = new Scanner(System.in);
         double first = 0d;
         double second = 0d;
-        double resultArray[] = new double[5];
+        String resultArray[] = new String[5];
         for (int i = 0; i < resultArray.length; i++)
         {
             try
@@ -29,20 +29,19 @@ public class JavaExceptionHandling
             }
             try
             {
-                //resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
                 if (first == 0 || second == 0)
                 {
-                    resultArray[i] = 00000;
+                    resultArray[i] = "zero";
                     break;
                 }
                 else if (first < 0 || second < 0)
                 {
-                    resultArray[i] = 00000;
+                    resultArray[i] = "below zero";
                     break;
                 }
                 else
                 {
-                    resultArray[i] = Math.pow(first,second);
+                    resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
                 }
             }
             catch (Exception e)
