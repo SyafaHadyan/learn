@@ -9,19 +9,9 @@ public class JavaStringsIntroduction
         String firstString = input.nextLine();
         String secondString = input.nextLine();
         input.close();
+        char compareFirstChar[] = new char[2];
         int sumLength = firstString.length() +  secondString.length();
-        int firstCharInt = 0;
-        int secondCharInt = 0;
-        switch (firstString.charAt(0))
-        {
-            case 'a':
-                firstCharInt = 1;
-                break;
-            case 'b':
-                firstCharInt = 2;
-                break;
-            default:
-                break;
-        }
+        compareFirstChar[0] = firstString.charAt(0);
+        compareFirstChar[1] = secondString.charAt(0);
     }
 }
