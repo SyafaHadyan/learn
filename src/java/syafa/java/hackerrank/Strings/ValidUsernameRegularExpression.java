@@ -22,7 +22,7 @@ public class ValidUsernameRegularExpression
                 usernameArray.add("Invalid");
                 continue;
             }
-            else if (!(username.matches("[A-Za-z0-9]")))
+            else if (!(username.matches("[A-Za-z0-9]+")))
             {
                 usernameArray.add("Invalid");
                 continue;
