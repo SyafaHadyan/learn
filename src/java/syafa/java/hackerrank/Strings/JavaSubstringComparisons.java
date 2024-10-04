@@ -17,5 +17,13 @@ public class JavaSubstringComparisons
                 splitAt.add(string.charAt(i));
             }
         }
+        for (int i = 0; i < splitAt.size(); i++)
+        {
+            System.out.print(splitAt.get(i));
+            if (i < splitAt.size())
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
