@@ -1,4 +1,5 @@
 package syafa.java.hackerrank.BigNumber;
+import java.math.BigInteger;
 import java.util.*;
 
 public class JavaPrimalityTest
