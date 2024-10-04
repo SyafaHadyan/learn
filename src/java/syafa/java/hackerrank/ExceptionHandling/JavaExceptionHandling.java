@@ -8,6 +8,7 @@ public class JavaExceptionHandling
         Scanner input = new Scanner(System.in);
         int first = 0;
         int second = 0;
+        double result = 0;
         int resultArray[] = new int[5];
         for (int i = 0; i < resultArray.length; i++)
         {
@@ -24,10 +25,10 @@ public class JavaExceptionHandling
                 }
                 catch (Exception f)
                 {
-                    // TODO: handle exception
+                    //Nothing to handle for now
                 }
             }
-            input.nextLine();
+            result = Math.pow(first,second);
         }
         input.close();
     }
