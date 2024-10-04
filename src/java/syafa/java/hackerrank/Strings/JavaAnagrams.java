@@ -14,7 +14,7 @@ public class JavaAnagrams
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
         first = first.toLowerCase();
         second = second.toLowerCase();
-        if ((first.length() == second.length()))
+        if (first.length() == second.length())
         {
             for (int i = 0; i < first.length(); i++)
             {
