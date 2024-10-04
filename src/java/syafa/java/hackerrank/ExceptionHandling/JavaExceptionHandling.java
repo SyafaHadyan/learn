@@ -49,7 +49,7 @@ public class JavaExceptionHandling
         input.close();
         for (int i = 0; i < resultArray.length; i++)
         {
-            System.out.print(resultArray[i]);
+            System.out.printf("%.0f",resultArray[i]);
             if (i != resultArray.length - 1)
             {
                 System.out.print("\n");
