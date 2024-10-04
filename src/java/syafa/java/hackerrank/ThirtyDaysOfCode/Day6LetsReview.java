@@ -18,16 +18,16 @@ public class Day6LetsReview
             for (int j = 0; j < inputString.get(i).length(); j++)
             {
                 inputCharacter.add(inputString.get(i).charAt(i));
-                for (int k = 0; k < inputCharacter.size(); k++)
+            }
+            for (int j = 0; j < inputCharacter.size(); j++)
+            {
+                if (j == 0 || j % 2 == 0)
                 {
-                    if (k == 0 || k % 2 == 0)
-                    {
-                        outputEven += inputCharacter.get(k);
-                    }
-                    else if (k % 2 != 0)
-                    {
-                        outputOdd += inputCharacter.get(k);
-                    }
+                    outputEven += inputCharacter.get(j);
+                }
+                else
+                {
+                    outputOdd += inputCharacter.get(j);
                 }
             }
         }
