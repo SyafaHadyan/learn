@@ -31,8 +31,8 @@ public class Day6LetsReview
                 }
             }
             outputArray.add(outputEven + ' ' + outputOdd);
-            outputEven = "";
-            outputOdd = "";
+            outputEven.setLength(0);
+            outputOdd.setLength(0);
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
