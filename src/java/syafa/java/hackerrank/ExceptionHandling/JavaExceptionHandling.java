@@ -36,11 +36,11 @@ public class JavaExceptionHandling
             {
                 if (first == 0 || second == 0)
                 {
-                    resultArray[i] = "Zero";
+                    resultArray[i] = "java.lang.Exception: n and p should not be zero.";
                 }
                 else if (first < 0 || second < 0)
                 {
-                    resultArray[i] = "Negative";
+                    resultArray[i] = "java.lang.Exception: n or p should not be negative.";
                 }
                 else
                 {
