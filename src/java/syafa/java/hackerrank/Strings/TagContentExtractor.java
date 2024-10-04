@@ -16,6 +16,7 @@ public class TagContentExtractor
             String extractedContent[] = content.split("<(.+)>([^<]+)</\\1>");
             extractedContentArray.add(extractedContent[i]);
         }
+        input.close();
         for (int i = 0; i < extractedContentArray.size(); i++)
         {
             System.out.print(extractedContentArray.get(i));
