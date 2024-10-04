@@ -17,5 +17,13 @@ public class JavaGenerics
         {
             System.out.println(outputInteger.get(i));
         }
+        for (int i = 0; i < outputString.size(); i++)
+        {
+            System.out.print(outputString.get(i));
+            if (i < outputString.size())
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
