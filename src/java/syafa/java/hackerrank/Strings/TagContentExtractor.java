@@ -8,11 +8,12 @@ public class TagContentExtractor
         Scanner input = new Scanner(System.in);
         int amount = Integer.parseInt(input.nextLine());
         String content = "";
+        //String extractedContent[];
         ArrayList<String> extractedContentArray = new ArrayList<String>();
         for (int i = 0; i < amount; i++)
         {
             content = input.nextLine();
-            String extractedContent[] = content.split("<(.+)>([^<]+)</\1>");
+            String extractedContent[] = content.split("<(.+)>([^<]+)</\\1>");
             extractedContentArray.add(extractedContent[i]);
         }
         for (int i = 0; i < extractedContentArray.size(); i++)
