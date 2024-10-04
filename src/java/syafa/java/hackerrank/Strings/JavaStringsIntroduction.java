@@ -15,7 +15,10 @@ public class JavaStringsIntroduction
         switch (firstString.charAt(0))
         {
             case 'a':
-                charInt = 1;
+                firstCharInt = 1;
+                break;
+            case 'b':
+                firstCharInt = 2;
                 break;
             default:
                 break;
