@@ -9,5 +9,7 @@ public class JavaAnagrams
         String first = input.nextLine();
         String second = input.nextLine();
         input.close();
+        ArrayList<String>firstStringLength = new ArrayList<String>();
+        ArrayList<String>secondStringLength = new ArrayList<String>();
     }
 }
