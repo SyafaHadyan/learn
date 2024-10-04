@@ -40,7 +40,7 @@ public class Day6LetsReview
             System.out.print(outputArray.get(i));
             if (i < outputArray.size())
             {
-                System.out.println("\n");
+                System.out.print("\n");
             }
         }
     }
