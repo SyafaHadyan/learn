@@ -30,6 +30,7 @@ public class JavaAnagrams
         {
             anagrams = "Anagrams";
         }
+        System.out.println(first + "\n" + second);
         System.out.print(anagrams);
     }
 }
