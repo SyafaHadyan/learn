@@ -12,8 +12,8 @@ public class JavaAnagrams
         String anagrams = "Not Anagrams";
         ArrayList<Character>firstStringLength = new ArrayList<Character>();
         ArrayList<Character>secondStringLength = new ArrayList<Character>();
-        first.toLowerCase();
-        second.toLowerCase();
+        first = first.toLowerCase();
+        second = second.toLowerCase();
         for (int i = 0; i < first.length(); i++)
         {
             firstStringLength.add(first.charAt(i));
