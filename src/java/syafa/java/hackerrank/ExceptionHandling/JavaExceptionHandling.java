@@ -44,8 +44,8 @@ public class JavaExceptionHandling
                 }
                 else
                 {
-                    String a = String.valueOf(Math.pow(first,second));
-                    resultArray[i] = a;
+                    result = String.format("%.0f",Math.pow(first,second));
+                    resultArray[i] = result;
                 }
             }
             catch (Exception e)
