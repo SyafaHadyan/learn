@@ -15,6 +15,9 @@ public class Day6LetsReview
             for (int j = 0; j < inputString.get(i).length(); j++)
             {
                 inputCharacter.add(inputString.get(i).charAt(i));
+                for (int k = 0; k < inputCharacter.size(); k++) {
+                    
+                }
             }
         }
     }
