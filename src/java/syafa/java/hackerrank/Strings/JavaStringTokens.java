@@ -11,13 +11,13 @@ public class JavaStringTokens
         String splitRegularArray[] = regularString.split("[\\p{P} \\t\\n\\r]");
         for (int i = 0; i < splitRegularArray.length; i++)
         {
-            if (i == 1)
+            if (i == 0)
             {
                 System.out.println(splitRegularArray.length - 1);
             }
             if (splitRegularArray[i].equalsIgnoreCase(""))
             {
-                break;
+                continue;
             }
             System.out.print(splitRegularArray[i]);
             if (i < splitRegularArray.length)
