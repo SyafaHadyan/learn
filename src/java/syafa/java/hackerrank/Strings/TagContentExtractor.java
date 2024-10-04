@@ -12,7 +12,7 @@ public class TagContentExtractor
         for (int i = 0; i < amount; i++)
         {
             content = input.nextLine();
-            content = content.split("<h1>");
+            extractedContent.add(content.split("<h1>"));
         }
     }
 }
