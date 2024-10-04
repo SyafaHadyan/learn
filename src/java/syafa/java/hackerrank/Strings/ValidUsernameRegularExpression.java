@@ -27,6 +27,7 @@ public class ValidUsernameRegularExpression
                 usernameArray.add("Invalid");
                 continue;
             }
+            usernameArray.add("Valid");
         }
     }
 }
