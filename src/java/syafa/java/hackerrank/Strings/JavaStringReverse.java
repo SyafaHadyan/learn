@@ -9,12 +9,17 @@ public class JavaStringReverse
         String initial = input.nextLine();
         input.close();
         String reversedInitial = "";
+        String result = "No";
         char initialLengthArray[] = new char[initial.length()];
         for (int i = initial.length() - 1 ; i >= 0; i--)
         {
             initialLengthArray[i] = initial.charAt(i);
             reversedInitial += initialLengthArray[i];
         }
-        System.out.println(reversedInitial);
+        if (initial.equalsIgnoreCase(reversedInitial))
+        {
+            result = "Yes";
+        }
+        System.out.print(result);
     }
 }
