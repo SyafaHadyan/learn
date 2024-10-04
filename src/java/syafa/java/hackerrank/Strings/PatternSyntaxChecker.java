@@ -1,6 +1,7 @@
 package syafa.java.hackerrank.Strings;
 import java.util.*;
 import java.util.regex.Pattern;
+import java.util.regex.PatternSyntaxException;
 
 public class PatternSyntaxChecker
 {
@@ -18,7 +19,7 @@ public class PatternSyntaxChecker
             {
                 Pattern.compile(check);
             }
-            catch (Exception e)
+            catch (PatternSyntaxException e)
             {
                 System.out.print("try");
             }
