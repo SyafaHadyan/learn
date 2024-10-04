@@ -17,7 +17,7 @@ public class Day6LetsReview
             inputString.add(input.nextLine());
             for (int j = 0; j < inputString.get(i).length(); j++)
             {
-                inputCharacter.add(inputString.get(i).charAt(i));
+                inputCharacter.add(inputString.get(i).charAt(j));
             }
             for (int j = 0; j < inputCharacter.size(); j++)
             {
