@@ -19,6 +19,8 @@ public class JavaStringsIntroduction
         {
             lexic = "No";
         }
+        firstString = Character.toUpperCase(firstString.charAt(0)) + "a";
+        secondString = Character.toUpperCase(secondString.charAt(0)) + "a";
         System.out.print(sumLength + "\n" + lexic);
     }
 }
