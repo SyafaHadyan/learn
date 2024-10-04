@@ -11,7 +11,7 @@ public class ValidUsernameRegularExpression
         ArrayList<String> usernameArray = new ArrayList<String>();
         for (int i = 0; i < amountOfUsername; i++)
         {
-            username = input.nextLine();
+            usernameArray.add(input.nextLine());
         }
     }
 }
