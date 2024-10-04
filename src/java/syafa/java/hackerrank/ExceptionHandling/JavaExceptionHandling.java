@@ -28,10 +28,14 @@ public class JavaExceptionHandling
                     //Nothing to handle for now
                 }
             }
-            if (first <= 0 && second <= 0)
+            if (first == 0 && second == 0)
             {
                 resultArray[i] = "java.lang.Exception: n and p should not be zero.";
                 break;
+            }
+            else if (first < 0 || second < 0)
+            {
+                resultArray[i] = "java.lang.Exception: n or p should not be negative.";
             }
             resultArray[i] = String.format("%.0f", Double.toString(Math.pow(first,second)));
         }
