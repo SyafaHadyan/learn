@@ -10,8 +10,8 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
         ArrayList<String> outputArray = new ArrayList<String>();
-        String outputEven;
-        String outputOdd;
+        String outputEven = "";
+        String outputOdd = "";
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
@@ -19,8 +19,6 @@ public class Day6LetsReview
             {
                 inputCharacter.add(inputString.get(i).charAt(j));
             }
-            outputEven = "";
-            outputOdd = "";
             for (int j = 0; j < inputCharacter.size(); j++)
             {
                 if (j == 0 || j % 2 == 0)
@@ -32,9 +30,9 @@ public class Day6LetsReview
                     outputOdd += inputCharacter.get(j);
                 }
             }
-            System.out.println(outputEven + ' ' + outputOdd);
             outputArray.add(outputEven + ' ' + outputOdd);
-            System.out.println(outputEven + ' ' + outputOdd);
+            outputEven = "";
+            outputOdd = "";
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
