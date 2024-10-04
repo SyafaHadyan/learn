@@ -13,6 +13,14 @@ public class PatternSyntaxChecker
         for (int i = 0; i < numberOfInput; i++)
         {
             check = input.nextLine();
+            try 
+            {
+                
+            }
+            catch (Exception e)
+            {
+                // TODO: handle exception
+            }
         }
     }
 }
