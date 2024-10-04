@@ -11,6 +11,9 @@ public class JavaSubstring
         int end = input.nextInt();
         input.close();
         String output = "";
-        end--;
+        for (int i = start; i < end; i++)
+        {
+            output += singleString.charAt(i);
+        }
     }
 }
