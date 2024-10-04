@@ -9,13 +9,10 @@ public class JavaSubstringComparisons
         String string = input.nextLine();
         int split = Integer.parseInt(input.nextLine());
         input.close();
-        ArrayList<Character>splitAt = new ArrayList<Character>();
-        for (int i = 0; i < split; i++)
+        ArrayList<String>splitAt = new ArrayList<String>();
+        for (int i = 0; i < string.length(); i++)
         {
-            for (int j = 0; j < splitAt.size(); j++)
-            {
-                splitAt.add(string.charAt(j));
-            }
+            splitAt.add(string.substring(i,Math.min(string.length(), i + n)));
         }
         for (int i = 0; i < splitAt.size(); i++)
         {
