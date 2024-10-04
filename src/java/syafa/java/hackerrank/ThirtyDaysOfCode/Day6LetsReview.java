@@ -9,13 +9,15 @@ public class Day6LetsReview
         int number = Integer.parseInt(input.nextLine());
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
+        ArrayList<String> output = new ArrayList<String>();
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
             for (int j = 0; j < inputString.get(i).length(); j++)
             {
                 inputCharacter.add(inputString.get(i).charAt(i));
-                for (int k = 0; k < inputCharacter.size(); k++) {
+                for (int k = 0; k < inputCharacter.size(); k++)
+                {
                     
                 }
             }
