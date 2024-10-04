@@ -11,5 +11,7 @@ public class JavaGenerics
         {
             outputInteger.add(i + 1);
         }
+        outputString.add("Hello");
+        outputString.add("World");
     }
 }
