@@ -12,6 +12,10 @@ public class Day6LetsReview
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
+            for (int j = 0; j < Integer.parseInt(inputString.get(i)); j++)
+            {
+                inputCharacter.add('a');
+            }
         }
     }
 }
