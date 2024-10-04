@@ -8,8 +8,8 @@ public class JavaExceptionHandling
         Scanner input = new Scanner(System.in);
         for (int i = 1; i <= 5; i++)
         {
-            int firstFirst = input.nextInt();
-            int firstSecond = input.nextInt();
+            int first = input.nextInt();
+            int second = input.nextInt();
             input.nextLine();
         }
         input.close();
