@@ -11,7 +11,6 @@ public class PatternSyntaxChecker
         int numberOfInput = Integer.parseInt(input.nextLine());
         ArrayList<String> validArray = new ArrayList<String>();
         String check;
-        String valid;
         for (int i = 0; i < numberOfInput; i++)
         {
             check = input.nextLine();
@@ -26,6 +25,11 @@ public class PatternSyntaxChecker
                 validArray.add("Invalid");
                 break;
             }
+        }
+        input.close();
+        for (int i = 0; i < args.length; i++)
+        {
+            System.out.print(validArray.get(i));
         }
     }
 }
