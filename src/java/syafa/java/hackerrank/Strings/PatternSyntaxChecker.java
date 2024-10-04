@@ -7,5 +7,11 @@ public class PatternSyntaxChecker
     {
         Scanner input = new Scanner(System.in);
         int numberOfInput = Integer.parseInt(input.nextLine());
+        String check;
+        String valid;
+        for (int i = 0; i < numberOfInput; i++)
+        {
+            check = input.nextLine();
+        }
     }
 }
