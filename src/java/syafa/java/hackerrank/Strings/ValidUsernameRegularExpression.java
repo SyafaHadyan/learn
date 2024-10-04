@@ -11,7 +11,11 @@ public class ValidUsernameRegularExpression
         ArrayList<String> usernameArray = new ArrayList<String>();
         for (int i = 0; i < amountOfUsername; i++)
         {
-            usernameArray.add(input.nextLine());
+            username = input.nextLine();
+            if (!(username.contains("?")))
+            {
+
+            }
         }
     }
 }
