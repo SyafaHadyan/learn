@@ -11,7 +11,7 @@ public class JavaSubstringComparisons
         input.close();
         string.toLowerCase();
         ArrayList<String>splitAt = new ArrayList<String>();
-        for (int i = 0; i < string.length() / 3; i++)
+        for (int i = 0; i <= string.length(); i++)
         {
             splitAt.add(string.substring(i,Math.min(string.length(), i + split)));
         }
