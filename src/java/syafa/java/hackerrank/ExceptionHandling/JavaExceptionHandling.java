@@ -8,7 +8,6 @@ public class JavaExceptionHandling
         Scanner input = new Scanner(System.in);
         int first = 0;
         int second = 0;
-        double result = 0;
         double resultArray[] = new double[5];
         for (int i = 0; i < resultArray.length; i++)
         {
@@ -28,8 +27,7 @@ public class JavaExceptionHandling
                     //Nothing to handle for now
                 }
             }
-            result = Math.pow(first,second);
-            resultArray[i] = result;
+            resultArray[i] = Math.pow(first,second);
         }
         input.close();
     }
