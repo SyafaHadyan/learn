@@ -21,6 +21,6 @@ public class JavaStringsIntroduction
         }
         firstString = firstString.replace(firstString.charAt(0), Character.toUpperCase(firstString.charAt(0)));
         secondString = secondString.replace(secondString.charAt(0), Character.toUpperCase(secondString.charAt(0)));
-        System.out.print(sumLength + "\n" + lexic);
+        System.out.print(sumLength + "\n" + lexic + "\n" + firstString + ' ' + secondString);
     }
 }
