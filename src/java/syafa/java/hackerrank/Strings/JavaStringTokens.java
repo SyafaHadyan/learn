@@ -8,6 +8,6 @@ public class JavaStringTokens
         Scanner input = new Scanner(System.in);
         String regularString = input.nextLine();
         input.close();
-        String splitRegularArray[] = regularString.split(" ");
+        String splitRegularArray[] = regularString.split("[\\p{P} \\t\\n\\r]");
     }
 }
