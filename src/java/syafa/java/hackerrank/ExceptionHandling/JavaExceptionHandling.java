@@ -9,7 +9,7 @@ public class JavaExceptionHandling
         int first = 0;
         int second = 0;
         int resultArray[] = new int[5];
-        for (int i = 1; i <= 5; i++)
+        for (int i = 0; i < resultArray.length; i++)
         {
             try
             {
