@@ -27,6 +27,10 @@ public class JavaExceptionHandling
                     //Nothing to handle for now
                 }
             }
+            if (first <= 0 && second <= 0)
+            {
+                resultArray[i] = "java.lang.Exception: n and p should not be zero.";
+            }
             resultArray[i] = Math.pow(first,second);
         }
         input.close();
