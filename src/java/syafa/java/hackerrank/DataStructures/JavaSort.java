@@ -3,7 +3,7 @@ import java.util.*;
 
 public class JavaSort
 {
-    @SuppressWarnings("unused")
+    @SuppressWarnings({ "unused", "resource" })
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
