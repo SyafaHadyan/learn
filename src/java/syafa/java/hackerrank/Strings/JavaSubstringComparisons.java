@@ -9,6 +9,7 @@ public class JavaSubstringComparisons
         String string = input.nextLine();
         int split = Integer.parseInt(input.nextLine());
         input.close();
+        string.toLowerCase();
         ArrayList<String>splitAt = new ArrayList<String>();
         for (int i = 0; i < string.length(); i++)
         {
