@@ -9,7 +9,8 @@ public class Day6LetsReview
         int number = Integer.parseInt(input.nextLine());
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
-        ArrayList<String> output = new ArrayList<String>();
+        ArrayList<String> outputArray = new ArrayList<String>();
+        String output = "";
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
@@ -20,14 +21,18 @@ public class Day6LetsReview
                 {
                     if (k == 0 || k % 2 == 0)
                     {
-                        output.add(String.valueOf(inputCharacter.get(k)));
+                        outputArray.add(String.valueOf(inputCharacter.get(k)));
                     }
                     else if (k % 2 != 0)
                     {
-                        output.add(String.valueOf(inputCharacter.get(k)));
+                        outputArray.add(String.valueOf(inputCharacter.get(k)));
                     }
                 }
             }
+        }
+        for (int i = 0; i < args.length; i++)
+        {
+            System.out.println();
         }
     }
 }
