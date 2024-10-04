@@ -7,5 +7,9 @@ public class TagContentExtractor
     {
         Scanner input = new Scanner(System.in);
         int amount = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < amount; i++)
+        {
+            
+        }
     }
 }
