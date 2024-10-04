@@ -10,8 +10,8 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
         ArrayList<String> outputArray = new ArrayList<String>();
-        String outputEven = "";
-        String outputOdd = "";
+        StringBuffer outputEven = new StringBuffer();
+        StringBuffer outputOdd = new StringBuffer();
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
