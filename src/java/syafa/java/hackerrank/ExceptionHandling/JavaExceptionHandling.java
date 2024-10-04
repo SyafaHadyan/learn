@@ -29,7 +29,8 @@ public class JavaExceptionHandling
             }
             try
             {
-                resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
+                //resultArray[i] = String.format("%.0f",Double.toString(Math.pow(first,second)));
+                resultArray[i] = Math.pow(first,second);
             }
             catch (Exception e)
             {
