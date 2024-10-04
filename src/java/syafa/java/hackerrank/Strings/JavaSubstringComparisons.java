@@ -14,5 +14,6 @@ public class JavaSubstringComparisons
         {
             splitAt.add(string.substring(i,Math.min(string.length(), i + split)));
         }
+        Collections.sort(splitAt);
     }
 }
