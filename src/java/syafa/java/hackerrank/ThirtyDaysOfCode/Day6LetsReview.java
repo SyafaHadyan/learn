@@ -31,10 +31,10 @@ public class Day6LetsReview
                 }
             }
         }
-        for (int i = 0; i < outputArray.size(); i++)
+        for (int i = 0; i < inputCharacter.size(); i++)
         {
-            System.out.print(outputArray.get(i));
-            if (i < outputArray.size())
+            System.out.print(inputCharacter.get(i));
+            if (i < inputCharacter.size())
             {
                 System.out.print(' ');
             }
