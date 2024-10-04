@@ -16,7 +16,7 @@ public class JavaExceptionHandling
             second = input.nextDouble();
             try
             {
-                if (first == 0 || second == 0)
+                if (first == 0 && second == 0)
                 {
                     resultArray[i] = "java.lang.Exception: n and p should not be zero.";
                 }
