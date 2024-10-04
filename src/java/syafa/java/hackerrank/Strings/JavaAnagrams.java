@@ -18,5 +18,12 @@ public class JavaAnagrams
         }
         Collections.sort(firstStringLength);
         Collections.sort(secondStringLength);
+        first = "";
+        second = "";
+        for (int i = 0; i < first.length(); i++)
+        {
+            first += firstStringLength.get(i);
+            second += secondStringLength.get(i);
+        }
     }
 }
