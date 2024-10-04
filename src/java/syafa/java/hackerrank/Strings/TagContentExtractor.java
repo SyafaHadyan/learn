@@ -7,9 +7,12 @@ public class TagContentExtractor
     {
         Scanner input = new Scanner(System.in);
         int amount = Integer.parseInt(input.nextLine());
+        String content = "";
+        ArrayList<String> extractedContent = new ArrayList<String>();
         for (int i = 0; i < amount; i++)
         {
-            
+            content = input.nextLine();
+            content = content.split("<h1>");
         }
     }
 }
