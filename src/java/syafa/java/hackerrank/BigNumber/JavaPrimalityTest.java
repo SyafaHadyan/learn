@@ -8,6 +8,7 @@ public class JavaPrimalityTest
     {
         Scanner input = new Scanner(System.in);
         BigInteger number = new BigInteger(input.nextLine());
+        input.close();
         if (number.isProbablePrime(100))
         {
             System.out.print("prime");
