@@ -30,9 +30,13 @@ public class Day6LetsReview
                 }
             }
         }
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < outputArray.size(); i++)
         {
-            System.out.println();
+            System.out.print(outputArray.get(i));
+            if (i < outputArray.size())
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
