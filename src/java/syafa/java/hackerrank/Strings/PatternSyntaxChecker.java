@@ -27,9 +27,13 @@ public class PatternSyntaxChecker
             }
         }
         input.close();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < validArray.size(); i++)
         {
             System.out.print(validArray.get(i));
+            if (i < validArray.size())
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
