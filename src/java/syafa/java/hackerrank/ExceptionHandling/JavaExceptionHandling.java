@@ -9,7 +9,7 @@ public class JavaExceptionHandling
         int first = 0;
         int second = 0;
         double result = 0;
-        int resultArray[] = new int[5];
+        double resultArray[] = new double[5];
         for (int i = 0; i < resultArray.length; i++)
         {
             try
@@ -29,6 +29,7 @@ public class JavaExceptionHandling
                 }
             }
             result = Math.pow(first,second);
+            resultArray[i] = result;
         }
         input.close();
     }
