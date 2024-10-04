@@ -8,6 +8,10 @@ public class JavaStringReverse
         Scanner input = new Scanner(System.in);
         String initial = input.nextLine();
         input.close();
-        String initialLengthArray[] = new String[initial.length()];
+        char initialLengthArray[] = new char[initial.length()];
+        for (int i = initial.length() - 1 ; i >= 0; i--)
+        {
+            initialLengthArray[i] = initial.charAt(i);
+        }
     }
 }
