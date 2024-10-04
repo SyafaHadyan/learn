@@ -10,7 +10,7 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         for (int i = 0; i < number; i++)
         {
-            
+            inputString.add(input.nextLine());
         }
     }
 }
