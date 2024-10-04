@@ -18,12 +18,9 @@ public class JavaStringTokens
             }
             arrayWithoutBlank.add(splitRegularArray[i]);
         }
+        System.out.println(arrayWithoutBlank.size());
         for (int i = 0; i < splitRegularArray.length; i++)
         {
-            if (i == 0)
-            {
-                System.out.println(arrayWithoutBlank.size());
-            }
             if (splitRegularArray[i].equalsIgnoreCase(""))
             {
                 continue;
