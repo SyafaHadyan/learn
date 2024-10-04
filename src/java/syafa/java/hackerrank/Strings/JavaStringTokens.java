@@ -9,20 +9,20 @@ public class JavaStringTokens
         String regularString = input.nextLine();
         input.close();
         String splitRegularArray[] = regularString.split("[\\p{P} \\t\\n\\r]");
-        int arrayLength = splitRegularArray.length;
+        ArrayList<String>arrayWithoutBlank = new ArrayList<String>();
         for (int i = 0; i < splitRegularArray.length; i++)
         {
             if (splitRegularArray[i].equalsIgnoreCase(""))
             {
-                arrayLength--;
-                ArrayUtils.remove
+                continue;
             }
+            arrayWithoutBlank.add(splitRegularArray[i]);
         }
         for (int i = 0; i < splitRegularArray.length; i++)
         {
             if (i == 0)
             {
-                System.out.println(arrayLength - 1);
+                System.out.println(arrayWithoutBlank.size() - 1);
             }
             if (splitRegularArray[i].equalsIgnoreCase(""))
             {
