@@ -14,13 +14,5 @@ public class JavaSubstringComparisons
         {
             splitAt.add(string.substring(i,Math.min(string.length(), i + split)));
         }
-        for (int i = 0; i < splitAt.size(); i++)
-        {
-            System.out.print(splitAt.get(i));
-            if (i < splitAt.size())
-            {
-                System.out.print("\n");
-            }
-        }
     }
 }
