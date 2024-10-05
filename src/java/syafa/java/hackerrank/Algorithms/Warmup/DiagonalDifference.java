@@ -7,6 +7,7 @@ public class DiagonalDifference
     {
         Scanner input = new Scanner(System.in);
         int size = Integer.parseInt(input.nextLine());
+        int result = 0;
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         for (int i = 0; i < size; i++)
         {
@@ -16,6 +17,7 @@ public class DiagonalDifference
                 inputInteger.add(Integer.parseInt(inputArray[j]));
             }
         }
+        result = inputInteger.get(0) + inputInteger.get(inputInteger.size() / 2);
         for (int i = 0; i < args.length; i++)
         {
             //
