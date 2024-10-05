@@ -33,5 +33,6 @@ public class DiagonalDifference
             }
             */
         }
+        System.out.print(inputInteger.get(inputInteger.size() / 2));
     }
 }
