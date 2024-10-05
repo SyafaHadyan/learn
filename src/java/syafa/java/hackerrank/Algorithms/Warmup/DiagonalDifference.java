@@ -19,13 +19,13 @@ public class DiagonalDifference
                 inputInteger.add(Integer.parseInt(inputArray[j]));
             }
         }
+        input.close();
         if (size % 2 != 0)
         {
             result0 = Math.abs(inputInteger.get(0) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(inputInteger.size() - 1));
             result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
             result  = Math.abs(result0 - result1);
         }
-        input.close();
         System.out.print(result);
     }
 }
