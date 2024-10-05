@@ -40,14 +40,7 @@ public class Day6LetsReview
                     outputOdd.add(inputCharacter.get(j));
                 }
             }
-            for (Character buildStringOdd : outputOdd)
-            {
-                StringBuilder outputOddString = outputOddString.append(buildStringOdd);
-            }
-            for (int j = 0; j < outputEven.size(); j++)
-            {
-                outputArray.set(i,outputEven.toString(outputEven.addAll()));
-            }
+            
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
