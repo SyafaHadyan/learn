@@ -9,6 +9,7 @@ public class DiagonalDifference
         int size = Integer.parseInt(input.nextLine());
         int result0 = 0;
         int result1 = 0;
+        int result = 0;
         int[][] inputInteger = new int[size][size];
         for (int i = 0; i < size; i++)
         {
@@ -21,10 +22,10 @@ public class DiagonalDifference
         input.close();
         for (int i = 0; i < size; i++)
         {
-            result0 = Math.abs(inputInteger[i][i]);
-            result1 = Math.abs(inputInteger[i][inputInteger[i].length - i - 1]);
+            result0 += Math.abs(inputInteger[i][i]);
+            result1 += Math.abs(inputInteger[i][size - i - 1]);
         }
-        int result = Math.abs(result0 - result1);
+        result = Math.abs(result0 - result1);
         System.out.print(result);
     }
 }
