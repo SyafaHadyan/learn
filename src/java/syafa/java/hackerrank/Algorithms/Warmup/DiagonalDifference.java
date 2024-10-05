@@ -20,41 +20,15 @@ public class DiagonalDifference
                 inputInteger[i][j] = Integer.parseInt(inputArray[j]);
             }
         }
-        for (int i = 0; i < inputInteger.length; i++)
-        {
-            for (int j = 0; j < inputInteger.length; j++)
-            {
-                result0 = Math.abs(inputInteger[i][j]);
-                result1 = Math.abs(inputInteger[0].length);
-            }
-        }
         input.close();
-        /*
-        if (size % 2 != 0)
-        {
-            
-            result0 = Math.abs(inputInteger.get(0) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(inputInteger.size() - 1));
-            result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
-            result  = Math.abs(result0 - result1);
-            
-        }
-        else
-        {
-            
-            // TODO: Handle calculation when size is an even number
-            result0 = Math.abs(inputInteger.get(size - 1) + inputInteger.get(size + 1));
-            
-        }
-        */
-        /*
         for (int i = 0; i < inputInteger.length; i++)
         {
             for (int j = 0; j < inputInteger.length; j++)
             {
-                System.out.println(inputInteger[i][j]);
+                result0 += Math.abs(inputInteger[i][j]);
+                result1 += Math.abs(inputInteger[0].length);
             }
         }
-        */
         System.out.print(result);
     }
 }
