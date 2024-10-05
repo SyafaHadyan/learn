@@ -10,5 +10,9 @@ public class SimpleArraySum
         useless.delete(0,useless.length());
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
+        for (int i = 0; i < inputString.size(); i++)
+        {
+            inputInteger.add(Integer.parseInt(inputString.get(i)));
+        }
     }
 }
