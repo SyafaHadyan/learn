@@ -6,6 +6,7 @@ public class CompareTheTriplets
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        ArrayList<String> alice = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
