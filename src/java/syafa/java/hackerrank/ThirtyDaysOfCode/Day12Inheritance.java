@@ -25,19 +25,19 @@ public class Day12Inheritance
         {
             gradeLetter = 'E';
         }
-        else if (finalGrade >= 80 && finalGrade <= 90)
+        else if (finalGrade >= 70 && finalGrade <= 80)
         {
             gradeLetter = 'A';
         }
-        else if (finalGrade >= 80 && finalGrade <= 90)
+        else if (finalGrade >= 55 && finalGrade <= 70)
         {
             gradeLetter = 'P';
         }
-        else if (finalGrade >= 80 && finalGrade <= 90)
+        else if (finalGrade >= 40 && finalGrade <= 55)
         {
             gradeLetter = 'D';
         }
-        else if (finalGrade >= 80 && finalGrade <= 90)
+        else if (finalGrade < 40)
         {
             gradeLetter = 'T';
         }
