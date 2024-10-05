@@ -11,7 +11,7 @@ public class Day12Inheritance
         int amountOfGrades = Integer.parseInt(input.nextLine());
         for (int i = 0; i < amountOfGrades; i++)
         {
-            
+            studentGrade.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
     }
