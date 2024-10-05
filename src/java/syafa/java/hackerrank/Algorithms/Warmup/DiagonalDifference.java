@@ -22,10 +22,6 @@ public class DiagonalDifference
         result0 = Math.abs(inputInteger.getFirst() + inputInteger.get((inputInteger.size() / 2)) + inputInteger.getLast());
         result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
         result  = Math.abs(result0 - result1);
-        for (int i = 0; i < args.length; i++)
-        {
-            //
-        }
         input.close();
         System.out.print(result0 + "\n" + result1 + "\n" + result);
     }
