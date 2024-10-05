@@ -18,7 +18,8 @@ class Result
         int factorialResult = 0;
         for (int i = n; i >= 1; i--)
         {
-
+            factorialResult *= i;
+            n = n - 1;
         }
         return factorialResult;
     }
