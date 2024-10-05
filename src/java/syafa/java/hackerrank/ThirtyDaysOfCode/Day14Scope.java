@@ -15,5 +15,6 @@ public class Day14Scope
             elementsInteger.add(Integer.parseInt(elementsString.get(i)));
         }
         Collections.sort(elementsInteger);
+        System.out.print(elementsInteger.getLast() - elementsInteger.getFirst());
     }
 }
