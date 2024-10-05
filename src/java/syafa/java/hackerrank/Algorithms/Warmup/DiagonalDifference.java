@@ -22,13 +22,18 @@ public class DiagonalDifference
         input.close();
         if (size % 2 != 0)
         {
+            /*
             result0 = Math.abs(inputInteger.get(0) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(inputInteger.size() - 1));
             result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
             result  = Math.abs(result0 - result1);
+            */
         }
         else
         {
+            /*
             // TODO: Handle calculation when size is an even number
+            result0 = Math.abs(inputInteger.get(size - 1) + inputInteger.get(size + 1));
+            */
         }
         System.out.print(result);
     }
