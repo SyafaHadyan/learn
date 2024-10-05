@@ -10,8 +10,8 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
         ArrayList<String> outputArray = new ArrayList<String>();
-        ArrayList<String> outputEven = new ArrayList<String>();
-        ArrayList<String> outputOdd = new ArrayList<String>();
+        ArrayList<Character> outputEven = new ArrayList<Character>();
+        ArrayList<Character> outputOdd = new ArrayList<Character>();
         //StringBuffer outputEven = new StringBuffer();
         //StringBuffer outputOdd = new StringBuffer();
         for (int i = 0; i < number; i++)
@@ -33,11 +33,11 @@ public class Day6LetsReview
                 }
                 if (j == 0 || j % 2 == 0)
                 {
-                    outputEven.append(inputCharacter.get(j));
+                    outputEven.add(inputCharacter.get(j));
                 }
                 else
                 {
-                    outputOdd.append(inputCharacter.get(j));
+                    outputOdd.add(inputCharacter.get(j));
                 }
             }
             outputArray.add(outputEven + " " + outputOdd);
