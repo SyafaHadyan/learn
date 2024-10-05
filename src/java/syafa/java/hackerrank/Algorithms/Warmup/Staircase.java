@@ -11,10 +11,6 @@ public class Staircase
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
-            for (int j = space; space > 1; space--)
-            {
-                System.out.print(' ');
-            }
             for (int j = 0; j < i + 1; j++)
             {
                 System.out.print('#');
