@@ -8,10 +8,12 @@ public class PlusMinus
         Scanner input = new Scanner(System.in);
         int size = Integer.parseInt(input.nextLine());
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
-        ArrayList<Double> numberDouble = new ArrayList<Double>();
         for (int i = 0; i < numberString.size(); i++)
         {
-            numberDouble.add(Double.parseDouble(numberString.get(i)));
+            if (Double.parseDouble(numberString.get(i)) == 0)
+            {
+
+            }
         }
         input.close();
     }
