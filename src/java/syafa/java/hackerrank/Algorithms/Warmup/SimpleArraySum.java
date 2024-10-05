@@ -11,7 +11,6 @@ public class SimpleArraySum
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int result = 0;
-        ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         for (int i = 0; i < inputString.size(); i++)
         {
             result += Integer.parseInt(inputString.get(i));
