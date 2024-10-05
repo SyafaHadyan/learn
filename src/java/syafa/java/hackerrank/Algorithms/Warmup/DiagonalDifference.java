@@ -19,6 +19,7 @@ public class DiagonalDifference
             {
                 inputInteger[i][j] = Integer.parseInt(inputArray[j]);
             }
+            result0 += Math.abs(inputInteger[i][i]);
         }
         input.close();
         /*
