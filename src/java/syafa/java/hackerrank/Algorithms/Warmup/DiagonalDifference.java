@@ -21,9 +21,9 @@ public class DiagonalDifference
             }
         }
         input.close();
-        for (int i = 0; i < inputInteger.length; i++)
+        for (int i = 0; i < size; i++)
         {
-            for (int j = 0; j < inputInteger.length; j++)
+            for (int j = 0; j < size; j++)
             {
                 result0 += Math.abs(inputInteger[i][j]);
                 result1 += Math.abs(inputInteger[0].length);
