@@ -18,6 +18,10 @@ public class Staircase
             {
                 System.out.print('#');
             }
+            if (i < staricaseSize)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
