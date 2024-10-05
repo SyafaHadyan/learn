@@ -43,5 +43,6 @@ public class Day12Inheritance
         }
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
         System.out.println("ID" + ':' + ' ' + studentDetail.get(2));
+        System.out.print("Grade" + ':' + ' ' + gradeLetter);
     }
 }
