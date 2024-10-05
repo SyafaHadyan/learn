@@ -12,9 +12,14 @@ public class DiagonalDifference
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         for (int i = 0; i < size; i++)
         {
+            String[] inputArray = input.nextLine().split(" ");
             in = input.nextInt();
             inputInteger.add(in);
         }
         input.close();
+        for (int i = 0; i < inputInteger.size(); i++)
+        {
+            
+        }
     }
 }
