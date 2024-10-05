@@ -7,7 +7,12 @@ public class PlusMinus
     {
         Scanner input = new Scanner(System.in);
         int size = Integer.parseInt(input.nextLine());
-        ArrayList<String> numbers = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<Double> numberDouble = new ArrayList<Double>();
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
         input.close();
     }
 }
