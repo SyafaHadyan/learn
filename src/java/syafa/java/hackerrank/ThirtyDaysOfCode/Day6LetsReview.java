@@ -17,9 +17,11 @@ public class Day6LetsReview
         for (int i = 0; i < number; i++)
         {
             inputString.add(input.nextLine());
-            for (int j = 0; j < inputString.get(i).length(); j++)
+            int n = 0;
+            for (int j = 0; j < inputString.get(0).length(); j++)
             {
-                inputCharacter.add(inputString.get(i).charAt(j));
+                inputCharacter.add(inputString.get(0).charAt(n));
+                n++;
             }
             for (int j = 0; j < inputCharacter.size(); j++)
             {
