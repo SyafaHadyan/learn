@@ -28,9 +28,13 @@ public class CompareTheTriplets
             }
         }
         System.out.print(result.get(0) + ' ' + result.get(1));
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < 3; i++)
         {
-            System.out.print("Alice" + ':' + ' ' + alice.get(i));
+            System.out.print("Alice" + ':' + ' ' + alice.get(i) + "\n" + "Bob" + ':' + ' ' + bob.get(i));
+            if (i < 3)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
