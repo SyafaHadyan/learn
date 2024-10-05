@@ -41,13 +41,17 @@ public class Day6LetsReview
                 }
             }
             StringBuilder buildEven = new StringBuilder(outputEven.size());
+            StringBuilder buildOdd = new StringBuilder(outputOdd.size());
             for(Character even : outputEven)
             {
                 buildEven.append(even);
             }
+            for (Character odd : outputOdd)
+            {
+                buildOdd.append(odd);
+            }
             buildEven.toString();
-            
-            
+            buildOdd.toString();
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
