@@ -47,7 +47,6 @@ public class Day6LetsReview
             outputArray.add(buildEven + " " + buildOdd);
             buildEven.delete(0,buildEven.length());
             buildOdd.delete(0,buildOdd.length());
-            System.out.println(buildEven + "\n" + buildOdd);
             outputEven.clear();
             outputOdd.clear();
             inputString.clear();
