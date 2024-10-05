@@ -41,6 +41,7 @@ public class DiagonalDifference
             
         }
         */
+        /*
         for (int i = 0; i < inputInteger.length; i++)
         {
             for (int j = 0; j < inputInteger.length; j++)
@@ -48,6 +49,7 @@ public class DiagonalDifference
                 System.out.println(inputInteger[i][j]);
             }
         }
+        */
         System.out.print(result);
     }
 }
