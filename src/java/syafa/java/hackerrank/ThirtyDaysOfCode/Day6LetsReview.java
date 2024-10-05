@@ -21,13 +21,15 @@ public class Day6LetsReview
             {
                 inputCharacter.add(inputString.get(i).charAt(j));
             }
+            outputEven.clear();
+            outputOdd.clear();
             for (int j = 0; j < inputCharacter.size(); j++)
             {
                 if (j == 0)
                 {
                     //outputEven.delete(0,outputEven.length());
                     //outputOdd.delete(0,outputOdd.length());
-                    System.out.println(outputEven + "\n" + outputOdd);
+                    //System.out.println(outputEven + "\n" + outputOdd);
                 }
                 if (j == 0 || j % 2 == 0)
                 {
