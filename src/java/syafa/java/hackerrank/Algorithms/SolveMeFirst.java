@@ -9,5 +9,6 @@ public class SolveMeFirst
         int first = Integer.parseInt(input.nextLine());
         int second = Integer.parseInt(input.nextLine());
         input.close();
+        System.out.print(first + second);
     }
 }
