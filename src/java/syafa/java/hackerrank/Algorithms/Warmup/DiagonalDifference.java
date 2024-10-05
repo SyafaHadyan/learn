@@ -12,15 +12,15 @@ public class DiagonalDifference
         int result0 = 0;
         int result1 = 0;
         int result = 0;
-        String[][] inputArray = new String[size][size];
+        //String[] inputArray = new String[size];
         int[][] inputInteger = new int[size][size];
         for (int i = 0; i < size; i++)
         {
-            inputArray[i][size - 1] = Arrays.toString(input.nextLine().split(""));
+            String inputArray[] = input.nextLine().split(" ");
             n++;
             for (int j = 0; j < size; j++)
             {
-                inputInteger[i][j] = Integer.parseInt(Arrays.toString(inputArray));
+                inputInteger[i][j] = Integer.parseInt(inputArray[]);
             }
         }
         input.close();
