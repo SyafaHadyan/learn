@@ -11,6 +11,7 @@ public class PlusMinus
         double negativeNumber = 0;
         double zeroNumber = 0; 
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        input.close();
         for (int i = 0; i < numberString.size(); i++)
         {
             if (Double.parseDouble(numberString.get(i)) > 0)
@@ -26,6 +27,5 @@ public class PlusMinus
                 zeroNumber++;
             }
         }
-        input.close();
     }
 }
