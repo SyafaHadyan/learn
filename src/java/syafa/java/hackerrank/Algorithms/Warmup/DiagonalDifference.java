@@ -17,7 +17,7 @@ public class DiagonalDifference
                 inputInteger.add(Integer.parseInt(inputArray[j]));
             }
         }
-        result = inputInteger.getFirst() + inputInteger.get((inputInteger.size() / 2) - 1) + inputInteger.getLast();
+        result = Math.abs(inputInteger.getFirst() + inputInteger.get((inputInteger.size() / 2) - 1) + inputInteger.getLast());
         for (int i = 0; i < args.length; i++)
         {
             //
