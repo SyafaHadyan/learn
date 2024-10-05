@@ -13,7 +13,7 @@ public class Day12Inheritance
         int finalGrade = 0;
         for (int i = 0; i < amountOfGrades; i++)
         {
-            
+            finalGrade += Integer.parseInt(studentGrade.get(i));
         }
         char gradeLetter = 'O';
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
