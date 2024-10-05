@@ -27,5 +27,6 @@ public class PlusMinus
                 zeroNumber++;
             }
         }
+        System.out.printf("%.6f\n",positiveNumber / numberString.size());
     }
 }
