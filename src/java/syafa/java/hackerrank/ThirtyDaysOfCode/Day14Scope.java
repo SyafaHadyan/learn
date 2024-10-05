@@ -14,5 +14,6 @@ public class Day14Scope
         {
             elementsInteger.add(Integer.parseInt(elementsString.get(i)));
         }
+        Collections.sort(elementsInteger);
     }
 }
