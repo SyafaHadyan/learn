@@ -9,5 +9,6 @@ public class SimpleArraySum
         StringBuilder useless = new StringBuilder(input.nextLine());
         useless.delete(0,useless.length());
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<Integer> inputInteger = new ArrayList<Integer>();
     }
 }
