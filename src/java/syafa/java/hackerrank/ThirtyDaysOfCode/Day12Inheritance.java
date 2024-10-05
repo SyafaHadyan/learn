@@ -11,19 +11,12 @@ public class Day12Inheritance
         ArrayList<String> studentGrade = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int finalGrade = 0;
+        char gradeLetter = 'O';
         for (int i = 0; i < amountOfGrades; i++)
         {
             finalGrade += Integer.parseInt(studentGrade.get(i));
         }
         finalGrade /= amountOfGrades;
-        char tst = 'a';
-        char gradeLetter = switch (finalGrade)
-        {
-            case 13:
-            yield gradeLetter = 'a';
-            default:
-            yield 'a';
-        };
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
         System.out.println("ID" + ':' + ' ' + studentDetail.get(2));
     }
