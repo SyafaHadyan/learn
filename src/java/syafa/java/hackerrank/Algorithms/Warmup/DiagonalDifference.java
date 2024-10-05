@@ -16,7 +16,7 @@ public class DiagonalDifference
         int[][] inputInteger = new int[size][size];
         for (int i = 0; i < size; i++)
         {
-            inputArray[i][n] = Arrays.toString(input.nextLine().split(""));
+            inputArray[i][size] = Arrays.toString(input.nextLine().split(""));
             n++;
             for (int j = 0; j < inputArray.length; j++)
             {
