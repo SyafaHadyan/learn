@@ -20,6 +20,10 @@ public class CompareTheTriplets
             {
                 result.set(0,result.get(0) + 1);
             }
+            else if (Integer.parseInt(alice.get(i)) < Integer.parseInt(bob.get(i)))
+            {
+                
+            }
         }
     }
 }
