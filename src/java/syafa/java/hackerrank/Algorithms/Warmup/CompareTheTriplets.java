@@ -16,6 +16,10 @@ public class CompareTheTriplets
             {
                 continue;
             }
+            else if (Integer.parseInt(alice.get(i)) > Integer.parseInt(bob.get(i)))
+            {
+                //
+            }
         }
     }
 }
