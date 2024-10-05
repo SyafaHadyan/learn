@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.Algorithms.Warmup;
 import java.util.*;
-import java.math.*;
 
 public class AVeryBigSum
 {
