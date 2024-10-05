@@ -43,6 +43,10 @@ public class Day6LetsReview
             for (Character buildStringEven : outputEven)
             {
                 StringBuilder outputEvenString = outputEvenString.append(buildStringEven);
+                if (buildStringEven.equals(outputEven))
+                {
+                    outputArray.add(toString(outputEvenString));
+                }
             }
             for (Character buildStringOdd : outputOdd)
             {
