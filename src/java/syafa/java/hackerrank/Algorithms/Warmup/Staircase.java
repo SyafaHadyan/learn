@@ -8,9 +8,12 @@ public class Staircase
         Scanner input = new Scanner(System.in);
         int staricaseSize = Integer.parseInt(input.nextLine());
         input.close();
-        for (int i = staricaseSize - 1; i > 0; i--)
+        for (int i = 0; i < staricaseSize; i--)
         {
-            System.out.print(' ');
+            for (int j = 0; j < args.length; j++)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
