@@ -12,8 +12,10 @@ public class CompareTheTriplets
         input.close();
         for (int i = 0; i < 3; i++)
         {
-            result.add(0,Integer.parseInt(alice.get(i)));
             if (Integer.parseInt(alice.get(i)) == Integer.parseInt(bob.get(i)))
+            {
+                continue;
+            }
         }
     }
 }
