@@ -11,10 +11,11 @@ public class AVeryBigSum
         useless.delete(0,useless.length());
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        BigInteger result = BigInteger.ZERO;
+        Double result = 0d;
         for (int i = 0; i < inputString.size(); i++)
         {
-            result.add(new BigInteger(inputString.get(i)));
+            result += Double.parseDouble(inputString.get(i));
         }
+        System.out.print(result);
     }
 }
