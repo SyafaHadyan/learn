@@ -6,7 +6,8 @@ public class PlusMinus
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int size = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         double positiveNumber = 0;
         double negativeNumber = 0;
         double zeroNumber = 0; 
