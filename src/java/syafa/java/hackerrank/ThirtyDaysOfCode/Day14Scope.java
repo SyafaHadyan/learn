@@ -12,7 +12,7 @@ public class Day14Scope
         ArrayList<Integer> elementsInteger = new ArrayList<Integer>();
         for (int i = 0; i < elementsString.size(); i++)
         {
-            
+            elementsInteger.add(Integer.parseInt(elementsString.get(i)));
         }
     }
 }
