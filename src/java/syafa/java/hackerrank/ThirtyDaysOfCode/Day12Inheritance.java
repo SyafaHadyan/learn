@@ -7,6 +7,7 @@ public class Day12Inheritance
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> studentDetail = new ArrayList<String>(Arrays.asList(input.nextLine()));
+        int amountOfGrades = Integer.parseInt(input.nextLine());
         ArrayList<Integer> studentGrade = new ArrayList<Integer>();
         input.close();
     }
