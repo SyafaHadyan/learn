@@ -7,6 +7,7 @@ public class Day14Scope
     {
         Scanner input = new Scanner(System.in);
         int length = Integer.parseInt(input.nextLine());
+        ArrayList<String> elements = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
