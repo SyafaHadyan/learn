@@ -53,6 +53,8 @@ public class Day6LetsReview
             buildEven.toString();
             buildOdd.toString();
             outputArray.add(buildEven + " " + buildOdd);
+            buildEven.delete(0,buildEven.length());
+            buildOdd.delete(0,buildOdd.length());
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
