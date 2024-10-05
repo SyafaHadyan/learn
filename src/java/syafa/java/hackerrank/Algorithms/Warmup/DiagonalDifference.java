@@ -7,12 +7,13 @@ public class DiagonalDifference
     {
         Scanner input = new Scanner(System.in);
         int size = Integer.parseInt(input.nextLine());
-        int in = 0;
+        int in = "";
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         for (int i = 0; i < size; i++)
         {
-            //
+            in = input.nextInt();
+            
         }
         input.close();
     }
