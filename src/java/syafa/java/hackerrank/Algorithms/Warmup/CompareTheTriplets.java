@@ -8,6 +8,10 @@ public class CompareTheTriplets
         Scanner input = new Scanner(System.in);
         ArrayList<String> alice = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> bob = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        for (int i = 0; i < 3; i++)
+        {
+            
+        }
         input.close();
     }
 }
