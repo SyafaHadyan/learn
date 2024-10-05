@@ -10,7 +10,7 @@ public class Day6LetsReview
         ArrayList<String> inputString = new ArrayList<String>();
         ArrayList<Character> inputCharacter = new ArrayList<Character>();
         ArrayList<String> outputArray = new ArrayList<String>();
-        ArrayList<Character> outputEven = new ArrayList<Character>();
+        ArrayList<String> outputEven = new ArrayList<String>();
         ArrayList<Character> outputOdd = new ArrayList<Character>();
         //StringBuffer outputEven = new StringBuffer();
         //StringBuffer outputOdd = new StringBuffer();
