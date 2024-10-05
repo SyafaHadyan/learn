@@ -23,6 +23,6 @@ public class DiagonalDifference
         result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
         result  = Math.abs(result0 - result1);
         input.close();
-        System.out.print(result0 + "\n" + result1 + "\n" + result);
+        System.out.print(result);
     }
 }
