@@ -21,9 +21,25 @@ public class Day12Inheritance
         {
             gradeLetter = 'O';
         }
-        else if ()
+        else if (finalGrade >= 80 && finalGrade <= 90)
         {
-            
+            gradeLetter = 'E';
+        }
+        else if (finalGrade >= 80 && finalGrade <= 90)
+        {
+            gradeLetter = 'A';
+        }
+        else if (finalGrade >= 80 && finalGrade <= 90)
+        {
+            gradeLetter = 'P';
+        }
+        else if (finalGrade >= 80 && finalGrade <= 90)
+        {
+            gradeLetter = 'D';
+        }
+        else if (finalGrade >= 80 && finalGrade <= 90)
+        {
+            gradeLetter = 'T';
         }
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
         System.out.println("ID" + ':' + ' ' + studentDetail.get(2));
