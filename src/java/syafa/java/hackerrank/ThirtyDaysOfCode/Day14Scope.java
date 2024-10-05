@@ -9,5 +9,9 @@ public class Day14Scope
         int length = Integer.parseInt(input.nextLine());
         ArrayList<String> elements = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        for (int i = 0; i < elements.size(); i++)
+        {
+            
+        }
     }
 }
