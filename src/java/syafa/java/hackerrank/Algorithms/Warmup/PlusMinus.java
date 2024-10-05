@@ -15,7 +15,11 @@ public class PlusMinus
         {
             if (Double.parseDouble(numberString.get(i)) > 0)
             {
-
+                positiveNumber++;
+            }
+            else if (Double.parseDouble(numberString.get(i)) < 0)
+            {
+                negativeNumber++;
             }
         }
         input.close();
