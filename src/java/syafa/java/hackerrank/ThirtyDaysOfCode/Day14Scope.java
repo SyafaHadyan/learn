@@ -1,6 +1,4 @@
 package syafa.java.hackerrank.ThirtyDaysOfCode;
-import static java.util.stream.Collectors.toSet;
-
 import java.util.*;
 
 public class Day14Scope
