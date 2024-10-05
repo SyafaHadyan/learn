@@ -6,6 +6,7 @@ public class Day14Scope
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int length = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
