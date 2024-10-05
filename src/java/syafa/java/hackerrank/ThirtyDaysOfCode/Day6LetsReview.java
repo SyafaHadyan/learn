@@ -25,6 +25,7 @@ public class Day6LetsReview
                 {
                     outputEven.delete(0,outputEven.length());
                     outputOdd.delete(0,outputOdd.length());
+                    System.out.println(outputEven + "\n" + outputOdd);
                 }
                 if (j == 0 || j % 2 == 0)
                 {
