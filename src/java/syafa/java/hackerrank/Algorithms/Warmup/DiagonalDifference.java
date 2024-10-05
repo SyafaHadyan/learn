@@ -13,7 +13,7 @@ public class DiagonalDifference
         for (int i = 0; i < size; i++)
         {
             in = input.nextInt();
-            
+            inputInteger.add(in);
         }
         input.close();
     }
