@@ -42,7 +42,7 @@ public class Day6LetsReview
             }
             for (int j = 0; j < outputEven.size(); j++)
             {
-                outputArray.set(i,outputEven.toString(outputEven.addAll(inputCharacter)));
+                outputArray.set(i,outputEven.toString(outputEven.addAll()));
             }
         }
         input.close();
