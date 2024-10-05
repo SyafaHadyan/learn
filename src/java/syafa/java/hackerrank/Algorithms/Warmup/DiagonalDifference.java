@@ -16,6 +16,10 @@ public class DiagonalDifference
                 inputInteger.add(Integer.parseInt(inputArray[j]));
             }
         }
+        for (int i = 0; i < args.length; i++)
+        {
+            //
+        }
         input.close();
         for (int i = 0; i < inputInteger.size(); i++)
         {
