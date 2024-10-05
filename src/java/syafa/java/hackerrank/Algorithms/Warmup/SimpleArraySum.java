@@ -14,7 +14,7 @@ public class SimpleArraySum
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         for (int i = 0; i < inputString.size(); i++)
         {
-            result
+            result += Integer.parseInt(inputString.get(i));
         }
     }
 }
