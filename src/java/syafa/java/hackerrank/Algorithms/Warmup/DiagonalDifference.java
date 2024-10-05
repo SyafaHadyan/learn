@@ -21,6 +21,7 @@ public class DiagonalDifference
             }
             result0 += Math.abs(inputInteger[i][i]);
             result1 += Math.abs(inputInteger[i][inputInteger[i].length]);
+            result = Math.abs(result0 - result1);
         }
         input.close();
         /*
