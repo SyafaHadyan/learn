@@ -6,9 +6,8 @@ public class Day12Inheritance
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> studentDetail = new ArrayList<String>();
+        ArrayList<String> studentDetail = new ArrayList<String>(Arrays.asList(input.nextLine()));
         ArrayList<Integer> studentGrade = new ArrayList<Integer>();
-        String importStudentDetail = input.nextLine();
         input.close();
     }
 }
