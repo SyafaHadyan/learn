@@ -11,8 +11,7 @@ public class DiagonalDifference
         ArrayList<Integer> inputString = new ArrayList<Integer>();
         for (int i = 0; i < size; i++)
         {
-            in = input.nextInt();
-            inputString.add(in);
+            //
         }
         input.close();
     }
