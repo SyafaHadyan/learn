@@ -11,7 +11,7 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Day9Recursion3
+class Result
 {
 
     /*
@@ -21,14 +21,15 @@ class Day9Recursion3
      * The function accepts INTEGER n as parameter.
      */
 
-    public static int factorial(int n) {
+    public static int factorial(int n)
+    {
     // Write your code here
 
     }
 
 }
 
-public class Solution
+public class Day9Recursion3
 {
     public static void main(String[] args) throws IOException
     {
@@ -37,7 +38,7 @@ public class Solution
 
         int n = Integer.parseInt(bufferedReader.readLine().trim());
 
-        int result = Day9Recursion3.factorial(n);
+        int result = Result.factorial(n);
 
         bufferedWriter.write(String.valueOf(result));
         bufferedWriter.newLine();
