@@ -26,6 +26,10 @@ public class DiagonalDifference
             result1 = Math.abs(inputInteger.get(size - 1) + inputInteger.get((inputInteger.size() / 2)) + inputInteger.get(size * (size - 1)));
             result  = Math.abs(result0 - result1);
         }
+        else
+        {
+            // TODO: Handle calculation when size is an even number
+        }
         System.out.print(result);
     }
 }
