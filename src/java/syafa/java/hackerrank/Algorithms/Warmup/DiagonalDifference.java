@@ -7,8 +7,6 @@ public class DiagonalDifference
     {
         Scanner input = new Scanner(System.in);
         int size = Integer.parseInt(input.nextLine());
-        int n = 0;
-        int inputString = 0;
         int result0 = 0;
         int result1 = 0;
         int result = 0;
