@@ -8,6 +8,7 @@ public class Day12Inheritance
         Scanner input = new Scanner(System.in);
         ArrayList<String> studentDetail = new ArrayList<String>();
         ArrayList<Integer> studentGrade = new ArrayList<Integer>();
+        String importStudentDetail = input.nextLine();
         input.close();
     }
 }
