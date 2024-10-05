@@ -16,5 +16,6 @@ public class SimpleArraySum
         {
             result += Integer.parseInt(inputString.get(i));
         }
+        System.out.print(result);
     }
 }
