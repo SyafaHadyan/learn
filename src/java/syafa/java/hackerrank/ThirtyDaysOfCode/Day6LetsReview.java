@@ -40,7 +40,10 @@ public class Day6LetsReview
                     outputOdd.add(inputCharacter.get(j));
                 }
             }
-            outputArray.add(outputEven + " " + outputOdd);
+            for (int j = 0; j < outputEven.size(); j++)
+            {
+                outputArray.set(i,outputEven.toString(outputEven.addAll(inputCharacter)));
+            }
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
