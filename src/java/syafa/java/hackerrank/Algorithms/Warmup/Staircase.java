@@ -10,7 +10,7 @@ public class Staircase
         input.close();
         for (int i = 0; i < staricaseSize; i--)
         {
-            for (int j = 0; j < args.length; j++)
+            for (int j = staricaseSize; j > 0; j--)
             {
                 System.out.print(' ');
             }
