@@ -9,8 +9,8 @@ public class CompareTheTriplets
         ArrayList<String> alice = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> bob = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> result = new ArrayList<Integer>();
-        result.set(0,0);
-        result.set(1,0);
+        result.add(0);
+        result.add(0);
         input.close();
         for (int i = 0; i < 3; i++)
         {
