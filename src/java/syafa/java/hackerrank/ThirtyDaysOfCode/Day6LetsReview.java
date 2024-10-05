@@ -21,6 +21,11 @@ public class Day6LetsReview
             }
             for (int j = 0; j < inputCharacter.size(); j++)
             {
+                if (j == 0)
+                {
+                    outputEven.delete(0,outputEven.length());
+                    outputOdd.delete(0,outputOdd.length());
+                }
                 if (j == 0 || j % 2 == 0)
                 {
                     outputEven.append(inputCharacter.get(j));
@@ -31,8 +36,6 @@ public class Day6LetsReview
                 }
             }
             outputArray.add(outputEven + " " + outputOdd);
-            outputEven.delete(0,outputEven.length());
-            outputOdd.delete(0,outputOdd.length());
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
