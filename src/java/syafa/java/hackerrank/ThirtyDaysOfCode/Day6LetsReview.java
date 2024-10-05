@@ -21,8 +21,6 @@ public class Day6LetsReview
             {
                 inputCharacter.add(inputString.get(i).charAt(j));
             }
-            outputEven.clear();
-            outputOdd.clear();
             for (int j = 0; j < inputCharacter.size(); j++)
             {
                 if (j == 0)
@@ -58,6 +56,8 @@ public class Day6LetsReview
             System.out.println(buildEven + "\n" + buildOdd);
             outputEven.clear();
             outputOdd.clear();
+            inputString.clear();
+            inputCharacter.clear();
         }
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
