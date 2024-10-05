@@ -14,7 +14,7 @@ public class AVeryBigSum
         BigInteger result = BigInteger.ZERO;
         for (int i = 0; i < inputString.size(); i++)
         {
-            result.add(result);
+            result.add(new BigInteger(inputString.get(i)));
         }
     }
 }
