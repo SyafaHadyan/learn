@@ -16,6 +16,6 @@ public class AVeryBigSum
         {
             result += Double.parseDouble(inputString.get(i));
         }
-        System.out.print(result);
+        System.out.printf("%.0f",result);
     }
 }
