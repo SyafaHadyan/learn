@@ -1,4 +1,4 @@
-package syafa.java.hackerrank.Algorithms;
+package syafa.java.hackerrank.Algorithms.Warmup;
 import java.util.*;
 
 public class SolveMeFirst
