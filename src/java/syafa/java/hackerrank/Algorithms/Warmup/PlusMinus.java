@@ -21,6 +21,10 @@ public class PlusMinus
             {
                 negativeNumber++;
             }
+            else if (Double.parseDouble(numberString.get(i)) == 0)
+            {
+                zeroNumber++;
+            }
         }
         input.close();
     }
