@@ -60,7 +60,7 @@ public class Day6LetsReview
         input.close();
         for (int i = 0; i < outputArray.size(); i++)
         {
-            System.out.print(outputArray.get(0));
+            System.out.print(outputArray.get(i));
             if (i < outputArray.size())
             {
                 System.out.print("\n");
