@@ -17,6 +17,14 @@ public class Day12Inheritance
             finalGrade += Integer.parseInt(studentGrade.get(i));
         }
         finalGrade /= amountOfGrades;
+        if (finalGrade >= 90 && finalGrade <= 100)
+        {
+            gradeLetter = 'O';
+        }
+        else if ()
+        {
+            
+        }
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
         System.out.println("ID" + ':' + ' ' + studentDetail.get(2));
     }
