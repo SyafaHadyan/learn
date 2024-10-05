@@ -7,10 +7,11 @@ public class Staircase
     {
         Scanner input = new Scanner(System.in);
         int staricaseSize = Integer.parseInt(input.nextLine());
+        int space = staricaseSize - 1;
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
-            for (int j = staricaseSize; j > 0; j--)
+            for (int j = space; space > 1; space--)
             {
                 System.out.print(' ');
             }
