@@ -21,7 +21,11 @@ public class DiagonalDifference
         input.close();
         for (int i = 0; i < inputInteger.size(); i++)
         {
-            
+            System.out.print(inputInteger.get(i));
+            if (i < inputInteger.size() && i % size - 1 != 0)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
