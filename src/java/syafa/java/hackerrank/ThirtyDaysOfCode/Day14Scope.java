@@ -1,4 +1,6 @@
 package syafa.java.hackerrank.ThirtyDaysOfCode;
+import static java.util.stream.Collectors.toSet;
+
 import java.util.*;
 
 public class Day14Scope
@@ -16,6 +18,10 @@ public class Day14Scope
             elementsInteger.add(Integer.parseInt(elementsString.get(i)));
         }
         Collections.sort(elementsInteger);
-        System.out.print(elementsInteger.getLast() - elementsInteger.getFirst());
+        maximumDifference(elementsInteger.getLast() - elementsInteger.getFirst());
+    }
+    private static void maximumDifference(int result)
+    {
+        System.out.print(result);
     }
 }
