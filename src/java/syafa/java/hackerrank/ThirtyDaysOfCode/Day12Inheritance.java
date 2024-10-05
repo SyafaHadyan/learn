@@ -13,5 +13,6 @@ public class Day12Inheritance
         ArrayList<String> parsedStudentDetail = new ArrayList<String>();
         char gradeLetter = 'O';
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
+        System.out.println("ID" + ':' + ' ' + studentDetail.get(2));
     }
 }
