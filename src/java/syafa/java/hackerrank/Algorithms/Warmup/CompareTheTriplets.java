@@ -9,9 +9,9 @@ public class CompareTheTriplets
         ArrayList<String> alice = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> bob = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> result = new ArrayList<Integer>();
-        result.add(0);
-        result.add(0);
         input.close();
+        result.add(0);
+        result.add(0);
         for (int i = 0; i < 3; i++)
         {
             if (Integer.parseInt(alice.get(i)) == Integer.parseInt(bob.get(i)))
@@ -28,5 +28,9 @@ public class CompareTheTriplets
             }
         }
         System.out.print(result.get(0) + ' ' + result.get(1));
+        for (int i = 0; i < args.length; i++)
+        {
+            System.out.print("Alice" + ':' + ' ' + alice.get(i));
+        }
     }
 }
