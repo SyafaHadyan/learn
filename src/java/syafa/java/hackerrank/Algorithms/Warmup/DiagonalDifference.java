@@ -13,8 +13,10 @@ public class DiagonalDifference
         for (int i = 0; i < size; i++)
         {
             String[] inputArray = input.nextLine().split(" ");
-            in = input.nextInt();
-            inputInteger.add(in);
+            for (int j = 0; j < inputArray.length; j++)
+            {
+                inputInteger.add(Integer.parseInt(inputArray[j]));
+            }
         }
         input.close();
         for (int i = 0; i < inputInteger.size(); i++)
