@@ -10,9 +10,10 @@ public class Day12Inheritance
         int amountOfGrades = Integer.parseInt(input.nextLine());
         ArrayList<String> studentGrade = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int finalGrade = 0;
         for (int i = 0; i < amountOfGrades; i++)
         {
-            //
+            
         }
         char gradeLetter = 'O';
         System.out.println("Name" + ':' + ' ' + studentDetail.get(1) + ',' + ' ' + studentDetail.get(0));
