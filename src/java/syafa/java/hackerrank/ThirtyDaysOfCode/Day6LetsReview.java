@@ -40,6 +40,13 @@ public class Day6LetsReview
                     outputOdd.add(inputCharacter.get(j));
                 }
             }
+            StringBuilder buildEven = new StringBuilder(outputEven.size());
+            for(Character even : outputEven)
+            {
+                buildEven.append(even);
+            }
+            buildEven.toString();
+            
             
         }
         input.close();
