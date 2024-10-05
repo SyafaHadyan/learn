@@ -22,7 +22,7 @@ public class CompareTheTriplets
             }
             else if (Integer.parseInt(alice.get(i)) < Integer.parseInt(bob.get(i)))
             {
-                
+                result.set(1,result.get(1) + 1);
             }
         }
     }
