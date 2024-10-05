@@ -25,5 +25,6 @@ public class CompareTheTriplets
                 result.set(1,result.get(1) + 1);
             }
         }
+        System.out.print(result.get(0) + ' ' + result.get(1));
     }
 }
