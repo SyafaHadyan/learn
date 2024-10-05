@@ -20,7 +20,7 @@ public class DiagonalDifference
             n++;
             for (int j = 0; j < size; j++)
             {
-                inputInteger[i][j] = Integer.parseInt(inputArray[]);
+                inputInteger[i][j] = Integer.parseInt(inputArray[j]);
             }
         }
         input.close();
