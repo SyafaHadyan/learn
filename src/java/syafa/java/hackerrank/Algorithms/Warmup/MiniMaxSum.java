@@ -19,5 +19,9 @@ public class MiniMaxSum
         {
             minSum += inputInteger.get(i);
         }
+        for (int i = 1; i < inputInteger.size(); i++)
+        {
+            maxSum += inputInteger.get(i);
+        }
     }
 }
