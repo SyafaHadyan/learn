@@ -24,6 +24,6 @@ public class MiniMaxSum
         {
             maxSum += inputDouble.get(i);
         }
-        System.out.print(minSum + " " + maxSum);
+        System.out.printf("%.0f%s%.0f",minSum + " " + maxSum);
     }
 }
