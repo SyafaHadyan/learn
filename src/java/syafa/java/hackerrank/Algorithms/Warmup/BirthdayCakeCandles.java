@@ -23,7 +23,7 @@ public class BirthdayCakeCandles
        for (int i = 0; i < inputCandleDouble.size(); i++)
        {
             //Integer.parseInt(inputCandleString.get(i)) == Integer.parseInt(inputCandleString.get(inputCandleString.size()))
-            if (inputCandleDouble.get(i) == inputCandleDouble.getLast())
+            if (inputCandleDouble.get(i) == inputCandleDouble.get(Double.parseDouble(inputCandleString.get(Double.parseDouble("1.2")))))
             {
                 highestMatch++;
             }
