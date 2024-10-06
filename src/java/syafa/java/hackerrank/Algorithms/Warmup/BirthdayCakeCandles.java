@@ -14,5 +14,7 @@ public class BirthdayCakeCandles
             inputCandleDouble.add(Double.parseDouble(inputCandleString.get(i)));
        }
        Collections.sort(inputCandleDouble);
+       inputCandleString.clear();
+       if (inputCandleDouble.contains(Integer.parseInt(inputCandleDouble.get(inputCandleDouble.size()))));
     }
 }
