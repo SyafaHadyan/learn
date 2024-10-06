@@ -8,21 +8,21 @@ public class MiniMaxSum
         Scanner input = new Scanner(System.in);
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        ArrayList<Integer> inputInteger = new ArrayList<Integer>();
+        ArrayList<Double> inputDouble = new ArrayList<Double>();
         int minSum = 0;
         int maxSum = 0;
         for (int i = 0; i < inputString.size(); i++)
         {
-            inputInteger.add(Integer.parseInt(inputString.get(i)));
+            inputDouble.add(Double.parseDouble(inputString.get(i)));
         }
-        Collections.sort(inputInteger);
-        for (int i = 0; i < inputInteger.size() - 1; i++)
+        Collections.sort(inputDouble);
+        for (int i = 0; i < inputDouble.size() - 1; i++)
         {
-            minSum += inputInteger.get(i);
+            minSum += inputDouble.get(i);
         }
-        for (int i = 1; i < inputInteger.size(); i++)
+        for (int i = 1; i < inputDouble.size(); i++)
         {
-            maxSum += inputInteger.get(i);
+            maxSum += inputDouble.get(i);
         }
         System.out.print(minSum + " " + maxSum);
     }
