@@ -15,9 +15,9 @@ public class MiniMaxSum
             inputInteger.add(Integer.parseInt(inputString.get(i)));
         }
         Collections.sort(inputInteger);
-        for (int i = 0; i < inputInteger.size(); i++)
+        for (int i = 0; i < inputInteger.size() - 1; i++)
         {
-            
+            minSum += inputInteger.get(i);
         }
     }
 }
