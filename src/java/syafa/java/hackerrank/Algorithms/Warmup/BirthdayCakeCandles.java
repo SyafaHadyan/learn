@@ -9,5 +9,9 @@ public class BirthdayCakeCandles
        ArrayList<String> inputCandleString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
        input.close();
        ArrayList<Double> inputCandleDouble = new ArrayList<Double>();
+       for (int i = 0; i < inputCandleString.size(); i++)
+       {
+            inputCandleDouble.add(Double.parseDouble(inputCandleString.get(i)));
+       }
     }
 }
