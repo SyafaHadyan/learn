@@ -10,7 +10,6 @@ public class BirthdayCakeCandles
        input.close();
        ArrayList<Double> inputCandleDouble = new ArrayList<Double>();
        int highestMatch = 0;
-       boolean increment = false;
        for (int i = 0; i < inputCandleString.size(); i++)
        {
             inputCandleDouble.add(Double.parseDouble(inputCandleString.get(i)));
@@ -25,10 +24,6 @@ public class BirthdayCakeCandles
        {
             //Integer.parseInt(inputCandleString.get(i)) == Integer.parseInt(inputCandleString.get(inputCandleString.size()))
             if (inputCandleDouble.get(i) == inputCandleDouble.getLast())
-            {
-                highestMatch++;
-            }
-            if (increment)
             {
                 highestMatch++;
             }
