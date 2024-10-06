@@ -26,29 +26,8 @@ public class BirthdayCakeCandles
             if (inputCandleDouble.get(i).equals(inputCandleDouble.getLast()))
             {
                 highestMatch++;
-                //System.out.println(highestMatch);
-            }
-            System.out.print(inputCandleDouble.get(i));
-            if (i < inputCandleDouble.size())
-            {
-                System.out.print(' ');
-            }
-            System.out.print(inputCandleDouble.getLast());
-            if (i < inputCandleDouble.size())
-            {
-                System.out.print(' ');
             }
        }
-       System.out.print("\n");
-       for (int i = 0; i < inputCandleDouble.size(); i++)
-       {
-            System.out.print(inputCandleDouble.get(i));
-            if (i < inputCandleDouble.size())
-            {
-                System.out.print(' ');
-            }
-       }
-       System.out.print("\n");
        System.out.print(highestMatch);
     }
 }
