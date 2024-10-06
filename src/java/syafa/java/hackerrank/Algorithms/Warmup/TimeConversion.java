@@ -11,7 +11,7 @@ public class TimeConversion
         ArrayList<Integer> timeInteger = new ArrayList<Integer>();
         int hourConversion = 12;
         String temporary = inputTimeString.get(2).replace("AM","");
-        if (inputTimeString.set(2,inputTimeString.get(2).replace("AM","")).equals("^[0-9]"))
+        if (temporary.equals("^[0-9]"))
         {
             hourConversion = -12;
         }
@@ -55,5 +55,6 @@ public class TimeConversion
             }
         }
         System.out.print("\n" + hourConversion);
+        System.out.print("\n" + temporary);
     }
 }
