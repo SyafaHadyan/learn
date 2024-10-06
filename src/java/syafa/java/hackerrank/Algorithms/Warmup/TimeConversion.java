@@ -10,7 +10,7 @@ public class TimeConversion
         input.close();
         ArrayList<Integer> timeInteger = new ArrayList<Integer>();
         int hourConversion = 12;
-        if (inputTimeString.get(2) == "AM")
+        if (inputTimeString.set(2,inputTimeString.get(2).replace("AM","")).equalsIgnoreCase(null))
         {
             hourConversion = -12;
         }
