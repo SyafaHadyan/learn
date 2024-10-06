@@ -18,10 +18,7 @@ public class BirthdayCakeCandles
             inputCandleDouble.add(Double.parseDouble(inputCandleString.get(i)));
        }
        Collections.sort(inputCandleDouble);
-       for (int i = inputCandleDouble.size() - 1; i > 0; i--)
-       {
-            inputCandleDoubleReversed.add(inputCandleDouble.get(i));
-       }
+       inputCandleDoubleReversed.add(inputCandleDouble.get(inputCandleDouble.size() - 1));
        for (int i = 0; i < inputCandleDouble.size(); i++)
        {
             if (inputCandleDouble.get(i).equals(inputCandleDoubleReversed.get(0)))
