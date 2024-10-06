@@ -18,7 +18,7 @@ public class TimeConversion
         {
             inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
         }
-        catch (NumberFormatException e)
+        catch (Exception e)
         {
             inputTimeString.set(2,inputTimeString.get(2).replace("AM",""));
         }
