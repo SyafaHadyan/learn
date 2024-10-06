@@ -15,6 +15,10 @@ public class TimeConversion
         {
             hourConversion = -12;
         }
+        if (inputTimeString.get(0).equals("12.0"))
+        {
+            inputTimeString.set(0,"0.0");
+        }
         try
         {
             inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
