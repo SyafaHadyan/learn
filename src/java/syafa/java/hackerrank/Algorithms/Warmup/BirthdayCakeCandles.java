@@ -6,6 +6,8 @@ public class BirthdayCakeCandles
     public static void main(String[] args)
     {
        Scanner input = new Scanner(System.in);
+       StringBuilder useless = new StringBuilder(input.nextLine());
+       useless.delete(0,useless.length());
        ArrayList<String> inputCandleString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
        input.close();
        ArrayList<Double> inputCandleDouble = new ArrayList<Double>();
