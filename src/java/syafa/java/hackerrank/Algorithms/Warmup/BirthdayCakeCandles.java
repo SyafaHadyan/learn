@@ -13,5 +13,6 @@ public class BirthdayCakeCandles
        {
             inputCandleDouble.add(Double.parseDouble(inputCandleString.get(i)));
        }
+       Collections.sort(inputCandleDouble);
     }
 }
