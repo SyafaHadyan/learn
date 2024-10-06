@@ -14,7 +14,14 @@ public class TimeConversion
         {
             hourConversion = -12;
         }
-        inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
+        try
+        {
+            inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
+        }
+        catch (NumberFormatException e)
+        {
+            inputTimeString.set(2,inputTimeString.get(2).replace("AM",""));
+        }
         for (int i = 0; i < inputTimeString.size(); i++)
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
