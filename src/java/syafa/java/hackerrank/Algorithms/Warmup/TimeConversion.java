@@ -35,6 +35,10 @@ public class TimeConversion
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
         }
+        if (hourConversion == -12 && timeInteger.get(0) < 12)
+        {
+            hourConversion = 0;
+        }
         timeInteger.set(0,timeInteger.get(0) + hourConversion);
         for (int i = 0; i < timeInteger.size(); i++)
         {
