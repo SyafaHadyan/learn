@@ -23,5 +23,6 @@ public class MiniMaxSum
         {
             maxSum += inputInteger.get(i);
         }
+        System.out.print(minSum + " " + maxSum);
     }
 }
