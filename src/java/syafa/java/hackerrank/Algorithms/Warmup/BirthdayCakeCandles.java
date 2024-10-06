@@ -19,6 +19,7 @@ public class BirthdayCakeCandles
        Collections.sort(inputCandleDouble);
        for (int i = 0; i < inputCandleDouble.size(); i++)
        {
+            // .getLast() isn't supported on HackerRank
             if (inputCandleDouble.get(i).equals(inputCandleDouble.getLast()))
             {
                 highestMatch++;
