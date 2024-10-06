@@ -19,6 +19,6 @@ public class BirthdayCakeCandles
        {
             inputCandleString.add(String.valueOf(inputCandleDouble.get(i)));
        }
-       if (inputCandleDouble.contains(Integer.parseInt(inputCandleDouble.get(inputCandleDouble.size()))));
+       if (inputCandleDouble.contains(Integer.parseInt(inputCandleString.get(inputCandleString.size()))));
     }
 }
