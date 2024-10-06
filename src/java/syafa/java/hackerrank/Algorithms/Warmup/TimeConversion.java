@@ -22,7 +22,7 @@ public class TimeConversion
         timeInteger.set(0,timeInteger.get(0) + hourConversion);
         for (int i = 0; i < timeInteger.size(); i++)
         {
-            System.out.print(timeInteger.get(i));
+            System.out.printf("%02d",timeInteger.get(i));
             if (i < timeInteger.size() - 1)
             {
                 System.out.print(':');
