@@ -27,5 +27,6 @@ public class BirthdayCakeCandles
                 highestMatch++;
             }
        }
+       System.out.print(highestMatch);
     }
 }
