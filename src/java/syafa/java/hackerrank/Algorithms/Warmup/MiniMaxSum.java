@@ -9,8 +9,8 @@ public class MiniMaxSum
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         ArrayList<Double> inputDouble = new ArrayList<Double>();
-        int minSum = 0;
-        int maxSum = 0;
+        double minSum = 0d;
+        double maxSum = 0d;
         for (int i = 0; i < inputString.size(); i++)
         {
             inputDouble.add(Double.parseDouble(inputString.get(i)));
@@ -24,6 +24,6 @@ public class MiniMaxSum
         {
             maxSum += inputDouble.get(i);
         }
-        System.out.printf("%.0f%s%.0f",minSum + " " + maxSum);
+        System.out.printf("%.0f%s%.0f",minSum," ",maxSum);
     }
 }
