@@ -7,6 +7,7 @@ public class MiniMaxSum
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        input.close();
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
         int minSum = 0;
         int maxSum = 0;
