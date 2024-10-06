@@ -19,5 +19,13 @@ public class TimeConversion
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
         }
+        for (int i = 0; i < timeInteger.size(); i++)
+        {
+            System.out.print(timeInteger.get(i));
+            if (i < timeInteger.size())
+            {
+                System.out.print(':');
+            }
+        }
     }
 }
