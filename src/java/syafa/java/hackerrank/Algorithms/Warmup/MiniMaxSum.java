@@ -8,10 +8,16 @@ public class MiniMaxSum
         Scanner input = new Scanner(System.in);
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> inputInteger = new ArrayList<Integer>();
+        int minSum = 0;
+        int maxSum = 0;
         for (int i = 0; i < inputString.size(); i++)
         {
             inputInteger.add(Integer.parseInt(inputString.get(i)));
         }
         Collections.sort(inputInteger);
+        for (int i = 0; i < inputInteger.size(); i++)
+        {
+            
+        }
     }
 }
