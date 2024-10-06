@@ -19,7 +19,7 @@ public class TimeConversion
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
         }
-        timeInteger.set(0,timeInteger.get(0 + hourConversion));
+        timeInteger.set(0,timeInteger.get(0) + hourConversion);
         for (int i = 0; i < timeInteger.size(); i++)
         {
             System.out.print(timeInteger.get(i));
