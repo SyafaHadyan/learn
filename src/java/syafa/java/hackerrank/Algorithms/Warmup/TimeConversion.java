@@ -22,6 +22,14 @@ public class TimeConversion
         {
             inputTimeString.set(2,inputTimeString.get(2).replace("AM",""));
         }
+        try
+        {
+            inputTimeString.set(2,inputTimeString.get(2).replace("AM",""));
+        }
+        catch (Exception e)
+        {
+            inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
+        }
         for (int i = 0; i < inputTimeString.size(); i++)
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
