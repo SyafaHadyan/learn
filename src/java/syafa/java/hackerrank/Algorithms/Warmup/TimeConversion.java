@@ -23,7 +23,7 @@ public class TimeConversion
         for (int i = 0; i < timeInteger.size(); i++)
         {
             System.out.print(timeInteger.get(i));
-            if (i < timeInteger.size())
+            if (i < timeInteger.size() - 1)
             {
                 System.out.print(':');
             }
