@@ -33,6 +33,7 @@ public class BirthdayCakeCandles
                 System.out.print(' ');
             }
        }
+       System.out.print("\n");
        for (int i = 0; i < inputCandleDouble.size(); i++)
        {
             System.out.print(inputCandleDouble.get(i));
