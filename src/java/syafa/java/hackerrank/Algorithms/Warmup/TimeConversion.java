@@ -8,5 +8,10 @@ public class TimeConversion
         Scanner input = new Scanner(System.in);
         ArrayList<String> inputTimeString = new ArrayList<String>(Arrays.asList(input.nextLine().split(":")));
         input.close();
+        ArrayList<Integer> timeInteger = new ArrayList<Integer>();
+        for (int i = 0; i < inputTimeString.size(); i++)
+        {
+            
+        }
     }
 }
