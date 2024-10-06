@@ -22,7 +22,7 @@ public class BirthdayCakeCandles
        }
        for (int i = 0; i < inputCandleDouble.size(); i++)
        {
-            if (0 == Integer.parseInt(inputCandleString.get(inputCandleString.size())))
+            if (Integer.parseInt(inputCandleString.get(i)) == Integer.parseInt(inputCandleString.get(inputCandleString.size())))
             {
                 highestMatch++;
             }
