@@ -29,3 +29,5 @@ Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
 ## Looping While
+
+### 3. Jelaskan dan perbaiki jika menemui kesalahan
