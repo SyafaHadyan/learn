@@ -9,5 +9,9 @@ public class DivisibleSumPairs
         ArrayList<String> initialValue = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> pairs = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        for (int i = 0; i < pairs.size(); i++)
+        {
+            
+        }
     }
 }
