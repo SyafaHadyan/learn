@@ -11,19 +11,6 @@ public class GradingStudents
         for (int i = 0; i < amountOfGrades; i++)
         {
             grades.add(Integer.parseInt(input.nextLine()));
-            for (int j = 1; j < 3; j++)
-            {
-                System.out.println(grades.get(i));
-                //grades.set(i,grades.get(i) + j);
-                if (grades.set(i,grades.get(i) + j) % 5 == 0)
-                {
-                    //System.out.println(grades.get(i) + j);
-                    grades.set(i,grades.get(i) + j);
-                    continue;
-                    //System.out.println(grades.get(i));
-                    //continue;
-                }
-            }
         }
         input.close();
         for (int i = 0; i < grades.size(); i++)
