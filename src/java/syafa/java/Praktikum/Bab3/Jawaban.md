@@ -136,7 +136,7 @@ pernyataan continue batas 10
 Karena `if` tidak menjalankan apa-apa, dan di dalam `else` ada `break`, jadi setiap kali perulangan, `break` akan dijalankan dan tidak akan `println nilai` walaupun saat `nilai = 5` kecuali `println nilai` ada di `else` sebelum `break`.
 
 
-### 16. 
+### 16. Pada `if` penyataan `continue` baris ke 14 ubah pernyataan samadengan `(==)` menjadi pernyataan kurang dari samadengan `(<=)`
 
 ```txt
 pernyataan break batas 10
