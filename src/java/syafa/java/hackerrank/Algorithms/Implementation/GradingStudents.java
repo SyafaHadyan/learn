@@ -7,5 +7,6 @@ public class GradingStudents
     {
         Scanner input = new Scanner(System.in);
         int amountOfGrades = Integer.parseInt(input.nextLine());
+        ArrayList<Integer> grades = new ArrayList<Integer>();
     }
 }
