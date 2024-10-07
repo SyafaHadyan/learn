@@ -23,7 +23,7 @@ public class DivisibleSumPairs
                         divisiblePairs++;
                         duplicateMatch = false;
                     }
-                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + " " + duplicateMatch);
+                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + " " + duplicateMatch + "\n");
                     pairsResult.add(i + " " + j);
                     pairsResult.add(j + " " + i);
                     //pairsResult.add(Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(pairs.get(i)));
