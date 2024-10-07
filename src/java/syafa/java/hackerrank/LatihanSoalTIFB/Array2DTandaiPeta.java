@@ -10,5 +10,9 @@ public class Array2DTandaiPeta
         int arrayWidth = Integer.parseInt(input.nextLine());
         int amountOfMarks = Integer.parseInt(input.nextLine());
         String[][] map = new String[arrayHeight][arrayWidth];
+        for (int i = 0; i < amountOfMarks; i++)
+        {
+            
+        }
     }
 }
