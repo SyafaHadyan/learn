@@ -4,7 +4,7 @@ public class N12LoopingDoWhile
 {
     public static void main(String[] args)
     {
-        int nilai = 1;
+        int nilai = 11;
         do
         {
             System.out.print(nilai);
