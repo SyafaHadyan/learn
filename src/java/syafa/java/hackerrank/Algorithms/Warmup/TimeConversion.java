@@ -20,7 +20,7 @@ public class TimeConversion
         }
         if (inputTimeString.get(0).equals("12.0") && inputTimeString.get(2).replace("PM","").equals("\\d+"))
         {
-            hourConversion = 0;
+            inputTimeString.set(0,"0.0");
         }
         try
         {
@@ -42,7 +42,7 @@ public class TimeConversion
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
         }
-        if (hourConversion == -12 && timeInteger.get(0) < 12)
+        if ((hourConversion == -12 && timeInteger.get(0) < 12) || (hourConversion == 12 && timeInteger.get(0).equals(24.0)))
         {
             hourConversion = 0;
         }
