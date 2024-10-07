@@ -239,6 +239,20 @@ public class Array2DTicTacToe
                 }
             }
         }
+
+        // Seventh condition X
+        if (third[1].equalsIgnoreCase("X") && third[0].equalsIgnoreCase("X") && third[2].equalsIgnoreCase("X"))
+        {
+            System.out.print("O Menang");
+            return;
+        }
+
+        // Seventh condition O
+        if (third[1].equalsIgnoreCase("O") && third[0].equalsIgnoreCase("O") && third[2].equalsIgnoreCase("O"))
+        {
+            System.out.print("O Menang");
+            return;
+        }
         System.out.print("Draw");
     }
 }
