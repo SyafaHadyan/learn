@@ -21,3 +21,7 @@ Jika dihapus, maka kode tidak bisa berjalan karena tidak ada variabel `i`
 ### `LoopCondition`
 
 Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
+
+## `StepExpression`
+
+Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
