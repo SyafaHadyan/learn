@@ -33,6 +33,7 @@ public class Praktikum2
             }
             else if (selection == 2)
             {
+                System.out.printf("-25s%-2c","Masukkan radius",':');
                 radius = Double.parseDouble(input.nextLine());
                 selection = (4.0/3.0) * PI * Math.pow(radius,3);
             }
