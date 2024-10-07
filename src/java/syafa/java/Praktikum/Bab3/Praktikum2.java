@@ -38,7 +38,7 @@ public class Praktikum2
             }
             else if (selection == 3)
             {
-                //
+                radius = Double.parseDouble(input.nextLine());
             }
             else if (selection == 4)
             {
