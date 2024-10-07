@@ -20,6 +20,10 @@ public class BillDivision
             }
             totalPrice += Integer.parseInt(itemPrices.get(i));
         }
-        totalPrice = totalPrice / 2;
+        if (charge == totalPrice / 2)
+        {
+            System.out.print(charge - (totalPrice / 2));
+            return;
+        }
     }
 }
