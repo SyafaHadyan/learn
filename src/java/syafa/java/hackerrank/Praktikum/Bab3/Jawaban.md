@@ -12,4 +12,4 @@ Variabel `n` digunakan untuk membatasi `i` sampai mana `loop` berjalan/dihentika
 
 Program akan terus berjalan tanpa berhenti dengan `print` 0 karena nilai `i` tidak ditambah yang berarti niali `i` akan terus berada di bawah `n` `<=n`.
 
-## 4. Dalam statement for hapus satu persatu secara bergantian mulai dari InitializationExpression, LoopCondition, dan StepExpression , amati yang terjadi dan jelaskan
+## 4. Dalam statement `for` hapus satu persatu secara bergantian mulai dari `InitializationExpression`, `LoopCondition`, dan `StepExpression` , amati yang terjadi dan jelaskan
