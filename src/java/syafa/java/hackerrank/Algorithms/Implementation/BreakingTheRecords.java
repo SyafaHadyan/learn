@@ -20,6 +20,10 @@ public class BreakingTheRecords
             {
                 continue;
             }
+            else if (Integer.parseInt(inputString.get(i)) < 0 currentLow)
+            {
+                min++;
+            }
         }
     }
 }
