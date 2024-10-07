@@ -44,4 +44,4 @@ Jika dihapus, `nilai` akan terus berada di `1` dan kode akan looping tanpa berhe
 
 ### 8. Ubah syntaks di atas untuk membuat deret angka kelipatan 2
 
-Jawaban ada di source code `N08LoopingWhile.java`.
+Jawaban ada di source code `[N08LoopingWhile.java](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/N08LoopingWhile.java)`.
