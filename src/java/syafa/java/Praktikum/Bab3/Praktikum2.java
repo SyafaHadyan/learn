@@ -15,11 +15,10 @@ public class Praktikum2
                             "4. HITUNG VOLUME SILINDER",
                             "5. HITUNG VOLUME LIMAS SEGITIGA",
                             "MASUKKAN PILIHAN ANDA",':');
-        double selection = Double.parseDouble(input.nextLine());
-        input.close();
         boolean inputValid = false;
         while (!inputValid)
         {
+            double selection = Double.parseDouble(input.nextLine());
             inputValid = true;
             if (selection == 0)
             {
@@ -50,5 +49,6 @@ public class Praktikum2
                 inputValid = false;
             }
         }
+        input.close();
     }
 }
