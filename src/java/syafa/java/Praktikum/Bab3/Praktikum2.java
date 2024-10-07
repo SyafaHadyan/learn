@@ -6,7 +6,7 @@ public class Praktikum2
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-20s%-2c",
+        System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
                             "MENU",
                             "0. KELUAR",
                             "1. HITUNG VOLUME BALOK",
