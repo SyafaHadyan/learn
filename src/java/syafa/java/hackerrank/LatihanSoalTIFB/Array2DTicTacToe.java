@@ -10,6 +10,8 @@ public class Array2DTicTacToe
         String[] second = input.nextLine().split(" ");
         String[] third = input.nextLine().split(" ");
         input.close();
+
+        // First condition X
         if (first[0].equalsIgnoreCase("X"))
         {
             if (first[1].equalsIgnoreCase("X"))
@@ -33,6 +35,35 @@ public class Array2DTicTacToe
                 if (third[2].equalsIgnoreCase("X"))
                 {
                     System.out.print("X Menang");
+                    return;
+                }
+            }
+        }
+        
+        // First condition O
+        if (first[0].equalsIgnoreCase("O"))
+        {
+            if (first[1].equalsIgnoreCase("O"))
+            {
+                if (first[2].equalsIgnoreCase("O"))
+                {
+                    System.out.print("O Menang");
+                    return;
+                }
+            }
+            if (second[0].equalsIgnoreCase("O"))
+            {
+                if (third[0].equalsIgnoreCase("O"))
+                {
+                    System.out.print("O Menang");
+                    return;
+                }
+            }
+            if (second[1].equalsIgnoreCase("O"))
+            {
+                if (third[2].equalsIgnoreCase("O"))
+                {
+                    System.out.print("O Menang");
                     return;
                 }
             }
