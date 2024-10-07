@@ -16,9 +16,10 @@ public class TheHurdleRace
             if ((Integer.parseInt(jump.get(1)) + Integer.parseInt(hurdle.get(i))) < Integer.parseInt(hurdle.get(i + 1)))
             {
                 //System.out.print(Integer.parseInt(hurdle.get(i + 1)) - Integer.parseInt(jump.get(1)));
-                dose++;
+                dose += Integer.parseInt(hurdle.get(i + 1)) - Integer.parseInt(jump.get(1));
             }
+
         }
-        System.out.print(0);
+        System.out.print(dose);
     }
 }
