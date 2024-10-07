@@ -18,7 +18,7 @@ public class DivisibleSumPairs
             {
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
-                    if (Integer.parseInt(pairs.get(i)) == (Integer.parseInt(pairs.get(j))))
+                    if (pairsResult.contains(Integer.parseInt(pairs.get(i)) + " " + (Integer.parseInt(pairs.get(j)))))
                     {
                         continue;
                     }
