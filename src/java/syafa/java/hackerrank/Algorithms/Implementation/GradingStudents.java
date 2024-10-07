@@ -16,7 +16,7 @@ public class GradingStudents
                 if (grades.get(i) + j % 5 == 0)
                 {
                     grades.set(i,grades.get(i) + j);
-                    break;
+                    continue;
                 }
             }
         }
