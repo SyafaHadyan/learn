@@ -20,10 +20,10 @@ public class BillDivision
             totalPrice += Integer.parseInt(itemPrices.get(i));
             //System.out.println(totalPrice);
         }
-        System.out.println(totalPrice + "\n" + (totalPrice / 2));
+        //System.out.println(totalPrice + "\n" + (totalPrice / 2));
         if (!(charge == (totalPrice / 2)))
         {
-            System.out.print(charge - (totalPrice / 2));
+            System.out.print(charge - (totalPrice / 2)``);
             return;
         }
         System.out.print("Bon Appetit");
