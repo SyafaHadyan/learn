@@ -42,11 +42,12 @@ public class MigratoryBirds
             */
             for (int j = i; j < sightings.size(); j++)
             {
-                if (j++ < sightingsSorted.get(i))
+                if (j++ < sightingsSorted.get(j))
                 {
                     increment++;
                 }
             }
+            System.out.println(i);
         }
     }
 }
