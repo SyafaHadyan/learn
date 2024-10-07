@@ -16,7 +16,10 @@ public class BreakingTheRecords
         ArrayList<Integer> score = new ArrayList<Integer>();
         for (int i = 0; i < inputString.size(); i++)
         {
-            //
+            if (Integer.parseInt(inputString.get(i)) == currentLow)
+            {
+                continue;
+            }
         }
     }
 }
