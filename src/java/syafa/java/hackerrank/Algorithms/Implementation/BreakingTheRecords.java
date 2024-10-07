@@ -20,13 +20,10 @@ public class BreakingTheRecords
             {
                 currentLow = currentHigh = Integer.parseInt(inputString.get(i));
             }
-            if (Integer.parseInt(inputString.get(i)) == currentLow)
-            {
-                continue;
-            }
-            else if (Integer.parseInt(inputString.get(i)) < currentLow)
+            if (Integer.parseInt(inputString.get(i)) < currentLow)
             {
                 min++;
+                currentLow = Integer.parseInt(inputString.get(i));
                 continue;
             }
             else if (Integer.parseInt(inputString.get(i)) > currentHigh)
