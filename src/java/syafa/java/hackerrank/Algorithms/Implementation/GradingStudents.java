@@ -8,5 +8,9 @@ public class GradingStudents
         Scanner input = new Scanner(System.in);
         int amountOfGrades = Integer.parseInt(input.nextLine());
         ArrayList<Integer> grades = new ArrayList<Integer>();
+        for (int i = 0; i < amountOfGrades; i++)
+        {
+            grades.add(Integer.parseInt(input.nextLine()));
+        }
     }
 }
