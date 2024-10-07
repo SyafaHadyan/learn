@@ -10,18 +10,17 @@ public class N16BreakAndContinue
         {
             if(nilai == 5)
             {
-                //break;
+                break;
             }
             else
             {
-                break;
+                System.out.println(nilai);
             }
-            System.out.println(nilai);
         }
         System.out.println("\n" + "pernyataan continue batas 10");
         for(nilai = 1; nilai <= 10; nilai++)
         {
-            if(nilai == 5)
+            if(nilai <= 5)
             {
                 continue;
             }
