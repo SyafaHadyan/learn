@@ -15,11 +15,15 @@ public class Array2DTandaiPeta
             String[] markAt = input.nextLine().split(" ");
             map[Integer.parseInt(markAt[0])][Integer.parseInt(markAt[1])] = "x";
         }
-        for (int i = 0; i < map.length; i++)
+        for (int i = 0; i < arrayHeight; i++)
         {
-            for (int j = 0; j < map.length; j++)
+            for (int j = 0; j < arrayWidth; j++)
             {
-                //
+                System.out.print(map[i][j]);
+            }
+            if (i < arrayHeight)
+            {
+                System.out.print("\n");
             }
         }
     }
