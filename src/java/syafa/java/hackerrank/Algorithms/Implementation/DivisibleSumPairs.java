@@ -18,6 +18,10 @@ public class DivisibleSumPairs
                 System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
+                    if (Integer.parseInt(pairs.get(i)) == (Integer.parseInt(pairs.get(j))))
+                    {
+                        continue;
+                    }
                     //System.out.println(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
                     divisiblePairs++;
                 }
