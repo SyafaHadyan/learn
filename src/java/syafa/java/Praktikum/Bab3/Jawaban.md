@@ -1,6 +1,6 @@
 # Jawaban
 
-## Looping For
+## Looping `For`
 
 ### 1. Jelaskan dan perbaiki jika menemui kesalahan
 
@@ -28,7 +28,7 @@ Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
 Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
-## Looping While
+## Looping `While`
 
 ### 5. Jelaskan dan perbaiki jika menemui kesalahan
 
@@ -45,3 +45,5 @@ Jika dihapus, `nilai` akan terus berada di `1` dan kode akan looping tanpa berhe
 ### 8. Ubah syntaks di atas untuk membuat deret angka kelipatan 2
 
 Jawaban ada di source code [`N08LoopingWhile.java`](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/N08LoopingWhile.java).
+
+## Looping `Do-While`
