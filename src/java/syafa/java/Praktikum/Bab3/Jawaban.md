@@ -47,3 +47,7 @@ Jika dihapus, `nilai` akan terus berada di `1` dan kode akan looping tanpa berhe
 Jawaban ada di source code [`N08LoopingWhile.java`](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/N08LoopingWhile.java).
 
 ## Looping `Do-While`
+
+### 9. Jelaskan dan perbaiki jika menemui kesalahan
+
+Kode akan println `nilai` yang kemudian `increment` `nilai`. Kode akan terus berjalan hingga `nilai <= 10`.
