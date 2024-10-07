@@ -13,7 +13,7 @@ public class Array2DTandaiPeta
         {
             for (int j = 0; j < Integer.parseInt(arraySize.get(1)); j++)
             {
-                
+                map[i][j] = ".";
             }
         }
         for (int i = 0; i < amountOfMarks; i++)
