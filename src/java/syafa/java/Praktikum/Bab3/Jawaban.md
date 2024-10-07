@@ -36,7 +36,7 @@ Kode akan berjalan dan akan memasuki `do-while` loop kemudian `println nilai` da
 
 ### 6. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan `for` dan `while`
 
-looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `LoopCondition` memenuhi. Sedangakn `do-while` akan dijalankan paling tidak sekali dan akan dicek di akhir. Sedangkan `while` akan dilakukan pengecekan di awal dan harus ada nilai yang membuat loop berhenti di dalam `while`.
+looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `LoopCondition` memenuhi. Sedangakn `do-while` akan dijalankan paling tidak sekali dan akan dicek di akhir. Sedangkan `while` akan dilakukan pengecekan di awal dan harus ada nilai yang membuat loop berhenti di dalam `while`, kalau tidak, akan terjadi `infinite loop`.
 
 ### 7. Hapus statemen `nilai++` pada baris 6 kemudian amati yang terjadi dan jelaskan
 
