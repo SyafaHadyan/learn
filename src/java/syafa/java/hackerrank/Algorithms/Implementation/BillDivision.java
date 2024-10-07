@@ -20,5 +20,6 @@ public class BillDivision
             }
             totalPrice += Integer.parseInt(itemPrices.get(i));
         }
+        totalPrice = totalPrice / 2;
     }
 }
