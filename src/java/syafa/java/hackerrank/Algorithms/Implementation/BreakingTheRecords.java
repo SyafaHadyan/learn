@@ -6,5 +6,8 @@ public class BreakingTheRecords
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        StringBuilder integer = new StringBuilder(input.nextLine());
+        
+        input.close();
     }
 }
