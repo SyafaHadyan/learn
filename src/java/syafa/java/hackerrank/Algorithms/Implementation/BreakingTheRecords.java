@@ -9,6 +9,8 @@ public class BreakingTheRecords
         StringBuilder integer = new StringBuilder(input.nextLine());
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int min = 0;
+        int max = 0;
         ArrayList<Integer> score = new ArrayList<Integer>();
         for (int i = 0; i < inputString.size(); i++)
         {
