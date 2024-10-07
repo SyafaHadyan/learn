@@ -13,6 +13,7 @@ public class Array2DTandaiPeta
         for (int i = 0; i < amountOfMarks; i++)
         {
             String[] markAt = input.nextLine().split(" ");
+            map[Integer.parseInt(markAt[0])][Integer.parseInt(markAt[1])] = "x";
         }
     }
 }
