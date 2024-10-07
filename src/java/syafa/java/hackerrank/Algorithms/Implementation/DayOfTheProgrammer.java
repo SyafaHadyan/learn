@@ -13,5 +13,6 @@ public class DayOfTheProgrammer
             System.out.print("12.09" + year);
             return;
         }
+        System.out.print("13.09" + year);
     }
 }
