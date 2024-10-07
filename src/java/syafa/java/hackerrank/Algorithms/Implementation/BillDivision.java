@@ -23,7 +23,7 @@ public class BillDivision
         //System.out.println(totalPrice + "\n" + (totalPrice / 2));
         if (!(charge == (totalPrice / 2)))
         {
-            System.out.print(charge - (totalPrice / 2)``);
+            System.out.print(charge - (totalPrice / 2));
             return;
         }
         System.out.print("Bon Appetit");
