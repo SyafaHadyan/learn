@@ -19,3 +19,5 @@ Kode akan terus berjalan tanpa berhenti dengan `print` 0 karena nilai `i` tidak 
 Jika dihapus, maka kode tidak bisa berjalan karena tidak ada variabel `i`
 
 ### `LoopCondition`
+
+Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
