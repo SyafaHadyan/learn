@@ -18,12 +18,12 @@ public class DivisibleSumPairs
             {
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
-                    if (!pairsResult.contains(i + " " + j) || !pairsResult.contains(i + " " + j))
+                    if (pairsResult.contains(i + " " + j) || pairsResult.contains(i + " " + j))
                     {
                         divisiblePairs++;
                         duplicateMatch = false;
                     }
-                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + " " + duplicateMatch + "\n");
+                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + "|" + " " + Integer.parseInt(initialValue.get(1)) + " " + duplicateMatch + "\n");
                     pairsResult.add(i + " " + j);
                     pairsResult.add(j + " " + i);
                     duplicateMatch = true;
