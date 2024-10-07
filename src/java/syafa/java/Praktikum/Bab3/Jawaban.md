@@ -70,7 +70,7 @@ Jika `nilai` diubah menjadi berapa saja, kode akan tetap dijalankan dan tetap ma
 
 Kode akan dijalankan dan set `nilai = 1`, jika `nilai = 5`, `break` dan keluar, jika tidak, `println nilai`. `For-loop` kedua jika `nilai = 5`, maka continue dan skip kode dibawahnya dan lanjut loop.
 
-#### Output
+#### Output 13
 
 ```txt
 pernyataan break batas 10
@@ -94,7 +94,7 @@ pernyataan continue batas 10
 
 Kode akan dijalankan dan set `nilai = 1`, jika `nilai = 5`, `break` dan keluar, jika tidak, `println nilai`. `For-loop` kedua jika `nilai = 5`, maka continue dan skip kode dibawahnya dan lanjut loop.
 
-#### Output Kode
+#### Output 14
 
 ```txt
 pernyataan break batas 10
@@ -116,6 +116,8 @@ pernyataan continue batas 10
 
 ### 15. Hapus pernyataan break pada baris 7 dan tuliskan kembali pernyataan break setelah else baris ke 8, amati yang terjadi dan jelaskan
 
+#### Output 15
+
 ```txt
 pernyataan break batas 10
 
@@ -130,3 +132,5 @@ pernyataan continue batas 10
 9
 10
 ```
+
+Karena `if` tidak menjalankan apa-apa, dan di dalam `else` ada `break`, jadi setiap kali perulangan, `break` akan dijalankan dan tidak akan `println nilai` walaupun saat `nilai = 5` kecuali `println nilai` ada di `else` sebelum `break`.
