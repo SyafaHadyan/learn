@@ -11,6 +11,8 @@ public class BreakingTheRecords
         input.close();
         int min = 0;
         int max = 0;
+        int currentLow = 0;
+        int currentHigh = 0;
         ArrayList<Integer> score = new ArrayList<Integer>();
         for (int i = 0; i < inputString.size(); i++)
         {
