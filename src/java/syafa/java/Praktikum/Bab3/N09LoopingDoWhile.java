@@ -7,7 +7,7 @@ public class N09LoopingDoWhile
         int nilai = 1;
         do
         {
-            System.out.println(nilai);
+            System.out.print(nilai);
             if (nilai < 10)
             {
                 System.out.print("\n");
