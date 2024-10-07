@@ -21,7 +21,7 @@ public class MigratoryBirds
         for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1); i+= increment)
         {
             increment = 1;
-            for (int j = Integer.parseInt(null); j < args.length; j++)
+            for (int j = Integer.parseInt(sightings.get(i)); j < sightingsSorted.size(); j++)
             {
                 
             }
