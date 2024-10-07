@@ -33,5 +33,6 @@ public class BreakingTheRecords
                 continue;
             }
         }
+        System.out.print(max + " " + min);
     }
 }
