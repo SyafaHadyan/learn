@@ -32,7 +32,6 @@ public class BreakingTheRecords
                 currentHigh = Integer.parseInt(inputString.get(i));
                 continue;
             }
-            else if (Integer.parseInt(inputString.get(i)) )
         }
     }
 }
