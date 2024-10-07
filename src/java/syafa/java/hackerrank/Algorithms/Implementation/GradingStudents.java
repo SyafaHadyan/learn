@@ -11,7 +11,7 @@ public class GradingStudents
         for (int i = 0; i < amountOfGrades; i++)
         {
             grades.add(Integer.parseInt(input.nextLine()));
-            for (int j = 0; j < args.length; j++)
+            for (int j = 1; j <= 3; j++)
             {
                 //
             }
