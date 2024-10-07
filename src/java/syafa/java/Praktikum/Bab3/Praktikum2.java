@@ -17,5 +17,33 @@ public class Praktikum2
                             "MASUKKAN PILIHAN ANDA",':');
         int selection = Integer.parseInt(input.nextLine());
         input.close();
+        if (selection == 0)
+        {
+            //
+        }
+        else if (selection == 1)
+        {
+            //
+        }
+        else if (selection == 1)
+        {
+            //
+        }
+        else if (selection == 1)
+        {
+            //
+        }
+        else if (selection == 1)
+        {
+            //
+        }
+        else if (selection == 1)
+        {
+            //
+        }
+        else
+        {
+            return;
+        }
     }
 }
