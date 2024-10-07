@@ -16,10 +16,11 @@ public class NumberLineJumps
             System.out.print("NO");
             return;
         }
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < 10; i++)
         {
             object0 += Integer.parseInt(positionJump.get(1));
             object1 += Integer.parseInt(positionJump.get(3));
+            System.out.println(object0 + " " + object1);
         }
     }
 }
