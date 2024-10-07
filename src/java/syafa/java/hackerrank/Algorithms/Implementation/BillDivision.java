@@ -9,7 +9,7 @@ public class BillDivision
         ArrayList<String> items = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> itemPrices = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         int charge = Integer.parseInt(input.nextLine());
-        boolean bonAppetit = true;
+        String bonAppetit = "Bon Appetit";
         input.close();
     }
 }
