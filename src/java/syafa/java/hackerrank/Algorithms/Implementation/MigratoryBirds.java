@@ -8,9 +8,15 @@ public class MigratoryBirds
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         ArrayList<String> sightings = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<Integer> sightingsSorted = new ArrayList<Integer>();
         input.close();
         int mostSightings = 0;
         int mostType = 0;
+        for (int i = 0; i < sightings.size(); i++)
+        {
+            
+        }
+        Collections.sort(sightings);
         for (int i = 0; i < Integer.parseInt(sightings.get(sightings.size() - 1)); i++)
         {
             for (int j = Integer.parseInt(null); j < args.length; j++)
