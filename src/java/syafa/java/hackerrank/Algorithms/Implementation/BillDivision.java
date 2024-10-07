@@ -13,7 +13,7 @@ public class BillDivision
         int totalPrice = 0;
         for (int i = 0; i < itemPrices.size(); i++)
         {
-            if (i != Integer.parseInt(items.get(1)))
+            if (i == Integer.parseInt(items.get(1)))
             {
                 continue;
             }
@@ -22,9 +22,9 @@ public class BillDivision
         }
         //System.out.println(totalPrice + "\n" + (totalPrice / 2));
         System.out.println(totalPrice / 2);
-        if ((totalPrice / 2) - charge - 2 != 0)
+        if ((totalPrice / 2) - charge != 0)
         {
-            System.out.print(charge - (totalPrice / 2) - 2);
+            System.out.print(charge - (totalPrice / 2));
             return;
         }
         System.out.print("Bon Appetit");
