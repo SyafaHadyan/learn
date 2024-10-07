@@ -22,7 +22,7 @@ public class N04LoopingFor
         
         // inisialisasi dengan nilai awal i = 0
       	// looping selama nilai i <= n
-        for (int i = 0; i <= n; /*i++*/)
+        for (int i = 0; i <= n; i++)
         {
             // setiap iterasi, n bertambah 1
             System.out.print(i);
