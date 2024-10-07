@@ -68,5 +68,32 @@ public class Array2DTicTacToe
                 }
             }
         }
+
+        // Second condition X
+        if (first[1].equalsIgnoreCase("X"))
+        {
+            if (first[0].equalsIgnoreCase("X"))
+            {
+                if (first[2].equalsIgnoreCase("X"))
+                {
+                    System.out.print("X Menang");
+                    return;
+                }
+            }
+        }
+
+        // Second condition O
+        if (first[1].equalsIgnoreCase("O"))
+        {
+            if (first[0].equalsIgnoreCase("O"))
+            {
+                if (first[2].equalsIgnoreCase("O"))
+                {
+                    System.out.print("O Menang");
+                    return;
+                }
+            }
+        }
+        System.out.print("Draw");
     }
 }
