@@ -113,3 +113,20 @@ pernyataan continue batas 10
 9
 10
 ```
+
+### 15. Hapus pernyataan break pada baris 7 dan tuliskan kembali pernyataan break setelah else baris ke 8, amati yang terjadi dan jelaskan
+
+```txt
+pernyataan break batas 10
+
+pernyataan continue batas 10
+1
+2
+3
+4
+6
+7
+8
+9
+10
+```
