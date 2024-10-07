@@ -17,6 +17,7 @@ public class Praktikum2
                             "MASUKKAN PILIHAN ANDA",':');
         boolean inputValid = false;
         final double PI = 3.1415926535;
+        double radius = 0d;
         while (!inputValid)
         {
             double selection = Double.parseDouble(input.nextLine());
@@ -31,6 +32,7 @@ public class Praktikum2
             }
             else if (selection == 2)
             {
+                radius = Double.parseDouble(input.nextLine());
                 selection = (4/3) * Math.pow(PI,3) * // radius;
             }
             else if (selection == 3)
