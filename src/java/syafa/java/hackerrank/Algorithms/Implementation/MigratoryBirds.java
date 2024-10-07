@@ -38,6 +38,11 @@ public class MigratoryBirds
                 
             }
             */
+            int j = i;
+            if (j != sightingsSorted.get(i))
+            {
+
+            }
         }
     }
 }
