@@ -21,9 +21,6 @@ public class Praktikum0
             {
                 System.out.print('*');
                 if (j < i + 1)
-                {
-                    System.out.print(' ');
-                }
             }
             if (i < staircaseSize)
             {
