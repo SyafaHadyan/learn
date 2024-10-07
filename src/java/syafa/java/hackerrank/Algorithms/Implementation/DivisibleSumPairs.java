@@ -28,6 +28,6 @@ public class DivisibleSumPairs
                 }
             }
         }
-        System.out.print(divisiblePairs / 2);
+        System.out.print(divisiblePairs);
     }
 }
