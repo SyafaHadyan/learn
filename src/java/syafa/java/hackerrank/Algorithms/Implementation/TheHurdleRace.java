@@ -11,9 +11,9 @@ public class TheHurdleRace
         input.close();
         for (int i = 0; i < hurdle.size(); i++)
         {
-            if (Integer.parseInt(jump.get(1)) < Integer.parseInt(hurdle.get(i + 1)))
+            if (Integer.parseInt(jump.get(1) + Integer.parseInt(hurdle.get(i))) < Integer.parseInt(hurdle.get(i + 1)))
             {
-                //
+                
             }
         }
     }
