@@ -15,6 +15,7 @@ public class Praktikum2
                             "4. HITUNG VOLUME SILINDER",
                             "5. HITUNG VOLUME LIMAS SEGITIGA",
                             "MASUKKAN PILIHAN ANDA",':');
+        int selection = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
