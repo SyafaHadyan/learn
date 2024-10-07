@@ -6,9 +6,7 @@ public class Array2DTandaiPeta
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
-        int arrayHeight = Integer.parseInt(input.nextLine());
-        int arrayWidth = Integer.parseInt(input.nextLine());
+        ArrayList<String> arraySize = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         int amountOfMarks = Integer.parseInt(input.nextLine());
         String[][] map = new String[arrayHeight][arrayWidth];
         for (int i = 0; i < amountOfMarks; i++)
