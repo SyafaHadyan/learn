@@ -9,5 +9,9 @@ public class TheHurdleRace
         ArrayList<String> jump = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> hurdle = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        for (int i = 0; i < hurdle.size(); i++)
+        {
+            
+        }
     }
 }
