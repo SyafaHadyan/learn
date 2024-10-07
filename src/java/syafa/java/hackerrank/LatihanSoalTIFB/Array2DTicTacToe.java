@@ -167,7 +167,7 @@ public class Array2DTicTacToe
             System.out.print("O Menang");
             return;
         }
-        
+
         System.out.print("Draw");
     }
 }
