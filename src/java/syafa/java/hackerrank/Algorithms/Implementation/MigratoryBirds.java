@@ -12,13 +12,15 @@ public class MigratoryBirds
         input.close();
         int mostSightings = 0;
         int mostType = 0;
+        int increment = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             sightingsSorted.add(Integer.parseInt(sightings.get(i)));
         }
         Collections.sort(sightingsSorted);
-        for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1);)
+        for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1); i+= increment)
         {
+            increment = 1;
             for (int j = Integer.parseInt(null); j < args.length; j++)
             {
                 
@@ -38,12 +40,11 @@ public class MigratoryBirds
                 
             }
             */
-            int increment = 0;
-            for (int j = i; j < args.length; j++)
+            for (int j = i; j < sightings.size(); j++)
             {
                 if (j++ < sightingsSorted.get(i))
                 {
-                    
+                    increment++;
                 }
             }
         }
