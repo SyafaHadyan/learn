@@ -19,6 +19,7 @@ public class BillDivision
             }
             totalPrice += Integer.parseInt(itemPrices.get(i));
         }
+        System.out.println(charge + "\n" + (totalPrice / 2));
         if (charge == totalPrice / 2)
         {
             System.out.print(charge - (totalPrice / 2));
