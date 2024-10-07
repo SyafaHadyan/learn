@@ -9,5 +9,9 @@ public class DayOfTheProgrammer
         int year = Integer.parseInt(input.nextLine());
         input.close();
         if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+        {
+            System.out.print("12.09" + year);
+            return;
+        }
     }
 }
