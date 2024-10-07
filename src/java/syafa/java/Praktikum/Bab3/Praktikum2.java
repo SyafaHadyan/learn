@@ -17,8 +17,9 @@ public class Praktikum2
                             "MASUKKAN PILIHAN ANDA",':');
         boolean inputValid = false;
         double selection = 0d;
-        final double PI = 3.1415926535;
         double radius = 0d;
+        double height = 0d;
+        final double PI = 3.1415926535;
         while (!inputValid)
         {
             selection = Double.parseDouble(input.nextLine());
@@ -39,7 +40,10 @@ public class Praktikum2
             }
             else if (selection == 3)
             {
+                System.out.printf("-25s%-2c","Masukkan radius",':');
                 radius = Double.parseDouble(input.nextLine());
+                System.out.printf("-25s%-2c","Masukkan tinggi",':');
+                height = Double.parseDouble(input.nextLine());
             }
             else if (selection == 4)
             {
