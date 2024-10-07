@@ -38,7 +38,7 @@ public class TimeConversion
         {
             timeInteger.add(Integer.parseInt(inputTimeString.get(i)));
         }
-        if ((hourConversion == -12 && timeInteger.get(0) < 12) || (hourConversion == 12 && timeInteger.get(0) == timeInteger.equals(0) + hourConversion == 24.0))
+        if ((hourConversion == -12 && timeInteger.get(0) < 12) || (hourConversion == 12 && (timeInteger.get(0)) + hourConversion == 24.0))
         {
             hourConversion = 0;
         }
