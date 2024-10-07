@@ -8,5 +8,6 @@ public class Array2DTandaiPeta
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         int arrayWidth = Integer.parseInt(input.nextLine());
+        int amountOfMarks = Integer.parseInt(input.nextLine());
     }
 }
