@@ -89,3 +89,27 @@ pernyataan continue batas 10
 9
 10
 ```
+
+### 14. Jelaskan alur logika untuk pernyataan break dan continue pada program di atas
+
+Kode akan dijalankan dan set `nilai = 1`, jika `nilai = 5`, `break` dan keluar, jika tidak, `println nilai`. `For-loop` kedua jika `nilai = 5`, maka continue dan skip kode dibawahnya dan lanjut loop.
+
+#### Output Kode
+
+```txt
+pernyataan break batas 10
+1
+2
+3
+4 < Kode break di 5 dan keluar loop
+pernyataan continue batas 10
+1
+2
+3
+4 < Kode skip di 5 dan lanjut ke 6
+6
+7
+8
+9
+10
+```
