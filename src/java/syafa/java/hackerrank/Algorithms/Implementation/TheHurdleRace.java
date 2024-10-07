@@ -9,7 +9,7 @@ public class TheHurdleRace
         ArrayList<String> jump = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> hurdle = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        for (int i = 0; i < hurdle.size(); i++)
+        for (int i = 0; i < hurdle.size() - 1; i++)
         {
             if (Integer.parseInt(jump.get(1) + Integer.parseInt(hurdle.get(i))) < Integer.parseInt(hurdle.get(i + 1)))
             {
