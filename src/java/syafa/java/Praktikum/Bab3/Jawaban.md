@@ -16,15 +16,15 @@ Kode akan terus berjalan tanpa berhenti dengan `print` 0 karena nilai `i` tidak 
 
 ### 4. Dalam statement `for` hapus satu persatu secara bergantian mulai dari `InitializationExpression`, `LoopCondition`, dan `StepExpression` , amati yang terjadi dan jelaskan
 
-#### `InitializationExpression`
+#### - `InitializationExpression`
 
 Jika dihapus, maka kode tidak bisa berjalan karena tidak ada variabel `i`
 
-#### `LoopCondition`
+#### - `LoopCondition`
 
 Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
-#### `StepExpression`
+#### - `StepExpression`
 
 Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
