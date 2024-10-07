@@ -51,17 +51,5 @@ public class TimeConversion
                 System.out.print(':');
             }
         }
-        System.out.print("\n");
-        for (int i = 0; i < inputTimeString.size(); i++)
-        {
-            System.out.print(inputTimeString.get(i));
-            //System.out.print(timeInteger.get(i));
-            if (i < timeInteger.size() - 1)
-            {
-                System.out.print(':');
-            }
-        }
-        System.out.print("\n" + hourConversion);
-        System.out.print("\n" + temporary);
     }
 }
