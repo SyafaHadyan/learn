@@ -12,7 +12,7 @@ public class N11LoopingDoWhile
             {
                 System.out.print("\n");
             }
-            nilai++;
+            //nilai++;
         }
         while(nilai <= 10);
     }
