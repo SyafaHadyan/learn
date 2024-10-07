@@ -9,11 +9,12 @@ public class DivisibleSumPairs
         ArrayList<String> initialValue = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> pairs = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int divisiblePairs = 0;
         for (int i = 0; i < pairs.size(); i++)
         {
             for (int j = 0; j < pairs.size(); j++)
             {
-                
+                //
             }
         }
     }
