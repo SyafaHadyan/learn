@@ -23,11 +23,13 @@ public class BreakingTheRecords
             else if (Integer.parseInt(inputString.get(i)) < currentLow)
             {
                 min++;
+                continue;
             }
             else if (Integer.parseInt(inputString.get(i)) > currentHigh)
             {
                 max++;
                 currentHigh = Integer.parseInt(inputString.get(i));
+                continue;
             }
         }
     }
