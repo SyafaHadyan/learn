@@ -9,6 +9,7 @@ public class NumberLineJumps
         ArrayList<String> positionJump = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int currentMatchPosition = 0;
+        int object0 = Integer.parseInt(positionJump.get(0));
         if ((Integer.parseInt(positionJump.get(1)) == Integer.parseInt(positionJump.get(3))) && (Integer.parseInt(positionJump.get(0)) == Integer.parseInt(positionJump.get(2))))
         {
             System.out.print("NO");
