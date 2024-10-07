@@ -44,6 +44,7 @@ public class Praktikum2
                 radius = Double.parseDouble(input.nextLine());
                 System.out.printf("-25s%-2c","Masukkan tinggi",':');
                 height = Double.parseDouble(input.nextLine());
+                selection = (1.0/3.0) * PI * Math.pow(radius,2) * height;
             }
             else if (selection == 4)
             {
