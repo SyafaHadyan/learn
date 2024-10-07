@@ -17,7 +17,7 @@ public class MigratoryBirds
             sightingsSorted.add(Integer.parseInt(sightings.get(i)));
         }
         Collections.sort(sightingsSorted);
-        for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1); i++)
+        for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1); i = (i != sightingsSorted.get(0)) ? 0 : 1)
         {
             for (int j = Integer.parseInt(null); j < args.length; j++)
             {
