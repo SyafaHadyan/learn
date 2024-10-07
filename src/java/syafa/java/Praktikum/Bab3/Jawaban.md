@@ -55,3 +55,7 @@ Kode akan println `nilai` yang kemudian `increment` `nilai`. Kode akan terus ber
 ### 10. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan for, while dan do while
 
 looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `LoopCondition` memenuhi. Sedangakn `do-while` akan dijalankan paling tidak sekali dan akan dicek di akhir. Sedangkan `while` kurang lebih sama seperti `do-while` tetapi pengecekan akan dilakukan di awal. Setiap loop harus ada nilai yang membuat loop berhenti di dalam, kalau tidak, akan terjadi `infinite loop`.
+
+### 11. Hapus statement i++ pada baris 6, amati yang terjadi dan jelaskan
+
+Jika dihapus, kode akan terus `println 1`. Karena nilai akan selalu `<= 10` dan kode tidak akan berhenti.
