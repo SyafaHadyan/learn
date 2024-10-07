@@ -11,9 +11,9 @@ public class GradingStudents
         for (int i = 0; i < amountOfGrades; i++)
         {
             grades.add(Integer.parseInt(input.nextLine()));
-            if (grades.get(i) + 1 == 0)
+            for (int j = 0; j < args.length; j++)
             {
-                
+                //
             }
         }
         input.close();
