@@ -11,14 +11,14 @@ public class GradingStudents
         for (int i = 0; i < amountOfGrades; i++)
         {
             grades.add(Integer.parseInt(input.nextLine()));
-            if (grades.get(i) < 40)
-            {
-                continue;
-            }
             for (int j = 1; j < 3; j++)
-            {    
+            {
                 if ((grades.get(i) + j) % 5 == 0)
                 {
+                    if ((grades.get(i)) + 2 < 40)
+                    {
+
+                    }
                     grades.set(i,grades.get(i) + j);
                 }
             }
