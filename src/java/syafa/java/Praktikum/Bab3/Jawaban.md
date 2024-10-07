@@ -32,7 +32,7 @@ Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
 ### 5. Jelaskan dan perbaiki jika menemui kesalahan
 
-Kode akan berjalan dan akan memasuki `do-while` loop kemudian `println nilai` dan `increment` `nilai`, jika `nilai <= 10`, program akan terus berjalan hingga `nilai = 10`.
+Kode akan berjalan, jika `nilai <= 10` akan memasuki `while` loop kemudian `println nilai` dan `increment` `nilai`, program akan terus berjalan hingga `nilai = 10`.
 
 ### 6. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan `for` dan `while`
 
