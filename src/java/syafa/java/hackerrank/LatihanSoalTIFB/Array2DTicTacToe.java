@@ -243,7 +243,7 @@ public class Array2DTicTacToe
         // Seventh condition X
         else if (third[1].equalsIgnoreCase("X") && third[0].equalsIgnoreCase("X") && third[2].equalsIgnoreCase("X"))
         {
-            System.out.print("O Menang");
+            System.out.print("X Menang");
             return;
         }
 
