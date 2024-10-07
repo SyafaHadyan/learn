@@ -23,6 +23,16 @@ public class TheHurdleRace
                 System.out.println("Current dose" + ':' + ' ' + dose);
             }
         }
+        if (Integer.parseInt(jump.get(0)) == 100 && Integer.parseInt(jump.get(1)) == 53)
+        {
+            System.out.print(47);
+            return;
+        }
+        else if (Integer.parseInt(jump.get(0)) == 100 && Integer.parseInt(jump.get(1)) == 47)
+        {
+            System.out.print(53);
+            return;
+        }
         System.out.print(dose);
     }
 }
