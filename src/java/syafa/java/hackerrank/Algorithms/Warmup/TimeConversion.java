@@ -18,6 +18,10 @@ public class TimeConversion
         {
             inputTimeString.set(0,"0.0");
         }
+        if (inputTimeString.get(0).equals("12.0") && inputTimeString.get(2).replace("PM","").equals("\\d+"))
+        {
+            hourConversion = 0;
+        }
         try
         {
             inputTimeString.set(2,inputTimeString.get(2).replace("PM",""));
