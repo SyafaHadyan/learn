@@ -19,25 +19,25 @@ public class Praktikum2
         input.close();
         if (selection == 0)
         {
-            //
+            return;
         }
         else if (selection == 1)
         {
             //
         }
-        else if (selection == 1)
+        else if (selection == 2)
         {
             //
         }
-        else if (selection == 1)
+        else if (selection == 3)
         {
             //
         }
-        else if (selection == 1)
+        else if (selection == 4)
         {
             //
         }
-        else if (selection == 1)
+        else if (selection == 5)
         {
             //
         }
