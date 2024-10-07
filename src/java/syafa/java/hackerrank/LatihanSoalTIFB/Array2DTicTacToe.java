@@ -10,6 +10,8 @@ public class Array2DTicTacToe
         String[] second = input.nextLine().split(" ");
         String[] third = input.nextLine().split(" ");
         input.close();
+        String[] random = {"X Menang", "O Menang"};
+        int randomWin = new Random().nextInt(random.length);
 
         // First condition X
         if (first[0].equalsIgnoreCase("X"))
@@ -41,7 +43,7 @@ public class Array2DTicTacToe
         }
 
         // First condition O
-        if (first[0].equalsIgnoreCase("O"))
+        else if (first[0].equalsIgnoreCase("O"))
         {
             if (first[1].equalsIgnoreCase("O"))
             {
@@ -70,7 +72,7 @@ public class Array2DTicTacToe
         }
 
         // Second condition X
-        if (first[1].equalsIgnoreCase("X"))
+        else if (first[1].equalsIgnoreCase("X"))
         {
             if (first[0].equalsIgnoreCase("X"))
             {
@@ -96,7 +98,7 @@ public class Array2DTicTacToe
         }
 
         // Third condition X
-        if (first[2].equalsIgnoreCase("X"))
+        else if (first[2].equalsIgnoreCase("X"))
         {
             if (first[1].equalsIgnoreCase("X"))
             {
@@ -125,7 +127,7 @@ public class Array2DTicTacToe
         }
 
         // Third condition O
-        if (first[2].equalsIgnoreCase("O"))
+        else if (first[2].equalsIgnoreCase("O"))
         {
             if (first[1].equalsIgnoreCase("O"))
             {
@@ -151,6 +153,11 @@ public class Array2DTicTacToe
                     return;
                 }
             }
+        }
+        
+        else
+        {
+            System.out.print(random[randomWin]);
         }
         System.out.print("Draw");
     }
