@@ -1,4 +1,4 @@
-package syafa.java.hackerrank.OneWeekPreparationKit;
+package syafa.java.hackerrank.OneWeekPreparationKit.Day1;
 import java.util.*;
 
 public class PlusMinus
