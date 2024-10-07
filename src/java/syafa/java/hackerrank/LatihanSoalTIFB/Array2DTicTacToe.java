@@ -10,5 +10,20 @@ public class Array2DTicTacToe
         String[] second = input.nextLine().split(" ");
         String[] third = input.nextLine().split(" ");
         input.close();
+        if (first[0].equalsIgnoreCase("X"))
+        {
+            if (first[1].equalsIgnoreCase("X"))
+            {
+                //
+            }
+            if (second[0].equalsIgnoreCase("X"))
+            {
+                //
+            }
+            if (second[1].equalsIgnoreCase("X"))
+            {
+                
+            }
+        }
     }
 }
