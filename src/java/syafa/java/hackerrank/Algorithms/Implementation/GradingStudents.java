@@ -13,7 +13,8 @@ public class GradingStudents
             grades.add(Integer.parseInt(input.nextLine()));
             for (int j = 1; j <= 3; j++)
             {
-                //
+                int temporary = grades.get(i) + j;
+                if (grades.get(i) + j % 5 == 0)
             }
         }
         input.close();
