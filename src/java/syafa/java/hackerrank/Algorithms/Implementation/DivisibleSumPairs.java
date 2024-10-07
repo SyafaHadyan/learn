@@ -14,7 +14,7 @@ public class DivisibleSumPairs
         {
             for (int j = 0; j < pairs.size(); j++)
             {
-                System.out.println(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
+                System.out.println(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + " " + divisiblePairs);
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
                     //System.out.println(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
