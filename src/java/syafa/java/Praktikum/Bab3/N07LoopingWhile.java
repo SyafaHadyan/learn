@@ -1,6 +1,6 @@
 package syafa.java.Praktikum.Bab3;
 
-public class N06LoopingWhile
+public class N07LoopingWhile
 {
     public static void main(String[] args)
     {
