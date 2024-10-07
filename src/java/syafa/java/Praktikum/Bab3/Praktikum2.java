@@ -53,5 +53,6 @@ public class Praktikum2
             }
         }
         input.close();
+        System.out.printf("%s20s%-2c%.8f");
     }
 }
