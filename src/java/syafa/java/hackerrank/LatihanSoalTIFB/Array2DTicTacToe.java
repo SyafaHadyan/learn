@@ -168,6 +168,19 @@ public class Array2DTicTacToe
             return;
         }
 
+        // Fifth condition X
+        else if (third[0].equalsIgnoreCase("X") && third[1].equalsIgnoreCase("X") && third[2].equalsIgnoreCase("X"))
+        {
+            System.out.print("X Menang");
+            return;
+        }
+
+        // Fifth condition O
+        else if (third[0].equalsIgnoreCase("O") && third[1].equalsIgnoreCase("O") && third[2].equalsIgnoreCase("O"))
+        {
+            System.out.print("O Menang");
+            return;
+        }
         System.out.print("Draw");
     }
 }
