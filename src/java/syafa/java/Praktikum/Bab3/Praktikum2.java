@@ -26,7 +26,7 @@ public class Praktikum2
             }
             else if (selection == 1)
             {
-                //
+                selection = Math.pow(selection,3);
             }
             else if (selection == 2)
             {
