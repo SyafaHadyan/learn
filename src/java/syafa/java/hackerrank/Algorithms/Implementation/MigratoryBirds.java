@@ -13,6 +13,7 @@ public class MigratoryBirds
         int mostType = 0;
         for (int i = 0; i < sightings.size(); i++)
         {
+            /*
             if ((Integer.parseInt(sightings.get(i)) > mostSightings) && (Integer.parseInt(sightings.get(i)) > mostType))
             {
                 mostType = Integer.parseInt(sightings.get(i));
@@ -26,6 +27,7 @@ public class MigratoryBirds
             {
                 
             }
+            */
         }
     }
 }
