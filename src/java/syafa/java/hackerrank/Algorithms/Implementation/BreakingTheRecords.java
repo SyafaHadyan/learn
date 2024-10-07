@@ -8,11 +8,11 @@ public class BreakingTheRecords
         Scanner input = new Scanner(System.in);
         StringBuilder integer = new StringBuilder(input.nextLine());
         ArrayList<String> inputString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
-        ArrayList<Integer> score = new ArrayList<Integer>();
-        for (int i = 0; i < args.length; i++)
-        {
-            
-        }
         input.close();
+        ArrayList<Integer> score = new ArrayList<Integer>();
+        for (int i = 0; i < inputString.size(); i++)
+        {
+            //
+        }
     }
 }
