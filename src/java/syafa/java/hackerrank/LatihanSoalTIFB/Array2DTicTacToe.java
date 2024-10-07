@@ -22,11 +22,19 @@ public class Array2DTicTacToe
             }
             if (second[0].equalsIgnoreCase("X"))
             {
-                //
+                if (third[0].equalsIgnoreCase("X"))
+                {
+                    System.out.print("X Menang");
+                    return;
+                }
             }
             if (second[1].equalsIgnoreCase("X"))
             {
-                //
+                if (third[2].equalsIgnoreCase("X"))
+                {
+                    System.out.print("X Menang");
+                    return;
+                }
             }
         }
     }
