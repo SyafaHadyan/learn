@@ -19,8 +19,10 @@ public class DivisibleSumPairs
                 {
                     if (!pairsResult.contains(i + " " + j) || !pairsResult.contains(i + " " + j))
                     {
+                        System.out.print("No duplicate" + " ");
                         divisiblePairs++;
                     }
+                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
                     pairsResult.add(i + " " + j);
                     pairsResult.add(j + " " + i);
                     //pairsResult.add(Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(pairs.get(i)));
