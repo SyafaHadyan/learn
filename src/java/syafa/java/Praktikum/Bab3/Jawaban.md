@@ -59,3 +59,7 @@ looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `L
 ### 11. Hapus statement i++ pada baris 6, amati yang terjadi dan jelaskan
 
 Jika dihapus, kode akan terus `println 1`. Karena nilai akan selalu `<= 10` dan kode tidak akan berhenti.
+
+### 12. Ubah nilai dari variabel nilai baris ke 3 menjadi 11, amati yang terjadi dan jelaskan
+
+Jika `nilai` diubah menjadi berapa saja, kode akan tetap dijalankan dan tetap masuk `do-while` paling tidak sekali karena pengecekan akan dilakukan di akhir. Jadi kode akan `println 11`.
