@@ -66,9 +66,11 @@ Jika `nilai` diubah menjadi berapa saja, kode akan tetap dijalankan dan tetap ma
 
 ## `Break` and `Continue`
 
+### 13. Jelaskan dan perbaiki jika menemui kesalahan
+
 Kode akan dijalankan dan set `nilai = 1`, jika `nilai = 5`, `break` dan keluar, jika tidak, `println nilai`. `For-loop` kedua jika `nilai = 5`, maka continue dan skip kode dibawahnya dan lanjut loop.
 
-### Output
+#### Output
 
 ```txt
 pernyataan break batas 10
