@@ -34,7 +34,7 @@ public class Praktikum2
             else if (selection == 2)
             {
                 radius = Double.parseDouble(input.nextLine());
-                selection = (4/3) * PI * Math.pow(radius,3);
+                selection = (4.0/3.0) * PI * Math.pow(radius,3);
             }
             else if (selection == 3)
             {
