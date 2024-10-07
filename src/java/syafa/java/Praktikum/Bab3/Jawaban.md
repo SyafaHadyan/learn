@@ -63,3 +63,27 @@ Jika dihapus, kode akan terus `println 1`. Karena nilai akan selalu `<= 10` dan 
 ### 12. Ubah nilai dari variabel nilai baris ke 3 menjadi 11, amati yang terjadi dan jelaskan
 
 Jika `nilai` diubah menjadi berapa saja, kode akan tetap dijalankan dan tetap masuk `do-while` paling tidak sekali karena pengecekan akan dilakukan di akhir. Jadi kode akan `println 11`.
+
+## `Break` and `Continue`
+
+Kode akan dijalankan dan set `nilai = 1`, jika `nilai = 5`, `break` dan keluar, jika tidak, `println nilai`. `For-loop` kedua jika `nilai = 5`, maka continue dan skip kode dibawahnya dan lanjut loop.
+
+### Output
+
+```txt
+pernyataan break batas 10
+1
+2
+3
+4 < Kode break di 5 dan keluar loop
+pernyataan continue batas 10
+1
+2
+3
+4 < Kode skip di 5 dan lanjut ke 6
+6
+7
+8
+9
+10
+```
