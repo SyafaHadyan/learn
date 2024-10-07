@@ -47,7 +47,7 @@ public class MigratoryBirds
                     increment++;
                 }
             }
-            System.out.println(i);
+            System.out.println(i + " " + increment);
         }
     }
 }
