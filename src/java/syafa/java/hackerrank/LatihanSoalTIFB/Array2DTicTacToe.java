@@ -10,8 +10,6 @@ public class Array2DTicTacToe
         String[] second = input.nextLine().split(" ");
         String[] third = input.nextLine().split(" ");
         input.close();
-        String[] random = {"X Menang", "O Menang"};
-        int randomWin = new Random().nextInt(random.length);
 
         // First condition X
         if (first[0].equalsIgnoreCase("X"))
@@ -155,10 +153,21 @@ public class Array2DTicTacToe
             }
         }
         
-        else
+        // Fourth condition X
+        else if (second[0].equalsIgnoreCase("X") && second[1].equalsIgnoreCase("X") && second[2].equalsIgnoreCase("X"))
         {
-            System.out.print(random[randomWin]);
+            System.out.print("X Menang");
+            return;
         }
+        
+
+        // Fourth condition O
+        else if (second[0].equalsIgnoreCase("O") && second[1].equalsIgnoreCase("O") && second[2].equalsIgnoreCase("O"))
+        {
+            System.out.print("O Menang");
+            return;
+        }
+        
         System.out.print("Draw");
     }
 }
