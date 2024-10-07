@@ -19,7 +19,10 @@ public class Array2DTandaiPeta
         {
             for (int j = 0; j < Integer.parseInt(arraySize.get(1)); j++)
             {
-                map[i][j] = map[i][j].replace(null,".");
+                if (map[i][j].equalsIgnoreCase(null))
+                {
+                    map[i][j] = ".";
+                }
                 System.out.print(map[i][j]);
                 if (j < Integer.parseInt(arraySize.get(1)))
                 {
