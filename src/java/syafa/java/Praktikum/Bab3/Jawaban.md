@@ -41,3 +41,7 @@ looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `L
 ### 7. Hapus statemen `nilai++` pada baris 6 kemudian amati yang terjadi dan jelaskan
 
 Jika dihapus, `nilai` akan terus berada di `1` dan kode akan looping tanpa berhenti karena `nilai <= 10`.
+
+### 8. Ubah syntaks di atas untuk membuat deret angka kelipatan 2
+
+Jawaban ada di source code.
