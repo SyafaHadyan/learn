@@ -16,9 +16,10 @@ public class DivisibleSumPairs
             {
                 if (Integer.parseInt(pairs.get(i)) == 0)
                 {
-                    
+                    divisiblePairs++;
                 }
             }
         }
+        System.out.print(divisiblePairs);
     }
 }
