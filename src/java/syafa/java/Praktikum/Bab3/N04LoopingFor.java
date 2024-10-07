@@ -1,7 +1,7 @@
-package syafa.java.hackerrank.Praktikum.Bab3;
+package syafa.java.Praktikum.Bab3;
 import java.util.Scanner;
 
-public class N03LoopingFor
+public class N04LoopingFor
 {
     public static void main(String[] args)
     {
