@@ -7,6 +7,7 @@ public class DivisibleSumPairs
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> initialValue = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> pairs = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
