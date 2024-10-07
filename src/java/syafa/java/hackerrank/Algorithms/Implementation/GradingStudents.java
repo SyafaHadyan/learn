@@ -16,8 +16,9 @@ public class GradingStudents
                 //grades.set(i,grades.get(i) + j);
                 if (grades.set(i,grades.get(i) + j) % 5 == 0)
                 {
-                    System.out.println(grades.get(i) + j);
+                    //System.out.println(grades.get(i) + j);
                     grades.set(i,grades.get(i) + j);
+                    continue;
                     //System.out.println(grades.get(i));
                     //continue;
                 }
