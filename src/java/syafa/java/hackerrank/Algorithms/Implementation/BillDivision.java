@@ -16,8 +16,9 @@ public class BillDivision
         {
             if (i != Integer.parseInt(items.get(1)))
             {
-                
+                continue;
             }
+            totalPrice += Integer.parseInt(itemPrices.get(i));
         }
     }
 }
