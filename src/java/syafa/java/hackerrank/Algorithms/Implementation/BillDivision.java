@@ -18,10 +18,7 @@ public class BillDivision
                 continue;
             }
             totalPrice += Integer.parseInt(itemPrices.get(i));
-            //System.out.println(totalPrice);
         }
-        //System.out.println(totalPrice + "\n" + (totalPrice / 2));
-        System.out.println(totalPrice / 2);
         if ((totalPrice / 2) - charge != 0)
         {
             System.out.print(charge - (totalPrice / 2));
