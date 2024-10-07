@@ -13,5 +13,9 @@ public class NumberLineJumps
             System.out.print("NO");
             return;
         }
+        for (int i = 0; i < positionJump.size(); i++)
+        {
+            //
+        }
     }
 }
