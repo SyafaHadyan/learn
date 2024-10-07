@@ -27,10 +27,6 @@ public class Array2DTandaiPeta
             for (int j = 0; j < Integer.parseInt(arraySize.get(1)); j++)
             {
                 System.out.print(map[i][j]);
-                if (j < Integer.parseInt(arraySize.get(1)))
-                {
-                    System.out.print(' ');
-                }
             }
             if (i < Integer.parseInt(arraySize.get(0)))
             {
