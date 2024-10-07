@@ -134,3 +134,22 @@ pernyataan continue batas 10
 ```
 
 Karena `if` tidak menjalankan apa-apa, dan di dalam `else` ada `break`, jadi setiap kali perulangan, `break` akan dijalankan dan tidak akan `println nilai` walaupun saat `nilai = 5` kecuali `println nilai` ada di `else` sebelum `break`.
+
+
+### 16. 
+
+```txt
+pernyataan break batas 10
+1
+2
+3
+4
+
+pernyataan continue batas 10
+< di saat nilai <= 5, akan masuk di if dan continue, sehingga tidak println nilai
+6
+7
+8
+9
+10
+```
