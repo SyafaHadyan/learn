@@ -23,7 +23,7 @@ public class DivisibleSumPairs
                         continue;
                     }
                     pairsResult.add(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)));
-                    pairsResult.add(Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(pairs.get(i)));
+                    //pairsResult.add(Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(pairs.get(i)));
                     divisiblePairs++;
                 }
             }
