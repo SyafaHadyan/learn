@@ -15,19 +15,16 @@ public class DivisibleSumPairs
         {
             for (int j = 0; j < pairs.size(); j++)
             {
-                System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
                     if (Integer.parseInt(pairs.get(i)) == (Integer.parseInt(pairs.get(j))))
                     {
                         continue;
                     }
-                    //System.out.println(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)));
                     divisiblePairs++;
                 }
-                System.out.print(" " + divisiblePairs + "\n");
             }
         }
-        System.out.print(divisiblePairs);
+        System.out.print(divisiblePairs / 2);
     }
 }
