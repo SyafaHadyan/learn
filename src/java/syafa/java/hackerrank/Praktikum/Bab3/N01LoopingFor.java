@@ -25,7 +25,11 @@ public class N01LoopingFor
         for (int i = 0; i <= n; i++)
         {
             // setiap iterasi, n bertambah 1
-            System.out.println(i);
+            System.out.print(i);
+            if (i <= n)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
