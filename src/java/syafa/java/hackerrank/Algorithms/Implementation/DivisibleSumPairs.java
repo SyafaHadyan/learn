@@ -10,6 +10,7 @@ public class DivisibleSumPairs
         ArrayList<String> pairs = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int divisiblePairs = 0;
+        boolean duplicateMatch = true;
         ArrayList<String> pairsResult = new ArrayList<String>();
         for (int i = 0; i < pairs.size(); i++)
         {
@@ -20,8 +21,9 @@ public class DivisibleSumPairs
                     if (!pairsResult.contains(i + " " + j) || !pairsResult.contains(i + " " + j))
                     {
                         divisiblePairs++;
+                        duplicateMatch = false;
                     }
-                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + "\n");
+                    System.out.print(Integer.parseInt(pairs.get(i)) + " " + Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(initialValue.get(1)) + " " + duplicateMatch);
                     pairsResult.add(i + " " + j);
                     pairsResult.add(j + " " + i);
                     //pairsResult.add(Integer.parseInt(pairs.get(j)) + " " + Integer.parseInt(pairs.get(i)));
