@@ -6,7 +6,7 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%-15s%-2c","Masukkan nilai n",'=');
+        System.out.printf("%-17s%-2c","Masukkan nilai n",'=');
         int staircaseSize = Integer.parseInt(input.nextLine());
         int space = staircaseSize - 1;
         input.close();
@@ -19,7 +19,7 @@ public class Praktikum0
             space--;
             for (int j = 0; j < i + 1; j++)
             {
-                System.out.print('#');
+                System.out.print('*');
             }
             if (i < staircaseSize)
             {
