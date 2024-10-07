@@ -24,6 +24,10 @@ public class GradingStudents
         for (int i = 0; i < grades.size(); i++)
         {
             System.out.print(grades.get(i));
+            if (i < grades.size())
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
