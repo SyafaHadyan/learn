@@ -21,5 +21,9 @@ public class GradingStudents
             }
         }
         input.close();
+        for (int i = 0; i < grades.size(); i++)
+        {
+            System.out.print(grades.get(i));
+        }
     }
 }
