@@ -15,6 +15,7 @@ public class Array2DTandaiPeta
             String[] markAt = input.nextLine().split(" ");
             map[Integer.parseInt(markAt[0])][Integer.parseInt(markAt[1])] = "x";
         }
+        input.close();
         for (int i = 0; i < arrayHeight; i++)
         {
             for (int j = 0; j < arrayWidth; j++)
