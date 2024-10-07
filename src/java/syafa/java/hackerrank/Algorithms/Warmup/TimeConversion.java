@@ -10,8 +10,7 @@ public class TimeConversion
         input.close();
         ArrayList<Integer> timeInteger = new ArrayList<Integer>();
         int hourConversion = 12;
-        String temporary = inputTimeString.get(2).replace("AM","");
-        if (temporary.matches("\\d+"))
+        if (inputTimeString.get(2).replace("AM","").matches("\\d+"))
         {
             hourConversion = -12;
         }
