@@ -14,7 +14,10 @@ public class BillDivision
         int totalPrice = 0;
         for (int i = 0; i < itemPrices.size(); i++)
         {
-            //
+            if (i != Integer.parseInt(items.get(1)))
+            {
+                
+            }
         }
     }
 }
