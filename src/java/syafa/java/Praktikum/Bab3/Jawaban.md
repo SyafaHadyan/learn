@@ -51,3 +51,7 @@ Jawaban ada di source code [`N08LoopingWhile.java`](https://github.com/SyafaHady
 ### 9. Jelaskan dan perbaiki jika menemui kesalahan
 
 Kode akan println `nilai` yang kemudian `increment` `nilai`. Kode akan terus berjalan hingga `nilai <= 10`.
+
+### 10. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan for, while dan do while
+
+looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `LoopCondition` memenuhi. Sedangakn `do-while` akan dijalankan paling tidak sekali dan akan dicek di akhir. Sedangkan `while` akan dilakukan pengecekan di awal dan harus ada nilai yang membuat loop berhenti di dalam `while`, kalau tidak, akan terjadi `infinite loop`.
