@@ -11,14 +11,13 @@ public class DivisibleSumPairs
         input.close();
         int divisiblePairs = 0;
         ArrayList<String> pairsResult = new ArrayList<String>();
-        // TODO: Match must not a duplicate
         for (int i = 0; i < pairs.size(); i++)
         {
             for (int j = 0; j < pairs.size(); j++)
             {
                 if ((Integer.parseInt(pairs.get(i)) + Integer.parseInt(pairs.get(j))) % Integer.parseInt(initialValue.get(1)) == 0)
                 {
-                    if (!pairsResult.contains(i + " " + j))
+                    if (!pairsResult.contains(i + " " + j) || !pairsResult.contains(i + " " + j))
                     {
                         divisiblePairs++;
                     }
