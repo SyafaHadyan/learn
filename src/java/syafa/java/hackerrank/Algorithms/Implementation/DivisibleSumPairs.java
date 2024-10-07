@@ -20,7 +20,6 @@ public class DivisibleSumPairs
                     if (pairsResult.contains(i + " " + j) || pairsResult.contains(i + " " + j))
                     {
                         divisiblePairs++;
-                        duplicateMatch = false;
                     }
                     pairsResult.add(i + " " + j);
                     pairsResult.add(j + " " + i);
