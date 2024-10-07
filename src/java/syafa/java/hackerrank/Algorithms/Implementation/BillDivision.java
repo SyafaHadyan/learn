@@ -11,5 +11,10 @@ public class BillDivision
         int charge = Integer.parseInt(input.nextLine());
         String bonAppetit = "Bon Appetit";
         input.close();
+        int totalPrice = 0;
+        for (int i = 0; i < itemPrices.size(); i++)
+        {
+            //
+        }
     }
 }
