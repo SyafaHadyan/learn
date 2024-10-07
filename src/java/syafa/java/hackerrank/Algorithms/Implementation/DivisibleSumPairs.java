@@ -10,6 +10,7 @@ public class DivisibleSumPairs
         ArrayList<String> pairs = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int divisiblePairs = 0;
+        // TODO: Match must not a duplicate
         for (int i = 0; i < pairs.size(); i++)
         {
             for (int j = 0; j < pairs.size(); j++)
