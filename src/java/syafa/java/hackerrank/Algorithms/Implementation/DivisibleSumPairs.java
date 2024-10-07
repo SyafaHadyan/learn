@@ -11,7 +11,10 @@ public class DivisibleSumPairs
         input.close();
         for (int i = 0; i < pairs.size(); i++)
         {
-            
+            for (int j = 0; j < pairs.size(); j++)
+            {
+                
+            }
         }
     }
 }
