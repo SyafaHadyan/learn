@@ -31,7 +31,7 @@ public class Praktikum2
             }
             else if (selection == 2)
             {
-                selection = (4/3) * 
+                selection = (4/3) * Math.pow(PI,3) * // radius;
             }
             else if (selection == 3)
             {
