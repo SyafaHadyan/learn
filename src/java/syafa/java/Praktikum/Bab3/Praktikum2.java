@@ -16,6 +16,7 @@ public class Praktikum2
                             "5. HITUNG VOLUME LIMAS SEGITIGA",
                             "MASUKKAN PILIHAN ANDA",':');
         boolean inputValid = false;
+        final double PI = 3.1415926535;
         while (!inputValid)
         {
             double selection = Double.parseDouble(input.nextLine());
@@ -30,7 +31,7 @@ public class Praktikum2
             }
             else if (selection == 2)
             {
-                //
+                selection = (4/3) * 
             }
             else if (selection == 3)
             {
