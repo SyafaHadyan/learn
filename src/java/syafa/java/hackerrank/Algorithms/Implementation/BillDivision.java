@@ -7,6 +7,7 @@ public class BillDivision
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> items = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> itemPrices = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
