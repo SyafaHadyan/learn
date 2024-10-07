@@ -30,10 +30,10 @@ Jika dihapus, maka kode akan berjalan tanpa henti `infinite loop`.
 
 ## Looping While
 
-### 3. Jelaskan dan perbaiki jika menemui kesalahan
+### 5. Jelaskan dan perbaiki jika menemui kesalahan
 
 Kode akan berjalan dan akan memasuki `do-while` loop kemudian `println nilai` dan `increment` `nilai`, jika `nilai <= 10`, program akan terus berjalan hingga `nilai = 10`.
 
-### 4. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan `for` dan `while`
+### 6. Setelah mengamati hasil keluaran, sebutkan perbedaan looping dengan menggunakan `for` dan `while`
 
 looping menggunakan `for` akan dijalankan jika `InitializationExpression` dan `LoopCondition` memenuhi. Sedangakn `do-while` akan dijalankan paling tidak sekali dan akan dicek di akhir. Sedangkan `while` akan dilakukan pengecekan di awal dan harus ada nilai yang membuat loop berhenti di dalam `while`.
