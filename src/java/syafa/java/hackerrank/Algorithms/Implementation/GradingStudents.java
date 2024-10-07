@@ -17,7 +17,7 @@ public class GradingStudents
                 {
                     if ((grades.get(i)) + 2 < 40)
                     {
-
+                        continue;
                     }
                     grades.set(i,grades.get(i) + j);
                 }
