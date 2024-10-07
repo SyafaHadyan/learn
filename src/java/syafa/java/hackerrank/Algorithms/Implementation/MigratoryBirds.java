@@ -10,6 +10,7 @@ public class MigratoryBirds
         ArrayList<String> sightings = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         int mostSightings = 0;
+        int mostType = 0;
         for (int i = 0; i < args.length; i++)
         {
             //
