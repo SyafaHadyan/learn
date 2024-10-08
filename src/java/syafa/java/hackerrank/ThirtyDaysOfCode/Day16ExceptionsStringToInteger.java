@@ -9,7 +9,7 @@ public class Day16ExceptionsStringToInteger
         String userInput = input.nextLine();
         try
         {
-            System.out.print(Integer.parseInt());
+            System.out.print(Integer.parseInt(userInput));
         }
         catch (NumberFormatException e)
         {
