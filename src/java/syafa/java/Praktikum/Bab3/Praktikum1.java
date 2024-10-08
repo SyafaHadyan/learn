@@ -106,14 +106,18 @@ public class Praktikum1
         for (int i = 0; i < 8; i++)
         {
             String firstSpace = String.format("%" + spaceBeforeA + "s","");
-            String secondSpace = String.format("%" + spaceMiddleA + "s","");;
             if (i == 0)
             {
                 System.out.printf("%s%c",firstSpace,'A');
             }
-            System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
-            System.out.print("\n");
-
+            else
+            {
+                String secondSpace = String.format("%" + spaceMiddleA + "s","");
+                System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
+                System.out.print("\n");
+            }
+            spaceBeforeA--;
+            spaceMiddleA += 2;
         }
     }
 }
