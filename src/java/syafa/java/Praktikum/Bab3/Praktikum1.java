@@ -167,6 +167,15 @@ public class Praktikum1
                 System.out.print('F');
                 System.out.print("\n");
             }
+            else if (i == 4)
+            {
+                System.out.println("ill do it later");
+            }
+            else
+            {
+                System.out.print('F');
+                System.out.print("\n");
+            }
         }
     }
 }
