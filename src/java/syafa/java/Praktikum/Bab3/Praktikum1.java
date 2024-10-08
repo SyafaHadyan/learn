@@ -58,5 +58,17 @@ public class Praktikum1
         {
             System.out.print(' ');
         }
+        for (int i = 0; i < 4; i++)
+        {
+            if (i < 4 && i != 0)
+            {
+                System.out.print(' ');
+            }
+            System.out.print('S');
+            if (i == 3)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
