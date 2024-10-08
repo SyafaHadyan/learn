@@ -118,13 +118,16 @@ public class Praktikum1
             }
             else if (i == 4)
             {
-                for (int j = 0; j < 5; j++)
+                for (int j = 0; j < 4; j++)
                 {
                     if (j == 0)
                     {
                         System.out.printf("%4c",'A');
                     }
+                    System.out.print(' ');
+                    System.out.print('A');
                 }
+                spaceMiddleA += 2;
             }
             else
             {
