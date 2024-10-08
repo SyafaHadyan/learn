@@ -68,7 +68,7 @@ public class Praktikum2
             }
             else
             {
-                System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n");
+                System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
                 inputValid = false;
             }
         }
