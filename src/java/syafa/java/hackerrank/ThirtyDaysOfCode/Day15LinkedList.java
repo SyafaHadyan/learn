@@ -7,6 +7,11 @@ public class Day15LinkedList
     {
         Scanner input = new Scanner(System.in);
         int nodes = Integer.parseInt(input.nextLine());
+        ArrayList<Integer> data = new ArrayList<Integer>();
+        for (int i = 0; i < nodes; i++)
+        {
+            
+        }
         input.close();
     }
 }
