@@ -12,12 +12,13 @@ public class FunnyString
         ArrayList<String> checkFunny = new ArrayList<String>();
         ArrayList<Integer> compareAscii = new ArrayList<Integer>();
         ArrayList<Integer> compareAsciiReversed = new ArrayList<Integer>();
-        String checkString = "";
+        StringBuilder checkString = new StringBuilder();
         for (int i = 0; i < queries; i++)
         {
             compareAscii.clear();
             compareAsciiReversed.clear();
-            checkString = input.nextLine();
+            checkString.append(input.nextLine());
+            System.out.println(checkString);
             System.out.println(compareAscii + "\n" + compareAsciiReversed);
             for (int j = 0; j < checkString.length(); j++)
             {
@@ -45,6 +46,7 @@ public class FunnyString
             compareAscii.clear();
             compareAsciiReversed.clear();
             System.out.println(compareAscii + "\n" + compareAsciiReversed);
+            System.out.println(checkString);
         }
         input.close();
         for (int i = 0; i < checkFunny.size(); i++)
@@ -55,7 +57,5 @@ public class FunnyString
                 System.out.print("\n");
             }
         }
-        System.out.println(compareAscii);
-        System.out.print(compareAsciiReversed);
     }
 }
