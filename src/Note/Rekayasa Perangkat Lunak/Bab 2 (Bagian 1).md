@@ -151,3 +151,8 @@ Each model represents a process from a particular perspective (context).
 ### Spiral
 
 ![Spiral](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/Spiral.png)
+
+- Introduced by Boehm (1988).
+- Combining the features of prototyping and waterfall models.
+- Starts with basic and clear functionality and work.
+- Increments into the final complete product.
