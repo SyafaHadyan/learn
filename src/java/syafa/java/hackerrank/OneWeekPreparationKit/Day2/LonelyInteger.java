@@ -9,5 +9,6 @@ public class LonelyInteger
         int arraySize = Integer.parseInt(input.nextLine());
         ArrayList<String> arrayString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        ArrayList<Integer> arrayInteger = new ArrayList<Integer>();
     }
 }
