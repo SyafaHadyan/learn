@@ -25,7 +25,7 @@ public class FunnyString
             }
             for (int j = 0; j < checkString.length() - 1; j++)
             {
-                compareAscii.add(checkAscii.get(j + 1) - checkAscii.get(j));
+                compareAscii.add(Math.abs(checkAscii.get(j + 1) - checkAscii.get(j)));
             }
             if (checkAscii.equals(checkAsciiReversed))
             {
