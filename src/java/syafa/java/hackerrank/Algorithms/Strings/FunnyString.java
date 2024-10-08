@@ -35,6 +35,8 @@ public class FunnyString
                 continue;
             }
             checkFunny.add("Not funny");
+            compareAscii.clear();
+            compareAsciiReversed.clear();
         }
         input.close();
         for (int i = 0; i < checkFunny.size(); i++)
