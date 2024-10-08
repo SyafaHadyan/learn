@@ -17,7 +17,7 @@ public class Day17MoreExceptions
             }
             else
             {
-                result.add(String.valueOf(Math.pow(Integer.parseInt(number.get(0)),Integer.parseInt(number.get(1)))));
+                result.add(String.valueOf(String.format("%.0f",(Math.pow(Integer.parseInt(number.get(0)),Integer.parseInt(number.get(1)))))));
             }
             number.clear();
         }
