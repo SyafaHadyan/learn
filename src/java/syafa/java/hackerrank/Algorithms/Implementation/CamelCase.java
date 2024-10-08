@@ -9,13 +9,15 @@ public class CamelCase
         String checkString = input.nextLine();
         input.close();
         int sentenceCount = 1;
+        ArrayList<Character> checkCharacter = new ArrayList<Character>();
         for (int i = 0; i < checkString.length(); i++)
         {
+            checkCharacter.add(checkString.charAt(i))
             if (Character.isUpperCase(checkString.charAt(i)));
             {
                 sentenceCount++;
             }
-            System.out.println(checkString.charAt(i));
+            System.out.println(checkCharacter);
         }
         System.out.print(sentenceCount);
     }
