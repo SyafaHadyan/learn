@@ -40,6 +40,10 @@ public class Praktikum1
                 System.out.print(' ');
             }
             System.out.print('S');
+            if (i == 2)
+            {
+                System.out.print("\n");
+            }
         }
         for (int i = 0; i < 3; i++)
         {
@@ -48,6 +52,7 @@ public class Praktikum1
                 System.out.print(' ');
             }
             System.out.print('S');
+            System.out.print("\n");
         }
     }
 }
