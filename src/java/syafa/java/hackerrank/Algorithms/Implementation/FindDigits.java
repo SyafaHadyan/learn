@@ -24,6 +24,13 @@ public class FindDigits
             divisorCount = 0;
         }
         input.close();
-        System.out.print(divisorCount);
+        for (int i = 0; i < divisorCountArrList.size(); i++)
+        {
+            System.out.print(divisorCountArrList.get(i));
+            if (i < divisorCountArrList.size() - 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
