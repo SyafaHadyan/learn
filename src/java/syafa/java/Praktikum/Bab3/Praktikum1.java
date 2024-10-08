@@ -73,7 +73,11 @@ public class Praktikum1
             }
         }
         for (int i = 0; i < 4; i++)
-        {     
+        {
+            if (i == 0)
+            {
+                System.out.print("\n");
+            }
             String firstSpace = String.format("%" + spaceBeforeY + "s","");
             String secondSpace = String.format("%" + spaceMiddleY + "s","");
             System.out.printf("%s%c%s%c",firstSpace,'Y',secondSpace,'Y');
