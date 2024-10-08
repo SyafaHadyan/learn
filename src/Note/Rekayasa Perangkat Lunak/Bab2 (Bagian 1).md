@@ -58,6 +58,11 @@ Each model represents a process from a particular perspective (context).
 
 ![Waterfall](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/Waterfall.png)
 
+- Introduced by Royce (1970).
+- Interaction between subsequent phases -> next phase begins once the previous phase is complete.
+- Quality must be assessed and controlled in all phases
+- Each phase has specific deliverables
+
 ### V
 
 ### Prototyping
