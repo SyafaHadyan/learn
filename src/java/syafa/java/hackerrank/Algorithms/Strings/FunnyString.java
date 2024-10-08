@@ -18,6 +18,7 @@ public class FunnyString
             compareAscii.clear();
             compareAsciiReversed.clear();
             checkString = input.nextLine();
+            System.out.println(compareAscii + "\n" + compareAsciiReversed);
             for (int j = 0; j < checkString.length(); j++)
             {
                 checkAscii.add((int) checkString.charAt(j));
@@ -31,16 +32,19 @@ public class FunnyString
                 compareAscii.add(Math.abs(checkAscii.get(j + 1) - checkAscii.get(j)));
                 compareAsciiReversed.add(Math.abs(checkAsciiReversed.get(j + 1) - checkAsciiReversed.get(j)));
             }
+            System.out.println(compareAscii + "\n" + compareAsciiReversed);
             if (compareAscii.equals(compareAsciiReversed))
             {
                 checkFunny.add("Funny");
                 compareAscii.clear();
                 compareAsciiReversed.clear();
+                System.out.println(compareAscii + "\n" + compareAsciiReversed);
                 continue;
             }
             checkFunny.add("Not funny");
             compareAscii.clear();
             compareAsciiReversed.clear();
+            System.out.println(compareAscii + "\n" + compareAsciiReversed);
         }
         input.close();
         for (int i = 0; i < checkFunny.size(); i++)
