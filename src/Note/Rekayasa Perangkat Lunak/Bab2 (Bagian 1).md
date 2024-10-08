@@ -101,6 +101,13 @@ Each model represents a process from a particular perspective (context).
 - Increased quality.
 - Higher chance of success over the waterfall model due to the development of test plans early on during the life cycle, e.g. unit test is planned during detail design phase.
 
+#### Kekurangan V
+
+- All requirements are known up-front.
+- Inflexible, like waterfall model.
+- Clients not being able to see the product until it is completely finished.
+- More time and resources.
+
 ### Prototyping
 
 ### Spiral
