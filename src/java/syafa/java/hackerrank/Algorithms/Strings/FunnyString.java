@@ -45,6 +45,7 @@ public class FunnyString
             checkFunny.add("Not funny");
             compareAscii.clear();
             compareAsciiReversed.clear();
+            checkString.delete(0,checkString.length());
             System.out.println(compareAscii + "\n" + compareAsciiReversed);
             System.out.println(checkString);
         }
