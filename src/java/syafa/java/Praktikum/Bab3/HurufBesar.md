@@ -44,15 +44,15 @@ A             A
 ## 04 F
 
 ```txt
-F F F F F  
-F          
-F          
-F          
-F F F F    
-F          
-F          
-F          
-F          
+F F F F F
+F
+F
+F
+F F F F
+F
+F
+F
+F
 ```
 
 ## 05 A
