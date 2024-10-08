@@ -26,3 +26,10 @@
 - IT professionals and end users must be trained accordingly.
 - Requires full commitment to DSDM process.
 - Involves progressive development of requirements.
+
+### Menerapkan DSDM Bila
+
+- Systems that are time constrained.
+- Systems where requirements can be prioritized.
+- Interactive systems, where functionality is clearly demonstrable at the user interface.
+- Inappropriate for critical-mission projects.
