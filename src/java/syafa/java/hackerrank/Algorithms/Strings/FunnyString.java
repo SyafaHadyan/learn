@@ -35,7 +35,7 @@ public class FunnyString
             }
             else
             {
-                checkFunny.add("Not funny");
+                checkFunny.add("Not Funny");
             }
             checkAscii.clear();
             checkAsciiReversed.clear();
