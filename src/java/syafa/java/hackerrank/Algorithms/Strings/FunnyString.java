@@ -16,7 +16,7 @@ public class FunnyString
             checkAscii.add((int) checkString.charAt(i));
             for (int j = checkString.length() - 1; j >= 0; j--)
             {
-                
+                checkAsciiReversed.add((int) checkString.charAt(j));
             }
         }
         input.close();
