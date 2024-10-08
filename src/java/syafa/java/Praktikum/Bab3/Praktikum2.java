@@ -19,6 +19,8 @@ public class Praktikum2
         double selection = 0d;
         double radius = 0d;
         double height = 0d;
+        double firstSide = 0d;
+        double secondSide = 0d;
         final double PI = 3.1415926535;
         while (!inputValid)
         {
