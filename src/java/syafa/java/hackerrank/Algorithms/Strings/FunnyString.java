@@ -9,6 +9,7 @@ public class FunnyString
         int queries = Integer.parseInt(input.nextLine());
         ArrayList<Integer> checkAscii = new ArrayList<Integer>();
         ArrayList<Integer> checkAsciiReversed = new ArrayList<Integer>();
+        ArrayList<String> checkFunny = new ArrayList<String>();
         String checkString = "";
         for (int i = 0; i < queries; i++)
         {
@@ -18,6 +19,12 @@ public class FunnyString
             {
                 checkAsciiReversed.add((int) checkString.charAt(j));
             }
+            if (checkAscii.equals(checkAsciiReversed))
+            {
+                checkFunny.add("Funny");
+                continue;
+            }
+            checkFunny.add("Not funny");
         }
         input.close();
     }
