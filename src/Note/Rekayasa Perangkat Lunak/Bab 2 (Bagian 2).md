@@ -10,3 +10,12 @@
 - DSDM Consortium became Agile Business Consortium (2016) -> url: [https://www.agilebusiness.org/](https://www.agilebusiness.org/).
 - Improvement to RAD (lack of rigour -> reduced quality).
 - Implements Agile approach (Agile Manifesto).
+
+### Kelebihan DSDM
+
+- Early implementation to business problems.
+- Reducing risk of building the wrong solution.
+- Incorporate stakeholders into the development process.
+- Incremental delivery.
+- Users will be better trained.
+- Deployment is more likely to go smoothly.
