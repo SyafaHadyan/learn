@@ -97,5 +97,9 @@ public class Praktikum1
             System.out.print('Y');
             System.out.print("\n");
         }
+        for (int i = 0; i < 8; i++)
+        {
+            //
+        }
     }
 }
