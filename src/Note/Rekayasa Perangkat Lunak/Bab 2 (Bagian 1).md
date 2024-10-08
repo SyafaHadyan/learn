@@ -171,3 +171,9 @@ Each model represents a process from a particular perspective (context).
 - High cost and time to reach the final product.
 - Risk assessment expertise is required.
 - Spiral may continue indefinetely.
+
+
+#### Menerapkan Spiral Bila
+
+- Requirements are incomplete but clear.
+- Project is large and expensive with high risk (mission-critical projects).
