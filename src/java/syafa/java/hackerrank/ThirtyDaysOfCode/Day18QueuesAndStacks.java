@@ -10,7 +10,7 @@ public class Day18QueuesAndStacks
         input.close();
         StringBuilder reverseString = new StringBuilder();
         //ArrayList<Character> reverseString = new ArrayList<Character>();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < checkString.length(); i++)
         {
             
         }
