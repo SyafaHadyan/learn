@@ -38,5 +38,7 @@ public class FunnyString
                 System.out.print("\n");
             }
         }
+        System.out.println(checkAscii);
+        System.out.print(checkAsciiReversed);
     }
 }
