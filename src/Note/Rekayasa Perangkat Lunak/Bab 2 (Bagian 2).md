@@ -70,3 +70,9 @@
 - Potentially scope creep.
 - Neglected planning.
 - Requires experienced developers.
+
+### Menerapkan Extreme Programming (XP) Bila
+
+- Requirements are vague and rapidly changing.
+- For small-to-medium size projects.
+- Not recommended for a team with more than ten members.
