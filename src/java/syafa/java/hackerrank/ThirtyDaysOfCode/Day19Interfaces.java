@@ -12,6 +12,9 @@ public class Day19Interfaces
         for (int i = 1; i <= 6; i++)
         {
             if (number % i == 0)
+            {
+                sumDivisor += i;
+            }
         }
     }
 }
