@@ -54,5 +54,9 @@ public class Praktikum1
             System.out.print('S');
             System.out.print("\n");
         }
+        for (int i = 0; i < 2; i++)
+        {
+            System.out.print(' ');
+        }
     }
 }
