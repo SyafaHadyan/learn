@@ -14,5 +14,9 @@ public class Day18QueuesAndStacks
         {
             reverseString.append(checkString.charAt(i));
         }
+        if (reverseString.equals(checkString))
+        {
+            System.out.print("The word, " + checkString + ", is a palindrome.");
+        }
     }
 }
