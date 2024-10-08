@@ -14,7 +14,7 @@ public class FunnyString
         for (int i = 0; i < queries; i++)
         {
             checkString = input.nextLine();
-            for (int j = 0; j < args.length; j++)
+            for (int j = 0; j < checkString.length(); j++)
             {
                 checkAscii.add((int) checkString.charAt(j));
             }
@@ -22,7 +22,7 @@ public class FunnyString
             {
                 checkAsciiReversed.add((int) checkString.charAt(j));
             }
-            if (checkAscii.equals(checkAsciiReversed) == true)
+            if (checkAscii.equals(checkAsciiReversed))
             {
                 checkFunny.add("Funny");
                 continue;
