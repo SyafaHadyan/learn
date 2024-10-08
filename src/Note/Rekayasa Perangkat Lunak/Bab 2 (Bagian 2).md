@@ -77,4 +77,6 @@
 - For small-to-medium size projects.
 - Not recommended for a team with more than ten members.
 
+## SCRUM
+
 ![SCRUM](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/SCRUM.png)
