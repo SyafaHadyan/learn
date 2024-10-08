@@ -149,8 +149,11 @@ public class Praktikum1
             {
                 for (int j = 0; j < 5; j++)
                 {
+                    if (j != 0)
+                    {
+                        System.out.print(' ');
+                    }
                     System.out.print('F');
-                    System.out.print(' ');
                 }
             }
         }
