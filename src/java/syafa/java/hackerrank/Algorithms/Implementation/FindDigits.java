@@ -9,7 +9,7 @@ public class FindDigits
         int valueCheck = Integer.parseInt(input.nextLine());
         String numberString = "";
         int divisorCount = 0;
-        //ArrayList<Integer> number = new ArrayList<Integer>();
+        ArrayList<Integer> divisorCountArrList = new ArrayList<Integer>();
         for (int i = 0; i < valueCheck; i++)
         {
             numberString = input.nextLine();
@@ -17,10 +17,12 @@ public class FindDigits
             {
                 if (Integer.parseInt(numberString) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
                 {
-
+                    divisorCount++;
                 }
             }
+            divisorCountArrList.add(divisorCount);
         }
         input.close();
+        System.out.print(divisorCount);
     }
 }
