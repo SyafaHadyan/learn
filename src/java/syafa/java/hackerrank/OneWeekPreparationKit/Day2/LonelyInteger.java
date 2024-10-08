@@ -14,5 +14,6 @@ public class LonelyInteger
         {
             arrayInteger.add(Integer.parseInt(arrayString.get(i)));
         }
+        Collections.sort(arrayInteger);
     }
 }
