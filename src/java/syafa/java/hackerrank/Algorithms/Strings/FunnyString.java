@@ -15,11 +15,7 @@ public class FunnyString
         StringBuilder checkString = new StringBuilder();
         for (int i = 0; i < queries; i++)
         {
-            compareAscii.clear();
-            compareAsciiReversed.clear();
             checkString.append(input.nextLine());
-            System.out.println(checkString);
-            System.out.println(compareAscii + "\n" + compareAsciiReversed);
             for (int j = 0; j < checkString.length(); j++)
             {
                 checkAscii.add((int) checkString.charAt(j));
@@ -39,15 +35,12 @@ public class FunnyString
                 checkFunny.add("Funny");
                 compareAscii.clear();
                 compareAsciiReversed.clear();
-                System.out.println(compareAscii + "\n" + compareAsciiReversed);
                 continue;
             }
             checkFunny.add("Not funny");
             compareAscii.clear();
             compareAsciiReversed.clear();
             checkString.delete(0,checkString.length());
-            System.out.println(compareAscii + "\n" + compareAsciiReversed);
-            System.out.println(checkString);
         }
         input.close();
         for (int i = 0; i < checkFunny.size(); i++)
