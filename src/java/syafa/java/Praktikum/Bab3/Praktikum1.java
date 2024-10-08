@@ -70,5 +70,13 @@ public class Praktikum1
                 System.out.print("\n");
             }
         }
+        for (int i = 0; i < 4; i++)
+        {
+            int spaceBefore = 0;
+            int spaceMiddle = 7;
+            String firstSpace = String.format("%" + spaceBefore + "c","");
+            String secondSpace = String.format("%" + spaceMiddle + "c","");
+            System.out.printf("%s%c%s%c");
+        }
     }
 }
