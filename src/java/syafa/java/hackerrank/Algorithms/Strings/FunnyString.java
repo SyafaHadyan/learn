@@ -7,6 +7,8 @@ public class FunnyString
     {
         Scanner input = new Scanner(System.in);
         int queries = Integer.parseInt(input.nextLine());
+        ArrayList<Integer> checkAscii = new ArrayList<Integer>();
+        ArrayList<Integer> checkAsciiReversed = new ArrayList<Integer>();
         String checkString = "";
         for (int i = 0; i < queries; i++)
         {
