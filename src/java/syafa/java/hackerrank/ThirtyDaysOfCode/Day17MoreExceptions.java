@@ -10,7 +10,7 @@ public class Day17MoreExceptions
         ArrayList<String> number = new ArrayList<String>();
         for (int i = 0; i < recursion; i++)
         {
-            //
+            number.add(Arrays.asList(Arrays.toString(input.nextLine().split(" "))));
         }
         input.close();
     }
