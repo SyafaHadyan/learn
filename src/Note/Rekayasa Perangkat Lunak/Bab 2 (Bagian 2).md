@@ -33,3 +33,7 @@
 - Systems where requirements can be prioritized.
 - Interactive systems, where functionality is clearly demonstrable at the user interface.
 - Inappropriate for critical-mission projects.
+
+## Extreme Programming (XP)
+
+![Extreme Programming](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/ExtremeProgramming.png)
