@@ -13,5 +13,13 @@ public class Day15LinkedList
             data.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
+        for (int i = 0; i < data.size(); i++)
+        {
+            System.out.print(data.get(i));
+            if (i < data.size() - 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
