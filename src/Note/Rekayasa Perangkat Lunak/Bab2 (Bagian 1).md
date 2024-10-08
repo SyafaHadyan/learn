@@ -56,7 +56,7 @@ Each model represents a process from a particular perspective (context).
 
 ### Waterfall
 
-
+![Waterfall](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/Waterfall.png)
 
 ### V
 
