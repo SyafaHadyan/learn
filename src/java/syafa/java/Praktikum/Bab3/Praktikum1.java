@@ -103,13 +103,16 @@ public class Praktikum1
             System.out.print('Y');
             System.out.print("\n");
         }
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 8; i++)
         {
             if (i == 0)
             {
                 System.out.print("\n");
             }
-            String firstSpace = String.format("%" + spaceBeforeA + "s","");
+            if (i < 7)
+            {
+                String firstSpace = String.format("%" + spaceBeforeA + "s","");
+            }
             if (i == 0)
             {
                 System.out.printf("%s%c",firstSpace,'A');
