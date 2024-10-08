@@ -1,4 +1,4 @@
-package syafa.java.hackerrank.Algorithms.Implementation;
+package syafa.java.hackerrank.Algorithms.Strings;
 import java.util.*;
 
 public class CamelCase
