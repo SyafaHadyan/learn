@@ -143,5 +143,16 @@ public class Praktikum1
                 spaceMiddleA = 1;
             }
         }
+        for (int i = 0; i < 9; i++)
+        {
+            if (i == 0)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    System.out.print('F');
+                    System.out.print(' ');
+                }
+            }
+        }
     }
 }
