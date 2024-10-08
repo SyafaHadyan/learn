@@ -73,6 +73,7 @@ public class Praktikum2
             {
                 System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
                 inputValid = false;
+                continue;
             }
             System.out.printf("%-25s%-2c%.8f\n\n","Hasil",':',selection);
         }
