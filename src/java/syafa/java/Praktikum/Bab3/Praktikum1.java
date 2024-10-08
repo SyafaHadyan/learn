@@ -85,5 +85,14 @@ public class Praktikum1
             spaceMiddleY -= 2;
             System.out.print("\n");
         }
+        for (int i = 0; i < 5; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                System.out.print(' ');
+            }
+            System.out.print('Y');
+            System.out.print("\n");
+        }
     }
 }
