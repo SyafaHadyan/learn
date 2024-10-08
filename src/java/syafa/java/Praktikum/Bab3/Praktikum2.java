@@ -60,6 +60,7 @@ public class Praktikum2
             }
             else
             {
+                System.out.print("\n\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
                 inputValid = false;
             }
         }
