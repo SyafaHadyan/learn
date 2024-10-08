@@ -8,5 +8,9 @@ public class Day19Interfaces
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
         input.close();
+        for (int i = 1; i <= 6; i++)
+        {
+            //
+        }
     }
 }
