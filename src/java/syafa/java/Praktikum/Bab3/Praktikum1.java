@@ -82,7 +82,7 @@ public class Praktikum1
             String secondSpace = String.format("%" + spaceMiddle + "s","");
             System.out.printf("%s%c%s%c",firstSpace,'Y',secondSpace,'Y');
             spaceBefore++;
-            spaceMiddle--;
+            spaceMiddle -= 2;
             System.out.print("\n");
         }
     }
