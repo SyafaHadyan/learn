@@ -116,6 +116,16 @@ public class Praktikum1
             {
                 System.out.printf("%c%s%c",'A',secondSpace,'A');
             }
+            else if (i == 4)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    if (j == 0)
+                    {
+                        System.out.printf("%4c",'A');
+                    }
+                }
+            }
             else
             {
                 String firstSpace = String.format("%" + spaceBeforeA + "s","");
