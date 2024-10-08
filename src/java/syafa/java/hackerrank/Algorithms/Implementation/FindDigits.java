@@ -18,7 +18,7 @@ public class FindDigits
             {
                 try
                 {
-                    if (Integer.parseInt(String.toString(numberString)) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                    if (Integer.parseInt(numberString.toString()) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
                     {
                         divisorCount++;
                     }
