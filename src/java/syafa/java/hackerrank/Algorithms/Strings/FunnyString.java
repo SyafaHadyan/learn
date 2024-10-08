@@ -29,7 +29,6 @@ public class FunnyString
                 compareAscii.add(Math.abs(checkAscii.get(j + 1) - checkAscii.get(j)));
                 compareAsciiReversed.add(Math.abs(checkAsciiReversed.get(j + 1) - checkAsciiReversed.get(j)));
             }
-            System.out.println(compareAscii + "\n" + compareAsciiReversed);
             if (compareAscii.equals(compareAsciiReversed))
             {
                 checkFunny.add("Funny");
