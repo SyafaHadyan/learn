@@ -7,6 +7,8 @@ public class Day112DArrays
     {
         Scanner input = new Scanner(System.in);
         Integer[][] hourGlass = new Integer[6][6];
+        int hourGlassSum = 0;
+        int maxHourGlassSum = 0;
         for (int i = 0; i < 6; i++)
         {
             ArrayList<String> hourGlassArrList = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
