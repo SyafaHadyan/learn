@@ -27,5 +27,13 @@ public class FunnyString
             checkFunny.add("Not funny");
         }
         input.close();
+        for (int i = 0; i < checkFunny.size(); i++)
+        {
+            System.out.print(checkFunny.get(i));
+            if (i < checkFunny.size())
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
