@@ -7,9 +7,12 @@ public class Day112DArrays
     {
         Scanner input = new Scanner(System.in);
         Integer[][] hourGlass = new Integer[6][6];
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < 6; i++)
         {
-            
+            for (int j = 0; j < hourGlass.length; j++)
+            {
+                
+            }
         }
         input.close();
     }
