@@ -30,6 +30,7 @@ public class FindDigits
             }
             divisorCountArrList.add(divisorCount);
             divisorCount = 0;
+            numberString.delete(0,numberString.length());
         }
         input.close();
         for (int i = 0; i < divisorCountArrList.size(); i++)
