@@ -11,7 +11,10 @@ public class Day112DArrays
         for (int i = 0; i < 6; i++)
         {
             hourGlassArrList.add(Integer.parseInt(Arrays.toString(input.nextLine().split(" "))));
-            hourGlass[i][] = Integer.parseInt(Arrays.toString(input.nextLine().split(" ")));
+            for (int j = 0; j < hourGlass.length; j++)
+            {
+                hourGlass[i][j] = hourGlassArrList.get(j);
+            }
         }
         input.close();
     }
