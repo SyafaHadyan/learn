@@ -7,15 +7,15 @@ public class Day112DArrays
     {
         Scanner input = new Scanner(System.in);
         Integer[][] hourGlass = new Integer[6][6];
-        ArrayList<Integer> hourGlassArrList = new ArrayList<Integer>();
+        ArrayList<String> hourGlassArrList = new ArrayList<String>();
         //Integer[] hourGlass1D = new Integer[6];
         for (int i = 0; i < 6; i++)
         {
             //hourGlassArrList.add(Integer.parseInt(Arrays.toString(input.nextLine().split(" "))));
-            Int hourGlass1D[] = Integer.parseInt(input.nextLine().split(" "));
+            //Integer hourGlass1D[] = Integer.parseInt(Arrays.toString(input.nextLine().split(" ")));
             for (int j = 0; j < 6; j++)
             {
-                hourGlass[i][j] = hourGlassArrList.get(j);
+                hourGlass[i][j] = Integer.parseInt(hourGlassArrList.get(j));
             }
         }
         input.close();
