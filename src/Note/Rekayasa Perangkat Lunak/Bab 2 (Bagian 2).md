@@ -53,3 +53,11 @@
   - on-site customer
   - collective ownership
   - coding standards
+
+### Kelebihan Extreme Programming (XP)
+
+- Eliminate defects early, reducing cost.
+- User involvement in the development team.
+- Increased user satisfaction.
+- Cohesive developer environment.
+- High productivity and quality code.
