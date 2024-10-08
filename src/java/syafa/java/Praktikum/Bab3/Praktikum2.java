@@ -15,7 +15,7 @@ public class Praktikum2
         final double PI = 3.1415926535;
         while (!inputValid)
         {
-            System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
+            System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%%-25s%-2c",
             "MENU",
             "0. KELUAR",
             "1. HITUNG VOLUME BALOK",
@@ -28,6 +28,7 @@ public class Praktikum2
             //inputValid = true;
             if (selection == 0)
             {
+                input.close();
                 return;
             }
             else if (selection == 1)
@@ -36,33 +37,33 @@ public class Praktikum2
             }
             else if (selection == 2)
             {
-                System.out.printf("-25s%-2c","Masukkan radius",':');
+                System.out.printf("%-25s%-2c","Masukkan radius",':');
                 radius = Double.parseDouble(input.nextLine());
                 selection = (4.0/3.0) * PI * Math.pow(radius,3);
             }
             else if (selection == 3)
             {
-                System.out.printf("-25s%-2c","Masukkan radius",':');
+                System.out.printf("%-25s%-2c","Masukkan radius",':');
                 radius = Double.parseDouble(input.nextLine());
-                System.out.printf("-25s%-2c","Masukkan tinggi",':');
+                System.out.printf("%-25s%-2c","Masukkan tinggi",':');
                 height = Double.parseDouble(input.nextLine());
                 selection = (1.0/3.0) * PI * Math.pow(radius,2) * height;
             }
             else if (selection == 4)
             {
-                System.out.printf("-25s%-2c","Masukkan radius",':');
+                System.out.printf("%-25s%-2c","Masukkan radius",':');
                 radius = Double.parseDouble(input.nextLine());
-                System.out.printf("-25s%-2c","Masukkan tinggi",':');
+                System.out.printf("%-25s%-2c","Masukkan tinggi",':');
                 height = Double.parseDouble(input.nextLine());
                 selection = PI * Math.pow(radius,2) * height;
             }
             else if (selection == 5)
             {
-                System.out.printf("-25s%-2c","Masukkan tinggi",':');
+                System.out.printf("%-25s%-2c","Masukkan tinggi",':');
                 height = Double.parseDouble(input.nextLine());
-                System.out.printf("-25s%-2c","Masukkan sisi pertama",':');
+                System.out.printf("%-25s%-2c","Masukkan sisi pertama",':');
                 firstSide = Double.parseDouble(input.nextLine());
-                System.out.printf("-25s%-2c","Masukkan sisi kedua",':');
+                System.out.printf("%-25s%-2c","Masukkan sisi kedua",':');
                 secondSide = Double.parseDouble(input.nextLine());
                 selection = (1.0/3.0) * (firstSide * secondSide) * height;
             }
@@ -71,8 +72,8 @@ public class Praktikum2
                 System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
                 inputValid = false;
             }
+            System.out.printf("%%-25s%-2c%.8f","Hasil",':',selection);
         }
         input.close();
-        System.out.printf("%s25s%-2c%.8f","Hasil",':',selection);
     }
 }
