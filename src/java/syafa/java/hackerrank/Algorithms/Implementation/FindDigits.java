@@ -7,17 +7,18 @@ public class FindDigits
     {
         Scanner input = new Scanner(System.in);
         int valueCheck = Integer.parseInt(input.nextLine());
-        String numberString = "";
+        //String numberString = "";
         int divisorCount = 0;
         ArrayList<Integer> divisorCountArrList = new ArrayList<Integer>();
+        StringBuilder numberString = new StringBuilder();
         for (int i = 0; i < valueCheck; i++)
         {
-            numberString = input.nextLine();
+            numberString.append(input.nextLine());
             for (int j = 0; j < numberString.length(); j++)
             {
                 try
                 {
-                    if (Integer.parseInt(numberString) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                    if (Integer.parseInt(String.toString(numberString)) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
                     {
                         divisorCount++;
                     }
