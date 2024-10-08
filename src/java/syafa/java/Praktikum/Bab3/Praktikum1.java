@@ -11,7 +11,7 @@ public class Praktikum1
         }
         for (int j = 0; j < 4; j++)
         {
-            if (j < 4)
+            if (j < 4 && j != 0)
             {
                 System.out.print(' ');
             }
@@ -28,14 +28,10 @@ public class Praktikum1
             {
                 System.out.print("\n");
             }
-            if (i == 2)
-            {
-                System.out.print("\n");
-            }
         }
         for (int i = 0; i < 3; i++)
         {
-            //    
+            System.out.print('S');
         }
     }
 }
