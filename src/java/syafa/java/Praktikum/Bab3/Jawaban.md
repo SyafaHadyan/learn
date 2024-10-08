@@ -155,6 +155,10 @@ pernyataan continue batas 10
 
 ## Praktikum
 
+### Praktikum 1: Tangga
+
+### Praktikum 2: Huruf
+
 ### Praktikum 3: Volume Bentuk
 
 ```java
