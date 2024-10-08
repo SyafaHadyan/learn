@@ -31,6 +31,17 @@ Y       Y
 ## 03 A
 
 ```txt
+        A
+       A  A
+      A    A
+     A      A
+       A  
+      A A  
+     A   A  
+    A     A 
+```
+
+```txt
        A  
       A A  
      A   A  
