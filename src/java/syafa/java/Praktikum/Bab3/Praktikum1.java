@@ -74,8 +74,8 @@ public class Praktikum1
         {
             int spaceBefore = 0;
             int spaceMiddle = 7;
-            String firstSpace = String.format("%" + spaceBefore + "c","");
-            String secondSpace = String.format("%" + spaceMiddle + "c","");
+            String firstSpace = String.format("%" + spaceBefore + "s","");
+            String secondSpace = String.format("%" + spaceMiddle + "s","");
             System.out.printf("%s%c%s%c",firstSpace,'Y',secondSpace,'Y');
             spaceBefore++;
             spaceMiddle--;
