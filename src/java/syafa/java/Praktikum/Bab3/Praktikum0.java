@@ -14,12 +14,14 @@ public class Praktikum0
         {
             for (int j = space; j > 0; j--)
             {
-                System.out.print("  ");
+                System.out.print(' ');
+                System.out.print(' ');
             }
             space--;
             for (int j = 0; j < i + 1; j++)
             {
-                System.out.print(" *");
+                System.out.print(' ');
+                System.out.print('*');
             }
             if (i < staircaseSize)
             {
