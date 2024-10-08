@@ -7,6 +7,9 @@ public class Praktikum1
         // ඞ
         int spaceBeforeY = 1;
         int spaceMiddleY = 7;
+        int spaceBeforeA = 8;
+        int spaceMiddleA = 1;
+        int spaceMiddleLowerA = 9;
         for (int i = 0; i < 2; i++)
         {
             System.out.print(' ');
