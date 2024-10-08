@@ -45,5 +45,7 @@ public class FunnyString
                 System.out.print("\n");
             }
         }
+        System.out.println(compareAscii);
+        System.out.print(compareAsciiReversed);
     }
 }
