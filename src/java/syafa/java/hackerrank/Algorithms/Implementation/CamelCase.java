@@ -15,6 +15,7 @@ public class CamelCase
             {
                 sentenceCount++;
             }
+            System.out.println(checkString.charAt(i));
         }
         System.out.print(sentenceCount);
     }
