@@ -81,14 +81,19 @@ Each model represents a process from a particular perspective (context).
 
 ### Menerapkan Waterfall Bila
 
-- Requirements are complete and very well-known
-- Product definition is stable
-- Technology is understood
-- The project is large, expensive, and complicated
+- Requirements are complete and very well-known.
+- Product definition is stable.
+- Technology is understood.
+- The project is large, expensive, and complicated.
 
 ### V
 
 ![V](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/V.png)
+
+- Extension of the waterfall model -> separation between development and validation & verification (V&V) phases.
+- Emphasizing more on V&V phases -> broken down into unit, integration, and system testings.
+- Each V&V phase results must be compared to each corresponding development phase.
+- Each phase has specific deliverables.
 
 ### Prototyping
 
