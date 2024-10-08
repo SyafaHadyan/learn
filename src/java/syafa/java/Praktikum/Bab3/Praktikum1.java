@@ -16,8 +16,11 @@ public class Praktikum1
                 System.out.print(' ');
             }
             System.out.print('S');
+            if (j == 3)
+            {
+                System.out.print("\n");
+            }
         }
-        System.out.print("\n");
         for (int i = 0; i < 3; i++)
         {
             System.out.print('S');
@@ -25,6 +28,14 @@ public class Praktikum1
             {
                 System.out.print("\n");
             }
+            if (i == 2)
+            {
+                System.out.print("\n");
+            }
+        }
+        for (int i = 0; i < 3; i++)
+        {
+            //    
         }
     }
 }
