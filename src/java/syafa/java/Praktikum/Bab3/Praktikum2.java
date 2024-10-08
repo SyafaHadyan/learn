@@ -25,7 +25,7 @@ public class Praktikum2
             "5. HITUNG VOLUME LIMAS SEGITIGA",
             "MASUKKAN PILIHAN ANDA",':');
             selection = Double.parseDouble(input.nextLine());
-            inputValid = true;
+            //inputValid = true;
             if (selection == 0)
             {
                 return;
