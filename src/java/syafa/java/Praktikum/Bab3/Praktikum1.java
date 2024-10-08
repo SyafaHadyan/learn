@@ -41,5 +41,13 @@ public class Praktikum1
             }
             System.out.print('S');
         }
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 8; j++)
+            {
+                System.out.print(' ');
+            }
+            System.out.print('S');
+        }
     }
 }
