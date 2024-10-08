@@ -14,5 +14,14 @@ public class Praktikum1
             }
             System.out.print('S');
         }
+        System.out.print("\n");
+        for (int i = 0; i < 3; i++)
+        {
+            System.out.print('S');
+            if (i < 3)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
