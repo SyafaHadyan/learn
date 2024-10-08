@@ -37,3 +37,19 @@
 ## Extreme Programming (XP)
 
 ![Extreme Programming](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/ExtremeProgramming.png)
+
+- Developed by Kent Beck (1996).
+- Recognizes 5 values:
+  - communication
+  - simplicity
+  - feedback
+  - courage
+  - respect
+- Implements Agile approach (Agile Manifesto).
+- Relies on constant code improvement, pairwise programming.
+- 5 basic principles:
+  - small releases
+  - 40-hour work week
+  - on-site customer
+  - collective ownership
+  - coding standards
