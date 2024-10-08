@@ -15,8 +15,6 @@ public class FunnyString
         StringBuilder checkString = new StringBuilder();
         for (int i = 0; i < queries; i++)
         {
-            compareAscii.clear();
-            compareAsciiReversed.clear();
             checkString.append(input.nextLine());
             for (int j = 0; j < checkString.length(); j++)
             {
