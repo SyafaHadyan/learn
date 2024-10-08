@@ -11,7 +11,7 @@ public class CamelCase
         int sentenceCount = 1;
         for (int i = 0; i < checkString.length(); i++)
         {
-            //
+            if (Character.isUpperCase(checkString.charAt(i)));
         }
     }
 }
