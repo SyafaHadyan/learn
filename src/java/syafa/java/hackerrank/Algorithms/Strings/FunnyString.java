@@ -29,7 +29,7 @@ public class FunnyString
                 compareAscii.add(Math.abs(checkAscii.get(j + 1) - checkAscii.get(j)));
                 compareAsciiReversed.add(Math.abs(checkAsciiReversed.get(j + 1) - checkAsciiReversed.get(j)));
             }
-            if (checkAscii.equals(checkAsciiReversed))
+            if (compareAscii.equals(compareAsciiReversed))
             {
                 checkFunny.add("Funny");
                 continue;
@@ -45,7 +45,5 @@ public class FunnyString
                 System.out.print("\n");
             }
         }
-        System.out.println(checkAscii);
-        System.out.print(checkAsciiReversed);
     }
 }
