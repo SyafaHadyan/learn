@@ -211,12 +211,6 @@ public class Praktikum1
             }
             System.out.print("\n");
             spaceBeforeA--;
-            if (i == 7)
-            {
-                spaceBeforeA = 7;
-                spaceMiddleA = 1;
-                System.out.print("\n");
-            }
         }
     }
 }
