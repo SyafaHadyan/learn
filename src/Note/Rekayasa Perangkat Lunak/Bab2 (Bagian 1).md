@@ -63,7 +63,7 @@ Each model represents a process from a particular perspective (context).
 - Quality must be assessed and controlled in all phases
 - Each phase has specific deliverables
 
-#### Kelebihan
+#### Kelebihan Waterfall
 
 - Easy to understand, easy to use.
 - Sets requirements stability.
@@ -71,7 +71,7 @@ Each model represents a process from a particular perspective (context).
 - Good when quality requirements dominate cost and schedule requirements.
 - Good for control (plan, staff, track).
 
-#### Kekurangan
+#### Kekurangan Waterfall
 
 - All requirements must be known upfront.
 - Deliverables created for each phase are considered frozen - inhibits flexibility.
@@ -95,7 +95,7 @@ Each model represents a process from a particular perspective (context).
 - Each V&V phase results must be compared to each corresponding development phase.
 - Each phase has specific deliverables.
 
-### Kelebihan
+#### Kelebihan V
 
 - Easy to understand, easy to use.
 - Increased quality.
