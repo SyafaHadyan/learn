@@ -8,6 +8,11 @@ public class Day18QueuesAndStacks
         Scanner input = new Scanner(System.in);
         String checkString = input.nextLine();
         input.close();
-        ArrayList<Character> reverseString = new ArrayList<Character>();
+        StringBuilder reverseString = new StringBuilder();
+        //ArrayList<Character> reverseString = new ArrayList<Character>();
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
     }
 }
