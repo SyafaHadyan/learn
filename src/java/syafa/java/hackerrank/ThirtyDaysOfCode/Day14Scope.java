@@ -16,7 +16,7 @@ public class Day14Scope
             elementsInteger.add(Integer.parseInt(elementsString.get(i)));
         }
         Collections.sort(elementsInteger);
-        maximumDifference(elementsInteger.getLast() - elementsInteger.getFirst());
+        maximumDifference(elementsInteger.get(elementsInteger.size() - 1) - elementsInteger.get(0));
     }
     private static void maximumDifference(int result)
     {
