@@ -169,7 +169,18 @@ public class Praktikum1
             }
             else if (i == 4)
             {
-                System.out.println("ill do it later");
+                for (int j = 0; j < 4; j++)
+                {
+                    if (j != 0)
+                    {
+                        System.out.print(' ');
+                    }
+                    System.out.print('F');
+                    if (j == 3)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
             else
             {
