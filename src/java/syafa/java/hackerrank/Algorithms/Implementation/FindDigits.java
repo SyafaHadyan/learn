@@ -21,6 +21,7 @@ public class FindDigits
                 }
             }
             divisorCountArrList.add(divisorCount);
+            divisorCount = 0;
         }
         input.close();
         System.out.print(divisorCount);
