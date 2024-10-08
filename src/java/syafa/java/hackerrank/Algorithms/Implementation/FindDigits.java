@@ -24,7 +24,7 @@ public class FindDigits
                 }
                 catch (ArithmeticException e)
                 {
-                    e.printStackTrace();
+                    //
                 }
             }
             divisorCountArrList.add(divisorCount);
