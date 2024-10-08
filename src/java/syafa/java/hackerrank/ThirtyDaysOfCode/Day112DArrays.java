@@ -17,12 +17,12 @@ public class Day112DArrays
             }
         }
         input.close();
-        for (int i = 0; i < hourGlass.length; i++)
+        for (int i = 0; i < 6; i++)
         {
-            for (int j = 0; j < hourGlass.length; j++)
+            for (int j = 0; j < 6; j++)
             {
                 System.out.print(hourGlass[i][j]);
-                if (j < hourGlass.length)
+                if (j != 5)
                 {
                     System.out.print(' ');
                 }
