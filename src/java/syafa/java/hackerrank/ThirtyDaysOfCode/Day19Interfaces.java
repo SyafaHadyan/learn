@@ -16,5 +16,6 @@ public class Day19Interfaces
                 sumDivisor += i;
             }
         }
+        System.out.print("I implemented: AdvancedArithmetic" + "\n" + sumDivisor);
     }
 }
