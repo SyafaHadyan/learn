@@ -124,4 +124,11 @@ Each model represents a process from a particular perspective (context).
 - Users are intensively involved in defining prototypes.
 - Once the final prototype is developed, the requirement is considered to be frozen.
 
+#### Kelebihan Prototyping
+
+- Learning by doing -> requirements are partially known.
+- Improved and increased user involvement.
+- Feedback loop is established.
+- A more accurate end product -> reduces maintenance costs.
+
 ### Spiral
