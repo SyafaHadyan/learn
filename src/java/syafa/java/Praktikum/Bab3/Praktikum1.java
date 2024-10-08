@@ -109,15 +109,12 @@ public class Praktikum1
             if (i == 0)
             {
                 System.out.print("\n");
-            }
-            if (i == 7)
-            {
-                System.out.printf("%c%s%c",'A',secondSpace,'A');
-            }
-            if (i == 0)
-            {
                 String firstSpace = String.format("%" + spaceBeforeA + "s","");
                 System.out.printf("%s%c",firstSpace,'A');
+            }
+            else if (i == 7)
+            {
+                System.out.printf("%c%s%c",'A',secondSpace,'A');
             }
             else
             {
