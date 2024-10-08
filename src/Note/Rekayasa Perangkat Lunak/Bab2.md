@@ -40,6 +40,12 @@ Techniques:
 
 Software validator role: software tester
 
+### Software Evolution
+
+Software evolution (software maintenance) is the process of changing software over its lifetime after delivery in response to the evolving requirements and customer needs.
+
+Evolution roles: software analyst, software designer, software programmer, software testing.
+
 ## SDLC Models
 
 ### Waterfall
