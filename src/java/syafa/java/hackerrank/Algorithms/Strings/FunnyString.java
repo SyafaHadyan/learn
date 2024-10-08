@@ -12,9 +12,9 @@ public class FunnyString
         for (int i = 0; i < queries; i++)
         {
             checkString = input.nextLine();
-            for (int j = 0; j < args.length; j++)
+            for (int j = checkString.length() - 1; j >= 0; j--)
             {
-                //
+                System.out.println(checkString.charAt(j));
             }
         }
         input.close();
