@@ -138,4 +138,14 @@ Each model represents a process from a particular perspective (context).
 - Additional expense for building prototype.
 - Focus on user-friendly interface -> expense of machine efficiency.
 
+#### Menerapkan Prototyping Bila
+
+- User is not fully knowledgeable.
+- Project objectives are unclear.
+- Requirements are incomplete and unclear.
+- Team members are experienced.
+- Pressure of immediate implementation of something.
+- System has user interactions.
+- Can be adopted in other SDLC models, especially the throwaway prototyping.
+
 ### Spiral
