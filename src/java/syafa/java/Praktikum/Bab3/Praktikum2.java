@@ -75,7 +75,7 @@ public class Praktikum2
                 inputValid = false;
                 continue;
             }
-            System.out.printf("%-25s%-2c%.8f\n\n","Hasil",':',selection);
+            System.out.printf("%-25s%-2c%.5f\n\n","Hasil",':',selection);
         }
         input.close();
     }
