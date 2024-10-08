@@ -177,5 +177,46 @@ public class Praktikum1
                 System.out.print("\n");
             }
         }
+        for (int i = 0; i < 8; i++)
+        {
+            String secondSpace = String.format("%" + spaceMiddleA + "s","");
+            if (i == 0)
+            {
+                System.out.print("\n");
+                String firstSpace = String.format("%" + spaceBeforeA + "s","");
+                System.out.printf("%s%c",firstSpace,'A');
+            }
+            else if (i == 7)
+            {
+                System.out.printf("%c%s%c",'A',secondSpace,'A');
+            }
+            else if (i == 4)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    if (j == 0)
+                    {
+                        System.out.printf("%4c",'A');
+                    }
+                    System.out.print(' ');
+                    System.out.print('A');
+                }
+                spaceMiddleA += 2;
+            }
+            else
+            {
+                String firstSpace = String.format("%" + spaceBeforeA + "s","");
+                System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
+                spaceMiddleA += 2;
+            }
+            System.out.print("\n");
+            spaceBeforeA--;
+            if (i == 7)
+            {
+                spaceBeforeA = 7;
+                spaceMiddleA = 1;
+                System.out.print("\n");
+            }
+        }
     }
 }
