@@ -8,13 +8,17 @@ public class FindDigits
         Scanner input = new Scanner(System.in);
         int valueCheck = Integer.parseInt(input.nextLine());
         String numberString = "";
+        int divisorCount = 0;
         //ArrayList<Integer> number = new ArrayList<Integer>();
         for (int i = 0; i < valueCheck; i++)
         {
             numberString = input.nextLine();
-            for (int j = 0; j < args.length; j++)
+            for (int j = 0; j < numberString.length(); j++)
             {
-                
+                if (Integer.parseInt(numberString) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                {
+
+                }
             }
         }
         input.close();
