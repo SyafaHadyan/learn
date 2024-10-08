@@ -7,6 +7,11 @@ public class Day17MoreExceptions
     {
         Scanner input = new Scanner(System.in);
         int recursion = Integer.parseInt(input.nextLine());
+        ArrayList<String> number = new ArrayList<String>();
+        for (int i = 0; i < recursion; i++)
+        {
+            //
+        }
         input.close();
     }
 }
