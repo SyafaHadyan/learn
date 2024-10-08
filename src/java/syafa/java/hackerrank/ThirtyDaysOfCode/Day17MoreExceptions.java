@@ -19,6 +19,7 @@ public class Day17MoreExceptions
             {
                 result.add(String.valueOf(Math.pow(Integer.parseInt(number.get(0)),Integer.parseInt(number.get(1)))));
             }
+            number.clear();
         }
         input.close();
         for (int i = 0; i < result.size(); i++)
