@@ -50,5 +50,6 @@ public class Day112DArrays
             }
             System.out.print("\n");
         }
+        System.out.print("\n" + maxHourGlassSum);
     }
 }
