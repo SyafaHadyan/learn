@@ -63,6 +63,14 @@ Each model represents a process from a particular perspective (context).
 - Quality must be assessed and controlled in all phases
 - Each phase has specific deliverables
 
+### Kelebihan
+
+- Easy to understand, easy to use
+- Sets requirements stability
+- Every phase needs to be checked and signed off -> eliminates midstream changes.
+- Good when quality requirements dominate cost and schedule requirements.
+- Good for control (plan, staff, track).
+
 ### V
 
 ### Prototyping
