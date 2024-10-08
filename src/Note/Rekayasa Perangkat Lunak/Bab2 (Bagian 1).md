@@ -79,6 +79,13 @@ Each model represents a process from a particular perspective (context).
 - Difficult to respond to changes.
 - Written specs are often difficult for users to read.
 
+### Menerapkan Waterfall Bila
+
+- Requirements are complete and very well-known
+- Product definition is stable
+- Technology is understood
+- The project is large, expensive, and complicated
+
 ### V
 
 ### Prototyping
