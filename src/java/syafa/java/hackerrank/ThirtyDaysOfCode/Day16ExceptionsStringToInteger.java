@@ -7,6 +7,7 @@ public class Day16ExceptionsStringToInteger
     {
         Scanner input = new Scanner(System.in);
         String userInput = input.nextLine();
+        input.close();
         try
         {
             System.out.print(Integer.parseInt(userInput));
@@ -15,6 +16,5 @@ public class Day16ExceptionsStringToInteger
         {
             // TODO: handle exception
         }
-        input.close();
     }
 }
