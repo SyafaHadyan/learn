@@ -202,6 +202,8 @@ public class Praktikum0
 
 ### Praktikum 2: Huruf
 
+[`Praktikum1.java`](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/Praktikum1.java)
+
 ### Praktikum 3: Volume Bentuk
 
 [`Praktikum2.java`](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/Praktikum2.java)
