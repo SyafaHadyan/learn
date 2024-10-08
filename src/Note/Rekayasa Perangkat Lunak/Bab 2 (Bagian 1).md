@@ -131,4 +131,11 @@ Each model represents a process from a particular perspective (context).
 - Feedback loop is established.
 - A more accurate end product -> reduces maintenance costs.
 
+#### Kekurangan Prototyping
+
+Insufficient analysis -> user confusion of prototype and final system.
+Lack of project control and standards possible -> potential scope creep.
+Additional expense for building prototype.
+Focus on user-friendly interface -> expense of machine efficiency.
+
 ### Spiral
