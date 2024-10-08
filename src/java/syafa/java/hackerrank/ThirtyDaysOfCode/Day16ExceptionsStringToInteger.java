@@ -14,7 +14,7 @@ public class Day16ExceptionsStringToInteger
         }
         catch (NumberFormatException e)
         {
-            // TODO: handle exception
+            System.out.print("Bad String");
         }
     }
 }
