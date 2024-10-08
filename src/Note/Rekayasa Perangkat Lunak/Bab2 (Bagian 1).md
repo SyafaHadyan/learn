@@ -95,6 +95,12 @@ Each model represents a process from a particular perspective (context).
 - Each V&V phase results must be compared to each corresponding development phase.
 - Each phase has specific deliverables.
 
+### Kelebihan
+
+- Easy to understand, easy to use.
+- Increased quality.
+- Higher chance of success over the waterfall model due to the development of test plans early on during the life cycle, e.g. unit test is planned during detail design phase.
+
 ### Prototyping
 
 ### Spiral
