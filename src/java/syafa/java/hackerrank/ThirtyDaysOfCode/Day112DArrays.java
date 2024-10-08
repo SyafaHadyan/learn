@@ -23,19 +23,19 @@ public class Day112DArrays
             hourGlass[0][0] + 
             hourGlass[0][1] + 
             hourGlass[0][2] + 
-            hourGlass[1][2] + 
-            hourGlass[1][0] + 
             hourGlass[1][1] + 
-            hourGlass[1][2] > maxHourGlassSum)
+            hourGlass[2][0] + 
+            hourGlass[2][1] + 
+            hourGlass[2][2] > maxHourGlassSum)
             {
                 maxHourGlassSum =
                 hourGlass[0][0] + 
                 hourGlass[0][1] + 
                 hourGlass[0][2] + 
-                hourGlass[1][2] + 
-                hourGlass[1][0] + 
                 hourGlass[1][1] + 
-                hourGlass[1][2];
+                hourGlass[2][0] + 
+                hourGlass[2][1] + 
+                hourGlass[2][2];
             }
         System.out.print("\n");
         for (int i = 0; i < 6; i++)
