@@ -61,3 +61,12 @@
 - Increased user satisfaction.
 - Cohesive developer environment.
 - High productivity and quality code.
+
+### Kekurangan Extreme Programming (XP)
+
+- Lack of specification and design documents.
+- Requirements are expressed informally.
+- Requirements conflicts due to multiple stakeholders.
+- Potentially scope creep.
+- Neglected planning.
+- Requires experienced developers.
