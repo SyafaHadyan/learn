@@ -22,6 +22,10 @@ public class FunnyString
             {
                 checkAsciiReversed.add((int) checkString.charAt(j));
             }
+            for (int j = 0; j < checkString.length() - 1; j++)
+            {
+                
+            }
             if (checkAscii.equals(checkAsciiReversed))
             {
                 checkFunny.add("Funny");
