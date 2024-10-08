@@ -106,7 +106,9 @@ public class Praktikum1
         }
         for (int i = 0; i < 8; i++)
         {
-            //
+            String firstSpace = String.format("%" + spaceBeforeA + "s","");
+            String secondSpace = String.format("%" + spaceMiddleA + "s","");
+            String thirdSpace = String.format("%" + spaceMiddleLowerA + "s","");
         }
     }
 }
