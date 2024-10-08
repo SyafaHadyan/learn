@@ -65,13 +65,19 @@ Each model represents a process from a particular perspective (context).
 
 #### Kelebihan
 
-- Easy to understand, easy to use
-- Sets requirements stability
+- Easy to understand, easy to use.
+- Sets requirements stability.
 - Every phase needs to be checked and signed off -> eliminates midstream changes.
 - Good when quality requirements dominate cost and schedule requirements.
 - Good for control (plan, staff, track).
 
 #### Kekurangan
+
+- All requirements must be known upfront.
+- Deliverables created for each phase are considered frozen - inhibits flexibility.
+- Clients not being able to see the product until it is completely finished.
+- Difficult to respond to changes.
+- Written specs are often difficult for users to read.
 
 ### V
 
