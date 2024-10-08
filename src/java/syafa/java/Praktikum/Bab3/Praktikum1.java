@@ -5,18 +5,18 @@ public class Praktikum1
     public static void main(String[] args)
     {
         // ඞ
-        for (int i = 0; i < 2; i++)
+        for (int i = 0; i < 4; i++)
         {
-            System.out.print(" ");
-        }
-        for (int j = 0; j < 4; j++)
-        {
-            if (j < 4 && j != 0)
+            for (int j = 0; j < 2; j++)
+            {
+                System.out.print(' ');
+            }
+            if (i < 4 && i != 0)
             {
                 System.out.print(' ');
             }
             System.out.print('S');
-            if (j == 3)
+            if (i == 3)
             {
                 System.out.print("\n");
             }
@@ -31,7 +31,11 @@ public class Praktikum1
         }
         for (int i = 0; i < 3; i++)
         {
-            if (i < 3 && i != 1)
+            for (int j = 0; j < 2; j++)
+            {
+                System.out.print(' ');
+            }
+            if (i < 3 && i != 0)
             {
                 System.out.print(' ');
             }
