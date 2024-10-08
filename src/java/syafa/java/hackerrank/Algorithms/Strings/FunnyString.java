@@ -32,6 +32,8 @@ public class FunnyString
             if (compareAscii.equals(compareAsciiReversed))
             {
                 checkFunny.add("Funny");
+                compareAscii.clear();
+                compareAsciiReversed.clear();
                 continue;
             }
             checkFunny.add("Not funny");
