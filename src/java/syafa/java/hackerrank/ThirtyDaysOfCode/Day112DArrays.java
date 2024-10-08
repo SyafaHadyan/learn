@@ -19,16 +19,23 @@ public class Day112DArrays
         }
         input.close();
         // Condition 1
-        if ((hourGlass = 
+        if (
             hourGlass[0][0] + 
             hourGlass[0][1] + 
             hourGlass[0][2] + 
             hourGlass[1][2] + 
             hourGlass[1][0] + 
             hourGlass[1][1] + 
-            hourGlass[1][2]) > maxHourGlassSum)
+            hourGlass[1][2] > maxHourGlassSum)
             {
-                maxHourGlassSum = hourGlassSum;
+                maxHourGlassSum =
+                hourGlass[0][0] + 
+                hourGlass[0][1] + 
+                hourGlass[0][2] + 
+                hourGlass[1][2] + 
+                hourGlass[1][0] + 
+                hourGlass[1][1] + 
+                hourGlass[1][2];
             }
         System.out.print("\n");
         for (int i = 0; i < 6; i++)
