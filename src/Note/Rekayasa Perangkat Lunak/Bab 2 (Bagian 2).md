@@ -89,4 +89,8 @@
   - design
   - evolution
   - delivery
-- Scrum emphasizes the use of a set of software process patterns: backlog, sprints, scrum meetings (led by scrum master), and demos.
+- Scrum emphasizes the use of a set of software process patterns:
+  - backlog
+  - sprints
+  - scrum meetings (led by scrum master)
+  - demos
