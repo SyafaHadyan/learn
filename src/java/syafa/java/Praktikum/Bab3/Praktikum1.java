@@ -5,6 +5,8 @@ public class Praktikum1
     public static void main(String[] args)
     {
         // ඞ
+        int spaceBefore = 1;
+        int spaceMiddle = 7;
         for (int i = 0; i < 2; i++)
         {
             System.out.print(' ');
@@ -72,8 +74,6 @@ public class Praktikum1
         }
         for (int i = 0; i < 4; i++)
         {
-            int spaceBefore = 0;
-            int spaceMiddle = 7;
             /*
             String space = String.format("%" + whitespace + "s", "");
             System.out.printf("%s%s%s%s%s","##",space,user_input,space,"##");
@@ -83,6 +83,7 @@ public class Praktikum1
             System.out.printf("%s%c%s%c",firstSpace,'Y',secondSpace,'Y');
             spaceBefore++;
             spaceMiddle--;
+            System.out.print("\n");
         }
     }
 }
