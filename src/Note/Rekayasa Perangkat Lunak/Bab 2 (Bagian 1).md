@@ -156,3 +156,18 @@ Each model represents a process from a particular perspective (context).
 - Combining the features of prototyping and waterfall models.
 - Starts with basic and clear functionality and work.
 - Increments into the final complete product.
+
+#### Kelebihan Spiral
+
+- Increased quality.
+- Provides early indication of insurmountable risks, without much cost -> less risks.
+- At least as much management control as waterfall (checkpoints) per cycle.
+- Early and frequent feedback from users.
+
+#### Kekurangan Spiral
+
+- The model is complex -> complicated.
+- May be hard to define objective, verifiable milestones that indicate readiness to proceed through the next iteration -> requires conscientious, attentive management.
+- High cost and time to reach the final product.
+- Risk assessment expertise is required.
+- Spiral may continue indefinetely.
