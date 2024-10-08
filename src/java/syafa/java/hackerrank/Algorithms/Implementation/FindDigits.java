@@ -7,7 +7,8 @@ public class FindDigits
     {
         Scanner input = new Scanner(System.in);
         int valueCheck = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        ArrayList<Integer> number = new ArrayList<Integer>();
+        for (int i = 0; i < valueCheck; i++)
         {
             //
         }
