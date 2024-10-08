@@ -108,6 +108,13 @@ Each model represents a process from a particular perspective (context).
 - Clients not being able to see the product until it is completely finished.
 - More time and resources.
 
+#### Menerapkan V Bila
+
+- Requirements are complete and very well known.
+- Product definition is stable.
+- Technology is understood.
+- Project is large, expensive, complicated.
+
 ### Prototyping
 
 ### Spiral
