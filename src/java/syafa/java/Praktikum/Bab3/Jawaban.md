@@ -161,6 +161,8 @@ pernyataan continue batas 10
 
 ### Praktikum 3: Volume Bentuk
 
+[`Praktikum2.java`](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/Praktikum/Bab3/Praktikum2.java)
+
 ```java
 package syafa.java.Praktikum.Bab3;
 import java.util.*;
