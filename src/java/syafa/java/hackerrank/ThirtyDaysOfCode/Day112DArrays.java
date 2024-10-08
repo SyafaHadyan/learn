@@ -9,10 +9,7 @@ public class Day112DArrays
         Integer[][] hourGlass = new Integer[6][6];
         for (int i = 0; i < 6; i++)
         {
-            for (int j = 0; j < hourGlass.length; j++)
-            {
-                
-            }
+            hourGlass[i][] = Integer.parseInt(Arrays.toString(input.nextLine().split(" ")));
         }
         input.close();
     }
