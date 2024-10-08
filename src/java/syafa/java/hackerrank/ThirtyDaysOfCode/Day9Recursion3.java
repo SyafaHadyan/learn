@@ -1,26 +1,15 @@
 package syafa.java.hackerrank.ThirtyDaysOfCode;
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
 
-@SuppressWarnings("unused")
 class Result
 {
-    public static int factorial(int n)
+    public static int factorial(int number)
     {
         int factorialResult = 0;
-        for (int i = n; i >= 1; i--)
+        for (int i = number; i >= 1; i--)
         {
             factorialResult *= i;
-            n = n - 1;
+            number = number - 1;
         }
         return factorialResult;
     }
@@ -28,15 +17,12 @@ class Result
 
 public class Day9Recursion3
 {
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args)
     {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-        int result = Result.factorial(n);
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-        bufferedReader.close();
-        bufferedWriter.close();
+        Scanner input = new Scanner(System.in);
+        int number = Integer.parseInt(input.nextLine());
+        input.close();
+        int result = Result.factorial(number);
+        System.out.print(result);
     }
 }
