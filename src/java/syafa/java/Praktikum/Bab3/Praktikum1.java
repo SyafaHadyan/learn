@@ -4,13 +4,15 @@ public class Praktikum1
 {
     public static void main(String[] args)
     {
-        for (int i = 0; i < 17; i++)
+        // ඞ
+        System.out.print("  ");
+        for (int j = 0; j < 4; j++)
         {
-            System.out.print(' ' + ' ');
-            for (int j = 0; j < 4; j++)
+            if (j < 4)
             {
-                System.out.print('S');
+                System.out.print(' ');
             }
+            System.out.print('S');
         }
     }
 }
