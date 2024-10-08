@@ -12,7 +12,7 @@ public class Day18QueuesAndStacks
         //ArrayList<Character> reverseString = new ArrayList<Character>();
         for (int i = checkString.length() - 1; i > 0; i++)
         {
-            
+            reverseString.append(checkString.charAt(i));
         }
     }
 }
