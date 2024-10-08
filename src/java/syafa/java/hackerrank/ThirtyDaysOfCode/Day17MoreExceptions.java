@@ -15,6 +15,10 @@ public class Day17MoreExceptions
             {
                 result.add("n and p should be non-negative");
             }
+            else
+            {
+                result.add(String.valueOf(Math.pow(Integer.parseInt(number.get(0)),Integer.parseInt(number.get(1)))));
+            }
         }
         input.close();
     }
