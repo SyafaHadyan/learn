@@ -11,7 +11,7 @@
 - Improvement to RAD (lack of rigour -> reduced quality).
 - Implements Agile approach (Agile Manifesto).
 
-### Kelebihan DSDM
+### Kelebihan Dynamic Systems Development Method (DSDM)
 
 - Early implementation to business problems.
 - Reducing risk of building the wrong solution.
@@ -20,14 +20,14 @@
 - Users will be better trained.
 - Deployment is more likely to go smoothly.
 
-### Kekurangan DSDM
+### Kekurangan Dynamic Systems Development Method (DSDM)
 
 - Costly to implement.
 - IT professionals and end users must be trained accordingly.
 - Requires full commitment to DSDM process.
 - Involves progressive development of requirements.
 
-### Menerapkan DSDM Bila
+### Menerapkan Dynamic Systems Development Method (DSDM) Bila
 
 - Systems that are time constrained.
 - Systems where requirements can be prioritized.
