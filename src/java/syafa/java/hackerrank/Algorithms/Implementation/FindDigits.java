@@ -15,9 +15,16 @@ public class FindDigits
             numberString = input.nextLine();
             for (int j = 0; j < numberString.length(); j++)
             {
-                if (Integer.parseInt(numberString) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                try
                 {
-                    divisorCount++;
+                    if (Integer.parseInt(numberString) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                    {
+                        divisorCount++;
+                    }
+                }
+                catch (ArithmeticException e)
+                {
+                    e.printStackTrace();
                 }
             }
             divisorCountArrList.add(divisorCount);
