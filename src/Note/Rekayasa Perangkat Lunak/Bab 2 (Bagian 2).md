@@ -19,3 +19,10 @@
 - Incremental delivery.
 - Users will be better trained.
 - Deployment is more likely to go smoothly.
+
+### Kekurangan DSDM
+
+- Costly to implement.
+- IT professionals and end users must be trained accordingly.
+- Requires full commitment to DSDM process.
+- Involves progressive development of requirements.
