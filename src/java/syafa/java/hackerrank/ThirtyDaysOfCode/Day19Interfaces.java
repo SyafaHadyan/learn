@@ -9,7 +9,7 @@ public class Day19Interfaces
         int number = Integer.parseInt(input.nextLine());
         int sumDivisor = 0;
         input.close();
-        for (int i = 1; i <= 6; i++)
+        for (int i = 1; i <= number; i++)
         {
             if (number % i == 0)
             {
