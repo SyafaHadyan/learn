@@ -133,9 +133,9 @@ Each model represents a process from a particular perspective (context).
 
 #### Kekurangan Prototyping
 
-Insufficient analysis -> user confusion of prototype and final system.
-Lack of project control and standards possible -> potential scope creep.
-Additional expense for building prototype.
-Focus on user-friendly interface -> expense of machine efficiency.
+- Insufficient analysis -> user confusion of prototype and final system.
+- Lack of project control and standards possible -> potential scope creep.
+- Additional expense for building prototype.
+- Focus on user-friendly interface -> expense of machine efficiency.
 
 ### Spiral
