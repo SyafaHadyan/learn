@@ -172,7 +172,6 @@ Each model represents a process from a particular perspective (context).
 - Risk assessment expertise is required.
 - Spiral may continue indefinetely.
 
-
 #### Menerapkan Spiral Bila
 
 - Requirements are incomplete but clear.
