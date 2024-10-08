@@ -10,7 +10,7 @@ public class Day15LinkedList
         ArrayList<Integer> data = new ArrayList<Integer>();
         for (int i = 0; i < nodes; i++)
         {
-            
+            data.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
     }
