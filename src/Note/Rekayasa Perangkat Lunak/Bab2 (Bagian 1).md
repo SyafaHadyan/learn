@@ -117,4 +117,11 @@ Each model represents a process from a particular perspective (context).
 
 ### Prototyping
 
+![Prototyping](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/Prototyping.png)
+
+- Refers to the activity of creating prototypes of software applications.
+- Can be throwaway (rarely used) or evolutionary prototyping.
+- Users are intensively involved in defining prototypes.
+- Once the final prototype is developed, the requirement is considered to be frozen.
+
 ### Spiral
