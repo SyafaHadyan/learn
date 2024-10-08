@@ -7,10 +7,11 @@ public class Day19Interfaces
     {
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
+        int sumDivisor = 0;
         input.close();
         for (int i = 1; i <= 6; i++)
         {
-            //
+            if (number % i == 0)
         }
     }
 }
