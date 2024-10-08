@@ -31,6 +31,10 @@ public class Praktikum1
         }
         for (int i = 0; i < 3; i++)
         {
+            if (i < 3 && i != 1)
+            {
+                System.out.print(' ');
+            }
             System.out.print('S');
         }
     }
