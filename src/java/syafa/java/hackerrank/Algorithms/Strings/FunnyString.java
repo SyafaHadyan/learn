@@ -15,6 +15,8 @@ public class FunnyString
         String checkString = "";
         for (int i = 0; i < queries; i++)
         {
+            compareAscii.clear();
+            compareAsciiReversed.clear();
             checkString = input.nextLine();
             for (int j = 0; j < checkString.length(); j++)
             {
