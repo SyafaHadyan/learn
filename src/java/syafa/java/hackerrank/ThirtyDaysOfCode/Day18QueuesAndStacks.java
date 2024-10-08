@@ -17,6 +17,8 @@ public class Day18QueuesAndStacks
         if (reverseString.equals(checkString))
         {
             System.out.print("The word, " + checkString + ", is a palindrome.");
+            return;
         }
+        System.out.print("The word, " + checkString + ", is not a palindrome.");
     }
 }
