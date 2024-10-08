@@ -6,15 +6,6 @@ public class Praktikum2
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
-                            "MENU",
-                            "0. KELUAR",
-                            "1. HITUNG VOLUME BALOK",
-                            "2. HITUNG VOLUME BOLA",
-                            "3. HITUNG VOLUME KERUCUT",
-                            "4. HITUNG VOLUME SILINDER",
-                            "5. HITUNG VOLUME LIMAS SEGITIGA",
-                            "MASUKKAN PILIHAN ANDA",':');
         boolean inputValid = false;
         double selection = 0d;
         double radius = 0d;
@@ -24,6 +15,15 @@ public class Praktikum2
         final double PI = 3.1415926535;
         while (!inputValid)
         {
+            System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
+            "MENU",
+            "0. KELUAR",
+            "1. HITUNG VOLUME BALOK",
+            "2. HITUNG VOLUME BOLA",
+            "3. HITUNG VOLUME KERUCUT",
+            "4. HITUNG VOLUME SILINDER",
+            "5. HITUNG VOLUME LIMAS SEGITIGA",
+            "MASUKKAN PILIHAN ANDA",':');
             selection = Double.parseDouble(input.nextLine());
             inputValid = true;
             if (selection == 0)
@@ -68,7 +68,7 @@ public class Praktikum2
             }
             else
             {
-                System.out.print("\n\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
+                System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n");
                 inputValid = false;
             }
         }
