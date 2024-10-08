@@ -8,8 +8,7 @@ public class Praktikum1
         int spaceBeforeY = 0;
         int spaceMiddleY = 7;
         int spaceBeforeA = 8;
-        int spaceMiddleA = 1;
-        int spaceMiddleLowerA = 9;
+        int spaceMiddleA = 0;
         for (int i = 0; i < 2; i++)
         {
             System.out.print(' ');
@@ -107,12 +106,14 @@ public class Praktikum1
         for (int i = 0; i < 8; i++)
         {
             String firstSpace = String.format("%" + spaceBeforeA + "s","");
-            String secondSpace = String.format("%" + spaceMiddleA + "s","");
-            String thirdSpace = String.format("%" + spaceMiddleLowerA + "s","");
+            String secondSpace = String.format("%" + spaceMiddleA + "s","");;
             if (i == 0)
             {
                 System.out.printf("%s%c",firstSpace,'A');
             }
+            System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
+            System.out.print("\n");
+
         }
     }
 }
