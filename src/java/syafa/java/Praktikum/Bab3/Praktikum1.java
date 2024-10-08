@@ -5,6 +5,7 @@ public class Praktikum1
     public static void main(String[] args)
     {
         // ඞ
+        // !(The code is clean and readable)
         int spaceBeforeY = 0;
         int spaceMiddleY = 7;
         int spaceBeforeA = 7;
@@ -141,6 +142,7 @@ public class Praktikum1
             {
                 spaceBeforeA = 7;
                 spaceMiddleA = 1;
+                System.out.print("\n");
             }
         }
         for (int i = 0; i < 9; i++)
