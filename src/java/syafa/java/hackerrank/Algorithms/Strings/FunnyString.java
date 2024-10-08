@@ -14,12 +14,15 @@ public class FunnyString
         for (int i = 0; i < queries; i++)
         {
             checkString = input.nextLine();
-            checkAscii.add((int) checkString.charAt(i));
+            for (int j = 0; j < args.length; j++)
+            {
+                checkAscii.add((int) checkString.charAt(j));
+            }
             for (int j = checkString.length() - 1; j >= 0; j--)
             {
                 checkAsciiReversed.add((int) checkString.charAt(j));
             }
-            if (checkAscii.equals(checkAsciiReversed))
+            if (checkAscii.equals(checkAsciiReversed) == true)
             {
                 checkFunny.add("Funny");
                 continue;
