@@ -109,6 +109,10 @@ public class Praktikum1
             String firstSpace = String.format("%" + spaceBeforeA + "s","");
             String secondSpace = String.format("%" + spaceMiddleA + "s","");
             String thirdSpace = String.format("%" + spaceMiddleLowerA + "s","");
+            if (i == 0)
+            {
+                System.out.printf("%s%c",firstSpace,'A');
+            }
         }
     }
 }
