@@ -13,6 +13,7 @@ public class FunnyString
         for (int i = 0; i < queries; i++)
         {
             checkString = input.nextLine();
+            checkAscii.add((int) checkString.charAt(i));
             for (int j = checkString.length() - 1; j >= 0; j--)
             {
                 
