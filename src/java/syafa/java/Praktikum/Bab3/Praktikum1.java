@@ -220,7 +220,10 @@ public class Praktikum1
                 System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
                 spaceMiddleA += 2;
             }
-            System.out.print("\n");
+            if (i != 7)
+            {
+                System.out.print("\n");
+            }            
             spaceBeforeA--;
         }
     }
