@@ -80,3 +80,13 @@
 ## SCRUM
 
 ![SCRUM](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%202/SCRUM.png)
+
+- Conceived by Jeff Sutherland (early 1990s) and developed further by Schwaber and Beedle (2002).
+- Consistent with the agile manifesto.
+- Framework activities include:
+  - requirements
+  - analysis
+  - design
+  - evolution
+  - delivery
+- Scrum emphasizes the use of a set of software process patterns: backlog, sprints, scrum meetings (led by scrum master), and demos.
