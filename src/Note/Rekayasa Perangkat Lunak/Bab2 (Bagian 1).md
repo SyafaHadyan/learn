@@ -46,7 +46,13 @@ Software evolution (software maintenance) is the process of changing software ov
 
 Evolution roles: software analyst, software designer, software programmer, software testing.
 
-## SDLC Models
+## Software Development Life Cycle (SDLC)
+
+SDLC is a series of phases that provide a common understanding of the software-building process.
+
+SDLC model is a simplified representation of a software process.
+
+Each model represents a process from a particular perspective (context).
 
 ### Waterfall
 
