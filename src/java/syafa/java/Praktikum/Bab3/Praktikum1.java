@@ -90,9 +90,9 @@ public class Praktikum1
                 String secondSpace = String.format("%" + spaceMiddleY + "s","");
                 System.out.printf("%s%c%s%c",firstSpace,'Y',secondSpace,'Y');
             }
+            System.out.print("\n");
             spaceBeforeY++;
             spaceMiddleY -= 2;
-            System.out.print("\n");
         }
         for (int i = 0; i < 5; i++)
         {
@@ -103,8 +103,12 @@ public class Praktikum1
             System.out.print('Y');
             System.out.print("\n");
         }
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 4; i++)
         {
+            if (i == 0)
+            {
+                System.out.print("\n");
+            }
             String firstSpace = String.format("%" + spaceBeforeA + "s","");
             if (i == 0)
             {
@@ -114,8 +118,8 @@ public class Praktikum1
             {
                 String secondSpace = String.format("%" + spaceMiddleA + "s","");
                 System.out.printf("%s%c%s%c",firstSpace,'A',secondSpace,'A');
-                System.out.print("\n");
             }
+            System.out.print("\n");
             spaceBeforeA--;
             spaceMiddleA += 2;
         }
