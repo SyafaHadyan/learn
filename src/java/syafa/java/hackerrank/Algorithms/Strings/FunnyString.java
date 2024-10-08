@@ -10,6 +10,7 @@ public class FunnyString
         ArrayList<Integer> checkAscii = new ArrayList<Integer>();
         ArrayList<Integer> checkAsciiReversed = new ArrayList<Integer>();
         ArrayList<String> checkFunny = new ArrayList<String>();
+        ArrayList<Integer> compareAscii = new ArrayList<Integer>();
         String checkString = "";
         for (int i = 0; i < queries; i++)
         {
@@ -24,7 +25,7 @@ public class FunnyString
             }
             for (int j = 0; j < checkString.length() - 1; j++)
             {
-                
+                compareAscii.add(checkAscii.get(j + 1) - checkAscii.get(j));
             }
             if (checkAscii.equals(checkAsciiReversed))
             {
