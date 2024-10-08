@@ -6,6 +6,7 @@ public class Day18QueuesAndStacks
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        String checkString = input.nextLine();
         input.close();
     }
 }
