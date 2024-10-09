@@ -18,14 +18,11 @@ public class DengklekvsSengklek
         for (int i = 0; i < 4; i++)
         {
             String[] match = input.nextLine().split(" ");
-            System.out.println(match);
-            dengklek = match[0];
-            sengklek = match[1];
+            dengklek = match[1];
+            sengklek = match[0];
             if (dengklek.equalsIgnoreCase(sengklek))
             {
                 matchResult.add("Seri");
-                matchScore.set(0,matchScore.get(0) + 1);
-                matchScore.set(1,matchScore.get(1) + 1);
             }
             if (dengklek.equalsIgnoreCase("Batu"))
             {
@@ -65,10 +62,6 @@ public class DengklekvsSengklek
                     matchResult.add("Sengklek menang");
                     matchScore.set(1,matchScore.get(1) + 1);
                 }
-            }
-            for (int j = 0; j < 2; j++)
-            {
-                match.set(j,null);
             }
         }
         input.close();
