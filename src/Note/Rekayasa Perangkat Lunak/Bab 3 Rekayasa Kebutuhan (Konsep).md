@@ -103,7 +103,7 @@ Requirements form the basis for:
 
 #### Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
 
-![Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png "Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)")
+![Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
 
 ##### Objective
 
