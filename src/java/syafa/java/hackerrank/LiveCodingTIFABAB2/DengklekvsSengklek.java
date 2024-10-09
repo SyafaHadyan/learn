@@ -5,6 +5,7 @@ public class DengklekvsSengklek
 {
     public static void main(String[] args)
     {
+        //https://github.com/SyafaHadyan/learn/tree/main/src/java/syafa/java/hackerrank/LiveCodingTIFABAB2
         Scanner input = new Scanner(System.in);
         ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
