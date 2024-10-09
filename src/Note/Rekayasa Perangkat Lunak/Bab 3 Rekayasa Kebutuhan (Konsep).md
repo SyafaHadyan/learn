@@ -98,3 +98,18 @@ Requirements form the basis for:
 - Spesifikasi kebutuhan (*s/w req. specification*)
 - Validasi & verifikasi kebutuhan (*s/w req. validation and verification*)
 - Manajemen kebutuhan (*s/w req. management*)
+
+## Requirement Elicitation & Analysis
+
+### Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
+
+![Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
+
+#### Objective
+
+To understand the work that stakeholders do and how they might use a new system to help support that work.
+
+#### Techniques
+
+- Interviewing
+- Observation or ethnography
