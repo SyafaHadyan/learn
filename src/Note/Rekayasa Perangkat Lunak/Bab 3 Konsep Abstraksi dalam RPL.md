@@ -151,3 +151,12 @@ ini di Klinik ABC, dan bukan di klinik yang lain.
 - Contoh:
   - Masalah dalam Akademik Fakultas ABC (berdasarkan problem domain yang ada) -> jadwal kuliah yang bentrok, inkonsistensi mata kuliah dalam KRS, dll.
   - Masalah dalam Manajemen Klinik ABC -> antrian pasien yang tidak teratur, perbedaan stok obat antara jumlah tercatat dengan fisik.
+
+## Solution Domain
+
+- Ranah/domain solusi  daerah dimana solusi dibangun (mencakup ranah lain selain problem domain)
+- Harus memiliki keterkaitan yang kuat dengan problem  menyelesaikan masalah
+- Diperkaya dengan kajian literatur (literature review)
+- Contoh:
+  - Solusi dalam Akademik Fakultas ABC  Sistem Akademik Fakultas ABC Berbasis Website (konteks sistem, fungsionalitas sistem, batasan (constraints) sistem, arsitektur sistem, data, dll.)
+  - Solusi dalam Manajemen Klinik ABC  Sistem Manajemen Klinik ABC Berbasis Website
