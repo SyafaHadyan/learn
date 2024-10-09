@@ -27,7 +27,14 @@ public class MigratoryBirds
                 {
                     try
                     {
-                        
+                        if (sightingsSorted.get(j) == sightingsSorted.get(j + 1))
+                        {
+                            mostSightings++;
+                        }
+                        else
+                        {
+                            continue;
+                        }
                     }
                     catch (IndexOutOfBoundsException e)
                     {
