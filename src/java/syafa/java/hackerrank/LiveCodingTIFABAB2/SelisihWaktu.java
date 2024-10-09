@@ -28,6 +28,10 @@ public class SelisihWaktu
                     if (firstDate.get(1).equalsIgnoreCase(month.get(j)))
                     {
                         day -= Integer.parseInt(firstDate.get(0));
+                        if (Integer.parseInt(firstDate.get(0)) == Integer.parseInt(secondDate.get(0)))
+                        {
+                            day = 0;
+                        }
                         break;
                     }
                 }
