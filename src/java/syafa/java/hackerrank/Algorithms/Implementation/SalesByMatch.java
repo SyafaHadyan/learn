@@ -33,16 +33,6 @@ public class SalesByMatch
             {
                 //
             }
-            try
-            {
-                salesSorted.remove(0);
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                pairsWithoutMatch++;
-                break;
-            }
-            i--;
             pairsWithoutMatch++;
             System.out.println(pairsWithoutMatch);
         }
