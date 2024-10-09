@@ -13,11 +13,12 @@ public class DengklekvsSengklek
         for (int i = 0; i < 4; i++)
         {
             match.add(Arrays.toString(input.nextLine().split(" ")));
-            if (match.get(0).equalsIgnoreCase(match.get(1)))
+            System.out.println(match);
+            //if (match.get(0).equalsIgnoreCase(match.get(1)))
             {
                 matchResult.add("Seri");
             }
-            else if (match.get(0).equalsIgnoreCase("Batu"))
+            if (match.get(0).equalsIgnoreCase("Batu"))
             {
                 if (match.get(1).equalsIgnoreCase("Gunting"))
                 {
