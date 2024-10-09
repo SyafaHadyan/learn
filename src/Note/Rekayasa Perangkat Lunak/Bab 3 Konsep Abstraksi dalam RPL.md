@@ -69,3 +69,30 @@ Complexity Management
 - Kualitas pragmatis:
   - model harus bisa dipahami dengan baik oleh pengguna.
   - terdapat alat bantu pemodelan.
+
+## Tipe-tipe Model
+
+- Natural language models
+  - Useful for gathering requirement details.
+  - Natural language is inherently ambiguous, aim for a structured approach.
+  - Can be over flexible and long.
+- Diagramatic models
+  - Can be ad hoc, or follow a specific notation with clearly defined syntax.
+  - Can show static or dynamic relationships and behaviors.
+- Formal models
+  - State-based models using formal algebraic and logical approaches.
+
+## Tipe-tipe Model (Contoh)
+
+### Natural language models
+
+- User inserts credit/debit card into the slot.
+- System authenticates user PIN.
+- If the PIN is invalid, the system displays an error message and returns the card.
+- System displays a list of options and the user makes a selection.
+- If the user selection is incorrect, the system displays an error message and then displays a list of options again.
+- If the user selects cash withdrawal then
+  - The system asks the user to enter the amount of cash to be withdrawn, and the user enters the selection.
+  - The system checks that the amount entered does not exceed the amount contained in the cash dispenser, and the amount in the user’s account.
+  - System dispenses cash to the user.
+Etc.
