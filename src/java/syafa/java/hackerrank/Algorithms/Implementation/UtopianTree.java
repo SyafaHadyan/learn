@@ -7,6 +7,10 @@ public class UtopianTree
     {
         Scanner input = new Scanner(System.in);
         int AmountOfChecks = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < AmountOfChecks; i++)
+        {
+            //
+        }
         input.close();
     }
 }
