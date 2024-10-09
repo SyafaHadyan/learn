@@ -125,6 +125,10 @@ Requirements form the basis for:
 - Fokus pada **APA** (*WHAT*) dan **BUKAN** bagaimana (*HOW*)
 - Komunikasi adalah faktor penting
 
+## Sumber Informasi
+
+![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/SumberInformasi.png)
+
 ## Permasalahan dalam Rekayasa Kebutuhan
 
 ### Organizational-based
