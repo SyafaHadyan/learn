@@ -71,3 +71,17 @@ A natural language SRS should be **reviewed** by an independent party to identif
 
 - Kebutuhan yang melebihi dari kebutuhan normal untuk lebih memuaskan customer
 - Fungsionalitas tambahan sistem
+
+## Pengertian Rekayasa Kebutuhan
+
+### RE – requirements engineering (istilah lain dari requirements analysis)
+
+> The process of establishing the services that the customer requires from a system and the constraints under which it operates and is developed
+
+[Ian Sommerville]
+
+### Each software development process goes through the phase of RE
+
+> The broad spectrum of tasks and techniques that lead to an understanding of requirements
+
+[Roger S. Pressman]
