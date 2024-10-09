@@ -23,6 +23,10 @@ public class UtopianTree
             {
                 treeHeight++;
             }
+            if (i == heightResult.get(i))
+            {
+                heightResult.set(i,treeHeight);
+            }
         }
         input.close();
     }
