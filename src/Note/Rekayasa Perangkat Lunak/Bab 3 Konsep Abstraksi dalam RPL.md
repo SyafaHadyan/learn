@@ -61,3 +61,11 @@ Complexity Management
 - Memudahkan komunikasi dan pemahaman, baik antar anggota tim maupun tim dengan konsumen.
 - Membantu proses pengujian dan penjaminan kualitas sistem.
 - Mampu menjelaskan berbagai aspek dari sistem.
+
+## Kualitas Pemodelan
+
+- Kualitas sintaks -> sintaks pemodelan (notasi dan regulasi) harus benar sesuai dengan bahasa pemodelan yang digunakan.
+- Kualitas semantik -> model harus bisa merepresentasikan domain masalah secara lengkap dan benar.
+- Kualitas pragmatis:
+  - model harus bisa dipahami dengan baik oleh pengguna.
+  - terdapat alat bantu pemodelan.
