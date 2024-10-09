@@ -20,16 +20,16 @@ public class SelisihWaktu
                                                                         "Dec"));
         ArrayList<Integer> monthValue = new ArrayList<Integer>(Arrays.asList(31,
                                                                                 28,
-                                                                                29,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,
-                                                                                00,));
+                                                                                31,
+                                                                                30,
+                                                                                31,
+                                                                                30,
+                                                                                31,
+                                                                                31,
+                                                                                30,
+                                                                                31,
+                                                                                30,
+                                                                                31,));
         input.close();
     }
 }
