@@ -12,7 +12,7 @@ public class SalesByMatch
         input.close();
         for (int i = 0; i < sales.size(); i++)
         {
-            
+            salesSorted.add(Integer.parseInt(sales.get(i)));
         }
     }
 }
