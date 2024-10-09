@@ -8,5 +8,9 @@ public class ViralAdvertising
         Scanner input = new Scanner(System.in);
         int cumulativeAtDay = Integer.parseInt(input.nextLine());
         input.close();
+        for (int i = 0; i < cumulativeAtDay; i++)
+        {
+            
+        }
     }
 }
