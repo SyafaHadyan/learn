@@ -8,8 +8,9 @@ public class SalesByMatch
         Scanner input = new Scanner(System.in);
         int AmountOfSales = Integer.parseInt(input.nextLine());
         ArrayList<String> sales = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
-        ArrayList<Integer> salesSorted = new ArrayList<Integer>();
         input.close();
+        ArrayList<Integer> salesSorted = new ArrayList<Integer>();
+        int pairsWithoutMatch = 0;
         for (int i = 0; i < sales.size(); i++)
         {
             salesSorted.add(Integer.parseInt(sales.get(i)));
@@ -17,12 +18,12 @@ public class SalesByMatch
         Collections.sort(salesSorted);
         for (int i = 0; i < salesSorted.size(); i++)
         {
-            if (salesSorted.get(i) == salesSorted.get(i + 1));
+            if (salesSorted.get(i) == salesSorted.get(i + 1))
             {
                 i++;
                 continue;
             }
-
+            pairsWithoutMatch++;
         }
     }
 }
