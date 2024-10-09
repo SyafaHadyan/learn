@@ -58,6 +58,7 @@ public class SelisihWaktu
         if (minute < 0)
         {
             minute += 1440;
+            day--;
         }
         hour = minute / 60;
         minute %= 60;
