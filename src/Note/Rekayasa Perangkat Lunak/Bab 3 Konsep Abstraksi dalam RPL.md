@@ -142,3 +142,12 @@ for_all $i$ in 1..10, exists $j$ in 1..10: Square $(i)$ = $j^2$
 tersebut dilakukan?, siapa saja yang berperan dalam proses?, dan seterusnya.
   - Manajemen Klinik ABC -> deskripsi secara spesifik dari proses/batasan/aktivitas yang terjadi saat
 ini di Klinik ABC, dan bukan di klinik yang lain.
+
+## Problem
+
+- Masalah yang menjadi perhatian untuk diselesaikan dengan solusi yang akan dikerjakan.
+- Diidentifikasi berdasarkan problem domain.
+- Ketepatannya dipengaruhi oleh tingkat pemahaman terhadap problem domain -> pemahaman problem domain yang parsial berdampak pada identifikasi masalah yang tidak tepat dan solusi yang salah.
+- Contoh:
+  - Masalah dalam Akademik Fakultas ABC (berdasarkan problem domain yang ada) -> jadwal kuliah yang bentrok, inkonsistensi mata kuliah dalam KRS, dll.
+  - Masalah dalam Manajemen Klinik ABC -> antrian pasien yang tidak teratur, perbedaan stok obat antara jumlah tercatat dengan fisik.
