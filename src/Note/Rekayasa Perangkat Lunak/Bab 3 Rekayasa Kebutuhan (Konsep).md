@@ -103,19 +103,19 @@ Requirements form the basis for:
 
 #### Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
 
-![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
+![Penggalian dan Analisis Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
 
 #### Spesifikasi kebutuhan (*s/w req. specification*)
 
-![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/SpesifikasiKebutuhan.png)
+![Spesifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/SpesifikasiKebutuhan.png)
 
 #### Validasi & verifikasi kebutuhan (*s/w req. validation and verification*)
 
-![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ValidasiDanVerifikasiKebutuhan.png)
+![Validasi & Verifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ValidasiDanVerifikasiKebutuhan.png)
 
 #### Manajemen kebutuhan (*s/w req. management*)
 
-![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ManajemenKebutuhan.png)
+![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ManajemenKebutuhan.png)
 
 ## Permasalahan dalam Rekayasa Kebutuhan
 
