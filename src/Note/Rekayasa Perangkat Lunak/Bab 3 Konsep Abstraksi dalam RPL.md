@@ -104,3 +104,18 @@ Etc.
 ### Formal models
 
 for_all $i$ in 1..10, exists $j$ in 1..10: Square $(i)$ = $j^2$
+
+## Jenis-jenis Model
+
+- Context models
+  - show the relationships of the system to other systems.
+  - used to establish the system boundaries.
+- Behavioral models
+  - show the processes that are supported by the system.
+- Data flow models
+  - show the flow of information from one process to another.
+  - can be easily understood by the client.
+- State models
+  - show how the states of the system change in response to external or internal stimuli.
+- Object models
+  - show attributes, methods, and relationships of object classes within the system.
