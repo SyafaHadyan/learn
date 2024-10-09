@@ -63,17 +63,13 @@ public class DengklekvsSengklek
         {
             hasilPertandingan = "Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.";
         }
-        else if (match.get(0) > match.get(1))
+        else if (matchScore.get(0) > matchScore.get(1))
         {
             hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + match.get(0) + " vs " + match.get(1) + '.';
         }
-        else if (match.get(1) > match.get(0))
+        else if (matchScore.get(0) < matchScore.get(1))
         {
             hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + match.get(1) + " vs " + match.get(0) + '.';
-        }
-        for (String output : hasil)
-        {
-            System.out.println(output);
         }
         System.out.print(hasilPertandingan);
     }
