@@ -54,3 +54,20 @@ A natural language SRS should be **reviewed** by an independent party to identif
 - Acceptance criteria
 - end-user characteristics
 - system environments
+
+## Level Kebutuhan
+
+### Normal Requirement
+
+- Kebutuhan yang harus dipenuhi dan dinyatakan secara eksplisit
+- Fungsionalitas sistem, unjuk kerja
+
+### Expected Requirement
+
+- Kebutuhan yang tidak dinyatakan secara eksplisit tetapi menentukan kepuasan customer
+- Kemudahan interaksi dengan sistem, correctness
+
+### Exciting Requirement
+
+- Kebutuhan yang melebihi dari kebutuhan normal untuk lebih memuaskan customer
+- Fungsionalitas tambahan sistem
