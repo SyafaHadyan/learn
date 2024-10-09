@@ -10,12 +10,12 @@ public class SalesByMatch
         ArrayList<String> sales = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         ArrayList<Integer> salesSorted = new ArrayList<Integer>();
-        int pairsWithoutMatch = 0;
         for (int i = 0; i < sales.size(); i++)
         {
             salesSorted.add(Integer.parseInt(sales.get(i)));
         }
         Collections.sort(salesSorted);
+        System.out.println(salesSorted);
         for (int i = 0; i < salesSorted.size(); i++)
         {
             try
@@ -32,10 +32,10 @@ public class SalesByMatch
             {
                 //
             }
-            pairsWithoutMatch++;
             System.out.println(salesSorted);
-            System.out.println(pairsWithoutMatch);
+            System.out.println(salesSorted.size());
         }
-        System.out.print(pairsWithoutMatch);
+        System.out.println(salesSorted);
+        System.out.print(salesSorted.size());
     }
 }
