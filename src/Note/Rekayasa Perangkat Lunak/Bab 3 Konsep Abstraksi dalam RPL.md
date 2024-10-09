@@ -38,8 +38,7 @@ Complexity Management
 
 - Model:
   - representasi abstrak dari sesuatu yang nyata ataupun yang tidak nyata.
-  - representasi dari sebuah obyek, sistem atau ide dalam bentuk yang berbeda dari.
-  - aslinya.
+  - representasi dari sebuah obyek, sistem atau ide dalam bentuk yang berbeda dari aslinya.
   - sebuah obyek yang dibuat untuk merepresentasikan sesuatu untuk kemudahan pemahaman.
   - a theoretical construct that represents processes, with a set of variables and a set of logical & quantitative relationships between them.
 - Pemodelan adalah bagian dari proses abstraksi -> representasi dari abstraksi.
