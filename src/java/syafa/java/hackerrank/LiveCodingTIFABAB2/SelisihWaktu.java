@@ -33,6 +33,9 @@ public class SelisihWaktu
         ArrayList<String> firstDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> secondDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int day = 0;
+        int hour = 0;
+        int minute = 0;
         for (int i = 0; i < month.size(); i++)
         {
             if (firstDate.get(1).equalsIgnoreCase(month.get(i)))
