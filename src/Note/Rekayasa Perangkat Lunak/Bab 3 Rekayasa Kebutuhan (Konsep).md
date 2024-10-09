@@ -155,6 +155,12 @@ Requirements form the basis for:
 - Gives you a **template that guides** you in constructing a system.
 - **Documents** the decisions you have made.
 
-## Konspe Pemodelan Kebutuhan
+## Konsep Pemodelan Kebutuhan
 
 ![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelanKebutuhan.png)
+
+## Tujuan Utama Model Kebutuhan
+
+- Menjelaskan apa yang dibutuhkan oleh customer
+- Menjadi dasar bagi perancangan PL
+- Menjadi referensi dalam melakukan validasi kebutuhan
