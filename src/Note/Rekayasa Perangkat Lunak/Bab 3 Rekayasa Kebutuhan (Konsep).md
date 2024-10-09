@@ -139,3 +139,10 @@ Requirements form the basis for:
 - Inconsistent (changing) requirements
 - Indadequate requirements traceability
 - Ambiguous requirements
+
+## Konsep Pemodelan
+
+- A model is a **simplification** of reality.
+- A model provides the blueprints of a system (Grady Booch)
+
+![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelan.png)
