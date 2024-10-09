@@ -29,9 +29,12 @@ public class MigratoryBirds
             }
             try
             {
-                if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
+                if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)))
                 {
-                    currentMostType = sightingsSorted.get(i);
+                    if ((sightingsSorted.get(i) > currentMostType) && (currentMostType == 0))
+                    {
+                        currentMostType = sightingsSorted.get(i);
+                    }
                     for (int j = 0; j < sightingsSorted.size(); j++)
                     {
                         try
