@@ -15,5 +15,9 @@ public class SalesByMatch
             salesSorted.add(Integer.parseInt(sales.get(i)));
         }
         Collections.sort(salesSorted);
+        for (int i = 0; i < salesSorted.size(); i++)
+        {
+            //
+        }
     }
 }
