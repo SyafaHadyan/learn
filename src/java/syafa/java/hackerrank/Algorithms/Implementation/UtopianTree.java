@@ -12,10 +12,12 @@ public class UtopianTree
         ArrayList<Integer> heightResult = new ArrayList<Integer>();
         for (int i = 0; i < AmountOfChecks; i++)
         {
-            if (i == 0 || i % 2 != 0)
+            if ((i != 0) || (i % 2 != 0))
             {
-                treeHeight++;
+                treeHeight *= 2;
             }
+            else if ((i == 0) || (i % 2 == 0))
+            
         }
         input.close();
     }
