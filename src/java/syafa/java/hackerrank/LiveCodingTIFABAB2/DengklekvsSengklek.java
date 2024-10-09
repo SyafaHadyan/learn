@@ -10,7 +10,6 @@ public class DengklekvsSengklek
         ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
         ArrayList<Integer> matchScore = new ArrayList<Integer>();
-        String hasilPertandingan = "";
         for (int i = 0; i < 4; i++)
         {
             match.add(Arrays.toString(input.nextLine().split(" ")));
@@ -61,16 +60,15 @@ public class DengklekvsSengklek
         input.close();
         if (matchScore.get(0) == matchScore.get(1))
         {
-            hasilPertandingan = "Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.";
+            System.out.println("Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.");
         }
         else if (matchScore.get(0) > matchScore.get(1))
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + match.get(0) + " vs " + match.get(1) + '.';
+            System.out.println("Perlombaan dimenangkan oleh Dengklek dengan skor " + matchScore.get(0) + " vs " + matchScore.get(1) + '.');
         }
         else if (matchScore.get(0) < matchScore.get(1))
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + match.get(1) + " vs " + match.get(0) + '.';
+            System.out.println("Perlombaan dimenangkan oleh Sengklek dengan skor " + matchScore.get(1) + " vs " + matchScore.get(0) + '.');
         }
-        System.out.print(hasilPertandingan);
     }
 }
