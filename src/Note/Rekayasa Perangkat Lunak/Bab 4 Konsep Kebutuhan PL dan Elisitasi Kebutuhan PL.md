@@ -33,7 +33,7 @@ Setiap fungsi, batasan, atau properti lainnya yang harus disediakan, dimiliki at
 
 ### Contoh Requirements
 
-![User vs System Requirements](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/UserVSSystemRequirements.png)
+![User vs System Requirements](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/UserVSSystemRequirements.png)
 
 ## Kategori Kebutuhan
 
@@ -91,7 +91,7 @@ Setiap fungsi, batasan, atau properti lainnya yang harus disediakan, dimiliki at
 
 Requirements form the basis for:
 
-![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/FungsiRekayasaKebutuhan.png)
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/FungsiRekayasaKebutuhan.png)
 
 ## Proses Rekayasa Kebutuhan
 
@@ -104,19 +104,19 @@ Requirements form the basis for:
 
 #### Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
 
-![Penggalian dan Analisis Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
+![Penggalian dan Analisis Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/PenggalianDanAnalisisKebutuhan.png)
 
 #### Spesifikasi kebutuhan (*s/w req. specification*)
 
-![Spesifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/SpesifikasiKebutuhan.png)
+![Spesifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/SpesifikasiKebutuhan.png)
 
 #### Validasi & verifikasi kebutuhan (*s/w req. validation and verification*)
 
-![Validasi & Verifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ValidasiDanVerifikasiKebutuhan.png)
+![Validasi & Verifikasi Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/ValidasiDanVerifikasiKebutuhan.png)
 
 #### Manajemen kebutuhan (*s/w req. management*)
 
-![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ManajemenKebutuhan.png)
+![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/ManajemenKebutuhan.png)
 
 ## Permasalahan dalam Rekayasa Kebutuhan
 
@@ -146,7 +146,7 @@ Requirements form the basis for:
 - A model is a **simplification** of reality.
 - A model provides the blueprints of a system (Grady Booch)
 
-![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelan.png)
+![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/KonsepPemodelan.png)
 
 ## Mengapa Pemodelan?
 
@@ -158,7 +158,7 @@ Requirements form the basis for:
 
 ## Konsep Pemodelan Kebutuhan
 
-![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelanKebutuhan.png)
+![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/KonsepPemodelanKebutuhan.png)
 
 ## Tujuan Utama Model Kebutuhan
 
@@ -199,4 +199,4 @@ Requirements form the basis for:
 
 ## Alat Bantu (Tools) & Dokumentasi
 
-![Alat Bantu (Tools) & Dokumentasi](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/AlatBantuDanDokumentasi.png)
+![Alat Bantu (Tools) & Dokumentasi](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/AlatBantuDanDokumentasi.png)
