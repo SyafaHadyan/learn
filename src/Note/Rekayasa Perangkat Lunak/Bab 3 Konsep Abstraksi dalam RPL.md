@@ -129,3 +129,16 @@ for_all $i$ in 1..10, exists $j$ in 1..10: Square $(i)$ = $j^2$
   - CRC cards -> pemodelan kebutuhan (requirements) -> class, responsibility, collaborators.
 - Berorientasi objek (OO)
   - Unified modeling language (UML) -> pemodelan sistem berorientasi objek hasil unifikasi dari OMT (Rumbaugh), Booch’s methods and OOSE (Jacobson) -> widely used in OOA and OOD
+
+## Problem Domain
+
+- Ranah/domain masalah -> daerah kajian spesifik dimana masalah muncul.
+- Urgensi: memahami dengan jelas kondisi (proses, batasan, aktivitas) yang sedang berjalan (current conditions) sehingga muncul masalah (daerah terdampak) -> dasar untuk identifikasi masalah dengan tepat.
+- Teknik: wawancara, observasi, analisis dokumen (literatur).
+- Panduan eksplorasi: what, how, who, when, why.
+- **BUKAN** masalah umum (general problem) atau masalah utama (main problem).
+- Contoh:
+  - Akademik Fakultas ABC -> proses apa saja yang dilakukan saat ini?, bagaimana proses-proses
+tersebut dilakukan?, siapa saja yang berperan dalam proses?, dan seterusnya.
+  - Manajemen Klinik ABC -> deskripsi secara spesifik dari proses/batasan/aktivitas yang terjadi saat
+ini di Klinik ABC, dan bukan di klinik yang lain.
