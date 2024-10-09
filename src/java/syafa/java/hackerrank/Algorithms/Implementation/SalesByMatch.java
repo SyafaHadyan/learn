@@ -6,7 +6,8 @@ public class SalesByMatch
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int sales = Integer.parseInt(input.nextLine());
+        int AmountOfSales = Integer.parseInt(input.nextLine());
+        ArrayList<String> sales = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
