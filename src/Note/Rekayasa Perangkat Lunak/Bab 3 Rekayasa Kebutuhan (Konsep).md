@@ -103,13 +103,16 @@ Requirements form the basis for:
 
 #### Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
 
-![Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/PenggalianDanAnalisisKebutuhan.png)
 
-##### Objective
+#### Spesifikasi kebutuhan (*s/w req. specification*)
 
-To understand the work that stakeholders do and how they might use a new system to help support that work.
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/SpesifikasiKebutuhan.png)
 
-##### Techniques
+#### Validasi & verifikasi kebutuhan (*s/w req. validation and verification*)
 
-- Interviewing
-- Observation or ethnography
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ValidasiDanVerifikasiKebutuhan.png)
+
+#### Manajemen kebutuhan (*s/w req. management*)
+
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ManajemenKebutuhan.png)
