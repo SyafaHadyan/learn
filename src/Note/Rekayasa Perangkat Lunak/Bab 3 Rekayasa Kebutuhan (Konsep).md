@@ -85,3 +85,9 @@ A natural language SRS should be **reviewed** by an independent party to identif
 > The broad spectrum of tasks and techniques that lead to an understanding of requirements
 
 [Roger S. Pressman]
+
+## Fungsi Rekayasa Kebutuhan
+
+Requirements form the basis for:
+
+![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/FungsiRekayasaKebutuhan.png)
