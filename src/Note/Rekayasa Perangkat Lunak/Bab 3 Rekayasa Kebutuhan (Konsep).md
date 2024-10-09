@@ -91,3 +91,10 @@ A natural language SRS should be **reviewed** by an independent party to identif
 Requirements form the basis for:
 
 ![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/FungsiRekayasaKebutuhan.png)
+
+## Proses Rekayasa Kebutuhan
+
+- Penggalian dan analisis kebutuhan (*s/w req. elicitation and analysis*)
+- Spesifikasi kebutuhan (*s/w req. specification*)
+- Validasi & verifikasi kebutuhan (*s/w req. validation and verification*)
+- Manajemen kebutuhan (*s/w req. management*)
