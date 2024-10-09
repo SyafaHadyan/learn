@@ -27,34 +27,34 @@ public class DengklekvsSengklek
                 }
                 else if (match.get(1).equalsIgnoreCase("Kertas"))
                 {
-                    hasil[i] = "Sengklek menang";
-                    match.get(1)++;
+                    matchResult.add("Sengklek menang");
+                    matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
             else if (match.get(0).equalsIgnoreCase("Gunting"))
             {
                 if (match.get(1).equalsIgnoreCase("Batu"))
                 {
-                    hasil[i] = "Sengklek menang";
-                    match.get(1)++;
+                    matchResult.add("Sengklek menang");
+                    matchScore.set(1,matchScore.get(1) + 1);
                 }
                 else if (match.get(1).equalsIgnoreCase("Kertas"))
                 {
-                    hasil[i] = "Dengklek menang";
-                    match.get(0)++;
+                    matchResult.add("Sengklek menang");
+                    matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
             else if (match.get(0).equalsIgnoreCase("Kertas"))
             {
                 if (match.get(1).equalsIgnoreCase("Batu"))
                 {
-                    hasil[i] = "Dengklek menang";
-                    match.get(0)++;
+                    matchResult.add("Dengklek menang");
+                    matchScore.set(0,matchScore.get(0) + 1);
                 }
                 else if (match.get(1).equalsIgnoreCase("Gunting"))
                 {
-                    hasil[i] = "Sengklek menang";
-                    match.get(1)++;
+                    matchResult.add("Sengklek menang");
+                    matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
         }
