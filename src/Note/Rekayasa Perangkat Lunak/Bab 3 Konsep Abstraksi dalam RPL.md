@@ -96,3 +96,11 @@ Complexity Management
   - The system checks that the amount entered does not exceed the amount contained in the cash dispenser, and the amount in the user’s account.
   - System dispenses cash to the user.
 Etc.
+
+### Diagramatic models
+
+image here
+
+### Formal models
+
+
