@@ -33,5 +33,9 @@ public class SelisihWaktu
         ArrayList<String> firstDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> secondDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        for (int i = 0; i < month.size(); i++)
+        {
+            //
+        }
     }
 }
