@@ -18,12 +18,21 @@ public class SalesByMatch
         Collections.sort(salesSorted);
         for (int i = 0; i < salesSorted.size(); i++)
         {
-            if (salesSorted.get(i) == salesSorted.get(i + 1))
+            try
             {
-                i++;
-                continue;
+                if (salesSorted.get(i) == salesSorted.get(i + 1))
+                {
+                    i++;
+                    continue;
+                }
             }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
+            }
+            i++;
             pairsWithoutMatch++;
         }
+        System.out.print(pairsWithoutMatch);
     }
 }
