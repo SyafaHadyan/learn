@@ -53,5 +53,6 @@ public class MigratoryBirds
             }
         }
         System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
+        System.out.println(sightingsSorted);
     }
 }
