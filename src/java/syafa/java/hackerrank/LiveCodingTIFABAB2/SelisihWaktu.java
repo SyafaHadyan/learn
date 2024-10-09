@@ -32,6 +32,10 @@ public class SelisihWaktu
                         {
                             day = 0;
                         }
+                        else if (Integer.parseInt(secondDate.get(0)) - Integer.parseInt(firstDate.get(0)) == 1)
+                        {
+                            day = 1;
+                        }
                         break;
                     }
                 }
