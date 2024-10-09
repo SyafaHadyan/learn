@@ -40,6 +40,7 @@ public class UtopianTree
                 System.out.print("\n");
             }
         }
-        System.out.print("\n" + heightCheck.get(heightCheck.size() - 1));
+        System.out.println("\n" + heightCheck.get(heightCheck.size() - 1));
+        System.out.println(treeHeight);
     }
 }
