@@ -21,8 +21,8 @@ public class DengklekvsSengklek
             {
                 if (match.get(1).equalsIgnoreCase("Gunting"))
                 {
-                    hasil[i] = "Dengklek menang";
-                    match.get(0)++;
+                    matchResult.add("Dengklek menang");
+                    matchScore.set(0,matchScore.get(0) + 1);
                 }
                 else if (match.get(1).equalsIgnoreCase("Kertas"))
                 {
