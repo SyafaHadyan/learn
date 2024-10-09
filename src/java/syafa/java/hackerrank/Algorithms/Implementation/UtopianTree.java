@@ -16,9 +16,9 @@ public class UtopianTree
             heightCheck.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
-        for (int i = 0; i < heightCheck.get(heightCheck.size() - 1); i++)
+        for (int i = 0; i <= 60; i++)
         {
-            if ((i != 0) || (i % 2 != 0))
+            if (i % 2 != 0)
             {
                 treeHeight *= 2;
             }
@@ -31,9 +31,11 @@ public class UtopianTree
                 heightResult.add(treeHeight);
                 checkAt++;
             }
-            System.out.println(treeHeight);
+            if (heightResult.size() == AmountOfChecks)
+            {
+                break;
+            }
         }
-        System.out.println('-');
         for (int i = 0; i < heightResult.size(); i++)
         {
             System.out.print(heightResult.get(i));
