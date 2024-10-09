@@ -29,3 +29,7 @@ A natural language SRS should be **reviewed** by an independent party to identif
 **User requirements** are statements, in a natural language plus diagrams, of what services the system is expected to provide to system users and the constraints under which it must operate.
 
 **System requirements** are more detailed descriptions of the software system’s functions, services, and operational constraints.
+
+### Contoh Requirements
+
+![User vs System Requirements](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/UserVSSystemRequirements.png)
