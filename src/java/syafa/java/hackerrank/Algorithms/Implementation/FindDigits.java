@@ -18,8 +18,7 @@ public class FindDigits
             {
                 try
                 {
-                    System.out.println(Integer.parseInt(numberString.toString()) + " % " + Integer.parseInt(String.valueOf(numberString.charAt(j))));
-                    if (Integer.parseInt(numberString.toString()) % Integer.parseInt(String.valueOf(numberString.charAt(j))) == 0);
+                    if (Integer.parseInt(numberString.toString()) % Integer.parseInt(String.valueOf(numberString.charAt(j))) == 0)
                     {
                         divisorCount++;
                     }
@@ -28,7 +27,6 @@ public class FindDigits
                 {
                     //
                 }
-                System.out.println(divisorCount);
             }
             divisorCountArrList.add(divisorCount);
             divisorCount = 0;
