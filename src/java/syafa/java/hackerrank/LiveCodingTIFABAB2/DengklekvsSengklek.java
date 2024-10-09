@@ -10,6 +10,8 @@ public class DengklekvsSengklek
         ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
         ArrayList<Integer> matchScore = new ArrayList<Integer>();
+        String dengklek = "";
+        String sengklek = "";
         for (int i = 0; i < 2; i++)
         {
             matchScore.add(0);
@@ -18,46 +20,48 @@ public class DengklekvsSengklek
         {
             match.add(Arrays.toString(input.nextLine().split(" ")));
             System.out.println(match);
-            if (match.get(0).equalsIgnoreCase(match.get(1)))
+            dengklek = match.get(0);
+            sengklek = match.get(1);
+            if (dengklek.equalsIgnoreCase(sengklek))
             {
                 matchResult.add("Seri");
                 matchScore.set(0,matchScore.get(0) + 1);
                 matchScore.set(1,matchScore.get(1) + 1);
             }
-            if (match.get(0).equalsIgnoreCase("Batu"))
+            if (dengklek.equalsIgnoreCase("Batu"))
             {
-                if (match.get(1).equalsIgnoreCase("Gunting"))
+                if (sengklek.equalsIgnoreCase("Gunting"))
                 {
                     matchResult.add("Dengklek menang");
                     matchScore.set(0,matchScore.get(0) + 1);
                 }
-                else if (match.get(1).equalsIgnoreCase("Kertas"))
+                else if (sengklek.equalsIgnoreCase("Kertas"))
                 {
                     matchResult.add("Sengklek menang");
                     matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
-            else if (match.get(0).equalsIgnoreCase("Gunting"))
+            else if (dengklek.equalsIgnoreCase("Gunting"))
             {
-                if (match.get(1).equalsIgnoreCase("Batu"))
+                if (sengklek.equalsIgnoreCase("Batu"))
                 {
                     matchResult.add("Sengklek menang");
                     matchScore.set(1,matchScore.get(1) + 1);
                 }
-                else if (match.get(1).equalsIgnoreCase("Kertas"))
+                else if (sengklek.equalsIgnoreCase("Kertas"))
                 {
                     matchResult.add("Sengklek menang");
                     matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
-            else if (match.get(0).equalsIgnoreCase("Kertas"))
+            else if (dengklek.equalsIgnoreCase("Kertas"))
             {
-                if (match.get(1).equalsIgnoreCase("Batu"))
+                if (sengklek.equalsIgnoreCase("Batu"))
                 {
                     matchResult.add("Dengklek menang");
                     matchScore.set(0,matchScore.get(0) + 1);
                 }
-                else if (match.get(1).equalsIgnoreCase("Gunting"))
+                else if (sengklek.equalsIgnoreCase("Gunting"))
                 {
                     matchResult.add("Sengklek menang");
                     matchScore.set(1,matchScore.get(1) + 1);
