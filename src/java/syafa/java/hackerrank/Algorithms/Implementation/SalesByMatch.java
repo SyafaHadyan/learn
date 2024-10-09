@@ -15,7 +15,6 @@ public class SalesByMatch
             salesSorted.add(Integer.parseInt(sales.get(i)));
         }
         Collections.sort(salesSorted);
-        System.out.println(salesSorted);
         for (int i = 0; i < salesSorted.size(); i++)
         {
             try
@@ -32,10 +31,7 @@ public class SalesByMatch
             {
                 //
             }
-            System.out.println(salesSorted);
-            System.out.println(salesSorted.size());
         }
-        System.out.println(salesSorted);
         System.out.print(salesSorted.size());
     }
 }
