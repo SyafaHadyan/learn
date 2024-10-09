@@ -11,6 +11,7 @@ public class UtopianTree
         int checkAt = 0;
         ArrayList<Integer> heightCheck = new ArrayList<Integer>();
         ArrayList<Integer> heightResult = new ArrayList<Integer>();
+        ArrayList<Integer> heightOutput = new ArrayList<Integer>();
         for (int i = 0; i < AmountOfChecks; i++)
         {
             heightCheck.add(Integer.parseInt(input.nextLine()));
@@ -26,19 +27,15 @@ public class UtopianTree
             {
                 treeHeight++;
             }
-            if (i == heightCheck.get(checkAt))
+            heightResult.add(treeHeight);
+        }
+        for (int i = 0; i < AmountOfChecks; i++)
+        {
+            if (i == checkAt)
             {
-                heightResult.add(treeHeight);
+                System.out.print(heightResult.get(i));
                 checkAt++;
             }
-            if (heightResult.size() == AmountOfChecks)
-            {
-                break;
-            }
-        }
-        for (int i = 0; i < heightResult.size(); i++)
-        {
-            System.out.print(heightResult.get(i));
             if (i < heightResult.size() - 1)
             {
                 System.out.print("\n");
