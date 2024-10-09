@@ -40,7 +40,8 @@ public class SelisihWaktu
         {
             if (firstDate.get(1).equalsIgnoreCase(month.get(i)))
             {
-                //
+                day = monthValue.get(i);
+                break;
             }
         }
     }
