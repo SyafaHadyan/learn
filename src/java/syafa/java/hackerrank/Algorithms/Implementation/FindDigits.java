@@ -23,12 +23,12 @@ public class FindDigits
                     {
                         divisorCount++;
                     }
-                    System.out.println(divisorCount);
                 }
                 catch (ArithmeticException e)
                 {
                     //
                 }
+                System.out.println(divisorCount);
             }
             divisorCountArrList.add(divisorCount);
             divisorCount = 0;
