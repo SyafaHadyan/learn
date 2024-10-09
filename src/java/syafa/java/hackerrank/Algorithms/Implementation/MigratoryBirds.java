@@ -29,7 +29,7 @@ public class MigratoryBirds
                     {
                         
                     }
-                    catch (Exception e)
+                    catch (IndexOutOfBoundsException e)
                     {
                         // TODO: handle exception
                     }
