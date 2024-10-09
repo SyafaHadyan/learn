@@ -11,7 +11,7 @@ public class MigratoryBirds
         ArrayList<String> sightings = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> sightingsSorted = new ArrayList<Integer>();
         input.close();
-        StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
+        //StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
         boolean resetCounter = true;
         int mostType = 0;
         int currentMostType = 0;
