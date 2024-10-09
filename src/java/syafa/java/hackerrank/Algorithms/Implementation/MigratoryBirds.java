@@ -6,7 +6,8 @@ public class MigratoryBirds
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arrayLength = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder();
+        useless.delete(0,useless.length());
         ArrayList<String> sightings = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> sightingsSorted = new ArrayList<Integer>();
         input.close();
