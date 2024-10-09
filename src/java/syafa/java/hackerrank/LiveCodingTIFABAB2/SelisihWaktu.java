@@ -29,7 +29,8 @@ public class SelisihWaktu
                                                                                 30,
                                                                                 31,
                                                                                 30,
-                                                                                31,));
+                                                                                31));
+        ArrayList<String> firstDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
