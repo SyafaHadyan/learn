@@ -42,7 +42,7 @@ public class MigratoryBirds
                         }
                         catch (IndexOutOfBoundsException e)
                         {
-                            if (sightingsSorted.get(j) == sightingsSorted.get(j))
+                            if (sightingsSorted.get(j) == sightingsSorted.get(j));
                         }
                     }
                 }
