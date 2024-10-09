@@ -59,7 +59,7 @@ public class DengklekvsSengklek
             }
         }
         input.close();
-        if (match.get(0) == match.get(1))
+        if (matchScore.get(0) == matchScore.get(1))
         {
             hasilPertandingan = "Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.";
         }
