@@ -154,9 +154,13 @@ ini di Klinik ABC, dan bukan di klinik yang lain.
 
 ## Solution Domain
 
-- Ranah/domain solusi -> daerah dimana solusi dibangun (mencakup ranah lain selain problem domain)
-- Harus memiliki keterkaitan yang kuat dengan problem -> menyelesaikan masalah
-- Diperkaya dengan kajian literatur (literature review)
+- Ranah/domain solusi -> daerah dimana solusi dibangun (mencakup ranah lain selain problem domain).
+- Harus memiliki keterkaitan yang kuat dengan problem -> menyelesaikan masalah.
+- Diperkaya dengan kajian literatur (literature review).
 - Contoh:
-  - Solusi dalam Akademik Fakultas ABC -> Sistem Akademik Fakultas ABC Berbasis Website (konteks sistem, fungsionalitas sistem, batasan (constraints) sistem, arsitektur sistem, data, dll.)
-  - Solusi dalam Manajemen Klinik ABC -> Sistem Manajemen Klinik ABC Berbasis Website
+  - Solusi dalam Akademik Fakultas ABC -> Sistem Akademik Fakultas ABC Berbasis Website (konteks sistem, fungsionalitas sistem, batasan (constraints) sistem, arsitektur sistem, data, dll.).
+  - Solusi dalam Manajemen Klinik ABC -> Sistem Manajemen Klinik ABC Berbasis Website.
+
+## Ilustrasi Posisi Domain
+
+![Ilustrasi Posisi Domain](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/IlustrasiPosisiDomain.png)
