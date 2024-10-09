@@ -40,6 +40,7 @@ public class SalesByMatch
             }
             catch (IndexOutOfBoundsException e)
             {
+                pairsWithoutMatch++;
                 break;
             }
             i--;
