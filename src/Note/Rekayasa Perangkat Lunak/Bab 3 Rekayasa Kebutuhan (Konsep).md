@@ -11,3 +11,9 @@ Setiap fungsi, batasan, atau properti lainnya yang harus disediakan, dimiliki at
 - (i) A condition or capability needed by a user to solve a problem or achieve an objective,
 - (ii) A condition or capability that must be met/possessed by a product, service, product component or service component to satisfy a supplier agreement, standard, specification or other formally imposed documents,
 - A documented representation of a condition or a capability as in (i) or (ii) above.
+
+### IEEE
+
+- Suatu kondisi atau kemampuan yang dibutuhkan oleh pengguna untuk menyelesaikan permasalahan atau untuk mencapai sebuah tujuan.
+- Sebuah kondisi atau kemampuan yang harus dipenuhi atau dimiliki oleh sebuah sistem, untuk memenuhi sebuah kontrak, standard, spesifikasi, atau dokumen-dokumen formal lainnya.
+- A statement that identifies a product or process operational, functional, or design characteristic or constraint, which is unambiguous, testable or measurable, and necessary for product or process acceptability (by consumers or internal quality assurance guidelines) (IEEE-STD-1220-1998).
