@@ -17,3 +17,9 @@ Setiap fungsi, batasan, atau properti lainnya yang harus disediakan, dimiliki at
 - Suatu kondisi atau kemampuan yang dibutuhkan oleh pengguna untuk menyelesaikan permasalahan atau untuk mencapai sebuah tujuan.
 - Sebuah kondisi atau kemampuan yang harus dipenuhi atau dimiliki oleh sebuah sistem, untuk memenuhi sebuah kontrak, standard, spesifikasi, atau dokumen-dokumen formal lainnya.
 - A statement that identifies a product or process operational, functional, or design characteristic or constraint, which is unambiguous, testable or measurable, and necessary for product or process acceptability (by consumers or internal quality assurance guidelines) (IEEE-STD-1220-1998).
+
+## Requirements Statements
+
+Requirements are often written in **natural language** (e.g., English, Bahasa).
+Natural language is inherently **ambiguous**.
+A natural language SRS should be **reviewed** by an independent party to identify ambiguous use of language so that it can be corrected.
