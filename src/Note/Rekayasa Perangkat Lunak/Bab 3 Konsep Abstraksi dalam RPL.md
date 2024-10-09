@@ -46,7 +46,7 @@ Complexity Management
 - Contoh : model jembatan, model arus lalu lintas, model pesawat terbang, model proses pengembangan PL
 - Karekteristik model:
   - lebih mudah dan lebih cepat dibangun/dibuat.
-  - bisa untuk simulasi  memahami sebuah konsep.
+  - bisa untuk simulasi -> memahami sebuah konsep.
   - dapat berkembang/berubah sesuai dengan pemahaman kita tentang sebuah konsep.
   - dapat diseleksi yang perlu didetilkan atau diabaikan dari sebuah konsep.
   - representasi dari sesuatu yang nyata ataupun tidak dari berbagai domain.
