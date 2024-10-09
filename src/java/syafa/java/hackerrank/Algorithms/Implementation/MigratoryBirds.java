@@ -23,6 +23,7 @@ public class MigratoryBirds
         {
             if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
             {
+                mostType = sightingsSorted.get(i);
                 for (int j = 0; j < sightingsSorted.size(); j++)
                 {
                     try
@@ -43,5 +44,6 @@ public class MigratoryBirds
                 }
             }
         }
+        System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
     }
 }
