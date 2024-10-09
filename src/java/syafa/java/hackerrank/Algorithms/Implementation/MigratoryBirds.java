@@ -50,7 +50,7 @@ public class MigratoryBirds
             }
             catch (IndexOutOfBoundsException e)
             {
-                // TODO Auto-generated catch block
+                //
             }
         }
         System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
