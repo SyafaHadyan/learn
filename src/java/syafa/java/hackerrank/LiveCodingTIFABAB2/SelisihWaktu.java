@@ -48,7 +48,9 @@ public class SelisihWaktu
                     day -= monthValue.get(j);
                     if (firstDate.get(1).equalsIgnoreCase(month.get(j)))
                     {
+                        System.out.println(day);
                         day -= Integer.parseInt(firstDate.get(0));
+                        System.out.println(day);
                         break;
                     }
                 }
