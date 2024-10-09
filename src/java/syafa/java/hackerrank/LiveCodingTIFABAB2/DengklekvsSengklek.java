@@ -59,21 +59,24 @@ public class DengklekvsSengklek
             match.clear();
         }
         input.close();
-        if (matchScore.get(0) == matchScore.get(1))
+        for (int i = 0; i < matchResult.size(); i++)
         {
-            System.out.println("Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.");
-        }
-        else if (matchScore.get(0) > matchScore.get(1))
-        {
-            System.out.println("Perlombaan dimenangkan oleh Dengklek dengan skor " + matchScore.get(0) + " vs " + matchScore.get(1) + '.');
-        }
-        else if (matchScore.get(0) < matchScore.get(1))
-        {
-            System.out.println("Perlombaan dimenangkan oleh Sengklek dengan skor " + matchScore.get(1) + " vs " + matchScore.get(0) + '.');
-        }
-        for (int i = 0; i < args.length; i++)
-        {
-            
+            System.out.println(matchResult.get(i));
+            if (i == matchResult.size() - 1)
+            {
+                if (matchScore.get(0) == matchScore.get(1))
+                {
+                    System.out.println("Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.");
+                }
+                else if (matchScore.get(0) > matchScore.get(1))
+                {
+                    System.out.println("Perlombaan dimenangkan oleh Dengklek dengan skor " + matchScore.get(0) + " vs " + matchScore.get(1) + '.');
+                }
+                else if (matchScore.get(0) < matchScore.get(1))
+                {
+                    System.out.println("Perlombaan dimenangkan oleh Sengklek dengan skor " + matchScore.get(1) + " vs " + matchScore.get(0) + '.');
+                }
+            }
         }
     }
 }
