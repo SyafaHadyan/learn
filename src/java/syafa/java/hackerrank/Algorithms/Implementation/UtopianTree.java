@@ -40,6 +40,5 @@ public class UtopianTree
                 System.out.print("\n");
             }
         }
-        System.out.print(heightResult);
     }
 }
