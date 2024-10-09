@@ -103,4 +103,4 @@ Etc.
 
 ### Formal models
 
-`for_all i in 1..10, exists j in 1..10: Square (i) = j2`
+for_all $i$ in 1..10, exists $j$ in 1..10: Square $(i)$ = $j^2$
