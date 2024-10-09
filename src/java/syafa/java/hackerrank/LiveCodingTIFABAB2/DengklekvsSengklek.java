@@ -13,7 +13,7 @@ public class DengklekvsSengklek
         int sengklek = 0;
         for (int i = 0; i < 4; i++)
         {
-            
+            matchResult.add(Arrays.toString(input.nextLine().split(" ")));
             if (dengklek.equalsIgnoreCase(sengklek))
             {
                 hasil[i] = "Seri";
