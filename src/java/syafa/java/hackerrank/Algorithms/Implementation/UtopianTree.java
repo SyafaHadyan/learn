@@ -25,7 +25,7 @@ public class UtopianTree
             {
                 treeHeight++;
             }
-            if (heightCheck.get(i).equals(i - 1))
+            if (heightCheck.get(i - 1).equals(i))
             {
                 heightResult.add(treeHeight);
             }
