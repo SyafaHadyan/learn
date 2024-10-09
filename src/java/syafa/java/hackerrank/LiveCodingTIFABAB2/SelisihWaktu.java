@@ -52,5 +52,6 @@ public class SelisihWaktu
                 break;
             }
         }
+        System.out.print(day + 'd' + ' ' + hour + 'h' + ' ' + minute + 'm');
     }
 }
