@@ -14,7 +14,7 @@ public class UtopianTree
             heightResult.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
-        for (int i = 0; i < heightResult.get(heightResult.size()); i++)
+        for (int i = 0; i < heightResult.get(heightResult.size() - 1); i++)
         {
             if ((i != 0) || (i % 2 != 0))
             {
