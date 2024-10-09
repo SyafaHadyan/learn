@@ -173,3 +173,25 @@ Requirements form the basis for:
 - Minimalisasi kopling -> antar klas
 - Memastikan bahwa model kebutuhan memiliki nilai manfaat untuk seluruh *stakeholders*
 - Model dibuat sesederhana mungkin -> notasi yang sederhana, non duplikasi informasi.
+
+## Tipe-tipe Model Kebutuhan
+
+### Scenario-based models
+
+- Berdasarkan sudut pandang aktor
+
+### Data models
+
+- Menjelaskan domain informasi dari masalah
+
+### Class-oriented models
+
+- Merepresentasikan klas-klas yang relevan dengan kebutuhan PL
+
+### Flow-oriented models
+
+- Merepresentasikan proses dan data dari sistem
+
+### Behavioral models
+
+- Merepresentasikan perilaku sistem berdasar event
