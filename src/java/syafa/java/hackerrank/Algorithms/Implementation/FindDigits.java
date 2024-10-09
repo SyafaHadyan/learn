@@ -7,7 +7,6 @@ public class FindDigits
     {
         Scanner input = new Scanner(System.in);
         int valueCheck = Integer.parseInt(input.nextLine());
-        //String numberString = "";
         int divisorCount = 0;
         ArrayList<Integer> divisorCountArrList = new ArrayList<Integer>();
         StringBuilder numberString = new StringBuilder();
