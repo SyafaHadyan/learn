@@ -7,10 +7,7 @@ public class DengklekvsSengklek
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> matchResult = new ArrayList<String>();
-        String hasil[] = new String[4];
         String hasilPertandingan = "";
-        //int matchResult.get(0) = 0;
-        //int matchResult.get(1) = 0;
         for (int i = 0; i < 4; i++)
         {
             matchResult.add(Arrays.toString(input.nextLine().split(" ")));
