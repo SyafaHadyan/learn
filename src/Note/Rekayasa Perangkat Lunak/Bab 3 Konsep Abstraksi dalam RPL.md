@@ -119,3 +119,13 @@ for_all $i$ in 1..10, exists $j$ in 1..10: Square $(i)$ = $j^2$
   - show how the states of the system change in response to external or internal stimuli.
 - Object models
   - show attributes, methods, and relationships of object classes within the system.
+
+## Metode Pemodelan
+
+- Klasik
+  - Entity-relationship modeling (ERM) -> pemodelan data (entity, relationship, attribute, attribute value, modality, cardinality).
+  - Finite state machines (FSM) -> pemodelan keadaan (state) dan transisi (transition).
+  - Data flow -> pemodelan proses dan aliran data antar proses -> entity, process, storage, data flow.
+  - CRC cards -> pemodelan kebutuhan (requirements) -> class, responsibility, collaborators.
+- Berorientasi objek (OO)
+  - Unified modeling language (UML) -> pemodelan sistem berorientasi objek hasil unifikasi dari OMT (Rumbaugh), Booch’s methods and OOSE (Jacobson) -> widely used in OOA and OOD
