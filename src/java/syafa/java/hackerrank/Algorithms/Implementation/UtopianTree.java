@@ -31,7 +31,9 @@ public class UtopianTree
                 heightResult.add(treeHeight);
                 checkAt++;
             }
+            System.out.println(treeHeight);
         }
+        System.out.println('-');
         for (int i = 0; i < heightResult.size(); i++)
         {
             System.out.print(heightResult.get(i));
@@ -40,7 +42,5 @@ public class UtopianTree
                 System.out.print("\n");
             }
         }
-        System.out.println("\n" + heightCheck.get(heightCheck.size() - 1));
-        System.out.println(treeHeight);
     }
 }
