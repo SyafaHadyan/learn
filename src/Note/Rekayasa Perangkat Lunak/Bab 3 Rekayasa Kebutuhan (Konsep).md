@@ -164,3 +164,12 @@ Requirements form the basis for:
 - Menjelaskan apa yang dibutuhkan oleh customer
 - Menjadi dasar bagi perancangan PL
 - Menjadi referensi dalam melakukan validasi kebutuhan
+
+## Prinsip Pemodelan Kebutuhan
+
+- Model yang dibuat harus fokus pada kebutuhan yang relevan dengan domain permasalahan -> **WHAT**
+- Setiap model kebutuhan harus bisa dilacak ke model perancangan -> **traceability**
+- Setiap elemen dalam model kebutuhan harus mampu memperjelas pemahaman secara utuh terhadap kebutuhan PL -> domain masalah, fungsionalitas dan perilaku sistem
+- Minimalisasi kopling -> antar klas
+- Memastikan bahwa model kebutuhan memiliki nilai manfaat untuk seluruh *stakeholders*
+- Model dibuat sesederhana mungkin -> notasi yang sederhana, non duplikasi informasi.
