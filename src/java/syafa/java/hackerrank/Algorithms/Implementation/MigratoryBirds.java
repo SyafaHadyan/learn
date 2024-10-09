@@ -63,7 +63,15 @@ public class MigratoryBirds
                         }
                         catch (IndexOutOfBoundsException e)
                         {
-                            if (sightingsSorted.get(j - 1) == sightingsSorted.get(j));
+                            if (mostSightings > currentMostType)
+                            {
+                                mostType = sightingsSorted.get(i);
+                                currentMostType = mostSightings;
+                            }
+                            else if ((mostSightings == currentMostType) && (sightingsSorted.get(i) < mostType))
+                            {
+                                mostType = sightingsSorted.get(i);
+                            }
                         }
                         if (mostType > sightingsSorted.get(j));
                     }
