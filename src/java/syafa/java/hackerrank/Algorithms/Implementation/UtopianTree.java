@@ -17,7 +17,9 @@ public class UtopianTree
                 treeHeight *= 2;
             }
             else if ((i == 0) || (i % 2 == 0))
-            
+            {
+                treeHeight++;
+            }
         }
         input.close();
     }
