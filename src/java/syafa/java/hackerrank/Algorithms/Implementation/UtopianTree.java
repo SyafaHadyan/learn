@@ -32,6 +32,7 @@ public class UtopianTree
         for (int i = 0; i < heightCheck.size(); i++)
         {
             currentCheck = heightCheck.get(i);
+            heightOutput.add(heightCheck.get(heightCheck.get(i)));
             if (i < heightCheck.size() - 1)
             {
                 System.out.print("\n");
