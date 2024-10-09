@@ -164,3 +164,20 @@ ini di Klinik ABC, dan bukan di klinik yang lain.
 ## Ilustrasi Posisi Domain
 
 ![Ilustrasi Posisi Domain](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/IlustrasiPosisiDomain.png)
+
+## Abstraksi dan Pemodelan dalam RPL
+
+- Model SDLC
+  - menjelaskan proses pengembangan yang spesifik sesuai karakteristik proyek.
+  - menjadi acuan bagi SPM dalam mengelola proyek.
+- Requirements specification
+  - problem domain, problem, dan solution domain.
+  - pernyataan kebutuhan.
+  - pemodelan kebutuhan.
+- Design
+  - arsitektur sistem, antar muka sistem, data, dan proses
+  - pemodelan desain
+- Implementation
+  - variabel, prosedur, fungsi, klas, objek.
+- Testing
+  - strategi pengujian, teknik pengujian, kasus uji.
