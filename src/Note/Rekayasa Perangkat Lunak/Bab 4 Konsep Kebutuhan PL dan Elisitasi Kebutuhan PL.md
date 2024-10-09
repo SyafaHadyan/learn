@@ -129,14 +129,22 @@ Requirements form the basis for:
 
 ![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/SumberInformasi.png)
 
-### Contoh
+## Contoh
 
-- Perangkat lunak harus mampu menyediakan sarana untuk menampilkan dan mengakses file-file yang dibuat oleh tool yang lain.
+- Perangkat lunak harus mampu menyediakan sarana untuk menampilkan dan mengakses file-file yang dibuat oleh *tool* yang lain.
 - Pengguna harus dapat mencari buku/dokumen/literatur di perpustakaan dgn memasukkan sebuah kata kunci.
 - Sistem tidak boleh dioperasikan oleh pengguna yang tidak memiliki otoritas.
-- Sistem harus menyediakan GUI sehingga dapat digunakan secara mudah oleh pengguna yang belum berpengalaman.
-- Sistem harus bisa memanfaatkan database yang sudah ada.
+- Sistem harus menyediakan *GUI* sehingga dapat digunakan secara mudah oleh pengguna yang belum berpengalaman.
+- Sistem harus bisa memanfaatkan *database* yang sudah ada.
 - Sistem harus diimplementasikan dgn bahasa Java.
+
+## Problem
+
+- *Stakeholder* (*end-user*, manajer, *maintenance engineer*, *policy maker*) tidak tahu persis apa yang sesungguhnya mereka butuhkan
+- *Stakeholder* menyatakan kebutuhannya dalam bahasa yang dipahami oleh mereka sendiri
+- *Stakeholder* yang berbeda mungkin memiliki kebutuhan yang saling bertentangan
+- Kebutuhan mungkin berubah pada saat dilakukan analisis. *Stakeholder* baru yang bergabung mungkin merubah dan lingkungan bisnis mengalami perubahan.
+- Pertentangan antara unjuk kerja (*performance*) dan kemudahan (*simplicity*) dalam mencapai tujuan
 
 ## Permasalahan dalam Rekayasa Kebutuhan
 
