@@ -32,6 +32,6 @@ public class SalesByMatch
                 //
             }
         }
-        System.out.print(salesSorted.size());
+        System.out.print(sales.size() -  salesSorted.size());
     }
 }
