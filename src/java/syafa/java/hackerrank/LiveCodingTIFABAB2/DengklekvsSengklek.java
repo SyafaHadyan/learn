@@ -7,7 +7,6 @@ public class DengklekvsSengklek
     {
         //https://github.com/SyafaHadyan/learn/tree/main/src/java/syafa/java/hackerrank/LiveCodingTIFABAB2
         Scanner input = new Scanner(System.in);
-        ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
         ArrayList<Integer> matchScore = new ArrayList<Integer>();
         String dengklek = "";
@@ -18,10 +17,10 @@ public class DengklekvsSengklek
         }
         for (int i = 0; i < 4; i++)
         {
-            match.add(Arrays.toString(input.nextLine().split(" ")));
+            String[] match = input.nextLine().split(" ");
             System.out.println(match);
-            dengklek = match.get(0);
-            sengklek = match.get(1);
+            dengklek = match[0];
+            sengklek = match[1];
             if (dengklek.equalsIgnoreCase(sengklek))
             {
                 matchResult.add("Seri");
