@@ -23,7 +23,7 @@ public class MigratoryBirds
         {
             try
             {
-                if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
+                if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && !(sightingsSorted.get(i) > mostType))
                 {
                     mostSightings = 1;
                     mostType = sightingsSorted.get(i);
