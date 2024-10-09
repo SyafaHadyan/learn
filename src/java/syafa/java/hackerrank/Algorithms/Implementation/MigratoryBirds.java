@@ -42,36 +42,18 @@ public class MigratoryBirds
                     {
                         try
                         {
-                            if (sightingsSorted.get(i) == sightingsSorted.get(i + 1))
+                            if (sightingsSorted.get(j) == sightingsSorted.get(j + 1))
                             {
                                 mostSightings++;
-                                resetCounter = false;
                             }
                             else
                             {
-                                resetCounter = true;
-                                if (mostSightings > currentMostType)
-                                {
-                                    mostType = sightingsSorted.get(i);
-                                    currentMostType = mostSightings;
-                                }
-                                else if ((mostSightings == currentMostType) && (sightingsSorted.get(i) < mostType))
-                                {
-                                    mostType = sightingsSorted.get(i);
-                                }
+                                continue;
                             }
                         }
                         catch (IndexOutOfBoundsException e)
                         {
-                            if (mostSightings > currentMostType)
-                            {
-                                mostType = sightingsSorted.get(i);
-                                currentMostType = mostSightings;
-                            }
-                            else if ((mostSightings == currentMostType) && (sightingsSorted.get(i) < mostType))
-                            {
-                                mostType = sightingsSorted.get(i);
-                            }
+                            if (sightingsSorted.get(j - 1) == sightingsSorted.get(j));
                         }
                         if (mostType > sightingsSorted.get(j));
                     }
