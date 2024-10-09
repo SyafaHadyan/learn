@@ -5,7 +5,6 @@ public class DengklekvsSengklek
 {
     public static void main(String[] args)
     {
-        //https://github.com/SyafaHadyan/learn/tree/main/src/java/syafa/java/hackerrank/LiveCodingTIFABAB2
         Scanner input = new Scanner(System.in);
         ArrayList<String> matchResult = new ArrayList<String>();
         ArrayList<Integer> matchScore = new ArrayList<Integer>();
@@ -46,8 +45,8 @@ public class DengklekvsSengklek
                 }
                 else if (sengklek.equalsIgnoreCase("Kertas"))
                 {
-                    matchResult.add("Sengklek menang");
-                    matchScore.set(1,matchScore.get(1) + 1);
+                    matchResult.add("Dengklek menang");
+                    matchScore.set(0,matchScore.get(0) + 1);
                 }
             }
             else if (dengklek.equalsIgnoreCase("Kertas"))
