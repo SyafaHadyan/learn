@@ -116,3 +116,15 @@ Requirements form the basis for:
 #### Manajemen kebutuhan (*s/w req. management*)
 
 ![Fungsi Rekayasa Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/ManajemenKebutuhan.png)
+
+## Permasalahan dalam Rekayasa Kebutuhan
+
+### Organizational-based
+
+- Lack of customer and user communication
+- Lack of developer communication
+- Lack of training
+- Inappropriate skills
+- Lack of defined responsibility
+- Unstable workforce (low staff retention)
+- Poor time and resource allocations
