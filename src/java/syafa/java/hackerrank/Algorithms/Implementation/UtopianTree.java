@@ -25,9 +25,9 @@ public class UtopianTree
             {
                 treeHeight++;
             }
-            if (i == heightCheck.get(i))
+            if (heightCheck.get(i).equals(i - 1))
             {
-                heightResult.add(heightResult);
+                heightResult.add(treeHeight);
             }
         }
         for (int i = 0; i < heightResult.size(); i++)
