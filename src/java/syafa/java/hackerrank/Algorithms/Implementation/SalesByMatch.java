@@ -10,6 +10,7 @@ public class SalesByMatch
         ArrayList<String> sales = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         ArrayList<Integer> salesSorted = new ArrayList<Integer>();
+        int pairsMatch = 0;
         for (int i = 0; i < sales.size(); i++)
         {
             salesSorted.add(Integer.parseInt(sales.get(i)));
@@ -24,6 +25,7 @@ public class SalesByMatch
                     salesSorted.remove(0);
                     salesSorted.remove(0);
                     i--;
+                    pairsMatch++;
                     continue;
                 }
             }
@@ -32,6 +34,6 @@ public class SalesByMatch
                 //
             }
         }
-        System.out.print(sales.size() -  salesSorted.size());
+        System.out.print(pairsMatch);
     }
 }
