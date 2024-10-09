@@ -19,7 +19,6 @@ public class SalesByMatch
         for (int i = 0; i < salesSorted.size(); i++)
         {
             System.out.println(salesSorted);
-            System.out.println(pairsWithoutMatch);
             try
             {
                 if (salesSorted.get(i) == salesSorted.get(i + 1))
@@ -32,7 +31,7 @@ public class SalesByMatch
             }
             catch (IndexOutOfBoundsException e)
             {
-                pairsWithoutMatch++;
+                //
             }
             try
             {
@@ -45,6 +44,7 @@ public class SalesByMatch
             }
             i--;
             pairsWithoutMatch++;
+            System.out.println(pairsWithoutMatch);
         }
         System.out.print(pairsWithoutMatch);
     }
