@@ -23,3 +23,9 @@ Setiap fungsi, batasan, atau properti lainnya yang harus disediakan, dimiliki at
 Requirements are often written in **natural language** (e.g., English, Bahasa).
 Natural language is inherently **ambiguous**.
 A natural language SRS should be **reviewed** by an independent party to identify ambiguous use of language so that it can be corrected.
+
+## User vs System Requirements
+
+**User requirements** are statements, in a natural language plus diagrams, of what services the system is expected to provide to system users and the constraints under which it must operate.
+
+**System requirements** are more detailed descriptions of the software system’s functions, services, and operational constraints.
