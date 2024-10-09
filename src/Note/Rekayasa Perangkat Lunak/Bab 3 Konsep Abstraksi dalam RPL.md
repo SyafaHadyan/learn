@@ -51,4 +51,13 @@ Complexity Management
   - dapat diseleksi yang perlu didetilkan atau diabaikan dari sebuah konsep.
   - representasi dari sesuatu yang nyata ataupun tidak dari berbagai domain.
   - dibangun secara iteratif.
-- Diagram: representasi visual atau grafis bagian-bagian dari sebuah model
+- Diagram: representasi visual atau grafis bagian-bagian dari sebuah model.
+
+## Urgensi Pemodelan
+
+- Memudahkan manajemen proyek.
+- Memberikan gambaran yang utuh tentang sistem yang akan dibangun.
+- Memperjelas struktur sistem dan relasi antar elemen sistem.
+- Memudahkan komunikasi dan pemahaman, baik antar anggota tim maupun tim dengan konsumen.
+- Membantu proses pengujian dan penjaminan kualitas sistem.
+- Mampu menjelaskan berbagai aspek dari sistem.
