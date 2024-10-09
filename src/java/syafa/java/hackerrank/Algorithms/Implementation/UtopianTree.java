@@ -11,7 +11,7 @@ public class UtopianTree
         ArrayList<Integer> heightResult = new ArrayList<Integer>();
         for (int i = 0; i < AmountOfChecks; i++)
         {
-            //
+            heightResult.add(Integer.parseInt(input.nextLine()));
         }
         for (int i = 0; i < AmountOfChecks; i++)
         {
