@@ -29,5 +29,13 @@ public class UtopianTree
                 heightResult.set(i,treeHeight);
             }
         }
+        for (int i = 0; i < heightResult.size(); i++)
+        {
+            System.out.print(heightResult.get(i));
+            if (i < heightResult.size() - 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
