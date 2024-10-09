@@ -146,3 +146,15 @@ Requirements form the basis for:
 - A model provides the blueprints of a system (Grady Booch)
 
 ![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelan.png)
+
+## Mengapa Pemodelan?
+
+- Modelling achieves four aims:
+- Helps you **to visualize a system** as you want it to be.
+- Permits you **to specify the structure or behavior** of a system.
+- Gives you a **template that guides** you in constructing a system.
+- **Documents** the decisions you have made.
+
+## Konspe Pemodelan Kebutuhan
+
+![Konsep Pemodelan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/KonsepPemodelanKebutuhan.png)
