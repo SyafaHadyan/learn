@@ -7,17 +7,17 @@ public class SelisihWaktu
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> month = new ArrayList<String>(Arrays.asList("Jan",
-                                                                            "Feb",
-                                                                            "Mar",
-                                                                            "Apr",
-                                                                            "May",
-                                                                            "Jun",
-                                                                            "Jul",
-                                                                            "Aug",
-                                                                            "Sep",
-                                                                            "Oct",
-                                                                            "Nov",
-                                                                            "Dec"));
+                                                                        "Feb",
+                                                                        "Mar",
+                                                                        "Apr",
+                                                                        "May",
+                                                                        "Jun",
+                                                                        "Jul",
+                                                                        "Aug",
+                                                                        "Sep",
+                                                                        "Oct",
+                                                                        "Nov",
+                                                                        "Dec"));
         input.close();
     }
 }
