@@ -38,16 +38,17 @@ public class SelisihWaktu
         int minute = 0;
         for (int i = 0; i < month.size(); i++)
         {
-            day += Integer.parseInt(secondDate.get(0)) + monthValue.get(i);
+            day += monthValue.get(i);
             if (secondDate.get(1).equalsIgnoreCase(month.get(i)))
             {
+                day += Integer.parseInt(secondDate.get(0));
                 System.out.println(day);
                 for (int j = 0; j < month.size(); j++)
                 {
-                    day -= Integer.parseInt(firstDate.get(0)) + monthValue.get(j);
+                    day -= monthValue.get(j);
                     if (firstDate.get(1).equalsIgnoreCase(month.get(j)))
                     {
-                        System.out.println(Integer.parseInt(firstDate.get(0)) + monthValue.get(j));
+                        day -= Integer.parseInt(firstDate.get(0));
                         break;
                     }
                 }
