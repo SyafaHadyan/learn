@@ -10,13 +10,19 @@ public class DengklekvsSengklek
         ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
         ArrayList<Integer> matchScore = new ArrayList<Integer>();
+        for (int i = 0; i < 2; i++)
+        {
+            matchScore.add(0);
+        }
         for (int i = 0; i < 4; i++)
         {
             match.add(Arrays.toString(input.nextLine().split(" ")));
             System.out.println(match);
-            //if (match.get(0).equalsIgnoreCase(match.get(1)))
+            if (match.get(0).equalsIgnoreCase(match.get(1)))
             {
                 matchResult.add("Seri");
+                matchScore.set(0,matchScore.get(0) + 1);
+                matchScore.set(1,matchScore.get(1) + 1);
             }
             if (match.get(0).equalsIgnoreCase("Batu"))
             {
@@ -57,7 +63,10 @@ public class DengklekvsSengklek
                     matchScore.set(1,matchScore.get(1) + 1);
                 }
             }
-            match.clear();
+            for (int j = 0; j < 2; j++)
+            {
+                match.set(j,null);
+            }
         }
         input.close();
         for (int i = 0; i < matchResult.size(); i++)
