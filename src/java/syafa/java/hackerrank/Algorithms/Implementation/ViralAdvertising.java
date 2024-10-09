@@ -14,6 +14,7 @@ public class ViralAdvertising
         for (int i = 1; i <= cumulativeAtDay; i++)
         {
             cumulative += liked = shared / 2;
+            shared = liked * 3;
         }
     }
 }
