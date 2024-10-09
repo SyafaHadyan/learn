@@ -118,6 +118,13 @@ Requirements form the basis for:
 
 ![Manajemen Kebutuhan](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%204/ManajemenKebutuhan.png)
 
+## Prinsip Elisitasi dan Analisis
+
+- *Developer* harus memahami domain permasalahan
+- *Developer* dan klien (*stakeholder*) menggali domain aplikasi, layanan-layanan sistem yang harus disediakan, unjuk kerja sistem yang diperlukan, batasanbatasan perangkat keras dan sejenisnya
+- Fokus pada **APA** (*WHAT*) dan **BUKAN** bagaimana (*HOW*)
+- Komunikasi adalah faktor penting
+
 ## Permasalahan dalam Rekayasa Kebutuhan
 
 ### Organizational-based
