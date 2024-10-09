@@ -9,67 +9,67 @@ public class DengklekvsSengklek
         ArrayList<String> matchResult = new ArrayList<String>();
         String hasil[] = new String[4];
         String hasilPertandingan = "";
-        int dengklek = 0;
-        int sengklek = 0;
+        //int matchResult.get(0) = 0;
+        //int matchResult.get(1) = 0;
         for (int i = 0; i < 4; i++)
         {
             matchResult.add(Arrays.toString(input.nextLine().split(" ")));
-            if (dengklek.equalsIgnoreCase(sengklek))
+            if (matchResult.get(0).equalsIgnoreCase(matchResult.get(1)))
             {
                 hasil[i] = "Seri";
             }
-            else if (dengklek.equalsIgnoreCase("Batu"))
+            else if (matchResult.get(0).equalsIgnoreCase("Batu"))
             {
-                if (sengklek.equalsIgnoreCase("Gunting"))
+                if (matchResult.get(1).equalsIgnoreCase("Gunting"))
                 {
                     hasil[i] = "Dengklek menang";
-                    dengklek++;
+                    matchResult.get(0)++;
                 }
-                else if (sengklek.equalsIgnoreCase("Kertas"))
+                else if (matchResult.get(1).equalsIgnoreCase("Kertas"))
                 {
                     hasil[i] = "Sengklek menang";
-                    sengklek++;
+                    matchResult.get(1)++;
                 }
             }
-            else if (dengklek.equalsIgnoreCase("Gunting"))
+            else if (matchResult.get(0).equalsIgnoreCase("Gunting"))
             {
-                if (sengklek.equalsIgnoreCase("Batu"))
+                if (matchResult.get(1).equalsIgnoreCase("Batu"))
                 {
                     hasil[i] = "Sengklek menang";
-                    sengklek++;
+                    matchResult.get(1)++;
                 }
-                else if (sengklek.equalsIgnoreCase("Kertas"))
+                else if (matchResult.get(1).equalsIgnoreCase("Kertas"))
                 {
                     hasil[i] = "Dengklek menang";
-                    dengklek++;
+                    matchResult.get(0)++;
                 }
             }
-            else if (dengklek.equalsIgnoreCase("Kertas"))
+            else if (matchResult.get(0).equalsIgnoreCase("Kertas"))
             {
-                if (sengklek.equalsIgnoreCase("Batu"))
+                if (matchResult.get(1).equalsIgnoreCase("Batu"))
                 {
                     hasil[i] = "Dengklek menang";
-                    dengklek++;
+                    matchResult.get(0)++;
                 }
-                else if (sengklek.equalsIgnoreCase("Gunting"))
+                else if (matchResult.get(1).equalsIgnoreCase("Gunting"))
                 {
                     hasil[i] = "Sengklek menang";
-                    sengklek++;
+                    matchResult.get(1)++;
                 }
             }
         }
         input.close();
-        if (dengklek == sengklek)
+        if (matchResult.get(0) == matchResult.get(1))
         {
             hasilPertandingan = "Perlombaan seri, maka tidak ada yang menang dan hadiah buat panitia.";
         }
-        else if (dengklek > sengklek)
+        else if (matchResult.get(0) > matchResult.get(1))
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + dengklek + " vs " + sengklek + '.';
+            hasilPertandingan = "Perlombaan dimenangkan oleh Dengklek dengan skor " + matchResult.get(0) + " vs " + matchResult.get(1) + '.';
         }
-        else if (sengklek > dengklek)
+        else if (matchResult.get(1) > matchResult.get(0))
         {
-            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + sengklek + " vs " + dengklek + '.';
+            hasilPertandingan = "Perlombaan dimenangkan oleh Sengklek dengan skor " + matchResult.get(1) + " vs " + matchResult.get(0) + '.';
         }
         for (String output : hasil)
         {
