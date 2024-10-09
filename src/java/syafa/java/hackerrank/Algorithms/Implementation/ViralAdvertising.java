@@ -16,5 +16,6 @@ public class ViralAdvertising
             cumulative += liked = shared / 2;
             shared = liked * 3;
         }
+        System.out.print(cumulative);
     }
 }
