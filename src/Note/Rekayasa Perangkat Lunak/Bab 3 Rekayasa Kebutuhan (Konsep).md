@@ -128,3 +128,14 @@ Requirements form the basis for:
 - Lack of defined responsibility
 - Unstable workforce (low staff retention)
 - Poor time and resource allocations
+
+### RE Proces-based
+
+- Complexity of application
+- Undefined RE process
+- The actual requirements
+- Poor user understanding
+- Incomplete requirements
+- Inconsistent (changing) requirements
+- Indadequate requirements traceability
+- Ambiguous requirements
