@@ -13,7 +13,7 @@ public class ViralAdvertising
         input.close();
         for (int i = 1; i <= cumulativeAtDay; i++)
         {
-            
+            cumulative += liked = shared / 2;
         }
     }
 }
