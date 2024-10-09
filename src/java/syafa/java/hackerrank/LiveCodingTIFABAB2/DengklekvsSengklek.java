@@ -8,13 +8,14 @@ public class DengklekvsSengklek
         Scanner input = new Scanner(System.in);
         ArrayList<String> match = new ArrayList<String>();
         ArrayList<String> matchResult = new ArrayList<String>();
+        ArrayList<Integer> matchScore = new ArrayList<Integer>();
         String hasilPertandingan = "";
         for (int i = 0; i < 4; i++)
         {
             match.add(Arrays.toString(input.nextLine().split(" ")));
             if (match.get(0).equalsIgnoreCase(match.get(1)))
             {
-                hasil[i] = "Seri";
+                matchResult.add("Seri");
             }
             else if (match.get(0).equalsIgnoreCase("Batu"))
             {
