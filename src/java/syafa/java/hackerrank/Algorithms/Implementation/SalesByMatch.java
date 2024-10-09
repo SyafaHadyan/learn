@@ -19,8 +19,10 @@ public class SalesByMatch
         {
             if (salesSorted.get(i) == salesSorted.get(i + 1));
             {
+                i++;
                 continue;
             }
+
         }
     }
 }
