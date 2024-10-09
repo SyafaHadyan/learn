@@ -12,8 +12,10 @@ public class MigratoryBirds
         ArrayList<Integer> sightingsSorted = new ArrayList<Integer>();
         input.close();
         StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
+        boolean resetCounter = true;
         int mostType = 0;
         int currentMostType = 0;
+        int mostSightings = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             sightingsSorted.add(Integer.parseInt(sightings.get(i)));
@@ -21,7 +23,10 @@ public class MigratoryBirds
         Collections.sort(sightingsSorted);
         for (int i = 0; i < sightingsSorted.size(); i++)
         {
-            int mostSightings = 1;
+            if (resetCounter)
+            {
+                mostSightings = 1;
+            }
             try
             {
                 if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
@@ -50,6 +55,7 @@ public class MigratoryBirds
                 if ((currentMostType > mostType) && (currentMostType != 0))
                 {
                     mostType = currentMostType;
+                    resetCounter = false;
                 }
             }
             catch (IndexOutOfBoundsException e)
