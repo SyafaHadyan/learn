@@ -57,7 +57,7 @@ public class SelisihWaktu
                 break;
             }
         }
-        minute = (Integer.parseInt(secondDate.get(2)) * 60) + (Integer.parseInt(firstDate.get(2)) * 60);
+        minute = (Integer.parseInt(secondDate.get(2)) * 60) + Integer.parseInt(secondDate.get(3)) - (Integer.parseInt(firstDate.get(2)) * 60) - Integer.parseInt(secondDate.get(3));
         System.out.print(day + "d " + hour + "h " + minute + "m");
     }
 }
