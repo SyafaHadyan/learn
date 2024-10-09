@@ -18,10 +18,12 @@ public class FindDigits
             {
                 try
                 {
-                    if (Integer.parseInt(numberString.toString()) % (Integer.parseInt(String.valueOf(numberString.charAt(j)))) == 0);
+                    System.out.println(Integer.parseInt(numberString.toString()) + " % " + Integer.parseInt(String.valueOf(numberString.charAt(j))));
+                    if (Integer.parseInt(numberString.toString()) % Integer.parseInt(String.valueOf(numberString.charAt(j))) == 0);
                     {
                         divisorCount++;
                     }
+                    System.out.println(divisorCount);
                 }
                 catch (ArithmeticException e)
                 {
