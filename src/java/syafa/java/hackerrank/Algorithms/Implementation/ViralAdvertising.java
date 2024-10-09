@@ -7,8 +7,11 @@ public class ViralAdvertising
     {
         Scanner input = new Scanner(System.in);
         int cumulativeAtDay = Integer.parseInt(input.nextLine());
+        int shared = 5;
+        int liked = 0;
+        int cumulative = 0;
         input.close();
-        for (int i = 0; i < cumulativeAtDay; i++)
+        for (int i = 1; i <= cumulativeAtDay; i++)
         {
             
         }
