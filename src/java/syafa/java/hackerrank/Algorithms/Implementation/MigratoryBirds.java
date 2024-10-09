@@ -13,13 +13,12 @@ public class MigratoryBirds
         input.close();
         int mostSightings = 1;
         int mostType = 0;
-        int increment = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             sightingsSorted.add(Integer.parseInt(sightings.get(i)));
         }
         Collections.sort(sightingsSorted);
-        for (int i = 0; i < sightingsSorted.size(); i+= increment)
+        for (int i = 0; i < sightingsSorted.size(); i++)
         {
             try
             {
