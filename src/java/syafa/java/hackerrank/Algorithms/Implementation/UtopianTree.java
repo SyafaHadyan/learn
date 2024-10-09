@@ -13,6 +13,7 @@ public class UtopianTree
         {
             heightResult.add(Integer.parseInt(input.nextLine()));
         }
+        input.close();
         for (int i = 0; i < AmountOfChecks; i++)
         {
             if ((i != 0) || (i % 2 != 0))
@@ -28,6 +29,5 @@ public class UtopianTree
                 heightResult.set(i,treeHeight);
             }
         }
-        input.close();
     }
 }
