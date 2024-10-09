@@ -11,7 +11,7 @@ public class MigratoryBirds
         ArrayList<String> sightings = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<Integer> sightingsSorted = new ArrayList<Integer>();
         input.close();
-        int mostSightings = 1;
+        StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
         int mostType = 0;
         int currentMostType = 0;
         for (int i = 0; i < sightings.size(); i++)
@@ -25,7 +25,7 @@ public class MigratoryBirds
             {
                 if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
                 {
-                    mostSightings = 1;
+                    int mostSightings = 1;
                     currentMostType = sightingsSorted.get(i);
                     for (int j = 0; j < sightingsSorted.size(); j++)
                     {
