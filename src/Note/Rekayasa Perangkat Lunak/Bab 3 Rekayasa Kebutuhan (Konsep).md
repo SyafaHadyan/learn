@@ -33,3 +33,24 @@ A natural language SRS should be **reviewed** by an independent party to identif
 ### Contoh Requirements
 
 ![User vs System Requirements](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/UserVSSystemRequirements.png)
+
+## Kategori Kebutuhan
+
+### Functional (what a system does)
+
+- deskripsi proses, masukan dan keluaran
+
+### Non-functional (constraint or quality of a system)
+
+- performance
+- availability
+- security
+- reliability
+- implementation & design constraints
+- storage size
+
+### Usability (constraint to use)
+
+- Acceptance criteria
+- end-user characteristics
+- system environments
