@@ -21,27 +21,34 @@ public class MigratoryBirds
         Collections.sort(sightingsSorted);
         for (int i = 0; i < sightingsSorted.size(); i+= increment)
         {
-            if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
+            try
             {
-                mostType = sightingsSorted.get(i);
-                for (int j = 0; j < sightingsSorted.size(); j++)
+                if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
                 {
-                    try
+                    mostType = sightingsSorted.get(i);
+                    for (int j = 0; j < sightingsSorted.size(); j++)
                     {
-                        if (sightingsSorted.get(j) == sightingsSorted.get(j + 1))
+                        try
                         {
-                            mostSightings++;
+                            if (sightingsSorted.get(j) == sightingsSorted.get(j + 1))
+                            {
+                                mostSightings++;
+                            }
+                            else
+                            {
+                                continue;
+                            }
                         }
-                        else
+                        catch (IndexOutOfBoundsException e)
                         {
-                            continue;
+                            // TODO: handle exception
                         }
-                    }
-                    catch (IndexOutOfBoundsException e)
-                    {
-                        // TODO: handle exception
                     }
                 }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                // TODO Auto-generated catch block
             }
         }
         System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
