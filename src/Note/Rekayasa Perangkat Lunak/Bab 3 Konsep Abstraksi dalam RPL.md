@@ -99,7 +99,7 @@ Etc.
 
 ### Diagramatic models
 
-image here
+![Diagramatic Models](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/Bab%203/DiagramaticModels.png)
 
 ### Formal models
 
