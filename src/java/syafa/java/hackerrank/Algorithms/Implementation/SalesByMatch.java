@@ -28,7 +28,7 @@ public class SalesByMatch
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                pairsWithoutMatch++;
             }
             i++;
             pairsWithoutMatch++;
