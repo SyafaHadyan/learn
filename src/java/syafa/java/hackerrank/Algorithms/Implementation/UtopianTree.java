@@ -8,7 +8,6 @@ public class UtopianTree
         Scanner input = new Scanner(System.in);
         int AmountOfChecks = Integer.parseInt(input.nextLine());
         int treeHeight = 0;
-        int checkAt = 0;
         ArrayList<Integer> heightCheck = new ArrayList<Integer>();
         ArrayList<Integer> heightResult = new ArrayList<Integer>();
         ArrayList<Integer> heightOutput = new ArrayList<Integer>();
@@ -31,10 +30,12 @@ public class UtopianTree
         }
         for (int i = 0; i < AmountOfChecks; i++)
         {
-            if (i == checkAt)
+            for (int j = 0; j <= 60; j++)
             {
-                System.out.print(heightResult.get(i));
-                checkAt++;
+                if (j == heightCheck.get(j))
+                {
+                    heightOutput.add(heightResult.get(i));
+                }
             }
             if (i < heightResult.size() - 1)
             {
