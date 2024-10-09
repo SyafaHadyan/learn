@@ -21,34 +21,7 @@ public class MigratoryBirds
         Collections.sort(sightingsSorted);
         for (int i = 0; i < sightingsSorted.get(sightingsSorted.size() - 1); i+= increment)
         {
-            increment = 1;
-            for (int j = Integer.parseInt(sightings.get(i)); j < sightingsSorted.size(); j++)
-            {
-                
-            }
-            /*
-            if ((Integer.parseInt(sightings.get(i)) > mostSightings) && (Integer.parseInt(sightings.get(i)) > mostType))
-            {
-                mostType = Integer.parseInt(sightings.get(i));
-                mostSightings = Integer.parseInt(sightings.get(i));
-            }
-            if (Integer.parseInt(sightings.get(i)) > mostType)
-            {
-                mostType = Integer.parseInt(sightings.get(i));
-            }
-            for (int j = 0; j < args.length; j++)
-            {
-                
-            }
-            */
-            for (int j = i; j < sightings.size(); j++)
-            {
-                if (j++ < sightingsSorted.get(j))
-                {
-                    increment++;
-                }
-            }
-            System.out.println(i + " " + increment);
+            //
         }
     }
 }
