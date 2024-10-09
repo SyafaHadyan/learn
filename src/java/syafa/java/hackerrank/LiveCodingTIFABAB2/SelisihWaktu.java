@@ -35,7 +35,10 @@ public class SelisihWaktu
         input.close();
         for (int i = 0; i < month.size(); i++)
         {
-            //
+            if (firstDate.get(1).equalsIgnoreCase(month.get(i)))
+            {
+                //
+            }
         }
     }
 }
