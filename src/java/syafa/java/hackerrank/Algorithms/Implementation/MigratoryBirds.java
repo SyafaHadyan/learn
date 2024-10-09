@@ -21,11 +21,11 @@ public class MigratoryBirds
         Collections.sort(sightingsSorted);
         for (int i = 0; i < sightingsSorted.size(); i++)
         {
+            int mostSightings = 1;
             try
             {
                 if ((sightingsSorted.get(i) == sightingsSorted.get(i + 1)) && (sightingsSorted.get(i) > mostType))
                 {
-                    int mostSightings = 1;
                     currentMostType = sightingsSorted.get(i);
                     for (int j = 0; j < sightingsSorted.size(); j++)
                     {
@@ -56,8 +56,11 @@ public class MigratoryBirds
             {
                 //
             }
+            if (i == (sightingsSorted.size() - 1))
+            {
+                System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
+                System.out.println(sightingsSorted);
+            }
         }
-        System.out.println("Most type: " + mostType + "\n" + "Most sightings: " + mostSightings);
-        System.out.println(sightingsSorted);
     }
 }
