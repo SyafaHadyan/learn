@@ -22,7 +22,9 @@ public class SalesByMatch
             {
                 if (salesSorted.get(i) == salesSorted.get(i + 1))
                 {
-                    i++;
+                    salesSorted.remove(0);
+                    salesSorted.remove(0);
+                    i--;
                     continue;
                 }
             }
@@ -30,7 +32,7 @@ public class SalesByMatch
             {
                 pairsWithoutMatch++;
             }
-            i++;
+            i--;
             pairsWithoutMatch++;
         }
         System.out.print(pairsWithoutMatch);
