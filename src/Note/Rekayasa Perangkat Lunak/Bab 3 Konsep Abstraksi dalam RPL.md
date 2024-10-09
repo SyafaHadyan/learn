@@ -13,3 +13,13 @@
 
   - tingkat kedalaman abstraksi -> seberapa banyak informasi yang dipertahankan/diabaikan semakin ke atas semakin umum (general), semakin ke bawah semakin khusus/detil/spesifik.
   - contoh: Google Maps (zoom out, zoom in).
+
+## Urgensi
+
+Complexity Management
+
+- hiding unnecessary details.
+- better understanding.
+- good conceptualization.
+- improved maintainability.
+- enhanced scalability.
