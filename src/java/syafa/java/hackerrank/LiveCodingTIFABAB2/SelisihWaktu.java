@@ -40,12 +40,12 @@ public class SelisihWaktu
         {
             if (firstDate.get(1).equalsIgnoreCase(month.get(i)))
             {
-                day = Integer.parseInt(firstDate.get(1)) + monthValue.get(i);
+                day = Integer.parseInt(firstDate.get(0)) + monthValue.get(i);
                 for (int j = 0; j < month.size(); j++)
                 {
                     if (secondDate.get(1).equalsIgnoreCase(month.get(i)))
                     {
-                        day -= Math.abs(Integer.parseInt(secondDate.get(1)) + monthValue.get(i));
+                        day -= Math.abs(Integer.parseInt(secondDate.get(0)) + monthValue.get(i));
                         break;
                     }
                 }
