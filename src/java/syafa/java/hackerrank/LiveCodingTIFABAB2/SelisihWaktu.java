@@ -41,7 +41,7 @@ public class SelisihWaktu
             if (firstDate.get(1).equalsIgnoreCase(month.get(i)))
             {
                 day = Integer.parseInt(firstDate.get(1)) + monthValue.get(i);
-                break;
+                i = -1;
             }
         }
     }
