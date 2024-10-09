@@ -31,6 +31,7 @@ public class SelisihWaktu
                                                                                 30,
                                                                                 31));
         ArrayList<String> firstDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> secondDate = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
