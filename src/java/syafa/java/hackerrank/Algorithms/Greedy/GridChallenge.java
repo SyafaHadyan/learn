@@ -33,7 +33,7 @@ public class GridChallenge
                 {
                     for (int k = 0; k < arrayString.get(0).length(); k++)
                     {
-                        int substringCounter = 1;
+                        int substringCounter = 0;
                         try
                         {
                             if (arrayString.get(k).charAt(0) == arrayString.get(k).charAt(0))
