@@ -18,7 +18,7 @@ public class Praktikum2
         {
             while (printOptions)
             {
-                    System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
+                System.out.printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n\n%-25s%-2c",
         "MENU",
                 "0. KELUAR",
                 "1. HITUNG VOLUME BALOK",
@@ -27,8 +27,9 @@ public class Praktikum2
                 "4. HITUNG VOLUME SILINDER",
                 "5. HITUNG VOLUME LIMAS SEGITIGA",
                 "MASUKKAN PILIHAN ANDA",':');
+                selection = Double.parseDouble(input.nextLine());
+                printOptions = false;
             }
-            selection = Double.parseDouble(input.nextLine());
             if (selection == 0)
             {
                 input.close();
@@ -38,7 +39,7 @@ public class Praktikum2
             {
                 try
                 {
-                    System.out.printf("%-25s%-2c","Masukkan radius",':');
+                    System.out.printf("%-25s%-2c","Masukkan sisi",':');
                     radius = Double.parseDouble(input.nextLine());
                 }
                 catch (NumberFormatException e)
