@@ -17,6 +17,10 @@ public class CountingValleys
             {
                 currentPosition++;
             }
+            else if (step.get(i).equalsIgnoreCase("D"))
+            {
+                currentPosition--;
+            }
         }
     }
 }
