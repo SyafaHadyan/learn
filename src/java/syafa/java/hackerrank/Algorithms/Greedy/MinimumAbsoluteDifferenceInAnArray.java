@@ -32,11 +32,6 @@ public class MinimumAbsoluteDifferenceInAnArray
                         {
                             currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1) - numberDouble.get(j));
                         }
-                        if (Math.abs(numberDouble.get(j + 1)) == Math.abs(numberDouble.get(j)))
-                        {
-                            currentLowestDiffAbs = 0;
-                            numberDouble.get(numberDouble.size());
-                        }
                     }
                     catch (IndexOutOfBoundsException e)
                     {
