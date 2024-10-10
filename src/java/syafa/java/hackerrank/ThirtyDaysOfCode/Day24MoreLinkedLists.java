@@ -13,5 +13,6 @@ public class Day24MoreLinkedLists
             number.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
+        Collections.sort(number);
     }
 }
