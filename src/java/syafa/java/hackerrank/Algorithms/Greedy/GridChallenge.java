@@ -16,7 +16,7 @@ public class GridChallenge
             for (int j = 0; j < arrRow; j++)
             {
                 char[] arrChar = input.nextLine().toCharArray();
-                Collections
+                Arrays.sort(arrChar);
             }
         }
         input.close();
