@@ -16,7 +16,11 @@ public class IntroToTutorialChallenges
         ArrayList<String> numbers = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         for (int i = 0; i < numbers.size(); i++)
         {
-            //
+            if (Integer.parseInt(numbers.get(i)) == numberToSearch)
+            {
+                System.out.print(numbers.get(i));
+                return;
+            }
         }
         input.close();
     }
