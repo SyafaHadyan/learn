@@ -18,6 +18,7 @@ public class Day21Generics
         {
             arrayString.add(input.nextLine());
         }
+        input.close();
         for (int i = 0; i < arrayInteger.size() + arrayString.size(); i++)
         {
             if (i < arrayInteger.size())
@@ -28,12 +29,11 @@ public class Day21Generics
             {
                 System.out.print(arrayString.get(i));
             }
-            if (i != arrayInteger.size() - 1)
+            if (i != arrayInteger.size() + arrayString.size() - 1)
             {
                 System.out.print("\n");
             }
         }
-        input.close();
         return;
     }
     public static void main(String[] args)
