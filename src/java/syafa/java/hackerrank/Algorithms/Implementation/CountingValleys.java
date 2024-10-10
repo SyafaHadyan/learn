@@ -10,6 +10,7 @@ public class CountingValleys
         ArrayList<String> step = new ArrayList<String>(Arrays.asList(input.nextLine().split("(?!^)")));
         input.close();
         int currentPosition = 0;
+        int valleysTraversed = 0;
         boolean isAtValley = false;
         for (int i = 0; i < step.size(); i++)
         {
@@ -23,6 +24,7 @@ public class CountingValleys
             }
             if (currentPosition == -2 && isAtValley == false)
             {
+                valleysTraversed++;
                 isAtValley = true;
             }
         }
