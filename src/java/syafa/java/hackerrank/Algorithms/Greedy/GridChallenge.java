@@ -46,7 +46,10 @@ public class GridChallenge
                                     result.add("NO");
                                     break;
                                 }
-                                result.add("YES");
+                                if ((l == checkOrder.size() - 1) && (arrayString.get(l).charAt(0) != checkOrder.get(l)))
+                                {
+                                    result.add("YES");
+                                }
                             }
                         }
                     }
