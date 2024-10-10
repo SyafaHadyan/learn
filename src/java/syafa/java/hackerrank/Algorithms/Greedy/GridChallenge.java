@@ -19,7 +19,8 @@ public class GridChallenge
                 Arrays.sort(arrChar);
                 for (int k = 0; k < arrChar.length; k++)
                 {
-                    array.add(arrChar[k]);
+                    StringBuilder appendString = new StringBuilder();
+                    appendString.append(arrChar[k]);
                 }
             }
         }
