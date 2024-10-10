@@ -23,7 +23,7 @@ public class CatsAndAMouse
         for (int i = 0; i < queries; i++)
         {
             String[] position = input.nextLine().split(" ");
-            if (Integer.parseInt(null))
+            if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) == (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
         }
         input.close();
     }
