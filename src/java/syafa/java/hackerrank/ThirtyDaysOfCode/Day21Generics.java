@@ -7,19 +7,28 @@ public class Day21Generics
     {
         Scanner input = new Scanner(System.in);
         int arrayIntegerLength = Integer.parseInt(input.nextLine());
-        ArrayList<Integer> arrayString = new ArrayList<Integer>();
+        ArrayList<Integer> arrayInteger = new ArrayList<Integer>();
+        ArrayList<String> arrayString = new ArrayList<String>();
         for (int i = 0; i < arrayIntegerLength; i++)
         {
-            arrayString.add(Integer.parseInt(input.nextLine()));
+            arrayInteger.add(Integer.parseInt(input.nextLine()));
         }
         int arrayStringLength = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < array.length; i++) {
-            
-        }
-        for (int i = 0; i < arrayString.size(); i++)
+        for (int i = 0; i < arrayStringLength; i++)
         {
-            System.out.print(arrayString.get(i));
-            if (i != arrayString.size() - 1)
+            arrayString.add(input.nextLine());
+        }
+        for (int i = 0; i < arrayInteger.size() + arrayString.size(); i++)
+        {
+            if (i < arrayInteger.size())
+            {
+                System.out.print(arrayInteger.get(i));
+            }
+            else if (i >= arrayInteger.size())
+            {
+                System.out.print(arrayString.get(i));
+            }
+            if (i != arrayInteger.size() - 1)
             {
                 System.out.print("\n");
             }
