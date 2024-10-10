@@ -81,12 +81,12 @@ public class GridChallenge
                                 {
                                     //
                                 }
-                                if (arrayString.get(l).charAt(0) != checkOrder.get(l))
+                                if (!(arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
                                 {
                                     result.add("NO");
                                     break;
                                 }
-                                if ((l == checkOrder.size() - 1) && (arrayString.get(l).charAt(0) == checkOrder.get(l)))
+                                if ((l == arrayStringSorted.size() - 1) && (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
                                 {
                                     result.add("YES");
                                 }
