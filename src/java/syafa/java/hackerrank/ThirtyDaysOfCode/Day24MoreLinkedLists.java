@@ -10,7 +10,7 @@ public class Day24MoreLinkedLists
         ArrayList<Integer> number = new ArrayList<Integer>();
         for (int i = 0; i < numberLength; i++)
         {
-            
+            number.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
     }
