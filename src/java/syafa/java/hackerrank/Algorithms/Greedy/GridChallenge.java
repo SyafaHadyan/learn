@@ -28,7 +28,7 @@ public class GridChallenge
                 }
                 if (j == arrRow - 1)
                 {
-                    for (int k = 0; k < args.length; k++)
+                    for (int k = 0; k < arrayString.get(0).length(); k++)
                     {
                         int substringCounter = 1;
                         try
