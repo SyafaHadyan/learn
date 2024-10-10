@@ -33,6 +33,7 @@ public class GridChallenge
                         if (arrayString.get(k).charAt(0) == arrayString.get(k).charAt(0))
                         {
                             arrayString.set(k,arrayString.get(k).substring(0));
+                            arrayString.set(k + 1,arrayString.get(k + 1).substring(0));
                         }
                     }
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
