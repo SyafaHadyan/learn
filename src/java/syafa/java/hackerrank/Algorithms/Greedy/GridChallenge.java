@@ -28,6 +28,13 @@ public class GridChallenge
                 }
                 if (j == arrRow - 1)
                 {
+                    for (int k = 0; k < args.length; k++)
+                    {
+                        if (arrayString.get(k).charAt(0) == arrayString.get(k).charAt(0))
+                        {
+                            arrayString.set(k,arrayString.get(k).substring(0));
+                        }
+                    }
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
                     for (int k = 0; k < arrRow; k++)
                     {
