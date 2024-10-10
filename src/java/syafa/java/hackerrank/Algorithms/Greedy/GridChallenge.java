@@ -62,15 +62,16 @@ public class GridChallenge
                             }
                         }
                             */
-                        try
+                        /*try
                         {
-                            checkOrder.add(arrayString.get(k).charAt(substringCounter));
+                            //checkOrder.add(arrayString.get(k).charAt(substringCounter));
                         }
                         catch (StringIndexOutOfBoundsException e)
                         {
                             result.add("NO");
                             break;
                         }
+                        */
                         if (k == arrRow - 1)
                         {
                             Collections.sort(checkOrder);
