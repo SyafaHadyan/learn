@@ -18,7 +18,7 @@ public class Day24MoreLinkedLists
         {
             try
             {
-                if (number.get(i) == number.get(i + 1))
+                if (number.get(i).equals(number.get(i + 1)))
                 {
                     number.remove(i);
                     i--;
@@ -26,14 +26,7 @@ public class Day24MoreLinkedLists
             }
             catch (IndexOutOfBoundsException e)
             {
-                for (int j = 0; j < number.size(); j++)
-                {
-                    if (number.get(j) == number.get(j + 1))
-                    {
-                        number.remove(j);
-                        j--;
-                    }
-                }
+                break;
             }
         }
         for (int i = 0; i < number.size(); i++)
