@@ -14,6 +14,11 @@ public class GridChallenge
         ArrayList<String> result = new ArrayList<String>();
         for (int i = 0; i < testCase; i++)
         {
+            if (arrRow == 1)
+            {
+                result.add("YES");
+                continue;
+            }
             arrRow = Integer.parseInt(input.nextLine());
             ArrayList<String> arrayString = new ArrayList<String>();
             for (int j = 0; j < arrRow; j++)
