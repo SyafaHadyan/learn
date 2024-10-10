@@ -6,7 +6,8 @@ public class CountingValleys
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int numberOfSteps = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         ArrayList<String> step = new ArrayList<String>(Arrays.asList(input.nextLine().split("(?!^)")));
         input.close();
         int currentPosition = 0;
