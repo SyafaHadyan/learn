@@ -39,7 +39,7 @@ public class CatsAndAMouse
             {
                 for (int j = 0; j < result.size(); j++)
                 {
-                    System.out.print(result.get(i));
+                    System.out.print(result.get(j));
                     if (j != result.size() - 1)
                     {
                         System.out.print("\n");
