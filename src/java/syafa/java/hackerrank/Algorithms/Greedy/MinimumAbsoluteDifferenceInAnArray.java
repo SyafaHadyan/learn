@@ -26,7 +26,7 @@ public class MinimumAbsoluteDifferenceInAnArray
             }
             catch (IndexOutOfBoundsException e)
             {
-                // TODO: handle exception
+                break;
             }
             numberInteger.add(Integer.parseInt(numberString.get(i)));
         }
