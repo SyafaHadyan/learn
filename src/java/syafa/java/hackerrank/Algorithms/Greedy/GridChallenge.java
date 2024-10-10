@@ -41,9 +41,10 @@ public class GridChallenge
                                 {
                                     continue;
                                 }
-                                else
+                                else if (arrayString.get(l).charAt(0) == checkOrder.get(l))
                                 {
                                     result.add("NO");
+                                    break;
                                 }
                                 if (l == checkOrder.size() - 1)
                                 {
