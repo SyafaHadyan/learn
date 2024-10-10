@@ -28,10 +28,10 @@ public class Day24MoreLinkedLists
             {
                 for (int j = 0; j < number.size(); j++)
                 {
-                    if (number.get(i) == number.get(i + 1))
+                    if (number.get(j) == number.get(j + 1))
                     {
-                        number.remove(i);
-                        i--;
+                        number.remove(j);
+                        j--;
                     }
                 }
             }
