@@ -25,6 +25,7 @@ public class CatsAndAMouse
             }
             if (i == queries - 1)
             {
+                input.close();
                 for (int j = 0; j < result.size(); j++)
                 {
                     System.out.print(result.get(j));
@@ -35,6 +36,5 @@ public class CatsAndAMouse
                 }
             }
         }
-        input.close();
     }
 }
