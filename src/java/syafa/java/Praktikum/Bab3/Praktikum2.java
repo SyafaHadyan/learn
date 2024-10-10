@@ -27,8 +27,16 @@ public class Praktikum2
                 "4. HITUNG VOLUME SILINDER",
                 "5. HITUNG VOLUME LIMAS SEGITIGA",
                 "MASUKKAN PILIHAN ANDA",':');
-                selection = Double.parseDouble(input.nextLine());
-                printOptions = false;
+                try
+                {
+                    selection = Double.parseDouble(input.nextLine());
+                    printOptions = false;
+                }
+                catch (NumberFormatException e)
+                {
+                    printOptions = false;
+                    continue;
+                }
             }
             if (selection == 0)
             {
