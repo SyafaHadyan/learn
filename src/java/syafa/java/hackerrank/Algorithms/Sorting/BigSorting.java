@@ -14,5 +14,6 @@ public class BigSorting
             numbers.add(input.nextBigInteger());
         }
         input.close();
+        Collections.sort(numbers);
     }
 }
