@@ -38,6 +38,13 @@ public class CatsAndAMouse
                 result.add("Cat B")
                 continue;
             }
+            if (i < queries - 1)
+            {
+                for (int j = 0; j < result.size(); j++)
+                {
+                    
+                }
+            }
         }
         input.close();
     }
