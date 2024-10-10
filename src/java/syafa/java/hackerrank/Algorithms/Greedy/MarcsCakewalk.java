@@ -20,6 +20,10 @@ public class MarcsCakewalk
         for (int i = 0; i < args.length; i++)
         {
             arraySize += (int)(Math.pow(2,i)) * numberInteger.get(i);
+            if (i == numberInteger.size() - 1)
+            {
+                System.out.print(arraySize);
+            }
         }
     }
 }
