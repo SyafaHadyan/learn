@@ -14,6 +14,10 @@ public class IntroToTutorialChallenges
         int numberToSearch = Integer.parseInt(input.nextLine());
         int arraySize = Integer.parseInt(input.nextLine());
         ArrayList<String> numbers = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        for (int i = 0; i < numbers.size(); i++)
+        {
+            //
+        }
         input.close();
     }
 }
