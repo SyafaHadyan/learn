@@ -32,14 +32,15 @@ public class Day20Sorting
             // If no elements were swapped during a traversal, array is sorted
             if (numberOfSwaps == 0)
             {
+                System.out.println(numberOfSwaps);
                 break;
             }
         }
     }
 
-    private static void swap(int i, int j)
+    private static void swap(Integer i, Integer j)
     {
-        Integer[] a = new Integer[2];
+        Integer[] a = new Integer[i];
         Integer temp = a[i];
         a[i] = a[j];
         a[j] = temp;
