@@ -23,7 +23,7 @@ public class CountingValleys
             {
                 currentPosition--;
             }
-            if (currentPosition == -2 && isAtValley == false)
+            if (currentPosition == -1 && isAtValley == false)
             {
                 isAtValley = true;
             }
