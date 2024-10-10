@@ -18,7 +18,10 @@ public class Day24MoreLinkedLists
         {
             try
             {
-                //
+                if (number.get(i) == number.get(i + 1))
+                {
+                    number.remove(i);
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
