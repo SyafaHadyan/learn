@@ -45,6 +45,10 @@ public class GridChallenge
                                 {
                                     result.add("NO");
                                 }
+                                if (l == checkOrder.size() - 1)
+                                {
+                                    result.add("YES");
+                                }
                             }
                         }
                     }
