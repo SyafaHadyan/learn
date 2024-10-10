@@ -10,9 +10,9 @@ public class MarcsCakewalk
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         ArrayList<Integer> numberInteger = new ArrayList<Integer>();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < numberString.size(); i++)
         {
-            //
+            numberInteger.add(Integer.parseInt(numberString.get(i)));
         }
     }
 }
