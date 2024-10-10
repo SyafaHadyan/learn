@@ -17,24 +17,25 @@ public class MinimumAbsoluteDifferenceInAnArray
             if (i == numberString.size() - 1)
             {
                 Collections.sort(numberDouble,Comparator.comparingDouble(Math::abs));
-            }
-        }
-        for (int i = 0; i < numberString.size(); i++)
-        {
-            try
-            {
-                if ((Math.abs(Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1))) < currentLowestDiffAbs) && (i != 0))
+                for (int j = 0; j < numberString.size(); j++)
                 {
-                    currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1)));
+                    try
+                    {
+                        if ((Math.abs(Double.parseDouble(numberString.get(j)) - Double.parseDouble(numberString.get(j + 1))) < currentLowestDiffAbs) && (j != 0))
+                        {
+                            currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(j)) - Double.parseDouble(numberString.get(j + 1)));
+                            continue;
+                        }
+                        else if (j == 0)
+                        {
+                            currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(j)) - Double.parseDouble(numberString.get(j + 1)));
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        System.out.printf("%.0f",currentLowestDiffAbs);
+                    }
                 }
-                else if (i == 0)
-                {
-                    currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1)));
-                }
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                System.out.printf("%.0f",currentLowestDiffAbs);
             }
         }
     }
