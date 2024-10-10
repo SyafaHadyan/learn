@@ -6,11 +6,15 @@ public class Day21Generics
     private static void printArray()
     {
         Scanner input = new Scanner(System.in);
-        int arrayLength = Integer.parseInt(input.nextLine());
+        int arrayIntegerLength = Integer.parseInt(input.nextLine());
         ArrayList<Integer> arrayString = new ArrayList<Integer>();
-        for (int i = 0; i < arrayLength; i++)
+        for (int i = 0; i < arrayIntegerLength; i++)
         {
             arrayString.add(Integer.parseInt(input.nextLine()));
+        }
+        int arrayStringLength = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < array.length; i++) {
+            
         }
         for (int i = 0; i < arrayString.size(); i++)
         {
