@@ -5,6 +5,11 @@ public class IntroToTutorialChallenges
 {
     public static void main(String[] args)
     {
+        /*
+         * 4 = Number to search
+         * 6 = Array size
+         * 1 4 5 7 9 12 = Array given through input
+         */
         Scanner input = new Scanner(System.in);
         input.close();
     }
