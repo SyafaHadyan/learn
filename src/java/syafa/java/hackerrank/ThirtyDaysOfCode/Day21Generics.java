@@ -10,7 +10,7 @@ public class Day21Generics
         ArrayList<String> arrayString = new ArrayList<String>();
         for (int i = 0; i < arrayLength; i++)
         {
-            
+            arrayString.add(input.nextLine());
         }
         input.close();
     }
