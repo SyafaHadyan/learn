@@ -27,7 +27,7 @@ public class Day21Generics
             }
             else if (i >= arrayInteger.size())
             {
-                System.out.print(arrayString.get(i));
+                System.out.print(arrayString.get(i - arrayInteger.size()));
             }
             if (i != arrayInteger.size() + arrayString.size() - 1)
             {
