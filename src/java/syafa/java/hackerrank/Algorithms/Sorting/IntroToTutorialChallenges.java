@@ -19,7 +19,7 @@ public class IntroToTutorialChallenges
         {
             if (Integer.parseInt(numbers.get(i)) == numberToSearch)
             {
-                System.out.print(numbers.get(i));
+                System.out.print(i);
                 return;
             }
         }
