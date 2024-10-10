@@ -7,6 +7,10 @@ public class Day24MoreLinkedLists
     {
         Scanner input = new Scanner(System.in);
         int numberLength = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < numberLength; i++)
+        {
+            
+        }
         input.close();
     }
 }
