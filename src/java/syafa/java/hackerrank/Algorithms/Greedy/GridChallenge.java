@@ -12,7 +12,11 @@ public class GridChallenge
         //ArrayList<String> array = TODO: Local declare
         for (int i = 0; i < testCase; i++)
         {
-            //
+            arrRow = Integer.parseInt(input.nextLine());
+            for (int j = 0; j < arrRow; j++)
+            {
+                //
+            }
         }
         input.close();
     }
