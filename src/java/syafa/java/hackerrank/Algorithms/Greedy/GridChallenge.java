@@ -31,7 +31,7 @@ public class GridChallenge
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
                     for (int k = 0; k < arrRow; k++)
                     {
-                        
+                        checkOrder.add(arrayString.get(k).charAt(0));
                     }
                 }
             }
