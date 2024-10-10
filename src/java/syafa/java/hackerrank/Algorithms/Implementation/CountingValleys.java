@@ -31,6 +31,10 @@ public class CountingValleys
                 valleysTraversed++;
                 isAtValley = false;
             }
+            if (i == step.size() - 1)
+            {
+                System.out.print(valleysTraversed);
+            }
         }
     }
 }
