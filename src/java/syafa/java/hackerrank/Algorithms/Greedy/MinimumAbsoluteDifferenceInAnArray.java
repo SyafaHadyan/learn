@@ -21,9 +21,9 @@ public class MinimumAbsoluteDifferenceInAnArray
                 {
                     try
                     {
-                        if ((Math.abs(Double.parseDouble(numberString.get(j)) - Double.parseDouble(numberString.get(j + 1))) < currentLowestDiffAbs) && (j != 0))
+                        if (((Math.abs(numberDouble.get(j) - numberDouble.get(j + 1))) < currentLowestDiffAbs) && (j != 0))
                         {
-                            currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(j)) - Double.parseDouble(numberString.get(j + 1)));
+                            currentLowestDiffAbs = Math.abs(numberDouble.get(j) - numberDouble.get(j + 1));
                             if (currentLowestDiffAbs == 0)
                             {
                                 numberDouble.get(numberDouble.size());
