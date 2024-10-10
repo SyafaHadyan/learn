@@ -11,7 +11,6 @@ public class Day9Recursion3
         factorialResult *= i;
         number = number - 1;
     }
-    System.out.print(factorialResult);
     return factorialResult;
 }
     public static void main(String[] args)
