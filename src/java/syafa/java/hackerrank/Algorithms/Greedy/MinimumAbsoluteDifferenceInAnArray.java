@@ -20,9 +20,9 @@ public class MinimumAbsoluteDifferenceInAnArray
                 {
                     try
                     {
-                        if (((Math.abs(numberDouble.get(j + 1) - numberDouble.get(j))) < currentLowestDiffAbs) && (j != 0))
+                        if (((Math.abs(numberDouble.get(j + 1)) - Math.abs(numberDouble.get(j))) < currentLowestDiffAbs) && (j != 0))
                         {
-                            currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1) - numberDouble.get(j));
+                            currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1)) - Math.abs(numberDouble.get(j));
                             if (currentLowestDiffAbs == 0)
                             {
                                 numberDouble.get(numberDouble.size());
@@ -31,7 +31,7 @@ public class MinimumAbsoluteDifferenceInAnArray
                         }
                         else if (j == 0)
                         {
-                            currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1) - numberDouble.get(j));
+                            currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1)) - Math.abs(numberDouble.get(j));
                         }
                     }
                     catch (IndexOutOfBoundsException e)
