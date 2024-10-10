@@ -10,7 +10,7 @@ public class BigSorting
         ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 0; i < arraySize; i++)
         {
-            
+            numbers.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
     }
