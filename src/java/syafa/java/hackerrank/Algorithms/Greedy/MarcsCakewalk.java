@@ -15,5 +15,6 @@ public class MarcsCakewalk
             numberInteger.add(Integer.parseInt(numberString.get(i)));
         }
         Collections.sort(numberInteger);
+        Collections.reverse(numberInteger);
     }
 }
