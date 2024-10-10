@@ -6,10 +6,10 @@ public class MinimumAbsoluteDifferenceInAnArray
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arrayLength = Integer.parseInt(input.nextLine());
+        double currentLowestDiffAbs = Double.parseDouble(input.nextLine());
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        double currentLowestDiffAbs = 0d;
+        currentLowestDiffAbs = 0d;
         for (int i = 0; i < numberString.size(); i++)
         {
             try
