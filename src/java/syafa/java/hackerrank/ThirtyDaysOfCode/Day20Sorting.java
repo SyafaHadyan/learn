@@ -9,6 +9,7 @@ public class Day20Sorting
         int arraySize = Integer.parseInt(input.nextLine());
         ArrayList<String> inputArrayString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int swap = 0;
         Integer[] a = new Integer[inputArrayString.size()];
         for (int i = 0; i < inputArrayString.size(); i++)
         {
@@ -18,6 +19,10 @@ public class Day20Sorting
         {
             // Track number of elements swapped during a single array traversal
             int numberOfSwaps = 0;
+            if (numberOfSwaps == 0)
+            {
+                swap++;
+            }
             
             for (int j = 0; j < arraySize - 1; j++)
             {
@@ -39,5 +44,6 @@ public class Day20Sorting
                 break;
             }
         }
+        System.out.println("Array is sorted in " + swap + " swaps." + "First Element: " + a[0] +  "Last Element: " + a[arraySize - 1]);
     }
 }
