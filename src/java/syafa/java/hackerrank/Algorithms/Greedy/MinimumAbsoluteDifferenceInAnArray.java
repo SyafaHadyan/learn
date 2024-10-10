@@ -27,21 +27,21 @@ public class MinimumAbsoluteDifferenceInAnArray
                             {
                                 numberDouble.get(numberDouble.size());
                             }
-                            continue;
                         }
-                        else if (j == 0)
+                        if (j == 0)
                         {
                             currentLowestDiffAbs = Math.abs(numberDouble.get(j + 1) - numberDouble.get(j));
                         }
-                       /*  if (Math.abs(numberDouble.get(j + 1)) == Math.abs(numberDouble.get(j + 1)))
+                        if (Math.abs(numberDouble.get(j + 1)) == Math.abs(numberDouble.get(j)))
                         {
                             currentLowestDiffAbs = 0;
                             numberDouble.get(numberDouble.size());
-                        } */
+                        }
                     }
                     catch (IndexOutOfBoundsException e)
                     {
                         System.out.printf("%.0f",currentLowestDiffAbs);
+                        return;
                     }
                 }
             }
