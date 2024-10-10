@@ -7,9 +7,10 @@ public class Day21Generics
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
+        ArrayList<String> arrayString = new ArrayList<String>();
         for (int i = 0; i < arrayLength; i++)
         {
-            //
+            
         }
         input.close();
     }
