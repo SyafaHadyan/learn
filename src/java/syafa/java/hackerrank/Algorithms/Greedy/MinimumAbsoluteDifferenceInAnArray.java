@@ -15,7 +15,10 @@ public class MinimumAbsoluteDifferenceInAnArray
         {
             try
             {
-                if ((Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1))) < currentLowestDiffAbs)
+                if ((Math.abs(Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1))) < currentLowestDiffAbs) && (i != 0))
+                {
+                    //
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
