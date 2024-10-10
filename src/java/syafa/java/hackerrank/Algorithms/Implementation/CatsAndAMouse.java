@@ -7,7 +7,7 @@ public class CatsAndAMouse
     {
         Scanner input = new Scanner(System.in);
         int queries = Integer.parseInt(input.nextLine());
-        //ArrayList<String> position = new ArrayList<String>();
+        ArrayList<String> result = new ArrayList<String>();
         /*
          * Cat A Cat B Mouse C
          * 
@@ -24,6 +24,9 @@ public class CatsAndAMouse
         {
             String[] position = input.nextLine().split(" ");
             if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) == (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
+            {
+                result.add("Mouse C");
+            }
         }
         input.close();
     }
