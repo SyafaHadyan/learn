@@ -25,7 +25,15 @@ public class Day24MoreLinkedLists
             }
             catch (IndexOutOfBoundsException e)
             {
-                // TODO: handle exception
+                //
+            }
+        }
+        for (int i = 0; i < number.size(); i++)
+        {
+            System.out.print(number.get(i));
+            if (i != number.size() - 1)
+            {
+                System.out.print("\n");
             }
         }
     }
