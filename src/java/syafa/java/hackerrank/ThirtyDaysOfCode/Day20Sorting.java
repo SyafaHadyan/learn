@@ -9,5 +9,9 @@ public class Day20Sorting
         int arraySize = Integer.parseInt(input.nextLine());
         ArrayList<String> inputArrayString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        for (int i = 0; i < inputArrayString.size(); i++)
+        {
+            
+        }
     }
 }
