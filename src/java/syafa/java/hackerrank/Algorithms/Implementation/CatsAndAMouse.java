@@ -26,17 +26,14 @@ public class CatsAndAMouse
             if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) == (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
             {
                 result.add("Mouse C");
-                continue;
             }
             else if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) < (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
             {
                 result.add("Cat A");
-                continue;
             }
             else if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) > (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
             {
                 result.add("Cat B");
-                continue;
             }
             if (i == queries - 1)
             {
