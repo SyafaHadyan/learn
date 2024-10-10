@@ -41,7 +41,7 @@ public class GridChallenge
                                 {
                                     //
                                 }
-                                else if (arrayString.get(l).charAt(0) != checkOrder.get(l))
+                                if (arrayString.get(l).charAt(0) != checkOrder.get(l))
                                 {
                                     result.add("NO");
                                     break;
