@@ -33,6 +33,11 @@ public class CatsAndAMouse
                 result.add("Cat A")
                 continue;
             }
+            else if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) > (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
+            {
+                result.add("Cat B")
+                continue;
+            }
         }
         input.close();
     }
