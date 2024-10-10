@@ -14,6 +14,10 @@ public class MinimumAbsoluteDifferenceInAnArray
         for (int i = 0; i < numberString.size(); i++)
         {
             numberDouble.add(Double.parseDouble(numberString.get(i)));
+            if (i == numberString.size() - 1)
+            {
+                Collections.sort(numberDouble,Comparator.comparingDouble(Math::abs));
+            }
         }
         for (int i = 0; i < numberString.size(); i++)
         {
