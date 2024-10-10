@@ -74,9 +74,9 @@ public class GridChallenge
                         if (k == arrRow - 1)
                         {
                             Collections.sort(checkOrder);
-                            for (int l = 0; l < checkOrder.size(); l++)
+                            for (int l = 0; l < arrayStringSorted.size(); l++)
                             {
-                                if (arrayString.get(l).charAt(0) == checkOrder.get(l))
+                                if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
                                 {
                                     //
                                 }
