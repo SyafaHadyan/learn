@@ -39,17 +39,14 @@ public class GridChallenge
                             {
                                 if (arrayString.get(l).charAt(0) == checkOrder.get(l))
                                 {
-                                    continue;
+                                    //
                                 }
-                                else if (arrayString.get(l).charAt(0) == checkOrder.get(l))
+                                else if (arrayString.get(l).charAt(0) != checkOrder.get(l))
                                 {
                                     result.add("NO");
                                     break;
                                 }
-                                else
-                                {
-                                    result.add("YES");
-                                }
+                                result.add("YES");
                             }
                         }
                     }
