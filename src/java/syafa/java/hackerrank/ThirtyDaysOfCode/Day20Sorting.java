@@ -12,7 +12,7 @@ public class Day20Sorting
         Integer[] a = new Integer[inputArrayString.size()];
         for (int i = 0; i < inputArrayString.size(); i++)
         {
-            
+            a[i] = Integer.parseInt(inputArrayString.get(i));
         }
         for (int i = 0; i < arraySize; i++)
         {
@@ -22,7 +22,8 @@ public class Day20Sorting
             for (int j = 0; j < arraySize - 1; j++)
             {
                 // Swap adjacent elements if they are in decreasing order
-                if (a[j] > a[j + 1]) {
+                if (a[j] > a[j + 1])
+                {
                     swap(a[j], a[j + 1]);
                     numberOfSwaps++;
                 }
