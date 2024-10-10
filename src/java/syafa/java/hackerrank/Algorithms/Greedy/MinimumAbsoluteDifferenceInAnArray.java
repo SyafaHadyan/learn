@@ -6,6 +6,7 @@ public class MinimumAbsoluteDifferenceInAnArray
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int arrayLength = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
