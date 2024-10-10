@@ -9,5 +9,9 @@ public class CountingValleys
         int numberOfSteps = Integer.parseInt(input.nextLine());
         ArrayList<String> step = new ArrayList<String>(Arrays.asList(input.nextLine().split("(?!^)")));
         input.close();
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
     }
 }
