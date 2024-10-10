@@ -12,7 +12,7 @@ public class GridChallenge
         for (int i = 0; i < testCase; i++)
         {
             arrRow = Integer.parseInt(input.nextLine());
-            ArrayList<Character> array = new ArrayList<Character>();
+            ArrayList<String> array = new ArrayList<String>();
             for (int j = 0; j < arrRow; j++)
             {
                 char[] arrChar = input.nextLine().toCharArray();
@@ -21,6 +21,10 @@ public class GridChallenge
                 for (int k = 0; k < arrChar.length; k++)
                 {
                     appendString.append(arrChar[k]);
+                    if (k == arrChar.length - 1)
+                    {
+                        array.add(String.valueOf(appendString));
+                    }
                 }
             }
         }
