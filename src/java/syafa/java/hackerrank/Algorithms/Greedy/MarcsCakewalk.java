@@ -23,6 +23,7 @@ public class MarcsCakewalk
             if (i == numberInteger.size() - 1)
             {
                 System.out.print(arraySize);
+                return;
             }
         }
     }
