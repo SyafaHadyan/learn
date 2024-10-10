@@ -6,6 +6,7 @@ public class CatsAndAMouse
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int queries = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
