@@ -21,6 +21,7 @@ public class GridChallenge
             }
             arrRow = Integer.parseInt(input.nextLine());
             ArrayList<String> arrayString = new ArrayList<String>();
+            ArrayList<String> arrayStringSorted = new ArrayList<String>();
             for (int j = 0; j < arrRow; j++)
             {
                 char[] arrChar = input.nextLine().toCharArray();
@@ -36,28 +37,29 @@ public class GridChallenge
                 }
                 if (j == arrRow - 1)
                 {
-                    for (int k = 0; k < arrayString.get(0).length(); k++)
-                    {
-                        int substringCounter = 1;
-                        try
-                        {
-                            if (arrayString.get(k).charAt(0) == arrayString.get(k + 1).charAt(0))
-                            {
-                                arrayString.set(k,arrayString.get(k).substring(substringCounter));
-                                arrayString.set(k + 1,arrayString.get(k + 1).substring(substringCounter));
-                            }
-                        }
-                        catch (IndexOutOfBoundsException e)
-                        {
-                            break;
-                        }
-                    }
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
                     for (int k = 0; k < arrRow; k++)
                     {
+                        /*
+                        int substringCounter = 0;
+                        for (int l = 0; l < arrayString.get(0).length(); l++)
+                        {
+                            try
+                            {
+                                if (arrayString.get(l).charAt(0) == arrayString.get(l + 1).charAt(0))
+                                {
+                                    substringCounter++;
+                                }
+                            }
+                            catch (IndexOutOfBoundsException e)
+                            {
+                                break;
+                            }
+                        }
+                            */
                         try
                         {
-                            checkOrder.add(arrayString.get(k).charAt(0));
+                            checkOrder.add(arrayString.get(k).charAt(substringCounter));
                         }
                         catch (StringIndexOutOfBoundsException e)
                         {
