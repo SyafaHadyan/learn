@@ -14,5 +14,6 @@ public class MinimumAbsoluteDifferenceInAnArray
         {
             numberInteger.add(Integer.parseInt(numberString.get(i)));
         }
+        Collections.sort(numberInteger,Comparator.comparingInt(Math::abs));
     }
 }
