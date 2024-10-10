@@ -31,10 +31,17 @@ public class GridChallenge
                     for (int k = 0; k < args.length; k++)
                     {
                         int substringCounter = 1;
-                        if (arrayString.get(k).charAt(0) == arrayString.get(k).charAt(0))
+                        try
                         {
-                            arrayString.set(k,arrayString.get(k).substring(substringCounter));
-                            arrayString.set(k + 1,arrayString.get(k + 1).substring(substringCounter));
+                            if (arrayString.get(k).charAt(0) == arrayString.get(k).charAt(0))
+                            {
+                                arrayString.set(k,arrayString.get(k).substring(substringCounter));
+                                arrayString.set(k + 1,arrayString.get(k + 1).substring(substringCounter));
+                            }
+                        }
+                        catch (IndexOutOfBoundsException e)
+                        {
+                            break;
                         }
                     }
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
