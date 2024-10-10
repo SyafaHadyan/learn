@@ -11,9 +11,12 @@ public class CountingValleys
         input.close();
         int currentPosition = 0;
         boolean isAtValley = false;
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < step.size(); i++)
         {
-            
+            if (step.get(i).equalsIgnoreCase("U"))
+            {
+                currentPosition++;
+            }
         }
     }
 }
