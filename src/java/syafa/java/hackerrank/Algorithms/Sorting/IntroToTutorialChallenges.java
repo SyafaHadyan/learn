@@ -11,6 +11,8 @@ public class IntroToTutorialChallenges
          * 1 4 5 7 9 12 = Array given through input
          */
         Scanner input = new Scanner(System.in);
+        int numberToSearch = Integer.parseInt(input.nextLine());
+        int arraySize = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
