@@ -7,6 +7,7 @@ public class BigSorting
     {
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
+        ArrayList<Integer> numbers = new ArrayList<Integer>();
         for (int i = 0; i < arraySize; i++)
         {
             
