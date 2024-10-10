@@ -32,4 +32,11 @@ public class Day20Sorting
             }
         }
     }
+
+    private static void swap(int i, int j)
+    {
+        Integer temp = a[i];
+        a[i] = a[j];
+        a[j] = temp;
+    }
 }
