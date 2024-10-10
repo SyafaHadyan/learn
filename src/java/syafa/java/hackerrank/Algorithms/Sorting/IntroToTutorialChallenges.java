@@ -13,6 +13,7 @@ public class IntroToTutorialChallenges
         Scanner input = new Scanner(System.in);
         int numberToSearch = Integer.parseInt(input.nextLine());
         int arraySize = Integer.parseInt(input.nextLine());
+        ArrayList<String> numbers = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
