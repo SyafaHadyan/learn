@@ -13,9 +13,10 @@ public class GridChallenge
         for (int i = 0; i < testCase; i++)
         {
             arrRow = Integer.parseInt(input.nextLine());
+            ArrayList<String> array = new ArrayList<String>();
             for (int j = 0; j < arrRow; j++)
             {
-                //
+                array.add(input.nextLine());
             }
         }
         input.close();
