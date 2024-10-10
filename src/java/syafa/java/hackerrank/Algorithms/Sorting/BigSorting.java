@@ -1,6 +1,7 @@
 package syafa.java.hackerrank.Algorithms.Sorting;
-import java.util.*;
-import java.math.*;
+import java.util.Scanner;
+import java.util.Arrays;
+import java.math.BigInteger;
 
 public class BigSorting
 {
@@ -9,20 +10,16 @@ public class BigSorting
     {
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
-        ArrayList<BigInteger> numbers = new ArrayList<>();
+        BigInteger[] numbers = new BigInteger[arraySize];
         for (int i = 0; i < arraySize; i++)
         {
-            numbers.add(input.nextBigInteger());
+            numbers[i] = input.nextBigInteger();
         }
         input.close();
-        Collections.sort(numbers);
-        for (int i = 0; i < numbers.size(); i++)
+        Arrays.sort(numbers);
+        for (int i = 0; i < arraySize; i++)
         {
-            System.out.print(numbers.get(i));
-            if (i != numbers.size() - 1)
-            {
-                System.out.print("\n");
-            }
+            System.out.println(numbers[i]);
         }
     }
 }
