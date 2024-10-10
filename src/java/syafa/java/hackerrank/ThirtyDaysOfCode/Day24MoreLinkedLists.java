@@ -33,7 +33,7 @@ public class Day24MoreLinkedLists
             System.out.print(number.get(i));
             if (i != number.size() - 1)
             {
-                System.out.print("\n");
+                System.out.print(' ');
             }
         }
     }
