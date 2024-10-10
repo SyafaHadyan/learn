@@ -24,8 +24,12 @@ public class CountingValleys
             }
             if (currentPosition == -2 && isAtValley == false)
             {
-                valleysTraversed++;
                 isAtValley = true;
+            }
+            if (currentPosition == 0 && isAtValley == true)
+            {
+                valleysTraversed++;
+                isAtValley = false;
             }
         }
     }
