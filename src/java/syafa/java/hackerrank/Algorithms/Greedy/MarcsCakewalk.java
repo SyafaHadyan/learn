@@ -7,7 +7,12 @@ public class MarcsCakewalk
     {
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
-        ArrayList<String> numbers = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        ArrayList<Integer> numberInteger = new ArrayList<Integer>();
+        for (int i = 0; i < args.length; i++)
+        {
+            //
+        }
     }
 }
