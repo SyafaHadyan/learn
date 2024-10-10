@@ -25,7 +25,7 @@ public class MinimumAbsoluteDifferenceInAnArray
             }
             catch (IndexOutOfBoundsException e)
             {
-                break;
+                System.out.print(currentLowestDiffAbs);
             }
         }
     }
