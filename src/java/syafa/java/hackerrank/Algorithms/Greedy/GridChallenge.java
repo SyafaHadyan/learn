@@ -7,6 +7,9 @@ public class GridChallenge
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        int arrRow = 0;
+        ArrayList<String> result = new ArrayList<String>();
+        //ArrayList<String> array = TODO: Local declare
         for (int i = 0; i < testCase; i++)
         {
             //
