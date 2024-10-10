@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Day21Generics
 {
-    private static class printArray
+    public static class printArray
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
@@ -13,9 +13,10 @@ public class Day21Generics
             arrayString.add(input.nextLine());
         }
         input.close();
+        return;
     }
     public static void main(String[] args)
     {
-
+        new printArray();
     }
 }
