@@ -24,7 +24,10 @@ public class Day20Sorting
                 // Swap adjacent elements if they are in decreasing order
                 if (a[j] > a[j + 1])
                 {
-                    swap(a[j], a[j + 1]);
+                    Integer temp = a[i];
+                    a[i] = a[j];
+                    a[j] = temp;
+                    //swap(a[j], a[j + 1]);
                     numberOfSwaps++;
                 }
             }
@@ -36,13 +39,5 @@ public class Day20Sorting
                 break;
             }
         }
-    }
-
-    private static void swap(Integer i, Integer j)
-    {
-        Integer[] a = new Integer[i];
-        Integer temp = a[i];
-        a[i] = a[j];
-        a[j] = temp;
     }
 }
