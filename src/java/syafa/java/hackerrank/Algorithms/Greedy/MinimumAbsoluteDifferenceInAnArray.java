@@ -9,7 +9,12 @@ public class MinimumAbsoluteDifferenceInAnArray
         double currentLowestDiffAbs = Double.parseDouble(input.nextLine());
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        ArrayList<Double> numberDouble = new ArrayList<Double>();
         currentLowestDiffAbs = 0d;
+        for (int i = 0; i < numberString.size(); i++)
+        {
+            numberDouble.add(Double.parseDouble(numberString.get(i)));
+        }
         for (int i = 0; i < numberString.size(); i++)
         {
             try
