@@ -35,6 +35,7 @@ public class Praktikum2
                 catch (NumberFormatException e)
                 {
                     printOptions = false;
+                    inputValid = false;
                     continue;
                 }
             }
@@ -124,6 +125,7 @@ public class Praktikum2
             else
             {
                 System.out.print("\n" + "Pilihan yang anda masukkan salah, silahkan masukkan kembali pilihan anda" + "\n\n");
+                printOptions = true;
                 inputValid = false;
                 continue;
             }
