@@ -65,10 +65,18 @@ public class Praktikum2
             }
             else if (selection == 3)
             {
-                System.out.printf("%-25s%-2c","Masukkan radius",':');
-                radius = Double.parseDouble(input.nextLine());
-                System.out.printf("%-25s%-2c","Masukkan tinggi",':');
-                height = Double.parseDouble(input.nextLine());
+                try
+                {
+                    System.out.printf("%-25s%-2c","Masukkan radius",':');
+                    radius = Double.parseDouble(input.nextLine());
+                    System.out.printf("%-25s%-2c","Masukkan tinggi",':');
+                    height = Double.parseDouble(input.nextLine());
+                }
+                catch (NumberFormatException e)
+                {
+                    printOptions = false;
+                    continue;
+                }
                 selection = (1.0 / 3.0) * PI * Math.pow(radius,2) * height;
             }
             else if (selection == 4)
