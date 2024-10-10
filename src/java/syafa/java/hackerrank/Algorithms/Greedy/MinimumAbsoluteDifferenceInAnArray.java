@@ -19,6 +19,10 @@ public class MinimumAbsoluteDifferenceInAnArray
                 {
                     //
                 }
+                else if (i == 0)
+                {
+                    currentLowestDiffAbs = Math.abs(Double.parseDouble(numberString.get(i)) - Double.parseDouble(numberString.get(i + 1)));
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
