@@ -7,6 +7,7 @@ public class MarcsCakewalk
     {
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
+        arraySize = 0;
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         ArrayList<Integer> numberInteger = new ArrayList<Integer>();
@@ -18,7 +19,7 @@ public class MarcsCakewalk
         Collections.reverse(numberInteger);
         for (int i = 0; i < args.length; i++)
         {
-            numberInteger.set(i,(int)(Math.pow(2,i)) * numberInteger.get(i));
+            arraySize += (int)(Math.pow(2,i)) * numberInteger.get(i);
         }
     }
 }
