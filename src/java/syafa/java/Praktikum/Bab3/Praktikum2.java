@@ -97,12 +97,20 @@ public class Praktikum2
             }
             else if (selection == 5)
             {
-                System.out.printf("%-25s%-2c","Masukkan tinggi",':');
-                height = Double.parseDouble(input.nextLine());
-                System.out.printf("%-25s%-2c","Masukkan sisi pertama",':');
-                firstSide = Double.parseDouble(input.nextLine());
-                System.out.printf("%-25s%-2c","Masukkan sisi kedua",':');
-                secondSide = Double.parseDouble(input.nextLine());
+                try
+                {
+                    System.out.printf("%-25s%-2c","Masukkan tinggi",':');
+                    height = Double.parseDouble(input.nextLine());
+                    System.out.printf("%-25s%-2c","Masukkan sisi pertama",':');
+                    firstSide = Double.parseDouble(input.nextLine());
+                    System.out.printf("%-25s%-2c","Masukkan sisi kedua",':');
+                    secondSide = Double.parseDouble(input.nextLine());
+                }
+                catch (NumberFormatException e)
+                {
+                    printOptions = false;
+                    continue;
+                }
                 selection = (1.0 / 3.0) * (firstSide * secondSide) * height;
             }
             else
