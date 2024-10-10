@@ -19,19 +19,15 @@ public class Day20Sorting
         {
             // Track number of elements swapped during a single array traversal
             int numberOfSwaps = 0;
-            if (numberOfSwaps == 0)
-            {
-                swap++;
-            }
             
             for (int j = 0; j < arraySize - 1; j++)
             {
                 // Swap adjacent elements if they are in decreasing order
                 if (a[j] > a[j + 1])
                 {
-                    Integer temp = a[i];
-                    a[i] = a[j];
-                    a[j] = temp;
+                    Integer temp = a[j];
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
                     //swap(a[j], a[j + 1]);
                     numberOfSwaps++;
                 }
@@ -40,10 +36,9 @@ public class Day20Sorting
             // If no elements were swapped during a traversal, array is sorted
             if (numberOfSwaps == 0)
             {
-                System.out.println(numberOfSwaps);
-                break;
+                swap++;
             }
         }
-        System.out.println("Array is sorted in " + swap + " swaps." + "First Element: " + a[0] +  "Last Element: " + a[arraySize - 1]);
+        System.out.println("Array is sorted in " + swap + " swaps." + "\n" + "First Element: " + a[0] + "\n" +  "Last Element: " + a[arraySize - 1]);
     }
 }
