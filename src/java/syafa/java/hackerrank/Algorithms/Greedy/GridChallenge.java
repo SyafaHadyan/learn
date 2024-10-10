@@ -32,6 +32,10 @@ public class GridChallenge
                     for (int k = 0; k < arrRow; k++)
                     {
                         checkOrder.add(arrayString.get(k).charAt(0));
+                        if (k == arrRow - 1)
+                        {
+                            Collections.sort(checkOrder);
+                        }
                     }
                 }
             }
