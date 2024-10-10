@@ -26,6 +26,14 @@ public class GridChallenge
                         arrayString.add(String.valueOf(appendString));
                     }
                 }
+                if (j == arrRow - 1)
+                {
+                    ArrayList<Character> checkOrder = new ArrayList<Character>();
+                    for (int k = 0; k < arrRow; k++)
+                    {
+                        
+                    }
+                }
             }
         }
         input.close();
