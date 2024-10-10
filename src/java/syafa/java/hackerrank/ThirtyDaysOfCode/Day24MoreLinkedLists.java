@@ -21,11 +21,15 @@ public class Day24MoreLinkedLists
                 if (number.get(i) == number.get(i + 1))
                 {
                     number.remove(i);
+                    i--;
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                if (number.get(i - 1) == number.get(i))
+                {
+                    number.remove(i - 1);
+                }
             }
         }
         for (int i = 0; i < number.size(); i++)
