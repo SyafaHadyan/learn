@@ -10,7 +10,6 @@ public class MinimumAbsoluteDifferenceInAnArray
         ArrayList<String> numberString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         double currentLowestDiffAbs = 0d;
-        ArrayList<Integer> numberInteger = new ArrayList<Integer>();
         for (int i = 0; i < numberString.size(); i++)
         {
             try
@@ -28,8 +27,6 @@ public class MinimumAbsoluteDifferenceInAnArray
             {
                 break;
             }
-            numberInteger.add(Integer.parseInt(numberString.get(i)));
         }
-        Collections.sort(numberInteger,Comparator.comparingInt(Math::abs));
     }
 }
