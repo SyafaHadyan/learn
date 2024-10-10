@@ -22,7 +22,7 @@ public class MarcsCakewalk
             arraySize += (Math.floor(Math.pow(2,i)) * numberInteger.get(i));
             if (i == numberInteger.size() - 1)
             {
-                System.out.print(arraySize);
+                System.out.printf("%.0f",arraySize);
                 return;
             }
         }
