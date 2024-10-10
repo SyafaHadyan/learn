@@ -37,6 +37,11 @@ public class GridChallenge
                 }
                 if (j == arrRow - 1)
                 {
+                    for (int k = 0; k < args.length; k++)
+                    {
+                        arrayStringSorted.add(arrayString.get(k));
+                    }
+                    Collections.sort(arrayStringSorted);
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
                     for (int k = 0; k < arrRow; k++)
                     {
