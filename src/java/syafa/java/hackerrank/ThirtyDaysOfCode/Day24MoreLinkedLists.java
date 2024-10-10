@@ -14,5 +14,16 @@ public class Day24MoreLinkedLists
         }
         input.close();
         Collections.sort(number);
+        for (int i = 0; i < number.size(); i++)
+        {
+            try
+            {
+                //
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                // TODO: handle exception
+            }
+        }
     }
 }
