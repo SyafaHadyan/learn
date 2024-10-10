@@ -23,15 +23,15 @@ public class CatsAndAMouse
         for (int i = 0; i < queries; i++)
         {
             String[] position = input.nextLine().split(" ");
-            if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) == (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
+            if (Math.abs((Integer.parseInt(position[2]) - Integer.parseInt(position[0]))) == (Math.abs(Integer.parseInt(position[2]) - Integer.parseInt(position[1]))))
             {
                 result.add("Mouse C");
             }
-            else if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) < (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
+            else if (Math.abs((Integer.parseInt(position[2]) - Integer.parseInt(position[0]))) < (Math.abs(Integer.parseInt(position[2]) - Integer.parseInt(position[1]))))
             {
                 result.add("Cat A");
             }
-            else if ((Integer.parseInt(position[2]) - Integer.parseInt(position[0])) > (Integer.parseInt(position[2]) - Integer.parseInt(position[1])))
+            else if (Math.abs((Integer.parseInt(position[2]) - Integer.parseInt(position[0]))) > (Math.abs(Integer.parseInt(position[2]) - Integer.parseInt(position[1]))))
             {
                 result.add("Cat B");
             }
