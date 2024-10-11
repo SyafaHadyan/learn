@@ -11,7 +11,7 @@ public class DesignerPDFViewer
         ArrayList<String> letterHeight = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         String word = input.nextLine();
         input.close();
-        word.toUpperCase();
+        word = word.toUpperCase();
         int currentMaxHeight = 0;
         for (int i = 0; i < word.length(); i++)
         {
