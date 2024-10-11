@@ -10,9 +10,9 @@ public class BeautifulDaysAtTheMovies
         input.close();
         ArrayList<Integer> firstLastDay = new ArrayList<Integer>();
         int validDay = 0;
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < Integer.parseInt(days.get(0)) - Integer.parseInt(days.get(1)) + 1; i++)
         {
-            firstLastDay.add(Integer.parseInt(days.get(0)));
+            firstLastDay.add(Integer.parseInt(days.get(0)) + i);
         }
         for (int i = 0; i < Integer.parseInt(days.get(0)) - Integer.parseInt(days.get(1)) + 1; i++)
         {
