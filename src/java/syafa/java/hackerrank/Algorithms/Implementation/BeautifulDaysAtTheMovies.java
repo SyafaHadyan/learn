@@ -6,6 +6,7 @@ public class BeautifulDaysAtTheMovies
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        ArrayList<String> days = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
