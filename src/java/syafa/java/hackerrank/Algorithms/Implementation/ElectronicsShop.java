@@ -15,9 +15,9 @@ public class ElectronicsShop
         {
             for (int j = 0; j < usbPrices.size(); j++)
             {
-                if ((Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(j))) <= Integer.parseInt(budget.get(0)) && (Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(i))) > currentHigh)
+                if ((Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(j))) <= Integer.parseInt(budget.get(0)) && (Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(j))) > currentHigh)
                 {
-                    currentHigh = (Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(i)));
+                    currentHigh = (Integer.parseInt(keyboardPrices.get(i)) + Integer.parseInt(usbPrices.get(j)));
                 }
                 if (i + j - keyboardPrices.size() - usbPrices.size() == -2)
                 {
