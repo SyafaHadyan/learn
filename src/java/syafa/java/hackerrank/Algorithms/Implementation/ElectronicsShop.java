@@ -8,6 +8,7 @@ public class ElectronicsShop
         Scanner input = new Scanner(System.in);
         ArrayList<String> budget = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> keyboardPrices = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> usbPrices = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
