@@ -7,6 +7,7 @@ public class DesignerPDFViewer
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> letterHeight = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        String word = input.nextLine();
         input.close();
     }
 }
