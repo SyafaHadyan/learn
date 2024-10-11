@@ -18,26 +18,29 @@ public class CutTheSticks
         Collections.sort(sticks);
         for (int i = 0; i < sticks.size(); i++)
         {
-            if (i == 0)
+            try
             {
                 currentLowestStick = sticks.get(0);
-            }
-            sticks.set(i,sticks.get(i) - sticks.get(0));
-            if (sticks.get(i) <= 0)
-            {
-                sticks.remove(i);
-            }
-            if (i == sticks.size() - 1)
-            {
-                for (int j = 0; j < sticks.size(); j++)
+                sticks.set(i,sticks.get(i) - currentLowestStick);
+                if (sticks.get(i) <= 0)
                 {
+                    sticks.remove(i);
+                }
+                if (i == sticks.size() - 1)
+                {
+                    sticksLeft.add(sticks.size());
+                    Collections.sort(sticks);
+                    i = -1;
                 }
             }
-            sticksLeft.add(sticks.size());
+            catch (IndexOutOfBoundsException e)
+            {
+                //
+            }
         }
         for (int i = 0; i < args.length; i++)
         {
-            
+            System.out.println(sticksLeft);
         }
     }
 }
