@@ -21,6 +21,10 @@ public class DesignerPDFViewer
                 {
                     currentMaxHeight = Integer.parseInt(letterHeight.get(j));
                 }
+                if (i == word.length() - 1)
+                {
+                    System.out.print(currentMaxHeight * word.length());
+                }
             }
         }
     }
