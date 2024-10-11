@@ -24,14 +24,21 @@ public class AppleAndOrange
                     appleFallRegion++;
                 }
             }
-            catch (NumberFormatException e)
+            catch (IndexOutOfBoundsException e)
             {
                 //
             }
-            if (Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
-            Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) <= Integer.parseInt(houseDomain.get(1)))
+            try
             {
-                orangeFallRegion++;
+                if (Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
+                Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) <= Integer.parseInt(houseDomain.get(1)))
+                {
+                    orangeFallRegion++;
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
             }
         }
     }
