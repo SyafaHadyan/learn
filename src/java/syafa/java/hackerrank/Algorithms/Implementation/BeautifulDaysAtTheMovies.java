@@ -14,7 +14,7 @@ public class BeautifulDaysAtTheMovies
         {
             firstLastDay.add(Integer.parseInt(days.get(0)) + i);
         }
-        for (int i = 0; i < Integer.parseInt(days.get(0)) - Integer.parseInt(days.get(1)) + 1; i++)
+        for (int i = 0; i < firstLastDay.size(); i++)
         {
             String reversedDay = "";
             for (int j = days.get(i).length() - 1; j >= 0; j++)
