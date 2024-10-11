@@ -37,15 +37,15 @@ public class GridChallenge
                 }
                 if (j == arrRow - 1)
                 {
-                    for (int k = 0; k < args.length; k++)
+                    for (int k = 0; k < arrRow; k++)
                     {
                         arrayStringSorted.add(arrayString.get(k));
                     }
                     Collections.sort(arrayStringSorted);
+                    /*
                     ArrayList<Character> checkOrder = new ArrayList<Character>();
                     for (int k = 0; k < arrRow; k++)
                     {
-                        /*
                         int substringCounter = 0;
                         for (int l = 0; l < arrayString.get(0).length(); l++)
                         {
@@ -72,25 +72,22 @@ public class GridChallenge
                             break;
                         }
                         */
-                        if (k == arrRow - 1)
+
+                        //Collections.sort(checkOrder);
+                    for (int l = 0; l < arrayStringSorted.size(); l++)
+                    {
+                        if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
                         {
-                            Collections.sort(checkOrder);
-                            for (int l = 0; l < arrayStringSorted.size(); l++)
-                            {
-                                if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
-                                {
-                                    //
-                                }
-                                if (!(arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
-                                {
-                                    result.add("NO");
-                                    break;
-                                }
-                                if ((l == arrayStringSorted.size() - 1) && (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
-                                {
-                                    result.add("YES");
-                                }
-                            }
+                            //
+                        }
+                        if (!(arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
+                        {
+                            result.add("NO");
+                            break;
+                        }
+                        if ((l == arrayStringSorted.size() - 1) && (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
+                        {
+                            result.add("YES");
                         }
                     }
                 }
