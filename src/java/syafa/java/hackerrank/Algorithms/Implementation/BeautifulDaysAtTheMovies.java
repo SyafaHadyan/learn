@@ -10,9 +10,10 @@ public class BeautifulDaysAtTheMovies
         input.close();
         for (int i = 0; i < Integer.parseInt(days.get(0)) - Integer.parseInt(days.get(1)) + 1; i++)
         {
-            for (int j = 0; j < args.length; j++)
+            String reversedDay = "";
+            for (int j = days.get(i).length() - 1; j >= 0; j++)
             {
-                
+                reversedDay += days.get(i).charAt(j);
             }
         }
     }
