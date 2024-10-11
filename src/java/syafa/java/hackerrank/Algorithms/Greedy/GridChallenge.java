@@ -3,9 +3,6 @@ import java.util.*;
 
 public class GridChallenge
 {
-    /*
-     * TODO: 1. Fix if string is only a letter.
-     */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
