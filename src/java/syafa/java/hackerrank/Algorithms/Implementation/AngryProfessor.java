@@ -18,6 +18,11 @@ public class AngryProfessor
                 if (Integer.parseInt(studentArrival.get(j)) <= 0)
                 {
                     studentCount++;
+                    continue;
+                }
+                if (studentCount < Integer.parseInt(studentThreshold.get(1)))
+                {
+                    classStatus.add("YES");
                 }
             }
         }
