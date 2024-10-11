@@ -16,7 +16,11 @@ public class AppleAndOrange
         int orangeFallRegion = 0;
         for (int i = 0; i < Integer.parseInt(fruitCount.get(0)); i++)
         {
-            if ()
+            if (Integer.parseInt(treePosition.get(0)) + Integer.parseInt(appleFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
+            Integer.parseInt(treePosition.get(0)) + Integer.parseInt(appleFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(1)))
+            {
+
+            }
         }
     }
 }
