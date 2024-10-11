@@ -12,13 +12,13 @@ public class GridChallenge
         int testCase = Integer.parseInt(input.nextLine());
         int arrRow = 0;
         ArrayList<String> result = new ArrayList<String>();
+        if (arrRow == 1)
+        {
+            result.add("YES");
+            arrRow--;
+        }
         for (int i = 0; i < testCase; i++)
         {
-            if (arrRow == 1)
-            {
-                result.add("YES");
-                continue;
-            }
             arrRow = Integer.parseInt(input.nextLine());
             ArrayList<String> arrayString = new ArrayList<String>();
             ArrayList<String> arrayStringSorted = new ArrayList<String>();
