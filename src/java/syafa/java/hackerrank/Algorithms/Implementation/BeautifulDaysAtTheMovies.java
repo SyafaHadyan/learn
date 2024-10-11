@@ -17,7 +17,7 @@ public class BeautifulDaysAtTheMovies
         for (int i = 0; i < firstLastDay.size(); i++)
         {
             String reversedDay = "";
-            for (int j = days.get(i).length() - 1; j >= 0; j++)
+            for (int j = String.valueOf(firstLastDay.get(i)).length() - 1; j >= 0; j++)
             {
                 reversedDay += days.get(i).charAt(j);
             }
