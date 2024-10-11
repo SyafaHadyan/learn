@@ -26,6 +26,7 @@ public class AppleAndOrange
             {
                 orangeFallRegion++;
             }
+            throw new IndexOutOfBoundsException();
         }
     }
 }
