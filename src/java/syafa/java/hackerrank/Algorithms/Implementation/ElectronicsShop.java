@@ -12,15 +12,5 @@ public class ElectronicsShop
         input.close();
         Collections.sort(keyboardPricesString);
         Collections.sort(usbPricesString);
-        ArrayList<Integer> keyboardPrices = new ArrayList<Integer>();
-        ArrayList<Integer> usbPrices = new ArrayList<Integer>();
-        for (int i = 0; i < keyboardPricesString.size(); i++)
-        {
-            keyboardPrices.add(Integer.parseInt(keyboardPricesString.get(i)));
-            if (i == keyboardPricesString.size() - 1)
-            {
-                Collections.sort(keyboardPrices);
-            }
-        }
     }
 }
