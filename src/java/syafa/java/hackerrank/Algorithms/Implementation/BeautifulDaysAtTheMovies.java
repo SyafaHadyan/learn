@@ -21,7 +21,7 @@ public class BeautifulDaysAtTheMovies
             {
                 reversedDay += days.get(i).charAt(j);
             }
-            if (Math.floor(Math.abs(Integer.parseInt(days.get(i)) - Integer.parseInt(reversedDay))) == Math.abs(Integer.parseInt(days.get(i)) - Integer.parseInt(reversedDay)))
+            if (Math.floor(Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay))) == Math.abs(Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay))))
             {
                 validDay++;
             }
