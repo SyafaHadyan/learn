@@ -14,7 +14,7 @@ public class ElectronicsShop
         ArrayList<Integer> usbPrices = new ArrayList<Integer>();
         for (int i = 0; i < keyboardPricesString.size(); i++)
         {
-            
+            keyboardPrices.add(Integer.parseInt(keyboardPricesString.get(i)));
         }
     }
 }
