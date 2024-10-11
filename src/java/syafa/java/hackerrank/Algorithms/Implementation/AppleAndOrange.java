@@ -42,7 +42,7 @@ public class AppleAndOrange
             }
             if (i == Integer.parseInt(fruitCount.get(0)) + Integer.parseInt(fruitCount.get(1)) - 1)
             {
-                System.out.print(appleFallRegion + "/n" + orangeFallRegion);
+                System.out.print(appleFallRegion + "\n" + orangeFallRegion);
             }
         }
     }
