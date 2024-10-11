@@ -11,7 +11,8 @@ public class DayOfTheProgrammer
         input.close();
         if (LocalDate.parse(year + "-" + 01 + "-" + 01).isLeapYear())
         {
-
+            System.out.print("12.09." + year);
+            return;
         }
     }
 }
