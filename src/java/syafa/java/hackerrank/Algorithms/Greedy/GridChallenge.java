@@ -61,8 +61,7 @@ public class GridChallenge
                                 break;
                             }
                         }
-                            */
-                        /*try
+                        try
                         {
                             //checkOrder.add(arrayString.get(k).charAt(substringCounter));
                         }
@@ -71,9 +70,8 @@ public class GridChallenge
                             result.add("NO");
                             break;
                         }
+                        Collections.sort(checkOrder);
                         */
-
-                        //Collections.sort(checkOrder);
                     for (int l = 0; l < arrayStringSorted.size(); l++)
                     {
                         if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
