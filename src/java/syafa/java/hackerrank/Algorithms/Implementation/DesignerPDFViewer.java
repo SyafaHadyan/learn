@@ -24,6 +24,7 @@ public class DesignerPDFViewer
                 if (i == word.length() - 1)
                 {
                     System.out.print(currentMaxHeight * word.length());
+                    return;
                 }
             }
         }
