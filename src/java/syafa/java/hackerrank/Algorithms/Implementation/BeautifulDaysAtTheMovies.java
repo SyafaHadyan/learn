@@ -8,9 +8,12 @@ public class BeautifulDaysAtTheMovies
         Scanner input = new Scanner(System.in);
         ArrayList<String> days = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        for (int i = Integer.parseInt(days.get(0)); i <= Integer.parseInt(days.get(1)) + 1; i++)
+        for (int i = 0; i < Integer.parseInt(days.get(0)) - Integer.parseInt(days.get(1)) + 1; i++)
         {
-            StringBuilder reverseDay = new StringBuilder(days.get(i));
+            for (int j = 0; j < args.length; j++)
+            {
+                
+            }
         }
     }
 }
