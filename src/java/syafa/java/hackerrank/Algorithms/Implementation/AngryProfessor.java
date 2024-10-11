@@ -9,7 +9,7 @@ public class AngryProfessor
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
-            
+            ArrayList<String> studentThreshold = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         }
         input.close();
     }
