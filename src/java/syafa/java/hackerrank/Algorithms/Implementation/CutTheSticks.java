@@ -7,7 +7,7 @@ public class CutTheSticks
     {
         Scanner input = new Scanner(System.in);
         int arrLength = Integer.parseInt(input.nextLine());
-        int stickLeft = 0;
+        ArrayList<Integer> sticksLeft = new ArrayList<Integer>();
         ArrayList<Integer> sticks = new ArrayList<Integer>();
         for (int i = 0; i < arrLength; i++)
         {
@@ -18,13 +18,21 @@ public class CutTheSticks
         for (int i = 0; i < sticks.size(); i++)
         {
             sticks.set(i,sticks.get(i) - sticks.get(0));
-            for (int j = 0; j < sticks.size(); j++)
+            if (i == sticks.size() - 1)
             {
-                if (sticks.get(j) <= 0)
+                for (int j = 0; j < sticks.size(); j++)
                 {
-                    sticks.remove(j);
+                    if (sticks.get(j) <= 0)
+                    {
+                        sticks.remove(j);
+                    }
                 }
             }
+            sticksLeft.add(sticks.size());
+        }
+        for (int i = 0; i < args.length; i++)
+        {
+            
         }
     }
 }
