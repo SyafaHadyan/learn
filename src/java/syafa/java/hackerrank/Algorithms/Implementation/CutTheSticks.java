@@ -32,6 +32,7 @@ public class CutTheSticks
                         if (sticks.get(j) <= 0)
                         {
                             sticks.remove(j);
+                            j--;
                         }
                     }
                     sticksLeft.add(sticks.size());
