@@ -24,8 +24,23 @@ public class AngryProfessor
                 {
                     classStatus.add("YES");
                 }
+                if (j == studentArrival.size() - 1)
+                {
+                    classStatus.add("NO");
+                }
+            }
+            if (i == testCase - 1)
+            {
+                input.close();
+                for (int j = 0; j < classStatus.size(); j++)
+                {
+                    System.out.print(classStatus.get(j));
+                    if (j != classStatus.size() - 1)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
         }
-        input.close();
     }
 }
