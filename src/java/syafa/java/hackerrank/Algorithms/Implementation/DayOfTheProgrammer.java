@@ -9,5 +9,9 @@ public class DayOfTheProgrammer
         Scanner input = new Scanner(System.in);
         int year = Integer.parseInt(input.nextLine());
         input.close();
+        if (LocalDate.parse(year + "-" + 01 + "-" + 01).isLeapYear())
+        {
+
+        }
     }
 }
