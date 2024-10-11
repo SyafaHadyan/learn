@@ -15,11 +15,11 @@ public class DesignerPDFViewer
         int currentMaxHeight = 0;
         for (int i = 0; i < word.length(); i++)
         {
-            for (int j = 0; j < args.length; j++)
+            for (int j = 0; j < letterIndex.size(); j++)
             {
-                if (word.charAt(j) == (letterIndex.get(j)))
+                if ((word.charAt(i) == (letterIndex.get(j))) && (currentMaxHeight < Integer.parseInt(letterHeight.get(j))))
                 {
-                    
+                    currentMaxHeight = Integer.parseInt(letterHeight.get(j));
                 }
             }
         }
