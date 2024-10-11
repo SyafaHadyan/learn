@@ -18,7 +18,6 @@ public class AngryProfessor
                 if (Integer.parseInt(studentArrival.get(j)) <= 0)
                 {
                     studentCount++;
-                    continue;
                 }
                 if (j == studentArrival.size() - 1)
                 {
