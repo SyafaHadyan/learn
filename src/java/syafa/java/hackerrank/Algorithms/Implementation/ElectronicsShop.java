@@ -22,5 +22,15 @@ public class ElectronicsShop
         }
         Collections.sort(keyboardPrices);
         Collections.sort(usbPrices);
+        for (int i = 0; i < keyboardPrices.size(); i++)
+        {
+            for (int j = 0; j < usbPrices.size(); j++)
+            {
+                if (keyboardPrices.get(i) + usbPrices.get(j) > Integer.parseInt(budget.get(0)))
+                {
+                    
+                }
+            }
+        }
     }
 }
