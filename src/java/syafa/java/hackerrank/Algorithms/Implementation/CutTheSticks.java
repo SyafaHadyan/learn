@@ -17,7 +17,7 @@ public class CutTheSticks
         Arrays.sort(sticks);
         for (int i = 0; i < sticks.length; i++)
         {
-            
+            sticks[i] -= sticks[0];
         }
     }
 }
