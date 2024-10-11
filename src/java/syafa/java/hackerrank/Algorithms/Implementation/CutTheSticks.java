@@ -7,12 +7,17 @@ public class CutTheSticks
     {
         Scanner input = new Scanner(System.in);
         int arrLength = Integer.parseInt(input.nextLine());
+        int stickLeft = 0;
         int[] sticks = new int[arrLength];
         for (int i = 0; i < arrLength; i++)
         {
             sticks[i] = input.nextInt();
         }
-        Arrays.sort(sticks);
         input.close();
+        Arrays.sort(sticks);
+        for (int i = 0; i < sticks.length; i++)
+        {
+            
+        }
     }
 }
