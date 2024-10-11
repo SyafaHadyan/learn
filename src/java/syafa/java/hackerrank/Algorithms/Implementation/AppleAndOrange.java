@@ -9,6 +9,7 @@ public class AppleAndOrange
         ArrayList<String> houseDomain = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> treePosition = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> fruitCount = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> fruitFallPositon = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
