@@ -46,9 +46,13 @@ public class CutTheSticks
             }
             catch (IndexOutOfBoundsException e)
             {
-                for (int i = 0; i < args.length; i++)
+                for (int j = 0; j < sticksLeft.size(); j++)
                 {
-                    System.out.println(sticksLeft);
+                    System.out.println(sticksLeft.get(j));
+                    if (j - sticksLeft.size() != 1)
+                    {
+                        System.out.print("\n");
+                    }
                 }
             }
         }
