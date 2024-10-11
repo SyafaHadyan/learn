@@ -19,7 +19,7 @@ public class BeautifulDaysAtTheMovies
             String reversedDay = "";
             for (int j = String.valueOf(firstLastDay.get(i)).length() - 1; j >= 0; j++)
             {
-                reversedDay += days.get(i).charAt(j);
+                reversedDay += String.valueOf(firstLastDay.get(i)).charAt(j);
             }
             if (Math.floor(Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay))) == Math.abs(Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay))))
             {
