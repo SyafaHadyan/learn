@@ -16,6 +16,7 @@ public class CutTheSticks
         }
         input.close();
         Collections.sort(sticks);
+        sticksLeft.add(arrLength);
         for (int i = 0; i < sticks.size(); i++)
         {
             try
@@ -35,19 +36,21 @@ public class CutTheSticks
                             j--;
                         }
                     }
-                    sticksLeft.add(sticks.size());
+                    if (sticks.size() != 0)
+                    {
+                        sticksLeft.add(sticks.size());
+                    }
                     Collections.sort(sticks);
                     i = -1;
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                for (int i = 0; i < args.length; i++)
+                {
+                    System.out.println(sticksLeft);
+                }
             }
-        }
-        for (int i = 0; i < args.length; i++)
-        {
-            System.out.println(sticksLeft);
         }
     }
 }
