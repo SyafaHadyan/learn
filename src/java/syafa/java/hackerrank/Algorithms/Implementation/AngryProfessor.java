@@ -20,13 +20,16 @@ public class AngryProfessor
                     studentCount++;
                     continue;
                 }
-                if (studentCount < Integer.parseInt(studentThreshold.get(1)))
-                {
-                    classStatus.add("YES");
-                }
                 if (j == studentArrival.size() - 1)
                 {
-                    classStatus.add("NO");
+                    if (studentCount < Integer.parseInt(studentThreshold.get(1)))
+                    {
+                        classStatus.add("YES");
+                    }
+                    else
+                    {
+                        classStatus.add("NO");
+                    }
                 }
             }
             if (i == testCase - 1)
