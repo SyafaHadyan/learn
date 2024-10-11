@@ -10,6 +10,7 @@ public class AngryProfessor
         for (int i = 0; i < testCase; i++)
         {
             ArrayList<String> studentThreshold = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+            ArrayList<String> studentArrival = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         }
         input.close();
     }
