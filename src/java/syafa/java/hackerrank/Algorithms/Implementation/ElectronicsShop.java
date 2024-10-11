@@ -16,5 +16,9 @@ public class ElectronicsShop
         {
             keyboardPrices.add(Integer.parseInt(keyboardPricesString.get(i)));
         }
+        for (int i = 0; i < usbPricesString.size(); i++)
+        {
+            usbPrices.add(Integer.parseInt(usbPricesString.get(i)));
+        }
     }
 }
