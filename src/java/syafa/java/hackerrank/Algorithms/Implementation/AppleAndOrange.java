@@ -7,6 +7,7 @@ public class AppleAndOrange
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> houseDomain = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> treePosition = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
     }
 }
