@@ -43,36 +43,6 @@ public class GridChallenge
                         arrayStringSorted.add(arrayString.get(k));
                     }
                     Collections.sort(arrayStringSorted);
-                    /*
-                    ArrayList<Character> checkOrder = new ArrayList<Character>();
-                    for (int k = 0; k < arrRow; k++)
-                    {
-                        int substringCounter = 0;
-                        for (int l = 0; l < arrayString.get(0).length(); l++)
-                        {
-                            try
-                            {
-                                if (arrayString.get(l).charAt(0) == arrayString.get(l + 1).charAt(0))
-                                {
-                                    substringCounter++;
-                                }
-                            }
-                            catch (IndexOutOfBoundsException e)
-                            {
-                                break;
-                            }
-                        }
-                        try
-                        {
-                            //checkOrder.add(arrayString.get(k).charAt(substringCounter));
-                        }
-                        catch (StringIndexOutOfBoundsException e)
-                        {
-                            result.add("NO");
-                            break;
-                        }
-                        Collections.sort(checkOrder);
-                        */
                     for (int l = 0; l < arrayStringSorted.size(); l++)
                     {
                         if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
