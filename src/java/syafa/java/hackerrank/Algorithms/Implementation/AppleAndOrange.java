@@ -14,7 +14,7 @@ public class AppleAndOrange
         input.close();
         int appleFallRegion = 0;
         int orangeFallRegion = 0;
-        for (int i = 0; i < Integer.parseInt(fruitCount.get(0)); i++)
+        for (int i = 0; i < Integer.parseInt(fruitCount.get(0)) + Integer.parseInt(fruitCount.get(1)); i++)
         {
             if (Integer.parseInt(treePosition.get(0)) + Integer.parseInt(appleFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
             Integer.parseInt(treePosition.get(0)) + Integer.parseInt(appleFallPosition.get(i)) <= Integer.parseInt(houseDomain.get(1)))
@@ -24,7 +24,7 @@ public class AppleAndOrange
             if (Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
             Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) <= Integer.parseInt(houseDomain.get(1)))
             {
-                appleFallRegion++;
+                orangeFallRegion++;
             }
         }
     }
