@@ -20,7 +20,10 @@ public class CutTheSticks
         {
             try
             {
-                currentLowestStick = sticks.get(0);
+                if (i == 0)
+                {
+                    currentLowestStick = sticks.get(0);
+                }
                 sticks.set(i,sticks.get(i) - currentLowestStick);
                 if (sticks.get(i) <= 0)
                 {
