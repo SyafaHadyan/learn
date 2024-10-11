@@ -33,6 +33,10 @@ public class ElectronicsShop
                 }
                 if (i + j - keyboardPrices.size() - usbPrices.size() == 0)
                 {
+                    if (currentHigh == 0)
+                    {
+                        System.out.print(-1);
+                    }
                     System.out.print(currentHigh);
                     return;
                 }
