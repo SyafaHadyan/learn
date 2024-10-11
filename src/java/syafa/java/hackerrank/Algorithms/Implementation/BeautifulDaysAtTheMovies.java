@@ -8,11 +8,11 @@ public class BeautifulDaysAtTheMovies
         Scanner input = new Scanner(System.in);
         ArrayList<String> days = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
-        ArrayList<Integer> firstLastDay = new ArrayList<Integer>();
+        ArrayList<Double> firstLastDay = new ArrayList<Double>();
         int validDay = 0;
         for (int i = 0; i < Integer.parseInt(days.get(1)) - Integer.parseInt(days.get(0)) + 1; i++)
         {
-            firstLastDay.add(Integer.parseInt(days.get(0)) + i);
+            firstLastDay.add(Double.parseDouble(days.get(0)) + i);
         }
         for (int i = 0; i < firstLastDay.size(); i++)
         {
@@ -21,7 +21,7 @@ public class BeautifulDaysAtTheMovies
             {
                 reversedDay += String.valueOf(firstLastDay.get(i)).charAt(j);
             }
-            if (Math.floor(Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay)) / Integer.parseInt(days.get(2))) == Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay)) / Integer.parseInt(days.get(2)))
+            if (Math.floor(Math.abs(firstLastDay.get(i) - Double.parseDouble(reversedDay)) / Double.parseDouble(days.get(2))) == (Math.abs(firstLastDay.get(i) - Integer.parseInt(reversedDay)) / Integer.parseInt(days.get(2))))
             {
                 validDay++;
             }
