@@ -25,6 +25,11 @@ public class BeautifulDaysAtTheMovies
             {
                 validDay++;
             }
+            if (i == firstLastDay.size() - 1)
+            {
+                System.out.print(validDay);
+                return;
+            }
         }
     }
 }
