@@ -8,16 +8,23 @@ public class CutTheSticks
         Scanner input = new Scanner(System.in);
         int arrLength = Integer.parseInt(input.nextLine());
         int stickLeft = 0;
-        int[] sticks = new int[arrLength];
+        ArrayList<Integer> sticks = new ArrayList<Integer>();
         for (int i = 0; i < arrLength; i++)
         {
-            sticks[i] = input.nextInt();
+            sticks.add(input.nextInt());
         }
         input.close();
-        Arrays.sort(sticks);
-        for (int i = 0; i < sticks.length; i++)
+        Collections.sort(sticks);
+        for (int i = 0; i < sticks.size(); i++)
         {
-            sticks[i] -= sticks[0];
+            sticks.set(i,sticks.get(i) - sticks.get(0));
+            for (int j = 0; j < sticks.size(); j++)
+            {
+                if (sticks.get(j) <= 0)
+                {
+                    sticks.remove(j);
+                }
+            }
         }
     }
 }
