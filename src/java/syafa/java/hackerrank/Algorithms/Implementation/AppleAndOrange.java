@@ -21,6 +21,11 @@ public class AppleAndOrange
             {
                 appleFallRegion++;
             }
+            if (Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) >= Integer.parseInt(houseDomain.get(0)) &&
+            Integer.parseInt(treePosition.get(1)) + Integer.parseInt(orangeFallPosition.get(i)) <= Integer.parseInt(houseDomain.get(1)))
+            {
+                appleFallRegion++;
+            }
         }
     }
 }
