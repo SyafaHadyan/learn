@@ -15,17 +15,18 @@ public class GridChallenge
         for (int i = 0; i < testCase; i++)
         {
             arrRow = Integer.parseInt(input.nextLine());
-            if (arrRow == 1)
-            {
-                result.add("YES");
-                arrRow--;
-            }
             ArrayList<String> arrayString = new ArrayList<String>();
             ArrayList<String> arrayStringSorted = new ArrayList<String>();
             for (int j = 0; j < arrRow; j++)
             {
                 char[] arrChar = input.nextLine().toCharArray();
                 Arrays.sort(arrChar);
+                if (arrRow == 1)
+                {
+                    result.add("YES");
+                    arrRow--;
+                    break;
+                }
                 StringBuilder appendString = new StringBuilder();
                 for (int k = 0; k < arrChar.length; k++)
                 {
