@@ -20,5 +20,7 @@ public class ElectronicsShop
         {
             usbPrices.add(Integer.parseInt(usbPricesString.get(i)));
         }
+        Collections.sort(keyboardPrices);
+        Collections.sort(usbPrices);
     }
 }
