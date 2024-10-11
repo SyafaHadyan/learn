@@ -11,5 +11,11 @@ public class AppleAndOrange
         ArrayList<String> fruitCount = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         ArrayList<String> fruitFallPositon = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
+        int appleFallRegion = 0;
+        int orangeFallRegion = 0;
+        for (int i = 0; i < Integer.parseInt(fruitCount.get(0)); i++)
+        {
+            if ()
+        }
     }
 }
