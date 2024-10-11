@@ -25,12 +25,12 @@ public class CutTheSticks
                     currentLowestStick = sticks.get(0);
                 }
                 sticks.set(i,sticks.get(i) - currentLowestStick);
-                if (sticks.get(i) <= 0)
-                {
-                    sticks.remove(i);
-                }
                 if (i == sticks.size() - 1)
                 {
+                    if (sticks.get(i) <= 0)
+                    {
+                        sticks.remove(i);
+                    }
                     sticksLeft.add(sticks.size());
                     Collections.sort(sticks);
                     i = -1;
