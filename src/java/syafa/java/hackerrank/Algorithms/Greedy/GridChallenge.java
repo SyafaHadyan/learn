@@ -45,10 +45,6 @@ public class GridChallenge
                     Collections.sort(arrayStringSorted);
                     for (int l = 0; l < arrayStringSorted.size(); l++)
                     {
-                        if (arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l)));
-                        {
-                            //
-                        }
                         if (!(arrayString.get(l).equalsIgnoreCase(arrayStringSorted.get(l))))
                         {
                             result.add("NO");
