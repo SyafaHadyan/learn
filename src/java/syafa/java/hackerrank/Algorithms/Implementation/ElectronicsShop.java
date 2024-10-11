@@ -21,8 +21,8 @@ public class ElectronicsShop
         {
             usbPrices.add(Integer.parseInt(usbPricesString.get(i)));
         }
-        Collections.sort(keyboardPrices);
-        Collections.sort(usbPrices);
+        //Collections.sort(keyboardPrices);
+        //Collections.sort(usbPrices);
         for (int i = 0; i < keyboardPrices.size(); i++)
         {
             for (int j = 0; j < usbPrices.size(); j++)
@@ -31,11 +31,12 @@ public class ElectronicsShop
                 {
                     currentHigh = (keyboardPrices.get(i) + usbPrices.get(j));
                 }
-                if (i + j - keyboardPrices.size() - usbPrices.size() == 0)
+                if (i + j - keyboardPrices.size() - usbPrices.size() == -2)
                 {
                     if (currentHigh == 0)
                     {
                         System.out.print(-1);
+                        return;
                     }
                     System.out.print(currentHigh);
                     return;
