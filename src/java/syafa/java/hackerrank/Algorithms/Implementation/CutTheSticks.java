@@ -12,6 +12,7 @@ public class CutTheSticks
         {
             sticks[i] = input.nextInt();
         }
+        Arrays.sort(sticks);
         input.close();
     }
 }
