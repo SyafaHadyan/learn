@@ -11,10 +11,17 @@ public class DesignerPDFViewer
         ArrayList<String> letterHeight = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
         String word = input.nextLine();
         input.close();
+        word.toUpperCase();
         int currentMaxHeight = 0;
         for (int i = 0; i < word.length(); i++)
         {
-            
+            for (int j = 0; j < args.length; j++)
+            {
+                if (word.charAt(j) == (letterIndex.get(j)))
+                {
+                    
+                }
+            }
         }
     }
 }
