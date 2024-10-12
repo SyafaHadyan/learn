@@ -7,7 +7,7 @@ public class Day11_2DArrays
     {
         Scanner input = new Scanner(System.in);
         int[][] hourGlass = new int[6][6];
-        int currentMaxValue = 0;
+        int currentMaxValue = Integer.MIN_VALUE;
         for (int i = 0; i < 6; i++)
         {
             for (int j = 0; j < 6; j++)
@@ -19,13 +19,13 @@ public class Day11_2DArrays
         {
             for (int j = 0; j < 4; j++)
             {
-                if (Math.abs(hourGlass[i][j] +
+                if (hourGlass[i][j] +
                     hourGlass[i][j + 1] +
                     hourGlass[i][j + 2] +
                     hourGlass[i + 1][j + 1] +
                     hourGlass[i + 2][j] +
                     hourGlass[i + 2][j + 1] +
-                    hourGlass[i + 2][j + 2]) >
+                    hourGlass[i + 2][j + 2] >
                     currentMaxValue)
                 {
                     currentMaxValue =
