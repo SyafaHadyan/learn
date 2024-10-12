@@ -21,7 +21,9 @@ public class Day26NestedLogic
         else if ((Integer.parseInt(dateReturn.get(1)) != Integer.parseInt(dateDue.get(1))) &&
         (Integer.parseInt(dateReturn.get(2)) == Integer.parseInt(dateDue.get(2))))
         {
-            //
+            lateCount = 500 * (Integer.parseInt(dateReturn.get(1)) - Integer.parseInt(dateDue.get(1)));
+            System.out.print(lateCount);
+            return;
         }
     }
 }
