@@ -11,7 +11,7 @@ public class Day11_2DArrays
         {
             for (int j = 0; j < 6; j++)
             {
-                //
+                hourGlass[i][j] = Integer.parseInt(input.next());
             }
         }
         input.close();
