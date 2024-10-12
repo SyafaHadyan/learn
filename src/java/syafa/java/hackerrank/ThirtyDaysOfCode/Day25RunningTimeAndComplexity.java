@@ -14,6 +14,11 @@ public class Day25RunningTimeAndComplexity
             numberCheck = Integer.parseInt(input.nextLine());
             for (int j = 2; j < numberCheck; j++)
             {
+                if (numberCheck == 1)
+                {
+                    result.add("Not prime");
+                    break;                    
+                }
                 if (numberCheck % j == 0)
                 {
                     result.add("Not prime");
