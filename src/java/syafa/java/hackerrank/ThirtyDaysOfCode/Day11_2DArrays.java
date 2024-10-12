@@ -20,12 +20,12 @@ public class Day11_2DArrays
             for (int j = 0; j < 4; j++)
             {
                 if (hourGlass[i][j] +
+                    hourGlass[i][j + 1] +
+                    hourGlass[i][j + 2] +
+                    hourGlass[i][j + 1] +
                     hourGlass[i][j] +
-                    hourGlass[i][j] +
-                    hourGlass[i][j] +
-                    hourGlass[i][j] +
-                    hourGlass[i][j] +
-                    hourGlass[i][j] >
+                    hourGlass[i][j + 1] +
+                    hourGlass[i][j + 2] >
                     currentMaxValue)
                 {
                     currentMaxValue = hourGlass[i][j];
