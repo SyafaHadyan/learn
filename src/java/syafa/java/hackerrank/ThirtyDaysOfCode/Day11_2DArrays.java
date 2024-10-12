@@ -19,7 +19,10 @@ public class Day11_2DArrays
         {
             for (int j = 0; j < 6; j++)
             {
-                //
+                if (hourGlass[i][j] > currentMaxValue)
+                {
+                    currentMaxValue = hourGlass[i][j];
+                }
             }
         }
         input.close();
