@@ -33,5 +33,6 @@ public class Day11_2DArrays
             }
         }
         input.close();
+        System.out.print(currentMaxValue);
     }
 }
