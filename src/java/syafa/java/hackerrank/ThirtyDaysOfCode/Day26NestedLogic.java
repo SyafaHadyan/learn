@@ -6,13 +6,9 @@ public class Day26NestedLogic
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<Integer> dateReturn = new ArrayList<>();
-        ArrayList<Integer> dateDue = new ArrayList<>();
+        ArrayList<String> dateReturn = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
+        ArrayList<String> dateDue = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
         int lateCount = 0;
-        for (int i = 0; i < 3; i++)
-        {
-            //
-        }
         input.close();
     }
 }
