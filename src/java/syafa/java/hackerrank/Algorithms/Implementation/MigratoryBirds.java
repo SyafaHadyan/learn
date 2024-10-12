@@ -8,7 +8,6 @@ public class MigratoryBirds
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         ArrayList<Integer> sightings = new ArrayList<>();
-        input.close();
         boolean resetCounter = false;
         //StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
         /*
@@ -18,6 +17,7 @@ public class MigratoryBirds
         {
             sightings.add(Integer.parseInt(input.next()));
         }
+        input.close();
         Collections.sort(sightings);
         int checkType = sightings.get(0);
         int checkSightings = 0;
