@@ -8,6 +8,7 @@ public class Day26NestedLogic
         Scanner input = new Scanner(System.in);
         ArrayList<Integer> dateReturn = new ArrayList<>();
         ArrayList<Integer> dateDue = new ArrayList<>();
+        int lateCount = 0;
         for (int i = 0; i < 3; i++)
         {
             //
