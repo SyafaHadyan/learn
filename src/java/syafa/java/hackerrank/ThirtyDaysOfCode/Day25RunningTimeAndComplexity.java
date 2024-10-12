@@ -17,6 +17,11 @@ public class Day25RunningTimeAndComplexity
                 result.add("Not prime");
                 continue;
             }
+            else if (numberCheck == 2)
+            {
+                result.add("Prime");
+                continue;
+            }
             for (int j = 2; j < numberCheck; j++)
             {
                 if (numberCheck % j == 0)
