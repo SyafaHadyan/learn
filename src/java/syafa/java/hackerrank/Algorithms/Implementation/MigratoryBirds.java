@@ -18,13 +18,11 @@ public class MigratoryBirds
         int checkSightings = 0;
         int mostType = sightings.get(0);
         int mostSightings = 1;
-        boolean resetCounter = false;
         for (int i = 0; i < sightings.size(); i++)
         {
             if (!(checkType == sightings.get(i)))
             {
                 checkType = sightings.get(i);
-                resetCounter = true;
                 checkSightings = 0;
             }
             if ((checkType > mostType) && (checkSightings > mostSightings))
