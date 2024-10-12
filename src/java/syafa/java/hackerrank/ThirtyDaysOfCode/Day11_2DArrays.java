@@ -7,6 +7,7 @@ public class Day11_2DArrays
     {
         Scanner input = new Scanner(System.in);
         int[][] hourGlass = new int[6][6];
+        int currentMaxValue = 0;
         for (int i = 0; i < 6; i++)
         {
             for (int j = 0; j < 6; j++)
