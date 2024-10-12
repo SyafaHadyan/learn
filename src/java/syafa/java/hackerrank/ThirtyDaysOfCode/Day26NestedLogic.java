@@ -18,5 +18,10 @@ public class Day26NestedLogic
             System.out.print(lateCount);
             return;
         }
+        else if ((Integer.parseInt(dateReturn.get(1)) != Integer.parseInt(dateDue.get(1))) &&
+        (Integer.parseInt(dateReturn.get(2)) == Integer.parseInt(dateDue.get(2))))
+        {
+            //
+        }
     }
 }
