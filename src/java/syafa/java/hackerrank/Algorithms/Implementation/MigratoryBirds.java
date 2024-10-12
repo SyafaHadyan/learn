@@ -23,12 +23,12 @@ public class MigratoryBirds
             sightings.add(Integer.parseInt(input.next()));
         }
         Collections.sort(sightings);
+        checkType = sightings.get(0);
         for (int i = 0; i < sightings.size(); i++)
         {
-            checkType = sightings.get(i);
-            if (checkType == sightings.get(i))
+            if (!(checkType == sightings.get(i)))
             {
-                //
+                checkType = sightings.get(i);
             }
             //if ((sightings.get(i) > currentMostType) && )
         }
