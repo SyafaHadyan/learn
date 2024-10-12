@@ -7,7 +7,7 @@ public class Day25RunningTimeAndComplexity
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        in numberCheck = 0;
+        int numberCheck = 0;
         for (int i = 0; i < testCase; i++)
         {
             numberCheck = Integer.parseInt(input.nextLine());
