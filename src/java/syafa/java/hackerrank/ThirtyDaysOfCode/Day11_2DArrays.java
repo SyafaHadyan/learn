@@ -19,13 +19,13 @@ public class Day11_2DArrays
         {
             for (int j = 0; j < 4; j++)
             {
-                if (hourGlass[i][j] +
+                if (Math.abs(hourGlass[i][j] +
                     hourGlass[i][j + 1] +
                     hourGlass[i][j + 2] +
                     hourGlass[i + 1][j + 1] +
                     hourGlass[i + 2][j] +
                     hourGlass[i + 2][j + 1] +
-                    hourGlass[i + 2][j + 2] >
+                    hourGlass[i + 2][j + 2]) >
                     currentMaxValue)
                 {
                     currentMaxValue =
