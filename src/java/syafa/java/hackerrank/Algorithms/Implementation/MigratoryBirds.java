@@ -22,28 +22,28 @@ public class MigratoryBirds
         int checkType = sightings.get(0);
         int checkSightings = 0;
         int mostType = sightings.get(0);
-        int mostSightings = 0;
+        int mostSightings = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             if (!(checkType == sightings.get(i)))
             {
                 checkType = sightings.get(i);
                 resetCounter = true;
+                if (resetCounter)
+                {
+                    checkSightings = 0;
+                }
             }
             if ((checkType > mostType) && (checkSightings > mostSightings))
             {
                 mostType = checkType;
                 mostSightings = checkSightings;
-                continue;
             }
             if (sightings.get(i) == checkType)
             {
-                if (resetCounter)
-                {
-                    checkSightings = 0;
-                }
                 checkSightings++;
             }
         }
+        System.out.print(mostType);
     }
 }
