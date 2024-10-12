@@ -12,13 +12,13 @@ public class Day25RunningTimeAndComplexity
         for (int i = 0; i < testCase; i++)
         {
             numberCheck = Integer.parseInt(input.nextLine());
+            if (numberCheck == 1)
+            {
+                result.add("Not prime");
+                continue;
+            }
             for (int j = 2; j < numberCheck; j++)
             {
-                if (numberCheck == 1)
-                {
-                    result.add("Not prime");
-                    break;                    
-                }
                 if (numberCheck % j == 0)
                 {
                     result.add("Not prime");
@@ -34,7 +34,7 @@ public class Day25RunningTimeAndComplexity
         for (int i = 0; i < result.size(); i++)
         {
             System.out.print(result.get(i));
-            if (i != result.size() -1)
+            if (i != result.size() - 1)
             {
                 System.out.print("\n");
             }
