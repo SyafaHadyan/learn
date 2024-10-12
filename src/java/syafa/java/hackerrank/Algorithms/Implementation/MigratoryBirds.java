@@ -9,6 +9,7 @@ public class MigratoryBirds
         int arrayLength = Integer.parseInt(input.nextLine());
         ArrayList<Integer> sightings = new ArrayList<>();
         input.close();
+        boolean resetCounter = false;
         //StringBuilder mostSightingsStrbuilder = new StringBuilder("0");
         /*
          * TODO: mostSightings must be lowest type of most seen bird
@@ -20,20 +21,29 @@ public class MigratoryBirds
         Collections.sort(sightings);
         int checkType = sightings.get(0);
         int checkSightings = 1;
-        int currentMostType = sightings.get(0);
+        int mostType = sightings.get(0);
         int mostSightings = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             if (!(checkType == sightings.get(i)))
             {
                 checkType = sightings.get(i);
+                resetCounter = true;
             }
-            if ((checkType > currentMostType) && (checkSightings > mostSightings))
+            if ((checkType > mostType) && (checkSightings > mostSightings))
             {
-                currentMostType = checkType;
+                mostType = checkType;
                 mostSightings = checkSightings;
+                continue;
             }
-            //else
+            if (sightings.get(i) == checkType)
+            {
+                if (resetCounter)
+                {
+                    checkSightings = 0;
+                }
+                checkSightings++;
+            }
         }
     }
 }
