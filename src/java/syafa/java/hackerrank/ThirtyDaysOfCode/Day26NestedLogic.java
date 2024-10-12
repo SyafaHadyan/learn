@@ -24,7 +24,7 @@ public class Day26NestedLogic
         }
         else if ((Integer.parseInt(dateReturn.get(2)) > Integer.parseInt(dateDue.get(2))))
         {
-            System.out.print(100000);
+            System.out.print(10000);
             return;
         }
         System.out.print(0);
