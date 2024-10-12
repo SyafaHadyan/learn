@@ -26,5 +26,13 @@ public class Day25RunningTimeAndComplexity
             }
         }
         input.close();
+        for (int i = 0; i < result.size(); i++)
+        {
+            System.out.print(result.get(i));
+            if (i != result.size() -1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
