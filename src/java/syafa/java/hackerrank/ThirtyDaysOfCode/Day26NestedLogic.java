@@ -10,8 +10,8 @@ public class Day26NestedLogic
         ArrayList<String> dateDue = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
         input.close();
         if ((Integer.parseInt(dateReturn.get(0)) <= Integer.parseInt(dateDue.get(0))) &&
-        (Integer.parseInt(dateReturn.get(1)) == Integer.parseInt(dateDue.get(1))) &&
-        (Integer.parseInt(dateReturn.get(2)) == Integer.parseInt(dateDue.get(2))))
+        (Integer.parseInt(dateReturn.get(1)) <= Integer.parseInt(dateDue.get(1))) &&
+        (Integer.parseInt(dateReturn.get(2)) <= Integer.parseInt(dateDue.get(2))))
         {
             System.out.print(15 * (Integer.parseInt(dateReturn.get(0)) - Integer.parseInt(dateDue.get(0))));
             return;
