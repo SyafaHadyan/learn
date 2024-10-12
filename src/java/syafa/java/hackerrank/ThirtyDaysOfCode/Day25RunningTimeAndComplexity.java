@@ -13,7 +13,10 @@ public class Day25RunningTimeAndComplexity
             numberCheck = Integer.parseInt(input.nextLine());
             for (int j = 2; j < args.length; j++)
             {
-                
+                if (numberCheck % j != 0)
+                {
+                    //
+                }
             }
         }
         input.close();
