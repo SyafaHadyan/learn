@@ -13,17 +13,15 @@ public class MigratoryBirds
         /*
          * TODO: mostSightings must be lowest type of most seen bird
          */
-        boolean resetCounter = true;
-        int checkType = Integer.MIN_VALUE; // get i
-        int checkSightings = Integer.MIN_VALUE; // check get i
-        int currentMostType = Integer.MIN_VALUE; // if true
-        int mostSightings = Integer.MIN_VALUE; //
         for (int i = 0; i < arrayLength; i++)
         {
             sightings.add(Integer.parseInt(input.next()));
         }
         Collections.sort(sightings);
-        checkType = sightings.get(0);
+        int checkType = sightings.get(0);
+        int checkSightings = 1;
+        int currentMostType = sightings.get(0);
+        int mostSightings = 1;
         for (int i = 0; i < sightings.size(); i++)
         {
             if (!(checkType == sightings.get(i)))
@@ -35,6 +33,7 @@ public class MigratoryBirds
                 currentMostType = checkType;
                 mostSightings = checkSightings;
             }
+            //else
         }
     }
 }
