@@ -20,9 +20,9 @@ public class MigratoryBirds
         }
         Collections.sort(sightings);
         int checkType = sightings.get(0);
-        int checkSightings = 1;
+        int checkSightings = 0;
         int mostType = sightings.get(0);
-        int mostSightings = 1;
+        int mostSightings = 0;
         for (int i = 0; i < sightings.size(); i++)
         {
             if (!(checkType == sightings.get(i)))
