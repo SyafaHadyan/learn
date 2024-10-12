@@ -30,7 +30,11 @@ public class MigratoryBirds
             {
                 checkType = sightings.get(i);
             }
-            //if ((sightings.get(i) > currentMostType) && )
+            if ((checkType > currentMostType) && (checkSightings > mostSightings))
+            {
+                currentMostType = checkType;
+                mostSightings = checkSightings;
+            }
         }
     }
 }
