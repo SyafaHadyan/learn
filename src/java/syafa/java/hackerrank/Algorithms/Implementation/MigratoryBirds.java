@@ -7,32 +7,32 @@ public class MigratoryBirds
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
-        ArrayList<Integer> sightings = new ArrayList<>();
+        int[] sightings = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++)
         {
-            sightings.add(Integer.parseInt(input.next()));
+            sightings[i] = Integer.parseInt(input.next());
         }
         input.close();
-        Collections.sort(sightings);
-        int checkType = sightings.get(0);
+        Arrays.sort(sightings);
+        int checkType = sightings[0];
         int checkSightings = 0;
-        int mostType = sightings.get(0);
+        int mostType = sightings[0];
         int mostSightings = 1;
-        for (int i = 0; i < sightings.size(); i++)
+        for (int i = 0; i < sightings.length; i++)
         {
-            if (!(checkType == sightings.get(i)))
+            if (!(checkType == sightings[i]))
             {
-                checkType = sightings.get(i);
+                checkType = sightings[i];
                 checkSightings = 0;
+            }
+            if (sightings[i] == checkType)
+            {
+                checkSightings++;
             }
             if ((checkType > mostType) && (checkSightings > mostSightings))
             {
                 mostType = checkType;
                 mostSightings = checkSightings;
-            }
-            if (sightings.get(i) == checkType)
-            {
-                checkSightings++;
             }
         }
         System.out.print(mostType);
