@@ -13,6 +13,10 @@ public class BetweenTwoSets
         {
             arrayA[i] = Integer.parseInt(input.next());
         }
+        for (int i = 0; i < Integer.parseInt(arrayLength.get(1)); i++)
+        {
+            arrayB[i] = Integer.parseInt(input.next());
+        }
         input.close();
     }
 }
