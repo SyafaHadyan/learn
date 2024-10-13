@@ -50,6 +50,15 @@
     - Tempat layanan medis atau kesehatan.
   Yang dilakukan agar masjid berkembang ...
 - 4
-- 5
-- Islam Rahmatan Lil 'Alamin pemberian rahmat bagi seluruh makhluk dengan diutusnya paran Nabi, Muhammad SAW.
+- Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah *ijma'*, yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
+  - Ada dua bentuk ijtima':
+    - **Ijma' Sharih**: Konsensus yang jelas dan tegas, di mana seluruh ulama secara lisan menyatakan kesepakatan mereka terhadap suatu hukum. Contohnya adalah ijma' mengenai keharaman khamr (minuman keras), yang disepakati oleh semua ulama.
+    - **Ijma' Sukuti**: Konsensus diam, di mana sebagian besar ulama menyepakati hukum tertentu, sementara sebagian lainnya tidak memberikan pendapat atau tidak menentang. Ini terjadi ketika sebagian ulama berpendapat, dan ulama lainnya tetap diam sebagai tanda setuju.
+- Rahmatan lil 'Alamin adalah istilah yang merujuk pada Islam sebagai agama yang membawa rahmat (kasih sayang) bagi seluruh alam. Kata ini berasal dari Al-Qur’an, dalam Surah Al-Anbiya ayat 107: *"Dan tidaklah Kami mengutus engkau (Muhammad), melainkan untuk (menjadi) rahmat bagi seluruh alam."* Ini berarti Islam tidak hanya membawa kebaikan untuk umat Muslim, tetapi juga bagi seluruh makhluk, termasuk manusia, hewan, dan lingkungan.
+  - Sikap yang Harus Dilakukan:
+    - **Mengembangkan Sikap Toleransi**: Menghormati perbedaan.
+    - **Bersikap Adil**: Tidak berbuat zalim kepada siapa pun, baik Muslim maupun non-Muslim.
+    - **Menjaga Lingkungan**: Islam mengajarkan untuk menjaga keseimbangan alam dan tidak merusak lingkungan.
+    - **Berbuat Baik kepada Sesama**: Menyebarkan kasih sayang, membantu orang yang membutuhkan, serta aktif dalam kegiatan sosial.
+    - **Mendakwahkan Islam secara Damai**: Menyampaikan ajaran Islam dengan cara yang bijak, lembut, dan penuh hikmah, tanpa paksaan atau kekerasan.
 - 7
