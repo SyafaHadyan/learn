@@ -17,7 +17,7 @@ public class MigratoryBirds
         int checkType = sightings[0];
         int checkSightings = 0;
         int mostType = 0;
-        int mostSightings = 0;
+        int mostSightings = 1;
         for (int i = 0; i < sightings.length; i++)
         {
             if (!(checkType == sightings[i]))
