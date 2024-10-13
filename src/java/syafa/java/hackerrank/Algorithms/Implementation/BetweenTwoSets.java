@@ -27,7 +27,8 @@ public class BetweenTwoSets
             {
                 if (!(arrayB[j] % (arrayA[arrayA.length - 1] + arrayA[arrayA.length - 1] * (i)) == 0))
                 {
-                    break;
+                    System.out.print(counter);
+                    return;
                 }
                 counter++;
             }
