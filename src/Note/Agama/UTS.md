@@ -14,7 +14,11 @@
 
 - 1
 - 2
-- 3
+- Fungsi Masjid
+  - Tempat ibadah umat Islam.
+  - Tempat menuntut ilmu agama dan ilmu umum umat Islam.
+  - Tempat memberi fatwa kepada kaum muslimin.
+  - Tempat mengadili perkara bila terjadi perselisihan di antara umat Islam.
 - 4
 - 5
 - 6
