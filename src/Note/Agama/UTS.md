@@ -48,7 +48,10 @@
     - Tempat layanan sosial.
     - Tempat latihan perang.
     - Tempat layanan medis atau kesehatan.
-  Yang dilakukan agar masjid berkembang ...
+- Yang dilakukan agar masjid berkembang
+  - Meningkatkan Fungsi Masjid
+  - Mengelola Masjid dengan Baik
+  - Meningkatkan Kerja Sama
 - 4
 - Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah *ijma'*, yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
   - Ada dua bentuk ijtima':
