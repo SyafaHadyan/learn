@@ -15,7 +15,7 @@ public class CircularArrayRotation
         }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
         {
-            
+            queries[i] = integerArray[Integer.parseInt(input.nextLine())];
         }
         input.close();
     }
