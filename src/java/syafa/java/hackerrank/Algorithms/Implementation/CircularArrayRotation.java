@@ -18,5 +18,13 @@ public class CircularArrayRotation
             queries[i] = integerArray[Integer.parseInt(input.nextLine())];
         }
         input.close();
+        for (int i = 0; i < queries.length; i++)
+        {
+            System.out.print(queries[i]);
+            if (i != queries.length - 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
