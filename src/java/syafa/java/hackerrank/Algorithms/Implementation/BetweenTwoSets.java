@@ -18,5 +18,7 @@ public class BetweenTwoSets
             arrayB[i] = Integer.parseInt(input.next());
         }
         input.close();
+        Arrays.sort(arrayA);
+        Arrays.sort(arrayB);
     }
 }
