@@ -10,6 +10,7 @@ public class BetweenTwoSets
         int[] arrayA = new int[Integer.parseInt(arrayLength.get(0))];
         int[] arrayB = new int[Integer.parseInt(arrayLength.get(1))];
         int counter = 0;
+        int iterate = 1;
         for (int i = 0; i < Integer.parseInt(arrayLength.get(0)); i++) 
         {
             arrayA[i] = Integer.parseInt(input.next());
@@ -21,7 +22,7 @@ public class BetweenTwoSets
         input.close();
         Arrays.sort(arrayA);
         Arrays.sort(arrayB);
-        for (int i = 0; i < arrayB.length; i++)
+        for (int i = 0; i < iterate; i++)
         {
             for (int j = 0; j < arrayB.length; j++)
             {
@@ -30,8 +31,9 @@ public class BetweenTwoSets
                     System.out.print(counter);
                     return;
                 }
-                counter++;
             }
+            counter++;
+            iterate++;
         }
         System.out.print(counter);
     }
