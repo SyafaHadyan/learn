@@ -25,7 +25,7 @@
     - Tempat perdamaian dan pengadilan.
     - Aula dan tempat menerima tamu.
     - Tempat tawanan.
-    Pusat penerangan dan pembelaan agama.
+    - Pusat penerangan dan pembelaan agama.
   - Fungsi Masjid
     - Tempat ibadah umat Islam.
     - Tempat menuntut ilmu agama dan ilmu umum umat Islam.
@@ -36,6 +36,7 @@
     - Tempat layanan sosial.
     - Tempat latihan perang.
     - Tempat layanan medis atau kesehatan.
+  Yang dilakukan agar masjid berkembang ...
 - 4
 - 5
 - 6
