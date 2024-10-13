@@ -13,6 +13,10 @@ public class CircularArrayRotation
         {
             integerArray[i] = Integer.parseInt(input.next());
         }
+        for (int i = 0; i < Integer.parseInt(request[1]); i++)
+        {
+            //
+        }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
         {
             queries[i] = integerArray[Integer.parseInt(input.nextLine())];
