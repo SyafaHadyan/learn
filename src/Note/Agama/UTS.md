@@ -12,7 +12,12 @@
 
 ## Jawaban
 
-- 1
+- Urgensi mahasiswa belajar PAI
+  - Pembentukan Karakter dan Moralitas
+  - Pedoman dalam menghadapi tantangan hidup
+  - Persiapan untuk menjadi pemimpin
+  - Mengintegrasikan Ilmu pengetahuan dan agama
+  - Menyaring pengaruh negatif
 - 2
 - Peran dan Fungsi Masjid
   - Peran Masjid
