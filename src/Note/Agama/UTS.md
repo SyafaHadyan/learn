@@ -61,4 +61,20 @@
     - **Menjaga Lingkungan**: Islam mengajarkan untuk menjaga keseimbangan alam dan tidak merusak lingkungan.
     - **Berbuat Baik kepada Sesama**: Menyebarkan kasih sayang, membantu orang yang membutuhkan, serta aktif dalam kegiatan sosial.
     - **Mendakwahkan Islam secara Damai**: Menyampaikan ajaran Islam dengan cara yang bijak, lembut, dan penuh hikmah, tanpa paksaan atau kekerasan.
-- 7
+- Golongan yang Selamat (Al-Firqatun Najiyah)
+  - Dalam hadits Nabi SAW, disebutkan bahwa umat Islam akan terpecah menjadi 73 golongan, dan hanya satu yang selamat, yaitu Ahli Sunnah wal Jamaah. Golongan ini mengikuti ajaran yang murni dari Nabi Muhammad SAW dan para sahabatnya, tanpa menambah atau mengurangi ajaran Islam. Ciri-ciri golongan yang selamat adalah:
+    - Berpegang teguh pada Al-Qur'an dan Sunnah.
+    - Mengikuti jejak para sahabat Nabi (salaf).
+    - Menjauhi perilaku ekstrem, baik dalam keyakinan maupun amalan.
+
+  - Mengapa Ada Ekstremisme di Kalangan Masyarakat? Ekstremisme muncul karena berbagai faktor, seperti:
+    - Pemahaman yang Keliru tentang Ajaran Agama: Banyak yang menafsirkan ajaran agama secara sempit dan kaku tanpa mempertimbangkan konteks.
+    - Ketidakadilan Sosial dan Politik: Ketidakadilan yang dialami oleh sebagian kelompok masyarakat bisa memicu radikalisasi sebagai bentuk protes.
+    - Indoktrinasi: Kelompok-kelompok ekstremis seringkali melakukan propaganda atau indoktrinasi, terutama kepada generasi muda.
+    - Krisis Identitas: Sebagian orang merasa kehilangan arah dan mencari makna hidup dalam ideologi ekstrem.
+  - Cara Menanggulangi Ekstremisme:
+    - Pendidikan Agama yang Moderat: Menyebarkan pemahaman Islam yang rahmatan lil 'alamin, dengan mengajarkan Islam sebagai agama yang damai dan toleran.
+    - Dialog dan Kerja Sama Antar-Komunitas: Membangun dialog antaragama dan budaya untuk mengurangi prasangka dan ketegangan.
+    - Keadilan Sosial: Pemerintah dan masyarakat harus bekerja untuk menciptakan keadilan sosial, agar tidak ada kelompok yang merasa diperlakukan tidak adil.
+    - Pengawasan Terhadap Propaganda Ekstremis: Pengawasan dan penanggulangan terhadap penyebaran ideologi ekstrem di media sosial dan tempat lain yang rawan radikalisasi.
+    - Dakwah yang Bijak: Melakukan dakwah dengan cara yang hikmah, lembut, dan tidak memicu kebencian atau perpecahan di masyarakat.
