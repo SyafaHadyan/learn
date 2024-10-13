@@ -7,9 +7,10 @@ public class CircularArrayRotation
     {
         Scanner input = new Scanner(System.in);
         String[] request = input.nextLine().split(" ");
+        int[] integerArray = new int[Integer.parseInt(request[0])];
         for (int i = 0; i < Integer.parseInt(request[0]); i++)
         {
-            
+            integerArray[i] = Integer.parseInt(input.next());
         }
         input.close();
     }
