@@ -23,11 +23,14 @@ public class BetweenTwoSets
         Arrays.sort(arrayB);
         for (int i = 0; i < arrayB.length; i++)
         {
-            if (!(arrayB[i] % (arrayA[arrayA.length - 1] + arrayA[arrayA.length - 1] * (i)) == 0))
+            for (int j = 0; j < arrayB.length; j++)
             {
-                break;
+                if (!(arrayB[j] % (arrayA[arrayA.length - 1] + arrayA[arrayA.length - 1] * (i)) == 0))
+                {
+                    break;
+                }
+                counter++;
             }
-            counter++;
         }
         System.out.print(counter);
     }
