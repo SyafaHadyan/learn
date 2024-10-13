@@ -19,13 +19,13 @@
   - Mengintegrasikan Ilmu pengetahuan dan agama
   - Menyaring pengaruh negatif
 - Iman
-  - Iman berasal dari kata *amana* yang berarti percaya atau yakin. Secara istilah, iman berarti mempercayai dengan sepenuh hati tentang adanya Allah, malaikat, kitab-kitab, rasul-rasul, hari kiamat, dan takdir baik serta buruk.
+  - Iman berasal dari kata amana yang berarti percaya atau yakin. Secara istilah, iman berarti mempercayai dengan sepenuh hati tentang adanya Allah, malaikat, kitab-kitab, rasul-rasul, hari kiamat, dan takdir baik serta buruk.
   - Iman melibatkan keyakinan dalam hati, pengakuan dengan lisan, dan pembuktian dengan perbuatan.
 - Islam
-  - Islam berasal dari kata *aslama* yang berarti berserah diri atau tunduk. Dalam istilah, Islam berarti berserah diri kepada Allah dengan menaati perintah-Nya dan menjauhi larangan-Nya.
+  - Islam berasal dari kata aslama yang berarti berserah diri atau tunduk. Dalam istilah, Islam berarti berserah diri kepada Allah dengan menaati perintah-Nya dan menjauhi larangan-Nya.
   - Islam berfokus pada amalan lahiriah yang beupa ibadah-ibadah fisik.
 -Ihsan
-  - Ihsan berasal dari kata *ahsana* yang berarti berbuat baik atau sempurna. Dalam pengertian agama, ihsan adalah beribadah kepada Allah seakan-akan kita melihat-Nya, meskipun kita tidak dapat melihat-Nya, tetapi yakin bahwa Allah melihat kita. Ihsan adalah tingkatan tertinggi dalam keimanan yang melibatkan ketulusan dalam setiap perbuatan.
+  - Ihsan berasal dari kata ahsana yang berarti berbuat baik atau sempurna. Dalam pengertian agama, ihsan adalah beribadah kepada Allah seakan-akan kita melihat-Nya, meskipun kita tidak dapat melihat-Nya, tetapi yakin bahwa Allah melihat kita. Ihsan adalah tingkatan tertinggi dalam keimanan yang melibatkan ketulusan dalam setiap perbuatan.
 - Peran dan Fungsi Masjid
   - Peran Masjid
     - Tempat ibadah.
@@ -79,17 +79,17 @@
     - Dalam menghadapi perbedaan pendapat, baik dalam keluarga, masyarakat, maupun negara, semangat musyawarah dan dialog harus dikedepankan. Ini adalah cara Islami untuk menyelesaikan masalah tanpa konflik.
     - Menjaga Lingkungan
     - Menjadi madani juga berarti menjaga lingkungan. Islam mengajarkan pentingnya menjaga alam sebagai bentuk tanggung jawab kita terhadap ciptaan Allah.
-- Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah *ijma'*, yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
+- Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah ijma', yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
   - Ada dua bentuk ijtima':
-    - **Ijma' Sharih**: Konsensus yang jelas dan tegas, di mana seluruh ulama secara lisan menyatakan kesepakatan mereka terhadap suatu hukum. Contohnya adalah ijma' mengenai keharaman khamr (minuman keras), yang disepakati oleh semua ulama.
-    - **Ijma' Sukuti**: Konsensus diam, di mana sebagian besar ulama menyepakati hukum tertentu, sementara sebagian lainnya tidak memberikan pendapat atau tidak menentang. Ini terjadi ketika sebagian ulama berpendapat, dan ulama lainnya tetap diam sebagai tanda setuju.
-- Rahmatan lil 'Alamin adalah istilah yang merujuk pada Islam sebagai agama yang membawa rahmat (kasih sayang) bagi seluruh alam. Kata ini berasal dari Al-Qur’an, dalam Surah Al-Anbiya ayat 107: *"Dan tidaklah Kami mengutus engkau (Muhammad), melainkan untuk (menjadi) rahmat bagi seluruh alam."* Ini berarti Islam tidak hanya membawa kebaikan untuk umat Muslim, tetapi juga bagi seluruh makhluk, termasuk manusia, hewan, dan lingkungan.
+    - Ijma' Sharih: Konsensus yang jelas dan tegas, di mana seluruh ulama secara lisan menyatakan kesepakatan mereka terhadap suatu hukum. Contohnya adalah ijma' mengenai keharaman khamr (minuman keras), yang disepakati oleh semua ulama.
+    - Ijma' Sukuti: Konsensus diam, di mana sebagian besar ulama menyepakati hukum tertentu, sementara sebagian lainnya tidak memberikan pendapat atau tidak menentang. Ini terjadi ketika sebagian ulama berpendapat, dan ulama lainnya tetap diam sebagai tanda setuju.
+- Rahmatan lil 'Alamin adalah istilah yang merujuk pada Islam sebagai agama yang membawa rahmat (kasih sayang) bagi seluruh alam. Kata ini berasal dari Al-Qur’an, dalam Surah Al-Anbiya ayat 107: "Dan tidaklah Kami mengutus engkau (Muhammad), melainkan untuk (menjadi) rahmat bagi seluruh alam." Ini berarti Islam tidak hanya membawa kebaikan untuk umat Muslim, tetapi juga bagi seluruh makhluk, termasuk manusia, hewan, dan lingkungan.
   - Sikap yang Harus Dilakukan:
-    - **Mengembangkan Sikap Toleransi**: Menghormati perbedaan.
-    - **Bersikap Adil**: Tidak berbuat zalim kepada siapa pun, baik Muslim maupun non-Muslim.
-    - **Menjaga Lingkungan**: Islam mengajarkan untuk menjaga keseimbangan alam dan tidak merusak lingkungan.
-    - **Berbuat Baik kepada Sesama**: Menyebarkan kasih sayang, membantu orang yang membutuhkan, serta aktif dalam kegiatan sosial.
-    - **Mendakwahkan Islam secara Damai**: Menyampaikan ajaran Islam dengan cara yang bijak, lembut, dan penuh hikmah, tanpa paksaan atau kekerasan.
+    - Mengembangkan Sikap Toleransi: Menghormati perbedaan.
+    - Bersikap Adil: Tidak berbuat zalim kepada siapa pun, baik Muslim maupun non-Muslim.
+    - Menjaga Lingkungan: Islam mengajarkan untuk menjaga keseimbangan alam dan tidak merusak lingkungan.
+    - Berbuat Baik kepada Sesama: Menyebarkan kasih sayang, membantu orang yang membutuhkan, serta aktif dalam kegiatan sosial.
+    - Mendakwahkan Islam secara Damai: Menyampaikan ajaran Islam dengan cara yang bijak, lembut, dan penuh hikmah, tanpa paksaan atau kekerasan.
 - Golongan yang Selamat (Al-Firqatun Najiyah)
   - Dalam hadits Nabi SAW, disebutkan bahwa umat Islam akan terpecah menjadi 73 golongan, dan hanya satu yang selamat, yaitu Ahli Sunnah wal Jamaah. Golongan ini mengikuti ajaran yang murni dari Nabi Muhammad SAW dan para sahabatnya, tanpa menambah atau mengurangi ajaran Islam. Ciri-ciri golongan yang selamat adalah:
     - Berpegang teguh pada Al-Qur'an dan Sunnah.
