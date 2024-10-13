@@ -21,10 +21,10 @@ public class CircularArrayRotation
             {
                 if (j == 0)
                 {
-                    swapTemp[i] = integerArray[integerArray.length - 1];
+                    swapTemp[0] = integerArray[integerArray.length - 1];
                     continue;
                 }
-                swapTemp[i] = integerArray[i - 1];
+                swapTemp[j] = integerArray[j - 1];
             }
         }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
