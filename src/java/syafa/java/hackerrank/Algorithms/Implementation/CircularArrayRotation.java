@@ -9,6 +9,7 @@ public class CircularArrayRotation
         String[] request = input.nextLine().split(" ");
         int[] integerArray = new int[Integer.parseInt(request[0])];
         int[] queries = new int[Integer.parseInt(request[2])];
+        int[] swapTemp = new int[integerArray.length];
         for (int i = 0; i < Integer.parseInt(request[0]); i++)
         {
             integerArray[i] = Integer.parseInt(input.next());
@@ -16,7 +17,6 @@ public class CircularArrayRotation
         for (int i = 0; i < Integer.parseInt(request[1]); i++)
         {
             integerArray[integerArray.length - 1] = integerArray[integerArray.length - 1];
-            int[] swapTemp = new int[integerArray.length];
             for (int j = 0; j < integerArray.length; j++)
             {
                 if (j == 0)
@@ -24,6 +24,7 @@ public class CircularArrayRotation
                     swapTemp[i] = integerArray[integerArray.length - 1];
                     continue;
                 }
+                swapTemp[i] = integerArray[i - 1];
             }
         }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
