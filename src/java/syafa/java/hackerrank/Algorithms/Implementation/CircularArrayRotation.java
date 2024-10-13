@@ -19,7 +19,11 @@ public class CircularArrayRotation
             int[] swapTemp = new int[integerArray.length];
             for (int j = 0; j < integerArray.length; j++)
             {
-                
+                if (j == 0)
+                {
+                    swapTemp[i] = integerArray[integerArray.length - 1];
+                    continue;
+                }
             }
         }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
