@@ -44,5 +44,5 @@
   Yang dilakukan agar masjid berkembang ...
 - 4
 - 5
-- Islam Rahmatan Lil 'Alamin
+- Islam Rahmatan Lil 'Alamin pemberian rahmat bagi seluruh makhluk dengan diutusnya paran Nabi, Muhammad SAW.
 - 7
