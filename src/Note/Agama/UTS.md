@@ -52,7 +52,33 @@
   - Meningkatkan Fungsi Masjid
   - Mengelola Masjid dengan Baik
   - Meningkatkan Kerja Sama
-- 4
+- Masyarakat Madani adalah istilah yang merujuk pada masyarakat yang beradab, bermoral, dan menjunjung tinggi nilai-nilai kebersamaan, keadilan, dan kemanusiaan. Pada era Rasulullah SAW, masyarakat Madinah adalah contoh konkret dari masyarakat madani yang Islami. Beberapa karakteristik masyarakat Madani di masa Rasulullah SAW antara lain:
+  - Karakteristik Masyarakat Madani di Era Rasul
+    - Tegaknya Hukum dan Keadilan
+    - Masyarakat Madani di bawah kepemimpinan Rasulullah sangat menghormati hukum. Setiap orang diperlakukan sama di hadapan hukum, tanpa pandang bulu. Hal ini tercermin dalam Piagam Madinah yang menjadi konstitusi pertama di dunia yang mengatur hak-hak warga dengan adil, baik Muslim maupun non-Muslim.
+    - Toleransi Antaragama
+    - Piagam Madinah menjamin hak-hak kaum Yahudi, Nasrani, dan suku-suku lain untuk hidup berdampingan secara damai. Mereka diberi kebebasan untuk menjalankan agamanya masing-masing, selama tidak melanggar perjanjian.
+    - Kesejahteraan Sosial dan Solidaritas
+    - Rasulullah membangun masyarakat yang saling peduli dan membantu, baik dalam bentuk zakat, sedekah, maupun wakaf. Kesejahteraan sosial menjadi prioritas utama, terutama untuk membantu fakir miskin dan orang-orang yang lemah.
+    - Kesetaraan dan Persamaan Hak
+    - Semua orang, baik lelaki maupun perempuan, miskin atau kaya, memiliki kedudukan yang sama. Dalam ajaran Islam, tidak ada kelebihan seseorang karena warna kulit, suku, atau status sosial, kecuali berdasarkan ketakwaan.
+    - Musyawarah dalam Mengambil Keputusan
+    - Masyarakat Madani era Rasulullah dikenal dengan semangat musyawarah dalam menyelesaikan masalah. Setiap keputusan penting, baik untuk urusan politik, sosial, maupun militer, selalu dilakukan melalui konsultasi dan musyawarah.
+    - Menjaga Persatuan dan Kesatuan
+    - Masyarakat Madani memiliki rasa persaudaraan yang kuat, baik dalam aspek agama maupun sosial. Masyarakat Madinah dikenal sebagai komunitas yang bersatu, meskipun mereka berasal dari berbagai latar belakang suku dan agama.
+  - Cara Bersikap Madani di Era Modern
+    - Menghormati Hak Asasi Manusia
+    - Dalam bersikap madani, kita harus menghargai hak-hak asasi manusia, termasuk hak kebebasan beragama, berbicara, dan berekspresi. Ini mencerminkan nilai-nilai Islam yang mendorong kebebasan dan keadilan bagi semua.
+    - Toleransi dan Kerukunan Antaragama
+    - Sikap toleran adalah bagian integral dari masyarakat madani. Di era modern, penting untuk menghargai perbedaan agama dan keyakinan, serta menjaga kerukunan dengan komunitas lain.
+    - Mengutamakan Keadilan Sosial
+    - Salah satu ciri masyarakat madani adalah adanya perhatian terhadap kesejahteraan sosial. Bersikap madani berarti membantu sesama, terutama yang lemah dan membutuhkan, serta berusaha menciptakan keseimbangan dalam masyarakat.
+    - Menegakkan Hukum dengan Adil
+    - Masyarakat madani di era modern harus menjunjung tinggi supremasi hukum, memastikan bahwa hukum ditegakkan tanpa pandang bulu, dan tidak ada yang kebal hukum.
+    - Mengedepankan Musyawarah dan Dialog
+    - Dalam menghadapi perbedaan pendapat, baik dalam keluarga, masyarakat, maupun negara, semangat musyawarah dan dialog harus dikedepankan. Ini adalah cara Islami untuk menyelesaikan masalah tanpa konflik.
+    - Menjaga Lingkungan
+    - Menjadi madani juga berarti menjaga lingkungan. Islam mengajarkan pentingnya menjaga alam sebagai bentuk tanggung jawab kita terhadap ciptaan Allah.
 - Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah *ijma'*, yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
   - Ada dua bentuk ijtima':
     - **Ijma' Sharih**: Konsensus yang jelas dan tegas, di mana seluruh ulama secara lisan menyatakan kesepakatan mereka terhadap suatu hukum. Contohnya adalah ijma' mengenai keharaman khamr (minuman keras), yang disepakati oleh semua ulama.
