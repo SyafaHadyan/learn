@@ -11,7 +11,7 @@ public class BetweenTwoSets
         int[] arrayB = new int[Integer.parseInt(arrayLength.get(1))];
         for (int i = 0; i < Integer.parseInt(arrayLength.get(0)); i++) 
         {
-            //
+            arrayA[i] = Integer.parseInt(input.next());
         }
         input.close();
     }
