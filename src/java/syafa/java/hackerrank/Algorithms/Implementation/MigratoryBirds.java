@@ -16,8 +16,8 @@ public class MigratoryBirds
         Arrays.sort(sightings);
         int checkType = sightings[0];
         int checkSightings = 0;
-        int mostType = sightings[0];
-        int mostSightings = 1;
+        int mostType = 0;
+        int mostSightings = 0;
         for (int i = 0; i < sightings.length; i++)
         {
             if (!(checkType == sightings[i]))
