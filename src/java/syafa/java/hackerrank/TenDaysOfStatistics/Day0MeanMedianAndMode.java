@@ -48,14 +48,14 @@ public class Day0MeanMedianAndMode
                     mode = currentMaxMode;
                     currentMaxMode = 1;
                 }
-                else if (data[i] == data[i + 1])
+                if (data[i] == data[i + 1])
                 {
                     currentMaxMode++;
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                System.out.printf("%.1f%.1f%d",mean,median,mode);
+                System.out.printf("%.1f\n%.1f\n%d",mean,median,mode);
             }
         }
     }
