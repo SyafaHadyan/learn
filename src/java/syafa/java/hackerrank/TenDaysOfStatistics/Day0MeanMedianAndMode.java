@@ -10,7 +10,7 @@ public class Day0MeanMedianAndMode
         int[] data = new int[dataLength];
         for (int i = 0; i < dataLength; i++)
         {
-            
+            data[i] = Integer.parseInt(input.next());
         }
         input.close();
     }
