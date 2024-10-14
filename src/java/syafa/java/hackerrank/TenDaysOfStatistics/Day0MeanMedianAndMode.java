@@ -24,11 +24,8 @@ public class Day0MeanMedianAndMode
                 mean /= data.length;
             }
         }
-        if (data.length % 2 == 0)
-        {
-            median = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2;
-        }
-        else
+        median = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2;
+        if (data.length % 2 != 0)
         {
             median = data[data.length / 2];
         }
