@@ -34,7 +34,10 @@ public class Day0MeanMedianAndMode
         Arrays.sort(data);
         for (int i = 0; i < data.length; i++)
         {
-            //
+            if (data[i] > currentMinVal && currentMaxMode > mode)
+            {
+                //
+            }
         }
         System.out.print(mean + "\n" + median + "\n" + mode);
     }
