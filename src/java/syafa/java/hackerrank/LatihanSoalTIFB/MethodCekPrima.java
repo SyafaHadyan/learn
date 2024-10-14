@@ -16,7 +16,12 @@ public class MethodCekPrima
         }
         for (int i = 0; i < numberCheck.length; i++)
         {
-            //
+            if (numberCheck[i].isProbablePrime(100))
+            {
+                checkResult[i] = numberCheck[i] + " = " + "Prima";
+                continue;
+            }
+            checkResult[i] = numberCheck[i] + " = " + "Bukan prima";
         }
         input.close();
     }
