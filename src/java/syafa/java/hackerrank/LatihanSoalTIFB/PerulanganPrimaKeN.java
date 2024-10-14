@@ -21,8 +21,8 @@ public class PerulanganPrimaKeN
                     System.out.print(currentPrime);
                     return;
                 }
-                currentPrime.add(BigInteger.ONE);
             }
+            currentPrime = currentPrime.add(BigInteger.ONE);
         }
     }
 }
