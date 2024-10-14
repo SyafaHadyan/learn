@@ -21,7 +21,7 @@ public class Day28RegExPatternsAndIntroToDatabases
         input.close();
         for (int i = 0; i < userData.size(); i++)
         {
-            userData.set(i,userData.get(i).replaceAll("^[A-Z,a-z,0-9]+@gmail.com",null));
+            userData.set(i,userData.get(i).replaceAll("\s*[A-Za-z0-9]+@gmail.com",""));
         }
         Collections.sort(userData);
         for (int i = 0; i < userData.size(); i++)
