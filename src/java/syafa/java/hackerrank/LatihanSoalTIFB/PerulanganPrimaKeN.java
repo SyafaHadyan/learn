@@ -9,5 +9,7 @@ public class PerulanganPrimaKeN
         Scanner input = new Scanner(System.in);
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
+        int currentPrimeAt = 0;
+        BigInteger currentPrime = BigInteger.ZERO;
     }
 }
