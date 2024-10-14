@@ -30,7 +30,7 @@ public class Array2DBajakLaut
             }
         }
         ArrayList<String> playerMovement = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
-        for (int i = 0; i < playerMovement.length; i++)
+        for (int i = 0; i < playerMovement.size(); i++)
         {
             //
         }
