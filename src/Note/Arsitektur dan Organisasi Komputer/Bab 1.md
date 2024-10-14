@@ -20,3 +20,11 @@ There are only four basic functions that a computer can perform:
 ### Structure
 
 #### Simple Single-Processor Computer
+
+![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/ComputerTopLevelStructure.png)
+*Figure 1.1 The Computer: Top-Level Structure*
+
+- **Central processing unit (CPU)**: Controls the operation of the computer and performs its data processing functions; ofter simply refered to as **processor**.
+- **Main memory** Stores data.
+- **I/O** Moves data between the computer and its external environment.
+- **System inteconnection**: Some mechanism that provides for communication amoung CPU, main memory, and I/O. A common example is **system bus**.
