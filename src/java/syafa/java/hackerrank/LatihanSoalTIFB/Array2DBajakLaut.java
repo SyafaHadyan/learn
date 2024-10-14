@@ -110,6 +110,7 @@ public class Array2DBajakLaut
                 continue;
             }
         }
+        map[currentPlayerPosition[0]][currentPlayerPosition[1]] = 'P';
         for (int i = 0; i < Integer.parseInt(arraySize[0]); i++)
         {
             for (int j = 0; j < Integer.parseInt(arraySize[1]); j++)
