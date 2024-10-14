@@ -37,13 +37,18 @@ public class Day0MeanMedianAndMode
             if (i == 0)
             {
                 currentMinVal = data[0];
-                currentMaxMode = 1;
+                currentMaxMode = 0;
                 mode = 1;
             }
             if (data[i] > currentMinVal && currentMaxMode > mode)
             {
                 currentMinVal = data[i];
                 mode = currentMaxMode;
+                currentMaxMode = 1;
+            }
+            else if (data[i] == data[i + 1])
+            {
+                currentMaxMode++;
             }
         }
         System.out.print(mean + "\n" + median + "\n" + mode);
