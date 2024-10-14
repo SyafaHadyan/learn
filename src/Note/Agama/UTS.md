@@ -81,9 +81,11 @@
 - Golongan yang Selamat (Al-Firqatun Najiyah)
   - Golongan yang Selamat (Al-Firqatun Najiyah)
     - Ahlus Sunnah wal Jama'ah adalah suatu golongan yang telah Rasulullah shalallahu'alaihi wassalam janjikan akan selamat di antara golongan-golongan yang ada. Landasan mereka bertumpu pada ittiba'us sunnah (mengikuti as-Sunnah) dan menuruti apa yang dibawa oleh nabi baik dalam masalah ‘aqidah, ibadah, petunjuk, tingkah laku, akhlak dan selalu menyertai jama'ah kaum Muslimin. Dalam hadits Nabi SAW, disebutkan bahwa umat Islam akan terpecah menjadi 73 golongan, dan hanya satu yang selamat, yaitu Ahli Sunnah wal Jamaah. Golongan ini mengikuti ajaran yang murni dari Nabi Muhammad SAW dan para sahabatnya, tanpa menambah atau mengurangi ajaran Islam. Ciri-ciri golongan yang selamat adalah:
-      - Berpegang teguh pada Al-Qur'an dan Sunnah.
-      - Mengikuti jejak para sahabat Nabi (salaf).
-      - Menjauhi perilaku ekstrem, baik dalam keyakinan maupun amalan.
+      - Mengenai Allah SWT.
+      - Mengenai malaikat.
+      - Mengenai kerasulan.
+      - Mengenai kitab.
+      - Mengenai kiamat.
   - Ekstremisme muncul karena berbagai faktor:
     - Pemahaman yang Keliru tentang Ajaran Agama: Banyak yang menafsirkan ajaran agama secara sempit dan kaku tanpa mempertimbangkan konteks.
     - Ketidakadilan Sosial dan Politik: Ketidakadilan yang dialami oleh sebagian kelompok masyarakat bisa memicu radikalisasi sebagai bentuk protes.
