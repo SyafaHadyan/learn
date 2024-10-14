@@ -8,9 +8,9 @@ public class MethodCekPrima
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
         int[] numberCheck = new int[check];
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < check; i++)
         {
-            
+            numberCheck[i] = Integer.parseInt(input.next());
         }
         input.close();
     }
