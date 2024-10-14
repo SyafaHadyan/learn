@@ -49,7 +49,7 @@
     - Tempat latihan perang.
     - Tempat layanan medis atau kesehatan.
 - Yang dilakukan agar masjid berkembang
-  - Maenkyeulekngaganra:kan kajian-kajian keislaman yang teratur dan terarah menuju pembentukan pribadi muslim, keluarga muslim dan masyarakat muslim.
+  - Menyelenggarakan kajian-kajian keislaman yang teratur dan terarah menuju pembentukan pribadi muslim, keluarga muslim dan masyarakat muslim.
   - Melaksanakan diskusi, seminar, dan lokakarya tentang masalah-masalah yang aktual.
   - Membuat data jamaah, dilihat dari segi usia, tingkat pendidikan, tingkat pendapatan, dan lain-lain.
   - Mengefektifkan zakat, infaq, dan shadaqah, baik pengumpulannya dan pembagiannya.
