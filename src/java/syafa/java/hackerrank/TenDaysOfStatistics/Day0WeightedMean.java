@@ -13,7 +13,12 @@ public class Day0WeightedMean
         double result = 0d;
         for (int i = 0; i < arrayLength; i++)
         {
-            
+            result += (Double.parseDouble(firstArray[i]) * Double.parseDouble(secondArray[i]));
+            if (i == arrayLength - 1)
+            {
+                System.out.print(result /= arrayLength);
+                return;
+            }
         }
     }
 }
