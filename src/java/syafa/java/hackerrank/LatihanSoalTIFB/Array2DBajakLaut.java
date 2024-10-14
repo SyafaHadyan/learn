@@ -49,6 +49,13 @@ public class Array2DBajakLaut
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Kiri"))
             {
+                if (map[currentPlayerPosition[0]][currentPlayerPosition[1] - 1] == '#')
+                {
+                    playerPositionResult.add(
+                    "Pemain tidak bisa melewati koordinat" + " " +
+                    "(" + currentPlayerPosition[0] + "," + currentPlayerPosition[1] - 1 + ")");
+                    continue;
+                }
                 currentPlayerPosition[1] = currentPlayerPosition[1] - 1;
                 continue;
             }
