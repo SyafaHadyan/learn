@@ -58,3 +58,8 @@ A **chip** is a single piece of semiconducting material, typically silicon upon 
 - **Instruction logic**: This includes the tasks involved in fetching instructions, and decoding each instruction to determine the instruction operation and the memory locations of any operands.
 - **Arithmetic and logic unit (ALU)**: Performs the operation specified by an instruction.
 - **Load/store logic**: Manages the transfer of data to and from main memory via cache.
+
+## The IAS Computer
+
+![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.6.png)
+*Figure 1.6 IAS Structure*
