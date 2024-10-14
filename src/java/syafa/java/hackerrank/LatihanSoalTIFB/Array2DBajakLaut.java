@@ -7,7 +7,7 @@ public class Array2DBajakLaut
     {
         Scanner input = new Scanner(System.in);
         ArrayList<String> playerPositionResult = new ArrayList<>();
-        ArrayList<Integer> currentPlayerPosition = new ArrayList<>();
+        int[] currentPlayerPosition = {0,0};
         String[] arraySize = input.nextLine().split(" ");
         String[] treasureCoordinate = input.nextLine().split(" ");
         int obstacleAmount = Integer.parseInt(input.nextLine());
