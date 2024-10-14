@@ -15,10 +15,11 @@ public class Day0MeanMedianAndMode
         {
             data[i] = Integer.parseInt(input.next());
         }
+        input.close();
         for (int i = 0; i < data.length; i++)
         {
             mean += data[i];
         }
-        input.close();
+        System.out.print(mean + "\n" + median + "\n" + mode);
     }
 }
