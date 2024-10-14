@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.LatihanSoalTIFB;
 import java.util.*;
+import java.math.*;
 
 public class MethodCekPrima
 {
@@ -7,7 +8,7 @@ public class MethodCekPrima
     {
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
-        int[] numberCheck = new int[check];
+        BigInteger[] numberCheck = new BigInteger[check];
         for (int i = 0; i < check; i++)
         {
             numberCheck[i] = Integer.parseInt(input.next());
