@@ -7,7 +7,11 @@ public class MethodCekPrima
     {
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
-        int numberCheck = Integer.MIN_VALUE;
+        int[] numberCheck = new int[check];
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
         input.close();
     }
 }
