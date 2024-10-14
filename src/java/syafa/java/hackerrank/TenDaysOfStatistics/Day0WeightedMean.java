@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.TenDaysOfStatistics;
 import java.util.*;
+import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
@@ -16,10 +17,10 @@ public class Day0WeightedMean
         double result = 0d;
         for (int i = 0; i < arrayLength; i++)
         {
-            result += (Double.parseDouble(firstArray[i]) * Double.parseDouble(secondArray[i]));
+            result += (Double.parseDouble(firstArray[i]) * secondArray[i]);
             if (i == arrayLength - 1)
             {
-                System.out.print(result / IntStream.of(Double.parseDouble(secondArray)).sum());
+                System.out.print(result / DoubleStream.of(secondArray).sum());
                 return;
             }
         }
