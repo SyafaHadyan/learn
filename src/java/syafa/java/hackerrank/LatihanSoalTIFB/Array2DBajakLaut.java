@@ -17,7 +17,7 @@ public class Array2DBajakLaut
             {
                 obstacleCoordinate[j] = Integer.parseInt(input.next());
             }
-            for (int j = 0; j < obstacleAmount; j++)
+            for (int j = 0; j < 2; j++)
             {
                 map[obstacleCoordinate[0]][obstacleCoordinate[1]] = '#';
             }
