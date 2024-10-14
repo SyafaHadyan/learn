@@ -102,7 +102,7 @@ The IAS had a total of 21 instructions.
 
 Only two fundamental types of components are required to fulfill basic elements of a digital computer. A **gate** is a device that implements a simple Boolean or logical function. Such device are called gates becouse they control data flow. For example, an AND gate with inputs *A* and *B* and output *C* implements the expression IF *A* AND *B* ARE TRUE THEN *C* IS TRUE The **memory cell** is a device that can store one bit of data. The device can be in one of two stable states at any time.
 
-### Basic Functions
+#### Basic Functions
 
 - **Data storage**: Provided by memory cells.
 - **Data processing**: Provided by gates.
@@ -113,3 +113,7 @@ Only two fundamental types of components are required to fulfill basic elements 
 ![Figure 1.9](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.9.png)
 
 Figure 1.9 Fundamental Computer Elements
+
+### Transistors
+
+Transistors are the fundamental building blocks of digital circuits used in processors, memories, and other digital logic devices. Made of semiconductor materials like silicon, transistors can change their electrical state when voltage is applied. Initially, electronic equipment in the 1950s and 60s was made up of discrete components, which were separate, packaged, and manually assembled on circuit boards. This process was costly and cumbersome, especially as the number of transistors in computers grew which makes the manufacture of newer, more powerful machines increasingly difficult.
