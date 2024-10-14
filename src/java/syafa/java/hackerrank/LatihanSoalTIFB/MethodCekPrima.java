@@ -6,6 +6,10 @@ public class MethodCekPrima
 {
     public static void main(String[] args)
     {
+        primeCheck();
+    }
+    public static void primeCheck()
+    {
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
         BigInteger[] numberCheck = new BigInteger[check];
@@ -24,5 +28,13 @@ public class MethodCekPrima
             checkResult[i] = numberCheck[i] + " = " + "Bukan prima";
         }
         input.close();
+        for (int i = 0; i < checkResult.length; i++)
+        {
+            System.out.print(checkResult[i]);
+            if (i != checkResult.length - 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
