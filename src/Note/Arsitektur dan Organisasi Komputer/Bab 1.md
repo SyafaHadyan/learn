@@ -21,7 +21,7 @@ There are only four basic functions that a computer can perform:
 
 #### Simple Single-Processor Computer
 
-![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.1.png)
+![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.1.png)
 *Figure 1.1 The Computer: Top-Level Structure*
 
 - **Central processing unit (CPU)**: Controls the operation of the computer and performs its data processing functions; ofter simply refered to as **processor**.
@@ -48,7 +48,7 @@ Each processing unit (consisting of a control unit, ALU, registers, and perhaps 
 
 Most cumputers are housed on a motherboard. A **printed circuit board (PCB)** is a rigid, flat board that holds and interconnects chips and other electronic components. The main printed circuit board in a computer is called a system board or **motherboard**, while smaller ones that plug into the slots in the main board are called expansion boards.
 
-![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.2.png)
+![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.2.png)
 *Figure 1.2 Simplified View of Major Elements of a Multicore Computer*
 
 A **chip** is a single piece of semiconducting material, typically silicon upon which electronic circuits and logic gates are fabricated. The resulting product is referred as an **integrated circuit**.
@@ -61,7 +61,7 @@ A **chip** is a single piece of semiconducting material, typically silicon upon 
 
 ## The IAS Computer
 
-![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.6.png)
+![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.6.png)
 *Figure 1.6 IAS Structure*
 
 - A **main memory**, which stores both data and instructions.
