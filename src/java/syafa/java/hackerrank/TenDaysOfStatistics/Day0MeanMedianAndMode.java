@@ -26,7 +26,7 @@ public class Day0MeanMedianAndMode
         }
         if (data.length % 2 == 0)
         {
-            median = data[(data.length / 2) - 1] + data[(data.length / 2) + 1] / 2;
+            median = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2;
         }
         median = data[data.length / 2];
         // 1 2 3 4 5 6
