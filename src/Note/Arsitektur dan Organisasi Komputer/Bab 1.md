@@ -95,3 +95,9 @@ The IAS had a total of 21 instructions.
 - **Conditional branch**: The branch can be made dependent on a condition, thus allowing decision points.
 - **Arithmetic**: Operations performed by the ALU.
 - **Address modify**: Permits addresses to be computed in the ALU and then inserted into isntructions stored in memory. This allows program considerable addressing flexibility.
+
+## Gates, Memory Cells, CHips, and Multichip Modules
+
+### Gates and Memory Cells
+
+Only two fundamental types of components are required to fulfill basic elements of a digital computer. A **gate** is a device that implements a simple Boolean or logical function. Such device are called gates becouse they control data flow. The **memory cell** is a device that can store one bit of data. The device can be in one of two stable states at any time.
