@@ -26,7 +26,7 @@
   - Islam berasal dari kata aslama yang berarti berserah diri atau tunduk. Dalam istilah, Islam berarti berserah diri kepada Allah dengan menaati perintah-Nya dan menjauhi larangan-Nya.
   - Islam berfokus pada amalan lahiriah yang beupa ibadah-ibadah fisik.
 
--Ihsan
+- Ihsan
   - Ihsan berasal dari kata ahsana yang berarti berbuat baik atau sempurna. Dalam pengertian agama, ihsan adalah beribadah kepada Allah seakan-akan kita melihat-Nya, meskipun kita tidak dapat melihat-Nya, tetapi yakin bahwa Allah melihat kita. Ihsan adalah tingkatan tertinggi dalam keimanan yang melibatkan ketulusan dalam setiap perbuatan.
 - Peran dan Fungsi Masjid
   - Peran Masjid
