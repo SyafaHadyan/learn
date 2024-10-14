@@ -29,6 +29,7 @@ public class Array2DBajakLaut
                 map[obstacleCoordinate[0]][obstacleCoordinate[1]] = '#';
             }
         }
+        input.nextLine();
         ArrayList<String> playerMovement = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
         for (int i = 0; i < playerMovement.size(); i++)
         {
