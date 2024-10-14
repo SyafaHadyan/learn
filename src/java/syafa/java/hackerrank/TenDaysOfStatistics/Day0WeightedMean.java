@@ -7,6 +7,8 @@ public class Day0WeightedMean
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
+        String[] firstArray = input.nextLine().split(" ");
+        String[] secondArray = input.nextLine().split(" ");
         input.close();
     }
 }
