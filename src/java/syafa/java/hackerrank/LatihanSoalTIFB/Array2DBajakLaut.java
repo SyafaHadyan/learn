@@ -45,6 +45,12 @@ public class Array2DBajakLaut
                     "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] + 1) + ")");
                     continue;
                 }
+                else if (map[currentPlayerPosition[1]][currentPlayerPosition[1] + 1] == 'X')
+                {
+                    playerPositionResult.add(
+                    "Pemain menemukan harta karun pada koordinat" + " " +
+                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] + 1) + ")");
+                }
                 currentPlayerPosition[1] = currentPlayerPosition[1] + 1;
                 continue;
             }
