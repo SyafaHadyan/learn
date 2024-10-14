@@ -11,5 +11,17 @@ public class PerulanganPrimaKeN
         input.close();
         int currentPrimeAt = 0;
         BigInteger currentPrime = BigInteger.ZERO;
+        for (int i = 1; i <= primeAt;)
+        {
+            if (currentPrime.isProbablePrime(100))
+            {
+                currentPrimeAt++;
+                if (currentPrimeAt == primeAt)
+                {
+                    System.out.print(currentPrime);
+                    return;
+                }
+            }
+        }
     }
 }
