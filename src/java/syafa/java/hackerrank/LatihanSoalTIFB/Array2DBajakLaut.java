@@ -37,6 +37,12 @@ public class Array2DBajakLaut
         {
             if (playerMovement.get(i).equalsIgnoreCase("Kanan"))
             {
+                if (map[currentPlayerPosition[0]][currentPlayerPosition[1] + 1] == '#')
+                {
+                    playerPositionResult.add(
+                    "Pemain tidak bisa melewati koordinat" + " " +
+                    "(" + "pos" + "," +"pos" + ")");
+                }
                 currentPlayerPosition[1] = currentPlayerPosition[1] + 1;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Kiri"))
