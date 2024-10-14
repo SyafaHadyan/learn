@@ -11,6 +11,10 @@ public class Day28RegExPatternsAndIntroToDatabases
         for (int i = 0; i < dataSize; i++)
         {
             userData.add(input.nextLine());
+            if (!(userData.get(i).contains("@gmail.com")))
+            {
+                userData.remove(i);
+            }
         }
         input.close();
     }
