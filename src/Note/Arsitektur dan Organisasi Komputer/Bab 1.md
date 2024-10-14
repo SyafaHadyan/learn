@@ -37,3 +37,11 @@ There are only four basic functions that a computer can perform:
 - **CPU interconnection**: Mechanism that provides for communication among the control unit, ALU, and registers.
 
 > There are several approaches to the implementation of the control unit; one common approach is a *microprogrammed* implementation. A microprogrammed control unit operates by executing microinstructions that define the functionality of the control unit.
+
+#### Multicore Computer Structure
+
+Each processing unit (consisting of a control unit, ALU, registers, and perhaps cache) is called a *core*.
+
+- **Central processing unit (CPU)**: That portion of a computer that fetches and executes instructions. It consists of an ALU, a control unit, and registers. In a system with a single processing unit, it is often simply referred to as a *processor*.
+- **Core**: An individual processing unit on a processor chip. A core may be equivalent in functionality to a CPU on a single-CPU system. Other specialized processing units, such as one optimized for vector and matrix operations, are also referred to as cores.
+- **Processor**: A physical piece of silicon containing one or more cores. The processor is the computer component that interprets and executes instructions.
