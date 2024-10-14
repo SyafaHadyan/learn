@@ -27,4 +27,13 @@ There are only four basic functions that a computer can perform:
 - **Central processing unit (CPU)**: Controls the operation of the computer and performs its data processing functions; ofter simply refered to as **processor**.
 - **Main memory** Stores data.
 - **I/O** Moves data between the computer and its external environment.
-- **System inteconnection**: Some mechanism that provides for communication amoung CPU, main memory, and I/O. A common example is **system bus**.
+- **System inteconnection**: Some mechanism that provides for communication amoung CPU, main memory, and I/O. A common example is **system bus** consisting of a number of conducting wires to which all the other components attach.
+
+##### CPU Major Structural Components
+
+- **Control unit**: Controls the operation of the CPU and the computer.
+- **Arithmetic and logic unit (ALU)**: Performs the computer's data processing functions.
+- **Registers**: Provides storage internal to the CPU.
+- **CPU interconnection**: Mechanism that provides for communication among the control unit, ALU, and registers.
+
+> There are several approaches to the implementation of the control unit; one common approach is a *microprogrammed* implementation. A microprogrammed control unit operates by executing microinstructions that define the functionality of the control unit.
