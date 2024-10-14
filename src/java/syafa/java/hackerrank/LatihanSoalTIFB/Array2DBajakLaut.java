@@ -34,6 +34,7 @@ public class Array2DBajakLaut
         input.nextLine();
         map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
         ArrayList<String> playerMovement = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
+        input.close();
         for (int i = 0; i < playerMovement.size(); i++)
         {
             if (playerMovement.get(i).equalsIgnoreCase("Kanan"))
@@ -63,6 +64,12 @@ public class Array2DBajakLaut
                     "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] - 1) + ")");
                     continue;
                 }
+                else if (map[currentPlayerPosition[1]][currentPlayerPosition[1] - 1] == 'X')
+                {
+                    playerPositionResult.add(
+                    "Pemain menemukan harta karun pada koordinat" + " " +
+                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] - 1) + ")");
+                }
                 currentPlayerPosition[1] = currentPlayerPosition[1] - 1;
                 continue;
             }
@@ -74,6 +81,12 @@ public class Array2DBajakLaut
                     "Pemain tidak bisa melewati koordinat" + " " +
                     "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] - 1) + ")");
                     continue;
+                }
+                else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] - 1] == 'X')
+                {
+                    playerPositionResult.add(
+                    "Pemain menemukan harta karun pada koordinat" + " " +
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] - 1) + ")");
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] - 1;
                 continue;
@@ -87,11 +100,16 @@ public class Array2DBajakLaut
                     "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] + 1) + ")");
                     continue;
                 }
+                else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] + 1] == 'X')
+                {
+                    playerPositionResult.add(
+                    "Pemain menemukan harta karun pada koordinat" + " " +
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] + 1) + ")");
+                }
                 currentPlayerPosition[0] = currentPlayerPosition[0] + 1;
                 continue;
             }
         }
-        input.close();
         for (int i = 0; i < Integer.parseInt(arraySize[0]); i++)
         {
             for (int j = 0; j < Integer.parseInt(arraySize[1]); j++)
