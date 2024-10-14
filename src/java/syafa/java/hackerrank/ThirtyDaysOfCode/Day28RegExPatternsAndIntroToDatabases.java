@@ -8,9 +8,9 @@ public class Day28RegExPatternsAndIntroToDatabases
         Scanner input = new Scanner(System.in);
         int dataSize = Integer.parseInt(input.nextLine());
         ArrayList<String> userData = new ArrayList<>();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < dataSize; i++)
         {
-            
+            userData.add(input.nextLine());
         }
         input.close();
     }
