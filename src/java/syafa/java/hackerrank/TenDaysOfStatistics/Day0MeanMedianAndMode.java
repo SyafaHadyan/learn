@@ -8,12 +8,16 @@ public class Day0MeanMedianAndMode
         Scanner input = new Scanner(System.in);
         int dataLength = Integer.parseInt(input.nextLine());
         int[] data = new int[dataLength];
-        double mean = -Double.MAX_VALUE;
-        double median = -Double.MAX_VALUE;
+        double mean = 0.0;
+        double median = 0.0;
         int mode = Integer.MIN_VALUE;
         for (int i = 0; i < dataLength; i++)
         {
             data[i] = Integer.parseInt(input.next());
+        }
+        for (int i = 0; i < data.length; i++)
+        {
+            mean += data[i];
         }
         input.close();
     }
