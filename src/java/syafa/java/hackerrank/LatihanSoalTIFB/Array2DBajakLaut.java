@@ -79,32 +79,32 @@ public class Array2DBajakLaut
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[0] + ")");
+                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[1] + ")");
                     continue;
                 }
-                else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] - 1] == 'X')
+                else if (map[currentPlayerPosition[0] - 1][currentPlayerPosition[1]] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[0] + ")");
+                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[1] + ")");
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] - 1;
                 continue;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Bawah"))
             {
-                if (map[currentPlayerPosition[0] + 1][currentPlayerPosition[0]] == '#')
+                if (map[currentPlayerPosition[0] + 1][currentPlayerPosition[1]] == '#')
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[0] + ")");
+                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[1] + ")");
                     continue;
                 }
-                else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] + 1] == 'X')
+                else if (map[currentPlayerPosition[0] + 1][currentPlayerPosition[1]] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[0] + ")");
+                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[1] + ")");
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] + 1;
                 continue;
