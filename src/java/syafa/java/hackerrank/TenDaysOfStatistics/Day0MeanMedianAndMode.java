@@ -11,7 +11,7 @@ public class Day0MeanMedianAndMode
         double mean = 0.0;
         double median = 0.0;
         int mode = Integer.MIN_VALUE;
-        for (int i = 0; i < dataLength; i++)
+        for (int i = 0; i < data.length; i++)
         {
             data[i] = Integer.parseInt(input.next());
         }
@@ -24,6 +24,12 @@ public class Day0MeanMedianAndMode
                 mean /= data.length;
             }
         }
+        if (data.length % 2 == 0)
+        {
+            median = data[(data.length / 2) - 1] + data[(data.length / 2) + 1] / 2;
+        }
+        median = data[data.length / 2];
+        // 1 2 3 4 5 6
         System.out.print(mean + "\n" + median + "\n" + mode);
     }
 }
