@@ -109,3 +109,7 @@ Only two fundamental types of components are required to fulfill basic elements 
 - **Data movement**: The paths among components are used to move data from memory to memory and from memory through gates to memory.
 
   Example: a gate will have one or two data inputs plus a control signal input that activates the gate. When the control signal is ON, the gate performs its function on the data inputs and produces a data output. Conversely, when the control signal is OFF, the output line is null, such as is produced by a high impedance state. Similarly, the memory cell will store the bit that is on its input lead when the WRITE control signal is ON and will place the bit that is in the cell on its output lead when the READ control signal is ON.
+
+![Figure 1.9](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.9.png)
+
+Figure 1.9 Fundamental Computer Elements
