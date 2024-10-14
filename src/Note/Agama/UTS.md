@@ -56,7 +56,7 @@
   - Menyelenggakan training-training keislaman, terutama untuk kegiatan pemuda.
   - Memaksimalkan dakwah bil-lisan, dakwah bil-hal, seperti memberikan santunan bagi jamaah yang membutuhkan, misalnya karena sakit, kena musibah dan lain-lain.
   - Berdakwah melalui buku, brosur, buletin, dan majalah dengan mendirikan taman bacaan atau perpustakaan masjid.
-- Masyarakat madani dalam bahasa inggris dikenal dengan civil society atau lebih tepat dengan civilized society masyarakat sipil berlawanan dengan masyarakat militer.
+- Masyarakat madani dalam bahasa inggris dikenal dengan civil society atau lebih tepat dengan civilized society masyarakat sipil berlawanan dengan masyarakat militer. Masyarkat madani ialah masyarakat yang menganut sistem sosial berdasarkan prinsip moral yang merekonstruksi sikap menjamin keseimbangan antara kebebasan individu dengan kestabilan bagi kehidupan masyarakat.
 - Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah ijma', yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
   - Ada dua bentuk ijtima':
     - Ijma' Sharih: Konsensus yang jelas dan tegas, di mana seluruh ulama secara lisan menyatakan kesepakatan mereka terhadap suatu hukum. Contohnya adalah ijma' mengenai keharaman khamr (minuman keras), yang disepakati oleh semua ulama.
