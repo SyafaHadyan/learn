@@ -81,3 +81,9 @@ The control unit operates the IAS by fetching instructions from memory and execu
 - **Instruction buffer re   gister (IBR)**: employed to hold temporarily the right-hand instruction from a word in memory.
 - **Program counter (PC)**: Contains the address of the next instruction pair to be fetched from memory.
 - **Accumulator (AC) and multiplier quotient (MQ)**: Employed to hold temporarily operands and results of ALU operations.
+
+The IAS operates by repetitively performing an *instruction cycle*. Each instruction cycle consists of two subcycles. During the *fetch cycle*, the opcode of the next instruction is loaded into the IR and the address portion is loaded into the MAR. This instruction may be taken from the IBR, or it can be obtained from memory by loading a word into the MBR, and then down to the IBR, IR, and MAR.
+
+The IAS had a total of 21 instructions.
+
+- **Data transfer**: Move data between memory and ALU registers or between two ALU registers.
