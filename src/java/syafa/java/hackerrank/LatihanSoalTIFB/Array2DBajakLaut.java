@@ -17,6 +17,7 @@ public class Array2DBajakLaut
                 obstacleCoordinate[j] = Integer.parseInt(input.next());
             }
         }
+        String[] playerMovement = input.nextLine().split(" ");
         input.close();
     }
 }
