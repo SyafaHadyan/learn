@@ -21,7 +21,7 @@ There are only four basic functions that a computer can perform:
 
 #### Simple Single-Processor Computer
 
-![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/ComputerTopLevelStructure.png)
+![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.1.png)
 *Figure 1.1 The Computer: Top-Level Structure*
 
 - **Central processing unit (CPU)**: Controls the operation of the computer and performs its data processing functions; ofter simply refered to as **processor**.
@@ -36,7 +36,7 @@ There are only four basic functions that a computer can perform:
 - **Registers**: Provides storage internal to the CPU.
 - **CPU interconnection**: Mechanism that provides for communication among the control unit, ALU, and registers.
 
-> There are several approaches to the implementation of the control unit; one common approach is a *microprogrammed* implementation. A microprogrammed control unit operates by executing microinstructions that define the functionality of the control unit.
+There are several approaches to the implementation of the control unit; one common approach is a *microprogrammed* implementation. A microprogrammed control unit operates by executing microinstructions that define the functionality of the control unit.
 
 #### Multicore Computer Structure
 
@@ -45,3 +45,8 @@ Each processing unit (consisting of a control unit, ALU, registers, and perhaps 
 - **Central processing unit (CPU)**: That portion of a computer that fetches and executes instructions. It consists of an ALU, a control unit, and registers. In a system with a single processing unit, it is often simply referred to as a *processor*.
 - **Core**: An individual processing unit on a processor chip. A core may be equivalent in functionality to a CPU on a single-CPU system. Other specialized processing units, such as one optimized for vector and matrix operations, are also referred to as cores.
 - **Processor**: A physical piece of silicon containing one or more cores. The processor is the computer component that interprets and executes instructions.
+
+Most cumputers are housed on a motherboard. A **printed circuit board (PCB)** is a rigid, flat board that holds and interconnects chips and other electronic components. The main printed circuit board in a computer is called a system board or **motherboard**, while smaller ones that plug into the slots in the main board are called expansion boards.
+
+![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.2.png)
+*Figure 1.2 Simplified View of Major Elements of a Multicore Computer*
