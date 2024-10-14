@@ -10,5 +10,10 @@ public class Day0WeightedMean
         String[] firstArray = input.nextLine().split(" ");
         String[] secondArray = input.nextLine().split(" ");
         input.close();
+        double result = 0d;
+        for (int i = 0; i < arrayLength; i++)
+        {
+            
+        }
     }
 }
