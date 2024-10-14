@@ -32,6 +32,7 @@ public class Array2DBajakLaut
             }
         }
         input.nextLine();
+        map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
         ArrayList<String> playerMovement = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
         for (int i = 0; i < playerMovement.size(); i++)
         {
@@ -85,7 +86,6 @@ public class Array2DBajakLaut
             }
         }
         input.close();
-        map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
         for (int i = 0; i < Integer.parseInt(arraySize[0]); i++)
         {
             for (int j = 0; j < Integer.parseInt(arraySize[1]); j++)
