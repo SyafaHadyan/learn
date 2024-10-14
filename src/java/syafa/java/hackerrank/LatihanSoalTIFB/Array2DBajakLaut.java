@@ -69,6 +69,7 @@ public class Array2DBajakLaut
                     continue;
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] - 1;
+                continue;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Bawah"))
             {
@@ -80,6 +81,7 @@ public class Array2DBajakLaut
                     continue;
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] + 1;
+                continue;
             }
         }
         input.close();
