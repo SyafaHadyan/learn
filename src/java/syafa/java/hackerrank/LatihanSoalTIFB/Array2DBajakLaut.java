@@ -42,6 +42,7 @@ public class Array2DBajakLaut
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
                     "(" + "pos" + "," +"pos" + ")");
+                    continue;
                 }
                 currentPlayerPosition[1] = currentPlayerPosition[1] + 1;
             }
