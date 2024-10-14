@@ -11,22 +11,11 @@ public class MethodCekPrima
         BigInteger[] numberCheck = new BigInteger[check];
         for (int i = 0; i < check; i++)
         {
-            numberCheck[i] = Integer.parseInt(input.next());
+            numberCheck[i] = input.nextBigInteger();
         }
         for (int i = 0; i < numberCheck.length; i++)
         {
-            for (int j = 2; j < numberCheck[i]; j++)
-            {
-                if (numberCheck[i] == 1)
-                {
-                    //
-                    break;
-                }
-                if ()
-                {
-                    //
-                }
-            }
+            //
         }
         input.close();
     }
