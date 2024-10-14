@@ -50,3 +50,11 @@ Most cumputers are housed on a motherboard. A **printed circuit board (PCB)** is
 
 ![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.2.png)
 *Figure 1.2 Simplified View of Major Elements of a Multicore Computer*
+
+A **chip** is a single piece of semiconducting material, typically silicon upon which electronic circuits and logic gates are fabricated. The resulting product is referred as an **integrated circuit**.
+
+##### Functional Elements of a Core
+
+- **Instruction logic**: This includes the tasks involved in fetching instructions, and decoding each instruction to determine the instruction operation and the memory locations of any operands.
+- **Arithmetic and logic unit (ALU)**: Performs the operation specified by an instruction.
+- **Load/store logic**: Manages the transfer of data to and from main memory via cache.
