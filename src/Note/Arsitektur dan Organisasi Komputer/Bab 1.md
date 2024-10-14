@@ -91,3 +91,7 @@ The IAS operates by repetitively performing an *instruction cycle*. Each instruc
 The IAS had a total of 21 instructions.
 
 - **Data transfer**: Move data between memory and ALU registers or between two ALU registers.
+- **Unconditional branch**: Normally, the control unit executes instructions in sequence from memory. This sequence can be changed by a branch instruction, which facilitates repetitive operations.
+- **Conditional branch**: The branch can be made dependent on a condition, thus allowing decision points.
+- **Arithmetic**: Operations performed by the ALU.
+- **Address modify**: Permits addresses to be computed in the ALU and then inserted into isntructions stored in memory. This allows program considerable addressing flexibility.
