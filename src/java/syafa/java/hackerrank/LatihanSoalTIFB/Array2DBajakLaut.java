@@ -81,10 +81,6 @@ public class Array2DBajakLaut
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] + 1;
             }
-            if (map[currentPlayerPosition[0]][currentPlayerPosition[1]] == 'X')
-            {
-                //
-            }
         }
         input.close();
         map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
