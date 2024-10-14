@@ -34,23 +34,29 @@ public class Day0MeanMedianAndMode
         Arrays.sort(data);
         for (int i = 0; i < data.length; i++)
         {
-            if (i == 0)
+            try
             {
-                currentMinVal = data[0];
-                currentMaxMode = 0;
-                mode = 1;
+                if (i == 0)
+                {
+                    currentMinVal = data[0];
+                    currentMaxMode = 0;
+                    mode = 1;
+                }
+                if (data[i] > currentMinVal && currentMaxMode > mode)
+                {
+                    currentMinVal = data[i];
+                    mode = currentMaxMode;
+                    currentMaxMode = 1;
+                }
+                else if (data[i] == data[i + 1])
+                {
+                    currentMaxMode++;
+                }
             }
-            if (data[i] > currentMinVal && currentMaxMode > mode)
+            catch (IndexOutOfBoundsException e)
             {
-                currentMinVal = data[i];
-                mode = currentMaxMode;
-                currentMaxMode = 1;
-            }
-            else if (data[i] == data[i + 1])
-            {
-                currentMaxMode++;
+                System.out.print(mean + "\n" + median + "\n" + mode);
             }
         }
-        System.out.print(mean + "\n" + median + "\n" + mode);
     }
 }
