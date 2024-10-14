@@ -39,72 +39,72 @@ public class Array2DBajakLaut
         {
             if (playerMovement.get(i).equalsIgnoreCase("Kanan"))
             {
-                if (map[currentPlayerPosition[1]][currentPlayerPosition[1] + 1] == '#')
+                if (map[currentPlayerPosition[0]][currentPlayerPosition[1] + 1] == '#')
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] + 1) + ")");
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[1] + 1) + ")");
                     continue;
                 }
-                else if (map[currentPlayerPosition[1]][currentPlayerPosition[1] + 1] == 'X')
+                else if (map[currentPlayerPosition[0]][currentPlayerPosition[1] + 1] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] + 1) + ")");
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[1] + 1) + ")");
                 }
                 currentPlayerPosition[1] = currentPlayerPosition[1] + 1;
                 continue;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Kiri"))
             {
-                if (map[currentPlayerPosition[1]][currentPlayerPosition[1] - 1] == '#')
+                if (map[currentPlayerPosition[0]][currentPlayerPosition[1] - 1] == '#')
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] - 1) + ")");
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[1] - 1) + ")");
                     continue;
                 }
-                else if (map[currentPlayerPosition[1]][currentPlayerPosition[1] - 1] == 'X')
+                else if (map[currentPlayerPosition[0]][currentPlayerPosition[1] - 1] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + currentPlayerPosition[1] + "," + (currentPlayerPosition[1] - 1) + ")");
+                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[1] - 1) + ")");
                 }
                 currentPlayerPosition[1] = currentPlayerPosition[1] - 1;
                 continue;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Atas"))
             {
-                if (map[currentPlayerPosition[0]][currentPlayerPosition[0] - 1] == '#')
+                if (map[currentPlayerPosition[0] - 1][currentPlayerPosition[1]] == '#')
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] - 1) + ")");
+                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[0] + ")");
                     continue;
                 }
                 else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] - 1] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] - 1) + ")");
+                    "(" + (currentPlayerPosition[0] - 1) + "," + currentPlayerPosition[0] + ")");
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] - 1;
                 continue;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Bawah"))
             {
-                if (map[currentPlayerPosition[0]][currentPlayerPosition[0] + 1] == '#')
+                if (map[currentPlayerPosition[0] + 1][currentPlayerPosition[0]] == '#')
                 {
                     playerPositionResult.add(
                     "Pemain tidak bisa melewati koordinat" + " " +
-                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] + 1) + ")");
+                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[0] + ")");
                     continue;
                 }
                 else if (map[currentPlayerPosition[0]][currentPlayerPosition[0] + 1] == 'X')
                 {
                     playerPositionResult.add(
                     "Pemain menemukan harta karun pada koordinat" + " " +
-                    "(" + currentPlayerPosition[0] + "," + (currentPlayerPosition[0] + 1) + ")");
+                    "(" + (currentPlayerPosition[0] + 1) + "," + currentPlayerPosition[0] + ")");
                 }
                 currentPlayerPosition[0] = currentPlayerPosition[0] + 1;
                 continue;
