@@ -14,6 +14,8 @@ public class Day28RegExPatternsAndIntroToDatabases
             if (!(userData.get(i).contains("@gmail.com")))
             {
                 userData.remove(i);
+                i--;
+                dataSize--;
             }
         }
         input.close();
