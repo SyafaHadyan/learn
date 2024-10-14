@@ -27,7 +27,7 @@ public class CircularArrayRotation
             }
             for (int j = 0; j < integerArray.length; j++)
             {
-                integerArray[i] = swapTemp[0];
+                integerArray[j] = swapTemp[j];
             }
         }
         for (int i = 0; i < Integer.parseInt(request[2]); i++)
