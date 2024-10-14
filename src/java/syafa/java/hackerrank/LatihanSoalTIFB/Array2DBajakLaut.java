@@ -41,7 +41,7 @@ public class Array2DBajakLaut
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Kiri"))
             {
-                //
+                currentPlayerPosition[1] = currentPlayerPosition[1] - 1;
             }
             else if (playerMovement.get(i).equalsIgnoreCase("Atas"))
             {
