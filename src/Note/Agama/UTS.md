@@ -53,7 +53,7 @@
   - Melaksanakan diskusi, seminar, dan lokakarya tentang masalah-masalah yang aktual.
   - Membuat data jamaah, dilihat dari segi usia, tingkat pendidikan, tingkat pendapatan, dan lain-lain.
   - Mengefektifkan zakat, infaq, dan shadaqah, baik pengumpulannya dan pembagiannya.
-  - Menyelenggarakn training-training keislaman, terutama untuk kegiatan pemuda.
+  - Menyelenggakan training-training keislaman, terutama untuk kegiatan pemuda.
   - Memaksimalkan dakwah bil-lisan, dakwah bil-hal, seperti memberikan santunan bagi jamaah yang membutuhkan, misalnya karena sakit, kena musibah dan lain-lain.
   - Berdakwah melalui buku, brosur, buletin, dan majalah dengan mendirikan taman bacaan atau perpustakaan masjid.
 - Masyarakat Madani adalah istilah yang merujuk pada masyarakat yang beradab, bermoral, dan menjunjung tinggi nilai-nilai kebersamaan, keadilan, dan kemanusiaan. Pada era Rasulullah SAW, masyarakat Madinah adalah contoh konkret dari masyarakat madani yang Islami. Beberapa karakteristik masyarakat Madani di masa Rasulullah SAW antara lain:
