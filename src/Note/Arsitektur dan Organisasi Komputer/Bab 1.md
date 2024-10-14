@@ -100,4 +100,12 @@ The IAS had a total of 21 instructions.
 
 ### Gates and Memory Cells
 
-Only two fundamental types of components are required to fulfill basic elements of a digital computer. A **gate** is a device that implements a simple Boolean or logical function. Such device are called gates becouse they control data flow. The **memory cell** is a device that can store one bit of data. The device can be in one of two stable states at any time.
+Only two fundamental types of components are required to fulfill basic elements of a digital computer. A **gate** is a device that implements a simple Boolean or logical function. Such device are called gates becouse they control data flow. For example, an AND gate with inputs *A* and *B* and output *C* implements the expression IF *A* AND *B* ARE TRUE THEN *C* IS TRUE The **memory cell** is a device that can store one bit of data. The device can be in one of two stable states at any time.
+
+### Basic Functions
+
+- **Data storage**: Provided by memory cells.
+- **Data processing**: Provided by gates.
+- **Data movement**: The paths among components are used to move data from memory to memory and from memory through gates to memory.
+
+  Example: a gate will have one or two data inputs plus a control signal input that activates the gate. When the control signal is ON, the gate performs its function on the data inputs and produces a data output. Conversely, when the control signal is OFF, the output line is null, such as is produced by a high impedance state. Similarly, the memory cell will store the bit that is on its input lead when the WRITE control signal is ON and will place the bit that is in the cell on its output lead when the READ control signal is ON.
