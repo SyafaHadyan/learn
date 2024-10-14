@@ -58,12 +58,13 @@
   - Berdakwah melalui buku, brosur, buletin, dan majalah dengan mendirikan taman bacaan atau perpustakaan masjid.
 - Pengertian Masyarakat Madani
   - Masyarakat madani dalam bahasa inggris dikenal dengan civil society atau lebih tepat dengan civilized society masyarakat sipil berlawanan dengan masyarakat militer. Masyarkat madani ialah masyarakat yang menganut sistem sosial berdasarkan prinsip moral yang merekonstruksi sikap menjamin keseimbangan antara kebebasan individu dengan kestabilan bagi kehidupan masyarakat.
-- Karakteristik Masyarakat Madani
+  - Karakteristik Masyarakat Madani
     - Bertuhan: masyarakat beragama, mengakui adanya tuhan serta hukum tuhan mengatatur kehidupan sosialnya
     - Damai: elemen masyarakat baik secara kelompok/individu menghormati satu dengan yang lainnya secara adil.
     - Toleran/Tasamuh, merupakan sifat yang dikembangkan dalam masyarakat madani untuk menunjukkan sikap saling menghargai dan menghormati aktivitas yang dilakukan oleh orang lain.
     - Berperadaban Tinggi: masyarakat yang memiliki kecintaan terhadap ilmu pengetahuan dan memanfaatkan iptek untuk kebaikan manusia.
-    - Ber-Akhlak Mulia: berusaha sebisa mungkin menerapkan akhlak yang diajarkan dan dicontohkan oleh Rasulullah saw.
+  - Cara Brsikap Madani
+    - Ber-Akhlak Mulia, berusaha sebisa mungkin menerapkan akhlak yang diajarkan dan dicontohkan oleh Rasulullah saw.
     - Tolong menolong (Ta’awun), memiliki rasa peduli dan empati kepada saudara seiman, maupun sesama manusia demi kebaikan di dunia dan akhirat.
     - Keseimbangan antara Kewajiban dan Hak (Adil), adanya profesionalitas demi kemaslahatan publik dan pribadi muslim.
 - Ijtima' adalah metode pengambilan keputusan hukum dalam Islam dengan cara musyawarah atau kesepakatan para ulama. Metode ini juga dikenal dengan istilah ijma', yang berarti konsensus atau kesepakatan. Ijtima' menjadi sumber hukum setelah Al-Qur’an dan Sunnah.
