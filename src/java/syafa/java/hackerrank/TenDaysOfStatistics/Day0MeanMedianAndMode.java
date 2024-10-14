@@ -28,7 +28,10 @@ public class Day0MeanMedianAndMode
         {
             median = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2;
         }
-        median = data[data.length / 2];
+        else
+        {
+            median = data[data.length / 2];
+        }
         // 1 2 3 4 5 6
         System.out.print(mean + "\n" + median + "\n" + mode);
     }
