@@ -38,7 +38,7 @@ public class Day0MeanMedianAndMode
             {
                 if (i == 0)
                 {
-                    currentMinVal = data[0];
+                    currentMinVal = 0;
                     currentMaxMode = 0;
                     mode = 1;
                 }
@@ -55,7 +55,7 @@ public class Day0MeanMedianAndMode
             }
             catch (IndexOutOfBoundsException e)
             {
-                System.out.print(mean + "\n" + median + "\n" + mode);
+                System.out.printf("%.1f%.1f%d",mean,median,mode);
             }
         }
     }
