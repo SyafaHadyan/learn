@@ -12,6 +12,13 @@ public class MethodCekPrima
         {
             numberCheck[i] = Integer.parseInt(input.next());
         }
+        for (int i = 0; i < numberCheck.length; i++)
+        {
+            for (int j = 2; j < numberCheck[i]; j++)
+            {
+                if ()
+            }
+        }
         input.close();
     }
 }
