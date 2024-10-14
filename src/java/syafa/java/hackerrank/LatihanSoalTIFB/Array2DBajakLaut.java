@@ -35,7 +35,22 @@ public class Array2DBajakLaut
         ArrayList<String> playerMovement = new ArrayList<>(Arrays.asList(input.nextLine().split(" ")));
         for (int i = 0; i < playerMovement.size(); i++)
         {
-            
+            if (playerMovement.get(i).equalsIgnoreCase("Kanan"))
+            {
+                //
+            }
+            else if (playerMovement.get(i).equalsIgnoreCase("Kiri"))
+            {
+                //
+            }
+            else if (playerMovement.get(i).equalsIgnoreCase("Atas"))
+            {
+                //
+            }
+            else if (playerMovement.get(i).equalsIgnoreCase("Bawah"))
+            {
+                //
+            }
         }
         input.close();
         map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
