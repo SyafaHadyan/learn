@@ -117,3 +117,11 @@ Figure 1.9 Fundamental Computer Elements
 ### Transistors
 
 Transistors are the fundamental building blocks of digital circuits used in processors, memories, and other digital logic devices. Made of semiconductor materials like silicon, transistors can change their electrical state when voltage is applied. Initially, electronic equipment in the 1950s and 60s was made up of discrete components, which were separate, packaged, and manually assembled on circuit boards. This process was costly and cumbersome, especially as the number of transistors in computers grew which makes the manufacture of newer, more powerful machines increasingly difficult.
+
+### Microelectronic Chips
+
+Components as transistors, resistors, and conductors can be fabricated from a semiconductor such as silicon instead of assembling discrete components made form separate pieces of silicon into the same circuit. Many transistors can be produced at the same time on a single wafer of silicon. These transistors can be connected with a process of metalizaiton to form circuits.
+
+![Figure 1.10](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.10.png)
+
+Figure 1.10 Relationsihp among Wafer, Chip, and Gate
