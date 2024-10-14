@@ -21,7 +21,7 @@ There are only four basic functions that a computer can perform:
 
 #### Simple Single-Processor Computer
 
-![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.1.png)
+![Figure 1.1](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure%20.1.png)
 *Figure 1.1 The Computer: Top-Level Structure*
 
 - **Central processing unit (CPU)**: Controls the operation of the computer and performs its data processing functions; ofter simply refered to as **processor**.
@@ -48,7 +48,7 @@ Each processing unit (consisting of a control unit, ALU, registers, and perhaps 
 
 Most cumputers are housed on a motherboard. A **printed circuit board (PCB)** is a rigid, flat board that holds and interconnects chips and other electronic components. The main printed circuit board in a computer is called a system board or **motherboard**, while smaller ones that plug into the slots in the main board are called expansion boards.
 
-![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.2.png)
+![Figure 1.2](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure%20.2.png)
 *Figure 1.2 Simplified View of Major Elements of a Multicore Computer*
 
 A **chip** is a single piece of semiconducting material, typically silicon upon which electronic circuits and logic gates are fabricated. The resulting product is referred as an **integrated circuit**.
@@ -61,7 +61,7 @@ A **chip** is a single piece of semiconducting material, typically silicon upon 
 
 ## The IAS Computer
 
-![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.6.png)
+![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure%201.6.png)
 *Figure 1.6 IAS Structure*
 
 - A **main memory**, which stores both data and instructions.
@@ -70,7 +70,7 @@ A **chip** is a single piece of semiconducting material, typically silicon upon 
 
 The memory of the IAS consists of 4096 storage locations, called *words*, of 40 binary digits (bits) each. Both data and instructions are stored there. Numbers are represented in binary form, and each instruction is a binary code. Each number is represented bya sign bit and a 39-bit value. A word may alternatively contain two 20-bit instructions, with each instruction consisting of an 8-bit operation code (opcode) specifying the operation to be performed and a 12-bit address designating one of the words in memory (numbered from 0 to 999).
 
-![Figure 1.7](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%203/Figure1.7.png)
+![Figure 1.7](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure%201.7.png)
 *Figure 1.7 IAS Memory Formats*
 
 The control unit operates the IAS by fetching instructions from memory and executing them one at a time. Both the control unit and the ALU contain storage locations, called *registers*, defined as follows:
