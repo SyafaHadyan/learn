@@ -9,7 +9,7 @@ public class Array2DBajakLaut
         String[] arraySize = input.nextLine().split(" ");
         String[] treasureCoordinate = input.nextLine().split(" ");
         int obstacleAmount = Integer.parseInt(input.nextLine());
-        int[] obstacleCoordinate = new int[obstacleAmount];
+        int[] obstacleCoordinate = new int[obstacleAmount * 2];
         char[][] map = new char[Integer.parseInt(arraySize[0])][Integer.parseInt(arraySize[1])];
         for (int i = 0; i < obstacleAmount; i++)
         {
