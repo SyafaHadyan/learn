@@ -16,7 +16,15 @@ public class MethodCekPrima
         {
             for (int j = 2; j < numberCheck[i]; j++)
             {
+                if (numberCheck[i] == 1)
+                {
+                    //
+                    break;
+                }
                 if ()
+                {
+                    //
+                }
             }
         }
         input.close();
