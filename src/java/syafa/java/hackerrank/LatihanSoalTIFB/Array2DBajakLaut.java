@@ -18,6 +18,7 @@ public class Array2DBajakLaut
                 map[i][j] = '.';
             }
         }
+        map[Integer.parseInt(treasureCoordinate[0])][Integer.parseInt(treasureCoordinate[1])] = 'X';
         for (int i = 0; i < obstacleAmount; i++)
         {
             for (int j = 0; j < 2; j++)
