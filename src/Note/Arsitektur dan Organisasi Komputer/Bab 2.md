@@ -26,5 +26,5 @@ What gives Intel x86 processors or IBM mainframe computers such power is the rel
 
 - **Branch prediction**: The processor looks ahead in the instruction code fetched rom memory and predicts which branches, or groups of instructions, are likely to be processed next. If the processor guesses right most of the time, it can prefetch the correct instructions and buffer them so that the processor is kept busy. The more sophisticated examples of this strategy predict not just the next branch but multiple branches ahead. Thus, branch prediction potentially increases the amount of work available for the processor to execute.
 - **Superscalar execution**: This is the ability to issue more than one instruction in every processor clock cycle. In effect, multiple paraller pipelines are used.
-- **Data flow analysis**:
+- **Data flow analysis**: The processor analyzes which instructions are dependent on each other's results, or data, to create an optimized schedule of instructions. In fact, instructions are scheduled to be executed when ready, independent of the original program order. This prevents unnecessary delay.
 - **Speculative execution**:
