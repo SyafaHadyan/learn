@@ -11,3 +11,7 @@ Over the years, the cost of computer systems has significantly decreased while t
 - Simulation modeling
 
 Workstations now support sophisticated engineering and scientific applications, while powerful servers handle transaction and database processing for businesses, replacing old mainframe centers. Cloud service providers also use high-performance servers for high-volume applications. Interestingly, the basic building blocks of modern computers are similar to those from over 50 years ago, but the techniques to maximize performance have become more sophisticated.
+
+## Microprocessor Speed
+
+What gives Intel x86 processors or IBM mainframe computers such power is the relentless pursuit of speed by processor chip manufacturers. The evolution of these machines continues to bear out Moore's law.
