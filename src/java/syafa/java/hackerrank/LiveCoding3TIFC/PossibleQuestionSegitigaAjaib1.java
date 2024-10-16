@@ -11,15 +11,6 @@ public class PossibleQuestionSegitigaAjaib1
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
-            for (int j = 0; j < space; j++)
-            {
-                System.out.print(' ');
-                if (space - j != 0)
-                {
-                    System.out.print(' ');
-                }
-            }
-            space--;
             for (int j = 0; j <= i; j++)
             {
                 System.out.print('*');
