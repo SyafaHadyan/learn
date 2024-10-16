@@ -130,10 +130,7 @@ public class PossibleQuestionSegitigaAjaib9
                     System.out.print(' ');
                 }
             }
-            if (staricaseSize - i != 1)
-            {
-                System.out.print("\n");
-            }
+            System.out.println();
         }
     }
 }
