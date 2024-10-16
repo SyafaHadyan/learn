@@ -173,3 +173,19 @@ Output:
  * *
 * * *
 ```
+
+## Segitiga Ajaib 6
+
+Input:
+
+```txt
+3
+```
+
+Output:
+
+```txt
+* * *
+ * *
+  *
+```
