@@ -157,3 +157,19 @@ Output:
   * *
     *
 ```
+
+## Segitiga Ajaib 5
+
+Input:
+
+```txt
+3
+```
+
+Output:
+
+```txt
+  *
+ * *
+* * *
+```
