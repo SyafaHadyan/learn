@@ -25,3 +25,16 @@
 - Traceable
   - Lower level rerquirements (children) must clearly flow from and support higher level requirements (parents).
   - Requirements without a parent are referred to as orphans, and need to be assessed for necessity of inclusion.
+
+## Contoh Deskripsi Sistem
+
+text
+
+## Kebutuhan Fungsional Sistem
+
+- text
+- text
+- text
+- text
+
+##
