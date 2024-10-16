@@ -14,7 +14,7 @@ public class PossibleQuestionSegitigaAjaib0
             for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
-                if (j - space != 0)
+                if (space - j != 0)
                 {
                     System.out.print(' ');
                 }
