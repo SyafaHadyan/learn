@@ -1,0 +1,2 @@
+cd src/java/syafa/java/hackerrank/LiveCoding3TIFC
+cd "D:/GitHub/learn/src/java/syafa/java/hackerrank/LiveCoding3TIFC"
