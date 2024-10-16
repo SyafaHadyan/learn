@@ -37,7 +37,7 @@
 
 ## Contoh Deskripsi Sistem (0)
 
-text
+Sistem Pendaftaran Mahasiswa Baru Online adalah platform digital yang bertujuan untuk menyederhanakan dan mempercepat proses pendaftaran mahasiswa baru di sebuah perguruan tinggi. Sistem ini akan memungkinkan calon mahasiswa untuk mengisi formulir pendaftaran, menunggah dokumen pendukung, melakukan pembayaran biaya pendaftaran, dan memantau status pendaftaran mereka secara online.
 
 ## Contoh Deskripsi Sistem (1)
 
