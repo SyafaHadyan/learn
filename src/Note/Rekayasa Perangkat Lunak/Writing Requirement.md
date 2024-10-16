@@ -35,9 +35,20 @@
 - Lower level rerquirements (children) must clearly flow from and support higher level requirements (parents).
 - Requirements without a parent are referred to as orphans, and need to be assessed for necessity of inclusion.
 
-## Contoh Deskripsi Sistem
+## Contoh Deskripsi Sistem (0)
 
 text
+
+## Contoh Deskripsi Sistem (1)
+
+Aplikasi Mobile pemesanan tiket bioskop
+Salah satu kebutuhan aplikasi adalah “memproses transaksi pembayaran
+
+- **Specific**: "Aplikasi harus mendukung pembayaran dengan kartu kredit Visa dan MasterCard."
+- **Measurable**: "Proses transaksi harus diselesaikan dalam waktu kurang dari 5 detik."
+- **Achievable**: Teknologi yang dipilih sudah mendukung integrasi dengan gateway pembayaran yang dapat menangani pembayaran dalam waktu tersebut.
+- **Relevant**: Relevansi/Kesesuaian —> pengguna aplikasi akan memesan tiket secara online dan butuh melakukan pembayaran langsung.
+- **Traceable**: Kebutuhan ini harus dapat dilacak dari dokumen kebutuhan sampai kode program, pengujian unit, dan pengujian penerimaan pengguna (UAT).
 
 ## Kebutuhan Fungsional Sistem
 
