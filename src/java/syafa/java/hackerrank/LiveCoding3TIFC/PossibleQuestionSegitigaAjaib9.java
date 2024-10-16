@@ -55,7 +55,9 @@ public class PossibleQuestionSegitigaAjaib9
                 }
             }
             if (staricaseSize - i != 1)
-            System.out.print("\n");
+            {
+                System.out.print("\n");
+            }
         }
         System.out.print("\n");
         space = 1;
@@ -74,6 +76,10 @@ public class PossibleQuestionSegitigaAjaib9
             {
                 System.out.print('*');
                 if (j != 1)
+                {
+                    System.out.print(' ');
+                }
+                for (int k = 0; k < staricaseSize + staricaseSize - 1; k++)
                 {
                     System.out.print(' ');
                 }
