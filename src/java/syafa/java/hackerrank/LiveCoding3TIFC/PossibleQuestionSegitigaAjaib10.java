@@ -11,11 +11,20 @@ public class PossibleQuestionSegitigaAjaib10
         int previous = 0;
         int current = 1;
         int nextSequence = 0;
-        for (int i = 0; i <= fibonacci; i++)
+        for (int i = 2; i < fibonacci; i++)
         {
+            if (fibonacci == 0)
+            {
+                nextSequence = 0;
+            }
+            if (fibonacci == 1)
+            {
+                nextSequence = 1;
+            }
             nextSequence = current + previous;
             previous = current;
             current = nextSequence;
+            System.out.println(nextSequence);
             /*
              * 0
              * 1
@@ -26,6 +35,6 @@ public class PossibleQuestionSegitigaAjaib10
              * 8
              */
         }
-        System.out.print(nextSequence);
+        //System.out.print(nextSequence);
     }
 }
