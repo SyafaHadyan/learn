@@ -31,3 +31,15 @@ Output: `Prima`
 Input: `4`
 
 Output: `Bukan prima`
+
+## Segitiga Ajaib 0
+
+Input: `3`
+
+Output:
+
+```txt
+    *
+  * *
+* * *
+```
