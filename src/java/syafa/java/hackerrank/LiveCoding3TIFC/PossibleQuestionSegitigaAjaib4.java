@@ -14,12 +14,16 @@ public class PossibleQuestionSegitigaAjaib4
             for (int j = space; j > 0; j--)
             {
                 System.out.print(' ');
-                //System.out.print(' ');
+                if (j != 0)
+                {
+                    System.out.print(' ');
+                }
             }
             space++;
             for (int j = i; j > 0; j--)
             {
                 System.out.print('*');
+                System.out.print(' ');
             }
             if (i != 1)
             {
