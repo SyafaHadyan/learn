@@ -21,5 +21,6 @@ public class PossibleQuestionBilanganPrima
                 return;
             }
         }
+        System.out.println("Prima");
     }
 }
