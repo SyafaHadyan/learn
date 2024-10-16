@@ -141,3 +141,19 @@ Output:
 * * * * * *
 * * * * * *
 ```
+
+## Segitiga Ajaib 4
+
+Input:
+
+```txt
+3
+```
+
+Output:
+
+```txt
+* * *
+  * *
+    *
+```
