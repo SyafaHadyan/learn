@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.LiveCodingTIFABAB3;
 import java.util.*;
+import java.util.Arrays.*;
 
 public class TankiAir
 {
@@ -7,8 +8,9 @@ public class TankiAir
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int waterTank = 0;
+        //int waterTank = 0;
         int[] result = new int[testCase];
+        int[] waterTank = Arrays.stream(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int currentPhase = 0;
         /*
          * phase0 = normal = inc 3
@@ -21,7 +23,6 @@ public class TankiAir
          */
         for (int i = 0; i < testCase; i++)
         {
-            waterTank = Integer.parseInt(input.nextLine());
             if (waterTank == 100)
             {
                 result[i] = 0;
@@ -31,15 +32,18 @@ public class TankiAir
             {
                 if (currentPhase >= 0 && currentPhase <= 4)
                 {
-                    //
+                    waterTank -= 4;
+                    currentPhase++;
+                    continue;
                 }
                 else if (currentPhase >= 5 && currentPhase <= 9)
                 {
-                    //
+                    waterTank -= 4;
+                    currentPhase++;
                 }
                 else if (currentPhase >= 10 && currentPhase <= 14)
                 {
-                    //
+                    waterTank -= 6;
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
