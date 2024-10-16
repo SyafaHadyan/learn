@@ -14,7 +14,6 @@ public class MigratoryBirds
         }
         input.close();
         Arrays.sort(sightings);
-        int checkType = sightings[0];
         int mode = 0;
         int currentMinVal = 0;
         int currentMaxMode = 1;
