@@ -9,18 +9,26 @@ public class PossibleQuestionSegitigaAjaib0
         int staricaseSize = Integer.parseInt(input.nextLine());
         int space = staricaseSize - 1;
         input.close();
-        for (int i = 0; i < space; i++)
-        {
-            System.out.print(' ');
-        }
-        space--;
         for (int i = 0; i < staricaseSize; i++)
         {
-            System.out.print('*');
-            if (i - staricaseSize != 0)
+            for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
+                if (j - space != 0)
+                {
+                    System.out.print(' ');
+                }
             }
+            space--;
+            for (int j = 0; j <= i; j++)
+            {
+                System.out.print('*');
+                if (j - staricaseSize != 0)
+                {
+                    System.out.print(' ');
+                }
+            }
+            System.out.println();
         }
     }
 }
