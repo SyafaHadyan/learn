@@ -26,8 +26,15 @@ public class PossibleQuestionSegitigaAjaib11
         {
             for (int j = 0; j <= i; j++)
             {
-                System.out.print(values[j]);
-                values[j + 1] = values[0] + values[j];
+                //System.out.print(values[j]);
+                try
+                {
+                    values[j + 1] = prevValues[j] + prevValues[j + 1];
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
+                }
             }
         }
     }
