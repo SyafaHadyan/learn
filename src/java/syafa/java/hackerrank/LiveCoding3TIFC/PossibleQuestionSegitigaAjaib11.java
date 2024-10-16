@@ -30,7 +30,14 @@ public class PossibleQuestionSegitigaAjaib11
                 //System.out.print(values[j]);
                 try
                 {
-                    values[j + 1] = prevValues[j] + prevValues[j + 1];
+                    if (j == 0)
+                    {
+                        values[j + 1] = prevValues[j] + prevValues[j];
+                    }
+                    else
+                    {
+                        values[j + 1] = prevValues[j] + prevValues[j + 1];
+                    }
                 }
                 catch (IndexOutOfBoundsException e)
                 {
