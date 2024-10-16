@@ -56,7 +56,7 @@ public class PossibleQuestionSegitigaAjaib9
             }
             for (int j = 0; j < (staricaseSize * 4) - 1; j++)
             {
-                System.out.print('n');
+                System.out.print(' ');
             }
             for (int j = 0; j <= i; j++)
             {
@@ -94,7 +94,7 @@ public class PossibleQuestionSegitigaAjaib9
             }
             for (int j = 0; j < (staricaseSize * 4) - 1; j++)
             {
-                System.out.print('n');
+                System.out.print(' ');
             }
             for (int j = i; j > 0; j--)
             {
