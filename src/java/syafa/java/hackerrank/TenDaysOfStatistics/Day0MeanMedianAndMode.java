@@ -9,8 +9,8 @@ public class Day0MeanMedianAndMode
         int dataLength = Integer.parseInt(input.nextLine());
         int[] data = new int[dataLength];
         //ArrayList<Integer> maxMode = new ArrayList<>();
-        double mean = 0.0;
-        double median = 0.0;
+        double mean = 0d;
+        double median = 0d;
         int mode = 0;
         int currentMinVal = 0;
         int currentMaxMode = 0;
