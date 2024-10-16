@@ -28,7 +28,8 @@ public class PossibleQuestionSegitigaAjaib0
                     System.out.print(' ');
                 }
             }
-            System.out.println();
+            if (staricaseSize - i != 1)
+            System.out.print("\n");
         }
     }
 }
