@@ -14,7 +14,8 @@ public class TankiAir
             waterTank = Integer.parseInt(input.nextLine());
             if (waterTank == 100)
             {
-                //
+                result[i] = 0;
+                continue;
             }
             if (waterTank > 100)
             {
