@@ -6,10 +6,10 @@ public class TankiAir
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int testCase = Integer.parseInt(input.nextLine());
+        //int testCase = Integer.parseInt(input.nextLine());
         //int waterTank = 0;
-        int[] result = new int[testCase];
         int[] waterTank = Arrays.stream(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] result = new int[waterTank.length];
         int currentPhase = 0;
         /*
          * phase0 = normal = inc 3
@@ -20,7 +20,7 @@ public class TankiAir
          * phase1 = rain = dec -4
          * phase2 = heat = dec -6
          */
-        for (int i = 0; i < testCase; i++)
+        for (int i = 0; i < waterTank.length; i++)
         {
             if (waterTank[i] == 100)
             {
