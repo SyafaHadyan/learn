@@ -39,7 +39,7 @@ public class PossibleQuestionSegitigaAjaib11
                         System.out.print(values[k]);
                         if (values.length - k != 1)
                         {
-                            System.out.print("\n");
+                            System.out.println("\n");
                         }
                     }
                 }
