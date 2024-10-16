@@ -10,7 +10,7 @@ public class Day0MeanMedianAndMode
         int[] data = new int[dataLength];
         double mean = 0.0;
         double median = 0.0;
-        int mode = 1;
+        int mode = 0;
         int currentMinVal = 0;
         int currentMaxMode = 0;
         for (int i = 0; i < data.length; i++)
@@ -39,12 +39,17 @@ public class Day0MeanMedianAndMode
                 if (i == 0)
                 {
                     mode = data[i];
+                    currentMinVal = data[i];
                 }
                 if (data[i] == data[i + 1])
                 {
-                    if (data[i] == )
+                    if (data[i] == currentMinVal)
                     {
-                        
+                        currentMaxMode++;
+                    }
+                    if (currentMaxMode > mode)
+                    {
+                        //
                     }
                 }
             }
