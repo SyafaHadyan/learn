@@ -117,12 +117,12 @@ public class PossibleQuestionSegitigaAjaib9
             {
                 System.out.print(' ');
             }
-            for (int j = -1; j < space; j++)
+            for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
             }
             space += 2;
-            for (int j = i * 2; j > 0; j--)
+            for (int j = i * 2; j > 1; j--)
             {
                 System.out.print('*');
                 System.out.print(' ');
