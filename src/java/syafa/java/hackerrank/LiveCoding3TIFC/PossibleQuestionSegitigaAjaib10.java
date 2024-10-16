@@ -11,7 +11,7 @@ public class PossibleQuestionSegitigaAjaib10
         int previous = 0;
         int current = 1;
         int nextSequence = 0;
-        for (int i = 2; i <+ fibonacci; i++)
+        for (int i = 2; i <= fibonacci; i++)
         {
             if (fibonacci == 2)
             {
