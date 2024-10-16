@@ -54,6 +54,7 @@ public class Day0MeanMedianAndMode
                     currentMaxMode = mode;
                     maxMode = 0;
                     currentMaxMode = 0;
+                    i++;
                 }
             }
             catch (IndexOutOfBoundsException e)
