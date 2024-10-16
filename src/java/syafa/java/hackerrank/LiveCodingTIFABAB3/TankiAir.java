@@ -36,7 +36,7 @@ public class TankiAir
                 if (currentPhase >= 0 && currentPhase <= 4)
                 {
                     waterTank[i] -= 4;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     currentPhase++;
                     i--;
                     continue;
@@ -44,7 +44,7 @@ public class TankiAir
                 else if (currentPhase >= 5 && currentPhase <= 9)
                 {
                     waterTank[i] -= 4;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     currentPhase++;
                     i--;
                     continue;
@@ -52,7 +52,7 @@ public class TankiAir
                 else if (currentPhase >= 10 && currentPhase <= 14)
                 {
                     waterTank[i] -= 6;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
@@ -66,7 +66,7 @@ public class TankiAir
                 if (currentPhase >= 0 && currentPhase <= 4)
                 {
                     waterTank[i] += 3;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     currentPhase++;
                     i--;
                     continue;
@@ -74,7 +74,7 @@ public class TankiAir
                 else if (currentPhase >= 5 && currentPhase <= 9)
                 {
                     waterTank[i] += 5;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     currentPhase++;
                     i--;
                     continue;
@@ -82,7 +82,7 @@ public class TankiAir
                 else if (currentPhase >= 10 && currentPhase <= 14)
                 {
                     waterTank[i] += 3;
-                    result[i] = result[i + 1];
+                    result[i] = result[i] + 1;
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
