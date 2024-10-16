@@ -54,7 +54,7 @@ public class PossibleQuestionSegitigaAjaib9
                     System.out.print(' ');
                 }
             }
-            for (int j = 0; j < (staricaseSize * 3); j++)
+            for (int j = 0; j < (staricaseSize * 3) + 2; j++)
             {
                 System.out.print('n');
             }
