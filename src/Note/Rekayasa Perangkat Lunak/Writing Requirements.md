@@ -52,7 +52,7 @@ Salah satu kebutuhan aplikasi adalah “memproses transaksi pembayaran
 
 ## Kebutuhan Fungsional Sistem
 
-- text
-- text
-- text
-- text
+- Sistem harus bisa **mencatat** biodata mahasiswa baru mencakup informasi pribadi, akademik, dan pilihan program studi.
+- Sitem harus memungkinkan calon mahasiswa untuk **mengunggah** dokumen pendukung seperti ijazah, transkip nilai, dan surat rekomendasi dalam format PDF atau JPEG.
+- Sistem harus bisa **menghasilkan laporan** penerimaah mahasiswa baru berdasarkan program studi, asal sekolah, dan jenis kelamin dalam waktu kurang dari 1 menit.
+- Sistem harus bisa **mencatat perubahan data** pendaftaran harus dicatat dalam log sistem, termasuk informasi tentang pengguna yang melakukan perubaha, waktu perubaha, dan data sebelum dan sesudah perubahan.
