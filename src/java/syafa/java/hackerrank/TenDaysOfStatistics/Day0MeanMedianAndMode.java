@@ -49,7 +49,7 @@ public class Day0MeanMedianAndMode
                     }
                     if (currentMaxMode > mode)
                     {
-                        //
+                        mode = currentMaxMode;
                     }
                 }
             }
