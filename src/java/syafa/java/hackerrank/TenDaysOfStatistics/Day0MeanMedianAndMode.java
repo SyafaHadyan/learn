@@ -10,9 +10,9 @@ public class Day0MeanMedianAndMode
         int[] data = new int[dataLength];
         double mean = 0.0;
         double median = 0.0;
-        int mode = Integer.MIN_VALUE;
-        int currentMinVal = Integer.MIN_VALUE;
-        int currentMaxMode = Integer.MIN_VALUE;
+        int mode = 1;
+        int currentMinVal = 0;
+        int currentMaxMode = 0;
         for (int i = 0; i < data.length; i++)
         {
             data[i] = Integer.parseInt(input.next());
@@ -38,19 +38,14 @@ public class Day0MeanMedianAndMode
             {
                 if (i == 0)
                 {
-                    currentMinVal = 0;
-                    currentMaxMode = 0;
-                    mode = 1;
-                }
-                if (data[i] > currentMinVal && currentMaxMode > mode)
-                {
-                    currentMinVal = data[i];
-                    mode = currentMinVal;
-                    currentMaxMode = 1;
+                    mode = data[i];
                 }
                 if (data[i] == data[i + 1])
                 {
-                    currentMaxMode++;
+                    if (data[i] == )
+                    {
+                        
+                    }
                 }
             }
             catch (IndexOutOfBoundsException e)
