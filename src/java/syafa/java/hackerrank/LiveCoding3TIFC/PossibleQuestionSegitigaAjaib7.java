@@ -29,5 +29,27 @@ public class PossibleQuestionSegitigaAjaib7
                 System.out.print("\n");
             }
         }
+        System.out.println();
+        space = 0;
+        for (int i = staricaseSize; i > 0; i--)
+        {
+            for (int j = space; j > 0; j--)
+            {
+                System.out.print(' ');
+            }
+            space++;
+            for (int j = i; j > 0; j--)
+            {
+                System.out.print('*');
+                if (j != 1)
+                {
+                    System.out.print(' ');
+                }
+            }
+            if (i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
