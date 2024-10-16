@@ -15,26 +15,35 @@ public class MigratoryBirds
         input.close();
         Arrays.sort(sightings);
         int checkType = sightings[0];
-        int checkSightings = 0;
-        int mostType = 0;
-        int mostSightings = 1;
+        int mode = 0;
+        int currentMinVal = 0;
+        int currentMaxMode = 1;
+        int maxMode = 0;
         for (int i = 0; i < sightings.length; i++)
         {
-            if (!(checkType == sightings[i]))
+            try
             {
-                checkType = sightings[i];
-                checkSightings = 0;
+                if (i == 0)
+                {
+                    mode = sightings[i];
+                    maxMode = sightings[i];
+                }
+                if (sightings[i] == sightings[i + 1])
+                {
+                    currentMaxMode++;
+                }
+                if ((currentMaxMode > mode) && (sightings[i] > currentMinVal))
+                {
+                    mode = currentMaxMode;
+                    currentMinVal = sightings[i];
+                    maxMode = sightings[i];
+                    currentMaxMode = 1;
+                }
             }
-            if (sightings[i] == checkType)
+            catch (IndexOutOfBoundsException e)
             {
-                checkSightings++;
+                System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
             }
-            if ((checkType > mostType) && (checkSightings > mostSightings))
-            {
-                mostType = checkType;
-                mostSightings = checkSightings;
-            }
-        }
         System.out.print(mostType);
     }
 }
