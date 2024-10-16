@@ -49,7 +49,7 @@ public class PossibleQuestionSegitigaAjaib9
             for (int j = 0; j <= i; j++)
             {
                 System.out.print('*');
-                if ((j - staricaseSize != 0) && (i != 0))
+                if ((j - i != 0) && (i != 0))
                 {
                     System.out.print(' ');
                 }
@@ -58,7 +58,6 @@ public class PossibleQuestionSegitigaAjaib9
             {
                 System.out.print('n');
             }
-            System.out.print('a');
             if (staricaseSize - i != 1)
             {
                 System.out.print("\n");
