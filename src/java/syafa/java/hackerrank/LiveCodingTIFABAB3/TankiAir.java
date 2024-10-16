@@ -28,7 +28,11 @@ public class TankiAir
         {
             if (waterTank[i] == 100)
             {
-                result[i] = 0;
+                if (result[i] == 0)
+                {
+                    continue;
+                }
+                result[i] = result[i] + 1;
                 continue;
             }
             if (waterTank[i] > 100)
