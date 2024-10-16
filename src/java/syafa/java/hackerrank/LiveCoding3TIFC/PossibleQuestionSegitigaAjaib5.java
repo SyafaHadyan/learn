@@ -14,10 +14,6 @@ public class PossibleQuestionSegitigaAjaib5
             for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
-                if (space - j != 0)
-                {
-                    System.out.print(' ');
-                }
             }
             space--;
             for (int j = 0; j <= i; j++)
@@ -29,7 +25,9 @@ public class PossibleQuestionSegitigaAjaib5
                 }
             }
             if (staricaseSize - i != 1)
-            System.out.print("\n");
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
