@@ -32,8 +32,8 @@ public class PossibleQuestionSegitigaAjaib8
             System.out.print("\n");
         }
         System.out.print("\n");
-        space = 0;
-        for (int i = staricaseSize; i > 0; i--)
+        space = 1;
+        for (int i = staricaseSize - 1; i > 0; i--)
         {
             for (int j = space; j > 0; j--)
             {
