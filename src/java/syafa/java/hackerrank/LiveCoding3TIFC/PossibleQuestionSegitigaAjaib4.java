@@ -21,8 +21,10 @@ public class PossibleQuestionSegitigaAjaib4
             {
                 System.out.print('*');
             }
-            //if (staricaseSize - i != 1)
-            System.out.print("\n");
+            if (i != 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
