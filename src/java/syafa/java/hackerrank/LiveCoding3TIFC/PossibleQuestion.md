@@ -43,3 +43,15 @@ Output:
   * *
 * * *
 ```
+
+## Segitiga Ajaib 1
+
+Input: `3`
+
+Output:
+
+```txt
+*
+* *
+* * *
+```
