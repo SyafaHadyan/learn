@@ -11,6 +11,10 @@ public class PossibleQuestionSegitigaAjaib9
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
+            for (int j = 0; j < staricaseSize; j++)
+            {
+                System.out.print(' ');
+            }
             for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
