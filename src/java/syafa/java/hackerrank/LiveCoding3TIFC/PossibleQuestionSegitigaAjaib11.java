@@ -17,11 +17,16 @@ public class PossibleQuestionSegitigaAjaib11
          * 1 4 6 4 1
          * 1 5 10 10 5 1
          */
+        /*
+         *  1 3 3 1
+         * 1 4 6 4 1
+         */
         for (int i = 0; i < triangleLevel; i++)
         {
             for (int j = 0; j <= i; j++)
             {
                 System.out.print(values[j]);
+                values[j + 1] = values[0] + 1;
             }
         }
     }
