@@ -109,5 +109,31 @@ public class PossibleQuestionSegitigaAjaib9
                 System.out.print("\n");
             }
         }
+        System.out.print("\n");
+        space = (staricaseSize * 2) - 1;
+        for (int i = 0; i < staricaseSize; i++)
+        {
+            for (int j = 0; j < (staricaseSize * 2) - 1; j++)
+            {
+                System.out.print(' ');
+            }
+            for (int j = 0; j < space; j++)
+            {
+                System.out.print(' ');
+            }
+            space -= 2;
+            for (int j = 0; j <= i * 2; j++)
+            {
+                System.out.print('*');
+                if ((j - i * 2 != 0) && (i != 0))
+                {
+                    System.out.print(' ');
+                }
+            }
+            if (staricaseSize - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
