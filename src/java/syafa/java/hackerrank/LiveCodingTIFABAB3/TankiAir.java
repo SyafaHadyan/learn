@@ -39,6 +39,7 @@ public class TankiAir
                 {
                     waterTank[i] -= 4;
                     currentPhase++;
+                    continue;
                 }
                 else if (currentPhase >= 10 && currentPhase <= 14)
                 {
@@ -46,12 +47,33 @@ public class TankiAir
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
+                        continue;
                     }
                 }
             }
             if (waterTank[i] < 100)
             {
-                //
+                if (currentPhase >= 0 && currentPhase <= 4)
+                {
+                    waterTank[i] += 3;
+                    currentPhase++;
+                    continue;
+                }
+                else if (currentPhase >= 5 && currentPhase <= 9)
+                {
+                    waterTank[i] += 5;
+                    currentPhase++;
+                    continue;
+                }
+                else if (currentPhase >= 10 && currentPhase <= 14)
+                {
+                    waterTank[i] += 3;
+                    if (currentPhase == 14)
+                    {
+                        currentPhase = 0;
+                        continue;
+                    }
+                }
             }
         }
         input.close();
