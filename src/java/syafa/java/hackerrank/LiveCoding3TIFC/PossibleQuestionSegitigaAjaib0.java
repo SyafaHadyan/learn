@@ -23,7 +23,7 @@ public class PossibleQuestionSegitigaAjaib0
             for (int j = 0; j <= i; j++)
             {
                 System.out.print('*');
-                if (j - staricaseSize != 0)
+                if ((j - staricaseSize != 0) && (i != 0))
                 {
                     System.out.print(' ');
                 }
