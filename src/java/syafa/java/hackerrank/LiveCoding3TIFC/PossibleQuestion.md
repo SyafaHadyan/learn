@@ -55,3 +55,18 @@ Output:
 * *
 * * *
 ```
+
+## Segitiga Ajaib 2
+
+Input: `3`
+
+Output:
+
+```txt
+*
+*
+* *
+* *
+* * *
+* * *
+```
