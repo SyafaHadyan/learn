@@ -110,7 +110,7 @@ public class PossibleQuestionSegitigaAjaib9
             }
         }
         System.out.print("\n");
-        space = (staricaseSize * 2) - 1;
+        space = - 1;
         for (int i = staricaseSize; i > 0; i--)
         {
             for (int j = (staricaseSize * 2) - 1; j > 0; j--)
