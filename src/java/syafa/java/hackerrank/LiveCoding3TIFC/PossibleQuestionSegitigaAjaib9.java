@@ -11,7 +11,7 @@ public class PossibleQuestionSegitigaAjaib9
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
-            for (int j = 0; j < staricaseSize + staricaseSize - 1; j++)
+            for (int j = 0; j < (staricaseSize * 2) - 1; j++)
             {
                 System.out.print(' ');
             }
@@ -20,7 +20,7 @@ public class PossibleQuestionSegitigaAjaib9
                 System.out.print(' ');
             }
             space -= 2;
-            for (int j = 0; j <= i; j++)
+            for (int j = 0; j <= i * 2; j++)
             {
                 System.out.print('*');
                 if ((j - staricaseSize != 0) && (i != 0))
