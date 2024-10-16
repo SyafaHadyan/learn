@@ -125,10 +125,13 @@ public class PossibleQuestionSegitigaAjaib9
             for (int j = i * 2; j > 0; j--)
             {
                 System.out.print('*');
+                System.out.print(' ');
+                /*
                 if ((j - i * 2 != 0) && (i != 0))
                 {
                     System.out.print(' ');
                 }
+                */
             }
             System.out.println();
         }
