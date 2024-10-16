@@ -9,15 +9,22 @@ public class PossibleQuestionSegitigaAjaib10
         int fibonacci = Integer.parseInt(input.nextLine());
         input.close();
         int previous = 0;
-        int current = 1;
+        int current = 0;
         int nextSequence = 0;
         for (int i = 0; i <= fibonacci; i++)
         {
             if (i == 0)
             {
-                //currentIncr = 1;
+                nextSequence = 0;
+                continue;
+            }
+            if (i == 1)
+            {
+                nextSequence = 1;
+                continue;
             }
             nextSequence = previous + current;
+            previous = nextSequence;
             current = nextSequence;
             /*
              * 0
