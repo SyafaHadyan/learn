@@ -33,7 +33,10 @@ public class PossibleQuestionSegitigaAjaib11
                 }
                 catch (IndexOutOfBoundsException e)
                 {
-                    //
+                    for (int k = 0; k < values.length; k++)
+                    {
+                        prevValues[k] = values[j];
+                    }
                 }
             }
         }
