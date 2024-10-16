@@ -8,7 +8,7 @@ public class PossibleQuestionSegitigaAjaib11
         Scanner input = new Scanner(System.in);
         int triangleLevel = Integer.parseInt(input.nextLine());
         input.close();
-        ArrayList<Integer> values = new ArrayList<>();
+        int[] values = new int[triangleLevel + 1];
         /*
          * 1
          * 1 1
@@ -21,8 +21,7 @@ public class PossibleQuestionSegitigaAjaib11
         {
             for (int j = 0; j <= i; j++)
             {
-                System.out.print(values.get(j));
-
+                System.out.print(values[j]);
             }
         }
     }
