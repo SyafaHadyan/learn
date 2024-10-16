@@ -37,12 +37,14 @@ public class TankiAir
                 {
                     waterTank[i] -= 4;
                     currentPhase++;
+                    i--;
                     continue;
                 }
                 else if (currentPhase >= 5 && currentPhase <= 9)
                 {
                     waterTank[i] -= 4;
                     currentPhase++;
+                    i--;
                     continue;
                 }
                 else if (currentPhase >= 10 && currentPhase <= 14)
@@ -51,6 +53,7 @@ public class TankiAir
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
+                        i--;
                         continue;
                     }
                 }
@@ -61,12 +64,14 @@ public class TankiAir
                 {
                     waterTank[i] += 3;
                     currentPhase++;
+                    i--;
                     continue;
                 }
                 else if (currentPhase >= 5 && currentPhase <= 9)
                 {
                     waterTank[i] += 5;
                     currentPhase++;
+                    i--;
                     continue;
                 }
                 else if (currentPhase >= 10 && currentPhase <= 14)
@@ -75,12 +80,13 @@ public class TankiAir
                     if (currentPhase == 14)
                     {
                         currentPhase = 0;
+                        i--;
                         continue;
                     }
                 }
             }
         }
         input.close();
-        System.out.print(Arrays.stream(result));
+        Arrays.stream(result).forEach(System.out::println);;
     }
 }
