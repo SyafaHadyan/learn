@@ -17,8 +17,10 @@ public class PossibleQuestionSegitigaAjaib3
                     for (int l = 0; l < 2; l++)
                     {
                         System.out.print('*');
-                        System.out.print(' ');
-                        //if ()
+                        if (l == 0)
+                        {
+                            System.out.print(' ');
+                        }
                     }
                     if ((k - staricaseSize != 0) && (i != 0))
                     {
