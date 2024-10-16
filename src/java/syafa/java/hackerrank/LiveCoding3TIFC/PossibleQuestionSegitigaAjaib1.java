@@ -7,7 +7,6 @@ public class PossibleQuestionSegitigaAjaib1
     {
         Scanner input = new Scanner(System.in);
         int staricaseSize = Integer.parseInt(input.nextLine());
-        int space = staricaseSize - 1;
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
