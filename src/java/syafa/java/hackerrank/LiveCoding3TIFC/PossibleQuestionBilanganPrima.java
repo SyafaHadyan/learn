@@ -13,7 +13,7 @@ public class PossibleQuestionBilanganPrima
             System.out.print("Bukan prima");
             return;
         }
-        for (int i = 1; i < numberCheck; i++)
+        for (int i = 2; i < numberCheck; i++)
         {
             if (numberCheck % i == 0)
             {
