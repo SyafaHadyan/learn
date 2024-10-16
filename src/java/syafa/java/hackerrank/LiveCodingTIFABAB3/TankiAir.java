@@ -9,6 +9,7 @@ public class TankiAir
         int testCase = Integer.parseInt(input.nextLine());
         int waterTank = 0;
         int[] result = new int[testCase];
+        int currentPhase = 0;
         /*
          * phase0 = normal = inc 3
          * phase1 = rain = inc 5
@@ -28,18 +29,21 @@ public class TankiAir
             }
             if (waterTank > 100)
             {
-                if (i >= 0 && i <= 4)
+                if (currentPhase >= 0 && currentPhase <= 4)
                 {
                     //
                 }
-                else if (i >= 5 && i <= 9)
+                else if (currentPhase >= 5 && currentPhase <= 9)
                 {
                     //
                 }
-                else if (i >= 10 && i <= 14)
+                else if (currentPhase >= 10 && currentPhase <= 14)
                 {
                     //
-                    i = -1;
+                    if (currentPhase == 14)
+                    {
+                        currentPhase = 0;
+                    }
                 }
             }
             if (waterTank < 100)
