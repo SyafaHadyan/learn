@@ -11,19 +11,19 @@ public class PossibleQuestionSegitigaAjaib10
         int previous = 0;
         int current = 1;
         int nextSequence = 0;
+        if (fibonacci == 0)
+        {
+            System.out.print(0);
+            return;
+        }
+        if (fibonacci == 1)
+        {
+            System.out.println(0);
+            System.out.print(1);
+            return;
+        }
         for (int i = 2; i <= fibonacci; i++)
         {
-            if (fibonacci == 2)
-            {
-                nextSequence = 0;
-                i--;
-            }
-            if (fibonacci == 1)
-            {
-                nextSequence = 1;
-                i--;
-            }
-            else
             {
                 nextSequence = current + previous;
                 previous = current;
