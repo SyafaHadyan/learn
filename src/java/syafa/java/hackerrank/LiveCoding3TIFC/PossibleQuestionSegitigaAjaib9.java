@@ -111,18 +111,18 @@ public class PossibleQuestionSegitigaAjaib9
         }
         System.out.print("\n");
         space = (staricaseSize * 2) - 1;
-        for (int i = 0; i < staricaseSize; i++)
+        for (int i = staricaseSize; i > 0; i--)
         {
-            for (int j = 0; j < (staricaseSize * 2) - 1; j++)
+            for (int j = (staricaseSize * 2) - 1; j > 0; j--)
             {
                 System.out.print(' ');
             }
-            for (int j = 0; j < space; j++)
+            for (int j = space; j > 0; j--)
             {
                 System.out.print(' ');
             }
-            space -= 2;
-            for (int j = 0; j <= i * 2; j++)
+            space += 2;
+            for (int j = i * 2; j > 0; j--)
             {
                 System.out.print('*');
                 if ((j - i * 2 != 0) && (i != 0))
