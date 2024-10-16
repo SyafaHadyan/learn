@@ -47,11 +47,11 @@ public class Day0MeanMedianAndMode
                     {
                         currentMaxMode++;
                     }
-                    if (currentMaxMode > mode)
-                    {
-                        mode = data[i];
-                        currentMinVal = data[i];
-                    }
+                }
+                if (currentMaxMode > mode)
+                {
+                    mode = data[i];
+                    currentMinVal = data[i];
                 }
             }
             catch (IndexOutOfBoundsException e)
