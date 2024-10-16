@@ -14,7 +14,12 @@ public class PossibleQuestionSegitigaAjaib3
             {
                 for (int k = 0; k <= i; k++)
                 {
-                    System.out.print('*');
+                    for (int l = 0; l < 2; l++)
+                    {
+                        System.out.print('*');
+                        System.out.print(' ');
+                        //if ()
+                    }
                     if ((k - staricaseSize != 0) && (i != 0))
                     {
                         System.out.print(' ');
