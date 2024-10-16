@@ -77,5 +77,6 @@ public class TankiAir
             }
         }
         input.close();
+        System.out.print(Arrays.stream(result));
     }
 }
