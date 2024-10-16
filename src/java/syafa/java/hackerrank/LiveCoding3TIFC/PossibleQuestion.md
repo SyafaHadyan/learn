@@ -80,7 +80,6 @@ Input:
 3
 ```
 
-
 Output:
 
 ```txt
