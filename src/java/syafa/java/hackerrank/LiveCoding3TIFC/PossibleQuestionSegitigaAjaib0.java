@@ -13,5 +13,14 @@ public class PossibleQuestionSegitigaAjaib0
         {
             System.out.print(' ');
         }
+        space--;
+        for (int i = 0; i < staricaseSize; i++)
+        {
+            System.out.print('*');
+            if (i - staricaseSize != 0)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
