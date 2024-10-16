@@ -27,12 +27,12 @@ public class Day0MeanMedianAndMode
                 mean /= data.length;
             }
         }
+        Arrays.sort(data);
         median = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2;
         if (data.length % 2 != 0)
         {
-            median = data[data.length / 2];
+            median = data[data.length / 2 + 1];
         }
-        Arrays.sort(data);
         for (int i = 0; i < data.length; i++)
         {
             try
