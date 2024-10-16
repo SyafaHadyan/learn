@@ -17,7 +17,7 @@ public class PossibleQuestionSegitigaAjaib4
                 //System.out.print(' ');
             }
             space++;
-            for (int j = i; j >= 0; j--)
+            for (int j = i; j > 0; j--)
             {
                 System.out.print('*');
             }
