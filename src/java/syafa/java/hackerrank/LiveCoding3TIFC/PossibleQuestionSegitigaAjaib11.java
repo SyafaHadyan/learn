@@ -22,6 +22,7 @@ public class PossibleQuestionSegitigaAjaib11
          *  1 3 3 1
          * 1 4 6 4 1
          */
+        prevValues[0] = 1;
         for (int i = 0; i < triangleLevel; i++)
         {
             for (int j = 0; j <= i; j++)
