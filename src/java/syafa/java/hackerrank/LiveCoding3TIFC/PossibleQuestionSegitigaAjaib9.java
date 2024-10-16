@@ -7,7 +7,7 @@ public class PossibleQuestionSegitigaAjaib9
     {
         Scanner input = new Scanner(System.in);
         int staricaseSize = Integer.parseInt(input.nextLine());
-        int space = staricaseSize + staricaseSize - 1;
+        int space = (staricaseSize * 2) - 1;
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
@@ -57,6 +57,14 @@ public class PossibleQuestionSegitigaAjaib9
             for (int j = 0; j < (staricaseSize * 3); j++)
             {
                 System.out.print('n');
+            }
+            for (int j = 0; j <= i; j++)
+            {
+                System.out.print('*');
+                if ((j - i != 0) && (i != 0))
+                {
+                    System.out.print(' ');
+                }
             }
             if (staricaseSize - i != 1)
             {
