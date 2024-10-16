@@ -117,7 +117,7 @@ public class PossibleQuestionSegitigaAjaib9
             {
                 System.out.print(' ');
             }
-            for (int j = space; j > 0; j--)
+            for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
             }
