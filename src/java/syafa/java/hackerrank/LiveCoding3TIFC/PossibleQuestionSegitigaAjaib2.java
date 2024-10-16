@@ -20,10 +20,15 @@ public class PossibleQuestionSegitigaAjaib2
                         System.out.print(' ');
                     }
                 }
-                System.out.println();
+                if (j != 1)
+                {
+                    System.out.print("\n");
+                }
             }
             if (staricaseSize - i != 1)
-            System.out.print("\n");
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
