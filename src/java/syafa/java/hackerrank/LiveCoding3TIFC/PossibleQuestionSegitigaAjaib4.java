@@ -23,7 +23,10 @@ public class PossibleQuestionSegitigaAjaib4
             for (int j = i; j > 0; j--)
             {
                 System.out.print('*');
-                System.out.print(' ');
+                if (j != 1)
+                {
+                    System.out.print(' ');
+                }
             }
             if (i != 1)
             {
