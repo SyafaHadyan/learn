@@ -49,7 +49,8 @@ public class Day0MeanMedianAndMode
                     }
                     if (currentMaxMode > mode)
                     {
-                        mode = currentMaxMode;
+                        mode = data[i];
+                        currentMinVal = data[i];
                     }
                 }
             }
