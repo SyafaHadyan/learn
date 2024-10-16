@@ -29,17 +29,11 @@ public class PossibleQuestionSegitigaAjaib10
                 previous = current;
                 current = nextSequence;
             }
-            System.out.println(nextSequence);
-            /*
-             * 0
-             * 1
-             * 1
-             * 2
-             * 3
-             * 5
-             * 8
-             */
+            System.out.print(nextSequence);
+            if (i != fibonacci)
+            {
+                System.out.print("\n");
+            }
         }
-        //System.out.print(nextSequence);
     }
 }
