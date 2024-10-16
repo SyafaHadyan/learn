@@ -42,8 +42,8 @@ public class MigratoryBirds
             }
             catch (IndexOutOfBoundsException e)
             {
-                System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
+                System.out.print(maxMode);
             }
-        System.out.print(mostType);
+        }
     }
 }
