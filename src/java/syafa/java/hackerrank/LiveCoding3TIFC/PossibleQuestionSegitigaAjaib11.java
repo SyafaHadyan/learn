@@ -6,11 +6,9 @@ public class PossibleQuestionSegitigaAjaib11
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int fibonacci = Integer.parseInt(input.nextLine());
+        int triangleLevel = Integer.parseInt(input.nextLine());
         input.close();
-        int previous = 0;
-        int current = 1;
-        int nextSequence = 0;
+        ArrayList<Integer> values = new ArrayList<>();
         /*
          * 1
          * 1 1
@@ -19,5 +17,13 @@ public class PossibleQuestionSegitigaAjaib11
          * 1 4 6 4 1
          * 1 5 10 10 5 1
          */
+        for (int i = 0; i < triangleLevel; i++)
+        {
+            for (int j = 0; j <= i; j++)
+            {
+                System.out.print(values.get(j));
+
+            }
+        }
     }
 }
