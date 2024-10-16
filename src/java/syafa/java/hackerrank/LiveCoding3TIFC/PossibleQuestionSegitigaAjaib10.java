@@ -8,8 +8,8 @@ public class PossibleQuestionSegitigaAjaib10
         Scanner input = new Scanner(System.in);
         int fibonacci = Integer.parseInt(input.nextLine());
         input.close();
-        int previous = 0;
-        int current = 0;
+        int previous = 1;
+        int current = 1;
         int nextSequence = 0;
         for (int i = 0; i <= fibonacci; i++)
         {
