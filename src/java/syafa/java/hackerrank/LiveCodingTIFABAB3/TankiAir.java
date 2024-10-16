@@ -93,6 +93,6 @@ public class TankiAir
             }
         }
         input.close();
-        Arrays.stream(result).forEach(System.out::println);;
+        Arrays.stream(result).forEach(System.out::println);
     }
 }
