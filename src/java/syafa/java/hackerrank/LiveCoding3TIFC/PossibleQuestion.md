@@ -74,7 +74,12 @@ Bukan prima
 
 ## Segitiga Ajaib 0
 
-Input: `3`
+Input:
+
+```txt
+3
+```
+
 
 Output:
 
@@ -86,7 +91,11 @@ Output:
 
 ## Segitiga Ajaib 1
 
-Input: `3`
+Input:
+
+```txt
+3
+```
 
 Output:
 
@@ -98,7 +107,11 @@ Output:
 
 ## Segitiga Ajaib 2
 
-Input: `3`
+Input:
+
+```txt
+3
+```
 
 Output:
 
@@ -113,7 +126,11 @@ Output:
 
 ## Segitiga Ajaib 3
 
-Input: `3`
+Input:
+
+```txt
+3
+```
 
 Output:
 
