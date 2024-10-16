@@ -8,11 +8,13 @@ public class Day0MeanMedianAndMode
         Scanner input = new Scanner(System.in);
         int dataLength = Integer.parseInt(input.nextLine());
         int[] data = new int[dataLength];
+        //ArrayList<Integer> maxMode = new ArrayList<>();
         double mean = 0.0;
         double median = 0.0;
         int mode = 0;
         int currentMinVal = 0;
         int currentMaxMode = 0;
+        int maxMode = 0;
         for (int i = 0; i < data.length; i++)
         {
             data[i] = Integer.parseInt(input.next());
@@ -43,20 +45,20 @@ public class Day0MeanMedianAndMode
                 }
                 if (data[i] == data[i + 1])
                 {
-                    if (data[i] == currentMinVal)
-                    {
-                        currentMaxMode++;
-                    }
+                    currentMaxMode++;
                 }
-                if (currentMaxMode > mode)
+                if ((currentMaxMode > mode) && (data[i] > currentMinVal))
                 {
-                    mode = data[i];
-                    currentMinVal = data[i];
+                    mode = currentMaxMode;
+                    currentMinVal = data[i + 1];
+                    currentMaxMode = mode;
+                    maxMode = 0;
+                    currentMaxMode = 0;
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                System.out.printf("%.1f\n%.1f\n%d",mean,median,mode);
+                System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
             }
         }
     }
