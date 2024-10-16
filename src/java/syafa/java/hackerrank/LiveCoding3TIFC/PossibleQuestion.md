@@ -2,35 +2,75 @@
 
 ## Total Bilangan
 
-Input: `5`
+Input:
 
-Output: `15`
+```txt
+5
+```
+
+Output:
+
+```txt
+15
+```
 
 ## Bilangan Prima
 
 ### Test Case 0
 
-Input: `1`
+Input:
 
-Output: `Bukan prima`
+```txt
+1
+```
+
+Output:
+
+```txt
+Bukan prima
+```
 
 ### Test Case 1
 
-Input: `2`
+Input:
 
-Output: `Prima`
+```txt
+2
+```
+
+Output:
+
+```txt
+Prima
+```
 
 ### Test Case 2
 
-Input: `3`
+Input:
 
-Output: `Prima`
+```txt
+3
+```
+
+Output:
+
+```txt
+Prima
+```
 
 ### Test Case 3
 
-Input: `4`
+Input:
 
-Output: `Bukan prima`
+```txt
+4
+```
+
+Output:
+
+```txt
+Bukan prima
+```
 
 ## Segitiga Ajaib 0
 
