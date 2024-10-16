@@ -9,10 +9,15 @@ public class PossibleQuestionSegitigaAjaib10
         int fibonacci = Integer.parseInt(input.nextLine());
         input.close();
         int currentSeq = 0;
-        int currentIncr = 1;
+        int currentIncr = 0;
+        int nextSeq = 0;
         for (int i = 0; i <= fibonacci; i++)
         {
-            currentSeq += currentIncr;
+            if (i == 0)
+            {
+                currentIncr = 1;
+            }
+            nextSeq = currentSeq + currentIncr;
             /*
              * 0
              * 1
@@ -23,6 +28,6 @@ public class PossibleQuestionSegitigaAjaib10
              * 8
              */
         }
-        System.out.print(currentSeq);
+        System.out.print(nextSeq);
     }
 }
