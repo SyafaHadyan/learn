@@ -10,13 +10,17 @@ public class PossibleQuestionSegitigaAjaib2
         input.close();
         for (int i = 0; i < staricaseSize; i++)
         {
-            for (int j = 0; j <= i; j++)
+            for (int j = 0; j < 2; j++)
             {
-                System.out.print('*');
-                if ((j - staricaseSize != 0) && (i != 0))
+                for (int k = 0; k <= i; k++)
                 {
-                    System.out.print(' ');
+                    System.out.print('*');
+                    if ((k - staricaseSize != 0) && (i != 0))
+                    {
+                        System.out.print(' ');
+                    }
                 }
+                System.out.println();
             }
             if (staricaseSize - i != 1)
             System.out.print("\n");
