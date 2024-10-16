@@ -36,6 +36,11 @@ public class PossibleQuestionSegitigaAjaib11
                     for (int k = 0; k < values.length; k++)
                     {
                         prevValues[k] = values[j];
+                        System.out.print(values[k]);
+                        if (values.length - k != 1)
+                        {
+                            System.out.print("\n");
+                        }
                     }
                 }
             }
