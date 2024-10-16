@@ -189,3 +189,21 @@ Output:
  * *
   *
 ```
+
+## Segitiga Ajaib 7
+
+Input:
+
+```txt
+3
+```
+
+Output:
+
+```txt
+  *
+ * *
+* * *
+ * *
+  *
+```
