@@ -13,5 +13,6 @@ public class PossibleQuestionTotalBilangan
         {
             totalNumber += i;
         }
+        System.out.print(totalNumber);
     }
 }
