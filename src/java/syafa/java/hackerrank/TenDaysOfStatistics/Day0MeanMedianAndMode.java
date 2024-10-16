@@ -50,9 +50,8 @@ public class Day0MeanMedianAndMode
                 if ((currentMaxMode > mode) && (data[i] > currentMinVal))
                 {
                     mode = currentMaxMode;
-                    currentMinVal = data[i + 1];
-                    currentMaxMode = mode;
-                    maxMode = 0;
+                    currentMinVal = data[i];
+                    maxMode = data[i];
                     currentMaxMode = 0;
                     i++;
                 }
