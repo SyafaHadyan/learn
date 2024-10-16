@@ -54,6 +54,12 @@ public class PossibleQuestionSegitigaAjaib9
                     System.out.print(' ');
                 }
             }
+            int temp = staricaseSize + staricaseSize - 1;
+            for (int j = 0; j < temp; j++)
+            {
+                System.out.print(' ');
+            }
+            System.out.print('a');
             if (staricaseSize - i != 1)
             {
                 System.out.print("\n");
@@ -76,10 +82,6 @@ public class PossibleQuestionSegitigaAjaib9
             {
                 System.out.print('*');
                 if (j != 1)
-                {
-                    System.out.print(' ');
-                }
-                for (int k = 0; k < staricaseSize + staricaseSize - 1; k++)
                 {
                     System.out.print(' ');
                 }
