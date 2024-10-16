@@ -13,7 +13,7 @@ public class PossibleQuestionSegitigaAjaib10
         int nextSequence = 0;
         for (int i = 2; i < fibonacci; i++)
         {
-            if (i == 2)
+            if (fibonacci == 2)
             {
                 nextSequence = 0;
                 i--;
