@@ -24,11 +24,10 @@ public class PossibleQuestionSegitigaAjaib10
         }
         for (int i = 2; i <= fibonacci; i++)
         {
-            {
-                nextSequence = current + previous;
-                previous = current;
-                current = nextSequence;
-            }
+            System.out.println(0 + "\n" + 1);
+            nextSequence = current + previous;
+            previous = current;
+            current = nextSequence;
             System.out.print(nextSequence);
             if (i != fibonacci)
             {
