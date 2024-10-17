@@ -255,7 +255,7 @@ Output:
 Input:
 
 ```txt
-6
+5
 ```
 
 Output:
