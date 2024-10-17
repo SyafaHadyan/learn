@@ -86,7 +86,7 @@ public class PossibleQuestionSegitigaAjaib11
             for (int k = 1; k <= j; k++)
             {
                 System.out.print(values[j][k]);
-                System.out.print(' ');
+                System.out.print("\t");
             }
             System.out.println();
         }
