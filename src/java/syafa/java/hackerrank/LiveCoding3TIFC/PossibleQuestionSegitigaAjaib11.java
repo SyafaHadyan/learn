@@ -66,7 +66,7 @@ public class PossibleQuestionSegitigaAjaib11
             {
                 System.out.print(' ');
             }
-            space--;
+            //space--;
             for (int j = 0; j <= i; j++)
             {
                 System.out.print('a');
@@ -83,6 +83,11 @@ public class PossibleQuestionSegitigaAjaib11
         System.out.println();
         for (int j = 1; j < triangleLevel; j++)
         {
+            for (int k = 0; k < space; k++)
+            {
+                System.out.print(' ');
+            }
+            space--;
             for (int k = 1; k <= j; k++)
             {
                 System.out.print(values[j][k]);
