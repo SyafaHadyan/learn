@@ -68,7 +68,7 @@ public class PossibleQuestionSegitigaAjaib11
             space--;
             for (int j = 0; j <= i; j++)
             {
-                System.out.print('*');
+                System.out.print('1');
                 if ((j - triangleLevel != 0) && (i != 0))
                 {
                     System.out.print(' ');
