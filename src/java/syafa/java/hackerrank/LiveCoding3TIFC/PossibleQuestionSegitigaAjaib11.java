@@ -69,19 +69,15 @@ public class PossibleQuestionSegitigaAjaib11
             space--;
             for (int j = 0; j <= i; j++)
             {
-                for (int k = 0; k < j; k++)
+                System.out.print('a');
+                if ((j - triangleLevel != 0) && (i != 0))
                 {
-                    System.out.print(values[j][k]);
-                    if ((j - triangleLevel != 0) && (i != 0))
-                    {
-                        System.out.print(' ');
-                    }
-                    if (triangleLevel - i != 1)
-                    {
-                        //System.out.print("\n");
-                    }
+                    System.out.print(' ');
                 }
-                System.out.println();
+            }
+            if (triangleLevel - i != 1)
+            {
+                System.out.print("\n");
             }
         }
     }
