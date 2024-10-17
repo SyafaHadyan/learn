@@ -249,3 +249,21 @@ Output:
         * * *
           *
 ```
+
+## Segitiga Ajaib 11
+
+Input:
+
+```txt
+6
+```
+
+Output:
+
+```txt
+    1
+   1 1
+  1 2 1
+ 1 3 3 1
+1 4 6 4 1
+```
