@@ -83,7 +83,7 @@ public class PossibleQuestionSegitigaAjaib11
         System.out.println();
         for (int j = 1; j < triangleLevel; j++)
         {
-            for (int k = 0; k < space; k++)
+            for (int k = 1; k < space; k++)
             {
                 System.out.print(' ');
             }
@@ -91,7 +91,10 @@ public class PossibleQuestionSegitigaAjaib11
             for (int k = 1; k <= j; k++)
             {
                 System.out.print(values[j][k]);
-                System.out.print(' ');
+                if (k != j)
+                {
+                    System.out.print(' ');
+                }
             }
             System.out.println();
         }
