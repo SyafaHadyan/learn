@@ -62,6 +62,7 @@ public class PossibleQuestionSegitigaAjaib11
                     }
                 }
             }
+            /*
             for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
@@ -79,8 +80,8 @@ public class PossibleQuestionSegitigaAjaib11
             {
                 System.out.print("\n");
             }
+                */
         }
-        System.out.println();
         for (int j = 1; j < triangleLevel; j++)
         {
             for (int k = 1; k < space; k++)
