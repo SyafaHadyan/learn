@@ -83,7 +83,7 @@ public class PossibleQuestionSegitigaAjaib11
         System.out.println();
         for (int j = 1; j < triangleLevel; j++)
         {
-            for (int k = 0; k < prevValues.length; k++)
+            for (int k = 1; k < prevValues.length; k++)
             {
                 System.out.print(values[j][k]);
             }
