@@ -10,7 +10,7 @@ public class PossibleQuestionSegitigaAjaib11
         triangleLevel++;
         input.close();
         int space = triangleLevel - 1;
-        if (triangleLevel == 0)
+        if (triangleLevel == 1)
         {
             System.out.print(1);
             return;
