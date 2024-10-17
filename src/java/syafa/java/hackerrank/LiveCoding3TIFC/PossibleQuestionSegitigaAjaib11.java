@@ -26,7 +26,7 @@ public class PossibleQuestionSegitigaAjaib11
          *  1 3 3 1
          * 1 4 6 4 1
          */
-        /*
+        
         prevValues[0] = 1;
         for (int i = 0; i < triangleLevel; i++)
         {
@@ -48,17 +48,19 @@ public class PossibleQuestionSegitigaAjaib11
                 {
                     for (int k = 0; k < values.length; k++)
                     {
+                        /*
                         prevValues[k] = values[j];
                         System.out.print(values[k]);
                         if (values.length - k != 1)
                         {
                             System.out.println("\n");
                         }
+                        */
                     }
                 }
             }
         }
-        */
+        
         for (int i = 0; i < triangleLevel; i++)
         {
             for (int j = 0; j < space; j++)
@@ -68,7 +70,7 @@ public class PossibleQuestionSegitigaAjaib11
             space--;
             for (int j = 0; j <= i; j++)
             {
-                System.out.print('1');
+                System.out.print(values[j]);
                 if ((j - triangleLevel != 0) && (i != 0))
                 {
                     System.out.print(' ');
