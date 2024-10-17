@@ -7,6 +7,7 @@ public class PossibleQuestionSegitigaAjaib11
     {
         Scanner input = new Scanner(System.in);
         int triangleLevel = Integer.parseInt(input.nextLine());
+        triangleLevel++;
         input.close();
         int space = triangleLevel - 1;
         int[][] values = new int[triangleLevel][triangleLevel];
