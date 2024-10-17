@@ -37,9 +37,9 @@ public class PossibleQuestionSegitigaAjaib11
                     //System.out.print(values[j]);
                     try
                     {
-                        if (k == 0 || k == 1)
+                        if (k == 0)
                         {
-                            values[j][k] = 1;
+                            values[0][0] = 1;
                         }
                         else
                         {
@@ -79,6 +79,15 @@ public class PossibleQuestionSegitigaAjaib11
             {
                 System.out.print("\n");
             }
+        }
+        System.out.println();
+        for (int j = 1; j < triangleLevel; j++)
+        {
+            for (int k = 0; k < prevValues.length; k++)
+            {
+                System.out.print(values[j][k]);
+            }
+            System.out.println();
         }
     }
 }
