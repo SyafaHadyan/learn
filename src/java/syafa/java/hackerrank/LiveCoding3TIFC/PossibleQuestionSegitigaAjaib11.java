@@ -97,7 +97,10 @@ public class PossibleQuestionSegitigaAjaib11
                     System.out.print(' ');
                 }
             }
-            System.out.println();
+            if (triangleLevel - j != 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
