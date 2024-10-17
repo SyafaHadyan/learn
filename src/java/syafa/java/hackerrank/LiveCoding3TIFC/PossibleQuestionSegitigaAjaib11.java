@@ -10,6 +10,11 @@ public class PossibleQuestionSegitigaAjaib11
         triangleLevel++;
         input.close();
         int space = triangleLevel - 1;
+        if (triangleLevel == 0)
+        {
+            System.out.print(1);
+            return;
+        }
         int[][] values = new int[triangleLevel][triangleLevel];
         //int[][] prevValues = new int[triangleLevel + 1][triangleLevel + 1];
         /*
