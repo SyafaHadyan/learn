@@ -9,8 +9,8 @@ public class PossibleQuestionSegitigaAjaib11
         int triangleLevel = Integer.parseInt(input.nextLine());
         input.close();
         int space = triangleLevel - 1;
-        int[][] values = new int[triangleLevel + 1][triangleLevel + 1];
-        int[][] prevValues = new int[triangleLevel + 1][triangleLevel + 1];
+        int[][] values = new int[triangleLevel][triangleLevel];
+        //int[][] prevValues = new int[triangleLevel + 1][triangleLevel + 1];
         /*
          * 1
          * 1 1
@@ -86,6 +86,7 @@ public class PossibleQuestionSegitigaAjaib11
             for (int k = 1; k <= j; k++)
             {
                 System.out.print(values[j][k]);
+                System.out.print(' ');
             }
             System.out.println();
         }
