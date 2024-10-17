@@ -28,41 +28,41 @@ public class PossibleQuestionSegitigaAjaib11
          */
         
         prevValues[0] = 1;
-        for (int i = 0; i < triangleLevel; i++)
-        {
-            for (int j = 0; j <= i; j++)
-            {
-                //System.out.print(values[j]);
-                try
-                {
-                    if (j == 0)
-                    {
-                        values[j + 1] = prevValues[j] + prevValues[j];
-                    }
-                    else
-                    {
-                        values[j + 1] = prevValues[j] + prevValues[j + 1];
-                    }
-                }
-                catch (IndexOutOfBoundsException e)
-                {
-                    for (int k = 0; k < values.length; k++)
-                    {
-                        /*
-                        prevValues[k] = values[j];
-                        System.out.print(values[k]);
-                        if (values.length - k != 1)
-                        {
-                            System.out.println("\n");
-                        }
-                        */
-                    }
-                }
-            }
-        }
         
         for (int i = 0; i < triangleLevel; i++)
         {
+            for (int j = 0; j < triangleLevel; j++)
+            {
+                for (int k = 0; k <= j; k++)
+                {
+                    //System.out.print(values[j]);
+                    try
+                    {
+                        if (k == 0)
+                        {
+                            values[k + 1] = prevValues[k] + prevValues[k];
+                        }
+                        else
+                        {
+                            values[k + 1] = prevValues[k] + prevValues[k + 1];
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        for (int l = 0; l < values.length; l++)
+                        {
+                            /*
+                            prevValues[k] = values[j];
+                            System.out.print(values[k]);
+                            if (values.length - k != 1)
+                            {
+                                System.out.println("\n");
+                            }
+                            */
+                        }
+                    }
+                }
+            }
             for (int j = 0; j < space; j++)
             {
                 System.out.print(' ');
