@@ -25,8 +25,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah selatan sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
                 i += 3;
                 counter++;
             }
@@ -34,8 +34,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah barat sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
                 i += 3;
                 counter++;
             }
@@ -43,8 +43,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah timur sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
                 i += 3;
                 counter++;
             }
