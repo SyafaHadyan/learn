@@ -18,6 +18,7 @@ public class PetaKartaKarun1
                 "ke arah utara sebanyak" +
                 Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
                 Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                i += 3;
             }
             else if (step.charAt(i) == 'S')
             {
@@ -33,7 +34,8 @@ public class PetaKartaKarun1
             }
         }
         /*
-         * U05U10B05B10
+         * 0 1 2 3 4 5 6 7 8 9 10
+         * U 0 5 U 1 0 B 0 5 B 10
          * 
          * Pak Dengklek akan berjalan ke arah utara sebanyak 5 langkah, ke arah utara sebanyak 10 langkah, ke arah barat sebanyak 5 langkah, ke arah barat sebanyak 10 langkah.
          */
