@@ -21,6 +21,7 @@ public class Matrix
         {
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
+        System.out.printf("%-55s%c\n%s\n%s","Choose operation",':',"Add","Substract","Multiply");
         input.close();
     }
 }
