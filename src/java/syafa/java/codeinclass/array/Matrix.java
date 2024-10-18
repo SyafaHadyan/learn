@@ -170,7 +170,7 @@ public class Matrix
                     }
                 }
             }
-            System.out.printf("\n%-20s%-2c","Repeat calculation (Y/N)",':');
+            System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
             if (repeatCalculationConfirmation.equalsIgnoreCase("N"))
             {
