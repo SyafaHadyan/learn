@@ -18,14 +18,14 @@ public class Matrix
          * Transpose
          * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
          */
-        boolean possibleMultiplication = true;
-        String possibleMultiplicationOption = "";
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
+        boolean possibleMultiplication = true;
+        String possibleMultiplicationOption = "";
         int[][] firstMatrix = new int[matrixSize[0]][];
         int[][] secondMatrix = new int[matrixSize[1]][];
+        System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
         for (int i = 0; i < matrixSize[0]; i++)
         {
             firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -40,7 +40,12 @@ public class Matrix
             possibleMultiplication = false;
             possibleMultiplicationOption = " [Not possible due to matrix size]";
         }
-        System.out.printf("%-20s%c\n%s\n%s\n%s%s","Choose operation",':',"Add","Substract","Multiply",possibleMultiplicationOption);
+        System.out.printf("%-20s%c\n%s\n%s\n%s%s","Choose operation",':',"(0) Add","(1) Substract","(1) Multiply",possibleMultiplicationOption);
+        //
         input.close();
+        if ()
+        {
+            //
+        }
     }
 }
