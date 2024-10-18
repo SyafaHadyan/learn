@@ -40,7 +40,7 @@ public class Matrix
             possibleMultiplication = false;
             possibleMultiplicationOption = " [Not possible due to matrix size]";
         }
-        System.out.printf("%s\n%s\n%s\n%s%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
+        System.out.printf("%s\n%s\n%s%s\n%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
         option = Integer.parseInt(input.nextLine());
         if (option == 0)
         {
@@ -85,6 +85,7 @@ public class Matrix
             }
             else
             {
+                input.close();
                 System.out.println("[Not possible due to matrix size]" + "\n" + "First matrix" + ':');
                 for (int i = 0; i < firstMatrix.length; i++)
                 {
@@ -96,7 +97,7 @@ public class Matrix
                             System.out.print(' ');
                         }
                     }
-                    if (matrixResult.length - i != 1)
+                    if (firstMatrix.length - i != 1)
                     {
                         System.out.print("\n");
                     }
@@ -112,11 +113,12 @@ public class Matrix
                             System.out.print(' ');
                         }
                     }
-                    if (matrixResult.length - i != 1)
+                    if (secondMatrix.length - i != 1)
                     {
                         System.out.print("\n");
                     }
                 }
+                return;
             }
         }
         input.close();
