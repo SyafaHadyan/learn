@@ -101,6 +101,22 @@ public class Matrix
                         System.out.print("\n");
                     }
                 }
+                System.out.print("\n");
+                for (int i = 0; i < secondMatrix.length; i++)
+                {
+                    for (int j = 0; j < secondMatrix[i].length; j++)
+                    {
+                        System.out.print(secondMatrix[i][j]);
+                        if (secondMatrix[i].length - j != 1)
+                        {
+                            System.out.print(' ');
+                        }
+                    }
+                    if (matrixResult.length - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
         }
         input.close();
