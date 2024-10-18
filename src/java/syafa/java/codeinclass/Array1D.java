@@ -10,7 +10,7 @@ public class Array1D
         BigInteger arraySize = new BigInteger(input.nextLine());
         input.close();
         BigInteger totalSum = BigInteger.ZERO;
-        int[] array = new int[Integer.parseInt(String.valueOf((Double.parseDouble(String.valueOf(arraySize)))))];
+        int[] array = new int[Integer.parseInt(String.valueOf(arraySize))];
         for (int i = 0; i < array.length; i++)
         {
             array[i] = i;
