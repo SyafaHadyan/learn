@@ -7,16 +7,16 @@ public class Array1D
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
+        BigInteger arraySize = new BigInteger(input.nextLine());
         input.close();
         BigInteger totalSum = BigInteger.ZERO;
-        int[] array = new int[arraySize];
-        for (int i = 0; i < arraySize; i++)
+        int[] array = new int[Integer.parseInt(String.valueOf((Double.parseDouble(String.valueOf(arraySize)))))];
+        for (int i = 0; i < array.length; i++)
         {
             array[i] = i;
             System.out.print(array[i]);
             totalSum = BigInteger.valueOf(Long.valueOf(String.valueOf(totalSum)) + i);
-            if (arraySize - i != 1)
+            if (array.length - i != 1)
             {
                 System.out.print("\n");
             }
