@@ -48,7 +48,8 @@ public class Matrix
         while (repeatCalculation)
         {
             //newValue = false;
-            System.out.printf("%s\n%s\n%s%s\n%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
+            System.out.printf("%s\n%s\n%s%s\n%-20s%-2c",
+                        "(0) Add","(1) Substract","(2) Multiply","(3) Multiply matrix n by n",possibleMultiplicationOption,"Choose operation",':');
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
             {
@@ -157,6 +158,10 @@ public class Matrix
                     }
                     return;
                 }
+            }
+            else if (option == 3)
+            {
+                //
             }
             if (option != 2)
             {
