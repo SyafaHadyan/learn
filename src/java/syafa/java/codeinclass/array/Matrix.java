@@ -37,7 +37,7 @@ public class Matrix
             possibleMultiplication = false;
             possibleMultiplicationOption = " [Not possible due to matrix size]";
         }
-        System.out.printf("%-50s%c\n%s\n%s\n%s%s","Choose operation",':',"Add","Substract","Multiply",possibleMultiplicationOption);
+        System.out.printf("%-20s%c\n%s\n%s\n%s%s","Choose operation",':',"Add","Substract","Multiply",possibleMultiplicationOption);
         input.close();
     }
 }
