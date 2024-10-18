@@ -23,7 +23,12 @@ public class PetaKartaKarun1
             }
             else if (step.charAt(i) == 'S')
             {
-                //
+                result[counter] =
+                "ke arah selatan sebanyak" +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                i += 3;
+                counter++;
             }
             else if (step.charAt(i) == 'B')
             {
