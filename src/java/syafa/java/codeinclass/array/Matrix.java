@@ -86,6 +86,7 @@ public class Matrix
             }
             else if (option == 2)
             {
+                int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < firstMatrix.length; i++)
@@ -94,7 +95,7 @@ public class Matrix
                         {
                             // Testing
                             // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
-                            matrixResult[firstMatrix.length][secondMatrix[i].length] =
+                            matrixMultiplicationResult[firstMatrix.length][secondMatrix[i].length] =
                         }
                     }
                 }
