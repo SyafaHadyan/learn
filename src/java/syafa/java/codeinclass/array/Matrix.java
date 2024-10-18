@@ -155,6 +155,12 @@ public class Matrix
                 input.close();
                 return;
             }
+            System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
+            repeatCalculationConfirmation = input.nextLine();
+            if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
+            {
+                //
+            }
         }
     }
 }
