@@ -157,6 +157,13 @@ public class Matrix
                         matrixMultiply[i][j][0] = firstMatrix[i][j] * multiplyMatrix;
                     }
                 }
+                for (int i = 0; i < matrixMultiply.length; i++)
+                {
+                    for (int j = 0; j < matrixResult[i].length; j++)
+                    {
+                        matrixMultiply[i][j][1] = secondMatrix[i][j] * multiplyMatrix;
+                    }
+                }
             }
             if (option != 2 && option != 3 && option >= 0)
             {
