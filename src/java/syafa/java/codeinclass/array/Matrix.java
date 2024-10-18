@@ -14,16 +14,18 @@ public class Matrix
          * Inverse
          * Transpose
          * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
+         * Add try-catch if user can't read
          */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int option = 0;
         int[] substractOrder = new int[2];
-        boolean possibleMultiplication = true;
-        String possibleMultiplicationOption = "";
         int[][] firstMatrix = new int[matrixSize[0]][];
         int[][] secondMatrix = new int[matrixSize[1]][];
+        int option = 0;
+        boolean possibleMultiplication = true;
+        boolean repeatCalculation = true;
+        String possibleMultiplicationOption = "";
         System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
         for (int i = 0; i < matrixSize[0]; i++)
         {
@@ -81,7 +83,13 @@ public class Matrix
         {
             if (possibleMultiplication)
             {
-                //
+                for (int i = 0; i < firstMatrix.length; i++)
+                {
+                    for (int j = 0; j < secondMatrix[i].length; j++)
+                    {
+                        //git
+                    }
+                }
             }
             else
             {
