@@ -210,6 +210,11 @@ public class Matrix
                         for (int k = 0; k < matrixMultiply.length; k++)
                         {
                             System.out.print(matrixMultiply[i][j][k]);
+                            if (matrixMultiply.length - k != 1)
+                            {
+                                System.out.print(' ');
+                            }
+                            System.out.print("\n");
                         }
                     }
                 }
