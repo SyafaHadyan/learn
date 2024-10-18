@@ -51,7 +51,7 @@ public class Matrix
             {
                 for (int j = 0; j < matrixResult[0].length; j++)
                 {
-                    //
+                    matrixResult[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
                 }
             }
         }
