@@ -168,7 +168,7 @@ public class Matrix
                 {
                     for (int j = 0; j < matrixResult[i].length; j++)
                     {
-                        //
+                        matrixResult[i][j] = firstMatrix[i][j] * multiplyMatrix;
                     }
                 }
             }
