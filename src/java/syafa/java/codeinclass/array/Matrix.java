@@ -203,7 +203,16 @@ public class Matrix
             }
             else if (option == 3)
             {
-                //
+                for (int i = 0; i < matrixMultiply.length; i++)
+                {
+                    for (int j = 0; j < matrixMultiply.length; j++)
+                    {
+                        for (int k = 0; k < matrixMultiply.length; k++)
+                        {
+                            //
+                        }
+                    }
+                }
             }
             System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
