@@ -66,7 +66,7 @@ public class Matrix
                     }
                 }
             }
-            else
+            else if (substractOrder[0] - substractOrder[1] == 1)
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
