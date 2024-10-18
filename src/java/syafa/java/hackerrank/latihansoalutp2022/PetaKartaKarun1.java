@@ -9,16 +9,16 @@ public class PetaKartaKarun1
         String step = input.nextLine();
         input.close();
         int counter = 0;
-        String[] result = new String[step.length()];
+        String[] result = new String[3];
         for (int i = 0; i < step.length(); i++)
         {
             if (step.charAt(i) == 'U')
             {
                 result[counter] =
                 "ke arah utara sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
-                i += 3;
+                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
+                i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'S')
@@ -27,7 +27,7 @@ public class PetaKartaKarun1
                 "ke arah selatan sebanyak" +
                 (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
                 Integer.parseInt(String.valueOf(step.charAt(i + 2))));
-                i += 3;
+                i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'B')
@@ -36,7 +36,7 @@ public class PetaKartaKarun1
                 "ke arah barat sebanyak" +
                 (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
                 Integer.parseInt(String.valueOf(step.charAt(i + 2))));
-                i += 3;
+                i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'T')
@@ -45,7 +45,7 @@ public class PetaKartaKarun1
                 "ke arah timur sebanyak" +
                 (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
                 Integer.parseInt(String.valueOf(step.charAt(i + 2))));
-                i += 3;
+                i += 2;
                 counter++;
             }
         }
@@ -53,6 +53,7 @@ public class PetaKartaKarun1
         for (int i = 0; i < result.length; i++)
         {
             System.out.print(result[i]);
+            System.out.print(" langkah");
             if (result.length - i == 1)
             {
                 System.out.print(", ");
