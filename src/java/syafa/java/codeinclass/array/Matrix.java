@@ -56,6 +56,7 @@ public class Matrix
         }
         else if (option == 1)
         {
+            System.out.printf("%s%-30s%-2c","Choose order to substract","(eg. 1 2 will result in 1-2)",':');
             for (int i = 0; i < matrixResult.length; i++)
             {
                 for (int j = 0; j < matrixResult[0].length; j++)
