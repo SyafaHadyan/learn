@@ -44,7 +44,6 @@ public class Matrix
         }
         System.out.printf("%s\n%s\n%s\n%s%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
         option = Integer.parseInt(input.nextLine());
-        input.close();
         if (option == 0)
         {
             for (int i = 0; i < matrixResult.length; i++)
@@ -84,6 +83,7 @@ public class Matrix
         {
             //
         }
+        input.close();
         for (int i = 0; i < matrixResult.length; i++)
         {
             for (int j = 0; j < matrixResult[0].length; j++)
