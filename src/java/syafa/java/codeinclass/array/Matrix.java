@@ -172,7 +172,7 @@ public class Matrix
                     }
                 }
             }
-            if (option != 2)
+            if (option != 2 && option != 3)
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
@@ -189,6 +189,14 @@ public class Matrix
                         System.out.print("\n");
                     }
                 }
+            }
+            else if (option == 2)
+            {
+                //
+            }
+            else if (option == 3)
+            {
+                //
             }
             System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
