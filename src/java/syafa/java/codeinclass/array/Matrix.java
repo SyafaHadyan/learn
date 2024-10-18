@@ -46,7 +46,7 @@ public class Matrix
         {
             for (int i = 0; i < matrixResult.length; i++)
             {
-                for (int j = 0; j < matrixResult[0].length; j++)
+                for (int j = 0; j < matrixResult[i].length; j++)
                 {
                     matrixResult[i][j] = firstMatrix[i][j] + secondMatrix[i][j];
                 }
@@ -60,7 +60,7 @@ public class Matrix
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
-                    for (int j = 0; j < matrixResult[0].length; j++)
+                    for (int j = 0; j < matrixResult[i].length; j++)
                     {
                         matrixResult[i][j] = firstMatrix[i][j] - secondMatrix[i][j];
                     }
@@ -70,7 +70,7 @@ public class Matrix
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
-                    for (int j = 0; j < matrixResult[0].length; j++)
+                    for (int j = 0; j < matrixResult[i].length; j++)
                     {
                         matrixResult[i][j] = secondMatrix[i][j] - firstMatrix[i][j];
                     }
