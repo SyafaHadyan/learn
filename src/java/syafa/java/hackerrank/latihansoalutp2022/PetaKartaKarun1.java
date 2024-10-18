@@ -41,7 +41,12 @@ public class PetaKartaKarun1
             }
             else if (step.charAt(i) == 'T')
             {
-                //
+                result[counter] =
+                "ke arah timur sebanyak" +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                i += 3;
+                counter++;
             }
         }
         /*
