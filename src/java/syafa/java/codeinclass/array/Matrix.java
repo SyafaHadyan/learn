@@ -73,6 +73,10 @@ public class Matrix
                     System.out.print(' ');
                 }
             }
+            if (matrixResult.length - i != 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
