@@ -9,8 +9,6 @@ public class Matrix
         /*
          * TODO
          * 
-         * Check when multiplication is possible
-         * Substract (Choose which matrix)
          * Multiply first and Second Matrix
          * Multiply matrix n by n
          * Inverse
@@ -81,7 +79,14 @@ public class Matrix
         }
         else if (option == 2)
         {
-            //
+            if (possibleMultiplication)
+            {
+                //
+            }
+            else
+            {
+                //
+            }
         }
         input.close();
         for (int i = 0; i < matrixResult.length; i++)
