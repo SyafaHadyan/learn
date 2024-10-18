@@ -14,7 +14,7 @@ public class Matrix
          * Inverse
          * Transpose
          * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
-         * Add try-catch if user can't read
+         * Add try-catch if user can't read instruction properly
          */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
@@ -41,6 +41,7 @@ public class Matrix
         }
         int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
+        int[][][] matrixMultiply = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2][2];
         if (firstMatrix.length != secondMatrix[0].length)
         {
             possibleMultiplication = false;
@@ -50,7 +51,7 @@ public class Matrix
         {
             //newValue = false;
             System.out.printf("%s\n%s\n%s%s\n%s%-20s%-2c",
-                    "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"(3) Multiply matrix n by n","Choose operation",':');
+                    "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"(3) Multiply matrix by n","Choose operation",':');
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
             {
