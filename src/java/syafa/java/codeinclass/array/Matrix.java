@@ -21,6 +21,7 @@ public class Matrix
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int option = 0;
         boolean possibleMultiplication = true;
         String possibleMultiplicationOption = "";
         int[][] firstMatrix = new int[matrixSize[0]][];
@@ -41,9 +42,17 @@ public class Matrix
             possibleMultiplicationOption = " [Not possible due to matrix size]";
         }
         System.out.printf("%-20s%c\n%s\n%s\n%s%s","Choose operation",':',"(0) Add","(1) Substract","(1) Multiply",possibleMultiplicationOption);
-        //
+        option = Integer.parseInt(input.nextLine());
         input.close();
-        if ()
+        if (option == 0)
+        {
+            //
+        }
+        else if (option == 1)
+        {
+            //
+        }
+        else if (option == 2)
         {
             //
         }
