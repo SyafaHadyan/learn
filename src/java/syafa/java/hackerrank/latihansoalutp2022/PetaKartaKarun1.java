@@ -19,6 +19,7 @@ public class PetaKartaKarun1
                 Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
                 Integer.parseInt(String.valueOf(step.charAt(i + 2)));
                 i += 3;
+                counter++;
             }
             else if (step.charAt(i) == 'S')
             {
