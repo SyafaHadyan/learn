@@ -15,9 +15,11 @@ public class Matrix
         {
             firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
-        for (int i = 0; i < firstMatrix.length; i++)
+        System.out.printf("%-55s%c\n","Input first matrix [Row Column] (Separate by space)",':');
+        int[][] secondMatrix = new int[matrixSize[0]][];
+        for (int i = 0; i < matrixSize[0]; i++)
         {
-            
+            secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
