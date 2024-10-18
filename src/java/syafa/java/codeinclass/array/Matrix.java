@@ -95,7 +95,22 @@ public class Matrix
                         {
                             // Testing
                             // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
-                            matrixMultiplicationResult[firstMatrix.length][secondMatrix[i].length] =
+                            matrixMultiplicationResult[firstMatrix.length][secondMatrix[i].length] = 0;
+                        }
+                    }
+                    for (int i = 0; i < matrixMultiplicationResult.length; i++)
+                    {
+                        for (int j = 0; j < matrixMultiplicationResult[0].length; j++)
+                        {
+                            System.out.print(matrixMultiplicationResult[i][j]);
+                            if (matrixMultiplicationResult[i].length - j != 1)
+                            {
+                                System.out.print(' ');
+                            }
+                        }
+                        if (matrixMultiplicationResult.length - i != 1)
+                        {
+                            System.out.print("\n");
                         }
                     }
                 }
@@ -137,19 +152,22 @@ public class Matrix
                     return;
                 }
             }
-            for (int i = 0; i < matrixResult.length; i++)
+            if (option != 2)
             {
-                for (int j = 0; j < matrixResult[0].length; j++)
+                for (int i = 0; i < matrixResult.length; i++)
                 {
-                    System.out.print(matrixResult[i][j]);
-                    if (matrixResult[i].length - j != 1)
+                    for (int j = 0; j < matrixResult[0].length; j++)
                     {
-                        System.out.print(' ');
+                        System.out.print(matrixResult[i][j]);
+                        if (matrixResult[i].length - j != 1)
+                        {
+                            System.out.print(' ');
+                        }
                     }
-                }
-                if (matrixResult.length - i != 1)
-                {
-                    System.out.print("\n");
+                    if (matrixResult.length - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
                 }
             }
             System.out.printf("\n%-20s%-2c","Repeat calculation (Y/N)",':');
