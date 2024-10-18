@@ -29,23 +29,23 @@ public class Matrix
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
         System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
+        for (int i = 0; i < matrixSize[0]; i++)
+        {
+            firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        }
+        System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
+        for (int i = 0; i < matrixSize[1]; i++)
+        {
+            secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        }
+        int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
+        if (firstMatrix.length != secondMatrix[0].length)
+        {
+            possibleMultiplication = false;
+            possibleMultiplicationOption = " [Not possible due to matrix size]";
+        }
         while (repeatCalculation)
         {
-            for (int i = 0; i < matrixSize[0]; i++)
-            {
-                firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            }
-            System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
-            for (int i = 0; i < matrixSize[1]; i++)
-            {
-                secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            }
-            int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
-            if (firstMatrix.length != secondMatrix[0].length)
-            {
-                possibleMultiplication = false;
-                possibleMultiplicationOption = " [Not possible due to matrix size]";
-            }
             //newValue = false;
             System.out.printf("%s\n%s\n%s%s\n%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
             option = Integer.parseInt(input.nextLine());
@@ -150,16 +150,16 @@ public class Matrix
                     System.out.print("\n");
                 }
             }
-            System.out.printf("%-20s%-2c","Repeat calculation (Y/N)",':');
+            System.out.printf("\n%-20s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
             if (repeatCalculationConfirmation.equalsIgnoreCase("N"))
             {
                 input.close();
                 return;
             }
+            /*
             System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
-            /*
             if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
             {
                 newValue = true;
