@@ -50,7 +50,7 @@ public class Matrix
         while (repeatCalculation)
         {
             //newValue = false;
-            System.out.printf("%s\n%s\n%s%s\n%s%-20s%-2c",
+            System.out.printf("%s\n%s\n%s%s\n%s\n%-20s%-2c",
                     "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"(3) Multiply matrix by n","Choose operation",':');
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
