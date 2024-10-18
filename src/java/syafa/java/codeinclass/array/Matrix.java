@@ -21,6 +21,7 @@ public class Matrix
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int option = 0;
+        int[] substractOrder = new int[2];
         boolean possibleMultiplication = true;
         String possibleMultiplicationOption = "";
         int[][] firstMatrix = new int[matrixSize[0]][];
@@ -57,6 +58,7 @@ public class Matrix
         else if (option == 1)
         {
             System.out.printf("%s%-30s%-2c","Choose order to substract","(eg. 1 2 will result in 1-2)",':');
+            substractOrder = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             for (int i = 0; i < matrixResult.length; i++)
             {
                 for (int j = 0; j < matrixResult[0].length; j++)
