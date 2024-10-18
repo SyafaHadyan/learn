@@ -10,10 +10,14 @@ public class Matrix
         System.out.printf("%-55s%-2c","Input matrix size [Row Column] (Separate by space)",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         System.out.printf("%-55s%-2c","Input first matrix [Row Column] (Separate by space)",':');
-        int[][] firstMatrix = new int[matrixSize[0]][matrixSize[1]];
+        int[][] firstMatrix = new int[matrixSize[0]][];
         for (int i = 0; i < matrixSize[0]; i++)
         {
             firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        }
+        for (int i = 0; i < firstMatrix.length; i++)
+        {
+            
         }
         input.close();
     }
