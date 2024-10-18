@@ -95,7 +95,7 @@ public class Matrix
                         {
                             // Testing
                             // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
-                            matrixMultiplicationResult[firstMatrix.length][secondMatrix[i].length] = 0;
+                            matrixMultiplicationResult[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
                         }
                     }
                     for (int i = 0; i < matrixMultiplicationResult.length; i++)
