@@ -9,15 +9,15 @@ public class PetaKartaKarun1
         String step = input.nextLine();
         input.close();
         int counter = 0;
-        String[] result = new String[3];
+        String[] result = new String[4];
         for (int i = 0; i < step.length(); i++)
         {
             if (step.charAt(i) == 'U')
             {
                 result[counter] =
                 "ke arah utara sebanyak" +
-                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
@@ -25,8 +25,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah selatan sebanyak" +
-                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
@@ -34,8 +34,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah barat sebanyak" +
-                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
@@ -43,8 +43,8 @@ public class PetaKartaKarun1
             {
                 result[counter] =
                 "ke arah timur sebanyak" +
-                (Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2))));
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
@@ -54,7 +54,7 @@ public class PetaKartaKarun1
         {
             System.out.print(result[i]);
             System.out.print(" langkah");
-            if (result.length - i == 1)
+            if (result.length - i == 2)
             {
                 System.out.print(", ");
                 continue;
