@@ -47,7 +47,13 @@ public class Matrix
         input.close();
         if (option == 0)
         {
-            //
+            for (int i = 0; i < matrixResult.length; i++)
+            {
+                for (int j = 0; j < matrixResult[0].length; j++)
+                {
+                    //
+                }
+            }
         }
         else if (option == 1)
         {
