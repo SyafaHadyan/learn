@@ -23,6 +23,7 @@ public class Matrix
         int[][] firstMatrix = new int[matrixSize[0]][];
         int[][] secondMatrix = new int[matrixSize[1]][];
         int option = 0;
+        int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
         boolean repeatCalculation = true;
         //boolean newValue = true;
@@ -161,7 +162,8 @@ public class Matrix
             }
             else if (option == 3)
             {
-                //
+                System.out.printf("%-30s%-2c","Choose value to multiply matrix with",':');
+                multiplyMatrix = Integer.parseInt(input.nextLine());
             }
             if (option != 2)
             {
