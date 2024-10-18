@@ -164,6 +164,13 @@ public class Matrix
             {
                 System.out.printf("%-30s%-2c","Choose value to multiply matrix with",':');
                 multiplyMatrix = Integer.parseInt(input.nextLine());
+                for (int i = 0; i < matrixResult.length; i++)
+                {
+                    for (int j = 0; j < matrixResult[i].length; j++)
+                    {
+                        //
+                    }
+                }
             }
             if (option != 2)
             {
