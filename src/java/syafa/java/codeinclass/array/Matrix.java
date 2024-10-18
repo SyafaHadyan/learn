@@ -36,6 +36,7 @@ public class Matrix
         {
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
+        int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         if (firstMatrix.length != secondMatrix[0].length)
         {
             possibleMultiplication = false;
