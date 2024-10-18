@@ -106,21 +106,6 @@ public class Matrix
                             }
                         }
                     }
-                    for (int i = 0; i < matrixMultiplicationResult.length; i++)
-                    {
-                        for (int j = 0; j < matrixMultiplicationResult[0].length; j++)
-                        {
-                            System.out.print(matrixMultiplicationResult[i][j]);
-                            if (matrixMultiplicationResult[i].length - j != 1)
-                            {
-                                System.out.print(' ');
-                            }
-                        }
-                        if (matrixMultiplicationResult.length - i != 1)
-                        {
-                            System.out.print("\n");
-                        }
-                    }
                 }
                 else
                 {
@@ -157,7 +142,7 @@ public class Matrix
                             System.out.print("\n");
                         }
                     }
-                    return;
+                    option = -1;
                 }
             }
             else if (option == 3)
@@ -172,7 +157,7 @@ public class Matrix
                     }
                 }
             }
-            if (option != 2 && option != 3)
+            if (option != 2 && option != 3 && option >= 0)
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
@@ -192,7 +177,21 @@ public class Matrix
             }
             else if (option == 2)
             {
-                //
+                for (int i = 0; i < matrixMultiplicationResult.length; i++)
+                {
+                    for (int j = 0; j < matrixMultiplicationResult[0].length; j++)
+                    {
+                        System.out.print(matrixMultiplicationResult[i][j]);
+                        if (matrixMultiplicationResult[i].length - j != 1)
+                        {
+                            System.out.print(' ');
+                        }
+                    }
+                    if (matrixMultiplicationResult.length - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
             else if (option == 3)
             {
