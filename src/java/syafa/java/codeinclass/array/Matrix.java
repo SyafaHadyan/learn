@@ -154,14 +154,14 @@ public class Matrix
                 {
                     for (int j = 0; j < matrixResult[i].length; j++)
                     {
-                        matrixMultiply[i][j][0] = firstMatrix[i][j] * multiplyMatrix;
+                        matrixMultiply[0][i][j] = firstMatrix[i][j] * multiplyMatrix;
                     }
                 }
                 for (int i = 0; i < matrixMultiply.length; i++)
                 {
                     for (int j = 0; j < matrixResult[i].length; j++)
                     {
-                        matrixMultiply[i][j][1] = secondMatrix[i][j] * multiplyMatrix;
+                        matrixMultiply[1][i][j] = secondMatrix[i][j] * multiplyMatrix;
                     }
                 }
             }
@@ -203,13 +203,13 @@ public class Matrix
             }
             else if (option == 3)
             {
-                for (int i = 0; i < matrixMultiply.length; i++)
+                for (int i = 0; i < 2; i++)
                 {
                     for (int j = 0; j < matrixMultiply.length; j++)
                     {
                         for (int k = 0; k < matrixMultiply.length; k++)
                         {
-                            //
+                            System.out.print(matrixMultiply[i][j][k]);
                         }
                     }
                 }
