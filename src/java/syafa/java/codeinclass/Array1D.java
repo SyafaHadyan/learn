@@ -1,5 +1,4 @@
 package syafa.java.codeinclass;
-import java.lang.classfile.constantpool.IntegerEntry;
 import java.util.*;
 
 public class Array1D
@@ -13,6 +12,11 @@ public class Array1D
         for (int i = 0; i < arraySize; i++)
         {
             array[i] = i;
+            System.out.print(array[i]);
+            if (arraySize - i != 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
