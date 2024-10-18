@@ -85,7 +85,22 @@ public class Matrix
             }
             else
             {
-                //
+                System.out.print("[Not possible due to matrix size]");
+                for (int i = 0; i < firstMatrix.length; i++)
+                {
+                    for (int j = 0; j < firstMatrix[i].length; j++)
+                    {
+                        System.out.print(firstMatrix[i][j]);
+                        if (firstMatrix[i].length - j != 1)
+                        {
+                            System.out.print(' ');
+                        }
+                    }
+                    if (matrixResult.length - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
         }
         input.close();
