@@ -38,7 +38,6 @@ public class Matrix
         {
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
-        int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         if (firstMatrix.length != secondMatrix[0].length)
         {
             possibleMultiplication = false;
@@ -51,6 +50,7 @@ public class Matrix
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
             {
+                int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
                 for (int i = 0; i < matrixResult.length; i++)
                 {
                     for (int j = 0; j < matrixResult[i].length; j++)
@@ -61,6 +61,7 @@ public class Matrix
             }
             else if (option == 1)
             {
+                int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
                 System.out.printf("%s%-30s%-2c","Choose order to substract","(eg. 1 2 will result in 1-2)",':');
                 substractOrder = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
                 if (substractOrder[0] - substractOrder[1] == -1)
@@ -86,6 +87,7 @@ public class Matrix
             }
             else if (option == 2)
             {
+                int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < firstMatrix.length; i++)
@@ -93,7 +95,8 @@ public class Matrix
                         for (int j = 0; j < secondMatrix[i].length; j++)
                         {
                             // Testing
-                            //matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
+                            // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
+                            matrixResult[firstMatrix.length][secondMatrix[i].length] =
                         }
                     }
                 }
