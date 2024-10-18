@@ -63,5 +63,16 @@ public class Matrix
         {
             //
         }
+        for (int i = 0; i < matrixResult.length; i++)
+        {
+            for (int j = 0; j < matrixResult[0].length; j++)
+            {
+                System.out.print(matrixResult[i][j]);
+                if (matrixResult[i].length - j != 1)
+                {
+                    System.out.print(' ');
+                }
+            }
+        }
     }
 }
