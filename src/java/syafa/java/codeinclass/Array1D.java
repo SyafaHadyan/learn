@@ -1,5 +1,6 @@
 package syafa.java.codeinclass;
 import java.util.*;
+import java.math.*;
 
 public class Array1D
 {
@@ -8,13 +9,13 @@ public class Array1D
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
         input.close();
-        int totalSum = 0;
+        BigInteger totalSum = BigInteger.ZERO;
         int[] array = new int[arraySize];
         for (int i = 0; i < arraySize; i++)
         {
             array[i] = i;
             System.out.print(array[i]);
-            totalSum += i;
+            totalSum = BigInteger.valueOf(Long.valueOf(String.valueOf(totalSum)) + i);
             if (arraySize - i != 1)
             {
                 System.out.print("\n");
