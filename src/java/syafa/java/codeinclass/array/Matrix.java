@@ -28,7 +28,7 @@ public class Matrix
         }
         System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
         int[][] secondMatrix = new int[matrixSize[0]][];
-        for (int i = 0; i < matrixSize[0]; i++)
+        for (int i = 0; i < matrixSize[1]; i++)
         {
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
