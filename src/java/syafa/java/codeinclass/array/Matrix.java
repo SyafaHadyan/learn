@@ -85,7 +85,7 @@ public class Matrix
             }
             else
             {
-                System.out.print("[Not possible due to matrix size]");
+                System.out.println("[Not possible due to matrix size]" + "\n" + "First matrix" + ':');
                 for (int i = 0; i < firstMatrix.length; i++)
                 {
                     for (int j = 0; j < firstMatrix[i].length; j++)
@@ -101,7 +101,7 @@ public class Matrix
                         System.out.print("\n");
                     }
                 }
-                System.out.print("\n");
+                System.out.println("\n" + "Second matrix" + ':');
                 for (int i = 0; i < secondMatrix.length; i++)
                 {
                     for (int j = 0; j < secondMatrix[i].length; j++)
