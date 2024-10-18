@@ -6,6 +6,15 @@ public class Matrix
 {
     public static void main(String[] args)
     {
+        /*
+         * TODO
+         * 
+         * Check when multiplication is possible
+         * Multiply matrix n by n
+         * Inverse
+         * Transpose
+         * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
+         */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-55s%-2c","Input matrix size [Row Column] (Separate by space)",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
