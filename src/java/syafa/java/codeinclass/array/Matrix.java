@@ -10,6 +10,9 @@ public class Matrix
          * TODO
          * 
          * Check when multiplication is possible
+         * Add
+         * Substract
+         * Multiply first and Second Matrix
          * Multiply matrix n by n
          * Inverse
          * Transpose
