@@ -41,7 +41,7 @@ public class Matrix
         }
         int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
-        int[][][] matrixMultiply = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2][2];
+        int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         if (firstMatrix.length != secondMatrix[0].length)
         {
             possibleMultiplication = false;
@@ -214,8 +214,15 @@ public class Matrix
                             {
                                 System.out.print(' ');
                             }
+                        }
+                        if (matrixMultiply.length - j != 1)
+                        {
                             System.out.print("\n");
                         }
+                    }
+                    if (matrixMultiply.length - i != 1)
+                    {
+                        System.out.print("\n");
                     }
                 }
             }
