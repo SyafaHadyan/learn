@@ -7,13 +7,14 @@ public class PetaKartaKarun1
     {
         Scanner input = new Scanner(System.in);
         String step = input.nextLine();
-        String[] result = new String[step.length()];
         input.close();
+        int counter = 0;
+        String[] result = new String[step.length()];
         for (int i = 0; i < step.length(); i++)
         {
             if (step.charAt(i) == 'U')
             {
-                //
+                result[i]
             }
             else if (step.charAt(i) == 'S')
             {
