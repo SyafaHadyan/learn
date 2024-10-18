@@ -15,7 +15,8 @@ public class Matrix
          * Transpose
          * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
          */
-        boolean possibleMultiplication = false;
+        boolean possibleMultiplication = true;
+        String possibleMultiplicationOption = "";
         Scanner input = new Scanner(System.in);
         System.out.printf("%-55s%-2c","Input matrix size [Row Column] (Separate by space)",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -31,11 +32,12 @@ public class Matrix
         {
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
-        if (firstMatrix.length == secondMatrix[0].length)
+        if (firstMatrix.length != secondMatrix[0].length)
         {
-            possibleMultiplication = true;
+            possibleMultiplication = false;
+            possibleMultiplicationOption = "[Not possible due to matrix size]";
         }
-        System.out.printf("%-55s%c\n%s\n%s","Choose operation",':',"Add","Substract","Multiply");
+        System.out.printf("%-55s%c\n%s\n%s%s","Choose operation",':',"Add","Substract","Multiply",possibleMultiplicationOption);
         input.close();
     }
 }
