@@ -39,6 +39,7 @@ public class Matrix
             secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
+        int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
         if (firstMatrix.length != secondMatrix[0].length)
         {
             possibleMultiplication = false;
@@ -86,7 +87,6 @@ public class Matrix
             }
             else if (option == 2)
             {
-                int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < firstMatrix.length; i++)
