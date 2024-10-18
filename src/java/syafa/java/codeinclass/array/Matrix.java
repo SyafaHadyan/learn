@@ -42,7 +42,7 @@ public class Matrix
             possibleMultiplication = false;
             possibleMultiplicationOption = " [Not possible due to matrix size]";
         }
-        System.out.printf("%-20s%c\n%s\n%s\n%s%s","Choose operation",':',"(0) Add","(1) Substract","(1) Multiply",possibleMultiplicationOption);
+        System.out.printf("%s\n%s\n%s\n%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
         option = Integer.parseInt(input.nextLine());
         input.close();
         if (option == 0)
