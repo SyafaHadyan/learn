@@ -57,7 +57,13 @@ public class Matrix
         }
         else if (option == 1)
         {
-            //
+            for (int i = 0; i < matrixResult.length; i++)
+            {
+                for (int j = 0; j < matrixResult[0].length; j++)
+                {
+                    matrixResult[i][j] = firstMatrix[i][j] - secondMatrix[i][j];
+                }
+            }
         }
         else if (option == 2)
         {
