@@ -14,7 +14,10 @@ public class PetaKartaKarun1
         {
             if (step.charAt(i) == 'U')
             {
-                result[i]
+                result[counter] =
+                "ke arah utara sebanyak" +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
+                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
             }
             else if (step.charAt(i) == 'S')
             {
