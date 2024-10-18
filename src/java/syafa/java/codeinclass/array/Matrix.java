@@ -83,16 +83,13 @@ public class Matrix
         {
             if (possibleMultiplication)
             {
-                int tempResult = 0;
                 for (int i = 0; i < firstMatrix.length; i++)
                 {
                     for (int j = 0; j < secondMatrix[i].length; j++)
                     {
-                        tempResult += firstMatrix[i][j] * secondMatrix[i][j];
-                        matrixResult[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
+                        matrixResult[firstMatrix.length][secondMatrix[i].length] += firstMatrix[i][j] * secondMatrix[i][j];
                     }
                 }
-                System.out.println(tempResult);
             }
             else
             {
