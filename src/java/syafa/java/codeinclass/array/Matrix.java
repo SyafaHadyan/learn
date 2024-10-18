@@ -87,7 +87,7 @@ public class Matrix
             }
             else if (option == 2)
             {
-                int counter = 0;
+                int counter = 1;
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < firstMatrix.length; i++)
@@ -98,7 +98,7 @@ public class Matrix
                             // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
                             matrixMultiplicationResult[i][j] = firstMatrix[i][j] * secondMatrix[i][j];
                             counter++;
-                            if (counter == 1)
+                            if (counter % 2 == 0)
                             {
                                 j--;
                             }
