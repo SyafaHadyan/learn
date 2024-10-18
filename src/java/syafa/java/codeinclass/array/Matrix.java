@@ -87,7 +87,8 @@ public class Matrix
                 {
                     for (int j = 0; j < secondMatrix[i].length; j++)
                     {
-                        matrixResult[firstMatrix.length][secondMatrix[i].length] += firstMatrix[i][j] * secondMatrix[i][j];
+                        // Testing
+                        matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
                     }
                 }
             }
