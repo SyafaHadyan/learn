@@ -11,8 +11,7 @@ public class Array1DSort
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         System.out.printf("%-30s%-2c","Sort array (Y/N)",':');
         String confirm = input.nextLine();
-        boolean sort = (confirm.equalsIgnoreCase("Y"))? (sort = true) : (sort = false);
-        if (sort)
+        if (confirm.equalsIgnoreCase("Y"))
         {
             Arrays.sort(array);
         }
