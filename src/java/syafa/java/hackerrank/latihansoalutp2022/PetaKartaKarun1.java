@@ -11,7 +11,22 @@ public class PetaKartaKarun1
         input.close();
         for (int i = 0; i < step.length(); i++)
         {
-            //
+            if (step.charAt(i) == 'U')
+            {
+                //
+            }
+            else if (step.charAt(i) == 'S')
+            {
+                //
+            }
+            else if (step.charAt(i) == 'B')
+            {
+                //
+            }
+            else if (step.charAt(i) == 'T')
+            {
+                //
+            }
         }
         /*
          * U05U10B05B10
