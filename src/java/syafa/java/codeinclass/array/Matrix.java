@@ -62,7 +62,7 @@ public class Matrix
             }
             else if (option == 1)
             {
-                System.out.printf("%s%-30s%-2c","Choose order to substract","(eg. 1 2 will result in 1-2)",':');
+                System.out.printf("%-30s%-2c","Choose order to substract (eg. 1 2 will result in 1-2)",':');
                 substractOrder = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
                 if (substractOrder[0] - substractOrder[1] == -1)
                 {
