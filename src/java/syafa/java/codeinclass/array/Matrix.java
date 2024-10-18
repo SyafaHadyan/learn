@@ -10,8 +10,7 @@ public class Matrix
          * TODO
          * 
          * Check when multiplication is possible
-         * Add
-         * Substract
+         * Substract (Choose which matrix)
          * Multiply first and Second Matrix
          * Multiply matrix n by n
          * Inverse
