@@ -1,4 +1,4 @@
-package syafa.java.codeinclass;
+package syafa.java.codeinclass.array;
 import java.util.*;
 import java.util.stream.*;
 
