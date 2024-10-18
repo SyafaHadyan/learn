@@ -10,7 +10,6 @@ public class Matrix
          * TODO
          * 
          * Multiply first and Second Matrix
-         * Multiply matrix n by n
          * Inverse
          * Transpose
          * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
@@ -205,6 +204,14 @@ public class Matrix
             {
                 for (int i = 0; i < 2; i++)
                 {
+                    if (i == 0)
+                    {
+                        System.out.println("First matrix");
+                    }
+                    else if (i == 1)
+                    {
+                        System.out.println("Second matrix");
+                    }
                     for (int j = 0; j < matrixMultiply.length; j++)
                     {
                         for (int k = 0; k < matrixMultiply.length; k++)
@@ -222,7 +229,7 @@ public class Matrix
                     }
                     if (matrixMultiply.length - i != 1)
                     {
-                        System.out.print("\n");
+                        System.out.print("\n\n");
                     }
                 }
             }
