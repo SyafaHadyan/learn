@@ -15,35 +15,32 @@ public class PetaKartaKarun1
             if (step.charAt(i) == 'U')
             {
                 result[counter] =
-                "ke arah utara sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i)) + String.valueOf(step.charAt(i + 1)))
+                "ke arah utara sebanyak " +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1)) + String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'S')
             {
                 result[counter] =
-                "ke arah selatan sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                "ke arah selatan sebanyak " +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1)) + String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'B')
             {
                 result[counter] =
-                "ke arah barat sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                "ke arah barat sebanyak " +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1)) + String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
             else if (step.charAt(i) == 'T')
             {
                 result[counter] =
-                "ke arah timur sebanyak" +
-                Integer.parseInt(String.valueOf(step.charAt(i + 1))) + 
-                Integer.parseInt(String.valueOf(step.charAt(i + 2)));
+                "ke arah timur sebanyak " +
+                Integer.parseInt(String.valueOf(step.charAt(i + 1)) + String.valueOf(step.charAt(i + 2)));
                 i += 2;
                 counter++;
             }
