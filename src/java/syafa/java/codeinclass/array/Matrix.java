@@ -59,12 +59,25 @@ public class Matrix
         {
             System.out.printf("%s%-30s%-2c","Choose order to substract","(eg. 1 2 will result in 1-2)",':');
             substractOrder = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            for (int i = 0; i < matrixResult.length; i++)
+            if (substractOrder[0] - substractOrder[1] == -1)
             {
-                for (int j = 0; j < matrixResult[0].length; j++)
+                for (int i = 0; i < matrixResult.length; i++)
                 {
-                    matrixResult[i][j] = firstMatrix[i][j] - secondMatrix[i][j];
+                    for (int j = 0; j < matrixResult[0].length; j++)
+                    {
+                        matrixResult[i][j] = firstMatrix[i][j] - secondMatrix[i][j];
+                    }
                 }
+            }
+            else
+            {
+                for (int i = 0; i < matrixResult.length; i++)
+                {
+                    for (int j = 0; j < matrixResult[0].length; j++)
+                    {
+                        matrixResult[i][j] = secondMatrix[i][j] - firstMatrix[i][j];
+                    }
+                }    
             }
         }
         else if (option == 2)
