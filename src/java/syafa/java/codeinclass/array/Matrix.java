@@ -25,6 +25,7 @@ public class Matrix
         int option = 0;
         boolean possibleMultiplication = true;
         boolean repeatCalculation = true;
+        boolean newValue = true;
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
         System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
@@ -45,6 +46,7 @@ public class Matrix
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
             }
+            newValue = false;
             System.out.printf("%s\n%s\n%s%s\n%-20s%-2c","(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"Choose operation",':');
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
@@ -159,7 +161,7 @@ public class Matrix
             repeatCalculationConfirmation = input.nextLine();
             if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
             {
-                //
+                newValue = true;
             }
         }
     }
