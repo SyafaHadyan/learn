@@ -12,6 +12,7 @@ public class Promo1010
         int counter = 0;
         double totalPrice = 0d;
         double discount = 0d;
+        double extraDiscount = 0d;
         double kopiAmericano = 20000d;
         double kopiSusu = 28000d;
         double kopiVietnam = 23000d;
@@ -51,7 +52,7 @@ public class Promo1010
             {
                 if (purchaseCoffee[counter] > 2)
                 {
-                    discount += 0.08 * (purchaseCoffee[counter] * kopiAmericano);
+                    discount += 0.08 * (purchaseCoffee[counter] * kopiSusu);
                     totalPrice += purchaseCoffee[counter] * kopiSusu;
                     kopiSusu = 0.92 * (purchaseCoffee[counter] * kopiSusu);
                 }
@@ -66,7 +67,7 @@ public class Promo1010
             {
                 if (purchaseCoffee[counter] > 4)
                 {
-                    discount += 0.12 * (purchaseCoffee[counter] * kopiAmericano);
+                    discount += 0.12 * (purchaseCoffee[counter] * kopiVietnam);
                     totalPrice += purchaseCoffee[counter] * kopiVietnam;
                     kopiVietnam = 0.88 * (purchaseCoffee[counter] * kopiVietnam);
                 }
@@ -101,6 +102,10 @@ public class Promo1010
                 }
                 counter++;
             }
+            else if ((totalPrice - discount) >= 250000)
+            {
+                extraDiscount += 0.10 * totalPrice;
+            }
         }
         /*
          * Total harga pesanan      : Rp364480.0
@@ -112,7 +117,7 @@ public class Promo1010
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","cappucino",':',"Rp",kopiCappucino);
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","mocha rum",':',"Rp",kopiMochaRum);
         System.out.println("=====================================");
-        System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",totalPrice);
-        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",(totalPrice - discount));
+        System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",(totalPrice - discount));
+        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",(totalPrice - discount - extraDiscount));
     }
 }
