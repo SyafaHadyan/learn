@@ -16,5 +16,6 @@ public class MarsExploration
                 corruptMessage++;
             }
         }
+        System.out.print(corruptMessage);
     }
 }
