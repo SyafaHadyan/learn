@@ -52,10 +52,16 @@ public class StrongPassword
                 if (!(password.equals(temp)))
                 {
                     containLowerCase = true;
-                    break;
                 }
             }
-            else if ((password.e))
+            else if (i == 1)
+            {
+                String temp = password.toUpperCase();
+                if (!(password.equals(temp)))
+                {
+                    containUpperCase = true;
+                }
+            }
         }
         for (int i = 0; i < password.length(); i++)
         {
