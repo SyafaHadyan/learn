@@ -17,7 +17,7 @@ public class HahSegitiga
          * []Segitiga siku-siku
          * [x]Segitiga sama sisi
          * [x]Segitiga sama kaki
-         * []Segitiga sembarang
+         * [x]Segitiga sembarang
          */
         Scanner input = new Scanner(System.in);
         double[] triangle = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
@@ -34,6 +34,10 @@ public class HahSegitiga
                 System.out.print("Segitiga sama kaki");
                 input.close();
             }
+        }
+        else if (triangle[0] < triangle[1] && triangle[1] < triangle[2])
+        {
+            System.out.print("Segitiga siku-siku");
         }
         else
         {
