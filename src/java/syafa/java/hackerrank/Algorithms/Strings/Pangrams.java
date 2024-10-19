@@ -6,11 +6,39 @@ public class Pangrams
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        //char[] word = input.nextLine().toCharArray();
         String inputWord = input.nextLine();
+        input.close();
+        char[] alphabet =
+        {
+            'a',
+            'b',
+            'c',
+            'd',
+            'e',
+            'f',
+            'g',
+            'h',
+            'i',
+            'j',
+            'k',
+            'l',
+            'm',
+            'n',
+            'o',
+            'p',
+            'q',
+            'r',
+            's',
+            't',
+            'u',
+            'v',
+            'w',
+            'x',
+            'y',
+            'z',
+        };
         ArrayList<String> word = new ArrayList<>(Arrays.asList(inputWord.toLowerCase().split("")));
         Collections.sort(word);
-        input.close();
         for (int i = 0; i < word.size(); i++)
         {
             try
