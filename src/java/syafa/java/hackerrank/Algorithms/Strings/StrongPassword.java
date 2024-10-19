@@ -75,17 +75,22 @@ public class StrongPassword
         {
             requiredCharacter++;
         }
-        else if (!containSpecialCharacter)
+        if (!containSpecialCharacter)
         {
             requiredCharacter++;
         }
-        else if (!containLowerCase)
+        if (!containLowerCase)
         {
             requiredCharacter++;
         }
-        else if (!containUpperCase)
+        if (!containUpperCase)
         {
             requiredCharacter++;
         }
+        if (password.length() < 6)
+        {
+            requiredCharacter += 6 - password.length();
+        }
+        System.out.print(requiredCharacter);
     }
 }
