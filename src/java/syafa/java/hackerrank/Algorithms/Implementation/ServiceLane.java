@@ -37,7 +37,7 @@ public class ServiceLane
          */
         Scanner input = new Scanner(System.in);
         int[] highwayCar = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[]
+        int[] servieLane = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
