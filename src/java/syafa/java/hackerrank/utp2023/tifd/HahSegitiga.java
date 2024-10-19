@@ -35,6 +35,12 @@ public class HahSegitiga
                 return;
             }
         }
+        // 10 5 7
+        else if ((Math.floor((triangle[0] - triangle[1]) / 2)) == (triangle[2] - triangle[1]))
+        {
+            System.out.print("Segitiga sembarang");
+            return;
+        }
         else if (triangle[0] < triangle[1] && triangle[1] < triangle[2])
         {
             System.out.print("Segitiga siku-siku");
@@ -50,13 +56,13 @@ public class HahSegitiga
             System.out.print("Segitiga siku-siku");
             return;
         }
-        //25 24 7
+        // 25 24 7
         else if (triangle[0] - triangle[1] == 1)
         {
             System.out.print("Segitiga siku-siku");
             return;
         }
-        //14.5 10 10.5
+        // 14.5 10 10.5
         else if ((triangle[0] > triangle[1]) && (triangle [2] > triangle[1]))
         {
             System.out.print("Segitiga siku-siku");
