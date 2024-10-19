@@ -84,11 +84,11 @@ public class Promo1010
          * Total harga pesanan      : Rp364480.0
          * Harga yang harus dibayar : Rp328032.0
          */
-        System.out.printf("%-13s%-12s%-2c%s%.1f\n","Harga total kopi","americano",':',"Rp",kopiAmericano);
-        System.out.printf("%-13s%-12s%-2c%s%.1f\n","Harga total kopi","kopi susu",':',"Rp",kopiSusu);
-        System.out.printf("%-13s%-12s%-2c%s%.1f\n","Harga total kopi","kopi vietnam",':',"Rp",kopiVietnam);
-        System.out.printf("%-13s%-12s%-2c%s%.1f\n","Harga total kopi","cappucino",':',"Rp",kopiCappucino);
-        System.out.printf("%-13s%-12s%-2c%s%.1f\n","Harga total kopi","mocha rum",':',"Rp",kopiMochaRum);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","americano",':',"Rp",kopiAmericano);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","kopi susu",':',"Rp",kopiSusu);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","kopi vietnam",':',"Rp",kopiVietnam);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","cappucino",':',"Rp",kopiCappucino);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","mocha rum",':',"Rp",kopiMochaRum);
         System.out.println("=====================================");
         //System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",totalPrice);
         System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",totalPrice);
