@@ -14,7 +14,7 @@ public class Pangrams
         {
             try
             {
-                if (word.get(i) == word.get(i + 1))
+                if (word.get(i).equalsIgnoreCase(word.get(i + 1)))
                 {
                     word.remove(i);
                     i--;
