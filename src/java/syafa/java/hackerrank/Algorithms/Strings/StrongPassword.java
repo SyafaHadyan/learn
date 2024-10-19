@@ -37,5 +37,9 @@ public class StrongPassword
         int passwordLength = Integer.parseInt(input.nextLine());
         String password = input.nextLine();
         input.close();
+        String number = "0123456789";
+        String specialCharacter = "!@#$%^&*()-+";
+        boolean containLowerCase = false;
+        boolean containUpperCase = false;
     }
 }
