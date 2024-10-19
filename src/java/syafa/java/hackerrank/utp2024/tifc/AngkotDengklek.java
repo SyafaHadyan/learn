@@ -20,11 +20,11 @@ public class AngkotDengklek
             passenger = input.nextLine();
             if (passenger.equalsIgnoreCase("Dewasa"))
             {
-                //
+                incomePassenger += 12000;
             }
             else if (passenger.equalsIgnoreCase("Anak kecil"))
             {
-                //
+                incomePassenger += 8000;
             }
         }
     }
