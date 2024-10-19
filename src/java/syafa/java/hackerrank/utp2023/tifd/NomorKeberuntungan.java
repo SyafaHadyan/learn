@@ -57,5 +57,14 @@ public class NomorKeberuntungan
                 divisible.add("Belum hoki!");
             }
         }
+        for (int i = 0; i < divisible.size(); i++)
+        {
+            if (i == 0)
+            {
+                System.out.println("Terbesar" + " " + number[number.length - 1] + "\n" +
+                                    "Terkecil" + " " + number[0] +
+                                    "Selisih" + " " + (number[number.length - 1] - number[0]));
+            }
+        }
     }
 }
