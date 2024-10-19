@@ -30,5 +30,13 @@ public class StringAnagram
             }
         }
         input.close();
+        for (int i = 0; i < match.length; i++)
+        {
+            System.out.print(match[i]);
+            if (match.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
