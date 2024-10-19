@@ -24,7 +24,14 @@ public class SuperReducedString
         ArrayList<Character> result = new ArrayList<>();
         for (int i = 0; i < word.length(); i++)
         {
-            //
+            if (word.charAt(i) == word.charAt(i + 1))
+            {
+                //
+            }
+            else if (word.charAt(i) != word.charAt(i + 1))
+            {
+                result.add(word.charAt(i))
+            }
         }
     }
 }
