@@ -30,19 +30,19 @@ public class AngkotDengklek
         for (int i = start; i <= end; i++)
         {
             currentGas -= 2;
-            if (currentGas == 0)
+            if (currentGas == 0 || i == end)
             {
                 if (i >= 0 && i <12)
                 {
-                    //11000
+                    gasCost += 11000;
                 }
                 else if (i >= 12 && i < 18)
                 {
-                    //12000
+                    gasCost += 12000;
                 }
                 else if (i >= 18 && i < 24)
                 {
-                    //10000
+                    gasCost += 10000;
                 }
                 currentGas = 20;
             }
