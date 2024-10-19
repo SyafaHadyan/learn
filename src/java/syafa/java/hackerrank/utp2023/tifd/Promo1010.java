@@ -102,9 +102,9 @@ public class Promo1010
                 }
                 counter++;
             }
-            else if ((totalPrice - discount) >= 250000)
+            if ((totalPrice - discount) >= 250000)
             {
-                extraDiscount += 0.10 * totalPrice;
+                extraDiscount = 0.10 * (totalPrice - discount);
             }
         }
         /*
@@ -118,6 +118,6 @@ public class Promo1010
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","mocha rum",':',"Rp",kopiMochaRum);
         System.out.println("=====================================");
         System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",(totalPrice - discount));
-        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",(totalPrice - discount - extraDiscount));
+        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",(totalPrice - (discount + extraDiscount)));
     }
 }
