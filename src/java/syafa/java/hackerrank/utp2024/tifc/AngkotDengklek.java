@@ -10,5 +10,18 @@ public class AngkotDengklek
         int end = Integer.parseInt(input.nextLine());
         int passengerAmount = Integer.parseInt(input.nextLine());
         input.close();
+        String passenger = "";
+        for (int i = 0; i < passengerAmount; i++)
+        {
+            passenger = input.nextLine();
+            if (passenger.equalsIgnoreCase("Dewasa"))
+            {
+                //
+            }
+            else if (passenger.equalsIgnoreCase("Anak kecil"))
+            {
+                //
+            }
+        }
     }
 }
