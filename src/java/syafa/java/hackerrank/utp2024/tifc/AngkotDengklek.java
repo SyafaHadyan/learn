@@ -16,6 +16,7 @@ public class AngkotDengklek
         int adultPassenger = 0;
         int kidPassenger = 0;
         String passenger = "";
+        String incomeValidity = "";
         for (int i = 0; i < passengerAmount; i++)
         {
             passenger = input.nextLine();
@@ -52,10 +53,16 @@ public class AngkotDengklek
             }
         }
         finalIncome = incomePassenger - gasCost;
+        incomeValidity = "Mendapatkan keuntungan sebesar";
+        if (finalIncome < 0)
+        {
+            incomeValidity = "Mendapatkan kerugian sebesar";
+        }
         System.out.printf("%-28s%-2c%d%c%s\n","Total jam operasional",':',(end - start),' ',"jam");
         System.out.printf("%-28s%-2c%d%c%s\n","Total penumpang dewasa",':',adultPassenger,' ',"orang");
         System.out.printf("%-28s%-2c%d%c%s\n","Total penumpang anak-anak",':',kidPassenger,' ',"orang");
         System.out.printf("%-28s%-2c%-3s%.2f%s\n","Total pemasukan penumpang",':',"Rp",incomePassenger,".-");
         System.out.printf("%-28s%-2c%-3s%.2f%s\n","Total pengeluaran bensin",':',"Rp",gasCost,".-");
+        System.out.printf("%-28s%-2c%-3s%.2f%s\n",incomeValidity,':',"Rp",Math.abs(finalIncome),".-");
     }
 }
