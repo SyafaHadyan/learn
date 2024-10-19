@@ -23,7 +23,7 @@ public class StringAnagram
             String tempSorted = new String(tempChar);
             for (int j = 0; j < dictonary.length; j++)
             {
-                if (tempSorted.equalsIgnoreCase(dictonary[i]));
+                if (tempSorted.equalsIgnoreCase(dictonary[j]))
                 {
                     match[i]++;
                 }
