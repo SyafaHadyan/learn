@@ -69,7 +69,11 @@ public class NomorKeberuntungan
                 System.out.print("Tidak ada" + "\n" + "Jackpot!!!");
                 return;
             }
-            System.out.print();
+            System.out.print(divisible.get(i));
+            if (divisible.size() - 1 != 1)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
