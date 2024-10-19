@@ -17,27 +17,48 @@ public class ActiveTraders
         }
         Arrays.sort(customer);
         input.close();
-        for (int i = 0; i < customerAmount; i++)
+        if (threshold == 1)
         {
-            try
+            for (int i = 0; i < customer.length; i++)
             {
-                if (!(customer[i].equalsIgnoreCase(customer[i + 1])))
+                try
                 {
-                    counter = 0;
+                    if (customer[i].equalsIgnoreCase(customer[i + 1]))
+                    {
+                        activeCustomer.add(customer[i]);
+                    }
                 }
-                else
+                catch (IndexOutOfBoundsException e)
                 {
-                    counter++;
-                }
-                if (counter == threshold)
-                {
-                    activeCustomer.add(customer[i]);
+                    //
                 }
             }
-            catch (IndexOutOfBoundsException e)
+        }
+        else
+        {
+            for (int i = 0; i < customerAmount; i++)
             {
-                //
+                try
+                {
+                    if (!(customer[i].equalsIgnoreCase(customer[i + 1])))
+                    {
+                        counter = 0;
+                    }
+                    else
+                    {
+                        counter++;
+                    }
+                    if (counter == threshold)
+                    {
+                        activeCustomer.add(customer[i]);
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
+                }
             }
+    
         }
         for (int i = 0; i < activeCustomer.size(); i++)
         {
