@@ -5,15 +5,26 @@ public class MarsExploration
 {
     public static void main(String[] args)
     {
+        /*
+         * SOS OOS OSO SOS OSS OSO SOS OSO SOS
+         *      x   x   x   x   x       x
+         * 12
+         */
         Scanner input = new Scanner(System.in);
         char[] message = input.nextLine().toCharArray();
         int corruptMessage = 0;
         input.close();
         for (int i = 0; i < message.length; i++)
         {
-            if (!(message[i] == 'S' && message[i + 1] == 'O' && message[i + 2] == 'S'))
+            if ((message[i] == 'S'))
             {
-                corruptMessage++;
+                if (message[i + 1] == 'O')
+                {
+                    if (message[i + 2] == 'S')
+                    {
+                        //
+                    }
+                }
             }
             i += 2;
         }
