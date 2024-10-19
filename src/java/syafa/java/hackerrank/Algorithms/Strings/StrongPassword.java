@@ -54,17 +54,13 @@ public class StrongPassword
             {
                 containLowerCase = true;
             }
+            if (Character.isDigit(password.charAt(i)))
+            {
+                containNumber = true;
+            }
         }
         for (int i = 0; i < password.length(); i++)
         {
-            for (int j = 0; j < number.length; j++)
-            {
-                if (password.equalsIgnoreCase(number[j]))
-                {
-                    containNumber = true;
-                    break;
-                }
-            }
             for (int j = 0; j < specialCharacter.length; j++)
             {
                 if (password.equalsIgnoreCase(specialCharacter[j]))
