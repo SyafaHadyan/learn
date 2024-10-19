@@ -18,6 +18,10 @@ public class HutanLabirin
             {
                 number /= 2;
             }
+            else if (number % 2 != 0)
+            {
+                number *= 10;
+            }
         }
     }
 }
