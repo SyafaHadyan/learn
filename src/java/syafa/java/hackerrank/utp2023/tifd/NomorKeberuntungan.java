@@ -30,14 +30,18 @@ public class NomorKeberuntungan
         Scanner input = new Scanner(System.in);
         int[] magicNumber = {2, 3, 5, 7, 11};
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        input.close();
         Arrays.sort(number);
+        ArrayList<Integer> divisible = new ArrayList<>();
         for (int i = 0; i < number.length; i++)
         {
             for (int j = 0; j < magicNumber.length; j++)
             {
-                //
+                if (number[i] % magicNumber[j] == 0)
+                {
+                    //
+                }
             }
         }
-        input.close();
     }
 }
