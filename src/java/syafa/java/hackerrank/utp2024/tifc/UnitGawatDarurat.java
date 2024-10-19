@@ -57,11 +57,17 @@ public class UnitGawatDarurat
             }
             if (i == 0)
             {
-                if (sortedPatientOxygen[i] > sortedPatientAge[2])
+                if (sortedPatientOxygen[i] > sortedPatientAge[i + 2])
                 {
                     //
                 }
             }
+        }
+        for (int i = 0; i < patientName.length; i++)
+        {
+            System.out.println(sortedPatientName[i]);
+            System.out.println(sortedPatientAge[i]);
+            System.out.println(sortedPatientOxygen[i]);
         }
     }
 }
