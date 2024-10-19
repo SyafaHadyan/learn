@@ -27,6 +27,7 @@ public class Promo1010
          * americano > 3 disc 5
          * kopiSusu > 2	disc 8
          * vietnam > 4 disc 12
+         * mocheRum > 2 disc 10000
          * if totalPurchase >= 250000 disc 10 after coffee disc
          */
         while (counter < purchaseCoffee.length)
@@ -35,7 +36,7 @@ public class Promo1010
             {
                 if (purchaseCoffee[counter] > 3)
                 {
-                    totalPrice += 0.95 * (purchaseCoffee[counter] * kopiAmericano);
+                    totalPrice += (purchaseCoffee[counter] * kopiAmericano);
                     kopiAmericano = 0.95 * (purchaseCoffee[counter] * kopiAmericano);
                 }
                 else if (purchaseCoffee[counter] > 0)
@@ -49,7 +50,7 @@ public class Promo1010
             {
                 if (purchaseCoffee[counter] > 2)
                 {
-                    totalPrice += 0.92 * (purchaseCoffee[counter] * kopiSusu);
+                    totalPrice += (purchaseCoffee[counter] * kopiSusu);
                     kopiSusu = 0.92 * (purchaseCoffee[counter] * kopiSusu);
                 }
                 else if (purchaseCoffee[counter] > 0)
@@ -63,7 +64,7 @@ public class Promo1010
             {
                 if (purchaseCoffee[counter] > 4)
                 {
-                    totalPrice += 0.88 * (purchaseCoffee[counter] * kopiVietnam);
+                    totalPrice += (purchaseCoffee[counter] * kopiVietnam);
                     kopiVietnam = 0.88 * (purchaseCoffee[counter] * kopiVietnam);
                 }
                 else if (purchaseCoffee[counter] > 0)
@@ -81,6 +82,11 @@ public class Promo1010
             }
             else if (counter == 4)
             {
+                if (purchaseCoffee[counter] > 2)
+                {
+                    totalPrice += kopiMochaRum * purchaseCoffee[counter];
+                    kopiMochaRum = (kopiMochaRum * purchaseCoffee[counter]) - 10000;
+                }
                 totalPrice += kopiMochaRum * purchaseCoffee[counter];
                 kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
                 counter++;
