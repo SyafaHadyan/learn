@@ -9,6 +9,7 @@ public class Promo1010
         Scanner input = new Scanner(System.in);
         int[] purchaseCoffee = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int i = 0;
         double totalPrice = 0d;
         double kopiAmericano = 20000d;
         double kopiSusu = 28000d;
@@ -27,7 +28,7 @@ public class Promo1010
          * vietnam > 4 disc 12
          * if totalPurchase >= 250000 disc 10 after coffee disc
          */
-        for (int i = 0; i < purchaseCoffee.length; i++)
+        while (i < purchaseCoffee.length)
         {
             if (i == 0)
             {
@@ -77,6 +78,6 @@ public class Promo1010
             }
 
         }
-        //System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
     }
 }
