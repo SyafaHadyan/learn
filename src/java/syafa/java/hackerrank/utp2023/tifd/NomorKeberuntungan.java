@@ -28,6 +28,7 @@ public class NomorKeberuntungan
          * else if not divisible by any of num or divisible by all of num, jack
          */
         Scanner input = new Scanner(System.in);
+        int[] magicNumber = {2, 3, 5, 7, 11};
         input.close();
     }
 }
