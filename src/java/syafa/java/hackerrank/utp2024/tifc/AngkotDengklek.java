@@ -39,15 +39,15 @@ public class AngkotDengklek
             {
                 if (i >= 0 && i <12)
                 {
-                    gasCost += 11000;
+                    gasCost += (20 - currentGas) * 11000;
                 }
                 else if (i >= 12 && i < 18)
                 {
-                    gasCost += 12000;
+                    gasCost += (20 - currentGas) * 12000;
                 }
                 else if (i >= 18 && i < 24)
                 {
-                    gasCost += 10000;
+                    gasCost += (20 - currentGas) * 10000;
                 }
                 currentGas = 20;
             }
