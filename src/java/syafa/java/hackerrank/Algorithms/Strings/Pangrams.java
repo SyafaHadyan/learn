@@ -59,11 +59,11 @@ public class Pangrams
             }
         }
         String[] wordChar = word.toArray(new String[word.size()]);
-        if (wordChar.equals(alphabet))
+        if (Arrays.compare(wordChar,alphabet) == 0 && (wordChar.length == 26))
         {
             System.out.print("pangram");
             return;
         }
-        System.out.print("pangram");
+        System.out.print("not pangram");
     }
 }
