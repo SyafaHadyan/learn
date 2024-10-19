@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.Algorithms.Strings;
 import java.util.*;
-import java.util.stream.*;
 
 public class StrongPassword
 {
@@ -35,11 +34,11 @@ public class StrongPassword
          * 1
          */
         Scanner input = new Scanner(System.in);
-        int passwordLength = Integer.parseInt(input.nextLine());
+        //int passwordLength = Integer.parseInt(input.nextLine());
         String password = input.nextLine();
         input.close();
         //String[] number = (String.valueOf("0123456789").split("//"));
-        String[] specialCharacter = (String.valueOf("!@#$%^&*()-+").split("//"));
+        String[] specialCharacter = "!@#$%^&*()-+".split("");
         boolean containNumber = false;
         boolean containSpecialCharacter = false;
         boolean containLowerCase = false;
