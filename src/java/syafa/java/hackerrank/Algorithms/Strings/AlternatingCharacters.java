@@ -1,7 +1,7 @@
 package syafa.java.hackerrank.Algorithms.Strings;
 import java.util.*;
 
-public class SuperReducedString
+public class AlternatingCharacters
 {
     public static void main(String[] args)
     {
@@ -26,7 +26,6 @@ public class SuperReducedString
         {
             word.add(wordString.charAt(i));
         }
-        Collections.sort(word);
         //ArrayList<Character> result = new ArrayList<>();
         for (int i = 0; i < word.size(); i++)
         {
@@ -35,6 +34,7 @@ public class SuperReducedString
                 if (word.get(i) == word.get(i + 1))
                 {
                     word.remove(i);
+                    i--;
                 }
                 /*
                 else if (word.get(i) != word.get(i))
