@@ -19,8 +19,13 @@ public class SuperReducedString
          * Empty String
          */
         Scanner input = new Scanner(System.in);
-        char[] word = input.nextLine().toCharArray();
+        String wordString = input.nextLine();
         input.close();
+        ArrayList<Character> word = new ArrayList<>();
+        for (int i = 0; i < args.length; i++)
+        {
+            word.add(wordString.charAt(i));
+        }
         ArrayList<Character> result = new ArrayList<>();
         for (int i = 0; i < word.length; i++)
         {
@@ -28,7 +33,7 @@ public class SuperReducedString
             {
                 if (word[i] == word[i + 1])
                 {
-                    //
+                    
                 }
                 else if (word[i] != word[i])
                 {
