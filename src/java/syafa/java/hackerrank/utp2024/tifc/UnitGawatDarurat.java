@@ -42,15 +42,15 @@ public class UnitGawatDarurat
                 }
     
             }
-            if (sortedPatientOxygen[i] > sortedPatientOxygen[i = 1])
+            if (sortedPatientOxygen[i] > sortedPatientOxygen[i + 1])
             {
-                if (sortedPatientAge[i] == patientAge[i = 1])
+                if (sortedPatientAge[i] == patientAge[i + 1])
                 {
                     //
                 }
                 else
                 {
-                    sortedPatientName[i] = patientName[i = 1];
+                    sortedPatientName[i] = patientName[i + 1];
                     sortedPatientAge[i] = patientAge[i + 1];
                     sortedPatientOxygen[i] = patientOxygen[i + 1];
                 }
@@ -59,7 +59,16 @@ public class UnitGawatDarurat
             {
                 if (sortedPatientOxygen[i] > sortedPatientAge[i + 2])
                 {
-                    //
+                    if (sortedPatientAge[i] == patientAge[i + 2])
+                    {
+                        //
+                    }
+                    else
+                    {
+                        sortedPatientName[i] = patientName[i + 2];
+                        sortedPatientAge[i] = patientAge[i + 2];
+                        sortedPatientOxygen[i] = patientOxygen[i + 2];
+                    }
                 }
             }
         }
