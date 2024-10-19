@@ -8,34 +8,34 @@ public class Pangrams
         Scanner input = new Scanner(System.in);
         String inputWord = input.nextLine();
         input.close();
-        char[] alphabet =
+        String[] alphabet =
         {
-            'a',
-            'b',
-            'c',
-            'd',
-            'e',
-            'f',
-            'g',
-            'h',
-            'i',
-            'j',
-            'k',
-            'l',
-            'm',
-            'n',
-            'o',
-            'p',
-            'q',
-            'r',
-            's',
-            't',
-            'u',
-            'v',
-            'w',
-            'x',
-            'y',
-            'z',
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "q",
+            "r",
+            "s",
+            "t",
+            "u",
+            "v",
+            "w",
+            "x",
+            "y",
+            "z",
         };
         ArrayList<String> word = new ArrayList<>(Arrays.asList(inputWord.toLowerCase().split("")));
         Collections.sort(word);
@@ -58,7 +58,8 @@ public class Pangrams
                 //
             }
         }
-        if (word.equals(Arrays.asList(alphabet)))
+        String[] wordChar = word.toArray(new String[word.size()]);
+        if (wordChar.equals(alphabet))
         {
             System.out.print("pangram");
             return;
