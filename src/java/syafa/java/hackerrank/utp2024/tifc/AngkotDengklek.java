@@ -32,31 +32,31 @@ public class AngkotDengklek
             }
         }
         input.close();
-        for (int i = start; i <= end; i++)
+        for (int i = start; i < end; i++)
         {
             currentGas -= 2;
-            if (currentGas == 0 || i == end)
+            if (currentGas == 0 || i == end - 1)
             {
                 if (i >= 0 && i <12)
                 {
-                    gasCost += Math.abs(currentGas - 20) * 11000;
+                    gasCost += (Math.abs(currentGas - 20) * 11000);
                 }
                 else if (i >= 12 && i < 18)
                 {
-                    gasCost += Math.abs(currentGas - 20) * 12000;
+                    gasCost += (Math.abs(currentGas - 20) * 12000);
                 }
                 else if (i >= 18 && i < 24)
                 {
-                    gasCost += Math.abs(currentGas - 20) * 10000;
+                    gasCost += (Math.abs(currentGas - 20) * 10000);
                 }
                 currentGas = 20;
             }
         }
         finalIncome = incomePassenger - gasCost;
-        incomeValidity = "Mendapatkan keuntungan sebesar";
+        incomeValidity = "Keuntungan sebesar";
         if (finalIncome < 0)
         {
-            incomeValidity = "Mendapatkan kerugian sebesar";
+            incomeValidity = "Kerugian sebesar";
         }
         System.out.printf("%-28s%-2c%d%c%s\n","Total jam operasional",':',(end - start),' ',"jam");
         System.out.printf("%-28s%-2c%d%c%s\n","Total penumpang dewasa",':',adultPassenger,' ',"orang");
