@@ -34,10 +34,10 @@ public class StrongPassword
          * 1
          */
         Scanner input = new Scanner(System.in);
-        //int passwordLength = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         String password = input.nextLine();
         input.close();
-        //String[] number = (String.valueOf("0123456789").split("//"));
         char[] specialCharacter = "!@#$%^&*()-+".toCharArray();
         boolean containNumber = false;
         boolean containSpecialCharacter = false;
@@ -86,7 +86,7 @@ public class StrongPassword
         {
             requiredCharacter++;
         }
-        if ((password.length() < 6) && (6 - password.length() < requiredCharacter))
+        if ((password.length() < 6) && (6 - password.length() > requiredCharacter))
         {
             requiredCharacter = 6 - password.length();
         }
