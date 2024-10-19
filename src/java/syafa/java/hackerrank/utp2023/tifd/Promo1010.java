@@ -9,7 +9,7 @@ public class Promo1010
         Scanner input = new Scanner(System.in);
         int[] purchaseCoffee = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        int i = 0;
+        int counter = 0;
         double totalPrice = 0d;
         double kopiAmericano = 20000d;
         double kopiSusu = 28000d;
@@ -28,53 +28,53 @@ public class Promo1010
          * vietnam > 4 disc 12
          * if totalPurchase >= 250000 disc 10 after coffee disc
          */
-        while (i < purchaseCoffee.length)
+        while (counter < purchaseCoffee.length)
         {
-            if (i == 0)
+            if (counter == 0)
             {
-                if (purchaseCoffee[i] > 3)
+                if (purchaseCoffee[counter] > 3)
                 {
-                    totalPrice += 0.95 * (purchaseCoffee[i] * kopiAmericano);
+                    totalPrice += 0.95 * (purchaseCoffee[counter] * kopiAmericano);
 
                 }
-                else if (purchaseCoffee[i] > 0)
+                else if (purchaseCoffee[counter] > 0)
                 {
-                    totalPrice += kopiAmericano * purchaseCoffee[i];
+                    totalPrice += kopiAmericano * purchaseCoffee[counter];
                 }
-                i++;
+                counter++;
             }
-            else if (i == 1)
+            else if (counter == 1)
             {
-                if (purchaseCoffee[i] > 2)
+                if (purchaseCoffee[counter] > 2)
                 {
-                    totalPrice += 0.92 * (purchaseCoffee[i] * kopiSusu);
+                    totalPrice += 0.92 * (purchaseCoffee[counter] * kopiSusu);
                 }
-                else if (purchaseCoffee[i] > 0)
+                else if (purchaseCoffee[counter] > 0)
                 {
-                    totalPrice += kopiSusu * purchaseCoffee[i];
+                    totalPrice += kopiSusu * purchaseCoffee[counter];
                 }
-                i++;
+                counter++;
             }
-            else if (i == 2)
+            else if (counter == 2)
             {
-                if (purchaseCoffee[i] > 4)
+                if (purchaseCoffee[counter] > 4)
                 {
-                    totalPrice += 0.88 * (purchaseCoffee[i] * kopiVietnam);
+                    totalPrice += 0.88 * (purchaseCoffee[counter] * kopiVietnam);
                 }
-                else if (purchaseCoffee[i] > 0)
+                else if (purchaseCoffee[counter] > 0)
                 {
-                    totalPrice += kopiSusu * purchaseCoffee[i];
+                    totalPrice += kopiSusu * purchaseCoffee[counter];
                 }
-                i++;
+                counter++;
             }
-            else if (i == 3)
+            else if (counter == 3)
             {
-                totalPrice += kopiCappucino * purchaseCoffee[i];
-                i++;
+                totalPrice += kopiCappucino * purchaseCoffee[counter];
+                counter++;
             }
-            else if (i == 4)
+            else if (counter == 4)
             {
-                totalPrice += kopiMochaRum * purchaseCoffee[i];
+                totalPrice += kopiMochaRum * purchaseCoffee[counter];
             }
 
         }
