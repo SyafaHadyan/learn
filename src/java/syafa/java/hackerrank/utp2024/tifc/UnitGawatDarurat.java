@@ -21,28 +21,47 @@ public class UnitGawatDarurat
         }
         input.close();
         Arrays.sort(patientOxygen);
-        sortedPatientName[0] = patientName[0];
-        sortedPatientAge[0] = patientAge[0];
-        sortedPatientOxygen[0] = patientOxygen[0];
-        if (sortedPatientAge[0] < patientAge[1])
+        for (int i = 0; i < 2; i++)
         {
-            sortedPatientAge[0] = patientAge[1];
-            sortedPatientName[0] = patientName[1];
-            sortedPatientOxygen[0] = patientOxygen[1];
-        }
-        if (sortedPatientAge[0] < patientAge[2])
-        {
-            sortedPatientAge[0] = patientAge[2];
-            sortedPatientName[0] = patientName[2];
-            sortedPatientOxygen[0] = patientOxygen[2];
-        }
-        if (sortedPatientOxygen[0] > sortedPatientOxygen[1])
-        {
-            //
-        }
-        if (sortedPatientOxygen[0] > sortedPatientAge[2])
-        {
-            //
+            sortedPatientName[i] = patientName[i];
+            sortedPatientAge[i] = patientAge[i];
+            sortedPatientOxygen[i] = patientOxygen[i];
+            if (sortedPatientAge[i] < patientAge[i + 1])
+            {
+                sortedPatientAge[i] = patientAge[i + 1];
+                sortedPatientName[i] = patientName[i + 1];
+                sortedPatientOxygen[i] = patientOxygen[1];
+            }
+            if (i == 0)
+            {
+                if (sortedPatientAge[i] < patientAge[i + 2])
+                {
+                    sortedPatientAge[i] = patientAge[i + 2];
+                    sortedPatientName[i] = patientName[i + 2];
+                    sortedPatientOxygen[i] = patientOxygen[i + 2];
+                }
+    
+            }
+            if (sortedPatientOxygen[i] > sortedPatientOxygen[i = 1])
+            {
+                if (sortedPatientAge[i] == patientAge[i = 1])
+                {
+                    //
+                }
+                else
+                {
+                    sortedPatientName[i] = patientName[i = 1];
+                    sortedPatientAge[i] = patientAge[i + 1];
+                    sortedPatientOxygen[i] = patientOxygen[i + 1];
+                }
+            }
+            if (i == 0)
+            {
+                if (sortedPatientOxygen[i] > sortedPatientAge[2])
+                {
+                    //
+                }
+            }
         }
     }
 }
