@@ -43,10 +43,19 @@ public class NomorKeberuntungan
         if (divisible.size() == 0)
         {
             divisible.add("Tidak ada");
+            divisible.add("Jackpot!!!");
         }
         else
         {
             divisible.add(0,"Habis dibagi ");
+            if (divisible.size() == 6)
+            {
+                divisible.add("Jackpot!!!");
+            }
+            else
+            {
+                divisible.add("Belum hoki!");
+            }
         }
     }
 }
