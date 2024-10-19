@@ -5,19 +5,6 @@ public class AlternatingCharacters
 {
     public static void main(String[] args)
     {
-        /*
-         * aaabccddd
-         * 
-         * abd
-         * 
-         * aa
-         * 
-         * Empty String
-         * 
-         * baab
-         * 
-         * Empty String
-         */
         Scanner input = new Scanner(System.in);
         String wordString = input.nextLine();
         input.close();
