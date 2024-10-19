@@ -19,6 +19,12 @@ public class SuperReducedString
          * Empty String
          */
         Scanner input = new Scanner(System.in);
+        String word = input.nextLine();
         input.close();
+        ArrayList<Character> result = new ArrayList<>();
+        for (int i = 0; i < word.length(); i++)
+        {
+            //
+        }
     }
 }
