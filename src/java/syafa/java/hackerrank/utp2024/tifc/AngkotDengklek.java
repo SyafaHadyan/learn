@@ -13,6 +13,8 @@ public class AngkotDengklek
         double gasCost = 0d;
         double finalIncome = 0d;
         int currentGas = 20;
+        int adultPassenger = 0;
+        int kidPassenger = 0;
         String passenger = "";
         for (int i = 0; i < passengerAmount; i++)
         {
@@ -20,10 +22,12 @@ public class AngkotDengklek
             if (passenger.equalsIgnoreCase("Dewasa"))
             {
                 incomePassenger += 12000;
+                adultPassenger++;
             }
             else if (passenger.equalsIgnoreCase("Anak kecil"))
             {
                 incomePassenger += 8000;
+                kidPassenger++;
             }
         }
         input.close();
@@ -49,5 +53,6 @@ public class AngkotDengklek
         }
         finalIncome = incomePassenger - gasCost;
         System.out.printf("%-28s%-2c%d%c%s","Total jam operasional",':',(end - start),' ',"jam");
+        System.out.printf("%-28s%-2c%d%c%s","Total penumpang dewasa",':',adultPassenger,' ',"orang");
     }
 }
