@@ -7,7 +7,10 @@ public class MarsExploration
     {
         /*
          * SOS OOS OSO SOS OSS OSO SOS OSO SOS
-         *      x   x   x   x   x       x
+         *      x   x       x   x       x
+         * 
+         * SOS O O SOS O SOS O SS O SOS O SOS O SOS
+         *     x x     x     x  x x  x  x     x 
          * 12
          */
         Scanner input = new Scanner(System.in);
@@ -22,11 +25,12 @@ public class MarsExploration
                 {
                     if (message[i + 2] == 'S')
                     {
-                        //
+                        i += 2;
+                        continue;
                     }
                 }
             }
-            i += 2;
+            corruptMessage++;
         }
         System.out.print(corruptMessage);
     }
