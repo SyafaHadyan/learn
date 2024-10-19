@@ -9,12 +9,13 @@ public class MarsExploration
         char[] message = input.nextLine().toCharArray();
         int corruptMessage = 0;
         input.close();
-        for (int i = 0; i < (message.length / 3); i++)
+        for (int i = 0; i < message.length; i++)
         {
             if (!(message[i] == 'S' && message[i + 1] == 'O' && message[i + 2] == 'S'))
             {
                 corruptMessage++;
             }
+            i += 2;
         }
         System.out.print(corruptMessage);
     }
