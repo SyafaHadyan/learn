@@ -15,6 +15,14 @@ public class NomorKeberuntungan
          * Habis dibagi 2 3
          * Belum hoki!
          * 
+         * 11 2 19
+         * 
+         * Terbesar 19
+         * Terkecil 2
+         * Selisih 19 - 2 = 17
+         * Tidak ada
+         * Jackpot!!!
+         * 
          * 2 3 5 7 11
          * if divisible by 1-4 of num, not jack
          * else if not divisible by any of num or divisible by all of num, jack
