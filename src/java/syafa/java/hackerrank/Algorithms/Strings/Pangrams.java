@@ -58,9 +58,11 @@ public class Pangrams
                 //
             }
         }
-        for (int i = 0; i < word.size(); i++)
+        if (word.equals(Arrays.asList(alphabet)))
         {
-            System.out.println(word.get(i));
+            System.out.print("pangram");
+            return;
         }
+        System.out.print("pangram");
     }
 }
