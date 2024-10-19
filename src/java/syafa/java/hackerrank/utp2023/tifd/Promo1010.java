@@ -72,7 +72,7 @@ public class Promo1010
                 }
                 else if (purchaseCoffee[counter] > 0)
                 {
-                    totalPrice += kopiSusu * purchaseCoffee[counter];
+                    totalPrice += kopiVietnam * purchaseCoffee[counter];
                     kopiVietnam = kopiVietnam * purchaseCoffee[counter];
                 }
                 counter++;
