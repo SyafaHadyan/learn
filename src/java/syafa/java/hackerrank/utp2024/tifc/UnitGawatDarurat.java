@@ -8,8 +8,11 @@ public class UnitGawatDarurat
     {
         Scanner input = new Scanner(System.in);
         String[] patientName = new String[3];
+        String[] sortedPatientName = new String[3];
         int[] patientAge = new int[3];
+        int[] sortedPatientAge = new int[3];
         int[] patientOxygen = new int[3];
+        int[] sortedPatientOxygen = new int[3];
         for (int i = 0; i < 3; i++)
         {
             patientName[i] = input.next();
@@ -17,5 +20,7 @@ public class UnitGawatDarurat
             patientOxygen[i] = Integer.parseInt(input.next());
         }
         input.close();
+        Arrays.sort(patientOxygen);
+        //
     }
 }
