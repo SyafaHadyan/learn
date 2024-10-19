@@ -32,13 +32,17 @@ public class NomorKeberuntungan
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(number);
-        ArrayList<Integer> divisible = new ArrayList<>();
+        ArrayList<String> divisible = new ArrayList<>();
         for (int i = 0; i < magicNumber.length; i++)
         {
             if ((number[number.length - 1] - number[0]) % magicNumber[i] == 0)
             {
-                //
+                divisible.add(String.valueOf(magicNumber[i]));
             }
+        }
+        if (divisible.size() == 0)
+        {
+            divisible.add("Tidak ada");
         }
     }
 }
