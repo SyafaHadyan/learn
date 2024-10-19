@@ -7,6 +7,8 @@ public class ActiveTraders
     {
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
+        int threshold = Integer.parseInt(String.valueOf(Math.floor((5.0 / 100.0) * customerAmount)));
+        int counter = 0;
         String[] customer = new String[customerAmount];
         ArrayList<String> activeCustomer = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
@@ -19,7 +21,11 @@ public class ActiveTraders
         {
             if (customer[i].equalsIgnoreCase(customer[i + 1]))
             {
-                //
+                counter++;
+            }
+            else if (!(customer[i].equalsIgnoreCase(customer[i + 1])))
+            {
+                counter = 0;
             }
         }
     }
