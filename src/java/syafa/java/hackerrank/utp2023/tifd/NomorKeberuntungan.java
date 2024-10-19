@@ -30,6 +30,14 @@ public class NomorKeberuntungan
         Scanner input = new Scanner(System.in);
         int[] magicNumber = {2, 3, 5, 7, 11};
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        Arrays.sort(number);
+        for (int i = 0; i < number.length; i++)
+        {
+            for (int j = 0; j < magicNumber.length; j++)
+            {
+                //
+            }
+        }
         input.close();
     }
 }
