@@ -21,6 +21,16 @@ public class UnitGawatDarurat
         }
         input.close();
         Arrays.sort(patientOxygen);
-        //
+        sortedPatientName[0] = patientName[0];
+        sortedPatientAge[0] = patientAge[0];
+        sortedPatientOxygen[0] = patientOxygen[0];
+        if (sortedPatientAge[0] < patientAge[1])
+        {
+            //
+        }
+        if (sortedPatientAge[0] < patientAge[2])
+        {
+            //
+        }
     }
 }
