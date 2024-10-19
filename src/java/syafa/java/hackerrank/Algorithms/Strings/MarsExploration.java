@@ -14,22 +14,14 @@ public class MarsExploration
          * 12
          */
         Scanner input = new Scanner(System.in);
-        char[] message = input.nextLine().toCharArray();
-        int corruptMessage = 0;
+        //char[] message = input.nextLine().toCharArray();
+        String message = input.nextLine();
         input.close();
-        for (int i = 0; i < message.length; i++)
+        int corruptMessage = 0;
+        String sos = "SOS";
+        for (int i = 0; i < message.length(); i++)
         {
-            if ((message[i] == 'S'))
-            {
-                if (message[i + 1] == 'O')
-                {
-                    if (message[i + 2] == 'S')
-                    {
-                        i += 2;
-                        continue;
-                    }
-                }
-            }
+            if (!(message.charAt(i) == ))
             corruptMessage++;
         }
         System.out.print(corruptMessage);
