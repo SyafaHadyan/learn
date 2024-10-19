@@ -48,6 +48,6 @@ public class AngkotDengklek
             }
         }
         finalIncome = incomePassenger - gasCost;
-        System.out.printf("%-28s%-2c%d%c%s","Total jam operasional",':',(start - end),' ',"jam");
+        System.out.printf("%-28s%-2c%d%c%s","Total jam operasional",':',(end - start),' ',"jam");
     }
 }
