@@ -6,13 +6,12 @@ public class AlternatingCharacters
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String wordString = input.nextLine();
         int testCase = Integer.parseInt(input.nextLine());
-        input.close();
         int counter = 0;
         ArrayList<Character> word = new ArrayList<>();
         for (int i = 0; i < testCase; i++)
         {
+            String wordString = input.nextLine();
             for (int j = 0; j < wordString.length(); j++)
             {
                 word.add(wordString.charAt(j));
@@ -39,5 +38,6 @@ public class AlternatingCharacters
                 }
             }
         }
+        input.close();
     }
 }
