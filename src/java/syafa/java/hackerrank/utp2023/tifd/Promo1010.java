@@ -10,6 +10,11 @@ public class Promo1010
         int[] purchaseCoffee = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         double totalPrice = 0d;
+        double kopiAmericano = 0d;
+        double kopiSusu = 0d;
+        double kopiVietnam = 0d;
+        double kopiCappucino = 0d;
+        double kopiMochaRum = 0d;
         /*
          * am 20000
          * ks 28000
