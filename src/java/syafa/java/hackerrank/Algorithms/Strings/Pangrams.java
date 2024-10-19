@@ -7,7 +7,9 @@ public class Pangrams
     {
         Scanner input = new Scanner(System.in);
         //char[] word = input.nextLine().toCharArray();
-        ArrayList<String> word = new ArrayList<>(Arrays.asList(input.nextLine().split("")));
+        String inputWord = input.nextLine();
+        ArrayList<String> word = new ArrayList<>(Arrays.asList(inputWord.toLowerCase().split("")));
+
         Collections.sort(word);
         input.close();
         for (int i = 0; i < word.size(); i++)
