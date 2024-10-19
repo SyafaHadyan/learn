@@ -26,10 +26,13 @@ public class Promo1010
         {
             if (i == 0)
             {
-                totalPrice += 20000 * purchaseCoffee[i];
                 if (purchaseCoffee[i] > 3)
                 {
-                    //
+                    totalPrice += 0.95 * (purchaseCoffee[i] * 20000);
+                }
+                else
+                {
+                    totalPrice += 20000 * purchaseCoffee[i];
                 }
             }
         }
