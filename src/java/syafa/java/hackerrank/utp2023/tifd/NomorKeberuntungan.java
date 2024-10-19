@@ -66,8 +66,10 @@ public class NomorKeberuntungan
             }
             if (divisible.get(0).equalsIgnoreCase("Tidak ada"))
             {
-                System.out.print("Jackpot!!!");
+                System.out.print("Tidak ada" + "\n" + "Jackpot!!!");
+                return;
             }
+            System.out.print();
         }
     }
 }
