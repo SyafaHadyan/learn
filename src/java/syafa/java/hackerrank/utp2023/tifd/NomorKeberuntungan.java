@@ -44,5 +44,9 @@ public class NomorKeberuntungan
         {
             divisible.add("Tidak ada");
         }
+        else
+        {
+            divisible.add(0,"Habis dibagi ");
+        }
     }
 }
