@@ -6,10 +6,10 @@ public class ActiveTraders
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        Double customerAmount = Double.parseDouble(input.nextLine());
-        Double threshold = Math.floor((5.0 / 100.0) * customerAmount);
+        int customerAmount = Integer.parseInt(input.nextLine());
+        int threshold = (int)Math.floor((5.0 / 100.0) * customerAmount);
         int counter = 0;
-        String[] customer = new String[Integer.parseInt(String.valueOf(Math.floor(customerAmount)))];
+        String[] customer = new String[customerAmount];
         ArrayList<String> activeCustomer = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
@@ -19,17 +19,32 @@ public class ActiveTraders
         input.close();
         for (int i = 0; i < customerAmount; i++)
         {
-            if (customer[i].equalsIgnoreCase(customer[i + 1]))
+            try
             {
-                counter++;
+                if (!(customer[i].equalsIgnoreCase(customer[i + 1])))
+                {
+                    counter = 0;
+                }
+                else
+                {
+                    counter++;
+                }
+                if (counter == threshold)
+                {
+                    activeCustomer.add(customer[i]);
+                }
             }
-            else if (!(customer[i].equalsIgnoreCase(customer[i + 1])))
+            catch (IndexOutOfBoundsException e)
             {
-                counter = 0;
+                //
             }
-            if (counter == threshold)
+        }
+        for (int i = 0; i < activeCustomer.size(); i++)
+        {
+            System.out.print(activeCustomer.get(i)); 
+            if (activeCustomer.size() - i != 1)
             {
-                activeCustomer.add(customer[i]);
+                System.out.print("\n");
             }
         }
     }
