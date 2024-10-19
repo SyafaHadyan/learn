@@ -8,7 +8,7 @@ public class ActiveTraders
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
         String[] customer = new String[customerAmount];
-        
+        ArrayList<String> activeCustomer = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
             customer[i] = input.nextLine();
