@@ -23,5 +23,10 @@ public class HutanLabirin
                 number *= 10;
             }
         }
+        if (number < 1000)
+        {
+            System.out.print("Pemain terjebak setelah" + ' ' + number + ' ' + "langkah");
+            return;
+        }
     }
 }
