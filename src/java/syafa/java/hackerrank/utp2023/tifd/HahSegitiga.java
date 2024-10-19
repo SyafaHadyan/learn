@@ -14,7 +14,7 @@ public class HahSegitiga
          * 3 3 5
          * Segitiga sama kaki
          * 
-         * []Segitiga siku-siku
+         * [x]Segitiga siku-siku
          * [x]Segitiga sama sisi
          * [x]Segitiga sama kaki
          * [x]Segitiga sembarang
@@ -32,12 +32,35 @@ public class HahSegitiga
             else if (triangle[0] < triangle[2])
             {
                 System.out.print("Segitiga sama kaki");
-                input.close();
+                return;
             }
         }
         else if (triangle[0] < triangle[1] && triangle[1] < triangle[2])
         {
             System.out.print("Segitiga siku-siku");
+            return;
+        }
+        else if (triangle[0] == triangle[2])
+        {
+            System.out.print("Segitiga sama kaki");
+            return;
+        }
+        else if ((triangle[0] - triangle[1]) * 2 == (triangle[2] - triangle[1]))
+        {
+            System.out.print("Segitiga siku-siku");
+            return;
+        }
+        //25 24 7
+        else if (triangle[0] - triangle[1] == 1)
+        {
+            System.out.print("Segitiga siku-siku");
+            return;
+        }
+        //14.5 10 10.5
+        else if ((triangle[0] > triangle[1]) && (triangle [2] > triangle[1]))
+        {
+            System.out.print("Segitiga siku-siku");
+            return;
         }
         else
         {
