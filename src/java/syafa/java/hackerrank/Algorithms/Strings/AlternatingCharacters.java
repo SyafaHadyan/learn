@@ -7,11 +7,11 @@ public class AlternatingCharacters
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int counter = 0;
         ArrayList<Character> word = new ArrayList<>();
         for (int i = 0; i < testCase; i++)
         {
             String wordString = input.nextLine();
+            int counter = 0;
             for (int j = 0; j < wordString.length(); j++)
             {
                 word.add(wordString.charAt(j));
