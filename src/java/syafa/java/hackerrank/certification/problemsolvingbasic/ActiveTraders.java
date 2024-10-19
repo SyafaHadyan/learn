@@ -6,10 +6,10 @@ public class ActiveTraders
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int customerAmount = Integer.parseInt(input.nextLine());
-        int threshold = Integer.parseInt(String.valueOf(Math.floor((5.0 / 100.0) * customerAmount)));
+        Double customerAmount = Double.parseDouble(input.nextLine());
+        Double threshold = Math.floor((5.0 / 100.0) * customerAmount);
         int counter = 0;
-        String[] customer = new String[customerAmount];
+        String[] customer = new String[Integer.parseInt(String.valueOf(Math.floor(customerAmount)))];
         ArrayList<String> activeCustomer = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
@@ -27,7 +27,7 @@ public class ActiveTraders
             {
                 counter = 0;
             }
-            if (counter == 5)
+            if (counter == threshold)
             {
                 activeCustomer.add(customer[i]);
             }
