@@ -26,11 +26,15 @@ public class UnitGawatDarurat
         sortedPatientOxygen[0] = patientOxygen[0];
         if (sortedPatientAge[0] < patientAge[1])
         {
-            //
+            sortedPatientAge[0] = patientAge[1];
+            sortedPatientName[0] = patientName[1];
+            sortedPatientOxygen[0] = patientOxygen[1];
         }
         if (sortedPatientAge[0] < patientAge[2])
         {
-            //
+            sortedPatientAge[0] = patientAge[2];
+            sortedPatientName[0] = patientName[2];
+            sortedPatientOxygen[0] = patientOxygen[2];
         }
     }
 }
