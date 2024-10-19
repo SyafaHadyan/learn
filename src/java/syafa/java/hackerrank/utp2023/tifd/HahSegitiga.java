@@ -6,6 +6,9 @@ public class HahSegitiga
     public static void main(String[] args)
     {
         /*
+         * x y z
+         * 3 4 5
+         * 
          * Segitiga siku-siku
          * Segitiga sama sisi
          * Segitiga sama kaki
