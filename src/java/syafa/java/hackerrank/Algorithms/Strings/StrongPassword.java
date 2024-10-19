@@ -46,11 +46,16 @@ public class StrongPassword
         boolean containUpperCase = false;
         for (int i = 0; i < 2; i++)
         {
-            String temp = password.toLowerCase();
-            if (!(password.equals(temp)))
+            if (i == 0)
             {
-                containLowerCase = true;
+                String temp = password.toLowerCase();
+                if (!(password.equals(temp)))
+                {
+                    containLowerCase = true;
+                    break;
+                }
             }
+            else if ((password.e))
         }
         for (int i = 0; i < password.length(); i++)
         {
