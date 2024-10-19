@@ -1,2 +1,0 @@
-cd src/java/syafa/java/hackerrank/utp2024/tifc
-cd "D:/GitHub/learn/src/java/syafa/java/hackerrank/utp2024/tifc"
