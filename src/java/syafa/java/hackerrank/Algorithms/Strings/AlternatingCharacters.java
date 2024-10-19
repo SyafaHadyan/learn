@@ -7,6 +7,7 @@ public class AlternatingCharacters
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        int[] result = new int[testCase];
         ArrayList<Character> word = new ArrayList<>();
         for (int i = 0; i < testCase; i++)
         {
@@ -16,7 +17,6 @@ public class AlternatingCharacters
             {
                 word.add(wordString.charAt(j));
             }
-            //ArrayList<Character> result = new ArrayList<>();
             for (int j = 0; j < word.size(); j++)
             {
                 try
@@ -30,11 +30,7 @@ public class AlternatingCharacters
                 }
                 catch (IndexOutOfBoundsException e)
                 {
-                    System.out.print(counter);
-                    if (testCase - i != 1)
-                    {
-                        System.out.print("\n");
-                    }
+                    result[i] = counter;
                 }
             }
         }
