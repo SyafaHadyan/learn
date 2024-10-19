@@ -22,34 +22,22 @@ public class AlternatingCharacters
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] result = new int[testCase];
-        ArrayList<Character> word = new ArrayList<>();
         for (int i = 0; i < testCase; i++)
         {
-            String wordString = input.nextLine();
             int counter = 0;
-            for (int j = 0; j < wordString.length(); j++)
-            {
-                word.add(wordString.charAt(j));
-            }
-            for (int j = 0; j < word.size(); j++)
+            char[] word = input.nextLine().toCharArray();
+            for (int j = 0; j < word.length; j++)
             {
                 try
                 {
-                    if (j == word.size() - 1)
+                    if (word[j] == word[j + 1])
                     {
-                        word.get(word.size());
-                    }
-                    if (word.get(j) == word.get(j + 1))
-                    {
-                        word.remove(j);
                         counter++;
-                        j--;
                     }
                 }
                 catch (IndexOutOfBoundsException e)
                 {
                     result[i] = counter;
-                    word.clear();
                 }
             }
         }
