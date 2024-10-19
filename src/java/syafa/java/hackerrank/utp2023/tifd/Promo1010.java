@@ -35,7 +35,7 @@ public class Promo1010
                 if (purchaseCoffee[counter] > 3)
                 {
                     totalPrice += 0.95 * (purchaseCoffee[counter] * kopiAmericano);
-                    kopiAmericano = kopiAmericano * purchaseCoffee[counter];
+                    kopiAmericano = 0.95 * (purchaseCoffee[counter] * kopiAmericano);
                 }
                 else if (purchaseCoffee[counter] > 0)
                 {
@@ -49,7 +49,7 @@ public class Promo1010
                 if (purchaseCoffee[counter] > 2)
                 {
                     totalPrice += 0.92 * (purchaseCoffee[counter] * kopiSusu);
-                    kopiSusu = kopiSusu * purchaseCoffee[counter];
+                    kopiSusu = 0.92 * (purchaseCoffee[counter] * kopiSusu);
                 }
                 else if (purchaseCoffee[counter] > 0)
                 {
@@ -63,7 +63,7 @@ public class Promo1010
                 if (purchaseCoffee[counter] > 4)
                 {
                     totalPrice += 0.88 * (purchaseCoffee[counter] * kopiVietnam);
-                    kopiVietnam = kopiVietnam * purchaseCoffee[counter];
+                    kopiVietnam = 0.88 * (purchaseCoffee[counter] * kopiVietnam);
                 }
                 else if (purchaseCoffee[counter] > 0)
                 {
