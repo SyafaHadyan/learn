@@ -5,34 +5,6 @@ public class StrongPassword
 {
     public static void main(String[] args)
     {
-        /*
-         * numbers = "0123456789"
-         * lower_case = "abcdefghijklmnopqrstuvwxyz"
-         * upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-         * special_characters = "!@#$%^&*()-+"
-         * 
-         * 2bbbbb
-         * This password is 5 characters long and is missing an uppercase and a special character. The minimum number of characters to add is 2.
-         * 
-         * 2bb#A
-         * is password is 5 characters long and has at least one of each character type. The minimum number of characters to add is 1.
-         * 
-         * passwordLength
-         * password
-         * 
-         * minimumCharToAdd
-         * 
-         * 3
-         * Ab1
-         * 
-         * 3
-         * 
-         * 
-         * 11
-         * #HackerRank
-         * 
-         * 1
-         */
         Scanner input = new Scanner(System.in);
         StringBuilder useless = new StringBuilder(input.nextLine());
         useless.delete(0,useless.length());
