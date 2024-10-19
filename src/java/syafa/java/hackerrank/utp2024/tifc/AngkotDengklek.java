@@ -12,7 +12,7 @@ public class AngkotDengklek
         input.close();
         double incomePassenger = 0d;
         double gasCost = 0d;
-        double finalCost = 0d;
+        double finalIncome = 0d;
         int currentGas = 20;
         String passenger = "";
         for (int i = 0; i < passengerAmount; i++)
@@ -47,5 +47,7 @@ public class AngkotDengklek
                 currentGas = 20;
             }
         }
+        finalIncome = incomePassenger - gasCost;
+        System.out.printf("%-28s%-2c%d%c%s","Total jam operasional",':',(start - end),' ',"jam");
     }
 }
