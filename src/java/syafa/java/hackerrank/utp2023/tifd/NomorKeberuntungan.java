@@ -33,14 +33,11 @@ public class NomorKeberuntungan
         input.close();
         Arrays.sort(number);
         ArrayList<Integer> divisible = new ArrayList<>();
-        for (int i = 0; i < number.length; i++)
+        for (int i = 0; i < magicNumber.length; i++)
         {
-            for (int j = 0; j < magicNumber.length; j++)
+            if ((number[number.length - 1] - number[0]) % magicNumber[i] == 0)
             {
-                if (number[i] % magicNumber[j] == 0)
-                {
-                    //
-                }
+                //
             }
         }
     }
