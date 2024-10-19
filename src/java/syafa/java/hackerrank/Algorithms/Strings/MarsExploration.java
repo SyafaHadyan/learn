@@ -11,7 +11,10 @@ public class MarsExploration
         input.close();
         for (int i = 0; i < (message.length / 3); i++)
         {
-            //
+            if (!(message[i] == 'S' && message[i + 1] == 'O' && message[i + 2] == 'S'))
+            {
+                corruptMessage++;
+            }
         }
     }
 }
