@@ -66,6 +66,11 @@ public class Promo1010
                 }
                 i++;
             }
+            else if (i == 3)
+            {
+                totalPrice += kopiCappucino * purchaseCoffee[i];
+                i++;
+            }
 
         }
         //System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
