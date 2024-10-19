@@ -21,17 +21,19 @@ public class HahSegitiga
          */
         Scanner input = new Scanner(System.in);
         double[] triangle = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
+        input.close();
         if (triangle[0] == triangle[1])
         {
             if (triangle[0] == triangle[2])
             {
                 System.out.print("Segitiga sama sisi");
+                return;
             }
             else if (triangle[0] < triangle[2])
             {
                 System.out.print("Segitiga sama kaki");
+                input.close();
             }
         }
-        input.close();
     }
 }
