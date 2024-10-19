@@ -34,6 +34,19 @@ public class Promo1010
                 {
                     totalPrice += 20000 * purchaseCoffee[i];
                 }
+                i++;
+            }
+            else if (i == 1)
+            {
+                if (purchaseCoffee[i] > 2)
+                {
+                    totalPrice += 0.92 * (purchaseCoffee[i] * 28000);
+                }
+                else
+                {
+                    totalPrice += 28000 * purchaseCoffee[i];
+                }
+                i++;
             }
         }
         //System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
