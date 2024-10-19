@@ -46,7 +46,7 @@ public class NomorKeberuntungan
         }
         else
         {
-            divisible.add(0,"Habis dibagi ");
+            divisible.add(0,"Habis dibagi");
             if (divisible.size() == 6)
             {
                 divisible.add("Jackpot!!!");
@@ -61,7 +61,7 @@ public class NomorKeberuntungan
             if (i == 0)
             {
                 System.out.println("Terbesar" + " " + number[number.length - 1] + "\n" +
-                                    "Terkecil" + " " + number[0] +
+                                    "Terkecil" + " " + number[0] + "\n" +
                                     "Selisih" + " " + (number[number.length - 1] - number[0]));
             }
             if (divisible.get(0).equalsIgnoreCase("Tidak ada"))
@@ -70,9 +70,13 @@ public class NomorKeberuntungan
                 return;
             }
             System.out.print(divisible.get(i));
-            if (divisible.size() - 1 != 1)
+            if ((divisible.size() - i != 1) && (divisible.size() - i != 2))
             {
                 System.out.print(' ');
+            }
+            if (divisible.size() - i == 2)
+            {
+                System.out.print("\n");
             }
         }
     }
