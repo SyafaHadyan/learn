@@ -33,16 +33,21 @@ public class SuperReducedString
             {
                 if (word.get(i) == word.get(i + 1))
                 {
-                    
+                    word.remove(i);
                 }
+                /*
                 else if (word.get(i) != word.get(i))
                 {
                     result.add(word.get(i));
                 }
+                */
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                for (int j = 0; j < word.size(); j++)
+                {
+                    System.out.print(word.get(j));
+                }
             }
         }
     }
