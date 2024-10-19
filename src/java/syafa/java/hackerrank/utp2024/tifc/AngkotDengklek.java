@@ -44,6 +44,7 @@ public class AngkotDengklek
                 {
                     //10000
                 }
+                currentGas = 20;
             }
         }
     }
