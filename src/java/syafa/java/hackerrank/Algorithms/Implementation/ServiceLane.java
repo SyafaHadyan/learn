@@ -39,13 +39,13 @@ public class ServiceLane
         int[] highwayCar = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] servieLane = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] result = new int[highwayCar[1]];
-        for (int i = 0; i < highwayCar[2]; i++)
+        for (int i = 0; i < highwayCar[1]; i++)
         {
             int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            int[] checkLane = new int[temp[1] - temp[0]];
-            for (int j = temp[0]; j < temp[1]; j++)
+            int[] checkLane = new int[(temp[1] - temp[0]) + 1];
+            for (int j = 0; j <= (temp[1] - temp[0]); j++)
             {
-                checkLane[j] = servieLane[j];
+                checkLane[j] = servieLane[temp[0] + j];
             }
             Arrays.sort(checkLane);
             result[i] = checkLane[0];
