@@ -83,8 +83,8 @@ public class Promo1010
                 {
                     totalPrice += kopiCappucino * purchaseCoffee[counter];
                     kopiCappucino = kopiCappucino * purchaseCoffee[counter];
-                    counter++;
                 }
+                counter++;
             }
             else if (counter == 4)
             {
@@ -98,8 +98,8 @@ public class Promo1010
                 {
                     totalPrice += kopiMochaRum * purchaseCoffee[counter];
                     kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
-                    counter++;
                 }
+                counter++;
             }
         }
         /*
