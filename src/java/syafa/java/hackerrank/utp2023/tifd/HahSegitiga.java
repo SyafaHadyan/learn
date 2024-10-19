@@ -14,10 +14,10 @@ public class HahSegitiga
          * 3 3 5
          * Segitiga sama kaki
          * 
-         * Segitiga siku-siku
-         * Segitiga sama sisi
-         * Segitiga sama kaki
-         * Segitiga sembarang
+         * []Segitiga siku-siku
+         * [x]Segitiga sama sisi
+         * [x]Segitiga sama kaki
+         * []Segitiga sembarang
          */
         Scanner input = new Scanner(System.in);
         double[] triangle = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
