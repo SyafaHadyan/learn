@@ -27,17 +27,17 @@ public class SuperReducedString
             word.add(wordString.charAt(i));
         }
         ArrayList<Character> result = new ArrayList<>();
-        for (int i = 0; i < word.length; i++)
+        for (int i = 0; i < word.size(); i++)
         {
             try
             {
-                if (word[i] == word[i + 1])
+                if (word.get(i) == word.get(i + 1))
                 {
                     
                 }
-                else if (word[i] != word[i])
+                else if (word.get(i) != word.get(i))
                 {
-                    result.add(word[i]);
+                    result.add(word.get(i));
                 }
             }
             catch (IndexOutOfBoundsException e)
