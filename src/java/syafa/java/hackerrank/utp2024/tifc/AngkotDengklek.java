@@ -54,5 +54,7 @@ public class AngkotDengklek
         finalIncome = incomePassenger - gasCost;
         System.out.printf("%-28s%-2c%d%c%s","Total jam operasional",':',(end - start),' ',"jam");
         System.out.printf("%-28s%-2c%d%c%s","Total penumpang dewasa",':',adultPassenger,' ',"orang");
+        System.out.printf("%-28s%-2c%d%c%s","Total penumpang anak-anak",':',kidPassenger,' ',"orang");
+        System.out.printf("%-28s%-2c%-3s%.2f%s","Total pemasukan penumpang",':',"Rp",incomePassenger,".-");
     }
 }
