@@ -42,6 +42,10 @@ public class ServiceLane
         for (int i = 0; i < highwayCar[2]; i++)
         {
             int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            for (int j = temp[0]; j < temp[1]; j++)
+            {
+                //
+            }
         }
         input.close();
     }
