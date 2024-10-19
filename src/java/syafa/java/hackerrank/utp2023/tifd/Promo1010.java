@@ -83,5 +83,6 @@ public class Promo1010
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","kopi susu",':',"Rp",kopiSusu);
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","kopi vietnam",':',"Rp",kopiVietnam);
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","cappucino",':',"Rp",kopiCappucino);
+        System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","mocha rum",':',"Rp",kopiMochaRum);
     }
 }
