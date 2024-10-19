@@ -10,11 +10,11 @@ public class Promo1010
         int[] purchaseCoffee = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         double totalPrice = 0d;
-        double kopiAmericano = 0d;
-        double kopiSusu = 0d;
-        double kopiVietnam = 0d;
-        double kopiCappucino = 0d;
-        double kopiMochaRum = 0d;
+        double kopiAmericano = 20000d;
+        double kopiSusu = 28000d;
+        double kopiVietnam = 23000d;
+        double kopiCappucino = 31000d;
+        double kopiMochaRum = 35000d;
         /*
          * am 20000
          * ks 28000
@@ -34,8 +34,9 @@ public class Promo1010
                 if (purchaseCoffee[i] > 3)
                 {
                     totalPrice += 0.95 * (purchaseCoffee[i] * 20000);
+
                 }
-                else
+                else if (purchaseCoffee[i] > 0)
                 {
                     totalPrice += 20000 * purchaseCoffee[i];
                 }
@@ -47,7 +48,7 @@ public class Promo1010
                 {
                     totalPrice += 0.92 * (purchaseCoffee[i] * 28000);
                 }
-                else
+                else if (purchaseCoffee[i] > 0)
                 {
                     totalPrice += 28000 * purchaseCoffee[i];
                 }
