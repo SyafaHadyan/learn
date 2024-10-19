@@ -27,6 +27,10 @@ public class ActiveTraders
             {
                 counter = 0;
             }
+            if (counter == 5)
+            {
+                activeCustomer.add(customer[i]);
+            }
         }
     }
 }
