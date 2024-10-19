@@ -77,6 +77,7 @@ public class Promo1010
             {
                 totalPrice += kopiMochaRum * purchaseCoffee[counter];
                 kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
+                counter++;
             }
         }
         /*
