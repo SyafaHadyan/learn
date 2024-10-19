@@ -45,7 +45,7 @@ public class ServiceLane
             int[] checkLane = new int[temp[1] - temp[0]];
             for (int j = temp[0]; j < temp[1]; j++)
             {
-                checkLane[j] = temp[j];
+                checkLane[j] = servieLane[j];
             }
             Arrays.sort(checkLane);
             result[i] = checkLane[0];
