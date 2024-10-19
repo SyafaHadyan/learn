@@ -38,12 +38,13 @@ public class StrongPassword
         int passwordLength = Integer.parseInt(input.nextLine());
         String password = input.nextLine();
         input.close();
-        String[] number = (String.valueOf("0123456789").split("//"));
+        //String[] number = (String.valueOf("0123456789").split("//"));
         String[] specialCharacter = (String.valueOf("!@#$%^&*()-+").split("//"));
         boolean containNumber = false;
         boolean containSpecialCharacter = false;
         boolean containLowerCase = false;
         boolean containUpperCase = false;
+        int requiredCharacter = 0;
         for (int i = 0; i < password.length(); i++)
         {
             if (Character.isUpperCase(password.charAt(i)))
@@ -69,6 +70,10 @@ public class StrongPassword
                     break;
                 }
             }
+        }
+        if (!containNumber)
+        {
+            requiredCharacter++;
         }
     }
 }
