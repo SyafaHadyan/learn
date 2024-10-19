@@ -44,6 +44,11 @@ public class SuperReducedString
             }
             catch (IndexOutOfBoundsException e)
             {
+                if (word.isEmpty())
+                {
+                    System.out.print("Empty string");
+                    return;
+                }
                 for (int j = 0; j < word.size(); j++)
                 {
                     System.out.print(word.get(j));
