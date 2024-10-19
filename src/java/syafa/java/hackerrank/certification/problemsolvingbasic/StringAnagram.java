@@ -25,7 +25,7 @@ public class StringAnagram
             {
                 if (tempSorted.equalsIgnoreCase(dictonary[i]));
                 {
-                    //
+                    match[i]++;
                 }
             }
         }
