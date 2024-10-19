@@ -79,9 +79,12 @@ public class Promo1010
             }
             else if (counter == 3)
             {
-                totalPrice += kopiCappucino * purchaseCoffee[counter];
-                kopiCappucino = kopiCappucino * purchaseCoffee[counter];
-                counter++;
+                if (purchaseCoffee[counter] > 0)
+                {
+                    totalPrice += kopiCappucino * purchaseCoffee[counter];
+                    kopiCappucino = kopiCappucino * purchaseCoffee[counter];
+                    counter++;
+                }
             }
             else if (counter == 4)
             {
@@ -91,9 +94,12 @@ public class Promo1010
                     totalPrice += kopiMochaRum * purchaseCoffee[counter];
                     kopiMochaRum = (kopiMochaRum * purchaseCoffee[counter]) - 10000;
                 }
-                totalPrice += kopiMochaRum * purchaseCoffee[counter];
-                kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
-                counter++;
+                else if (purchaseCoffee[counter] > 0)
+                {
+                    totalPrice += kopiMochaRum * purchaseCoffee[counter];
+                    kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
+                    counter++;
+                }
             }
         }
         /*
@@ -107,6 +113,6 @@ public class Promo1010
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","mocha rum",':',"Rp",kopiMochaRum);
         System.out.println("=====================================");
         System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",totalPrice);
-        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",totalPrice - discount);
+        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",(totalPrice - discount));
     }
 }
