@@ -38,6 +38,11 @@ public class ServiceLane
         Scanner input = new Scanner(System.in);
         int[] highwayCar = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] servieLane = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] result = new int[highwayCar[1]];
+        for (int i = 0; i < highwayCar[2]; i++)
+        {
+            //
+        }
         input.close();
     }
 }
