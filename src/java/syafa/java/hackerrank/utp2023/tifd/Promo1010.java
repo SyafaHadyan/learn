@@ -33,12 +33,12 @@ public class Promo1010
             {
                 if (purchaseCoffee[i] > 3)
                 {
-                    totalPrice += 0.95 * (purchaseCoffee[i] * 20000);
+                    totalPrice += 0.95 * (purchaseCoffee[i] * kopiAmericano);
 
                 }
                 else if (purchaseCoffee[i] > 0)
                 {
-                    totalPrice += 20000 * purchaseCoffee[i];
+                    totalPrice += kopiAmericano * purchaseCoffee[i];
                 }
                 i++;
             }
@@ -46,14 +46,27 @@ public class Promo1010
             {
                 if (purchaseCoffee[i] > 2)
                 {
-                    totalPrice += 0.92 * (purchaseCoffee[i] * 28000);
+                    totalPrice += 0.92 * (purchaseCoffee[i] * kopiSusu);
                 }
                 else if (purchaseCoffee[i] > 0)
                 {
-                    totalPrice += 28000 * purchaseCoffee[i];
+                    totalPrice += kopiSusu * purchaseCoffee[i];
                 }
                 i++;
             }
+            else if (i == 2)
+            {
+                if (purchaseCoffee[i] > 4)
+                {
+                    totalPrice += 0.88 * (purchaseCoffee[i] * kopiVietnam);
+                }
+                else if (purchaseCoffee[i] > 0)
+                {
+                    totalPrice += kopiSusu * purchaseCoffee[i];
+                }
+                i++;
+            }
+
         }
         //System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
     }
