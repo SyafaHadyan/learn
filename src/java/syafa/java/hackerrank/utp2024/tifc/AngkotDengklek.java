@@ -13,7 +13,7 @@ public class AngkotDengklek
         double incomePassenger = 0d;
         double gasCost = 0d;
         double finalCost = 0d;
-        int currentGas = 0;
+        int currentGas = 20;
         String passenger = "";
         for (int i = 0; i < passengerAmount; i++)
         {
@@ -25,6 +25,25 @@ public class AngkotDengklek
             else if (passenger.equalsIgnoreCase("Anak kecil"))
             {
                 incomePassenger += 8000;
+            }
+        }
+        for (int i = start; i <= end; i++)
+        {
+            currentGas -= 2;
+            if (currentGas == 0)
+            {
+                if (i >= 0 && i <12)
+                {
+                    //11000
+                }
+                else if (i >= 12 && i < 18)
+                {
+                    //12000
+                }
+                else if (i >= 18 && i < 24)
+                {
+                    //10000
+                }
             }
         }
     }
