@@ -79,5 +79,9 @@ public class StrongPassword
         {
             requiredCharacter++;
         }
+        else if (!containLowerCase)
+        {
+            requiredCharacter++;
+        }
     }
 }
