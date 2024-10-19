@@ -12,10 +12,22 @@ public class Pangrams
         input.close();
         for (int i = 0; i < word.size(); i++)
         {
-            if (word.get(i) == word.get(i + 1))
+            try
+            {
+                if (word.get(i) == word.get(i + 1))
+                {
+                    word.remove(i);
+                    i--;
+                }
+            }
+            catch (IndexOutOfBoundsException e)
             {
                 //
             }
+        }
+        for (int i = 0; i < word.size(); i++)
+        {
+            System.out.println(word.get(i));
         }
     }
 }
