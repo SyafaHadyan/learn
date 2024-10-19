@@ -1,7 +1,7 @@
 package syafa.java.hackerrank.utp2024.tifc;
 import java.util.*;
 
-public class Soal1
+public class HutanLabirin
 {
     public static void main(String[] args)
     {
