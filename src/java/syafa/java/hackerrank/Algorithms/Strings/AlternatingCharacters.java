@@ -5,20 +5,6 @@ public class AlternatingCharacters
 {
     public static void main(String[] args)
     {
-        /*
-         * 5
-         * AAAA
-         * BBBBB
-         * ABABABAB
-         * BABABA
-         * AAABBB
-         * 
-         * 3
-         * 4
-         * 0
-         * 0
-         * 4
-         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] result = new int[testCase];
