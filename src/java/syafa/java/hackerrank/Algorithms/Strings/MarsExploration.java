@@ -21,8 +21,10 @@ public class MarsExploration
         String sos = "SOS";
         for (int i = 0; i < message.length(); i++)
         {
-            if (!(message.charAt(i) == ))
-            corruptMessage++;
+            if (!(message.charAt(i) == sos.charAt(i % sos.length())))
+            {
+                corruptMessage++;
+            }
         }
         System.out.print(corruptMessage);
     }
