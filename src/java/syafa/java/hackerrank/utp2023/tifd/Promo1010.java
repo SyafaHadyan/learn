@@ -70,13 +70,14 @@ public class Promo1010
             else if (counter == 3)
             {
                 totalPrice += kopiCappucino * purchaseCoffee[counter];
+                kopiCappucino = kopiCappucino * purchaseCoffee[counter];
                 counter++;
             }
             else if (counter == 4)
             {
                 totalPrice += kopiMochaRum * purchaseCoffee[counter];
+                kopiMochaRum = kopiMochaRum * purchaseCoffee[counter];
             }
-
         }
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total kopi","n");
     }
