@@ -41,5 +41,9 @@ public class StrongPassword
         String specialCharacter = "!@#$%^&*()-+";
         boolean containLowerCase = false;
         boolean containUpperCase = false;
+        for (int i = 0; i < password.length(); i++)
+        {
+            //
+        }
     }
 }
