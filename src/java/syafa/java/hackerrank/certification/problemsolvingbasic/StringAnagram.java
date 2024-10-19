@@ -15,6 +15,20 @@ public class StringAnagram
             dictonary[i] = new String(tempChar);
         }
         int[] match = new int[Integer.parseInt(input.nextLine())];
+        for (int i = 0; i < match.length; i++)
+        {
+            String tempString = input.nextLine();
+            char[] tempChar = tempString.toCharArray();
+            Arrays.sort(tempChar);
+            String tempSorted = new String(tempChar);
+            for (int j = 0; j < dictonary.length; j++)
+            {
+                if (tempSorted.equalsIgnoreCase(dictonary[i]));
+                {
+                    //
+                }
+            }
+        }
         input.close();
     }
 }
