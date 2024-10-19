@@ -22,11 +22,12 @@ public class SuperReducedString
         String wordString = input.nextLine();
         input.close();
         ArrayList<Character> word = new ArrayList<>();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < wordString.length(); i++)
         {
             word.add(wordString.charAt(i));
         }
-        ArrayList<Character> result = new ArrayList<>();
+        Collections.sort(word);
+        //ArrayList<Character> result = new ArrayList<>();
         for (int i = 0; i < word.size(); i++)
         {
             try
