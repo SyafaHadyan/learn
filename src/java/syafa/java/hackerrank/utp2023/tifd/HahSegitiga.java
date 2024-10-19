@@ -35,5 +35,10 @@ public class HahSegitiga
                 input.close();
             }
         }
+        else
+        {
+            System.out.print("Segitiga sembarang");
+            return;
+        }
     }
 }
