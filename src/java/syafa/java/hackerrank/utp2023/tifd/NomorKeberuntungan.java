@@ -43,7 +43,6 @@ public class NomorKeberuntungan
         if (divisible.size() == 0)
         {
             divisible.add("Tidak ada");
-            divisible.add("Jackpot!!!");
         }
         else
         {
@@ -64,6 +63,10 @@ public class NomorKeberuntungan
                 System.out.println("Terbesar" + " " + number[number.length - 1] + "\n" +
                                     "Terkecil" + " " + number[0] +
                                     "Selisih" + " " + (number[number.length - 1] - number[0]));
+            }
+            if (divisible.get(0).equalsIgnoreCase("Tidak ada"))
+            {
+                System.out.print("Jackpot!!!");
             }
         }
     }
