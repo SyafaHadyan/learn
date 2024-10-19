@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.utp2023.tifd;
 import java.util.*;
+import java.util.stream.*;
 
 public class HahSegitiga
 {
@@ -15,6 +16,7 @@ public class HahSegitiga
          * Segitiga sembarang
          */
         Scanner input = new Scanner(System.in);
+        double[] triangle = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
         input.close();
     }
 }
