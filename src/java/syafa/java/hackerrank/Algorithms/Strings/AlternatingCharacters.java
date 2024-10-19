@@ -7,39 +7,35 @@ public class AlternatingCharacters
     {
         Scanner input = new Scanner(System.in);
         String wordString = input.nextLine();
+        int testCase = Integer.parseInt(input.nextLine());
         input.close();
+        int counter = 0;
         ArrayList<Character> word = new ArrayList<>();
-        for (int i = 0; i < wordString.length(); i++)
+        for (int i = 0; i < testCase; i++)
         {
-            word.add(wordString.charAt(i));
-        }
-        //ArrayList<Character> result = new ArrayList<>();
-        for (int i = 0; i < word.size(); i++)
-        {
-            try
+            for (int j = 0; j < wordString.length(); j++)
             {
-                if (word.get(i) == word.get(i + 1))
-                {
-                    word.remove(i);
-                    i--;
-                }
-                /*
-                else if (word.get(i) != word.get(i))
-                {
-                    result.add(word.get(i));
-                }
-                */
+                word.add(wordString.charAt(j));
             }
-            catch (IndexOutOfBoundsException e)
+            //ArrayList<Character> result = new ArrayList<>();
+            for (int j = 0; j < word.size(); j++)
             {
-                if (word.isEmpty())
+                try
                 {
-                    System.out.print("Empty string");
-                    return;
+                    if (word.get(j) == word.get(j + 1))
+                    {
+                        word.remove(j);
+                        counter++;
+                        j--;
+                    }
                 }
-                for (int j = 0; j < word.size(); j++)
+                catch (IndexOutOfBoundsException e)
                 {
-                    System.out.print(word.get(j));
+                    System.out.print(counter);
+                    if (testCase - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
                 }
             }
         }
