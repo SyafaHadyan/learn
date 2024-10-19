@@ -86,9 +86,9 @@ public class StrongPassword
         {
             requiredCharacter++;
         }
-        if (password.length() < 6)
+        if ((password.length() < 6) && (6 - password.length() < requiredCharacter))
         {
-            requiredCharacter += 6 - password.length();
+            requiredCharacter = 6 - password.length();
         }
         System.out.print(requiredCharacter);
     }
