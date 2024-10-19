@@ -10,7 +10,7 @@ public class HutanLabirin
         int end = Integer.parseInt(input.nextLine());
         //int step = Integer.parseInt(input.nextLine());
         input.close();
-        int counter = 0;
+        int counter = start;
         int number = start;
         while (counter != end || number < 1000 || counter <= end)
         {
@@ -21,7 +21,7 @@ public class HutanLabirin
             }
             else if (number == 1 || number % 2 != 0)
             {
-                number *= 100;
+                number *= 10;
             }
             if (number > 1000 || counter == end)
             {
@@ -30,9 +30,9 @@ public class HutanLabirin
         }
         if (number < 1000)
         {
-            System.out.print("Pemain terjebak setelah" + ' ' + counter + ' ' + "langkah");
+            System.out.print("Pemain terjebak setelah" + ' ' + (counter - start) + ' ' + "langkah");
             return;
         }
-        System.out.print("Pemain keluar setelah" + ' ' + counter + ' ' + "langkah");
+        System.out.print("Pemain keluar setelah" + ' ' + (counter - start) + ' ' + "langkah");
     }
 }
