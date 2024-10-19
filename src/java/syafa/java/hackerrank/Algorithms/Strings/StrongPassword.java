@@ -39,14 +39,17 @@ public class StrongPassword
         String password = input.nextLine();
         input.close();
         String[] number = (String.valueOf("0123456789").split("//"));
-        String specialCharacter = "!@#$%^&*()-+";
+        String[] specialCharacter = (String.valueOf("!@#$%^&*()-+").split("//"));
         boolean containLowerCase = false;
         boolean containUpperCase = false;
         for (int i = 0; i < password.length(); i++)
         {
-            if (password.contains(number.charAt(i)))
+            for (int j = 0; j < number.length; j++)
             {
-
+                if (password.equalsIgnoreCase(number[j]))
+                {
+                    break;
+                }
             }
         }
     }
