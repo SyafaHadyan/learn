@@ -10,9 +10,14 @@ public class HutanLabirin
         int end = Integer.parseInt(input.nextLine());
         int step = Integer.parseInt(input.nextLine());
         input.close();
-        for (int i = 0; i < step; i++)
+        int counter = 1;
+        int number = start;
+        while (counter != step || number < 1000)
         {
-            //
-        }        
+            if (number == 0 || number % 2 == 0)
+            {
+                number /= 2;
+            }
+        }
     }
 }
