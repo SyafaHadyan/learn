@@ -12,7 +12,7 @@ public class HutanLabirin
         input.close();
         int counter = 0;
         int number = start;
-        while (counter != step || number < 1000)
+        while (counter != step || number < 1000 || counter <= step)
         {
             counter++;
             if (number == 0 || number % 2 == 0)
