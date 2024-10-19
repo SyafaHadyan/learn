@@ -5,6 +5,19 @@ public class SuperReducedString
 {
     public static void main(String[] args)
     {
+        /*
+         * aaabccddd
+         * 
+         * abd
+         * 
+         * aa
+         * 
+         * Empty String
+         * 
+         * baab
+         * 
+         * Empty String
+         */
         Scanner input = new Scanner(System.in);
         input.close();
     }
