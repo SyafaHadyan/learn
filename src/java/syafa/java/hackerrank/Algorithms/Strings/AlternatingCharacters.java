@@ -33,12 +33,12 @@ public class AlternatingCharacters
             }
             for (int j = 0; j < word.size(); j++)
             {
-                if (j == word.size() - 1)
-                {
-                    j = word.size();
-                }
                 try
                 {
+                    if (j == word.size() - 1)
+                    {
+                        word.get(word.size());
+                    }
                     if (word.get(j) == word.get(j + 1))
                     {
                         word.remove(j);
@@ -49,6 +49,7 @@ public class AlternatingCharacters
                 catch (IndexOutOfBoundsException e)
                 {
                     result[i] = counter;
+                    word.clear();
                 }
             }
         }
