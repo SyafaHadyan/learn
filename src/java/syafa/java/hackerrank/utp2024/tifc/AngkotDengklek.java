@@ -9,7 +9,6 @@ public class AngkotDengklek
         int start = Integer.parseInt(input.nextLine());
         int end = Integer.parseInt(input.nextLine());
         int passengerAmount = Integer.parseInt(input.nextLine());
-        input.close();
         double incomePassenger = 0d;
         double gasCost = 0d;
         double finalIncome = 0d;
@@ -27,6 +26,7 @@ public class AngkotDengklek
                 incomePassenger += 8000;
             }
         }
+        input.close();
         for (int i = start; i <= end; i++)
         {
             currentGas -= 2;
