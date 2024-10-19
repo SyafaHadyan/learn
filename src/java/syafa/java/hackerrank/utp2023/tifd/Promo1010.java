@@ -11,6 +11,7 @@ public class Promo1010
         input.close();
         int counter = 0;
         double totalPrice = 0d;
+        double discount = 0d;
         double kopiAmericano = 20000d;
         double kopiSusu = 28000d;
         double kopiVietnam = 23000d;
@@ -95,7 +96,7 @@ public class Promo1010
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","cappucino",':',"Rp",kopiCappucino);
         System.out.printf("%-12s%-13s%-2c%s%.1f\n","Harga total","mocha rum",':',"Rp",kopiMochaRum);
         System.out.println("=====================================");
-        //System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",totalPrice);
-        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",totalPrice);
+        System.out.printf("%-25s%-2c%s%.1f\n","Total harga pesanan",':',"Rp",totalPrice);
+        System.out.printf("%-25s%-2c%s%.1f\n","Harga yang harus dibayar",':',"Rp",totalPrice - discount);
     }
 }
