@@ -44,6 +44,14 @@ public class StrongPassword
         boolean containSpecialCharacter = false;
         boolean containLowerCase = false;
         boolean containUpperCase = false;
+        for (int i = 0; i < 2; i++)
+        {
+            String temp = password.toLowerCase();
+            if (!(password.equals(temp)))
+            {
+                containLowerCase = true;
+            }
+        }
         for (int i = 0; i < password.length(); i++)
         {
             for (int j = 0; j < number.length; j++)
@@ -56,7 +64,11 @@ public class StrongPassword
             }
             for (int j = 0; j < specialCharacter.length; j++)
             {
-                //
+                if (password.equalsIgnoreCase(specialCharacter[j]))
+                {
+                    containSpecialCharacter = true;
+                    break;
+                }
             }
         }
     }
