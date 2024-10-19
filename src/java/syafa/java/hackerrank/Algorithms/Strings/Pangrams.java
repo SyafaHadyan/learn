@@ -15,9 +15,9 @@ public class Pangrams
         {
             try
             {
-                if (word.get(i).charAt(0) == ' ')
+                if (word.get(0).charAt(0) == ' ')
                 {
-                    word.remove(i);
+                    word.remove(0);
                 }
                 if (word.get(i).equalsIgnoreCase(word.get(i + 1)))
                 {
