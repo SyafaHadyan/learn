@@ -34,6 +34,8 @@ public class StrongPassword
          * 1
          */
         Scanner input = new Scanner(System.in);
+        int passwordLength = Integer.parseInt(input.nextLine());
+        String password = input.nextLine();
         input.close();
     }
 }
