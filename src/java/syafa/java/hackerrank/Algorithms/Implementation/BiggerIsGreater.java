@@ -9,7 +9,8 @@ public class BiggerIsGreater
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
-            //
+            //String word = input.nextLine();
+            //String reverse = 
         }
         input.close();
     }
