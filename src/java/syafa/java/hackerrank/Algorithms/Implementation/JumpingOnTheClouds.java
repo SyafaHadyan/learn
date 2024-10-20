@@ -27,17 +27,26 @@ public class JumpingOnTheClouds
         int totalJump = 0;
         for (int i = 0; i < cloud.length; i++)
         {
-            if (cloud[i + 2] != 1) 
+            try
             {
-                playerPosition = cloud[i + 2];
-                totalJump++;
-                i++;
+                if (cloud[i + 2] != 1) 
+                {
+                    playerPosition = cloud[i + 2];
+                    totalJump++;
+                    i++;
+                }
+                else if (cloud[i + 2] == 1)
+                {
+                    playerPosition = cloud[i + 3];
+                    totalJump += 2;
+                    i += 2;
+                }
             }
-            else if (cloud[i + 2] == 1)
+            catch (IndexOutOfBoundsException e)
             {
-                playerPosition = cloud[i + 3];
-                totalJump += 2;
-                i += 2;
+                playerPosition = cloud[i + 1];
+                totalJump++;
+                System.out.print(totalJump);
             }
             if (playerPosition == cloud.length - 1)
             {
