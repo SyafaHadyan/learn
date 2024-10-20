@@ -36,5 +36,6 @@ public class Encryption
         String encrypt = input.nextLine();
         input.close();
         int arrayRow = (int)Math.floor(Math.sqrt(encrypt.length()));
+        int arrayCol = (int)Math.ceil(Math.sqrt(encrypt.length()));
     }
 }
