@@ -31,6 +31,12 @@ public class Encryption
          * 
          * output = fto ehg ee dd
          * 
+         * clu hlt io
+         * clu hlt io
+         * 
+         * fto ehg ee dd
+         * fto ehg ee dd
+         * 
          */
         Scanner input = new Scanner(System.in);
         String encrypt = input.nextLine();
