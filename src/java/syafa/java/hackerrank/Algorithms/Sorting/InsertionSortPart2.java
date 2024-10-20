@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Sorting;
 import java.util.*;
+import java.util.stream.*;
 
 public class InsertionSortPart2
 {
@@ -17,6 +18,7 @@ public class InsertionSortPart2
          * 1 2 3 4 5 6 7
          */
         Scanner input = new Scanner(System.in);
+        int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
