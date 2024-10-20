@@ -70,7 +70,7 @@ public class InsertionSortPart2
                 if (number[counter] < number[counter + 1])
                 {
                     counter++;
-                    int tempQuit = number[number.length];
+                    //int tempQuit = number[number.length];
                 }
                 else if (number[counter] > number[counter + 1])
                 {
@@ -86,7 +86,7 @@ public class InsertionSortPart2
                         number[tempCounter] = temp[1];
                         tempCounter--;
                     }
-                    int tempQuit = number[number.length];
+                    //int tempQuit = number[number.length];
                 }
             }
             catch (IndexOutOfBoundsException e)
