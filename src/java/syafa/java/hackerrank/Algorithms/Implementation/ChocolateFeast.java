@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class ChocolateFeast
 {
@@ -57,16 +58,6 @@ public class ChocolateFeast
          * 
          * *End of iteration*
          * 
-         * chocolateCounter = 7
-         * wrapperCounter = 1
-         * chocolateWrapper = 2
-         * 
-         * 
-         * # Other
-         * 
-         * convert wrapperCounter > chocolateCounter
-         * wrapperCounter = wrapperCounter % (wrapperCounter / chocolateWrapper) = 1 (wrapperCounter now 1)
-         * chocolateCounter += 
          * 
          *  3       t = 3 (test cases)
          * 10 2 5  n = 10, c = 2, m = 5 (first test case)
@@ -81,7 +72,7 @@ public class ChocolateFeast
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
-            //
+            int[] chocolate = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
