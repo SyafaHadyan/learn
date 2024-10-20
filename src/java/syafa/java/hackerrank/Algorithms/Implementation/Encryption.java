@@ -71,7 +71,10 @@ public class Encryption
             {
                 try
                 {
-                    System.out.print(encrypted[j][i]);
+                    if (encrypted[j][i] != null)
+                    {
+                        System.out.print(encrypted[j][i]);
+                    }
                 }
                 catch (Exception e)
                 {
