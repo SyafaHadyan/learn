@@ -38,6 +38,11 @@ public class TheTimeInWords
         if (minute == 30)
         {
             System.out.print(tensNumber[minute % 100 / 10] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
+            return;
+        }
+        if (minute > 30 && minute <= 59 && minute != 45)
+        {
+            System.out.print(tensNumber[(60 - minute) % 100 / 10] + ' ' + "minutes to" + ' ' + baseNumber[(hour + 1) % 100]);
         }
     }
 }
