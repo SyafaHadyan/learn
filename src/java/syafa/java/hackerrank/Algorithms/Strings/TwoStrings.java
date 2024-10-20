@@ -49,7 +49,7 @@ public class TwoStrings
                 wordCompare = secondWord;
                 word = firstWord;
             }
-            if (firstWord.contains(wordCompare));
+            if (firstWord.contains(wordCompare))
             {
                 result[i] = "YES";
                 continue;
