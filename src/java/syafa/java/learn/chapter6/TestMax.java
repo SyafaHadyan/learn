@@ -10,6 +10,12 @@ public class TestMax
         int firstNumber = Integer.parseInt(input.nextLine());
         System.out.printf("%-20s%-2c","Enter second number",':');
         int secondNumber = Integer.parseInt(input.nextLine());
+        System.out.print("The max number is" + ' ' + );
         input.close();
+    }
+    public static int maxNumber (int first, int second)
+    {
+        int result = 0;
+        return result;
     }
 }
