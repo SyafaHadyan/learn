@@ -54,13 +54,23 @@ public class Encryption
                 }
             }
         }
-        for (int i = 0; i < encrypted.length; i++)
+        for (int i = 0; i < encrypted[0].length; i++)
         {
             for (int j = 0; j < encrypted.length; j++)
             {
-                System.out.print(encrypted[j][i]);
+                try
+                {
+                    System.out.print(encrypted[j][i]);
+                }
+                catch (Exception e)
+                {
+                    //
+                }
             }
-            System.out.print(' ');
+            if (encrypted[0].length - i != 1)
+            {
+                System.out.print(' ');
+            }
         }
     }
 }
