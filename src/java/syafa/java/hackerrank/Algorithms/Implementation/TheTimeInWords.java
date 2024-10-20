@@ -15,18 +15,18 @@ public class TheTimeInWords
         input.close();
         String[] baseNumber = { "o' clock", "one", "two", "three",
         "four", "five", "six", "seven", "eight", "nine", "ten",
-        "eleven", "twelve", "thirteen", "fourteen", "fifteen",
-        "sixteen", "seventeen", "eighteen", "nineteen"};
+        "eleven", "twelve", "thirteen", "fourteen", "quarter",
+        "sixteen", "seventeen", "eighteen", "nineteen","twenty",};
         String[] tensNumber = { "", "ten", "twenty",
-        "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
+        "half", "forty", "fifty", "sixty", "seventy", "eighty",
         "ninety"};
         if (minute == 0)
         {
             System.out.print(baseNumber[hour % 100] + ' ' + baseNumber[0]);
         }
-        if (minute >= 1 && minute <30)
+        if (minute >= 1 && minute <= 30)
         {
-            System.out.print("past");
+            System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour % 100]);
         }
     }
 }
