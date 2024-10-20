@@ -33,6 +33,7 @@ public class HalloweenSale
         Scanner input = new Scanner(System.in);
         int[] initialSetup = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int gameCount = 0;
+        input.close();
         while (initialSetup[3] >= 0)
         {
             initialSetup[3] -= initialSetup[0];
@@ -42,6 +43,5 @@ public class HalloweenSale
                 initialSetup[0] -= initialSetup[1];
             }
         }
-        input.close();
     }
 }
