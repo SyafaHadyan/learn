@@ -23,12 +23,12 @@ public class MigratoryBirds
         //int sightingAmount = Integer.parseInt(input.nextLine());
         int[] sighting = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        Collections.reverse(Arrays.asList(sighting));
+        Arrays.sort(sighting);
         int currentMode = 0;
         int currentType = 0;
         int mode = 0;
         int mostType = Integer.MAX_VALUE;
-        for (int i = 0; i < sighting.length; i++)
+        for (int i = sighting.length - 1; i >= 0; i--)
         {
             currentType = sighting[i];
             if (currentType == sighting[i--])
