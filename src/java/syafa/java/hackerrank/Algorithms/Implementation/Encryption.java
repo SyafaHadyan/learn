@@ -80,7 +80,7 @@ public class Encryption
                         System.out.print(encrypted[j][i]);
                     }
                 }
-                catch (Exception e)
+                catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
