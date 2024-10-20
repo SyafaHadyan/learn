@@ -30,18 +30,18 @@ public class HackerRankInAString
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
         String[] checkString = new String[check];
-        char[] hackerrank =
+        String[] hackerrank =
         {
-            'H',
-            'A',
-            'C',
-            'K',
-            'E',
-            'R',
-            'R',
-            'A',
-            'N',
-            'K'
+            "H",
+            "A",
+            "C",
+            "K",
+            "E",
+            "R",
+            "R",
+            "A",
+            "N",
+            "K"
         };
         for (int i = 0; i < check; i++)
         {
@@ -60,7 +60,7 @@ public class HackerRankInAString
                  * hereiamstackerrank
                  * hackerrank
                  */
-                if (!(tempCheckString.get(j).equalsIgnoreCase(Character.toString(hackerrank[j]))))
+                if (!(tempCheckString.get(j).equalsIgnoreCase(hackerrank[j])))
                 {
                     tempCheckString.remove(j);
                     j--;
