@@ -61,6 +61,8 @@ public class InsertionSortPart2
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int counter = 0;
+        int[] sortArray = number;
+        Arrays.sort(sortArray);
         for (int i = 0; i < number.length; i++)
         {
             try
@@ -107,6 +109,13 @@ public class InsertionSortPart2
                 {
                     System.out.print("\n");
                 }
+                /*
+                if (!(number.equals(sortArray)) && number.length - i == 1)
+                {
+                    i = -1;
+                    counter = 0;
+                }
+                */
             }
         }
     }
