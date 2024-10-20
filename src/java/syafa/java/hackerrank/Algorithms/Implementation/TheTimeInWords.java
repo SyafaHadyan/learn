@@ -38,8 +38,7 @@ public class TheTimeInWords
         // ill fix later
         if (minute > 30 && minute <= 59 && minute != 45)
         {
-            minute -= 60;
-            System.out.print(baseNumber[minute] + ' ' + "minutes to" + ' ' + baseNumber[(hour % 12) + 1]);
+            System.out.print(baseNumber[(60 - minute)] + ' ' + "minutes to" + ' ' + baseNumber[(hour) + 1]);
         }
         if (minute == 45)
         {
