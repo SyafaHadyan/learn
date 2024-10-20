@@ -37,5 +37,13 @@ public class Encryption
         input.close();
         int arrayRow = (int)Math.floor(Math.sqrt(encrypt.length()));
         int arrayCol = (int)Math.ceil(Math.sqrt(encrypt.length()));
+        char[][] encrypted = new char[arrayRow][arrayCol];
+        for (int i = 0; i < encrypted.length; i++)
+        {
+            for (int j = 0; j < encrypted[i].length; j++)
+            {
+                //
+            }
+        }
     }
 }
