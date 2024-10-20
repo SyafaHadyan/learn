@@ -13,16 +13,16 @@ public class TheTimeInWords
         int hour = Integer.parseInt(input.nextLine());
         int minute = Integer.parseInt(input.nextLine());
         input.close();
-        String[] baseNumber = { "o'clock", "one", "two", "three",
+        String[] baseNumber = { "o' clock", "one", "two", "three",
         "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "fifteen",
         "sixteen", "seventeen", "eighteen", "nineteen"};
         String[] tensNumber = { "", "ten", "twenty",
         "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
         "ninety"};
-        if (hour % 100 < 20)
+        if (minute == 0)
         {
-            System.out.print(baseNumber[hour % 100] + " ");
+            System.out.print(baseNumber[hour % 100] + ' ' + baseNumber[0]);
         }
         if (minute >= 1 && minute <30)
         {
