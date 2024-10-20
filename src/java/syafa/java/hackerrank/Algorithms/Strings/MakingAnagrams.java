@@ -74,10 +74,15 @@ public class MakingAnagrams
         {
             if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
             {
-                if ()
-                    firstString.remove(i);
-                    secondString.remove(i);
-                i--;
+                if (lowestString[1] == 0)
+                {
+                    if (firstString.size() != 1)
+                    {
+                        firstString.remove(i);
+                        secondString.remove(i);
+                        i--;
+                    }
+                }
             }
         }
     }
