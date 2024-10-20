@@ -36,7 +36,11 @@ public class HalloweenSale
         while (initialSetup[3] >= 0)
         {
             initialSetup[3] -= initialSetup[0];
-            
+            gameCount++;
+            if (initialSetup[0] != initialSetup[2])
+            {
+                initialSetup[0] -= initialSetup[1];
+            }
         }
         input.close();
     }
