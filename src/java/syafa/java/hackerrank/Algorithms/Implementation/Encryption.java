@@ -43,12 +43,14 @@ public class Encryption
         {
             for (int j = 0; j < encrypted[i].length; j++)
             {
-                encrypted[i][j] = encrypt.charAt(encryptCounter);
-                encryptCounter++;
-                if (encryptCounter == encrypt.length())
+                try
                 {
-                    i = encrypted.length;
-                    j = encrypted[i].length;
+                    encrypted[i][j] = encrypt.charAt(encryptCounter);
+                    encryptCounter++;
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
             }
         }
