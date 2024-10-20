@@ -20,37 +20,26 @@ public class TheTimeInWords
             System.out.print(baseNumber[hour % 100] + ' ' + "o' clock");
             return;
         }
-        if (minute >= 1 && minute <= 30 && minute != 15 && minute != 30)
+        if (minute >= 1 && minute < 30 && minute != 15 && minute != 30)
         {
-            System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour % 100]);
+            System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour]);
             return;
         }
         if (minute == 15)
         {
-            System.out.print(baseNumber[minute % 100] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
+            System.out.print(baseNumber[minute] + ' ' + "past" + ' ' + baseNumber[hour]);
             return;
         }
         if (minute == 30)
         {
-            System.out.print(tensNumber[minute % 100 / 10] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
+            System.out.print("half" + ' ' + "past" + ' ' + baseNumber[hour]);
             return;
         }
-        // fix later
+        // ill fix later
         if (minute > 30 && minute <= 59 && minute != 45)
         {
-            String minuteWord = "";
-            if (minute % 100 < 2)
-            {
-                minuteWord = baseNumber[(60 - minute) % 100];
-                minute /= 100;
-            }
-            else
-            {
-                minuteWord = tensNumber[(60 - minute) % 10];
-                minute /= 10;
-                minuteWord = tensNumber[(60 - minute) % 10] + minuteWord;
-            }
-            System.out.print(minuteWord + ' ' + "minutes to" + ' ' + baseNumber[(hour + 1) % 100]);
+            minute -= 60;
+            System.out.print(baseNumber[minute] + ' ' + "minutes to" + ' ' + baseNumber[(hour % 12) + 1]);
         }
         if (minute == 45)
         {
