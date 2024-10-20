@@ -13,16 +13,16 @@ public class TheTimeInWords
         int hour = Integer.parseInt(input.nextLine());
         int minute = Integer.parseInt(input.nextLine());
         input.close();
-        String[] baseNumber = { "o' clock", "one", "two", "three",
+        String[] baseNumber = { "", "one", "two", "three",
         "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "quarter",
-        "sixteen", "seventeen", "eighteen", "nineteen","twenty",};
+        "sixteen", "seventeen", "eighteen", "nineteen"};
         String[] tensNumber = { "", "ten", "twenty",
         "half", "forty", "fifty", "sixty", "seventy", "eighty",
         "ninety"};
         if (minute == 0)
         {
-            System.out.print(baseNumber[hour % 100] + ' ' + baseNumber[0]);
+            System.out.print(baseNumber[hour % 100] + ' ' + "o' clock");
             return;
         }
         if (minute >= 1 && minute <= 30 && minute != 15 && minute != 30)
@@ -42,7 +42,19 @@ public class TheTimeInWords
         }
         if (minute > 30 && minute <= 59 && minute != 45)
         {
-            System.out.print(tensNumber[(60 - minute) % 100 / 10] + ' ' + "minutes to" + ' ' + baseNumber[(hour + 1) % 100]);
+            String minuteWord = "";
+            if (minute % 100 < 2)
+            {
+                minuteWord = baseNumber[(60 - minute) % 100];
+                minute /= 100;
+            }
+            else
+            {
+                minuteWord = tensNumber[(60 - minute) % 10];
+                minute /= 10;
+                minuteWord = tensNumber[(60 - minute) % 10] + minuteWord;
+            }
+            System.out.print(minuteWord + ' ' + "minutes to" + ' ' + baseNumber[(hour + 1) % 100]);
         }
     }
 }
