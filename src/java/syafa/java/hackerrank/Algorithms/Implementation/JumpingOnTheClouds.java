@@ -24,15 +24,18 @@ public class JumpingOnTheClouds
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int playerPosition = 0;
+        int totalJump = 0;
         for (int i = 0; i < cloud.length; i++)
         {
             if (cloud[i + 2] != 1) 
             {
                 playerPosition = cloud[i + 2];
+                totalJump++;
             }
             else if (cloud[i + 2] == 1)
             {
                 playerPosition = cloud[i + 3];
+                totalJump += 2;
             }
         }
     }
