@@ -34,7 +34,7 @@ public class InsertionSortPart2
                     int[] temp = {number[i], number[i + 1]};
                     number[i] = temp[1];
                     number[i + 1] = temp[0];
-                    number[number.length];
+                    temp[0] = number[number.length];
                 }
             }
             catch (IndexOutOfBoundsException e)
