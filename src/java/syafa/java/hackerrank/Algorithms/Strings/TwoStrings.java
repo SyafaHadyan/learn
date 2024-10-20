@@ -35,6 +35,7 @@ public class TwoStrings
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        String[] result = new String[testCase];
         for (int i = 0; i < testCase; i++)
         {
             String firstWord = input.nextLine();
@@ -48,10 +49,12 @@ public class TwoStrings
                 wordCompare = secondWord;
                 word = firstWord;
             }
-            for (int j = 0; j < longestWord; j++)
+            if (firstWord.contains(wordCompare));
             {
-                if (firstWord.contains(wordCompare));
+                result[i] = "YES";
+                continue;
             }
+            result[i] = "NO";
         }
         input.close();
     }
