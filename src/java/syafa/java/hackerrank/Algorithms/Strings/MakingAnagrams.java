@@ -26,7 +26,7 @@ public class MakingAnagrams
          * 
          * # Step
          * 
-         * ## Sort array char
+         * Sort array char
          * 
          * determine shortest char to prevent a full deletion
          * 
@@ -65,6 +65,7 @@ public class MakingAnagrams
         Collections.sort(firstString);
         Collections.sort(secondString);
         int[] lowestString = {secondString.size(), 0};
+        int deletionCount = 0;
         if (firstString.size() - secondString.size() < 0)
         {
             lowestString[0] = firstString.size();
@@ -80,7 +81,9 @@ public class MakingAnagrams
                     {
                         firstString.remove(i);
                         secondString.remove(i);
+                        deletionCount += 2;
                         i--;
+                        continue;
                     }
                 }
                 else if (lowestString[1] == 1)
@@ -89,7 +92,9 @@ public class MakingAnagrams
                     {
                         firstString.remove(i);
                         secondString.remove(i);
+                        deletionCount += 2
                         i--;
+                        continue;
                     }
                 }
             }
