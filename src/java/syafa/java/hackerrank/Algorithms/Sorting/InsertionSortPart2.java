@@ -20,5 +20,19 @@ public class InsertionSortPart2
         Scanner input = new Scanner(System.in);
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        for (int i = 0; i < number.length; i++)
+        {
+            try
+            {
+                if (number[i] < number[i + 1])
+                {
+                    //
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
+            }
+        }
     }
 }
