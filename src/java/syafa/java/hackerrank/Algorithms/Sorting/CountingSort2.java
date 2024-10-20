@@ -11,5 +11,13 @@ public class CountingSort2
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(array);
+        for (int i = 0; i < array.length; i++)
+        {
+            System.out.print(array[i]);
+            if (array.length - i != 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
