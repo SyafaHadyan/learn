@@ -22,7 +22,15 @@ public class TheTimeInWords
         }
         if (minute >= 1 && minute < 30 && minute != 15 && minute != 30)
         {
-            System.out.print(baseNumber[minute % 100] + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
+            String minuteWord = "";
+            if (minute % 100 > 20)
+            {
+                if (minute >= 20)
+                {
+                    minuteWord = "twenty" + ' ' + baseNumber[(minute - 20) % 100];
+                }
+            }
+            System.out.print(minuteWord + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
             return;
         }
         if (minute == 15)
