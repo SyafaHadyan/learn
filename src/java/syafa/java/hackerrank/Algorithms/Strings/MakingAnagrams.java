@@ -85,6 +85,7 @@ public class MakingAnagrams
                         i--;
                         continue;
                     }
+                    deletionCount += secondString.size() - 1;
                 }
                 else if (lowestString[1] == 1)
                 {
@@ -92,12 +93,14 @@ public class MakingAnagrams
                     {
                         firstString.remove(i);
                         secondString.remove(i);
-                        deletionCount += 2
+                        deletionCount += 2;
                         i--;
                         continue;
                     }
+                    deletionCount += firstString.size() - 1;
                 }
             }
         }
+        System.out.print(deletionCount);
     }
 }
