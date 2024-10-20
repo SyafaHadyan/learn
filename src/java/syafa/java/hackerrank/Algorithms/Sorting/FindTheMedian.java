@@ -10,5 +10,6 @@ public class FindTheMedian
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        Arrays.sort(number);
     }
 }
