@@ -39,6 +39,15 @@ public class TwoStrings
         {
             String firstWord = input.nextLine();
             String secondWord = input.nextLine();
+            int longestWord = firstWord.length();
+            if (secondWord.length() > longestWord)
+            {
+                longestWord = secondWord.length();
+            }
+            for (int j = 0; j < longestWord; j++)
+            {
+                if (firstWord.contains(secondWord))
+            }
         }
         input.close();
     }
