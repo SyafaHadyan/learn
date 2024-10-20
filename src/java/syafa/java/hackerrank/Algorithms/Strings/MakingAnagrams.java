@@ -64,6 +64,11 @@ public class MakingAnagrams
         input.close();
         Collections.sort(firstString);
         Collections.sort(secondString);
+        int lowestString = secondString.size();
+        if (firstString.size() - secondString.size() < 0)
+        {
+            lowestString = firstString.size();
+        }
         for (int j = 0; j < args.length; j++)
         {
             
