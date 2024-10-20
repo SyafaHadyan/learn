@@ -9,7 +9,7 @@ public class LibraryFine
         /*
          * [x]if same month and year, fine = (15 * days late)
          * [x]if different month but same year, fine = (500 * months late)
-         * [ ]if different year, fine = 10000
+         * [x]if different year, fine = 10000
          */
         Scanner input = new Scanner(System.in);
         int[] bookReturn = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -28,6 +28,11 @@ public class LibraryFine
         else if (bookReturn[1] > dueDate[1] && bookReturn[2] == dueDate[2])
         {
             System.out.print((bookReturn[1] - dueDate[1]) * 500);
+            return;
+        }
+        else
+        {
+            System.out.print(10000);
             return;
         }
     }
