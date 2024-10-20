@@ -78,12 +78,12 @@ public class MakingAnagrams
                 if (firstString.size() == 1)
                 {
                     deletionCount += secondString.size() - 1;
-                    firstString.get(firstString.size());
+                    break;
                 }
                 else if (secondString.size() == 1)
                 {
                     deletionCount += firstString.size() - 1;
-                    secondString.get(secondString.size());
+                    break;
                 }
                 if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
                 {
