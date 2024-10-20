@@ -59,6 +59,8 @@ public class MakingAnagrams
          * 
          */
         Scanner input = new Scanner(System.in);
+        ArrayList<String> firstString = new ArrayList<>(Arrays.asList(input.nextLine().split("")));
+        ArrayList<String> secondString = new ArrayList<>(Arrays.asList(input.nextLine().split("")));
         input.close();
     }
 }
