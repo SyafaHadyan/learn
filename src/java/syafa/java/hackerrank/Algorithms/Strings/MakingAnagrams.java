@@ -65,12 +65,23 @@ public class MakingAnagrams
         Collections.sort(firstString);
         Collections.sort(secondString);
         int[] lowestString = {secondString.size(), 1};
-        int deletionCount = 0;
+        int match = 0;
         if (firstString.size() - secondString.size() < 0)
         {
             lowestString[0] = firstString.size();
             lowestString[1] = 0;
         }
+        for (int i = 0; i < firstString.size(); i++)
+        {
+            for (int j = 0; j < secondString.size(); j++)
+            {
+                if (firstString.get(i).equalsIgnoreCase(secondString.get(i)))
+                {
+                    match++;
+                }
+            }
+        }
+        /*
         for (int i = 0; i < lowestString[0]; i++)
         {
             try
@@ -116,6 +127,7 @@ public class MakingAnagrams
                 //
             }
         }
+        */
         System.out.print(deletionCount);
     }
 }
