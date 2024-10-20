@@ -33,6 +33,8 @@ public class Encryption
          * 
          */
         Scanner input = new Scanner(System.in);
+        String encrypt = input.nextLine();
         input.close();
+        int arrayRow = (int)Math.floor(Math.sqrt(encrypt.length()));
     }
 }
