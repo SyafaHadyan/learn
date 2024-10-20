@@ -6,11 +6,6 @@ public class ExtraLongFactorials
 {
     public static void main(String[] args)
     {
-        /*
-         * 5 * 5 = 25
-         * 25 * 4 = 100
-         * 
-         */
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
         input.close();
