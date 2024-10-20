@@ -72,7 +72,12 @@ public class ChocolateFeast
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
+            /*
+             * money chocolatePrice chocolateWrapper
+             */
             int[] chocolate = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            int chocolateCounter = chocolate[0] / chocolate[1];
+            int wrapperCounter = chocolateCounter;
         }
         input.close();
     }
