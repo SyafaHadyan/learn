@@ -66,7 +66,14 @@ public class HackerRankInAString
                     j--;
                 }
             }
-            if ()
+            if (tempCheckString.equals(Arrays.asList(hackerrank)))
+            {
+                checkString[i] = "YES";
+            }
+            else
+            {
+                checkString[i] = "NO";
+            }
         }
         for (int i = 0; i < checkString.length; i++)
         {
