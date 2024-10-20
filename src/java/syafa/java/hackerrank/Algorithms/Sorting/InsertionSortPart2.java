@@ -34,6 +34,14 @@ public class InsertionSortPart2
                     number[i] = temp[1];
                     number[i + 1] = temp[0];
                 }
+                for (int j = 0; j < number.length; j++)
+                {
+                    System.out.print(number[j]);
+                    if (number.length - j != 1)
+                    {
+                        System.out.print(' ');
+                    }
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
