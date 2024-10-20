@@ -49,14 +49,14 @@ public class Encryption
             arrayRow = 3;
             arrayCol = 3;
         }
-        char[][] encrypted = new char[arrayRow][arrayCol];
+        String[][] encrypted = new String[arrayRow][arrayCol];
         for (int i = 0; i < encrypted.length; i++)
         {
             for (int j = 0; j < encrypted[0].length; j++)
             {
                 try
                 {
-                    encrypted[i][j] = encrypt.charAt(encryptCounter);
+                    encrypted[i][j] = String.valueOf(encrypt.charAt(encryptCounter));
                     encryptCounter++;
                 }
                 catch (IndexOutOfBoundsException e)
