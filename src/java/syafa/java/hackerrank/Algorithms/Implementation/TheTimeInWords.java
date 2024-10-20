@@ -12,7 +12,7 @@ public class TheTimeInWords
         String[] baseNumber = { "", "one", "two", "three",
         "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "quarter",
-        "sixteen", "seventeen", "eighteen", "nineteen"};
+        "sixteen", "seventeen", "eighteen", "nineteen","twenty"};
         String[] tensNumber = { "", "ten", "twenty",
         "half"};
         if (minute == 0)
@@ -28,9 +28,11 @@ public class TheTimeInWords
                 if (minute >= 20)
                 {
                     minuteWord = "twenty" + ' ' + baseNumber[(minute - 20) % 100];
+                    System.out.print(minuteWord + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
+                    return;
                 }
             }
-            System.out.print(minuteWord + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
+            System.out.print(baseNumber[minute % 100] + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
             return;
         }
         if (minute == 15)
