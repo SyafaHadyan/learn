@@ -30,9 +30,14 @@ public class TheTimeInWords
             System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour % 100]);
             return;
         }
-        if (minute == 15 || minute == 30)
+        if (minute == 15)
         {
             System.out.print(baseNumber[minute % 100] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
+            return;
+        }
+        if (minute == 30)
+        {
+            System.out.print(tensNumber[minute % 100 / 10] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
         }
     }
 }
