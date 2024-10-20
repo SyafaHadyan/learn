@@ -20,7 +20,8 @@ public class InsertionSortPart2
         Scanner input = new Scanner(System.in);
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        for (int i = 0; i < number.length; i++)
+        int counter = 0;
+        for (int i = 0; counter < number.length; counter++)
         {
             try
             {
@@ -45,7 +46,7 @@ public class InsertionSortPart2
                         System.out.print(' ');
                     }
                 }
-
+                i++;
             }
         }
     }
