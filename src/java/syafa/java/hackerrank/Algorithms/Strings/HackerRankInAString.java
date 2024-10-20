@@ -13,5 +13,12 @@ public class HackerRankInAString
         {
             checkString[i] = input.nextLine();
         }
+        for (int i = 0; i < checkString.length; i++)
+        {
+            for (int j = 0; j < checkString[i].length(); j++)
+            {
+                
+            }
+        }
     }
 }
