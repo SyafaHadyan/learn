@@ -49,8 +49,7 @@ public class MigratoryBirds
             }
             catch (IndexOutOfBoundsException e)
             {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                //
             }
         }
         System.out.print(mostType + "\n" + mode);
