@@ -11,5 +11,9 @@ public class FindTheMedian
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(number);
+        if (number.length % 2 == 0)
+        {
+            System.out.printf("%.0f",(number[(number.length / 2) - 1]) + (number[number.length / 2] + 1) / 2.0);
+        }
     }
 }
