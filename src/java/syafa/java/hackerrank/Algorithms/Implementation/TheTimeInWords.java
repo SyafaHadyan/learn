@@ -52,7 +52,7 @@ public class TheTimeInWords
         }
         if (minute == 45)
         {
-            System.out.print("quarter to" + ' ' + baseNumber[hour % 100]);
+            System.out.print("quarter to" + ' ' + baseNumber[(hour + 1) % 100]);
             return;
         }
     }
