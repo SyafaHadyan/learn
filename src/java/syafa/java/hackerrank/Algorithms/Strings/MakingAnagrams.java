@@ -64,41 +64,54 @@ public class MakingAnagrams
         input.close();
         Collections.sort(firstString);
         Collections.sort(secondString);
-        int[] lowestString = {secondString.size(), 0};
+        int[] lowestString = {secondString.size(), 1};
         int deletionCount = 0;
         if (firstString.size() - secondString.size() < 0)
         {
             lowestString[0] = firstString.size();
-            lowestString[1] = 1;
+            lowestString[1] = 0;
         }
         for (int i = 0; i < lowestString[0]; i++)
         {
-            if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
+            try
             {
-                if (lowestString[1] == 0)
+                if (firstString.size() == 1)
                 {
-                    if (firstString.size() != 1)
-                    {
-                        firstString.remove(i);
-                        secondString.remove(i);
-                        deletionCount += 2;
-                        i--;
-                        continue;
-                    }
                     deletionCount += secondString.size() - 1;
                 }
-                else if (lowestString[1] == 1)
+                else if (secondString.size() == 1)
                 {
-                    if (secondString.size() != 1)
-                    {
-                        firstString.remove(i);
-                        secondString.remove(i);
-                        deletionCount += 2;
-                        i--;
-                        continue;
-                    }
                     deletionCount += firstString.size() - 1;
                 }
+                if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
+                {
+                    if (lowestString[1] == 0)
+                    {
+                        if (firstString.size() != 1)
+                        {
+                            firstString.remove(i);
+                            secondString.remove(i);
+                            deletionCount += 2;
+                            i--;
+                            continue;
+                        }
+                    }
+                    else if (lowestString[1] == 1)
+                    {
+                        if (secondString.size() != 1)
+                        {
+                            firstString.remove(i);
+                            secondString.remove(i);
+                            deletionCount += 2;
+                            i--;
+                            continue;
+                        }
+                    }
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
             }
         }
         System.out.print(deletionCount);
