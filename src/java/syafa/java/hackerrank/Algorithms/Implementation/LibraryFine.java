@@ -15,12 +15,7 @@ public class LibraryFine
         int[] bookReturn = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] dueDate = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        if (bookReturn[0] <= dueDate[0] && bookReturn[1] <= dueDate[1] && bookReturn[2] <= dueDate[2])
-        {
-            System.out.print(0);
-            return;
-        }
-        else if (bookReturn[0] > dueDate[0] && bookReturn[1] == dueDate[1] && bookReturn[2] == dueDate[2])
+        if (bookReturn[0] > dueDate[0] && bookReturn[1] == dueDate[1] && bookReturn[2] == dueDate[2])
         {
             System.out.print((bookReturn[0] - dueDate[0]) * 15);
             return;
@@ -30,9 +25,14 @@ public class LibraryFine
             System.out.print((bookReturn[1] - dueDate[1]) * 500);
             return;
         }
+        else if (bookReturn[2] > dueDate[2])
+        {
+            System.out.print(0);
+            return;
+        }
         else
         {
-            System.out.print(10000);
+            System.out.print(0);
             return;
         }
     }
