@@ -62,5 +62,11 @@ public class MakingAnagrams
         ArrayList<String> firstString = new ArrayList<>(Arrays.asList(input.nextLine().split("")));
         ArrayList<String> secondString = new ArrayList<>(Arrays.asList(input.nextLine().split("")));
         input.close();
+        Collections.sort(firstString);
+        Collections.sort(secondString);
+        for (int j = 0; j < args.length; j++)
+        {
+            
+        }
     }
 }
