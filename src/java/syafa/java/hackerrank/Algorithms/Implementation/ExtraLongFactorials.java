@@ -7,7 +7,8 @@ public class ExtraLongFactorials
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        BigInteger number = input.nextBigInteger();
+        int number = Integer.parseInt(input.nextLine());
         input.close();
+        BigInteger result = BigInteger.ZERO;
     }
 }
