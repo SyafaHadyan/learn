@@ -17,7 +17,11 @@ public class MigratoryBirds
         int mostType = 0;
         for (int i = 0; i < sighting.length; i++)
         {
-            //
+            currentMostType = sighting[i];
+            if ((sighting[i] == sighting[i++]) && (currentMostType < mostType))
+            {
+                //
+            }
         }
     }
 }
