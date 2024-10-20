@@ -33,31 +33,11 @@ public class Day0MeanMedianAndMode
         {
             median = data[(data.length / 2)];
         }
-        for (int i = 0; i < data.length; i++)
+        mode = data[data.length - 1];
+        for (int i = data.length - 1; i >= 0; i--)
         {
-            try
-            {
-                if (i == 0)
-                {
-                    mode = data[i];
-                    maxMode = data[i];
-                }
-                if (data[i] == data[i + 1])
-                {
-                    currentMaxMode++;
-                }
-                if ((currentMaxMode > mode) && (data[i] > currentMinVal))
-                {
-                    mode = currentMaxMode;
-                    currentMinVal = data[i];
-                    maxMode = data[i];
-                    currentMaxMode = 1;
-                }
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
-            }
+            if (count[i] >= )
         }
+        System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
     }
 }
