@@ -20,5 +20,9 @@ public class TheTimeInWords
         String[] tensNumber = { "", "ten", "twenty",
         "thirty", "forty", "fifty", "sixty", "seventy", "eighty",
         "ninety"};
+        if (hour % 100 < 20)
+        {
+            System.out.print(baseNumber[hour % 100]);
+        }
     }
 }
