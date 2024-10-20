@@ -78,6 +78,12 @@ public class ChocolateFeast
             int[] chocolate = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             int chocolateCounter = chocolate[0] / chocolate[1];
             int wrapperCounter = chocolateCounter;
+            while (wrapperCounter > chocolate[2])
+            {
+                wrapperCounter -= chocolate[2];
+                chocolateCounter++;
+                wrapperCounter++;
+            }
         }
         input.close();
     }
