@@ -11,5 +11,13 @@ public class MigratoryBirds
         int[] sighting = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Collections.reverse(Arrays.asList(sighting));
+        int currentMode = 0;
+        int currentMostType = 0;
+        int mode = 0;
+        int mostType = 0;
+        for (int i = 0; i < sighting.length; i++)
+        {
+            //
+        }
     }
 }
