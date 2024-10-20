@@ -23,5 +23,12 @@ public class JumpingOnTheClouds
         Scanner input = new Scanner(System.in);
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        for (int i = 0; i < cloud.length; i++)
+        {
+            if (cloud[i + 2] != 1) 
+            {
+                //
+            }
+        }
     }
 }
