@@ -51,7 +51,6 @@ public class HackerRankInAString
         input.close();
         for (int i = 0; i < checkString.length; i++)
         {
-            int counter = 0;
             ArrayList<String> tempCheckString = new ArrayList<>(Arrays.asList(checkString[i].split("")));
             for (int j = 0; j < tempCheckString.size(); j++)
             {
