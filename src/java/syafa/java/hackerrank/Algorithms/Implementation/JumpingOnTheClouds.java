@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class JumpingOnTheClouds
 {
@@ -20,6 +21,7 @@ public class JumpingOnTheClouds
          * Try jump 2, if 1, jump 1 then 2
          */
         Scanner input = new Scanner(System.in);
+        int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
