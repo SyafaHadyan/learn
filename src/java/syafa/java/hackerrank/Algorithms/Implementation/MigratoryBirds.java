@@ -37,9 +37,11 @@ public class MigratoryBirds
             }
             if ((sighting[i] == sighting[i++]) && (currentType < mostType))
             {
+                mostType = sighting[i];
                 mode = currentMode;
                 currentMode = 0;
             }
         }
+        System.out.print(mostType + "\n" + mode);
     }
 }
