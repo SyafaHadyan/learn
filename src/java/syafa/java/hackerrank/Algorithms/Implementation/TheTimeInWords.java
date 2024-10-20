@@ -13,7 +13,7 @@ public class TheTimeInWords
         int hour = Integer.parseInt(input.nextLine());
         int minute = Integer.parseInt(input.nextLine());
         input.close();
-        String[] baseNumber = { "", "one", "two", "three",
+        String[] baseNumber = { "o'clock", "one", "two", "three",
         "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "fifteen",
         "sixteen", "seventeen", "eighteen", "nineteen"};
@@ -22,7 +22,11 @@ public class TheTimeInWords
         "ninety"};
         if (hour % 100 < 20)
         {
-            System.out.print(baseNumber[hour % 100]);
+            System.out.print(baseNumber[hour % 100] + " ");
+        }
+        if (minute >= 1 && minute <30)
+        {
+            System.out.print("past");
         }
     }
 }
