@@ -43,7 +43,7 @@ public class TheTimeInWords
             {
                 if ((60 - minute) >= 20)
                 {
-                    System.out.print("twenty" + ' ' + baseNumber[((60 - minute) - 20) % 100] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour + 1]);
+                    System.out.print("twenty" + ' ' + baseNumber[((60 - minute) - 20) % 100] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") + "to" + ' ' + baseNumber[hour + 1]);
                     return;
                 }
             }
