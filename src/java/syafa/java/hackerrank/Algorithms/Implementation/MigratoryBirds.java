@@ -30,16 +30,27 @@ public class MigratoryBirds
         int mostType = Integer.MAX_VALUE;
         for (int i = sighting.length - 1; i >= 0; i--)
         {
-            currentType = sighting[i];
-            if (currentType == sighting[i--])
+            try
             {
-                currentMode++;
+                currentType = sighting[i];
+                if (currentType == sighting[i--])
+                {
+                    currentMode++;
+                }
+                if ((sighting[i] == sighting[i--]) && (currentType < mostType))
+                {
+                    mostType = sighting[i];
+                    mode = currentMode;
+                    if (currentType != sighting[i--])
+                    {
+                        currentMode = 0;
+                    }
+                }
             }
-            if ((sighting[i] == sighting[i++]) && (currentType < mostType))
+            catch (IndexOutOfBoundsException e)
             {
-                mostType = sighting[i];
-                mode = currentMode;
-                currentMode = 0;
+                // TODO Auto-generated catch block
+                e.printStackTrace();
             }
         }
         System.out.print(mostType + "\n" + mode);
