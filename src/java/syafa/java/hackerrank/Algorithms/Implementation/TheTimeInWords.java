@@ -33,17 +33,11 @@ public class TheTimeInWords
             System.out.print(baseNumber[minute % 100] + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
             return;
         }
-        if (minute == 15)
+        if (minute == 15 || minute == 30)
         {
-            System.out.print(baseNumber[minute] + ' ' + "past" + ' ' + baseNumber[hour]);
+            System.out.print((minute == 15 ? baseNumber[minute] : "half") + ' ' + "past" + ' ' + baseNumber[hour]);
             return;
         }
-        if (minute == 30)
-        {
-            System.out.print("half" + ' ' + "past" + ' ' + baseNumber[hour]);
-            return;
-        }
-        // ill fix later
         if (minute > 30 && minute <= 59 && minute != 45)
         {
             
@@ -56,10 +50,12 @@ public class TheTimeInWords
                 }
             }
             System.out.print(baseNumber[60 - minute] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") +  "to" + ' ' + baseNumber[hour + 1]);
+            return;
         }
         if (minute == 45)
         {
             System.out.print("quarter to" + ' ' + baseNumber[hour % 100]);
+            return;
         }
     }
 }
