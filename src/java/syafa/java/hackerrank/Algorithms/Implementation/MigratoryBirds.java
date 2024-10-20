@@ -25,13 +25,17 @@ public class MigratoryBirds
         input.close();
         Collections.reverse(Arrays.asList(sighting));
         int currentMode = 0;
-        int currentMostType = 0;
+        int currentType = 0;
         int mode = 0;
         int mostType = Integer.MAX_VALUE;
         for (int i = 0; i < sighting.length; i++)
         {
-            currentMostType = sighting[i];
-            if ((sighting[i] == sighting[i++]) && (currentMostType < mostType))
+            currentType = sighting[i];
+            if (currentType == sighting[i--])
+            {
+                currentMode++;
+            }
+            if ((sighting[i] == sighting[i++]) && (currentType < mostType))
             {
                 //
             }
