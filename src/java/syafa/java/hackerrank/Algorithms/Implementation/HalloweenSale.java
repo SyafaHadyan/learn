@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class HalloweenSale
 {
@@ -30,6 +31,7 @@ public class HalloweenSale
          * }
          */
         Scanner input = new Scanner(System.in);
+        int[] initialSetup = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
