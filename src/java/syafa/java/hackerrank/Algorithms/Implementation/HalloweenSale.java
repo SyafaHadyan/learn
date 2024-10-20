@@ -24,7 +24,7 @@ public class HalloweenSale
          * {
          *      budget -= firstGamePrice;
          *      gameCount++;
-         *      if (firstGamePrice != minimumGameCost)
+         *      if (firstGamePrice >= minimumGameCost)
          *      {
          *          firstGamePrice -= discountPrevious;
          *      }
@@ -38,9 +38,17 @@ public class HalloweenSale
         {
             initialSetup[3] -= initialSetup[0];
             gameCount++;
-            if (initialSetup[0] != initialSetup[2])
+            if (initialSetup[0] - initialSetup[1] >= initialSetup[2])
             {
                 initialSetup[0] -= initialSetup[1];
+            }
+            else if (initialSetup[0] - initialSetup[1] < initialSetup[2])
+            {
+                initialSetup[0] = initialSetup[2];
+            }
+            if (initialSetup[3] - initialSetup[0] < 0)
+            {
+                break;
             }
         }
         System.out.print(gameCount);
