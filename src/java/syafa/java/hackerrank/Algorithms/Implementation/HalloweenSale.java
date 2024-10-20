@@ -43,5 +43,6 @@ public class HalloweenSale
                 initialSetup[0] -= initialSetup[1];
             }
         }
+        System.out.print(gameCount);
     }
 }
