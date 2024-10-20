@@ -47,10 +47,11 @@ public class JumpingOnTheClouds
                 playerPosition = cloud[i + 1];
                 totalJump++;
                 System.out.print(totalJump);
+                return;
             }
             if (playerPosition == cloud.length - 1)
             {
-                //
+                System.out.print(totalJump);
             }
         }
     }
