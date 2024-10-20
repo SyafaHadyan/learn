@@ -21,7 +21,7 @@ public class InsertionSortPart2
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int counter = 0;
-        for (int i = 0; counter < number.length; counter++)
+        for (int i = 0; i < number.length; i++)
         {
             try
             {
@@ -34,6 +34,7 @@ public class InsertionSortPart2
                     int[] temp = {number[i], number[i + 1]};
                     number[i] = temp[1];
                     number[i + 1] = temp[0];
+                    number[number.length];
                 }
             }
             catch (IndexOutOfBoundsException e)
@@ -46,7 +47,16 @@ public class InsertionSortPart2
                         System.out.print(' ');
                     }
                 }
-                i++;
+                i = -1;
+                counter++;
+                if (number.length - counter == 1)
+                {
+                    return;
+                }
+                else
+                {
+                    System.out.print("\n");
+                }
             }
         }
     }
