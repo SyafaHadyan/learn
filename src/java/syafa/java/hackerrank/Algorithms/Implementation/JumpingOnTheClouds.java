@@ -31,11 +31,17 @@ public class JumpingOnTheClouds
             {
                 playerPosition = cloud[i + 2];
                 totalJump++;
+                i++;
             }
             else if (cloud[i + 2] == 1)
             {
                 playerPosition = cloud[i + 3];
                 totalJump += 2;
+                i += 2;
+            }
+            if (playerPosition == cloud.length - 1)
+            {
+                //
             }
         }
     }
