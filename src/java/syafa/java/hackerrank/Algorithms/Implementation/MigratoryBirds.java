@@ -14,7 +14,7 @@ public class MigratoryBirds
         int currentMode = 0;
         int currentMostType = 0;
         int mode = 0;
-        int mostType = 0;
+        int mostType = Integer.MAX_VALUE;
         for (int i = 0; i < sighting.length; i++)
         {
             currentMostType = sighting[i];
