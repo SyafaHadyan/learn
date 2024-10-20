@@ -34,6 +34,7 @@ public class HackerRankInAString
             "N",
             "K"
         };
+        int counter = hackerrank.length;
         for (int i = 0; i < check; i++)
         {
             checkString[i] = input.nextLine();
@@ -42,7 +43,10 @@ public class HackerRankInAString
         {
             for (int j = 0; j < checkString[i].length(); j++)
             {
-                
+                for (int k = counter; k < hackerrank.length;)
+                {
+                    //
+                }
             }
         }
     }
