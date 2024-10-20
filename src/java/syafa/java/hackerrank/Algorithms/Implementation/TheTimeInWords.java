@@ -23,10 +23,16 @@ public class TheTimeInWords
         if (minute == 0)
         {
             System.out.print(baseNumber[hour % 100] + ' ' + baseNumber[0]);
+            return;
         }
         if (minute >= 1 && minute <= 30 && minute != 15 && minute != 30)
         {
             System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour % 100]);
+            return;
+        }
+        if (minute == 15 || minute == 30)
+        {
+            System.out.print(baseNumber[minute % 100] + ' ' + "past" + ' ' + baseNumber[hour % 100]);
         }
     }
 }
