@@ -22,7 +22,7 @@ public class LibraryFine
         }
         else if (bookReturn[0] > dueDate[0] && bookReturn[1] == dueDate[1] && bookReturn[2] == dueDate[2])
         {
-            System.out.print((dueDate[0] - bookReturn[0]) * 15);
+            System.out.print((bookReturn[0] - dueDate[0]) * 15);
             return;
         }
     }
