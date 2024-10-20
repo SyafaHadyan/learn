@@ -30,6 +30,10 @@ public class JumpingOnTheClouds
             {
                 playerPosition = cloud[i + 2];
             }
+            else if (cloud[i + 2] == 1)
+            {
+                playerPosition = cloud[i + 3];
+            }
         }
     }
 }
