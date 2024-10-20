@@ -47,19 +47,15 @@ public class TheTimeInWords
         if (minute > 30 && minute <= 59 && minute != 45)
         {
             
-            /*
-            String minuteWord = "";
-            if (minute % 100 > 30)
+            if ((60 - minute) % 100 > 20)
             {
-                if ((minute - 60) >= 20)
+                if ((60 - minute) >= 20)
                 {
-                    minuteWord = "twenty" + ' ' + baseNumber[minute % 100];
-                    System.out.print(minuteWord + ' ' + "minute" + (minute != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour]);
+                    System.out.print("twenty" + ' ' + baseNumber[((60 - minute) - 20) % 100] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") + "past" + ' ' + baseNumber[hour + 1]);
                     return;
                 }
             }
-            */
-            System.out.print(baseNumber[60 - minute] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") +  "to" + ' ' + baseNumber[(hour) + 1]);
+            System.out.print(baseNumber[60 - minute] + ' ' + "minute" + ((60 - minute) != 1 ? "s " : " ") +  "to" + ' ' + baseNumber[hour + 1]);
         }
         if (minute == 45)
         {
