@@ -52,13 +52,20 @@ public class HackerRankInAString
         {
             int counter = 0;
             ArrayList<String> tempCheckString = new ArrayList<>(Arrays.asList(checkString[i].split("")));
-            for (int j = 0; j < checkString[i].length(); j++)
+            for (int j = 0; j < tempCheckString.size(); j++)
             {
-                for (int k = 0; k < hackerrank.length; k++)
+                /*
+                 * 2
+                 * hereiamstackerrank
+                 * hackerrank
+                 */
+                if (!(tempCheckString.get(j).equalsIgnoreCase(Character.toString(hackerrank[j]))))
                 {
-                    if ()
+                    tempCheckString.remove(j);
+                    j--;
                 }
             }
+            if ()
         }
         input.close();
         for (int i = 0; i < checkString.length; i++)
