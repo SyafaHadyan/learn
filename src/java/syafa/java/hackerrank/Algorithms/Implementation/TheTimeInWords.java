@@ -24,7 +24,7 @@ public class TheTimeInWords
         {
             System.out.print(baseNumber[hour % 100] + ' ' + baseNumber[0]);
         }
-        if (minute >= 1 && minute <= 30)
+        if (minute >= 1 && minute <= 30 && minute != 15 && minute != 30)
         {
             System.out.print(baseNumber[minute % 100] + ' ' + "minute past" + ' ' + baseNumber[hour % 100]);
         }
