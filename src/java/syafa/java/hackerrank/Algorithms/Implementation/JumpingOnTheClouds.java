@@ -41,17 +41,20 @@ public class JumpingOnTheClouds
                     totalJump += 2;
                     i += 2;
                 }
+                if (cloud.length == playerPosition)
+                {
+                    System.out.print(totalJump);
+                    return;
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
-                playerPosition = cloud[i + 1];
-                totalJump++;
+                if (cloud.length - playerPosition == 1)
+                {
+                    totalJump++;
+                }
                 System.out.print(totalJump);
                 return;
-            }
-            if (playerPosition == cloud.length - 1)
-            {
-                System.out.print(totalJump);
             }
         }
     }
