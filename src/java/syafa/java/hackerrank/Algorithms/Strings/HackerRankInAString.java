@@ -48,6 +48,7 @@ public class HackerRankInAString
             checkString[i] = input.nextLine();
             checkString[i] = checkString[i].toUpperCase();
         }
+        input.close();
         for (int i = 0; i < checkString.length; i++)
         {
             int counter = 0;
@@ -67,7 +68,6 @@ public class HackerRankInAString
             }
             if ()
         }
-        input.close();
         for (int i = 0; i < checkString.length; i++)
         {
             System.out.println(checkString[i]);
