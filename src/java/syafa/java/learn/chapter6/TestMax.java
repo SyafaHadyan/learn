@@ -13,17 +13,15 @@ public class TestMax
         input.close();
         System.out.print("The max number is" + ' ' + maxNumber(firstNumber,secondNumber));
     }
-    public static int maxNumber (int first, int second)
+    public static int maxNumber(int first,int second)
     {
-        int result = 0;
         if (first > second)
         {
-            result = first;
+            return first;
         }
         else
         {
-            result = second;
+            return second;
         }
-        return result;
     }
 }
