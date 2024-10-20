@@ -45,6 +45,11 @@ public class Encryption
             {
                 encrypted[i][j] = encrypt.charAt(encryptCounter);
                 encryptCounter++;
+                if (encryptCounter == encrypt.length())
+                {
+                    i = encrypted.length;
+                    j = encrypted[i].length;
+                }
             }
         }
         for (int i = 0; i < encrypted.length; i++)
