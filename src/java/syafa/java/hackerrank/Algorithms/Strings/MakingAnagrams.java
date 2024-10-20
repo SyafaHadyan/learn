@@ -64,12 +64,13 @@ public class MakingAnagrams
         input.close();
         Collections.sort(firstString);
         Collections.sort(secondString);
-        int[] lowestString = {firstString.size(), 0};
+        int[] lowestString = {secondString.size(), 0};
         if (firstString.size() - secondString.size() < 0)
         {
-            lowestString = firstString.size();
+            lowestString[0] = firstString.size();
+            lowestString[1] = 1;
         }
-        for (int i = 0; i < lowestString; i++)
+        for (int i = 0; i < lowestString[0]; i++)
         {
             if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
             {
