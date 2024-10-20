@@ -21,6 +21,8 @@ public class JumpingOnTheClouds
          * Try jump 2, if 1, jump 1 then 2
          */
         Scanner input = new Scanner(System.in);
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int playerPosition = 0;
@@ -31,13 +33,13 @@ public class JumpingOnTheClouds
             {
                 if (cloud[i + 2] != 1) 
                 {
-                    playerPosition = cloud[i + 2];
+                    playerPosition += 2;
                     totalJump++;
                     i++;
                 }
                 else if (cloud[i + 2] == 1)
                 {
-                    playerPosition = cloud[i + 3];
+                    playerPosition += 3;
                     totalJump += 2;
                     i += 2;
                 }
@@ -49,9 +51,9 @@ public class JumpingOnTheClouds
             }
             catch (IndexOutOfBoundsException e)
             {
-                if (cloud.length - playerPosition == 1)
+                if (cloud.length - playerPosition != 0)
                 {
-                    totalJump++;
+                    totalJump += (cloud.length - 1) - playerPosition;
                 }
                 System.out.print(totalJump);
                 return;
