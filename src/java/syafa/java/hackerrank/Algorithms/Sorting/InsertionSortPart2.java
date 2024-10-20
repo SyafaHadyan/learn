@@ -47,7 +47,9 @@ public class InsertionSortPart2
                     {
                         temp[0] = number[tempCounter];
                         temp[1] = number[tempCounter - 1];
-                        //
+                        number[tempCounter - 1] = temp[0];
+                        number[tempCounter] = temp[tempCounter];
+                        tempCounter--;
                     }
                 }
             }
