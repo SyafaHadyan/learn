@@ -27,7 +27,7 @@ public class LibraryFine
         }
         else if (bookReturn[2] > dueDate[2])
         {
-            System.out.print(0);
+            System.out.print(10000);
             return;
         }
         else
