@@ -38,6 +38,11 @@ public class Encryption
         int encryptCounter = 0;
         int arrayRow = (int)Math.floor(Math.sqrt(encrypt.length()));
         int arrayCol = (int)Math.ceil(Math.sqrt(encrypt.length()));
+        if (arrayRow * arrayCol < 8)
+        {
+            arrayRow = 3;
+            arrayCol = 3;
+        }
         char[][] encrypted = new char[arrayRow][arrayCol];
         for (int i = 0; i < encrypted.length; i++)
         {
