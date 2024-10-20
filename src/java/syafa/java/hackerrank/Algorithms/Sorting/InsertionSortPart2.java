@@ -10,6 +10,22 @@ public class InsertionSortPart2
          * n = 7
          * arr = 3 4 7 5 6 2 1
          * 
+         * # Second Try
+         * 
+         * [x]3 4 7 5 6 2 1
+         * [x]3 4 7 5 6 2 1
+         * [x]3 4 5 7 6 2 1
+         * [ ]3 4 5 6 7 2 1
+         * [ ]2 3 4 5 6 7 1
+         * [ ]1 2 3 4 5 6 7
+         * 
+         * [x]3 4 7 5 6 2 1
+         * [x]3 4 7 5 6 2 1
+         * [x]3 4 5 7 6 2 1
+         * [ ]2 3 4 5 7 6 1
+         * [ ]1 2 3 4 5 7 6
+         * 
+         * # First Try
          * [x]3 4 7 5 6 2 1
          * [x]3 4 7 5 6 2 1
          * [x]3 4 5 7 6 2 1
@@ -35,7 +51,7 @@ public class InsertionSortPart2
                 if (number[counter] < number[counter + 1])
                 {
                     counter++;
-                    int temp = number[number.length];
+                    int tempQuit = number[number.length];
                 }
                 else if (number[counter] > number[counter + 1])
                 {
@@ -48,9 +64,10 @@ public class InsertionSortPart2
                         temp[0] = number[tempCounter];
                         temp[1] = number[tempCounter - 1];
                         number[tempCounter - 1] = temp[0];
-                        number[tempCounter] = temp[tempCounter];
+                        number[tempCounter] = temp[1];
                         tempCounter--;
                     }
+                    int tempQuit = number[number.length];
                 }
             }
             catch (IndexOutOfBoundsException e)
