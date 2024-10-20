@@ -14,6 +14,8 @@ public class FindTheMedian
         if (number.length % 2 == 0)
         {
             System.out.printf("%.0f",(number[(number.length / 2) - 1]) + (number[number.length / 2] + 1) / 2.0);
+            return;
         }
+        System.out.printf("%.0f",(number[number.length / 2]));
     }
 }
