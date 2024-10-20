@@ -83,6 +83,15 @@ public class MakingAnagrams
                         i--;
                     }
                 }
+                else if (lowestString[1] == 1)
+                {
+                    if (secondString.size() != 1)
+                    {
+                        firstString.remove(i);
+                        secondString.remove(i);
+                        i--;
+                    }
+                }
             }
         }
     }
