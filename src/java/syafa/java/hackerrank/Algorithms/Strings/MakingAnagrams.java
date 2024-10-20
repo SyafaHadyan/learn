@@ -64,7 +64,7 @@ public class MakingAnagrams
         input.close();
         Collections.sort(firstString);
         Collections.sort(secondString);
-        int lowestString = secondString.size();
+        int[] lowestString = {firstString.size(), 0};
         if (firstString.size() - secondString.size() < 0)
         {
             lowestString = firstString.size();
@@ -73,8 +73,9 @@ public class MakingAnagrams
         {
             if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
             {
-                firstString.remove(i);
-                secondString.remove(i);
+                if ()
+                    firstString.remove(i);
+                    secondString.remove(i);
                 i--;
             }
         }
