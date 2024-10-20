@@ -35,6 +35,7 @@ public class Encryption
         Scanner input = new Scanner(System.in);
         String encrypt = input.nextLine();
         input.close();
+        int encryptCounter = 0;
         int arrayRow = (int)Math.floor(Math.sqrt(encrypt.length()));
         int arrayCol = (int)Math.ceil(Math.sqrt(encrypt.length()));
         char[][] encrypted = new char[arrayRow][arrayCol];
@@ -42,8 +43,17 @@ public class Encryption
         {
             for (int j = 0; j < encrypted[i].length; j++)
             {
-                encrypted[i][j] = encrypt.charAt((i + 1) * j);
+                encrypted[i][j] = encrypt.charAt(encryptCounter);
+                encryptCounter++;
             }
+        }
+        for (int i = 0; i < encrypted.length; i++)
+        {
+            for (int j = 0; j < encrypted[i].length; j++)
+            {
+                System.out.print(encrypted[i][j]);
+            }
+            System.out.println();
         }
     }
 }
