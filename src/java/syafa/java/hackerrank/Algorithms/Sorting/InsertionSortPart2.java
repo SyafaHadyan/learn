@@ -28,6 +28,12 @@ public class InsertionSortPart2
                 {
                     //
                 }
+                else if (number[i] > number[i + 1])
+                {
+                    int[] temp = {number[i], number[i + 1]};
+                    number[i] = temp[1];
+                    number[i + 1] = temp[0];
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
