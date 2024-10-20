@@ -41,7 +41,7 @@ public class Encryption
         char[][] encrypted = new char[arrayRow][arrayCol];
         for (int i = 0; i < encrypted.length; i++)
         {
-            for (int j = 0; j < encrypted[i].length; j++)
+            for (int j = 0; j < encrypted[0].length; j++)
             {
                 try
                 {
@@ -56,11 +56,11 @@ public class Encryption
         }
         for (int i = 0; i < encrypted.length; i++)
         {
-            for (int j = 0; j < encrypted[i].length; j++)
+            for (int j = 0; j < encrypted.length; j++)
             {
-                System.out.print(encrypted[i][j]);
+                System.out.print(encrypted[j][i]);
             }
-            System.out.println();
+            System.out.print(' ');
         }
     }
 }
