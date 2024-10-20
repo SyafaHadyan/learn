@@ -37,7 +37,8 @@ public class TwoStrings
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
-            //
+            String firstWord = input.nextLine();
+            String secondWord = input.nextLine();
         }
         input.close();
     }
