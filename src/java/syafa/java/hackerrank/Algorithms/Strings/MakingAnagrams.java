@@ -75,9 +75,9 @@ public class MakingAnagrams
         {
             for (int j = 0; j < secondString.size(); j++)
             {
-                if (firstString.get(i).equalsIgnoreCase(secondString.get(i)))
+                if (firstString.get(i).equalsIgnoreCase(secondString.get(j)))
                 {
-                    match++;
+                    match += 2;
                 }
             }
         }
@@ -128,6 +128,6 @@ public class MakingAnagrams
             }
         }
         */
-        System.out.print(deletionCount);
+        System.out.print((firstString.size() + secondString.size()) - match);
     }
 }
