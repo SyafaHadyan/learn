@@ -40,13 +40,17 @@ public class TwoStrings
             String firstWord = input.nextLine();
             String secondWord = input.nextLine();
             int longestWord = firstWord.length();
+            String wordCompare = firstWord;
+            String word = secondWord;
             if (secondWord.length() > longestWord)
             {
                 longestWord = secondWord.length();
+                wordCompare = secondWord;
+                word = firstWord;
             }
             for (int j = 0; j < longestWord; j++)
             {
-                if (firstWord.contains(secondWord))
+                if (firstWord.contains(wordCompare));
             }
         }
         input.close();
