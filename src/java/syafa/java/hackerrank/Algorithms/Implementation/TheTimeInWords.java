@@ -13,8 +13,6 @@ public class TheTimeInWords
         "four", "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "quarter",
         "sixteen", "seventeen", "eighteen", "nineteen","twenty"};
-        String[] tensNumber = { "", "ten", "twenty",
-        "half"};
         if (minute == 0)
         {
             System.out.print(baseNumber[hour % 100] + ' ' + "o' clock");
