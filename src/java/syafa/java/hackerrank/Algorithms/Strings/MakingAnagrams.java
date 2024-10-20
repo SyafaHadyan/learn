@@ -69,9 +69,14 @@ public class MakingAnagrams
         {
             lowestString = firstString.size();
         }
-        for (int j = 0; j < args.length; j++)
+        for (int i = 0; i < lowestString; i++)
         {
-            
+            if (!(firstString.get(i).equalsIgnoreCase(secondString.get(i))))
+            {
+                firstString.remove(i);
+                secondString.remove(i);
+                i--;
+            }
         }
     }
 }
