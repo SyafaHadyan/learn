@@ -9,7 +9,7 @@ public class MigratoryBirds
         Scanner input = new Scanner(System.in);
         int sightingAmount = Integer.parseInt(input.nextLine());
         int[] sighting = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        Collections.reverse(Arrays.asList(sighting));
         input.close();
+        Collections.reverse(Arrays.asList(sighting));
     }
 }
