@@ -41,20 +41,29 @@ public class TwoStrings
             String firstWord = input.nextLine();
             String secondWord = input.nextLine();
             int longestWord = firstWord.length();
-            String wordCompare = firstWord;
-            String word = secondWord;
+            String longestString = firstWord;
+            String shortestString = secondWord;
             if (secondWord.length() > longestWord)
             {
                 longestWord = secondWord.length();
-                wordCompare = secondWord;
-                word = firstWord;
+                longestString = secondWord;
+                shortestString = firstWord;
             }
-            if (firstWord.contains(wordCompare))
+            for (int j = 0; j < longestWord; j++)
             {
-                result[i] = "YES";
-                continue;
+                for (int k = 0; k < shortestString.length(); k++)
+                {
+                    if (shortestString.charAt(k) == longestString.charAt(j))
+                    {
+                        result[i] = "YES";
+                        break;
+                    }
+                }
+                if (longestWord - j == 1 && result[i] == null)
+                {
+                    result[i] = "NO";
+                }
             }
-            result[i] = "NO";
         }
         input.close();
         for (int i = 0; i < result.length; i++)
