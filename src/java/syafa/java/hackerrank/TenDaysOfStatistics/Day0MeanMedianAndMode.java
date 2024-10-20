@@ -36,7 +36,10 @@ public class Day0MeanMedianAndMode
         mode = data[data.length - 1];
         for (int i = data.length - 1; i >= 0; i--)
         {
-            if (count[i] >= )
+            if (data[i] >= data[mode])
+            {
+                mode = i;
+            }
         }
         System.out.printf("%.1f\n%.1f\n%d",mean,median,maxMode);
     }
