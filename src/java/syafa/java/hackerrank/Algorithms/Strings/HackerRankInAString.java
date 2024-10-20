@@ -7,7 +7,11 @@ public class HackerRankInAString
     {
         Scanner input = new Scanner(System.in);
         int check = Integer.parseInt(input.nextLine());
-        String checkString = input.nextLine();
+        String[] checkString = new String[check];
         input.close();
+        for (int i = 0; i < check; i++)
+        {
+            checkString[i] = input.nextLine();
+        }
     }
 }
