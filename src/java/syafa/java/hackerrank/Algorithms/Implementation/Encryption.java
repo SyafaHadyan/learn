@@ -42,7 +42,7 @@ public class Encryption
         {
             for (int j = 0; j < encrypted[i].length; j++)
             {
-                //
+                encrypted[i][j] = encrypt.charAt((i + 1) * j);
             }
         }
     }
