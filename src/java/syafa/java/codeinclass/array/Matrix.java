@@ -45,7 +45,6 @@ public class Matrix
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[] substractOrder = new int[2];
         int option = 0;
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
@@ -53,19 +52,24 @@ public class Matrix
         boolean newValue = true;
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
-        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
-        int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
-        int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
-        int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
-        if (firstMatrix.length != secondMatrix[0].length)
-        {
-            possibleMultiplication = false;
-            possibleMultiplicationOption = " [Not possible due to matrix size]";
-        }
         while (repeatCalculation)
         {
-            //newValue = false;
+            int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
+            int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
+            if (newValue)
+            {
+                firstMatrix = getMatrix.getFirstMatrix(matrixSize);
+                secondMatrix = getMatrix.getSecondMatrix(matrixSize);
+            }
+            int[] substractOrder = new int[2];
+            int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
+            int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
+            int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
+            if (firstMatrix.length != secondMatrix[0].length)
+            {
+                possibleMultiplication = false;
+                possibleMultiplicationOption = " [Not possible due to matrix size]";
+            }
             System.out.printf("%s\n%s\n%s%s\n%s\n%-20s%-2c",
                     "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"(3) Multiply matrix by n","Choose operation",':');
             option = Integer.parseInt(input.nextLine());
@@ -258,14 +262,12 @@ public class Matrix
                 input.close();
                 return;
             }
-            /*
             System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
             if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
             {
-                newValue = true;
+                //
             }
-            */
         }
         input.close();
     }
