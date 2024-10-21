@@ -28,6 +28,12 @@ public class CavityMap
          * 18X2
          * 1234
          * 
+         * 4
+         * 1112
+         * 1912
+         * 1892
+         * 1234
+         * 
          * 
          * 9 in [1][1] is not in border and have depth larger than the left or right
          * 
