@@ -63,7 +63,7 @@ public class ClimbingTheLeaderboard
                 if (j == ranked.length)
                 {
                     temp.add(player[i]);
-                    System.out.println(new String(String.valueOf(ranked)).indexOf(String.valueOf(player[i])));
+                    System.out.println(new String(String.valueOf(temp.toArray())).indexOf(String.valueOf(player[i])));
                 }
             }
         }
