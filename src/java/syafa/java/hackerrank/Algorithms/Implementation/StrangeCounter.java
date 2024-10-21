@@ -8,9 +8,8 @@ public class StrangeCounter
         Scanner input = new Scanner(System.in);
         int requestTimeValue = Integer.parseInt(input.nextLine());
         input.close();
-        int currentTime = 1;
         int currentValue = 3;
-        for (int i = 0; i < args.length; i++)
+        for (int i = 1; i <= requestTimeValue; i++)
         {
             
         }
