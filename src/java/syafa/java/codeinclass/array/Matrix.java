@@ -4,6 +4,26 @@ import java.util.stream.*;
 
 public class Matrix
 {
+    class getMatrix
+    {
+        public static int[][] getFirstMatrix(int matrixSize[])
+        {
+            int[][] firstMatrix = new int[matrixSize[0]][];
+            int[][] secondMatrix = new int[matrixSize[1]][];
+            Scanner input = new Scanner(System.in);
+            for (int i = 0; i < matrixSize[0]; i++)
+            {
+                firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            }
+            System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
+            for (int i = 0; i < matrixSize[1]; i++)
+            {
+                secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            }
+            input.close();
+            return firstMatrix;
+        }
+    }
     public static void main(String[] args)
     {
         /*
@@ -16,7 +36,6 @@ public class Matrix
          * Add try-catch if user can't read instruction properly
          */
         Scanner input = new Scanner(System.in);
-        System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] substractOrder = new int[2];
         int[][] firstMatrix = new int[matrixSize[0]][];
@@ -28,16 +47,6 @@ public class Matrix
         //boolean newValue = true;
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
-        System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
-        for (int i = 0; i < matrixSize[0]; i++)
-        {
-            firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        }
-        System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
-        for (int i = 0; i < matrixSize[1]; i++)
-        {
-            secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        }
         int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
         int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
