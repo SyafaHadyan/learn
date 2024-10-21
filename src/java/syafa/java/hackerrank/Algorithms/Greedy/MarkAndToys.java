@@ -18,6 +18,13 @@ public class MarkAndToys
          * iterate > get lowest val with budget
          */
         Scanner input = new Scanner(System.in);
+        int[] budget = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] price = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        Arrays.sort(price);
         input.close();
+        for (int i = 0; i < price.length; i++)
+        {
+            //
+        }
     }
 }
