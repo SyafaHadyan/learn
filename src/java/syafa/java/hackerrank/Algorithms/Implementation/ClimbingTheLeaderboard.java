@@ -52,6 +52,15 @@ public class ClimbingTheLeaderboard
         Scanner input = new Scanner(System.in);
         int[] ranked = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] player = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] currentPlayerPosition = new int[player.length];
+        for (int i = 0; i < player.length; i++)
+        {
+            Set<Integer> temp = new HashSet<>();
+            for (int j = 0; j <= ranked.length; j++)
+            {
+                temp.add(ranked[j]);
+            }
+        }
         input.close();
     }
 }
