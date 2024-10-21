@@ -98,7 +98,7 @@ public class Matrix
                         {
                             // Testing
                             // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
-                            matrixMultiplicationResult[i][counter - 1] += firstMatrix[i][counter - 1] * secondMatrix[i][counter - 1];
+                            //matrixMultiplicationResult[i][counter - 1] += firstMatrix[i][counter - 1] * secondMatrix[i][counter - 1];
                             counter++;
                             if (counter % 2 == 0)
                             {
