@@ -41,7 +41,6 @@ public class Matrix
          * Multiply first and Second Matrix
          * Inverse
          * Transpose
-         * Ask user if user want to repeat operation using (current matrix/replace matrix n with result)
          * Add try-catch if user can't read instruction properly
          */
         Scanner input = new Scanner(System.in);
