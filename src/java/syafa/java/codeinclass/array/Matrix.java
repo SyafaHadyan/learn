@@ -8,20 +8,26 @@ public class Matrix
     {
         public static int[][] getFirstMatrix(int matrixSize[])
         {
-            int[][] firstMatrix = new int[matrixSize[0]][];
-            int[][] secondMatrix = new int[matrixSize[1]][];
             Scanner input = new Scanner(System.in);
+            int[][] firstMatrix = new int[matrixSize[0]][];
             for (int i = 0; i < matrixSize[0]; i++)
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
             System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
+            input.close();
+            return firstMatrix;
+        }
+        public static int[][] getSecondMatrix(int matrixSize[])
+        {
+            Scanner input = new Scanner(System.in);
+            int[][] secondMatrix = new int[matrixSize[1]][];
             for (int i = 0; i < matrixSize[1]; i++)
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
             input.close();
-            return firstMatrix;
+            return secondMatrix;
         }
     }
     public static void main(String[] args)
