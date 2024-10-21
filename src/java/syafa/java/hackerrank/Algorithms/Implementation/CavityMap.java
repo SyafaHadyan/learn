@@ -50,6 +50,10 @@ public class CavityMap
         {
             for (int j = 0; j < cell[i].length; j++)
             {
+                if ((Math.abs(Integer.parseInt(cell[i--][j--]) - Integer.parseInt(cell[i][j])) > 1) && (cell[i++][j++] - cell[i][j]))
+                {
+                    //
+                }
                 System.out.print(cell[i][j]);
                 if (cell[i].length - j != 1)
                 {
