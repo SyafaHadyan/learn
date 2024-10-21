@@ -10,11 +10,11 @@ public class Matrix
         {
             Scanner input = new Scanner(System.in);
             int[][] firstMatrix = new int[matrixSize[0]][];
+            System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
             for (int i = 0; i < matrixSize[0]; i++)
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
             input.close();
             return firstMatrix;
         }
@@ -22,6 +22,7 @@ public class Matrix
         {
             Scanner input = new Scanner(System.in);
             int[][] secondMatrix = new int[matrixSize[1]][];
+            System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
             for (int i = 0; i < matrixSize[1]; i++)
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
