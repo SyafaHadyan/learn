@@ -26,7 +26,7 @@ public class StrangeCounter
             }
             if (requestTimeValue - i == 1)
             {
-                System.out.print(currentValue);
+                System.out.printf("%.0f",currentValue);
                 return;
             }
         }
