@@ -61,11 +61,12 @@ public class FormingAMagicSquare
         input.close();
         for (int i = 0; i < possibleMatch.length; i++)
         {
+            int diff = 0;
             for (int j = 0; j < 3; j++)
             {
                 for (int k = 0; k < 3; k++)
                 {
-                    //
+                    diff += (Math.abs(possibleMatch[i][j][k]) - inputNumber[i][k]);
                 }
             }
         }
