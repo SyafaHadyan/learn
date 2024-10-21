@@ -33,6 +33,12 @@ public class CavityMap
          * 
          */
         Scanner input = new Scanner(System.in);
+        int cellSize = Integer.parseInt(input.nextLine());
+        String[][] cell = new String[cellSize][cellSize];
+        for (int i = 0; i < cellSize; i++)
+        {
+            
+        }
         input.close();
     }
 }
