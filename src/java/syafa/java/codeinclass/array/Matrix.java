@@ -44,7 +44,7 @@ public class Matrix
         Scanner input = new Scanner(System.in);
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] substractOrder = new int[2];
-        int[][] firstMatrix = new int[matrixSize[0]][];
+        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
         int[][] secondMatrix = new int[matrixSize[1]][];
         int option = 0;
         int multiplyMatrix = 0;
