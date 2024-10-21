@@ -12,6 +12,24 @@ public class ClimbingTheLeaderboard
          * 4
          * 5 25 50 120
          * 
+         * input rank
+         * 100 100 50 40 40 20 10 (should be array list or this size + player)
+         * keep index when
+         * sort player
+         * 5 25 50 120
+         * 
+         * first iterate
+         * 
+         *     1   1   2  3  3  4  5  6
+         * 5 > 100 100 50 40 40 20 10 5
+         * index[0] = 6
+         * 
+         * second iterate
+         * 
+         *      1   1   2  3  3  4  5  6
+         * 25 > 100 100 50 40 40 25 20 10
+         * 
+         * 
          * 6
          * 4
          * 2
