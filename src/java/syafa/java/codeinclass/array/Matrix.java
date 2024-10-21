@@ -60,6 +60,7 @@ public class Matrix
             {
                 firstMatrix = getMatrix.getFirstMatrix(matrixSize);
                 secondMatrix = getMatrix.getSecondMatrix(matrixSize);
+                newValue = false;
             }
             int[] substractOrder = new int[2];
             int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
@@ -257,16 +258,21 @@ public class Matrix
             }
             System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
-            if (repeatCalculationConfirmation.equalsIgnoreCase("N"))
-            {
-                input.close();
-                return;
-            }
-            System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
-            repeatCalculationConfirmation = input.nextLine();
             if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
             {
-                //
+                repeatCalculation = true;
+                System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
+                repeatCalculationConfirmation = input.nextLine();
+                if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
+                {
+                    newValue = true;
+                }
+            }
+            else
+            {
+                repeatCalculation = false;
+                input.close();
+                return;
             }
         }
         input.close();
