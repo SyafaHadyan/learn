@@ -16,7 +16,7 @@ public class StrangeCounter
             System.out.print(3);
             return;
         }
-        for (BigInteger i = BigInteger.ONE; ; i.add(BigInteger.ONE))
+        for (BigInteger i = BigInteger.ONE; (i.compareTo(requestTimeValue) < 0); i.add(BigInteger.ONE))
         {
             currentValue.subtract(BigInteger.valueOf(1));
             if (currentValue == BigInteger.ONE)
