@@ -16,8 +16,7 @@ public class StrangeCounter
             if (currentValue == 1)
             {
                 initialValue *= 2;
-                currentValue = initialValue;
-                i++;
+                currentValue = initialValue - 1;
             }
         }
         System.out.print(currentValue);
