@@ -46,6 +46,8 @@ public class Matrix
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        System.out.printf("%-50s%-2c","Input matrix sizes [First Col] [Second Col]",':');
+        int[] matrixCol = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
         int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
         int option = 0;
@@ -60,7 +62,9 @@ public class Matrix
             if (newValue)
             {
                 System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
-                matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();        
+                matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                System.out.printf("%-50s%-2c","Input matrix sizes [First Col] [Second Col]",':');
+                matrixCol = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();      
                 firstMatrix = getMatrix.getFirstMatrix(matrixSize);
                 secondMatrix = getMatrix.getSecondMatrix(matrixSize);
                 newValue = false;
@@ -69,7 +73,7 @@ public class Matrix
             int[][] matrixResult = new int[matrixSize[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
             int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
             int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
-            if (firstMatrix.length != secondMatrix[0].length)
+            if (matrixSize[0] != matrixCol[2])
             {
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
