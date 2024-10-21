@@ -25,6 +25,11 @@ public class Day1StandardDeviation
          * -----           --------
          * 5               arr[] size n = 5
          * 10 40 30 50 20  arr =[10, 40, 30, 50, 20]
+         * 
+         * 10
+         * 64630 11735 14216 99233 14470 4978 73429 38120 51135 67060
+         * 
+         * 30466.9
          */
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
@@ -41,6 +46,7 @@ public class Day1StandardDeviation
         {
             standardDeviation += Math.pow((data[i] - mean),2);
         }
-        System.out.printf("%.1f",(Math.sqrt(standardDeviation / data.length)));
+        double result = (Math.sqrt(standardDeviation / data.length));
+        System.out.printf("%.1f",result);
     }
 }
