@@ -14,7 +14,7 @@ public class MethodCalculator
         System.out.printf("%-30s%-2c%.1f\n","The sum is",':',addTwoNumber(number[0],number[1]));
         System.out.printf("%-30s%-2c%.1f\n","The substraction is",':',substractTwoNumber(number[0],number[1]));
         System.out.printf("%-30s%-2c%.1f\n","The multiplication is",':',multiplyTwoNumber(number[0],number[1]));
-        System.out.printf("%-30s%-2c%.1f","The divided is",':',divideTwoNumber(number[0],number[1]));
+        System.out.printf("%-30s%-2c%.1f","The divided value is",':',divideTwoNumber(number[0],number[1]));
     }
     public static double maxNumber(double first,double second)
     {
