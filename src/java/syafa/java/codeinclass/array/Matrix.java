@@ -66,7 +66,7 @@ public class Matrix
                 newValue = false;
             }
             int[] substractOrder = new int[2];
-            int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
+            int[][] matrixResult = new int[matrixSize[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
             int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
             int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
             if (firstMatrix.length != secondMatrix[0].length)
