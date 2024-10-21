@@ -35,12 +35,12 @@ public class Day1StandardDeviation
         double mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
         if (data.length % 2 != 0)
         {
-            mean = (data.length / 2) + 1;
+            mean = data[(data.length / 2)];
         }
         for (int i = 0; i < data.length; i++)
         {
             standardDeviation += Math.pow((data[i] - mean),2);
         }
-        System.out.printf("%.1f",(standardDeviation / data.length));
+        System.out.printf("%.1f",(Math.sqrt(standardDeviation / data.length)));
     }
 }
