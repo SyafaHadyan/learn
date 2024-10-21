@@ -11,7 +11,7 @@ public class StrangeCounter
         input.close();
         BigInteger initialValue = BigInteger.valueOf(3);
         int currentValue = 3;
-        if (requestTimeValue == 1)
+        if (initialValue.intValue() == 1)
         {
             System.out.print(3);
             return;
