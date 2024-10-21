@@ -24,6 +24,8 @@ public class Day1StandardDeviation
          * 10 40 30 50 20  arr =[10, 40, 30, 50, 20]
          */
         Scanner input = new Scanner(System.in);
+        int arraySize = Integer.parseInt(input.nextLine());
+        int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
