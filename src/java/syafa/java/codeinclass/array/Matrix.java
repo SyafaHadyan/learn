@@ -6,6 +6,7 @@ public class Matrix
 {
     class getMatrix
     {
+        @SuppressWarnings("resource")
         public static int[][] getFirstMatrix(int matrixSize[])
         {
             Scanner input = new Scanner(System.in);
@@ -15,9 +16,10 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return firstMatrix;
         }
+        @SuppressWarnings("resource")
         public static int[][] getSecondMatrix(int matrixSize[])
         {
             Scanner input = new Scanner(System.in);
@@ -27,7 +29,7 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return secondMatrix;
         }
     }
