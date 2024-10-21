@@ -7,6 +7,9 @@ public class Day1StandardDeviation
     public static void main(String[] args)
     {
         /*
+         * 1 2 3 4 5 6 7
+         * 
+         * 
          * 2 5 2 7 4
          * sum = 20
          * mean = 4
@@ -29,5 +32,9 @@ public class Day1StandardDeviation
         input.close();
         Arrays.sort(data);
         double mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
+        if (data.length % 2 != 0)
+        {
+            mean = (data.length / 2) + 1;
+        }
     }
 }
