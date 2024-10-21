@@ -31,5 +31,6 @@ public class MarkAndToys
                 budget[1] -= price[i];
             }
         }
+        System.out.print(toyCounter);
     }
 }
