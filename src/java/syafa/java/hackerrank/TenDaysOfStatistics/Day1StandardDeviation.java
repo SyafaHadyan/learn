@@ -36,11 +36,15 @@ public class Day1StandardDeviation
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(data);
+        double mean = 0d;
         double standardDeviation = 0d;
-        double mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
         if (data.length % 2 != 0)
         {
             mean = data[(data.length / 2)];
+        }
+        else if (data.length % 2 == 0)
+        {
+            mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
         }
         for (int i = 0; i < data.length; i++)
         {
