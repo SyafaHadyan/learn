@@ -73,7 +73,7 @@ public class Matrix
             int[][] matrixResult = new int[matrixRow[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
             int[][] matrixMultiplicationResult = new int[matrixRow[0]][secondMatrix[0].length];
             int[][][] matrixMultiply = new int[2][matrixRow[0]][(firstMatrix.length + secondMatrix.length) / 2];
-            if (matrixRow[0] != matrixCol[2])
+            if (matrixRow[0] != matrixCol[1])
             {
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
@@ -281,7 +281,7 @@ public class Matrix
                 input.close();
                 return;
             }
-            input.close();
         }
+        input.close();
     }
 }
