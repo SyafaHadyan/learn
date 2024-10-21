@@ -268,6 +268,7 @@ public class Matrix
                 repeatCalculationConfirmation = input.nextLine();
                 if (repeatCalculationConfirmation.equalsIgnoreCase("N"))
                 {
+                    System.gc();
                     newValue = true;
                 }
             }
@@ -278,6 +279,5 @@ public class Matrix
                 return;
             }
         }
-        input.close();
     }
 }
