@@ -37,7 +37,7 @@ public class CavityMap
         String[][] cell = new String[cellSize][cellSize];
         for (int i = 0; i < cellSize; i++)
         {
-            
+            cell[i] = input.nextLine().split(" ");
         }
         input.close();
     }
