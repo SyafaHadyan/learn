@@ -10,20 +10,26 @@ public class StrangeCounter
         input.close();
         int initialValue = 3;
         int currentValue = initialValue;
+        if (requestTimeValue == 1)
+        {
+            System.out.print(3);
+            return;
+        }
         for (int i = 1; i < requestTimeValue; i++)
         {
             currentValue--;
-            if (requestTimeValue - i == 1)
-            {
-                System.out.print(currentValue);
-                return;
-            }
             if (currentValue == 1)
             {
                 initialValue *= 2;
                 currentValue = initialValue;
                 i++;
             }
+            if (requestTimeValue - i == 1)
+            {
+                System.out.print(currentValue);
+                return;
+            }
         }
+        System.out.print(1);
     }
 }
