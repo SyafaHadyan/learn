@@ -46,7 +46,7 @@ public class Matrix
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] substractOrder = new int[2];
         int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-        int[][] secondMatrix = new int[matrixSize[1]][];
+        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
         int option = 0;
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
