@@ -281,6 +281,7 @@ public class Matrix
                 input.close();
                 return;
             }
+            input.close();
         }
     }
 }
