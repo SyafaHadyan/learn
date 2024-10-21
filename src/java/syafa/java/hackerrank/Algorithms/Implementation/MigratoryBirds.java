@@ -37,11 +37,11 @@ public class MigratoryBirds
                 {
                     currentMode++;
                 }
-                if ((sighting[i] == sighting[i--]) && (currentType < mostType))
+                if ((sighting[i] == sighting[i--]) && (currentType < mostType) && (currentMode > mode))
                 {
                     mostType = sighting[i];
                     mode = currentMode;
-                    if (currentType != sighting[i--])
+                    if ((currentType != sighting[i--]) && (currentMode > mode))
                     {
                         currentMode = 0;
                     }
