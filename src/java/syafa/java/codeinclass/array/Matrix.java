@@ -15,7 +15,7 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return firstMatrix;
         }
         public static int[][] getSecondMatrix(int matrixSize[])
@@ -27,7 +27,7 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return secondMatrix;
         }
     }
@@ -106,6 +106,7 @@ public class Matrix
             }
             else if (option == 2)
             {
+                // Temporary Disabled, if selected, it will return previous value or 0
                 int counter = 1;
                 if (possibleMultiplication)
                 {
@@ -114,7 +115,7 @@ public class Matrix
                         for (int j = 0; j < secondMatrix[i].length; j++)
                         {
                             // Testing
-                            // matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
+                            //matrixResult[firstMatrix.length][secondMatrix[0].length] += firstMatrix[i][j] * secondMatrix[i][j];
                             //matrixMultiplicationResult[i][counter - 1] += firstMatrix[i][counter - 1] * secondMatrix[i][counter - 1];
                             counter++;
                             if (counter % 2 == 0)
