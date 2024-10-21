@@ -10,13 +10,14 @@ public class StrangeCounter
         input.close();
         int initialValue = 3;
         int currentValue = initialValue;
-        for (int i = 2; i < requestTimeValue; i++)
+        for (int i = 1; i < requestTimeValue; i++)
         {
             currentValue--;
             if (currentValue == 1)
             {
                 initialValue *= 2;
                 currentValue = initialValue;
+                i++;
             }
         }
         System.out.print(currentValue);
