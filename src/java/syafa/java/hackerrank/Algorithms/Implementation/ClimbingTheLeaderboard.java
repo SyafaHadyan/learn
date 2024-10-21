@@ -1,6 +1,7 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
 import java.util.stream.*;
+import org.;
 
 public class ClimbingTheLeaderboard
 {
@@ -59,6 +60,11 @@ public class ClimbingTheLeaderboard
             for (int j = 0; j <= ranked.length; j++)
             {
                 temp.add(ranked[j]);
+                if (j == ranked.length)
+                {
+                    temp.add(player[i]);
+                    System.out.println(new String(String.valueOf(ranked)).indexOf(String.valueOf(player[i])));
+                }
             }
         }
         input.close();
