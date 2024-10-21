@@ -15,7 +15,7 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return firstMatrix;
         }
         public static int[][] getSecondMatrix(int matrixSize[])
@@ -27,7 +27,7 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return secondMatrix;
         }
     }
