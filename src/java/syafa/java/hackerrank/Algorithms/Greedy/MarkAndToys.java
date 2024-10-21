@@ -22,9 +22,14 @@ public class MarkAndToys
         int[] price = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         Arrays.sort(price);
         input.close();
+        int toyCounter = 0;
         for (int i = 0; i < price.length; i++)
         {
-            //
+            if (price[i] <= budget[1])
+            {
+                toyCounter++;
+                budget[1] -= price[i];
+            }
         }
     }
 }
