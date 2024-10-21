@@ -27,5 +27,7 @@ public class Day1StandardDeviation
         int arraySize = Integer.parseInt(input.nextLine());
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        Arrays.sort(data);
+        double mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
     }
 }
