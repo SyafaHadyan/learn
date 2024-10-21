@@ -50,7 +50,14 @@ public class CavityMap
         {
             for (int j = 0; j < cell[i].length; j++)
             {
-                if ((Math.abs(Integer.parseInt(cell[i--][j--]) - Integer.parseInt(cell[i][j])) > 1) && (Math.abs(Integer.parseInt(cell[i++][j++]) - Integer.parseInt(cell[i][j])) > 1))
+                try
+                {
+                    if ((Math.abs(Integer.parseInt(cell[i--][j--]) - Integer.parseInt(cell[i][j])) > 1) && (Math.abs(Integer.parseInt(cell[i++][j++]) - Integer.parseInt(cell[i][j])) > 1))
+                    {
+                        //
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
