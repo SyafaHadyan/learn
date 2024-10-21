@@ -7,12 +7,12 @@ public class Matrix
     class getMatrix
     {
         @SuppressWarnings("resource")
-        public static int[][] getFirstMatrix(int matrixSize[])
+        public static int[][] getFirstMatrix(int matrixRow[])
         {
             Scanner input = new Scanner(System.in);
-            int[][] firstMatrix = new int[matrixSize[0]][];
+            int[][] firstMatrix = new int[matrixRow[0]][];
             System.out.printf("%-50s%c\n","Input first matrix [Column] (Separate by space)",':');
-            for (int i = 0; i < matrixSize[0]; i++)
+            for (int i = 0; i < matrixRow[0]; i++)
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
@@ -20,12 +20,12 @@ public class Matrix
             return firstMatrix;
         }
         @SuppressWarnings("resource")
-        public static int[][] getSecondMatrix(int matrixSize[])
+        public static int[][] getSecondMatrix(int matrixRow[])
         {
             Scanner input = new Scanner(System.in);
-            int[][] secondMatrix = new int[matrixSize[1]][];
+            int[][] secondMatrix = new int[matrixRow[1]][];
             System.out.printf("%-50s%c\n","Input second matrix [Column] (Separate by space)",':');
-            for (int i = 0; i < matrixSize[1]; i++)
+            for (int i = 0; i < matrixRow[1]; i++)
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
@@ -45,11 +45,11 @@ public class Matrix
          */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
-        int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] matrixRow = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         System.out.printf("%-50s%-2c","Input matrix sizes [First Col] [Second Col]",':');
         int[] matrixCol = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
+        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixRow);
+        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixRow);
         int option = 0;
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
@@ -62,18 +62,18 @@ public class Matrix
             if (newValue)
             {
                 System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
-                matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                matrixRow = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
                 System.out.printf("%-50s%-2c","Input matrix sizes [First Col] [Second Col]",':');
                 matrixCol = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();      
-                firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-                secondMatrix = getMatrix.getSecondMatrix(matrixSize);
+                firstMatrix = getMatrix.getFirstMatrix(matrixRow);
+                secondMatrix = getMatrix.getSecondMatrix(matrixRow);
                 newValue = false;
             }
             int[] substractOrder = new int[2];
-            int[][] matrixResult = new int[matrixSize[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
-            int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
-            int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
-            if (matrixSize[0] != matrixCol[2])
+            int[][] matrixResult = new int[matrixRow[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
+            int[][] matrixMultiplicationResult = new int[matrixRow[0]][secondMatrix[0].length];
+            int[][][] matrixMultiply = new int[2][matrixRow[0]][(firstMatrix.length + secondMatrix.length) / 2];
+            if (matrixRow[0] != matrixCol[2])
             {
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
