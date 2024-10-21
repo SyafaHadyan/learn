@@ -60,6 +60,8 @@ public class Matrix
         {
             if (newValue)
             {
+                System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
+                matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();        
                 firstMatrix = getMatrix.getFirstMatrix(matrixSize);
                 secondMatrix = getMatrix.getSecondMatrix(matrixSize);
                 newValue = false;
