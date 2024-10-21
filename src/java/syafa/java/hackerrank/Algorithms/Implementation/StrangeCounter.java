@@ -25,7 +25,7 @@ public class StrangeCounter
                 currentValue = initialValue;
                 i.add(BigInteger.ONE);
             }
-            if (requestTimeValue.subtract(i) == 1)
+            if (requestTimeValue.subtract(i) == BigInteger.ONE)
             {
                 System.out.print(currentValue);
                 return;
