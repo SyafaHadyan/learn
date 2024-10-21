@@ -43,6 +43,7 @@ public class Matrix
          * Add try-catch if user can't read instruction properly
          */
         Scanner input = new Scanner(System.in);
+        System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] substractOrder = new int[2];
         int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
