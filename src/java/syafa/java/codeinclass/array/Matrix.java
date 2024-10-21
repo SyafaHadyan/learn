@@ -53,7 +53,7 @@ public class Matrix
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
         boolean repeatCalculation = true;
-        boolean newValue = true;
+        boolean newValue = false;
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
         while (repeatCalculation)
@@ -263,9 +263,9 @@ public class Matrix
             if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
             {
                 repeatCalculation = true;
-                System.out.printf("%-20s%-2c","Use previous value (Y/N)",':');
+                System.out.printf("%-30s%-2c","Use previous value (Y/N)",':');
                 repeatCalculationConfirmation = input.nextLine();
-                if (repeatCalculationConfirmation.equalsIgnoreCase("Y"))
+                if (repeatCalculationConfirmation.equalsIgnoreCase("N"))
                 {
                     newValue = true;
                 }
