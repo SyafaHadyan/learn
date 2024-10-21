@@ -53,7 +53,7 @@ public class FormingAMagicSquare
             { {2, 7, 6}, {9, 5, 1}, {4, 3, 8} }
         };
         int[][] inputNumber = new int[3][];
-        int counter = 0;
+        int counter = Integer.MAX_VALUE;
         for (int i = 0; i < 3; i++)
         {
             inputNumber[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -66,9 +66,11 @@ public class FormingAMagicSquare
             {
                 for (int k = 0; k < 3; k++)
                 {
-                    diff += (Math.abs(possibleMatch[i][j][k]) - inputNumber[i][k]);
+                    diff += (Math.abs(possibleMatch[i][j][k]) - inputNumber[j][k]);
                 }
             }
+            counter = Math.min(counter,diff);
         }
+        System.out.print(counter);
     }
 }
