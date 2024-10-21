@@ -36,6 +36,8 @@ public class FormingAMagicSquare
          * 4        7               not pass    no                 > counter += Math.abs(validElement - element) (value = 3)  total = 3
          * 4        8               not pass    no                 > counter += Math.abs(validElement - element) (value = 4)  total = 7
          * 8        9               not pass    no                 > counter += Math.abs(validElement - element) (value = 1)  total = 8
+         * 
+         * Use possible match int[][][]
          */
         Scanner input = new Scanner(System.in);
         input.close();
