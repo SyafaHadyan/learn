@@ -135,7 +135,6 @@ public class Matrix
                 }
                 else
                 {
-                    input.close();
                     System.out.println("[Not possible due to matrix size]" + "\n" + "First matrix" + ':');
                     for (int i = 0; i < firstMatrix.length; i++)
                     {
