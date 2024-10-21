@@ -126,11 +126,11 @@ public class Matrix
                     {
                         for (int j = 0; j < secondMatrix[i].length; j++)
                         {
-                            for (int k = 0; k < matrixMultiply.length / 2; k++)
-                            {
-                                matrixMultiplicationResult[i][j] = firstMatrix[i][j] * secondMatrix[i][j] + firstMatrix[i][j + 1] * secondMatrix[i + 1][j];
-                            }
+                            matrixMultiplicationResult[i][j] = (firstMatrix[i][j] * secondMatrix[i][j]) + (firstMatrix[i][j + 1] * secondMatrix[i + 1][j]);
                         }
+                        /*
+                         * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
+                         */
                     }
                 }
                 else
