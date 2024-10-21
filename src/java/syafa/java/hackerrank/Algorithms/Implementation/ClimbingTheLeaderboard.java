@@ -55,14 +55,16 @@ public class ClimbingTheLeaderboard
         int[] currentPlayerPosition = new int[player.length];
         for (int i = 0; i < player.length; i++)
         {
-            Set<Integer> temp = new HashSet<>();
+            Set<String> temp = new HashSet<>();
             for (int j = 0; j < ranked.length; j++)
             {
-                temp.add(ranked[j]);
+                temp.add(String.valueOf(ranked[j]));
                 if (ranked.length - j == 1)
                 {
-                    temp.add(player[i]);
-                    System.out.println(new String(String.valueOf(temp.toArray())).indexOf(String.valueOf(player[i])));
+                    temp.add(String.valueOf(player[i]));
+                    String[] newTemp = new String[temp.size()];
+                    System.arraycopy(temp.toArray(),0,newTemp,0,temp.size());
+                    System.out.println(newTemp);
                 }
             }
         }
