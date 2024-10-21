@@ -52,12 +52,22 @@ public class FormingAMagicSquare
             { {6, 7, 2}, {1, 5, 9}, {8, 3, 4} },
             { {2, 7, 6}, {9, 5, 1}, {4, 3, 8} }
         };
-        int[][] inputNumber = new int[3][3];
+        int[][] inputNumber = new int[3][];
         int counter = 0;
         for (int i = 0; i < 3; i++)
         {
             inputNumber[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
+        for (int i = 0; i < possibleMatch.length; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                for (int k = 0; k < 3; k++)
+                {
+                    //
+                }
+            }
+        }
     }
 }
