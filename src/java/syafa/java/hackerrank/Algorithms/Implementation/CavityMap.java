@@ -44,7 +44,7 @@ public class CavityMap
         {
             for (int j = 0; j < cell[i].length; j++)
             {
-                System.out.print(cell[i][k]);
+                System.out.print(cell[i][j]);
                 if (cell[i].length - j != 1)
                 {
                     System.out.print(' ');
