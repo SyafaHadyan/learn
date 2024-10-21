@@ -31,10 +31,15 @@ public class Day1StandardDeviation
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(data);
+        double standardDeviation = 0d;
         double mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
         if (data.length % 2 != 0)
         {
             mean = (data.length / 2) + 1;
+        }
+        for (int i = 0; i < data.length; i++)
+        {
+            standardDeviation += Math.pow((data[i] - mean),2);
         }
     }
 }
