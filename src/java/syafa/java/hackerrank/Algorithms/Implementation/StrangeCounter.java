@@ -19,11 +19,11 @@ public class StrangeCounter
         for (BigInteger i = BigInteger.ONE; ; i.add(BigInteger.ONE))
         {
             currentValue.subtract(BigInteger.valueOf(1));
-            if (currentValue == 1)
+            if (currentValue == BigInteger.ONE)
             {
                 initialValue = initialValue.multiply(BigInteger.valueOf(2));
                 currentValue = initialValue;
-                i.add(Biginteger.ONE);
+                i.add(BigInteger.ONE);
             }
             if (requestTimeValue.subtract(i) == 1)
             {
