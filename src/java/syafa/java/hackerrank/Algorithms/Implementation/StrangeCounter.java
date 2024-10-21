@@ -1,15 +1,16 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.math.*;
 
 public class StrangeCounter
 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int requestTimeValue = Integer.parseInt(input.nextLine());
+        BigInteger requestTimeValue = input.nextBigInteger();
         input.close();
-        int initialValue = 3;
-        int currentValue = initialValue;
+        BigInteger initialValue = BigInteger.valueOf(3);
+        int currentValue = 3;
         if (requestTimeValue == 1)
         {
             System.out.print(3);
@@ -20,7 +21,7 @@ public class StrangeCounter
             currentValue--;
             if (currentValue == 1)
             {
-                initialValue *= 2;
+                initialValue = initialValue.multiply(BigInteger.valueOf(2));
                 currentValue = initialValue;
                 i++;
             }
