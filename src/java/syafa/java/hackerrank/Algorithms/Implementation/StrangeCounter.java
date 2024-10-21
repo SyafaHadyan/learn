@@ -10,22 +10,22 @@ public class StrangeCounter
         BigInteger requestTimeValue = input.nextBigInteger();
         input.close();
         BigInteger initialValue = BigInteger.valueOf(3);
-        int currentValue = 3;
+        BigInteger currentValue = BigInteger.valueOf(3);
         if (initialValue.intValue() == 1)
         {
             System.out.print(3);
             return;
         }
-        for (int i = 1; i < requestTimeValue; i++)
+        for (BigInteger i = BigInteger.ONE; ; i.add(BigInteger.ONE))
         {
-            currentValue--;
+            currentValue.subtract(BigInteger.valueOf(1));
             if (currentValue == 1)
             {
                 initialValue = initialValue.multiply(BigInteger.valueOf(2));
                 currentValue = initialValue;
-                i++;
+                i.add(Biginteger.ONE);
             }
-            if (requestTimeValue - i == 1)
+            if (requestTimeValue.subtract(i) == 1)
             {
                 System.out.print(currentValue);
                 return;
