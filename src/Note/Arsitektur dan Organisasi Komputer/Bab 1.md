@@ -61,6 +61,15 @@ A **chip** is a single piece of semiconducting material, typically silicon upon 
 - **Arithmetic and logic unit (ALU)**: Performs the operation specified by an instruction.
 - **Load/store logic**: Manages the transfer of data to and from main memory via cache.
 
+##### Hierarchical Structure of Computers (Example for Motherboard with Two Intel Quad-Core Xeon Processors)
+
+- **PCI-Express** slots for a high-end display adapter and for additional peripherals.
+- **Ethernet controller** and **Ethernet ports** for network connections.
+- **USB** sockets for peripheral devices.
+- **Serial ATA (SATA)** sockets for connection to disk memory.
+- **Interfaces for DDR** (double data rate) main memory chips.
+- **Intel 3240** chipset is an I/O controller for direct memory access operations between peripheral devices and main memory.
+
 ## The IAS Computer
 
 ![Figure 1.6](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Arsitektur%20dan%20Organisasi%20Komputer/Pictures/Bab%201/Figure1.6.png)
