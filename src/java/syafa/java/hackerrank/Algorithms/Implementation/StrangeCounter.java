@@ -8,10 +8,16 @@ public class StrangeCounter
         Scanner input = new Scanner(System.in);
         int requestTimeValue = Integer.parseInt(input.nextLine());
         input.close();
-        int currentValue = 3;
+        int initialValue = 3;
+        int currentValue = initialValue;
         for (int i = 1; i <= requestTimeValue; i++)
         {
-            
+            currentValue--;
+            if (currentValue == 1)
+            {
+                initialValue *= 2;
+                currentValue = initialValue;
+            }
         }
     }
 }
