@@ -23,6 +23,11 @@ public class MarkAndToys
         Arrays.sort(price);
         input.close();
         int toyCounter = 0;
+        if (price[0] > budget[1])
+        {
+            System.out.print(0);
+            return;
+        }
         for (int i = 0; i < price.length; i++)
         {
             if (price[i] <= budget[1])
