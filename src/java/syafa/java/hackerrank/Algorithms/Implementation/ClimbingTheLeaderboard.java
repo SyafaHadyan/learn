@@ -50,15 +50,16 @@ public class ClimbingTheLeaderboard
          * 1
          */
         Scanner input = new Scanner(System.in);
-        int[] ranked = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        //int[] ranked = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] player = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[] currentPlayerPosition = new int[player.length];
+        //int[] currentPlayerPosition = new int[player.length];
         input.close();
         for (int i = 0; i < player.length; i++)
         {
-            ArrayList temp = new ArrayList<>(Arrays.asList(ranked));
+            //ArrayList temp = new ArrayList<>(Arrays.asList(ranked));
             //List temp = Arrays.asList(ranked);
-            ranked.add(5);
+            //temp.add(player[i]);
+            //System.out.println(temp);
         }
     }
 }
