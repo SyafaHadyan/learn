@@ -6,6 +6,32 @@ public class CavityMap
 {
     public static void main(String[] args)
     {
+        /*
+         * 989
+         * 191
+         * 111
+         * 
+         * 989
+         * 1X1
+         * 111
+         * 
+         * STDIN   Function
+         * -----   --------
+         * 4       grid[] size n = 4
+         * 1112    grid = ['1112', '1912', '1892', '1234']
+         * 1912
+         * 1892
+         * 1234
+         * 
+         * 1112
+         * 1X12
+         * 18X2
+         * 1234
+         * 
+         * 
+         * 9 in [1][1] is not in border and have depth larger than the left or right
+         * 
+         */
         Scanner input = new Scanner(System.in);
         input.close();
     }
