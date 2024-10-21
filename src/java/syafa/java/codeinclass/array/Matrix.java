@@ -46,15 +46,15 @@ public class Matrix
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] substractOrder = new int[2];
-        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
         int option = 0;
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
         boolean repeatCalculation = true;
-        //boolean newValue = true;
+        boolean newValue = true;
         String possibleMultiplicationOption = "";
         String repeatCalculationConfirmation = "";
+        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
+        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
         int[][] matrixResult = new int[matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
         int[][] matrixMultiplicationResult = new int[matrixSize[0]][secondMatrix[0].length];
         int[][][] matrixMultiply = new int[2][matrixSize[0]][(firstMatrix.length + secondMatrix.length) / 2];
