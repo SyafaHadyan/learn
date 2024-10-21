@@ -1,33 +1,30 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
-import java.math.*;
 
 public class StrangeCounter
 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        BigInteger requestTimeValue = input.nextBigInteger();
+        double requestTimeValue = Double.parseDouble(input.nextLine());
         input.close();
-        BigInteger initialValue = BigInteger.valueOf(3);
-        BigInteger currentValue = BigInteger.valueOf(3);
-        BigInteger time = BigInteger.ONE;
-        if (initialValue.intValue() == 1)
+        double initialValue = 3;
+        double currentValue = initialValue;
+        if (requestTimeValue == 1)
         {
             System.out.print(3);
             return;
         }
-        /* TODO: Fix this */
-        while (time.compareTo(requestTimeValue) <= 0)
+        for (double i = 1; i < requestTimeValue; i++)
         {
-            currentValue.subtract(BigInteger.valueOf(1));
-            if (currentValue == BigInteger.ONE)
+            currentValue--;
+            if (currentValue == 1)
             {
-                initialValue = initialValue.multiply(BigInteger.valueOf(2));
+                initialValue *= 2;
                 currentValue = initialValue;
-                time.add(BigInteger.ONE);
+                i++;
             }
-            if (requestTimeValue.subtract(time) == BigInteger.ONE)
+            if (requestTimeValue - i == 1)
             {
                 System.out.print(currentValue);
                 return;
