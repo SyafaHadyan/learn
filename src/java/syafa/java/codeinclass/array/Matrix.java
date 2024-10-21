@@ -45,6 +45,8 @@ public class Matrix
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixSize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
+        int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
         int option = 0;
         int multiplyMatrix = 0;
         boolean possibleMultiplication = true;
@@ -54,8 +56,6 @@ public class Matrix
         String repeatCalculationConfirmation = "";
         while (repeatCalculation)
         {
-            int[][] firstMatrix = getMatrix.getFirstMatrix(matrixSize);
-            int[][] secondMatrix = getMatrix.getSecondMatrix(matrixSize);
             if (newValue)
             {
                 firstMatrix = getMatrix.getFirstMatrix(matrixSize);
