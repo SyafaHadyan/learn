@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class FormingAMagicSquare
 {
@@ -51,6 +52,14 @@ public class FormingAMagicSquare
             { {6, 7, 2}, {1, 5, 9}, {8, 3, 4} },
             { {2, 7, 6}, {9, 5, 1}, {4, 3, 8} }
         };
+        int[][][] inputNumber = new int[3][3][3];
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                //
+            }
+        }
         input.close();
     }
 }
