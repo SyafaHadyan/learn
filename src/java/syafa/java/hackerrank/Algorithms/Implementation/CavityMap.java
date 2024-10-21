@@ -7,6 +7,7 @@ public class CavityMap
     public static void main(String[] args)
     {
         /*
+        3
          * 989
          * 191
          * 111
@@ -52,16 +53,24 @@ public class CavityMap
             {
                 try
                 {
-                    if ((Math.abs(Integer.parseInt(cell[i][j--]) - Integer.parseInt(cell[i][j])) > 1) && (Math.abs(Integer.parseInt(cell[i][j++]) - Integer.parseInt(cell[i][j])) > 1))
+                    if ((Math.abs(Integer.parseInt(cell[i][j - 1]) - Integer.parseInt(cell[i][j])) > 1) && (Math.abs(Integer.parseInt(cell[i][j + 1]) - Integer.parseInt(cell[i][j])) > 1))
                     {
                         cell[i][j] = "X";
                     }
+                    //System.out.print(cell[i][j]);
                 }
                 catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
-                System.out.print(cell[i][j]);
+                try
+                {
+                    System.out.print(cell[i][j]);
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    return;
+                }
                 if (cell[i].length - j != 1)
                 {
                     System.out.print(' ');
