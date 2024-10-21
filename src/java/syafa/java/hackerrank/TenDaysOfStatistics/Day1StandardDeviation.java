@@ -41,5 +41,6 @@ public class Day1StandardDeviation
         {
             standardDeviation += Math.pow((data[i] - mean),2);
         }
+        System.out.printf("%.1f",(standardDeviation / data.length));
     }
 }
