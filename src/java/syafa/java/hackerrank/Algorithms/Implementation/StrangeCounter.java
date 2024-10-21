@@ -13,12 +13,17 @@ public class StrangeCounter
         for (int i = 1; i < requestTimeValue; i++)
         {
             currentValue--;
+            if (requestTimeValue - i == 1)
+            {
+                System.out.print(currentValue);
+                return;
+            }
             if (currentValue == 1)
             {
                 initialValue *= 2;
-                currentValue = initialValue - 1;
+                currentValue = initialValue;
+                i++;
             }
         }
-        System.out.print(currentValue);
     }
 }
