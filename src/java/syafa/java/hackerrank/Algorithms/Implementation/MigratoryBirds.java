@@ -33,15 +33,15 @@ public class MigratoryBirds
             try
             {
                 currentType = sighting[i];
-                if (currentType == sighting[i--])
+                if (currentType == sighting[i - 1])
                 {
                     currentMode++;
                 }
-                if ((sighting[i] == sighting[i--]) && (currentType < mostType) && (currentMode > mode))
+                if ((sighting[i] == sighting[i - 1]) && (currentType < mostType) && (currentMode > mode))
                 {
                     mostType = sighting[i];
                     mode = currentMode;
-                    if ((currentType != sighting[i--]) && (currentMode > mode))
+                    if ((currentType != sighting[i - 1]) && (currentMode > mode))
                     {
                         currentMode = 0;
                     }
