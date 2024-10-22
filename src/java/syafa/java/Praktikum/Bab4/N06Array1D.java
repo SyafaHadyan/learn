@@ -12,7 +12,14 @@ public class N06Array1D
         }
         for (i = 0;i <= 10; i++)
         {
-            System.out.println(bil[i]);
+            try
+            {
+                System.out.println(bil[i]);
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                System.out.print("IndexOutOfBounds");
+            }
         }
     }
 }
