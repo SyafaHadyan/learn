@@ -6,7 +6,7 @@ public class N02Array1D
     {
         int[] bil = new int[10];
         int i;
-        for (i = 0; i <= 9; i++) // kesalahan pada `i+`
+        for (i = 0; i <= 9; i++)
         {
             bil[i] = 1 + (int)(Math.random()*100);
         }
