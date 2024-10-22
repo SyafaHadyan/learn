@@ -10,6 +10,7 @@ public class ArgmaxMatriks
         int[] arraySize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[][] array = new int[arraySize[0]][];
         int[] maxValue = new int[3];
+        maxValue[2] = Integer.MIN_VALUE;
         for (int i = 0; i < arraySize[0]; i++)
         {
             array[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
