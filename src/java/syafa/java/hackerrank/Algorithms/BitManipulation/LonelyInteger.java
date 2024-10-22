@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.BitManipulation;
 import java.util.*;
+import java.util.stream.*;
 
 public class LonelyInteger
 {
@@ -46,6 +47,8 @@ public class LonelyInteger
          * 
          */
         Scanner input = new Scanner(System.in);
+        int arraySize = Integer.parseInt(input.nextLine());
+        int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
