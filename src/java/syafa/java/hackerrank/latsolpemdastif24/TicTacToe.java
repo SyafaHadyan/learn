@@ -109,6 +109,23 @@ public class TicTacToe
                 win.X();
             }
         }
+        /*
+         * Upper mid
+         * O
+         */
+        if (board[0][1].equalsIgnoreCase("O"))
+        {
+            // Upper mid -> upper left -> upper right
+            if (board[0][0].equalsIgnoreCase("O") && board[0][2].equalsIgnoreCase("O"))
+            {
+                win.O();
+            }
+            // Upper mid -> mid -> botton mid
+            if (board[1][1].equalsIgnoreCase("O") && board[2][1].equalsIgnoreCase("O"))
+            {
+                win.O();
+            }
+        }
         else
         {
             draw();
