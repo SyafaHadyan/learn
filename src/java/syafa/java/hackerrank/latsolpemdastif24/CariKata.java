@@ -19,6 +19,8 @@ public class CariKata
          * cinta tidak ditemukan.
          */
         Scanner input = new Scanner(System.in);
+        String[] dictionary = input.nextLine().split(" ");
+        String search = input.nextLine();
         input.close();
     }
 }
