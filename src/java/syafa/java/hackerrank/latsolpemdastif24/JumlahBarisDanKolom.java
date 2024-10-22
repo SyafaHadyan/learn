@@ -53,6 +53,13 @@ public class JumlahBarisDanKolom
                 rowSum [i] += array[i][j];
             }
         }
+        for (int i = 0; i < array[0].length; i++)
+        {
+            for (int j = 0; j < array.length; j++)
+            {
+                rowSum[i] = array[j][i];
+            }
+        }
         System.out.print("Hasil penjumlahan pada baris adalah ");
         for (int i = 0; i < rowSum.length; i++)
         {
@@ -62,5 +69,6 @@ public class JumlahBarisDanKolom
                 System.out.print(' ');
             }
         }
+        System.out.print("Hasil penjumlahan pada kolom adalah ");
     }
 }
