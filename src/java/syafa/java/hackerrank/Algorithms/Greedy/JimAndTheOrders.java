@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Greedy;
 import java.util.*;
+import java.util.stream.*;
 
 public class JimAndTheOrders
 {
@@ -34,6 +35,11 @@ public class JimAndTheOrders
          * 
          */
         Scanner input = new Scanner(System.in);
+        int customerAmount = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < customerAmount; i++)
+        {
+            int[] customerOrderPreparation = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        }
         input.close();
     }
 }
