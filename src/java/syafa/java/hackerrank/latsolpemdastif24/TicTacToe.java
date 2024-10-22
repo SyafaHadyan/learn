@@ -3,7 +3,7 @@ import java.util.*;
 
 public class TicTacToe
 {
-    class checkBoard
+    static class checkBoard
     {
         public static boolean checkWin(String board[][],String player)
         {
@@ -25,7 +25,7 @@ public class TicTacToe
             return false;
         }
     }
-    class gameStatus
+    static class gameStatus
     {
         public static void x()
         {
