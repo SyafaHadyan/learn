@@ -17,6 +17,14 @@ public class Praktikum0
             "Min",
             "Keluar"
         };
+        for (int i = 0; i < menu.length; i++)
+        {
+            System.out.printf("%d%-2c%s",(i + 1),'.',menu[i]);
+            if (menu.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
         input.close();
     }
 }
