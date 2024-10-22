@@ -32,9 +32,12 @@ public class ArgmaxMatriks
                 if (array[i][j] > maxValue[2])
                 {
                     maxValue[2] = array[i][j];
+                    maxValue[0] = i;
+                    maxValue[1] = j;
                 }
             }
         }
         input.close();
+        System.out.print(maxValue[0] + maxValue[1]);
     }
 }
