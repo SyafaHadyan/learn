@@ -31,3 +31,7 @@ Pada `for-loop` kedua digunakan untuk `print` seluruh nilai dari `bil[]`
 ### 6. Pada baris 8, kode tersebut diubah menjadi `for (i = 0;i <= 10; i++)` kemudian amati apa yang terjadi dan jelaskan
 
 Pada saat kode akan mengakses elemen ke 10, Java akan `throw` [`IndexOutOfBoundsException`](https://docs.oracle.com/javase/8/docs/api/java/lang/IndexOutOfBoundsException.html) karena elemen yang akan diakses diluar range dari `bil[]`
+
+## Array 2D
+
+a
