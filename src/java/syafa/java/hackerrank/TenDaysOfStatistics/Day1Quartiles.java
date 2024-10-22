@@ -7,6 +7,8 @@ public class Day1Quartiles
     public static void main(String[] args)
     {
         /*
+         * TODO: Print whole number
+         * 
          * STDIN                   Function
          * -----                   --------    
          * 9                       arr[] size n = 9 
