@@ -47,12 +47,12 @@ public class TicTacToe
         if (board[0][0].equalsIgnoreCase("X"))
         {
             // Upper left -> upper right
-            if (board[0][1].equalsIgnoreCase("X") && board[0][1].equalsIgnoreCase("X"))
+            if (board[0][1].equalsIgnoreCase("X") && board[0][2].equalsIgnoreCase("X"))
             {
                 win.x();
             }
             // Upper left -> bottom left
-            if (board[1][1].equalsIgnoreCase("X") && board[1][2].equalsIgnoreCase("X"))
+            if (board[1][0].equalsIgnoreCase("X") && board[2][0].equalsIgnoreCase("X"))
             {
                 win.x();
             }
