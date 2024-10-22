@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
-import java.util.stream.*;
 
 public class TicTacToe
 {
@@ -10,7 +9,7 @@ public class TicTacToe
         {
             for (int i = 0; i < board.length; i++)
             {
-                if (board[i][0].equalsIgnoreCase(player))
+                if (board[i][0].equalsIgnoreCase(player) && board[i][1].equalsIgnoreCase(player) && board[i][2].equalsIgnoreCase(player))
                 {
                     return true;
                 }
@@ -19,6 +18,7 @@ public class TicTacToe
                     return true;
                 }
             }
+            return false;
         }
     }
     class gameStatus
