@@ -48,7 +48,10 @@ public class TicTacToe
             board[i] = input.nextLine().split(" ");
         }
         input.close();
-        // Upper left
+        /*
+         * Upper left
+         * X
+         */
         if (board[0][0].equalsIgnoreCase("X"))
         {
             // Upper left -> upper right
@@ -61,7 +64,13 @@ public class TicTacToe
             {
                 win.x();
             }
+            // Upper left -> bottom right
+            if (board[1][1].equalsIgnoreCase("X") && board[2][2].equalsIgnoreCase("X"))
+            {
+                win.x();
+            }
         }
+        // Middle up
         else
         {
             draw();
