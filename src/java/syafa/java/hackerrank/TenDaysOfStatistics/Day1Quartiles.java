@@ -32,7 +32,7 @@ public class Day1Quartiles
             double q1 = lowerHalf[(lowerHalf.length / 2)];
             double q2 = (data[((data.length / 2) - 1)] + data[(data.length / 2)]) / 2.0;
             double q3 = upperHalf[(upperHalf.length / 2)];
-            System.out.println(q1 + "\n" + q2 + "\n" + q3);
+            System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
             return;
         }
         int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
@@ -40,6 +40,6 @@ public class Day1Quartiles
         double q1 = lowerHalf[(lowerHalf.length / 2)];
         double q2 = (data[(data.length / 2)]);
         double q3 = upperHalf[(upperHalf.length / 2) + 1];
-        System.out.println(q1 + "\n" + q2 + "\n" + q3);
+        System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
     }
 }
