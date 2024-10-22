@@ -50,10 +50,14 @@ public class LonelyInteger
         int arraySize = Integer.parseInt(input.nextLine());
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int currentNumber = Integer.MIN_VALUE;
         Arrays.sort(number);
         for (int i = 0; i < number.length; i++)
         {
-            
+            if (number[i] == i + 1)
+            {
+                currentNumber = i;
+            }
         }
     }
 }
