@@ -36,11 +36,11 @@ public class JimAndTheOrders
          */
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
+        int[][] custommerPreparation = new int[2][customerAmount];
         ArrayList<Integer> customerPreparationTime = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
-            int[] customerOrderPreparation = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            customerPreparationTime.add(customerOrderPreparation[0] + customerOrderPreparation[1]);
+            custommerPreparation[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
