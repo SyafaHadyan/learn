@@ -52,7 +52,7 @@ public class Day1Quartiles
         double q3 = upperHalf[(upperHalf.length / 2) + 1];
         if ((lowerHalf.length % 2 == 0) && (upperHalf.length % 2 == 0))
         {
-            //
+            q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2) + 1]) / 2.0;
         }
         System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
     }
