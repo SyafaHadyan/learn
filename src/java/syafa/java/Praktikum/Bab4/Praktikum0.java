@@ -23,7 +23,9 @@ public class Praktikum0
             if (menu.length - i != 1)
             {
                 System.out.print("\n");
+                continue;
             }
+            System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
         }
         input.close();
     }
