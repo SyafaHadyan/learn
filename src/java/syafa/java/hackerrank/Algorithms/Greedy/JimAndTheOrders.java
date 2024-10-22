@@ -43,5 +43,20 @@ public class JimAndTheOrders
             custommerPreparation[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
+        for (int i = 0; i < custommerPreparation.length; i++)
+        {
+            for (int j = 0; j < custommerPreparation[i].length; j++)
+            {
+                System.out.print(custommerPreparation[i][j]);
+                if (custommerPreparation[i].length - j != 1)
+                {
+                    System.out.print(' ');
+                }
+            }
+            if (custommerPreparation.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
