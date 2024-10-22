@@ -35,7 +35,7 @@ public class Day1InterquartileRange
          * 
          */
         Scanner input = new Scanner(System.in);
-        //int dataSize = Integer.parseInt(input.nextLine());
+        int dataSize = Integer.parseInt(input.nextLine());
         int[][] dataFrequency = new int[2][];
         dataFrequency[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         dataFrequency[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -62,7 +62,7 @@ public class Day1InterquartileRange
                 q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
                 q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
             }
-            System.out.printf("%.0f",(q3 - q1));
+            System.out.printf("%.1f",(q3 - q1));
             return;
         }
         int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
@@ -74,6 +74,6 @@ public class Day1InterquartileRange
             q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
             q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
         }
-        System.out.printf("%.0f",(q3 - q1));
+        System.out.printf("%.1f",(q3 - q1));
     }
 }
