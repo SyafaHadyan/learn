@@ -118,7 +118,7 @@ public class Matrix
             }
             else if (option == 2)
             {
-                // Temporary Disabled, if selected, it will return previous value or 0
+                // Temporary Disabled, if selected, it will return previous value or 0v
                 //int counter = 1;
                 if (possibleMultiplication)
                 {
