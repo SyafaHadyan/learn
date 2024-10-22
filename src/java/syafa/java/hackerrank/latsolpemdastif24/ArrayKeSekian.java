@@ -10,5 +10,6 @@ public class ArrayKeSekian
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         String[] element = input.nextLine().split(" ");
         input.close();
+        System.out.print(element[data[1] - 1]);
     }
 }
