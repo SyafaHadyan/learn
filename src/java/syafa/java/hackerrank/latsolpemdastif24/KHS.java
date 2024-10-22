@@ -20,6 +20,9 @@ public class KHS
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int gradeAmount = Integer.parseInt(input.nextLine());
+        String[] subject = input.nextLine().split(" ");
+        String search = input.nextLine();
         input.close();
     }
 }
