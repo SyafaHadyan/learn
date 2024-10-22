@@ -69,6 +69,10 @@ public class TicTacToe
         {
             gameStatus.x();
         }
+        if (checkBoard.checkWin(board,"O"))
+        {
+            gameStatus.o();
+        }
         //else
         {
             gameStatus.draw();
