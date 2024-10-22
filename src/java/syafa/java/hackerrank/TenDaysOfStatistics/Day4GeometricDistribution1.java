@@ -10,6 +10,6 @@ public class Day4GeometricDistribution1
         double[] probabilityOfDefect = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
         int defectAt = Integer.parseInt(input.nextLine());
         input.close();
-        System.out.print(Math.pow((1-(probabilityOfDefect[0] / probabilityOfDefect[1])),(defectAt - 1)) * (probabilityOfDefect[0] / probabilityOfDefect[1]));
+        System.out.print(String.format("%.2g%n",(Math.pow((1-(probabilityOfDefect[0] / probabilityOfDefect[1])),(defectAt - 1)) * (probabilityOfDefect[0] / probabilityOfDefect[1]))));
     }
 }
