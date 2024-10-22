@@ -48,83 +48,9 @@ public class TicTacToe
             board[i] = input.nextLine().split(" ");
         }
         input.close();
-        /*
-         * Upper left
-         * X
-         */
-        if (board[0][0].equalsIgnoreCase("X"))
+        for (int i = 0; i < board.length; i++)
         {
-            // Upper left -> upper right
-            if (board[0][1].equalsIgnoreCase("X") && board[0][2].equalsIgnoreCase("X"))
-            {
-                win.X();
-            }
-            // Upper left -> bottom left
-            if (board[1][0].equalsIgnoreCase("X") && board[2][0].equalsIgnoreCase("X"))
-            {
-                win.X();
-            }
-            // Upper left -> bottom right
-            if (board[1][1].equalsIgnoreCase("X") && board[2][2].equalsIgnoreCase("X"))
-            {
-                win.X();
-            }
-        }
-        /*
-         * Upper left
-         * O
-         */
-        if (board[0][0].equalsIgnoreCase("O"))
-        {
-            // Upper left -> upper right
-            if (board[0][1].equalsIgnoreCase("O") && board[0][2].equalsIgnoreCase("O"))
-            {
-                win.O();
-            }
-            // Upper left -> bottom left
-            if (board[1][0].equalsIgnoreCase("O") && board[2][0].equalsIgnoreCase("O"))
-            {
-                win.O();
-            }
-            // Upper left -> bottom right
-            if (board[1][1].equalsIgnoreCase("O") && board[2][2].equalsIgnoreCase("O"))
-            {
-                win.O();
-            }
-        }
-        /*
-         * Upper mid
-         * X
-         */
-        if (board[0][1].equalsIgnoreCase("X"))
-        {
-            // Upper mid -> upper left -> upper right
-            if (board[0][0].equalsIgnoreCase("X") && board[0][2].equalsIgnoreCase("X"))
-            {
-                win.X();
-            }
-            // Upper mid -> mid -> botton mid
-            if (board[1][1].equalsIgnoreCase("X") && board[2][1].equalsIgnoreCase("X"))
-            {
-                win.X();
-            }
-        }
-        /*
-         * Upper mid
-         * O
-         */
-        if (board[0][1].equalsIgnoreCase("O"))
-        {
-            // Upper mid -> upper left -> upper right
-            if (board[0][0].equalsIgnoreCase("O") && board[0][2].equalsIgnoreCase("O"))
-            {
-                win.O();
-            }
-            // Upper mid -> mid -> botton mid
-            if (board[1][1].equalsIgnoreCase("O") && board[2][1].equalsIgnoreCase("O"))
-            {
-                win.O();
-            }
+           
         }
         else
         {
