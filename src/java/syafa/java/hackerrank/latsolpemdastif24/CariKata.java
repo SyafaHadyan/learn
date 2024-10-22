@@ -26,7 +26,7 @@ public class CariKata
         {
             if (search.equalsIgnoreCase(dictionary[i]))
             {
-                foundAt.add(search + "ditemukan pada posisi ke" + '-' + (i + 1) + '.');
+                foundAt.add(search + ' ' + "ditemukan pada posisi ke" + '-' + (i + 1) + '.');
             }
         }
         if (foundAt.size() == 0)
