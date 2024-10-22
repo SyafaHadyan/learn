@@ -33,7 +33,7 @@ public class Day1Quartiles
          * 3 5 7 8  12 13 14 18
          */
         Scanner input = new Scanner(System.in);
-        //int arraySize = Integer.parseInt(input.nextLine());
+        int arraySize = Integer.parseInt(input.nextLine());
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(data);
@@ -41,9 +41,14 @@ public class Day1Quartiles
         {
             int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
             int[] upperHalf = Arrays.copyOfRange(data,(data.length / 2),data.length);
-            double q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
+            double q1 = lowerHalf[(lowerHalf.length / 2)];
             double q2 = (data[((data.length / 2) - 1)] + data[(data.length / 2)]) / 2.0;
-            double q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
+            double q3 = upperHalf[(upperHalf.length / 2)];
+            if ((lowerHalf.length % 2 == 0) && (upperHalf.length % 2 == 0))
+            {
+                q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
+                q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
+            }
             System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
             return;
         }
