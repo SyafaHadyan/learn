@@ -38,6 +38,6 @@ public class ArgmaxMatriks
             }
         }
         input.close();
-        System.out.print(maxValue[0] + " " +  maxValue[1]);
+        System.out.print("[" + maxValue[0] + ", " +  maxValue[1] + "]");
     }
 }
