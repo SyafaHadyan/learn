@@ -20,4 +20,12 @@ Karena `i` mulai dari 2 hingga 8, maka `bil[]` hanya akan diisi mulai dari 2 hin
 
 ### 5. Pada baris 5 – 7, jelaskan arti dari kode tersebut dan bila kode tersebut diubah menjadi `bil[i] = 1 + (Math.random() * 100);` kemudian amati apa yang terjadi dan jelaskan
 
+#### `For-loop` pertama
+
 Karena tidak ada cast ke `int` dan tipe data dari `bil[]` adalah `int`, maka kode tidak bisa berjalan karena tidak bisa convert `double` ke `int`. kecuali tipe data `bil[]` diubah menjadi `double`.
+
+#### `For-loop` kedua
+
+Pada `for-loop` kedua digunakan untuk `print` seluruh nilai dari `bil[]`
+
+### 6. Pada baris 8, kode tersebut diubah menjadi `for (i = 0;i <= 10; i++)` kemudian amati apa yang terjadi dan jelaskan
