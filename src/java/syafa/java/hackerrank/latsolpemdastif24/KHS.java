@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
+import java.util.stream.*;
 
 public class KHS
 {
@@ -22,7 +23,12 @@ public class KHS
         Scanner input = new Scanner(System.in);
         int gradeAmount = Integer.parseInt(input.nextLine());
         String[] subject = input.nextLine().split(" ");
+        int[] grade = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         String search = input.nextLine();
         input.close();
+        for (int i = 0; i < subject.length; i++)
+        {
+            //
+        }
     }
 }
