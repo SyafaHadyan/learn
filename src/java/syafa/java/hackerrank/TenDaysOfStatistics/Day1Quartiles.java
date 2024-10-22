@@ -26,8 +26,9 @@ public class Day1Quartiles
          * 
          * 3 7 8 5 12 14 21 13 18
          * sort
+         * 3 5 7 8 12 13 14 18 21
          * lowerHalf    median  upperHalf
-         * 3 7 8 5      12      14 21 13 18
+         * 3 5 7 8      12      13 14 18 21
          * 
          */
         Scanner input = new Scanner(System.in);
