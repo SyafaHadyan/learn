@@ -37,10 +37,13 @@ public class JimAndTheOrders
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
         int[][] custommerPreparation = new int[customerAmount][];
-        ArrayList<Integer> customerPreparationTime = new ArrayList<>();
+        int[][] customerPreparationTime = new int[customerAmount][2];
+        //ArrayList<Integer> customerPreparationTime = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
             custommerPreparation[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            customerPreparationTime[i][0] = i + 1;
+            customerPreparationTime[i][1] = custommerPreparation[i][0] + custommerPreparation[i][1];
         }
         input.close();
         for (int i = 0; i < custommerPreparation.length; i++)
