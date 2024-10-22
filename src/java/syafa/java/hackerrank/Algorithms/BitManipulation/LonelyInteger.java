@@ -67,13 +67,14 @@ public class LonelyInteger
                         if (number[i + 1] != number[i + 2])
                         {
                             System.out.print(number[i + 1]);
+                            return;
                         }
                     }
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                System.out.print(i);
             }
         }
     }
