@@ -19,6 +19,16 @@ public class Day1Quartiles
          * 16   upperHalf median
          * 
          * 6, 7, 15, 36, 39, 40, 41, 42, 43, 47, 49
+         * 
+         * 0 1 2 3 4 5 6
+         * lowerHalf    median  upperHalf
+         * 0 1 2        3       4 5 6
+         * 
+         * 3 7 8 5 12 14 21 13 18
+         * sort
+         * lowerHalf    median  upperHalf
+         * 3 7 8 5      12      14 21 13 18
+         * 
          */
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
@@ -40,6 +50,10 @@ public class Day1Quartiles
         double q1 = lowerHalf[(lowerHalf.length / 2)];
         double q2 = (data[(data.length / 2)]);
         double q3 = upperHalf[(upperHalf.length / 2) + 1];
+        if ((lowerHalf.length % 2 == 0) && (upperHalf.length % 2 == 0))
+        {
+            //
+        }
         System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
     }
 }
