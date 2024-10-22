@@ -4,23 +4,40 @@ import java.util.stream.*;
 
 public class TicTacToe
 {
-    class win
+    class checkBoard
     {
-        public static void X()
+        public static boolean checkWin(String board[][],String player)
+        {
+            for (int i = 0; i < board.length; i++)
+            {
+                if (board[i][0].equalsIgnoreCase(player))
+                {
+                    return true;
+                }
+                if (board[0][i].equalsIgnoreCase(player))
+                {
+                    return true;
+                }
+            }
+        }
+    }
+    class gameStatus
+    {
+        public static void x()
         {
             System.out.print("X memenangkan permainan.");
             System.exit(0);
         }
-        public static void O()
+        public static void o()
         {
             System.out.print("O memenangkan permainan.");
             System.exit(0);
         }
-    }
-    public static void draw()
-    {
-        System.out.println("Tidak ada pemenang.");
-        System.exit(0);
+        public static void draw()
+        {
+            System.out.println("Tidak ada pemenang.");
+            System.exit(0);
+        }
     }
     public static void main(String[] args)
     {
@@ -48,13 +65,13 @@ public class TicTacToe
             board[i] = input.nextLine().split(" ");
         }
         input.close();
-        for (int i = 0; i < board.length; i++)
+        if (checkBoard.checkWin(board,"X"))
         {
-           
+            gameStatus.x();
         }
-        else
+        //else
         {
-            draw();
+            gameStatus.draw();
         }
     }
 }
