@@ -22,6 +22,10 @@ public class TicTacToe
             {
                 return true;
             }
+            if (board[2][0].equalsIgnoreCase(player) && board[1][1].equalsIgnoreCase(player) && board[0][2].equalsIgnoreCase(player))
+            {
+                return true;
+            }
             return false;
         }
     }
