@@ -25,7 +25,7 @@ public class ArgmaxMatriks
         int[][] array = new int[arraySize[0]][];
         for (int i = 0; i < args.length; i++)
         {
-            
+            array[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
