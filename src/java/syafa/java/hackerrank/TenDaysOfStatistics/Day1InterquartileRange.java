@@ -47,8 +47,10 @@ public class Day1InterquartileRange
             for (int j = 0; j < dataFrequency[1][i]; j++)
             {
                 data[counter] = dataFrequency[0][i];
+                counter++;
             }
         }
+        Arrays.sort(data);
         System.out.println();
     }
 }
