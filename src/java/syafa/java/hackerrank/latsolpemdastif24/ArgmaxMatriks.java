@@ -24,7 +24,7 @@ public class ArgmaxMatriks
         int[] arraySize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[][] array = new int[arraySize[0]][];
         int[] maxValue = new int[3];
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < arraySize[0]; i++)
         {
             array[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             for (int j = 0; j < array[i].length; j++)
@@ -38,6 +38,6 @@ public class ArgmaxMatriks
             }
         }
         input.close();
-        System.out.print(maxValue[0] + maxValue[1]);
+        System.out.print(maxValue[0] + " " +  maxValue[1]);
     }
 }
