@@ -25,7 +25,8 @@ public class Day1Quartiles
         {
             int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2 - 1));
             int[] upperHalf = Arrays.copyOfRange(data,(data.length),(data.length - 1));
-            double median = data[((data.length / 2) - 1)] + data[(data.length / 2)];
+            double q2 = data[((data.length / 2) - 1)] + data[(data.length / 2)];
+            double q1 = lowerHalf[(lowerHalf.length / 2)];
         }
     }
 }
