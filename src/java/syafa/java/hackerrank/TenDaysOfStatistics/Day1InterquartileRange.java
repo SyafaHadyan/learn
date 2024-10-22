@@ -35,7 +35,7 @@ public class Day1InterquartileRange
          * 
          */
         Scanner input = new Scanner(System.in);
-        int dataSize = Integer.parseInt(input.nextLine());
+        //int dataSize = Integer.parseInt(input.nextLine());
         int[][] dataFrequency = new int[2][];
         dataFrequency[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         dataFrequency[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -51,6 +51,31 @@ public class Day1InterquartileRange
             }
         }
         Arrays.sort(data);
-        System.out.println();
+        if (data.length % 2 == 0)
+        {
+            int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
+            int[] upperHalf = Arrays.copyOfRange(data,(data.length / 2),data.length);
+            double q1 = lowerHalf[(lowerHalf.length / 2)];
+            double q2 = (data[((data.length / 2) - 1)] + data[(data.length / 2)]) / 2.0;
+            double q3 = upperHalf[(upperHalf.length / 2)];
+            if ((lowerHalf.length % 2 == 0) && (upperHalf.length % 2 == 0))
+            {
+                q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
+                q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
+            }
+            System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
+            return;
+        }
+        int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
+        int[] upperHalf = Arrays.copyOfRange(data,((data.length / 2) + 1),data.length);
+        double q1 = lowerHalf[(lowerHalf.length / 2)];
+        double q2 = (data[(data.length / 2)]);
+        double q3 = upperHalf[(upperHalf.length / 2) + 1];
+        if ((lowerHalf.length % 2 == 0) && (upperHalf.length % 2 == 0))
+        {
+            q1 = (lowerHalf[(lowerHalf.length / 2) - 1] + lowerHalf[(lowerHalf.length / 2)]) / 2.0;
+            q3 = (upperHalf[(upperHalf.length / 2) - 1] + upperHalf[(upperHalf.length / 2)]) / 2.0;
+        }
+        System.out.printf("%.0f\n%.0f\n%.0f",q1,q2,q3);
     }
 }
