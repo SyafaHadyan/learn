@@ -10,7 +10,7 @@ public class PerulanganPrimaKeN
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
         int currentPrimeAt = 0;
-        BigInteger currentPrime = BigInteger.ZERO;
+        BigInteger currentPrime = BigInteger.TWO;
         for (int i = 1; i <= primeAt;)
         {
             if (currentPrime.isProbablePrime(100))
