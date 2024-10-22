@@ -3,314 +3,70 @@ import java.util.*;
 
 public class Array2DTicTacToe
 {
+    static class checkBoard
+    {
+        public static boolean checkWin(String board[][],String player)
+        {
+            for (int i = 0; i < board.length; i++)
+            {
+                if (board[i][0].equalsIgnoreCase(player) && board[i][1].equalsIgnoreCase(player) && board[i][2].equalsIgnoreCase(player))
+                {
+                    return true;
+                }
+                if (board[0][i].equalsIgnoreCase(player) && board[1][i].equalsIgnoreCase(player) && board[2][i].equalsIgnoreCase(player))
+                {
+                    return true;
+                }
+            }
+            if (board[0][0].equalsIgnoreCase(player) && board[1][1].equalsIgnoreCase(player) && board[2][2].equalsIgnoreCase(player))
+            {
+                return true;
+            }
+            if (board[2][0].equalsIgnoreCase(player) && board[1][1].equalsIgnoreCase(player) && board[0][2].equalsIgnoreCase(player))
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+    static class gameStatus
+    {
+        public static void x()
+        {
+            System.out.print("X Menang");
+            System.exit(0);
+        }
+        public static void o()
+        {
+            System.out.print("O Menang");
+            System.exit(0);
+        }
+        public static void draw()
+        {
+            System.out.println("Draw");
+            System.exit(0);
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[] first = input.nextLine().split(" ");
-        String[] second = input.nextLine().split(" ");
-        String[] third = input.nextLine().split(" ");
+        String[][] board = new String[3][];
+        for (int i = 0; i < board.length; i++)
+        {
+            board[i] = input.nextLine().split(" ");
+        }
         input.close();
-
-        // First condition X
-        if (first[0].equalsIgnoreCase("X"))
+        if (checkBoard.checkWin(board,"X"))
         {
-            if (first[1].equalsIgnoreCase("X"))
-            {
-                if (first[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[0].equalsIgnoreCase("X"))
-            {
-                if (third[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("X"))
-            {
-                if (third[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
+            gameStatus.x();
         }
-
-        // First condition O
-        else if (first[0].equalsIgnoreCase("O"))
+        if (checkBoard.checkWin(board,"O"))
         {
-            if (first[1].equalsIgnoreCase("O"))
-            {
-                if (first[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[0].equalsIgnoreCase("O"))
-            {
-                if (third[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("O"))
-            {
-                if (third[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
+            gameStatus.o();
         }
-
-        // Second condition X
-        else if (first[1].equalsIgnoreCase("X"))
+        else
         {
-            if (first[0].equalsIgnoreCase("X"))
-            {
-                if (first[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
+            gameStatus.draw();
         }
-
-        // Second condition O
-        if (first[1].equalsIgnoreCase("O"))
-        {
-            if (first[0].equalsIgnoreCase("O"))
-            {
-                if (first[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-        }
-
-        // Third condition X
-        else if (first[2].equalsIgnoreCase("X"))
-        {
-            if (first[1].equalsIgnoreCase("X"))
-            {
-                if (first[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[2].equalsIgnoreCase("X"))
-            {
-                if (third[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("X"))
-            {
-                if (third[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-        }
-
-        // Third condition O
-        else if (first[2].equalsIgnoreCase("O"))
-        {
-            if (first[1].equalsIgnoreCase("O"))
-            {
-                if (first[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[2].equalsIgnoreCase("O"))
-            {
-                if (third[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("O"))
-            {
-                if (third[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-        }
-        
-        // Fourth condition X
-        else if (second[0].equalsIgnoreCase("X") && second[1].equalsIgnoreCase("X") && second[2].equalsIgnoreCase("X"))
-        {
-            System.out.print("X Menang");
-            return;
-        }
-        
-
-        // Fourth condition O
-        else if (second[0].equalsIgnoreCase("O") && second[1].equalsIgnoreCase("O") && second[2].equalsIgnoreCase("O"))
-        {
-            System.out.print("O Menang");
-            return;
-        }
-
-        // Fifth condition X
-        else if (third[0].equalsIgnoreCase("X") && third[1].equalsIgnoreCase("X") && third[2].equalsIgnoreCase("X"))
-        {
-            System.out.print("X Menang");
-            return;
-        }
-
-        // Fifth condition O
-        else if (third[0].equalsIgnoreCase("O") && third[1].equalsIgnoreCase("O") && third[2].equalsIgnoreCase("O"))
-        {
-            System.out.print("O Menang");
-            return;
-        }
-
-        // Sixth condition X
-        if (third[0].equalsIgnoreCase("X"))
-        {
-            if (second[0].equalsIgnoreCase("X"))
-            {
-                if (first[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (third[1].equalsIgnoreCase("X"))
-            {
-                if (third[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("X"))
-            {
-                if (first[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-        }
-
-        // Sixth condition O
-        if (third[0].equalsIgnoreCase("O"))
-        {
-            if (second[0].equalsIgnoreCase("O"))
-            {
-                if (first[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (third[1].equalsIgnoreCase("O"))
-            {
-                if (third[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("O"))
-            {
-                if (first[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-        }
-
-        // Seventh condition X
-        else if (third[1].equalsIgnoreCase("X") && third[0].equalsIgnoreCase("X") && third[2].equalsIgnoreCase("X"))
-        {
-            System.out.print("X Menang");
-            return;
-        }
-
-        // Seventh condition O
-        else if (third[1].equalsIgnoreCase("O") && third[0].equalsIgnoreCase("O") && third[2].equalsIgnoreCase("O"))
-        {
-            System.out.print("O Menang");
-            return;
-        }
-
-        // Eight condition X
-        if (third[2].equalsIgnoreCase("X"))
-        {
-            if (second[2].equalsIgnoreCase("X"))
-            {
-                if (first[2].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (third[1].equalsIgnoreCase("X"))
-            {
-                if (third[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("X"))
-            {
-                if (first[0].equalsIgnoreCase("X"))
-                {
-                    System.out.print("X Menang");
-                    return;
-                }
-            }
-        }
-
-        // Eight condition O
-        if (third[2].equalsIgnoreCase("O"))
-        {
-            if (second[2].equalsIgnoreCase("O"))
-            {
-                if (first[2].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (third[1].equalsIgnoreCase("O"))
-            {
-                if (third[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-            if (second[1].equalsIgnoreCase("O"))
-            {
-                if (first[0].equalsIgnoreCase("O"))
-                {
-                    System.out.print("O Menang");
-                    return;
-                }
-            }
-        }
-        System.out.print("Draw");
     }
 }
