@@ -8,7 +8,7 @@ public class N02Array1D
         int i;
         for (i = 0; i <= 9; i++)
         {
-            bil[i] = 1 + (int)(Math.random()*100);
+            bil[i] = 1 + (int)(Math.random() * 100);
         }
         for (i = 0; i < 10; i++)
         {
