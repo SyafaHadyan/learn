@@ -16,14 +16,18 @@ public class RataRataNilaiPemdas
          */
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
-        int[] score = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        double[] score = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         Arrays.sort(score);
         for (int i = 0; i < score.length; i++)
         {
-            if (score[i] > (IntStream.of(score).sum() / score.length))
+            if (score[i] > (DoubleStream.of(score).sum() / score.length))
             {
-                System.out.print(score[i]);
+                System.out.printf("%.0f",score[i]);
+                if (score.length - 1 != 1)
+                {
+                    System.out.print(' ');
+                }
             }
         }
     }
