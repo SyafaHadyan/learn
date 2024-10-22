@@ -10,7 +10,7 @@ public class N06Array1D
         {
             bil[i] = 1 + (int)(Math.random() * 100);
         }
-        for (i = 0; i < 10; i++)
+        for (i = 0;i <= 10; i++)
         {
             System.out.println(bil[i]);
         }
