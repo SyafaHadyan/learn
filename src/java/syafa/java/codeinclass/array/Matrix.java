@@ -129,7 +129,9 @@ public class Matrix
                             if (firstMatrix.length - i != 1)
                             {
                                 matrixMultiplicationResult[i][j] = (firstMatrix[i][i] * secondMatrix[i][j]) + (firstMatrix[i][i + 1] * secondMatrix[i + 1][j]);
+                                continue;
                             }
+                            matrixMultiplicationResult[i][j] = (firstMatrix[i][j] * secondMatrix[0][j]) + (firstMatrix[i][j] * secondMatrix[0][j]);
                         }
                         /*
                          * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
