@@ -42,7 +42,7 @@ public class Day1InterquartileRange
         input.close();
         int counter = 0;
         int[] data = new int[IntStream.of(dataFrequency[1]).sum()];
-        for (int i = 0; i < dataFrequency[0].length; i++)
+        for (int i = 0; i < (dataFrequency[0].length + dataFrequency[1].length) / 2; i++)
         {
             for (int j = 0; j < dataFrequency[1][i]; j++)
             {
