@@ -47,7 +47,7 @@ public class LonelyInteger
          * 
          */
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
+        //int arraySize = Integer.parseInt(input.nextLine());
         int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int currentNumber = Integer.MIN_VALUE;
@@ -69,12 +69,22 @@ public class LonelyInteger
                             System.out.print(number[i + 1]);
                             return;
                         }
+                        else
+                        {
+                            currentNumber = number[i];
+                        }
                     }
                 }
             }
             catch (IndexOutOfBoundsException e)
             {
-                System.out.print(i);
+                System.out.print(number[number.length - 1]);
+                return;
+            }
+            finally
+            {
+                System.out.print(number[0]);
+                //break;
             }
         }
     }
