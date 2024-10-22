@@ -73,7 +73,7 @@ public class TicTacToe
         {
             gameStatus.o();
         }
-        //else
+        else
         {
             gameStatus.draw();
         }
