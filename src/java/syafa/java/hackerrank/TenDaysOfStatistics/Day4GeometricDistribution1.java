@@ -2,5 +2,8 @@ package syafa.java.hackerrank.TenDaysOfStatistics;
 
 public class Day4GeometricDistribution1
 {
-    psz
+    public static void main(String[] args)
+    {
+        
+    }
 }
