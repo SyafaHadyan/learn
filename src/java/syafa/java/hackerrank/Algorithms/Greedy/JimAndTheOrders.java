@@ -36,27 +36,27 @@ public class JimAndTheOrders
          */
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
-        int[][] custommerPreparation = new int[customerAmount][];
+        int[] custommerPreparation = new int[customerAmount];
         int[][] customerPreparationTime = new int[customerAmount][2];
         //ArrayList<Integer> customerPreparationTime = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
-            custommerPreparation[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            custommerPreparation = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             customerPreparationTime[i][0] = i + 1;
-            customerPreparationTime[i][1] = custommerPreparation[i][0] + custommerPreparation[i][1];
+            customerPreparationTime[i][1] = custommerPreparation[0] + custommerPreparation[1];
         }
         input.close();
-        for (int i = 0; i < custommerPreparation.length; i++)
+        for (int i = 0; i < customerPreparationTime.length; i++)
         {
-            for (int j = 0; j < custommerPreparation[i].length; j++)
+            for (int j = 0; j < customerPreparationTime[i].length; j++)
             {
-                System.out.print(custommerPreparation[i][j]);
-                if (custommerPreparation[i].length - j != 1)
+                System.out.print(customerPreparationTime[i][j]);
+                if (customerPreparationTime[i].length - j != 1)
                 {
                     System.out.print(' ');
                 }
             }
-            if (custommerPreparation.length - i != 1)
+            if (customerPreparationTime.length - i != 1)
             {
                 System.out.print("\n");
             }
