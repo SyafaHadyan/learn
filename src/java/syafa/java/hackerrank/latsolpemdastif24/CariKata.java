@@ -22,5 +22,13 @@ public class CariKata
         String[] dictionary = input.nextLine().split(" ");
         String search = input.nextLine();
         input.close();
+        ArrayList<String> foundAt = new ArrayList<>();
+        for (int i = 0; i < dictionary.length; i++)
+        {
+            if (search.equalsIgnoreCase(dictionary[i]))
+            {
+                foundAt.add(search + "ditemukan pada posisi ke" + '-' + (i + 1));
+            }
+        }
     }
 }
