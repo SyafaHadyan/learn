@@ -40,10 +40,15 @@ public class Day1InterquartileRange
         dataFrequency[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         dataFrequency[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int counter = 0;
         int[] data = new int[IntStream.of(dataFrequency[1]).sum()];
         for (int i = 0; i < dataFrequency[0].length; i++)
         {
-            //
+            for (int j = 0; j < dataFrequency[1][i]; j++)
+            {
+                data[counter] = dataFrequency[0][i];
+            }
         }
+        System.out.println();
     }
 }
