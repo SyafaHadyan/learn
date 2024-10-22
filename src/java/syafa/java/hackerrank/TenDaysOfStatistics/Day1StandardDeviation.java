@@ -32,7 +32,7 @@ public class Day1StandardDeviation
          * 30466.9
          */
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
+        //int arraySize = Integer.parseInt(input.nextLine());
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(data);
