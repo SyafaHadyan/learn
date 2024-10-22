@@ -15,6 +15,10 @@ public class Day1InterquartileRange
          * 
          * 9.0
          * 
+         * sort
+         * 
+         * create 6 5 times
+         * create 8 3 times
          * 
          * Lower half (L): 6, 6, 6, 6, 6, 8, 8, 8, 10, 10
          * Upper half (U): 12, 12, 12, 12, 16, 16, 16, 16, 16, 20
@@ -28,8 +32,12 @@ public class Day1InterquartileRange
          */
         Scanner input = new Scanner(System.in);
         int dataSize = Integer.parseInt(input.nextLine());
-        int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[] frequency = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[][] data = new int[2][];
+        for (int i = 0; i < data.length; i++)
+        {
+            data[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            data[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        }
         input.close();
     }
 }
