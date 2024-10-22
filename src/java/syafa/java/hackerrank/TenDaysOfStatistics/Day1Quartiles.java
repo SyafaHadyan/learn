@@ -38,7 +38,7 @@ public class Day1Quartiles
         int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
         int[] upperHalf = Arrays.copyOfRange(data,(data.length / 2),data.length - 1);
         double q1 = lowerHalf[(lowerHalf.length / 2)];
-        double q2 = (data[(data.length / 2) - 1]);
+        double q2 = (data[(data.length / 2)]);
         double q3 = upperHalf[(upperHalf.length / 2) + 1];
         System.out.println(q1 + "\n" + q2 + "\n" + q3);
     }
