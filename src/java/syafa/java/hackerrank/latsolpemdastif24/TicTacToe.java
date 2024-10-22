@@ -6,12 +6,12 @@ public class TicTacToe
 {
     class win
     {
-        public static void x()
+        public static void X()
         {
             System.out.print("X memenangkan permainan.");
             System.exit(0);
         }
-        public static void o()
+        public static void O()
         {
             System.out.print("O memenangkan permainan.");
             System.exit(0);
@@ -57,17 +57,17 @@ public class TicTacToe
             // Upper left -> upper right
             if (board[0][1].equalsIgnoreCase("X") && board[0][2].equalsIgnoreCase("X"))
             {
-                win.x();
+                win.X();
             }
             // Upper left -> bottom left
             if (board[1][0].equalsIgnoreCase("X") && board[2][0].equalsIgnoreCase("X"))
             {
-                win.x();
+                win.X();
             }
             // Upper left -> bottom right
             if (board[1][1].equalsIgnoreCase("X") && board[2][2].equalsIgnoreCase("X"))
             {
-                win.x();
+                win.X();
             }
         }
         // Middle up
