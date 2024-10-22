@@ -21,7 +21,10 @@ public class RataRataNilaiPemdas
         Arrays.sort(score);
         for (int i = 0; i < score.length; i++)
         {
-            
+            if (score[i] > (IntStream.of(score).sum() / score.length))
+            {
+                System.out.print(score[i]);
+            }
         }
     }
 }
