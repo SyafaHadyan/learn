@@ -10,5 +10,11 @@ public class Day1Quartiles
         int arraySize = Integer.parseInt(input.nextLine());
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        Arrays.sort(data);
+        if (data.length % 2 == 0)
+        {
+            int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2 - 1));
+            int[] upperHalf = Arrays.copyOfRange(data,(data.length),(data.length - 1));
+        }
     }
 }
