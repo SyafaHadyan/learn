@@ -13,6 +13,9 @@ public class MengurutkanArray
          * 1 2 3 5 6
          */
         Scanner input = new Scanner(System.in);
+        int arraySize = Integer.parseInt(input.nextLine());
+        int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        Arrays.sort(data);
     }
 }
