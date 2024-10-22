@@ -21,6 +21,12 @@ public class ArgmaxMatriks
          * [0, 1]
          */
         Scanner input = new Scanner(System.in);
+        int[] arraySize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[][] array = new int[arraySize[0]][];
+        for (int i = 0; i < args.length; i++)
+        {
+            
+        }
         input.close();
     }
 }
