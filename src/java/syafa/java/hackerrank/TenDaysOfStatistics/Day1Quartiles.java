@@ -34,6 +34,6 @@ public class Day1Quartiles
             return;
         }
         int[] lowerHalf = Arrays.copyOfRange(data,0,(data.length / 2));
-        System.out.println(lowerHalf.length);
+        int[] upperHalf = Arrays.copyOfRange(data,(data.length / 2),arraySize - 1);
     }
 }
