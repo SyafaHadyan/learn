@@ -22,6 +22,12 @@ public class KHS
     {
         Scanner input = new Scanner(System.in);
         int gradeAmount = Integer.parseInt(input.nextLine());
+        if (gradeAmount <= 0)
+        {
+            System.out.print("input tidak valid");
+            input.close();
+            return;
+        }
         String[] subject = input.nextLine().split(" ");
         String[] grade = input.nextLine().split(" ");
         String search = input.nextLine();
