@@ -17,6 +17,11 @@ public class TicTacToe
             System.exit(0);
         }
     }
+    public static void draw()
+    {
+        System.out.println("Tidak ada pemenang.");
+        System.exit(0);
+    }
     public static void main(String[] args)
     {
         /*
@@ -56,6 +61,10 @@ public class TicTacToe
             {
                 win.x();
             }
+        }
+        else
+        {
+            draw();
         }
     }
 }
