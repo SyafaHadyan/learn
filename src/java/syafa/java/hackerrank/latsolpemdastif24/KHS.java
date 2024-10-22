@@ -23,12 +23,16 @@ public class KHS
         Scanner input = new Scanner(System.in);
         int gradeAmount = Integer.parseInt(input.nextLine());
         String[] subject = input.nextLine().split(" ");
-        int[] grade = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        String[] grade = input.nextLine().split(" ");
         String search = input.nextLine();
         input.close();
         for (int i = 0; i < subject.length; i++)
         {
-            //
+            if (search.equalsIgnoreCase(subject[i]))
+            {
+                System.out.print("Nilai dari mata kuliah" + " " + search + " " + "adalah" + " " + grade[i] + ".");
+                return;
+            }
         }
     }
 }
