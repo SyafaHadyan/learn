@@ -58,6 +58,13 @@ public class LonelyInteger
             {
                 currentNumber = i;
             }
+            else if (number[i] != number[i + 1])
+            {
+                if (number[i + 1] != currentNumber)
+                {
+                    //
+                }
+            }
         }
     }
 }
