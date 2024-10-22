@@ -19,8 +19,12 @@ public class RecursiveFactorial
             }
             return result;
         }
-        public static BigInteger factorialRecursive(BigInteger number)
+        public static int factorialRecursive(int number)
         {
+            if (number != 1)
+            {
+                return (number * (number - 1));
+            }
             return number;
         }
     }
@@ -28,8 +32,9 @@ public class RecursiveFactorial
     {
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
-        System.out.println("Result using iteration is" + ' ' + factorial.factorialIteration(number));
-        System.out.print("Result using iteration is" + ' ' + factorial.factorialRecursive(BigInteger.valueOf(number)));
         input.close();
+        //int recursiveNumber = number;
+        System.out.println("Result using iteration is" + ' ' + factorial.factorialIteration(number));
+        //System.out.print("Result using recursive is" + ' ' + factorial.factorialRecursive(recursiveNumber));
     }
 }
