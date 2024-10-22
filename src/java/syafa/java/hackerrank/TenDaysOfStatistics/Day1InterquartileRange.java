@@ -15,6 +15,10 @@ public class Day1InterquartileRange
          * 
          * 9.0
          * 
+         * 6
+         * 6 12 8 10 20 16
+         * 5 4 3 2 1 5
+         * 
          * sort
          * 
          * create 6 5 times
@@ -32,12 +36,14 @@ public class Day1InterquartileRange
          */
         Scanner input = new Scanner(System.in);
         int dataSize = Integer.parseInt(input.nextLine());
-        int[][] data = new int[2][];
-        for (int i = 0; i < data.length; i++)
-        {
-            data[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            data[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        }
+        int[][] dataFrequency = new int[2][];
+        dataFrequency[0] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        dataFrequency[1] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int[] data = new int[IntStream.of(dataFrequency[1]).sum()];
+        for (int i = 0; i < dataFrequency[0].length; i++)
+        {
+            //
+        }
     }
 }
