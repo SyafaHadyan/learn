@@ -4,6 +4,19 @@ import java.util.stream.*;
 
 public class TicTacToe
 {
+    class win
+    {
+        public static void x()
+        {
+            System.out.print("X memenangkan permainan.");
+            System.exit(0);
+        }
+        public static void o()
+        {
+            System.out.print("O memenangkan permainan.");
+            System.exit(0);
+        }
+    }
     public static void main(String[] args)
     {
         /*
@@ -36,14 +49,12 @@ public class TicTacToe
             // Upper left -> upper right
             if (board[0][1].equalsIgnoreCase("X") && board[0][1].equalsIgnoreCase("X"))
             {
-                System.out.print("X memenangkan permainan.");
-                return;
+                win.x();
             }
             // Upper left -> bottom left
             if (board[1][1].equalsIgnoreCase("X") && board[1][2].equalsIgnoreCase("X"))
             {
-                System.out.print("X memenangkan permainan.");
-                return;
+                win.x();
             }
         }
     }
