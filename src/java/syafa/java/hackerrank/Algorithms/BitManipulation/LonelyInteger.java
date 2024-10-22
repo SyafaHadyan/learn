@@ -54,19 +54,26 @@ public class LonelyInteger
         Arrays.sort(number);
         for (int i = 0; i < number.length; i++)
         {
-            if (number[i] == i + 1)
+            try
             {
-                currentNumber = i;
-            }
-            else if (number[i] != number[i + 1])
-            {
-                if (number[i + 1] != currentNumber)
+                if (number[i] == i + 1)
                 {
-                    if (number[i + 1] != number[i + 2])
+                    currentNumber = i;
+                }
+                else if (number[i] != number[i + 1])
+                {
+                    if (number[i + 1] != currentNumber)
                     {
-                        System.out.print(number[i + 1]);
+                        if (number[i + 1] != number[i + 2])
+                        {
+                            System.out.print(number[i + 1]);
+                        }
                     }
                 }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
             }
         }
     }
