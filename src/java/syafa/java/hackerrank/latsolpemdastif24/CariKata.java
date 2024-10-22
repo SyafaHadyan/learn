@@ -31,7 +31,7 @@ public class CariKata
         }
         if (foundAt.size() == 0)
         {
-            System.out.print(search + ' ' + "tidak ditemukan");
+            System.out.print(search + ' ' + "tidak ditemukan" + '.');
             return;
         }
         for (int i = 0; i < foundAt.size(); i++)
