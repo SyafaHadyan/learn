@@ -6,32 +6,6 @@ public class Day1Quartiles
 {
     public static void main(String[] args)
     {
-        /*
-         * TODO: Fix median calculation
-         * 
-         * STDIN                   Function
-         * -----                   --------    
-         * 9                       arr[] size n = 9 
-         * 3 7 8 5 12 14 21 13 18  arr = [3, 7, 8, 5, 12, 14, 21, 13,18]
-         * 
-         * 6    lowerHalf median
-         * 12   median
-         * 16   upperHalf median
-         * 
-         * 6, 7, 15, 36, 39, 40, 41, 42, 43, 47, 49
-         * 
-         * 0 1 2 3 4 5 6
-         * lowerHalf    median  upperHalf
-         * 0 1 2        3       4 5 6
-         * 
-         * 3 7 8 5 12 14 21 13 18
-         * sort
-         * 3 5 7 8 12 13 14 18 21
-         * lowerHalf    median  upperHalf
-         * 3 5 7 8      12      13 14 18 21
-         * 
-         * 3 5 7 8  12 13 14 18
-         */
         Scanner input = new Scanner(System.in);
         StringBuilder useless = new StringBuilder(input.nextLine());
         useless.delete(0,useless.length());
