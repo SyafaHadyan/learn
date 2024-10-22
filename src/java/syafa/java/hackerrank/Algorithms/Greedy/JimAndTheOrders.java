@@ -36,7 +36,7 @@ public class JimAndTheOrders
          */
         Scanner input = new Scanner(System.in);
         int customerAmount = Integer.parseInt(input.nextLine());
-        int[][] custommerPreparation = new int[2][customerAmount];
+        int[][] custommerPreparation = new int[customerAmount][];
         ArrayList<Integer> customerPreparationTime = new ArrayList<>();
         for (int i = 0; i < customerAmount; i++)
         {
