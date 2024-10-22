@@ -17,5 +17,13 @@ public class MengurutkanArray
         int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(data);
+        for (int i = 0; i < data.length; i++)
+        {
+            System.out.print(data[i]);
+            if (data.length - i != 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
