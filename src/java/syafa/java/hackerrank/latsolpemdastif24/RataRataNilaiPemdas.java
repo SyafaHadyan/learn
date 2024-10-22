@@ -7,7 +7,8 @@ public class RataRataNilaiPemdas
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         double[] score = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         for (int i = 0; i < score.length; i++)
