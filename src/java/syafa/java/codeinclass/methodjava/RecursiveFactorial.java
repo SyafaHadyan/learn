@@ -4,25 +4,32 @@ import java.math.*;
 
 public class RecursiveFactorial
 {
-    public static BigInteger factorial(int number)
-
+    class factorial
     {
-        BigInteger result = BigInteger.valueOf(number);
-        if (number <= 1)
+        public static BigInteger factorialIteration(int number)
         {
+            BigInteger result = BigInteger.valueOf(number);
+            if (number <= 1)
+            {
+                return result;
+            }
+            for (int i = number - 2; i > 0; i--)
+            {
+                result = result.add(result.multiply(BigInteger.valueOf(i)));
+            }
             return result;
         }
-        for (int i = number - 2; i > 0; i--)
+        public static BigInteger factorialRecursive(BigInteger number)
         {
-            result = result.add(result.multiply(BigInteger.valueOf(i)));
+            return number;
         }
-        return result;
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
-        System.out.print(factorial(number));
+        System.out.println("Result using iteration is" + ' ' + factorial.factorialIteration(number));
+        System.out.print("Result using iteration is" + ' ' + factorial.factorialRecursive(BigInteger.valueOf(number)));
         input.close();
     }
 }
