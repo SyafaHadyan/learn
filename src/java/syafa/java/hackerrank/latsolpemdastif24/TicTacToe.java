@@ -18,6 +18,10 @@ public class TicTacToe
                     return true;
                 }
             }
+            if (board[0][0].equalsIgnoreCase(player) && board[1][1].equalsIgnoreCase(player) && board[2][2].equalsIgnoreCase(player))
+            {
+                return true;
+            }
             return false;
         }
     }
