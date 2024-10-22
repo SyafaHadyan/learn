@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
-import java.util.stream.*;
 
 public class ArrayMoklif1D
 {
@@ -8,7 +7,13 @@ public class ArrayMoklif1D
     {
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
-        int[] moklif = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        if (arraySize <= 0)
+        {
+            System.out.print("input tidak valid");
+            input.close();
+            return;
+        }
+        String[] moklif = input.nextLine().split(" ");
         input.close();
         for (int i = moklif.length - 1; i >= 0; i--)
         {
