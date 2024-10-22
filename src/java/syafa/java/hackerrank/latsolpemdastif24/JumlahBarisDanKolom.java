@@ -57,7 +57,7 @@ public class JumlahBarisDanKolom
         {
             for (int j = 0; j < array.length; j++)
             {
-                rowSum[i] = array[j][i];
+                colSum[i] += array[j][i];
             }
         }
         System.out.print("Hasil penjumlahan pada baris adalah ");
@@ -69,6 +69,14 @@ public class JumlahBarisDanKolom
                 System.out.print(' ');
             }
         }
-        System.out.print("Hasil penjumlahan pada kolom adalah ");
+        System.out.print("\n" + "Hasil penjumlahan pada kolom adalah ");
+        for (int i = 0; i < colSum.length; i++)
+        {
+            System.out.print(colSum[i]);
+            if (colSum.length - i != 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
