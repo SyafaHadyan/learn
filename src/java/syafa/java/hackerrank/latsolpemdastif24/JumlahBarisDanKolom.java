@@ -38,17 +38,24 @@ public class JumlahBarisDanKolom
          */
         Scanner input = new Scanner(System.in);
         int[] arraySize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-        int[][] array = new int[arraySize[3]][];
-        int[] rowSum = new int[3];
-        int[] colSum = new int[3];
-        for (int i = 0; i < arraySize.length; i++)
+        int[][] array = new int[arraySize[0]][];
+        int[] rowSum = new int[arraySize[0]];
+        int[] colSum = new int[arraySize[1]];
+        for (int i = 0; i < arraySize[0]; i++)
         {
             array[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
-        for (int i = 0; j < array[i].length; i++)
+        for (int i = 0; i < array.length; i++)
         {
-            rowSum [i] = array[i][j]
+            for (int j = 0; j < array[i].length; j++)
+            {
+                rowSum [i] += array[i][j];
+            }
+        }
+        for (int i = 0; i < rowSum.length; i++)
+        {
+            System.out.println(rowSum[i]);
         }
     }
 }
