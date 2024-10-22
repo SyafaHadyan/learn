@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
-import java.util.stream.*;
 
 public class CariKata
 {
@@ -27,7 +26,20 @@ public class CariKata
         {
             if (search.equalsIgnoreCase(dictionary[i]))
             {
-                foundAt.add(search + "ditemukan pada posisi ke" + '-' + (i + 1));
+                foundAt.add(search + "ditemukan pada posisi ke" + '-' + (i + 1) + '.');
+            }
+        }
+        if (foundAt.size() == 0)
+        {
+            System.out.print(search + ' ' + "tidak ditemukan");
+            return;
+        }
+        for (int i = 0; i < foundAt.size(); i++)
+        {
+            System.out.print(foundAt.get(i));
+            if (foundAt.size() - i != 1)
+            {
+                System.out.print("\n");
             }
         }
     }
