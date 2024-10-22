@@ -119,14 +119,14 @@ public class Matrix
             else if (option == 2)
             {
                 // Temporary Disabled, if selected, it will return previous value or 0
-                int counter = 1;
+                //int counter = 1;
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < firstMatrix.length; i++)
                     {
                         for (int j = 0; j < secondMatrix[i].length; j++)
                         {
-                            matrixMultiplicationResult[i][j] = (firstMatrix[i][j] * secondMatrix[i][j]) + (firstMatrix[i][j + 1] * secondMatrix[i + 1][j]);
+                            matrixMultiplicationResult[i][j] = (firstMatrix[i][i] * secondMatrix[i][j]) + (firstMatrix[i][i + j] * secondMatrix[i + j][j]);
                         }
                         /*
                          * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
