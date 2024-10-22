@@ -62,7 +62,10 @@ public class LonelyInteger
             {
                 if (number[i + 1] != currentNumber)
                 {
-                    //
+                    if (number[i + 1] != number[i + 2])
+                    {
+                        System.out.print(number[i + 1]);
+                    }
                 }
             }
         }
