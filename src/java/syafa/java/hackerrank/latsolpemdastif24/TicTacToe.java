@@ -70,7 +70,45 @@ public class TicTacToe
                 win.X();
             }
         }
-        // Middle up
+        /*
+         * Upper left
+         * O
+         */
+        if (board[0][0].equalsIgnoreCase("O"))
+        {
+            // Upper left -> upper right
+            if (board[0][1].equalsIgnoreCase("O") && board[0][2].equalsIgnoreCase("O"))
+            {
+                win.O();
+            }
+            // Upper left -> bottom left
+            if (board[1][0].equalsIgnoreCase("O") && board[2][0].equalsIgnoreCase("O"))
+            {
+                win.O();
+            }
+            // Upper left -> bottom right
+            if (board[1][1].equalsIgnoreCase("O") && board[2][2].equalsIgnoreCase("O"))
+            {
+                win.O();
+            }
+        }
+        /*
+         * Upper mid
+         * X
+         */
+        if (board[0][1].equalsIgnoreCase("X"))
+        {
+            // Upper mid -> upper left -> upper right
+            if (board[0][0].equalsIgnoreCase("X") && board[0][2].equalsIgnoreCase("X"))
+            {
+                win.X();
+            }
+            // Upper mid -> mid -> botton mid
+            if (board[1][1].equalsIgnoreCase("X") && board[2][1].equalsIgnoreCase("X"))
+            {
+                win.X();
+            }
+        }
         else
         {
             draw();
