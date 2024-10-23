@@ -52,6 +52,7 @@ public class SaveThePrisoner
                 else if (counter == temp[1])
                 {
                     notify[i] = j;
+                    break;
                 }
             }
         }
