@@ -8,6 +8,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         int option = 0;
+        boolean repeat = true;
         String[] menu =
         {
             "Input Data",
@@ -18,24 +19,29 @@ public class Praktikum0
             "Min",
             "Keluar"
         };
-        for (int i = 0; i < menu.length; i++)
+        while (repeat)
         {
-            System.out.printf("%d%-2c%s",(i + 1),'.',menu[i]);
-            if (menu.length - i != 1)
+            for (int i = 0; i < menu.length; i++)
             {
-                System.out.print("\n");
-                continue;
+                System.out.printf("%d%-2c%s",(i + 1),'.',menu[i]);
+                if (menu.length - i != 1)
+                {
+                    System.out.print("\n");
+                    continue;
+                }
+                System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
+                option = Integer.parseInt(input.nextLine());
             }
-            System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
-            option = Integer.parseInt(input.nextLine());
-        }
-        if (option >= 1 && option <=6)
-        {
-            //
-        }
-        else if (option == 7)
-        {
-            System.exit(0);
+            repeat = false;
+            if (option >= 1 && option <=6)
+            {
+                repeat = true;
+            }
+            else if (option == 7)
+            {
+                input.close();
+                System.exit(0);
+            }
         }
         input.close();
     }
