@@ -8,7 +8,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         /*Create ArrayList inside of ArrayList */
-        ArrayList<double[]> data = new ArrayList<>();
+        ArrayList<String> data = new ArrayList<>();
         int option = 0;
         boolean repeat = true;
         String[] menu =
@@ -42,8 +42,7 @@ public class Praktikum0
                 {
                     case 1:
                         data.clear();
-                        double[] inputData = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
-                        data.add(inputData);
+                        data.addAll(Arrays.asList(input.nextLine().split(" ")));
                         break;
                     case 2:
                         System.out.print("\n");
