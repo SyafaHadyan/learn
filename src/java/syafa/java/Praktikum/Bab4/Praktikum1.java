@@ -84,9 +84,12 @@ public class Praktikum1
                         }
                         break;
                     case 2:
-                        for (int i = 0; i < menu.length; i++)
+                        for (int i = 0; i < 2; i++)
                         {
-                            
+                            for (int j = 0; j < data[0].length; j++)
+                            {
+                                //
+                            }
                         }
                 }
             }
