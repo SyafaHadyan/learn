@@ -55,10 +55,9 @@ public class Praktikum1
                     case 1:
                         for (int i = 0; i < tableHeader.length; i++)
                         {
-                            System.out.print(tableHeader[i]);
+                            System.out.printf("%-20s",tableHeader[i]);
                             if (data.length - i != 1)
                             {
-                                System.out.print("\t\t");
                                 continue;
                             }
                             System.out.print("\n");
@@ -67,10 +66,9 @@ public class Praktikum1
                         {
                             for (int j = 0; j < data.length; j++)
                             {
-                                System.out.print(data[j][i]);
+                                System.out.printf("%-20s",data[j][i]);
                                 if (data.length - j != 1)
                                 {
-                                    System.out.print("\t\t");
                                     continue;
                                 }
                                 System.out.print("\n");
