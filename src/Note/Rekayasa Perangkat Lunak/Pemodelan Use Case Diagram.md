@@ -31,16 +31,18 @@ Mengaplikaisikan:
 
 ## *Object, Class*
 
-- Objek (*Object*)
-  - A concept, abstraction, or thing with crisp boundaries and meaning for the problem at hand [Rumbaugh]
-  - Benda (*tangible & intangible thing*)
-  - Contoh: Andi, Eko, Susi (sistem akademik)
-  - Sebuah objek memiliki karatkteristik **Identity** (identitas-pembeda), **state** (sekumpulan atribut) & **behaviour** (sekumpulan operasi, aksi, servis)
+### Objek (*Object*)
+
+- A concept, abstraction, or thing with crisp boundaries and meaning for the problem at hand [Rumbaugh]
+- Benda (*tangible & intangible thing*)
+- Contoh: Andi, Eko, Susi (sistem akademik)
+- Sebuah objek memiliki karatkteristik **Identity** (identitas-pembeda), **state** (sekumpulan atribut) & **behaviour** (sekumpulan operasi, aksi, servis)
 
 Table
 
-- Klas (*Class*):
-  - A **description** of one or more objects with a uniform set of attributes and services,
+### Klas (*Class*)
+
+- A **description** of one or more objects with a uniform set of attributes and services,
 
 ## Diagram UML
 
@@ -48,3 +50,13 @@ Table
 - *Class diagram* (statis)
 - *Collaboration/sequence diagram (dinamis)
 - *Statechart diagram (dinamis)
+
+## *Use-Case Diagram*
+
+- Menjelaskan perilaku sistem dari tampak luar
+- Menyediakan fungsii-fungsi yang harus dipenuhi sistem sesuai dengan aktornya
+- Elemen: *actor* (orang, sistem lain) dan *use-case*
+- Setiap *use-case* dilengkapi dengan skenario (deksripsi)
+- Langkah-langkah:
+  - Identifikasi aktor
+  - Identifikasi *use-case* per aktor
