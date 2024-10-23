@@ -33,7 +33,6 @@ public class Praktikum1
             "Melihat Pesanan Tiket",
             "Keluar",
         };
-        input.close();
         while (repeat)
         {
             repeat = false;
