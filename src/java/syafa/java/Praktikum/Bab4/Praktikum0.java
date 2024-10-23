@@ -48,6 +48,8 @@ public class Praktikum0
                          * Turn into double
                          * Turn into list
                          * Put values from new ArrayList to inputData
+                         * 
+                         * Source: SO
                          */
                         inputData.clear();
                         inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
