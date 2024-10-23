@@ -53,6 +53,10 @@ public class Praktikum0
                         System.out.print("\n");
                     case 3:
                         double[] tempDouble = new double[data.size()];
+                        for (int i = 0; i < data.size(); i++)
+                        {
+                            tempDouble[i] = Double.parseDouble(data.get(i));
+                        }
                         System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDouble).sum() / tempDouble.length));
                         break;
                     case 4:
