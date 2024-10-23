@@ -55,7 +55,14 @@ public class Praktikum0
                         inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
                         break;
                     case 2:
-
+                        for (int i = 0; i < inputData.size(); i++)
+                        {
+                            System.out.print(inputData.get(i));
+                            if (inputData.size - i != 1)
+                            {
+                                System.out.print("\n");
+                            }
+                        }
                     default:
                         repeat = true;
                 }
