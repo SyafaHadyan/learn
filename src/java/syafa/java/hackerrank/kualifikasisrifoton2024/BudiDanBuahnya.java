@@ -25,7 +25,7 @@ public class BudiDanBuahnya
                 else if (fruit[0] != 0 && fruit[2] != 0)
                 {
                     fruit[0]--;
-                    fruit[1]--;
+                    fruit[2]--;
                     counter++;
                     continue;
                 }
@@ -39,6 +39,7 @@ public class BudiDanBuahnya
                 else
                 {
                     possibleDays[i] = counter;
+                    counter = 0;
                     break;
                 }
             }
