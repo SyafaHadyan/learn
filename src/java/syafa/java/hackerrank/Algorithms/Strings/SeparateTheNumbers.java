@@ -7,21 +7,24 @@ public class SeparateTheNumbers
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int testCase = Integer.parseInt(input.nextLine());
         String numberStr = input.nextLine();
-        String[] numberStrArr = input.nextLine().split("");
-        ArrayList<Integer> number = new ArrayList<>();
-        for (int i = 0; i < numberStr.length(); i++)
+        String[] validity = new String[testCase];
+        for (int i = 0; i < testCase; i++)
         {
-            try
+            for (int j = 0; j < numberStr.length(); j++)
             {
-                if (Integer.parseInt(String.valueOf(numberStr.charAt(i + 1))) - Integer.parseInt(String.valueOf(numberStr.charAt(i))) == 1)
+                try
+                {
+                    if (Integer.parseInt(String.valueOf(numberStr.charAt(j + 1))) - Integer.parseInt(String.valueOf(numberStr.charAt(j))) == 1)
+                    {
+                        //
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                //
             }
         }
         input.close();
