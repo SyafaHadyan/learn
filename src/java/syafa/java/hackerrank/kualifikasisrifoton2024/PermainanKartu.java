@@ -27,7 +27,7 @@ public class PermainanKartu
         Scanner input = new Scanner(System.in);
         char turf = input.nextLine().charAt(0);
         String[] match = input.nextLine().split(" ");
-        System.out.print(game.checkCard(turf,0,0));
+        System.out.print(game.checkCard(turf,match[0].charAt(1),match[1].charAt(1),match[0].charAt(0),match[1].charAt(0)));
         input.close();
     }
 }
