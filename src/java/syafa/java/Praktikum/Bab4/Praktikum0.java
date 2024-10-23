@@ -80,7 +80,15 @@ public class Praktikum0
                         }
                         break;
                     case 6:
-                        //
+                        Collections.sort(data);
+                        try
+                        {
+                            System.out.printf("\n%d\n\n",Integer.parseInt(data.get(0)));
+                        }
+                        catch (NumberFormatException e)
+                        {
+                            System.out.printf("\n%.5f\n\n",Double.parseDouble(data.get(0)));
+                        }
                         break;
                     default:
                         repeat = true;
