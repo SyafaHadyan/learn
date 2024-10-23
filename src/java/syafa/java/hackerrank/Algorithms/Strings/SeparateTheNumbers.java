@@ -18,7 +18,7 @@ public class SeparateTheNumbers
                 {
                     if (Integer.parseInt(String.valueOf(numberStr.charAt(j + 1))) - Integer.parseInt(String.valueOf(numberStr.charAt(j))) == 1)
                     {
-                        //
+                        System.out.println("True");
                     }
                 }
                 catch (IndexOutOfBoundsException e)
