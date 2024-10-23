@@ -28,7 +28,16 @@ public class Praktikum1
         input.close();
         while (repeat)
         {
-            //
+            for (int i = 0; i < menu.length; i++)
+            {
+                System.out.printf("%d%-2c%s",(i + 1),'.',menu[i]);
+                if (menu.length - i != 1)
+                {
+                    System.out.print("\n");
+                    continue;
+                }
+                System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
+            }
         }
     }
 }
