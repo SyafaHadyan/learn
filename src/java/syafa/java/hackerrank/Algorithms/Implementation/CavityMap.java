@@ -47,5 +47,15 @@ public class CavityMap
             cell[i] = input.nextLine().split(" ");
         }
         input.close();
+        for (int i = 0; i < cell.length; i++)
+        {
+            for (int j = 0; j < cell[i].length; j++)
+            {
+                if ((i != 0) && (cell.length - i != 1) && (j != 0) && (cell[i].length - j != 1))
+                {
+                    
+                }
+            }
+        }
     }
 }
