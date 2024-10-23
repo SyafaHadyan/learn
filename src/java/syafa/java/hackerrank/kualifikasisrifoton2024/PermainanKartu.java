@@ -3,6 +3,13 @@ import java.util.*;
 
 public class PermainanKartu
 {
+    static class game
+    {
+        public static boolean checkCard(char turf,char cardType,char cardValue)
+        {
+            return false;
+        }
+    }
     public static void main(String[] args)
     {
         /*
@@ -14,6 +21,8 @@ public class PermainanKartu
          * Jenis truf: H (Hati) Kartu pertama: "3H", yang memiliki peringkat 3 dan jenis Hati. Kartu kedua: "9S", yang memiliki peringkat 9 dan jenis Sekop.
          * Kartu pertama adalah kartu truf karena jenisnya adalah Hati (H), yang merupakan jenis truf dan Kartu kedua adalah Sekop (S), yang bukan jenis truf.
          * Berdasarkan aturan permainan, kartu truf selalu menang melawan kartu non-truf, tidak peduli berapa peringkatnya.
+         * 
+         * Pass player cardType and val to method
          */
         Scanner input = new Scanner(System.in);
         String turf = input.nextLine();
