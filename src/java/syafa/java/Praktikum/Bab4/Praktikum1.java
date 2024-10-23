@@ -86,6 +86,7 @@ public class Praktikum1
                     case 2:
                         for (int i = 0; i < 2; i++)
                         {
+                            System.out.println(i == 0 ? "Jenis" : "AC");
                             for (int j = 0; j < data[0].length; j++)
                             {
                                 //
