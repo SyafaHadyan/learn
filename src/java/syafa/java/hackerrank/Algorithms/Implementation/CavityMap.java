@@ -60,5 +60,20 @@ public class CavityMap
                 }
             }
         }
+        for (int i = 0; i < cell.length; i++)
+        {
+            for (int j = 0; j < cell[i].length; j++)
+            {
+                System.out.print(cell[i][j]);
+                if (cell[i].length - j != 1)
+                {
+                    System.out.print(' ');
+                }
+            }
+            if (cell.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
