@@ -41,13 +41,14 @@ public class SaveThePrisoner
         for (int i = 0; i < testCase; i++)
         {
             int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            for (int j = 0; j < temp[1]; j++)
+            int counter = 0;
+            for (int j = temp[2]; j <= temp[0]; j++)
             {
-
-                /* for (int k = 1; k <= temp[0]; k++)
+                counter++;
+                if (j == temp[0] && counter != temp[1])
                 {
-                    if ()
-                } */
+                    j = 0;
+                }
             }
         }
         input.close();
