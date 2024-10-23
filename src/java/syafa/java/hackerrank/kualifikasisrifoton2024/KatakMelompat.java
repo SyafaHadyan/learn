@@ -24,11 +24,8 @@ public class KatakMelompat
                     jumpCounter = jump[i + 1] - jump[i];
                     continue;
                 }
-                else
-                {
-                    System.out.print(false);
-                    return;
-                }
+                System.out.print(false);
+                return;
             }
             catch (IndexOutOfBoundsException e)
             {
