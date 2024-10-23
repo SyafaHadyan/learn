@@ -31,6 +31,7 @@ public class BudiDanBuahnya
             int checkAt = 0;
             while (true)
             {
+                Arrays.sort(fruit);
                 if (fruit[2] != 0 && fruit[1] != 0)
                 {
                     fruit[2]--;
@@ -39,16 +40,16 @@ public class BudiDanBuahnya
                 }
                 if (fruit[1] != 0 && fruit[0] != 0)
                 {
-                    fruit[2]--;
                     fruit[1]--;
+                    fruit[0]--;
                     counter++;
                 }
-                /* if (fruit[0] != 0 && fruit[2] != 0)
+                if (fruit[0] != 0 && fruit[2] != 0)
                 {
                     fruit[0]--;
                     fruit[2]--;
                     counter++;
-                } */
+                }
                 else
                 {
                     checkAt++;
