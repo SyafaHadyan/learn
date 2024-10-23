@@ -6,6 +6,8 @@ public class Praktikum1
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int option = 0;
+        boolean repeat = true;
         String[][] data =
         {
             {"Ekonomi", "Bisnis", "Eksekutif", "Pariwisata"},
@@ -24,5 +26,9 @@ public class Praktikum1
             "Keluar",
         };
         input.close();
+        while (repeat)
+        {
+            //
+        }
     }
 }
