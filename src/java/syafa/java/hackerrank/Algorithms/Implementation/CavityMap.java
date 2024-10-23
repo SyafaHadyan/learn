@@ -7,7 +7,7 @@ public class CavityMap
     public static void main(String[] args)
     {
         /*
-        3
+         * 3
          * 989
          * 191
          * 111
@@ -53,7 +53,10 @@ public class CavityMap
             {
                 if ((i != 0) && (cell.length - i != 1) && (j != 0) && (cell[i].length - j != 1))
                 {
-                    
+                    if (cell[i][j].equalsIgnoreCase("9"))
+                    {
+                        cell[i][j] = "X";
+                    }
                 }
             }
         }
