@@ -51,12 +51,19 @@ public class Praktikum1
                             switch (i)
                             {
                                 case 0:
+                                System.out.println("Jenis");
                                     break;
                                 case 1:
+                                System.out.println("Harga");
                                     break;
                                 case 2:
+                                System.out.println("Diskon");
                                     break;
                                 case 3:
+                                System.out.println("AC");
+                                    break;
+                                case 4:
+                                System.out.println("Colokan");
                                     break;
                             }
                             for (int j = 0; j < data[0].length; j++)
