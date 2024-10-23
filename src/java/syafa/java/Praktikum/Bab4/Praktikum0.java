@@ -51,6 +51,7 @@ public class Praktikum0
                             System.out.println(data.get(i));
                         }
                         System.out.print("\n");
+                        break;
                     case 3:
                         double[] tempDouble = new double[data.size()];
                         for (int i = 0; i < data.size(); i++)
