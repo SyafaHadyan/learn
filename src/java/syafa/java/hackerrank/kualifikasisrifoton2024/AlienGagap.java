@@ -10,13 +10,14 @@ public class AlienGagap
         input.close();
         for (int i = 0; i < inputWord.size(); i++)
         {
-            for (int j = 0 + i; j < inputWord.size() - i; j++)
+            for (int j = 0 + i; j <= inputWord.size() - i; j++)
             {
                 try
                 {
                     if (inputWord.get(i).equalsIgnoreCase(inputWord.get(j + 1)))
                     {
                         inputWord.remove(j + 1);
+                        j--;
                     }
                 }
                 catch (IndexOutOfBoundsException e)
