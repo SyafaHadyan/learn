@@ -51,9 +51,12 @@ public class CavityMap
         {
             for (int j = 0; j < cell[i].length; j++)
             {
-                if ((i != 0) && (cell.length - i != 1) && (j != 0) && (cell[i].length - j != 1) && cell[i][j].equalsIgnoreCase("9"))
+                if ((i != 0) && (cell.length - i != 1) && (j != 0) && (cell[i].length - j != 1) /* && cell[i][j].equalsIgnoreCase("9") */)
                 {
-                    cell[i][j] = "X";
+                    if (Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i - 1][j])) >= 1)
+                    {
+                        cell[i][j] = "X";
+                    }
                 }
             }
         }
