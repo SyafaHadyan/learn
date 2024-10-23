@@ -5,9 +5,9 @@ public class PermainanKartu
 {
     static class game
     {
-        public static boolean checkCard(char turf,char cardType,char cardValue)
+        public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
         {
-            return false;
+            return 1;
         }
     }
     public static void main(String[] args)
