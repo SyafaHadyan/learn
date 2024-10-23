@@ -1,6 +1,6 @@
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
-//import java.util.stream.*;
+import java.util.stream.*;
 
 public class Praktikum0
 {
@@ -36,6 +36,15 @@ public class Praktikum0
             if (option >= 1 && option <=6)
             {
                 repeat = true;
+                switch (option)
+                {
+                    case 1:
+                    int[] dataInput = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                        break;
+                
+                    default:
+                        repeat = true;
+                }
             }
             else if (option == 7)
             {
