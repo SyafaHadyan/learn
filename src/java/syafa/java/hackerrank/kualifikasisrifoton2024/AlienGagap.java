@@ -12,9 +12,16 @@ public class AlienGagap
         {
             for (int j = 0 + i; j < inputWord.size() - i; j++)
             {
-                if (inputWord.get(i).equalsIgnoreCase(inputWord.get(j + 1)))
+                try
                 {
-                    
+                    if (inputWord.get(i).equalsIgnoreCase(inputWord.get(j + 1)))
+                    {
+                        inputWord.remove(j + 1);
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
             }
         }
