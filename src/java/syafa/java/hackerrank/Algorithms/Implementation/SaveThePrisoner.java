@@ -32,6 +32,8 @@ public class SaveThePrisoner
          * 2 3 4 1 2 3
          * 
          * print 3
+         * 
+         * iterate through from temp[2] if counter == temp[0] && counter != temp[1] counter = 1;
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
@@ -39,9 +41,13 @@ public class SaveThePrisoner
         for (int i = 0; i < testCase; i++)
         {
             int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            for (int j = 0; j < notify.length; j++)
+            for (int j = 0; j < temp[1]; j++)
             {
-                
+
+                /* for (int k = 1; k <= temp[0]; k++)
+                {
+                    if ()
+                } */
             }
         }
         input.close();
