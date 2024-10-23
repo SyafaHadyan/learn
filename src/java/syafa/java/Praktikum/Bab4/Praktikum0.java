@@ -69,7 +69,8 @@ public class Praktikum0
                         System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum() / tempDoubleSum.length));
                         break;
                     case 5:
-                        //
+                        Collections.sort(data);
+                        System.out.print("\n" + Integer.parseInt(data.get(data.size() - 1)) + "\n");
                         break;
                     case 6:
                         //
