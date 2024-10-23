@@ -14,6 +14,15 @@ public class Praktikum1
             {"Tidak ada", "Ada", "Ada", "Ada"},
             {"Tidak ada", "Tidak ada", "Tidak ada", "Ada"}
         };
+        String[] menu =
+        {
+            "Melihat Daftar Kereta Api",
+            "Melihat Daftar Kereta Api yang ada AC",
+            "Melihat Daftar Kereta Api yang ada Colokan",
+            "Memesan Tikat Kereta Api",
+            "Melihat Pesanan Tiket",
+            "Keluar",
+        };
         input.close();
     }
 }

@@ -33,7 +33,7 @@ public class KucingDalamKandang
          * move
          */
         Scanner input = new Scanner(System.in);
-        int cageAmount = Integer.parseInt(input.nextLine());
+        //int cageAmount = Integer.parseInt(input.nextLine());
         int[] cage = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         while (true)
