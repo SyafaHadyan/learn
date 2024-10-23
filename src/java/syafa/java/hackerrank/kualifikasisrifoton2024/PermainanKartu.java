@@ -5,7 +5,7 @@ public class PermainanKartu
 {
     static class game
     {
-        public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
+        public static boolean cardRank(char cardValue)
         {
             char[] cardRank =
             {
@@ -23,6 +23,10 @@ public class PermainanKartu
                 'K',
                 'A'
             };
+            return true;
+        }
+        public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
+        {
             if (turf == firstCardType && firstCardType != secondCardType)
             {
                 return 1;
@@ -30,6 +34,10 @@ public class PermainanKartu
             else if (turf == secondCardType && secondCardType != firstCardType)
             {
                 return 2;
+            }
+            if (game.cardRank(firstCardValue))
+            {
+                return 1;
             }
             return 1;
         }
