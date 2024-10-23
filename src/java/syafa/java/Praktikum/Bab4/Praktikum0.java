@@ -53,15 +53,20 @@ public class Praktikum0
                         System.out.print("\n");
                         break;
                     case 3:
-                        double[] tempDouble = new double[data.size()];
+                        double[] tempDoubleAverage = new double[data.size()];
                         for (int i = 0; i < data.size(); i++)
                         {
-                            tempDouble[i] = Double.parseDouble(data.get(i));
+                            tempDoubleAverage[i] = Double.parseDouble(data.get(i));
                         }
-                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDouble).sum() / tempDouble.length));
+                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleAverage).sum() / tempDoubleAverage.length));
                         break;
                     case 4:
-                        //
+                        double[] tempDoubleSum = new double[data.size()];
+                        for (int i = 0; i < data.size(); i++)
+                        {
+                            tempDoubleSum[i] = Double.parseDouble(data.get(i));
+                        }
+                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum() / tempDoubleSum.length));
                         break;
                     case 5:
                         //
