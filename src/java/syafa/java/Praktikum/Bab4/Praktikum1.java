@@ -30,8 +30,7 @@ public class Praktikum1
             "Melihat Daftar Kereta Api yang ada AC",
             "Melihat Daftar Kereta Api yang ada Colokan",
             "Memesan Tikat Kereta Api",
-            "Melihat Pesanan Tiket",
-            "Keluar",
+            "Melihat Pesanan Tiket"
         };
         while (repeat)
         {
@@ -44,6 +43,7 @@ public class Praktikum1
                     System.out.print("\n");
                     continue;
                 }
+                System.out.printf("\n%d%-2c%s",0,'.',"Keluar");
                 System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
                 option = Integer.parseInt(input.nextLine());
             }
