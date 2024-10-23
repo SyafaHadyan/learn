@@ -20,6 +20,10 @@ public class TesKesigapanPrajurit
                     {
                         counter = weapon[i] + weapon[j + 2];
                     }
+                    if ((weapon[i] + weapon[j + 2] + weapon [j + 4]) > counter)
+                    {
+                        counter = weapon[i] + weapon[j + 2] + weapon [j + 4];
+                    }
                 }
                 catch (IndexOutOfBoundsException e)
                 {
