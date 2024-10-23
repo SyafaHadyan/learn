@@ -38,7 +38,11 @@ public class SaveThePrisoner
         int[] notify = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            //
+            int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            for (int j = 0; j < notify.length; j++)
+            {
+                
+            }
         }
         input.close();
     }
