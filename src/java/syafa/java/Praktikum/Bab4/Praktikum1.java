@@ -58,19 +58,19 @@ public class Praktikum1
                             System.out.print(tableHeader[i]);
                             if (data.length - i != 1)
                             {
-                                System.out.print("\t");
+                                System.out.print("\t\t");
                                 continue;
                             }
                             System.out.print("\n");
                         }
-                        for (int i = 0; i < data.length; i++)
+                        for (int i = 0; i < data[0].length; i++)
                         {
-                            for (int j = 0; j < data[i].length; j++)
+                            for (int j = 0; j < data.length; j++)
                             {
                                 System.out.print(data[j][i]);
-                                if (data[i].length - j != 1)
+                                if (data.length - j != 1)
                                 {
-                                    System.out.print("\t");
+                                    System.out.print("\t\t");
                                     continue;
                                 }
                                 System.out.print("\n");
