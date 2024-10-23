@@ -22,9 +22,29 @@ Mengaplikaisikan:
 
 ## Keuntungan OO
 
-- Sangat natural, sesuai dengan cara berpikir manusia -> *improva analyst and problem domain expert interaction*
+- Sangat natural, sesuai dengan cara berpikir manusia -> *improve analyst and problem domain expert interaction*
 - Meningkatkan konsistensi hasil analisis -> abstraksi atribut-operasi dalam sebuah objek
 - Konsep penurunan klas memberikan kemudahan dalam generalisasi objek
 - Kemudahan dalam perubahan
 - Terjaganya konsistensi model antara analisi dan perancangan
 - Konsep *reusability*
+
+## *Object, Class*
+
+- Objek (*Object*)
+  - A concept, abstraction, or thing with crisp boundaries and meaning for the problem at hand [Rumbaugh]
+  - Benda (*tangible & intangible thing*)
+  - Contoh: Andi, Eko, Susi (sistem akademik)
+  - Sebuah objek memiliki karatkteristik **Identity** (identitas-pembeda), **state** (sekumpulan atribut) & **behaviour** (sekumpulan operasi, aksi, servis)
+
+Table
+
+- Klas (*Class*):
+  - A **description** of one or more objects with a uniform set of attributes and services,
+
+## Diagram UML
+
+- *Use-case diagram* (statis)
+- *Class diagram* (statis)
+- *Collaboration/sequence diagram (dinamis)
+- *Statechart diagram (dinamis)
