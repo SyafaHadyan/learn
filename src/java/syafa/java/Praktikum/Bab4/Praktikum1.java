@@ -89,6 +89,13 @@ public class Praktikum1
                             System.out.printf("%-20s",(i == 0 ? "Jenis" : "AC"));
                         }
                         System.out.print("\n");
+                        for (int i = 0; i < data.length; i++)
+                        {
+                            for (int j = 0; j < 4; j += 3)
+                            {
+                                System.out.printf("%-20s",data[j][i]);
+                            }
+                        }
                 }
             }
             else if (option == 0)
