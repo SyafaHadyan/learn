@@ -54,7 +54,7 @@ public class Praktikum1
                 switch (option)
                 {
                     case 1:
-                        for (int i = 0; i < data.length; i++)
+                        for (int i = 0; i < tableHeader.length; i++)
                         {
                             System.out.print(tableHeader[i]);
                             if (data.length - i != 1)
@@ -63,6 +63,19 @@ public class Praktikum1
                                 continue;
                             }
                             System.out.print("\n");
+                        }
+                        for (int i = 0; i < data.length; i++)
+                        {
+                            for (int j = 0; j < data[i].length; j++)
+                            {
+                                System.out.print(data[j][i]);
+                                if (data[i].length - j != 1)
+                                {
+                                    System.out.print("\t");
+                                    continue;
+                                }
+                                System.out.print("\n");
+                            }
                         }
                         break;
                 }
