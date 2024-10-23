@@ -42,15 +42,11 @@ public class PermainanKartu
             {
                 return 2;
             }
-            if (game.cardRank(firstCardValue))
+            if (game.cardRank(firstCardValue) > game.cardRank(secondCardValue))
             {
                 return 1;
             }
-            else if (game.cardRank(secondCardValue))
-            {
-                return 2;
-            }
-            return 1;
+            return 2;
         }
     }
     public static void main(String[] args)
