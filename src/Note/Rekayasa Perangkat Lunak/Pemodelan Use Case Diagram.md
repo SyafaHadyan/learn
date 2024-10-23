@@ -38,7 +38,9 @@ Mengaplikaisikan:
 - Contoh: Andi, Eko, Susi (sistem akademik)
 - Sebuah objek memiliki karatkteristik **Identity** (identitas-pembeda), **state** (sekumpulan atribut) & **behaviour** (sekumpulan operasi, aksi, servis)
 
-Table
+|Table|
+|:---:|
+|Table|
 
 ### Klas (*Class*)
 
@@ -48,8 +50,8 @@ Table
 
 - *Use-case diagram* (statis)
 - *Class diagram* (statis)
-- *Collaboration/sequence diagram (dinamis)
-- *Statechart diagram (dinamis)
+- *Collaboration/sequence diagram* (dinamis)
+- *Statechart diagram* (dinamis)
 
 ## *Use-Case Diagram*
 
@@ -60,3 +62,23 @@ Table
 - Langkah-langkah:
   - Identifikasi aktor
   - Identifikasi *use-case* per aktor
+
+Image here
+
+> *Left -> primary actor.*
+>
+> *Right -> Secondary actor*
+
+## *Use-Case Association*
+
+### *Include*
+
+- n
+
+### *Extend*
+
+- n
+
+## *Actor-Generalization*
+
+Visual Paradigm
