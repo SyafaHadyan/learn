@@ -43,6 +43,29 @@ public class Praktikum1
             if (option >= 1 && option <= 5)
             {
                 repeat = true;
+                switch (option)
+                {
+                    case 1:
+                        for (int i = 0; i < data.length; i++)
+                        {
+                            switch (i)
+                            {
+                                case 0:
+                                    break;
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                case 3:
+                                    break;
+                            }
+                            for (int j = 0; j < data[0].length; j++)
+                            {
+                                //
+                            }
+                        }
+                        break;
+                }
             }
             else if (option == 0)
             {
