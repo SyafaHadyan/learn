@@ -8,7 +8,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         /*Create ArrayList inside of ArrayList */
-        ArrayList<ArrayList<Double>> inputData = new ArrayList<>();
+        ArrayList<double[]> data = new ArrayList<>();
         int option = 0;
         boolean repeat = true;
         String[] menu =
@@ -41,24 +41,15 @@ public class Praktikum0
                 switch (option)
                 {
                     case 1:
-                        /*
-                         * Clear existing values of inputData
-                         * Create new ArrayList
-                         * Put values of separated numbers (from string split by space)
-                         * Turn into double
-                         * Turn into list
-                         * Put values from new ArrayList to inputData
-                         * 
-                         * Source: SO
-                         */
-                        inputData.clear();
-                        inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
+                        data.clear();
+                        double[] inputData = Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).toArray();
+                        data.add(inputData);
                         break;
                     case 2:
                         System.out.print("\n");
-                        for (int i = 0; i < inputData.size(); i++)
+                        for (int i = 0; i < data.size(); i++)
                         {
-                            System.out.println(inputData.get(i));
+                            System.out.println(data.get(i));
                         }
                         System.out.print("\n");
                     default:
