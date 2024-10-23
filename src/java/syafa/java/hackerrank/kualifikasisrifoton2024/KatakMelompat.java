@@ -21,7 +21,10 @@ public class KatakMelompat
                     jump[i + 1] - jump[i] == jumpCounter - 1
                 )
                 {
-                    jumpCounter = jump[i + 1] - jump[i];
+                    if (jumpCounter < jump[i + 1] - jump[i])
+                    {
+                        jumpCounter = jump[i + 1] - jump[i];
+                    }
                     continue;
                 }
                 System.out.print(false);
