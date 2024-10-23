@@ -28,7 +28,6 @@ public class BudiDanBuahnya
             int[] fruit = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             Arrays.sort(fruit);
             int counter = 0;
-            int checkAt = 0;
             while (true)
             {
                 Arrays.sort(fruit);
@@ -38,23 +37,7 @@ public class BudiDanBuahnya
                     fruit[1]--;
                     counter++;
                 }
-                if (fruit[1] != 0 && fruit[0] != 0)
-                {
-                    fruit[1]--;
-                    fruit[0]--;
-                    counter++;
-                }
-                if (fruit[0] != 0 && fruit[2] != 0)
-                {
-                    fruit[0]--;
-                    fruit[2]--;
-                    counter++;
-                }
                 else
-                {
-                    checkAt++;
-                }
-                if (checkAt == 5)
                 {
                     possibleDays[i] = counter;
                     counter = 0;
