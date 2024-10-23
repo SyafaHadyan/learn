@@ -99,6 +99,5 @@ public class Praktikum0
                 System.exit(0);
             }
         }
-        input.close();
     }
 }
