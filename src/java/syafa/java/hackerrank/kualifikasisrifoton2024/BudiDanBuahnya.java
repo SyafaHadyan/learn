@@ -26,28 +26,29 @@ public class BudiDanBuahnya
         for (int i = 0; i < testCase; i++)
         {
             int[] fruit = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            Arrays.sort(fruit);
             int counter = 0;
             int checkAt = 0;
             while (true)
             {
-                if (fruit[0] != 0 && fruit[1] != 0)
-                {
-                    fruit[0]--;
-                    fruit[1]--;
-                    counter++;
-                }
                 if (fruit[2] != 0 && fruit[1] != 0)
                 {
                     fruit[2]--;
                     fruit[1]--;
                     counter++;
                 }
-                if (fruit[0] != 0 && fruit[2] != 0)
+                if (fruit[1] != 0 && fruit[0] != 0)
+                {
+                    fruit[2]--;
+                    fruit[1]--;
+                    counter++;
+                }
+                /* if (fruit[0] != 0 && fruit[2] != 0)
                 {
                     fruit[0]--;
                     fruit[2]--;
                     counter++;
-                }
+                } */
                 else
                 {
                     checkAt++;
