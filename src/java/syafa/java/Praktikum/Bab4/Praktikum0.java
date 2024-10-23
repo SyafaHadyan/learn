@@ -7,7 +7,6 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        /*Create ArrayList inside of ArrayList */
         ArrayList<String> data = new ArrayList<>();
         int option = 0;
         boolean repeat = true;
