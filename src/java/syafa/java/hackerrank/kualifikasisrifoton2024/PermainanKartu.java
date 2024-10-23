@@ -7,6 +7,14 @@ public class PermainanKartu
     {
         public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
         {
+            if (turf == firstCardType && firstCardType != secondCardType)
+            {
+                return 1;
+            }
+            else if (turf == secondCardType && secondCardType != firstCardType)
+            {
+                return 2;
+            }
             return 1;
         }
     }
