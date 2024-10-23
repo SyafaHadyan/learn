@@ -25,5 +25,13 @@ public class AlienGagap
                 }
             }
         }
+        for (int i = 0; i < inputWord.size(); i++)
+        {
+            System.out.print(inputWord.get(i));
+            if (inputWord.size() - i != 1)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
