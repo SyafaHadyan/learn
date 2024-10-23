@@ -74,7 +74,7 @@ public class Praktikum1
                         {
                             for (int j = 0; j < data.length; j++)
                             {
-                                System.out.printf("%-20s",data[j][i]);
+                                System.out.printf("%-20s",data[i][j]);
                                 if (data.length - j != 1)
                                 {
                                     continue;
@@ -86,12 +86,9 @@ public class Praktikum1
                     case 2:
                         for (int i = 0; i < 2; i++)
                         {
-                            System.out.println(i == 0 ? "Jenis" : "AC");
-                            for (int j = 0; j < data[0].length; j++)
-                            {
-                                //
-                            }
+                            System.out.printf("%-20s",(i == 0 ? "Jenis" : "AC"));
                         }
+                        System.out.print("\n");
                 }
             }
             else if (option == 0)
