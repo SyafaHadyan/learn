@@ -8,6 +8,14 @@ public class Praktikum1
         Scanner input = new Scanner(System.in);
         int option = 0;
         boolean repeat = true;
+        String[] tableHeader =
+        {
+            "Jenis",
+            "Harga",
+            "Diskon",
+            "AC",
+            "Colokan"
+        };
         String[][] data =
         {
             {"Ekonomi", "Bisnis", "Eksekutif", "Pariwisata"},
@@ -66,9 +74,9 @@ public class Praktikum1
                                 System.out.println("Colokan");
                                     break;
                             }
-                            for (int j = 0; j < data[0].length; j++)
+                            for (int j = 0; j < data[i].length; j++)
                             {
-                                //
+                                System.out.println();
                             }
                         }
                         break;
