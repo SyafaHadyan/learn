@@ -56,5 +56,13 @@ public class SaveThePrisoner
             }
         }
         input.close();
+        for (int i = 0; i < notify.length; i++)
+        {
+            System.out.print(notify[i]);
+            if (notify.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
