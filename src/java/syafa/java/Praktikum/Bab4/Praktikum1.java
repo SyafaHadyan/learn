@@ -53,12 +53,20 @@ public class Praktikum1
                 switch (option)
                 {
                     case 1:
+                    /*
+                     * Ekonomi             50000               2                   Tidak ada           Tidak ada
+                     */
                         for (int i = 0; i < tableHeader.length; i++)
                         {
                             System.out.printf("%-20s",tableHeader[i]);
                             if (data.length - i != 1)
                             {
                                 continue;
+                            }
+                            System.out.print("\n");
+                            for (int j = 0; j < 90; j++)
+                            {
+                                System.out.print('=');
                             }
                             System.out.print("\n");
                         }
