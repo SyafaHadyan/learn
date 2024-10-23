@@ -60,7 +60,11 @@ public class CavityMap
                             Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i - 1][j])) >= 1 &&
                             Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i + 1][j])) >= 1 &&
                             Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i][j - 1])) >= 1 &&
-                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i][j + 1])) >= 1
+                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i][j + 1])) >= 1 &&
+                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i - 1][j])) +
+                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i + 1][j])) +
+                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i][j - 1])) +
+                            Math.abs(Integer.parseInt(cell[i][j]) - Integer.parseInt(cell[i][j + 1])) >= 4
                         )
                         {
                             cell[i][j] = "X";
