@@ -29,6 +29,7 @@ public class MinimumLoss
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] housePrice = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        Arrays.sort(housePrice);
         int lowestPrice = Integer.MAX_VALUE;
         for (int i = 0; i < housePrice.length; i++)
         {
