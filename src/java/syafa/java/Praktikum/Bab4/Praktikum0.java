@@ -96,6 +96,10 @@ public class Praktikum0
                 input.close();
                 System.exit(0);
             }
+            else
+            {
+                repeat = true;
+            }
         }
     }
 }
