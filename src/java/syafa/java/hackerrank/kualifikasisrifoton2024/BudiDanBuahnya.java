@@ -6,20 +6,6 @@ public class BudiDanBuahnya
 {
     public static void main(String[] args)
     {
-        /*
-         * 5
-         * 1 1 1
-         * 1 2 1
-         * 4 1 1
-         * 8 5 8
-         * 9 4 5
-         * 
-         * 1
-         * 2
-         * 2
-         * 10
-         * 9
-         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] possibleDays = new int[testCase];
