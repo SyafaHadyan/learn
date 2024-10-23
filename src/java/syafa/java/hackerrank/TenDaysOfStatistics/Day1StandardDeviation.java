@@ -50,7 +50,6 @@ public class Day1StandardDeviation
         {
             standardDeviation += Math.pow((data[i] - mean),2);
         }
-        //double result = (Math.sqrt(standardDeviation / data.length));
-        System.out.print(String.format("%.3g%n",(Math.sqrt(standardDeviation / data.length))));
+        System.out.printf("%.1f",(Math.sqrt(standardDeviation / data.length)));
     }
 }
