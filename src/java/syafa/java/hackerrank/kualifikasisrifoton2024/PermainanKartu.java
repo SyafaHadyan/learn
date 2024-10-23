@@ -5,7 +5,7 @@ public class PermainanKartu
 {
     static class game
     {
-        private static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
+        public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
         {
             return 1;
         }
