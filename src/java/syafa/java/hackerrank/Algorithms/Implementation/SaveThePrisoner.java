@@ -49,6 +49,10 @@ public class SaveThePrisoner
                 {
                     j = 0;
                 }
+                else if (counter == temp[1])
+                {
+                    notify[i] = j;
+                }
             }
         }
         input.close();
