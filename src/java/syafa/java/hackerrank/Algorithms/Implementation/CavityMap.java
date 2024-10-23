@@ -47,39 +47,5 @@ public class CavityMap
             cell[i] = input.nextLine().split(" ");
         }
         input.close();
-        for (int i = 0; i < cell.length; i++)
-        {
-            for (int j = 0; j < cell[i].length; j++)
-            {
-                try
-                {
-                    if ((Math.abs(Integer.parseInt(cell[i][j - 1]) - Integer.parseInt(cell[i][j])) > 1) && (Math.abs(Integer.parseInt(cell[i][j + 1]) - Integer.parseInt(cell[i][j])) > 1))
-                    {
-                        cell[i][j] = "X";
-                    }
-                    //System.out.print(cell[i][j]);
-                }
-                catch (IndexOutOfBoundsException e)
-                {
-                    //
-                }
-                try
-                {
-                    System.out.print(cell[i][j]);
-                }
-                catch (IndexOutOfBoundsException e)
-                {
-                    return;
-                }
-                if (cell[i].length - j != 1)
-                {
-                    System.out.print(' ');
-                }
-            }
-            if (cell.length - i != 1)
-            {
-                System.out.print("\n");
-            }
-        }
     }
 }
