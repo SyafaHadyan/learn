@@ -28,6 +28,7 @@ public class Praktikum1
         input.close();
         while (repeat)
         {
+            repeat = false;
             for (int i = 0; i < menu.length; i++)
             {
                 System.out.printf("%d%-2c%s",(i + 1),'.',menu[i]);
@@ -37,6 +38,20 @@ public class Praktikum1
                     continue;
                 }
                 System.out.printf("\n%-20s%-2c","Masukkan nilai",':');
+                option = Integer.parseInt(input.nextLine());
+            }
+            if (option >= 1 && option <= 5)
+            {
+                repeat = true;
+            }
+            else if (option == 0)
+            {
+                input.close();
+                System.exit(0);
+            }
+            else
+            {
+                repeat = true;
             }
         }
     }
