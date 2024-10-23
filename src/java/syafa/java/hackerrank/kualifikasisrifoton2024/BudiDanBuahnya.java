@@ -44,5 +44,13 @@ public class BudiDanBuahnya
             }
         }
         input.close();
+        for (int i = 0; i < possibleDays.length; i++)
+        {
+            System.out.print(possibleDays[i]);
+            if (possibleDays.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
