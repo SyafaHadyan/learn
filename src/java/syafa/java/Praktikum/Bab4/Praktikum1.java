@@ -56,10 +56,13 @@ public class Praktikum1
                     case 1:
                         for (int i = 0; i < data.length; i++)
                         {
-                            for (int j = 0; j < data[i].length; j++)
+                            System.out.print(tableHeader[i]);
+                            if (data.length - i != 1)
                             {
-                                System.out.println();
+                                System.out.print("\t");
+                                continue;
                             }
+                            System.out.print("\n");
                         }
                         break;
                 }
