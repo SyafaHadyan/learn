@@ -14,9 +14,16 @@ public class TesKesigapanPrajurit
         {
             for (int j = 0 + i; j <= weapon.length - i; j++)
             {
-                if ((weapon[i] + weapon[j + 2]) > counter)
+                try
                 {
-                    counter = weapon[i] + weapon[j + 2];
+                    if ((weapon[i] + weapon[j + 2]) > counter)
+                    {
+                        counter = weapon[i] + weapon[j + 2];
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
             }
         }
