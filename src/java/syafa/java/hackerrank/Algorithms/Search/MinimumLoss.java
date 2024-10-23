@@ -35,8 +35,9 @@ public class MinimumLoss
         {
             if (Math.abs(housePrice[i] - housePrice[i + 1]) < lowestPrice)
             {
-                //
+                lowestPrice = Math.abs(housePrice[i] - housePrice[i + 1]);
             }
         }
+        System.out.print(lowestPrice);
     }
 }
