@@ -75,6 +75,11 @@ public class Praktikum1
                             }
                         }
                         break;
+                    case 2:
+                        for (int i = 0; i < menu.length; i++)
+                        {
+                            
+                        }
                 }
             }
             else if (option == 0)
