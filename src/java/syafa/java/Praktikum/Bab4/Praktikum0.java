@@ -89,8 +89,6 @@ public class Praktikum0
                             System.out.printf("\n%.5f\n\n",Double.parseDouble(data.get(0)));
                         }
                         break;
-                    default:
-                        repeat = true;
                 }
             }
             else if (option == 7)
