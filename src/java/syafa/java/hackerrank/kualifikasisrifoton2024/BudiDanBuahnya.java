@@ -26,7 +26,6 @@ public class BudiDanBuahnya
         for (int i = 0; i < testCase; i++)
         {
             int[] fruit = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            Arrays.sort(fruit);
             int counter = 0;
             while (true)
             {
