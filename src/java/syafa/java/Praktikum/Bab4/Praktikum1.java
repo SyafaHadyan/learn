@@ -77,6 +77,7 @@ public class Praktikum1
                                 System.out.printf("%-20s",data[j][i]);
                                 if (data.length - j != 1)
                                 {
+                                    System.out.print('|');
                                     continue;
                                 }
                                 System.out.print("\n");
