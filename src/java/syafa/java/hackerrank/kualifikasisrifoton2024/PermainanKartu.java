@@ -27,7 +27,7 @@ public class PermainanKartu
             {
                 if (cardRank[i] == cardValue)
                 {
-                    return i + 1;
+                    return i;
                 }
             }
             return 0;
