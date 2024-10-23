@@ -10,7 +10,7 @@ public class BudiDanBuahnya
         int testCase = Integer.parseInt(input.nextLine());
         for (int i = 0; i < testCase; i++)
         {
-            
+            int[] fruit = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
