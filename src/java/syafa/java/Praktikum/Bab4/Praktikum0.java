@@ -70,7 +70,14 @@ public class Praktikum0
                         break;
                     case 5:
                         Collections.sort(data);
-                        System.out.print("\n" + Integer.parseInt(data.get(data.size() - 1)) + "\n");
+                        try
+                        {
+                            System.out.printf("\n%d\n\n",Integer.parseInt(data.get(data.size() - 1)));
+                        }
+                        catch (NumberFormatException e)
+                        {
+                            System.out.printf("\n%.5f\n\n",Double.parseDouble(data.get(data.size() - 1)));
+                        }
                         break;
                     case 6:
                         //
