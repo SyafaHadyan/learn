@@ -25,8 +25,9 @@ public class PermainanKartu
          * Pass player cardType and val to method
          */
         Scanner input = new Scanner(System.in);
-        String turf = input.nextLine();
+        char turf = input.nextLine().charAt(0);
         String[] match = input.nextLine().split(" ");
+        System.out.print(game.checkCard(turf,0,0));
         input.close();
     }
 }
