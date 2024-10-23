@@ -7,6 +7,7 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        ArrayList<ArrayList<Double>> inputData = new ArrayList<>();
         int option = 0;
         boolean repeat = true;
         String[] menu =
@@ -39,7 +40,7 @@ public class Praktikum0
                 switch (option)
                 {
                     case 1:
-                    int[] dataInput = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+                    inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
                         break;
                 
                     default:
