@@ -7,6 +7,22 @@ public class PermainanKartu
     {
         public static int checkCard(char turf,char firstCardType,char secondCardType,char firstCardValue,char secondCardValue)
         {
+            char[] cardRank =
+            {
+                '1',
+                '2',
+                '3',
+                '4',
+                '5',
+                '6',
+                '7',
+                '8',
+                '9',
+                'J',
+                'Q',
+                'K',
+                'A'
+            };
             if (turf == firstCardType && firstCardType != secondCardType)
             {
                 return 1;
@@ -25,6 +41,11 @@ public class PermainanKartu
          * 3H 9S
          * 
          * 1
+         * 
+         * C
+         * 7H AS
+         * 
+         * 2
          * 
          * Jenis truf: H (Hati) Kartu pertama: "3H", yang memiliki peringkat 3 dan jenis Hati. Kartu kedua: "9S", yang memiliki peringkat 9 dan jenis Sekop.
          * Kartu pertama adalah kartu truf karena jenisnya adalah Hati (H), yang merupakan jenis truf dan Kartu kedua adalah Sekop (S), yang bukan jenis truf.
