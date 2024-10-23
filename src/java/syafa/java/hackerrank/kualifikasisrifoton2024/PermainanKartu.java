@@ -16,6 +16,8 @@ public class PermainanKartu
          * Berdasarkan aturan permainan, kartu truf selalu menang melawan kartu non-truf, tidak peduli berapa peringkatnya.
          */
         Scanner input = new Scanner(System.in);
+        String turf = input.nextLine();
+        String[] match = input.nextLine().split(" ");
         input.close();
     }
 }
