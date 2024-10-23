@@ -7,33 +7,7 @@ public class SaveThePrisoner
     public static void main(String[] args)
     {
         /*
-         * 2
-         * 5 2 1
-         * 5 2 2
-         * 
-         * 2
-         * 3
-         * 
-         * 2
-         * 7 19 2
-         * 3 7 3
-         * 
-         * 6
-         * 3
-         * 
-         * n m s
-         * 4 6 2
-         * 
-         * 4 prisoner
-         * 6 candy
-         * 2 distributionStart
-         * 
-         * 1 2 3 4 5 6
-         * 2 3 4 1 2 3
-         * 
-         * print 3
-         * 
-         * iterate through from temp[2] if counter == temp[0] && counter != temp[1] counter = 1;
+         * TODO: Optimize the code
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
