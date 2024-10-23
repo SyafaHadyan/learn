@@ -6,6 +6,20 @@ public class BudiDanBuahnya
 {
     public static void main(String[] args)
     {
+        /*
+         * 5
+         * 1 1 1
+         * 1 2 1
+         * 4 1 1
+         * 8 5 8
+         * 9 4 5
+         * 
+         * 1
+         * 2
+         * 2
+         * 10
+         * 9
+         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] possibleDays = new int[testCase];
@@ -20,23 +34,20 @@ public class BudiDanBuahnya
                     fruit[0]--;
                     fruit[1]--;
                     counter++;
-                    continue;
                 }
-                else if (fruit[0] != 0 && fruit[2] != 0)
+                if (fruit[0] != 0 && fruit[2] != 0)
                 {
                     fruit[0]--;
                     fruit[2]--;
                     counter++;
-                    continue;
                 }
-                else if (fruit[1] != 0 && fruit[2] != 0)
+                if (fruit[1] != 0 && fruit[2] != 0)
                 {
                     fruit[1]--;
                     fruit[2]--;
                     counter++;
-                    continue;
                 }
-                else
+                else if (fruit[0] + fruit[1] + fruit[2] <= 1)
                 {
                     possibleDays[i] = counter;
                     counter = 0;
