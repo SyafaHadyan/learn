@@ -7,6 +7,7 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        /*Create ArrayList inside of ArrayList */
         ArrayList<ArrayList<Double>> inputData = new ArrayList<>();
         int option = 0;
         boolean repeat = true;
@@ -40,9 +41,19 @@ public class Praktikum0
                 switch (option)
                 {
                     case 1:
-                    inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
+                        /*
+                         * Clear existing values of inputData
+                         * Create new ArrayList
+                         * Put values of separated numbers (from string split by space)
+                         * Turn into double
+                         * Turn into list
+                         * Put values from new ArrayList to inputData
+                         */
+                        inputData.clear();
+                        inputData.add(new ArrayList<>(Arrays.asList(Stream.of(input.nextLine().split(" ")).mapToDouble(Double::parseDouble).boxed().toArray(Double[]::new))));
                         break;
-                
+                    case 2:
+
                     default:
                         repeat = true;
                 }
