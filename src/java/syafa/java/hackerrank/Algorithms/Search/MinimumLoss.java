@@ -36,17 +36,13 @@ public class MinimumLoss
         int lowestPrice = Integer.MAX_VALUE;
         for (int i = 0; i < housePrice.length; i++)
         {
-            /* try
+            for (int j = 0 + i; j < housePrice.length - i; j++) 
             {
-                if (Math.abs(housePrice[i] - housePrice[i + 1]) < lowestPrice)
+                if (Math.abs(housePrice[j]) - housePrice[j + 1] < lowestPrice)
                 {
-                    lowestPrice = Math.abs(housePrice[i] - housePrice[i + 1]);
+                    lowestPrice = Math.abs(housePrice[j] - housePrice[j + 1]);
                 }
             }
-            catch (IndexOutOfBoundsException e)
-            {
-                //
-            } */
         }
         System.out.print(lowestPrice);
     }
