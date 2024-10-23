@@ -9,10 +9,16 @@ public class TesKesigapanPrajurit
         Scanner input = new Scanner(System.in);
         int[] weapon = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        int counter = weapon[0] + weapon[2];
-        if (weapon[1] + weapon[3] > counter)
+        int counter = Integer.MIN_VALUE;
+        for (int i = 0; i < weapon.length; i++)
         {
-            counter = weapon[1] + weapon[3];
+            for (int j = 0 + i; j <= weapon.length - i; j++)
+            {
+                if ((weapon[i] + weapon[j + 2]) > counter)
+                {
+                    counter = weapon[i] + weapon[j + 2];
+                }
+            }
         }
         System.out.print(counter);
     }
