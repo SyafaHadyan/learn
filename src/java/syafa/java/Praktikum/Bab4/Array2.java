@@ -23,14 +23,14 @@ public class Array2
         {
             for (int j = 0; j < 3 ; j++)
             {
-                bank[i][j]= i * 0.5 + j * 0.25;
+                bank[i][j] = i * 0.5 + j * 0.25;
             }
         }
         for (int i = 0; i <= 1; i++)
         {
             for (int j = 0; j < 3 ; j++)
             { 
-                System.out.print(bank[i][j]+" ");
+                System.out.print(bank[i][j] + " ");
             }
         }
     }
