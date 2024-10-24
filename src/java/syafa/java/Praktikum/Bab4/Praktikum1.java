@@ -147,25 +147,25 @@ public class Praktikum1
                                 if (tempTicketType.equalsIgnoreCase("Ekonomi"))
                                 {
                                     ticketPrice.add(Integer.parseInt(data[1][0]));
-                                    discountedTicketPrice.add((Double.parseDouble(data[2][0]) * Double.parseDouble(data[1][0])) / 100);
+                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][0])) * Double.parseDouble(data[1][0])) / 100);
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Bisnis"))
                                 {
                                     ticketPrice.add(Integer.parseInt(data[1][1]));
-                                    discountedTicketPrice.add((Double.parseDouble(data[2][1]) * Double.parseDouble(data[1][1])) / 100);
+                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][1])) * Double.parseDouble(data[1][1])) / 100);
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
                                 {
                                     ticketPrice.add(Integer.parseInt(data[1][2]));
-                                    discountedTicketPrice.add((Double.parseDouble(data[2][2])* Double.parseDouble(data[1][2])) / 100);
+                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][2])) * Double.parseDouble(data[1][2])) / 100);
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
                                 {
                                     ticketPrice.add(Integer.parseInt(data[1][3]));
-                                    discountedTicketPrice.add((Double.parseDouble(data[2][3])* Double.parseDouble(data[1][3])) / 100);
+                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][3])) * Double.parseDouble(data[1][3])) / 100);
                                     tempValidTicketType = true;
                                 }
                                 else
