@@ -158,7 +158,7 @@ public class N11Array2D
 
 ### 12. Jalankan kelas Array3 dan benahi jika menemukan kesalahan
 
-A
+Tidak ada kesalahan
 
 ### 13. Jelaskan maksud dari statement baris ke-7
 
