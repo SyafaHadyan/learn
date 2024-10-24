@@ -193,10 +193,13 @@ public class Praktikum1
                         {
                             System.out.print('=');
                         }
-                        for (int i = 0; i < ((passengerName.size() + ticketPrice.size()) / 2); i++)
+                        for (int i = 0; i < ((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3); i++)
                         {
-                            System.out.println(passengerName.get(i));
-                            System.out.println(ticketPrice.get(i));
+                            System.out.printf("%-20s%-20d%-20.5f",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
+                            if (((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3) - i != 1)
+                            {
+                                System.out.print("\n");
+                            }
                         }
                         break;
                 }
