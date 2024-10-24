@@ -162,7 +162,7 @@ Tidak ada kesalahan
 
 ### 13. Jelaskan maksud dari statement baris ke-7
 
-A
+Pada baris ke 7, membuat array `Integer` `c[]` dengan panjang `pjg = 9`
 
 ### 14. Jelaskan perbedaan indeks array dan panjang array! Berikan contoh di kelas Array3
 
