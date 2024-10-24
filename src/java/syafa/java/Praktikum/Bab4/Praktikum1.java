@@ -196,7 +196,12 @@ public class Praktikum1
                         {
                             tempTotalDiscountedPriceSum += tempTotalDiscountedTicketPrice;
                         }
-                        System.out.printf("%-16s%-44d%.5f\n","Total penumpang",((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3),tempTotalDiscountedPriceSum);
+                        System.out.printf
+                        (
+                            "%-16s%-44d%.5f\n","Total penumpang",
+                            ((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3),
+                            tempTotalDiscountedPriceSum
+                        );
                         break;
                 }
             }
