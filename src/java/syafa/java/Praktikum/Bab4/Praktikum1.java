@@ -34,6 +34,7 @@ public class Praktikum1
         };
         ArrayList<String> passengerName = new ArrayList<>();
         ArrayList<Integer> ticketPrice = new ArrayList<>();
+        ArrayList<Double> discountedTicketPrice = new ArrayList<>();
         while (repeat)
         {
             repeat = false;
@@ -142,6 +143,8 @@ public class Praktikum1
                              * 
                              * Add ticket type
                              * Add discount
+                             * {"50000", "100000", "200000", "300000"},
+                             * {"2", "5", "7", "10"},
                              */
                             passengerName.add(input.nextLine());
                             boolean tempValidTicketType = false;
@@ -150,7 +153,8 @@ public class Praktikum1
                                 String tempTicketType = input.nextLine();
                                 if (tempTicketType.equalsIgnoreCase("Ekonomi"))
                                 {
-                                    ticketPrice.add(50000);
+                                    ticketPrice.add(Integer.parseInt(data[1][0]));
+                                    discountedTicketPrice.add(Double.parseDouble(data[2][0]) / 100 * Double.parseDouble(data[1][0]));
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Bisnis"))
