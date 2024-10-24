@@ -6,7 +6,7 @@ public class Praktikum0
 {
     static class sortArray
     {
-        public static int[] bubbleSort(int[] array)
+        public static int[] bubbleSort(ArrayList<String> arrayString)
         {
             /*
              * let arr = [4, 2, 6, 3, 9];
@@ -24,14 +24,20 @@ public class Praktikum0
              * }
              * 
              */
+            /*
+             * TODO
+             * 
+             * Method to convert to int or double
+             */
             boolean sorted = false;
+            double[] array = sortArray.convertArrayDouble(arrayString);
             while (!sorted)
             {
                 for (int i = 0; i < array.length; i++)
                 {
                     if (array[i] < array[i - 1])
                     {
-                        int tempStore = array[i];
+                        double tempStore = array[i];
                         array[i] = array[i - 1];
                         array[i - 1] = tempStore;
                         sorted = false;
@@ -39,6 +45,15 @@ public class Praktikum0
                 }
             }
             return array;
+        }
+        public static double[] convertArrayDouble(ArrayList<String> arrayString)
+        {
+            double[] convertedArray = new double[arrayString.size()];
+            for (int i = 0; i < convertedArray.length; i++)
+            {
+                convertedArray[i] = Double.parseDouble(arrayString.get(i));
+            }
+            return convertedArray;
         }
     }
     public static void main(String[] args)
