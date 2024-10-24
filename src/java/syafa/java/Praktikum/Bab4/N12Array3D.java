@@ -9,9 +9,9 @@ public class N12Array3D
         int pjg; 
         pjg = Math.max(a.length,b.length); 
         int c[] = new int[pjg];
-        for (int i=0; i<pjg; i++)
+        for (int i = 0; i < pjg; i++)
         { 
-            if( a.length < i + 1)
+            if(a.length < i + 1)
                 c[i] = b[i];
             else if(b.length < i + 1) 
                 c[i] = a[i];
