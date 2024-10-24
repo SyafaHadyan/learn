@@ -6,7 +6,7 @@ public class N13Array3D
     {
         int a[] = {2,7,6,8,1};
         int b[] = {3,4,2,8,9,7,2,7,5};
-        int pjg; 
+        int pjg;
         pjg = Math.max(a.length,b.length); 
         int c[] = new int[pjg];
         for (int i = 0; i < pjg; i++)
