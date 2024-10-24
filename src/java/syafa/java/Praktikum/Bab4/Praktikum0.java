@@ -24,6 +24,15 @@ public class Praktikum0
              * }
              * 
              */
+            for (int i = 0; i < array.length; i++)
+            {
+                if (array[i] < array[i - 1])
+                {
+                    int tempStore = array[i];
+                    array[i] = array[i - 1];
+                    array[i - 1] = tempStore;
+                }
+            }
             return array;
         }
     }
