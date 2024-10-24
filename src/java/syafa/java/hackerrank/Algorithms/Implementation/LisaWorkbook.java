@@ -36,6 +36,10 @@ public class LisaWorkbook
                     currentChapter++;
                     currentPageProblem = 0;
                 }
+                if (currentChapter == book[0])
+                {
+                    break;
+                }
             }
             catch (IndexOutOfBoundsException e)
             {
