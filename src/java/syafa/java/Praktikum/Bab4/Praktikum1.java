@@ -139,23 +139,21 @@ public class Praktikum1
                         {
                             passengerName.add(input.nextLine());
                             String tempTicketType = input.nextLine();
-                            switch (tempTicketType)
+                            if (tempTicketType.equalsIgnoreCase("Ekonomi"))
                             {
-                                case tempTicketType.equalsIgnoreCase("Ekonomi"):
-                                    ticketPrice.add(50000);
-                                    break;
-                                case "Bisnis":
-                                    ticketPrice.add(100000);
-                                    break;
-                                case "Eksekutif":
-                                    ticketPrice.add(200000);
-                                    break;
-                                case "Pariwisata":
-                                    ticketPrice.add(300000);
-                                    break;
-                                default:
-                                    ticketPrice.add(0);
-                                    break;
+                                //
+                            }
+                            else if (tempTicketType.equalsIgnoreCase("Bisnis"))
+                            {
+                                //
+                            }
+                            else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
+                            {
+                                //
+                            }
+                            else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
+                            {
+                                //
                             }
                         }
                         break;
