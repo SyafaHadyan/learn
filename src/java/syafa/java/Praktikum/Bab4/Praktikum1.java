@@ -1,6 +1,5 @@
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
-import java.util.stream.*;
 
 public class Praktikum1
 {
