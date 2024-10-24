@@ -162,7 +162,7 @@ Tidak ada kesalahan
 
 ### 13. Jelaskan maksud dari statement baris ke-7
 
-Pada baris ke 7, membuat array `Integer` `c[]` dengan panjang `pjg = 9`
+Pada baris ke 7, membuat array `Integer` `c[]` dengan panjang `pjg = 9` karena hasil dari `Math.max(a.length,b.length)` adalah 9 (panjang dari array `b[]`).
 
 ### 14. Jelaskan perbedaan indeks array dan panjang array! Berikan contoh di kelas Array3
 
