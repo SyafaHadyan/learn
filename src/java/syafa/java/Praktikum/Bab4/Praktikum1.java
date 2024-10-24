@@ -135,7 +135,8 @@ public class Praktikum1
                         int ticketAmount = Integer.parseInt(input.nextLine());
                         for (int i = 0; i < ticketAmount; i++)
                         {
-                            //
+                            System.out.printf("\n%s%\n%s","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh: Dengklek Pariwisata");
+                            String tempPassengerTicketBook = input.nextLine();
                         }
                         break;
                     case 5:
