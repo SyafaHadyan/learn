@@ -142,6 +142,7 @@ public class Praktikum1
                              * 
                              * Add ticket type
                              * Add user prompt if ticket type is not valid
+                             * Add discount
                              */
                             passengerName.add(input.nextLine());
                             boolean tempValidTicketType = false;
