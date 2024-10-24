@@ -1,7 +1,7 @@
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
 
-public class Array2
+public class N07Array2D
 {
     @SuppressWarnings("unused")
     public static void main(String args[])

@@ -34,4 +34,8 @@ Pada saat kode akan mengakses elemen ke 10, Java akan `throw` [`IndexOutOfBounds
 
 ## Array 2D
 
-a
+### 7. Jalankan kelas Array2 dan benahi jika menemukan kesalahan
+
+Tidak ada kesalahan
+
+### 8. Pada baris 5, syntax `int[][] coba` diganti `int coba[][]` amati yang terjadi dan jelaskan
