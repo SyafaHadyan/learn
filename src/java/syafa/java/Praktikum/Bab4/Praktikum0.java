@@ -60,12 +60,24 @@ public class Praktikum0
                         System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleAverage).sum() / tempDoubleAverage.length));
                         break;
                     case 4:
-                        double[] tempDoubleSum = new double[data.size()];
-                        for (int i = 0; i < data.size(); i++)
+                        try
                         {
-                            tempDoubleSum[i] = Double.parseDouble(data.get(i));
+                            int[] tempIntegersum = new int[data.size()];
+                            for (int i = 0; i < data.size(); i++)
+                            {
+                                tempIntegersum[i] = Integer.parseInt(data.get(i));
+                            }
+                            System.out.printf("\n%.5f\n\n",(IntStream.of(tempIntegersum).sum()));
                         }
-                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
+                        catch (NumberFormatException e)
+                        {
+                            double[] tempDoubleSum = new double[data.size()];
+                            for (int i = 0; i < data.size(); i++)
+                            {
+                                tempDoubleSum[i] = Double.parseDouble(data.get(i));
+                            }
+                            System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
+                        }
                         break;
                     case 5:
                         Collections.sort(data);
