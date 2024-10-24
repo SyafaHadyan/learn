@@ -141,7 +141,6 @@ public class Praktikum1
                              * TODO
                              * 
                              * Add ticket type
-                             * Add user prompt if ticket type is not valid
                              * Add discount
                              */
                             passengerName.add(input.nextLine());
