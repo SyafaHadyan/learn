@@ -165,7 +165,8 @@ public class Praktikum1
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
                                 {
-                                    ticketPrice.add(200000);
+                                    ticketPrice.add(Integer.parseInt(data[1][2]));
+                                    discountedTicketPrice.add((Double.parseDouble(data[2][2]) / 100) * Double.parseDouble(data[1][2]));
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
