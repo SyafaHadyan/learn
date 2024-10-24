@@ -37,7 +37,7 @@ public class N10Array2D
             }
         }
         System.out.println("\nCara manual");
-        System.out.println(nilaiRata2 / (bank[0].length+ bank[1].length));
+        System.out.println(nilaiRata2 / (bank[0].length + bank[1].length));
         System.out.println("Cara lain");
         System.out.print(((DoubleStream.of(bank[0]).sum() + DoubleStream.of(bank[1]).sum()) / ((bank[0].length + bank[1].length))));
     }
