@@ -398,31 +398,19 @@ public class Praktikum1
                             while (!tempValidTicketType)
                             {
                                 String tempTicketType = input.nextLine();
-                                if (tempTicketType.equalsIgnoreCase("Ekonomi"))
+                                for (int j = 0; j < data[0].length; j++)
                                 {
-                                    ticketPrice.add(Integer.parseInt(data[1][0]));
-                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][0])) * Double.parseDouble(data[1][0])) / 100);
-                                    tempValidTicketType = true;
+                                    if (tempTicketType.equalsIgnoreCase(data[0][j]))
+                                    {
+                                        {
+                                            ticketPrice.add(Integer.parseInt(data[1][j]));
+                                            discountedTicketPrice.add(((100 - Double.parseDouble(data[2][j])) * Double.parseDouble(data[1][j])) / 100);
+                                            tempValidTicketType = true;
+                                            break;
+                                        }
+                                    }
                                 }
-                                else if (tempTicketType.equalsIgnoreCase("Bisnis"))
-                                {
-                                    ticketPrice.add(Integer.parseInt(data[1][1]));
-                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][1])) * Double.parseDouble(data[1][1])) / 100);
-                                    tempValidTicketType = true;
-                                }
-                                else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
-                                {
-                                    ticketPrice.add(Integer.parseInt(data[1][2]));
-                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][2])) * Double.parseDouble(data[1][2])) / 100);
-                                    tempValidTicketType = true;
-                                }
-                                else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
-                                {
-                                    ticketPrice.add(Integer.parseInt(data[1][3]));
-                                    discountedTicketPrice.add(((100 - Double.parseDouble(data[2][3])) * Double.parseDouble(data[1][3])) / 100);
-                                    tempValidTicketType = true;
-                                }
-                                else
+                                if (!tempValidTicketType)
                                 {
                                     System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName.getLast());
                                 }
