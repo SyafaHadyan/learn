@@ -141,19 +141,19 @@ public class Praktikum1
                             String tempTicketType = input.nextLine();
                             if (tempTicketType.equalsIgnoreCase("Ekonomi"))
                             {
-                                //
+                                ticketPrice.add(50000);
                             }
                             else if (tempTicketType.equalsIgnoreCase("Bisnis"))
                             {
-                                //
+                                ticketPrice.add(100000);
                             }
                             else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
                             {
-                                //
+                                ticketPrice.add(200000);
                             }
                             else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
                             {
-                                //
+                                ticketPrice.add(300000);
                             }
                         }
                         break;
