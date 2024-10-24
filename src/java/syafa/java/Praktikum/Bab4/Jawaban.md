@@ -39,3 +39,5 @@ Pada saat kode akan mengakses elemen ke 10, Java akan `throw` [`IndexOutOfBounds
 Tidak ada kesalahan
 
 ### 8. Pada baris 5, syntax `int[][] coba` diganti `int coba[][]` amati yang terjadi dan jelaskan
+
+Tidak ada yang berubah karena keduanya sama
