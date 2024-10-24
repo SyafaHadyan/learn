@@ -169,6 +169,10 @@ public class Praktikum1
                                     ticketPrice.add(300000);
                                     tempValidTicketType = true;
                                 }
+                                else
+                                {
+                                    System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName.getLast());
+                                }
                             }
                         }
                         break;
