@@ -234,6 +234,12 @@ public class N13Array3D
 
 ### Praktikum 2
 
+#### Penjelasan Praktikum 2
+
+Kode inisialisasi `int option` dan inisialisasi `boolean repeat` ke `true` untuk nanti digunakan di pilihan menu, `String[] tableHeader` untuk print header table saat pilihan 1, 2,dan 3. `String[][] data` yang berisi data dari tabel. `String[] menu` untuk print pilihan nanti di awal. `ArrayList String passengerName`, `Integer ticketPrice`, dan `Double discountedTicketPrice` yang digunakan nanti saat user memesan tiket karena jumlah penumpang yang masih belum diketahui.
+
+#### Kode Praktikukm 2
+
 ```java
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
