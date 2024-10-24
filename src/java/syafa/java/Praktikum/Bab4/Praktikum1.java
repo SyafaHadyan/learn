@@ -18,11 +18,11 @@ public class Praktikum1
         };
         String[][] data =
         {
-            {"Ekonomi", "Bisnis", "Eksekutif", "Pariwisata"},
-            {"50000", "100000", "200000", "300000"},
-            {"2", "5", "7", "10"},
-            {"Tidak ada", "Ada", "Ada", "Ada"},
-            {"Tidak ada", "Tidak ada", "Tidak ada", "Ada"}
+            {"Ekonomi","Bisnis","Eksekutif","Pariwisata"},
+            {"50000","100000","200000","300000"},
+            {"2","5","7","10"},
+            {"Tidak ada","Ada","Ada","Ada"},
+            {"Tidak ada","Tidak ada","Tidak ada","Ada"}
         };
         String[] menu =
         {
