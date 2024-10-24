@@ -188,6 +188,7 @@ public class Praktikum1
                             System.out.println("Anda belum memesan tiket");
                             break;
                         }
+                        System.out.printf("%-20s%-20s%s\n","Nama Penumpang","Harga Tiket","Harga Setelah Diskon");
                         for (int i = 0; i < ((passengerName.size() + ticketPrice.size()) / 2); i++)
                         {
                             System.out.println(passengerName.get(i));
