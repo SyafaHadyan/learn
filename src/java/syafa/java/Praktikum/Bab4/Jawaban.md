@@ -46,7 +46,7 @@ Tidak ada yang berubah karena keduanya sama
 
 Kode akan error karena array menjadi 1D dan error pada `for` ke 2 karena tidak bisa convert `double` ke `float` kecuali cast jadi `float`.
 
-### 10
+### 10. Tambahkan variabel dengan nama `nilaiRata2` yang bertipe data double dan diberi nilai awal 0 kemudian carilah nilai rata – rata dari array coba dan dicetak di akhir program
 
 ```java
 package syafa.java.Praktikum.Bab4;
@@ -95,7 +95,7 @@ public class N10Array2D
 }
 ```
 
-### 11
+### 11. Tambahkan variabel dengan nama `nilaiMax` dan `nilaiMin` yang bertipe data `double` kemudian lakukan pencarian nilai minimal dan maksimal dari array `bank` lalu cetaklah di akhir program
 
 ```java
 package syafa.java.Praktikum.Bab4;
