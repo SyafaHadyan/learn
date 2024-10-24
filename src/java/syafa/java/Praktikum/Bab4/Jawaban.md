@@ -44,4 +44,4 @@ Tidak ada yang berubah karena keduanya sama
 
 ### 9. Pada baris 6, syntax `double[][] bank` diganti `float bank[]` dan amati apa yang terjadi, jelaskan
 
-Kode akan error karena array menjadi 1D dan error pada `for` ke 2 karena tidak bisa convert `double` ke `float`.
+Kode akan error karena array menjadi 1D dan error pada `for` ke 2 karena tidak bisa convert `double` ke `float` kecuali cast jadi `float`.
