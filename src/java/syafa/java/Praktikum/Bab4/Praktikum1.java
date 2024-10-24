@@ -138,22 +138,30 @@ public class Praktikum1
                         for (int i = 0; i < ticketAmount; i++)
                         {
                             passengerName.add(input.nextLine());
-                            String tempTicketType = input.nextLine();
-                            if (tempTicketType.equalsIgnoreCase("Ekonomi"))
+                            boolean tempValidTicketType = false;
+                            while (!tempValidTicketType)
                             {
-                                ticketPrice.add(50000);
-                            }
-                            else if (tempTicketType.equalsIgnoreCase("Bisnis"))
-                            {
-                                ticketPrice.add(100000);
-                            }
-                            else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
-                            {
-                                ticketPrice.add(200000);
-                            }
-                            else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
-                            {
-                                ticketPrice.add(300000);
+                                String tempTicketType = input.nextLine();
+                                if (tempTicketType.equalsIgnoreCase("Ekonomi"))
+                                {
+                                    ticketPrice.add(50000);
+                                    tempValidTicketType = true;
+                                }
+                                else if (tempTicketType.equalsIgnoreCase("Bisnis"))
+                                {
+                                    ticketPrice.add(100000);
+                                    tempValidTicketType = true;
+                                }
+                                else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
+                                {
+                                    ticketPrice.add(200000);
+                                    tempValidTicketType = true;
+                                }
+                                else if (tempTicketType.equalsIgnoreCase("Pariwisata"))
+                                {
+                                    ticketPrice.add(300000);
+                                    tempValidTicketType = true;
+                                }
                             }
                         }
                         break;
