@@ -1,5 +1,6 @@
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
+import java.util.stream.*;
 
 public class Praktikum1
 {
@@ -138,14 +139,6 @@ public class Praktikum1
                         System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata");
                         for (int i = 0; i < ticketAmount; i++)
                         {
-                            /*
-                             * TODO
-                             * 
-                             * Add ticket type
-                             * Add discount
-                             * {"50000", "100000", "200000", "300000"},
-                             * {"2", "5", "7", "10"},
-                             */
                             passengerName.add(input.nextLine());
                             boolean tempValidTicketType = false;
                             while (!tempValidTicketType)
@@ -188,9 +181,6 @@ public class Praktikum1
                             System.out.println("Anda belum memesan tiket");
                             break;
                         }
-                        /*
-                         * Nama Penumpang                          Harga Tiket         Harga Setelah Diskon
-                         */
                         System.out.printf("%-40s%-20s%s\n","Nama Penumpang","Harga Tiket","Harga Setelah Diskon");
                         for (int i = 0; i < 80; i++)
                         {
@@ -201,6 +191,9 @@ public class Praktikum1
                         {
                             System.out.printf("%-40s%-20d%-20.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
                         }
+                        double tempTotalDiscountedPriceSum = 0d;
+                        for (double tempTotalDiscountedTicketPrice : discountedTicketPrice) tempTotalDiscountedPriceSum += tempTotalDiscountedTicketPrice;
+                        System.out.printf("%-60s%d%s%.5f\n","Total penumpang",((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3),"Total tiket",tempTotalDiscountedPriceSum);
                         break;
                 }
             }
