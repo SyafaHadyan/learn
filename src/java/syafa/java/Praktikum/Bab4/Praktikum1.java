@@ -131,7 +131,12 @@ public class Praktikum1
                         }
                         break;
                     case 4:
-                        //
+                        System.out.printf("%-40s%-2c","Masukkan jumlah tiket yang akan dipesan",':');
+                        int ticketAmount = Integer.parseInt(input.nextLine());
+                        for (int i = 0; i < ticketAmount; i++)
+                        {
+                            //
+                        }
                         break;
                     case 5:
                         //
