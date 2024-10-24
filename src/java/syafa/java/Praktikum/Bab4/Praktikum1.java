@@ -88,7 +88,7 @@ public class Praktikum1
                     case 2:
                         for (int i = 0; i < 2; i++)
                         {
-                            System.out.printf("%-20s",(i == 0 ? "Jenis" : "AC"));
+                            System.out.printf("%-20s",(i == 0 ? tableHeader[0] : tableHeader[3]));
                         }
                         System.out.print("\n");
                         for (int i = 0; i < 36; i++)
@@ -111,7 +111,7 @@ public class Praktikum1
                     case 3:
                         for (int i = 0; i < 2; i++)
                         {
-                            System.out.printf("%-20s",(i == 0 ? "Jenis" : "Colokan"));
+                            System.out.printf("%-20s",(i == 0 ? tableHeader[0] : tableHeader[4]));
                         }
                         System.out.print("\n");
                         for (int i = 0; i < 36; i++)
