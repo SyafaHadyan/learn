@@ -26,6 +26,7 @@ public class N10Array2D
             for (int j = 0; j < 3 ; j++)
             {
                 bank[i][j] = i * 0.5 + j * 0.25;
+                nilaiRata2 += i * 0.5 + j * 0.25;
             }
         }
         for (int i = 0; i <= 1; i++)
@@ -35,6 +36,9 @@ public class N10Array2D
                 System.out.print(bank[i][j] + " ");
             }
         }
-        System.out.print("\n" + ((DoubleStream.of(bank[0]).sum() + DoubleStream.of(bank[1]).sum()) / ((bank[0].length + bank[1].length) / 2)));
+        System.out.println("\nCara manual");
+        System.out.println(nilaiRata2 / (bank[0].length+ bank[1].length));
+        System.out.println("Cara lain");
+        System.out.printf("%.3f",((DoubleStream.of(bank[0]).sum() + DoubleStream.of(bank[1]).sum()) / ((bank[0].length + bank[1].length))));
     }
 }
