@@ -106,7 +106,29 @@ public class Praktikum1
                             }
                         }
                         break;
-
+                    case 3:
+                        for (int i = 0; i < 2; i++)
+                        {
+                            System.out.printf("%-20s",(i == 0 ? "Jenis" : "Colokan"));
+                        }
+                        System.out.print("\n");
+                        for (int i = 0; i < 36; i++)
+                        {
+                            System.out.print('=');
+                        }
+                        System.out.print("\n");
+                        for (int i = 0; i < data[0].length; i++)
+                        {
+                            for (int j = 0; j < 5; j += 4)
+                            {
+                                System.out.printf("%-20s",data[j][i]);
+                            }
+                            if (data.length - i != 1)
+                            {
+                                System.out.print("\n");
+                            }
+                        }
+                        break;
                     
                 }
             }
