@@ -65,7 +65,7 @@ public class Praktikum0
                         {
                             tempDoubleSum[i] = Double.parseDouble(data.get(i));
                         }
-                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum() / tempDoubleSum.length));
+                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
                         break;
                     case 5:
                         Collections.sort(data);
