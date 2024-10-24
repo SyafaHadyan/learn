@@ -32,6 +32,7 @@ public class Praktikum1
             "Memesan Tikat Kereta Api",
             "Melihat Pesanan Tiket"
         };
+        ArrayList<String> ticketBook = new ArrayList<>();
         while (repeat)
         {
             repeat = false;
@@ -129,7 +130,12 @@ public class Praktikum1
                             }
                         }
                         break;
-                    
+                    case 4:
+                        //
+                        break;
+                    case 5:
+                        //
+                        break;
                 }
             }
             else if (option == 0)
