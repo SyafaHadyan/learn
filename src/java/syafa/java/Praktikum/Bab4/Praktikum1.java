@@ -32,7 +32,8 @@ public class Praktikum1
             "Memesan Tikat Kereta Api",
             "Melihat Pesanan Tiket"
         };
-        ArrayList<String> ticketBook = new ArrayList<>();
+        ArrayList<String> passengerName = new ArrayList<>(Arrays.asList("Anda belum memesan tiket"));
+        ArrayList<Integer> ticketPrice = new ArrayList<>(Arrays.asList(0));
         while (repeat)
         {
             repeat = false;
