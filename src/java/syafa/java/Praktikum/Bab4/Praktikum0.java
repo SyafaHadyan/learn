@@ -4,6 +4,13 @@ import java.util.stream.*;
 
 public class Praktikum0
 {
+    static class sortArray
+    {
+        public static int[] bubbleSort(int[] array)
+        {
+            return array;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -80,7 +87,6 @@ public class Praktikum0
                         }
                         break;
                     case 5:
-                        Collections.sort(data);
                         try
                         {
                             System.out.printf("\n%d\n\n",Integer.parseInt(data.get(data.size() - 1)));
@@ -91,7 +97,6 @@ public class Praktikum0
                         }
                         break;
                     case 6:
-                        Collections.sort(data);
                         try
                         {
                             System.out.printf("\n%d\n\n",Integer.parseInt(data.get(0)));
