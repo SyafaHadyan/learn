@@ -188,15 +188,18 @@ public class Praktikum1
                             System.out.println("Anda belum memesan tiket");
                             break;
                         }
-                        System.out.printf("%-20s%-20s%s\n","Nama Penumpang","Harga Tiket","Harga Setelah Diskon");
-                        for (int i = 0; i < 54; i++)
+                        /*
+                         * Nama Penumpang                          Harga Tiket         Harga Setelah Diskon
+                         */
+                        System.out.printf("%-40s%-20s%s\n","Nama Penumpang","Harga Tiket","Harga Setelah Diskon");
+                        for (int i = 0; i < 80; i++)
                         {
                             System.out.print('=');
                         }
                         System.out.print("\n");
                         for (int i = 0; i < ((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3); i++)
                         {
-                            System.out.printf("%-20s%-20d%-20.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
+                            System.out.printf("%-40s%-20d%-20.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
                         }
                         break;
                 }
