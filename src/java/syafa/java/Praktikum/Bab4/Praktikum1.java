@@ -74,7 +74,7 @@ public class Praktikum1
                         {
                             for (int j = 0; j < data.length; j++)
                             {
-                                System.out.printf("%-20s",data[j][i]);
+                                System.out.printf("%-20s", j == 2 ? String.valueOf((data[j][i]) + " %") : data[j][i]);
                                 if (data.length - j != 1)
                                 {
                                     continue;
