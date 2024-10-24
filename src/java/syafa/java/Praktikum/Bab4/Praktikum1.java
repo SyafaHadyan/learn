@@ -140,11 +140,6 @@ public class Praktikum1
                             boolean tempValidTicketType = false;
                             while (!tempValidTicketType)
                             {
-                                /*
-                                 * TODO
-                                 * 
-                                 * For-i
-                                 */
                                 String tempTicketType = input.nextLine();
                                 for (int j = 0; j < data[0].length; j++)
                                 {
