@@ -154,12 +154,13 @@ public class Praktikum1
                                 if (tempTicketType.equalsIgnoreCase("Ekonomi"))
                                 {
                                     ticketPrice.add(Integer.parseInt(data[1][0]));
-                                    discountedTicketPrice.add(Double.parseDouble(data[2][0]) / 100 * Double.parseDouble(data[1][0]));
+                                    discountedTicketPrice.add((Double.parseDouble(data[2][0]) / 100) * Double.parseDouble(data[1][0]));
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Bisnis"))
                                 {
-                                    ticketPrice.add(100000);
+                                    ticketPrice.add(Integer.parseInt(data[1][1]));
+                                    discountedTicketPrice.add((Double.parseDouble(data[2][1]) / 100) * Double.parseDouble(data[1][1]));
                                     tempValidTicketType = true;
                                 }
                                 else if (tempTicketType.equalsIgnoreCase("Eksekutif"))
