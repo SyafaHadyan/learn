@@ -248,6 +248,8 @@ Jika pilihan 2, maka print hanya daftar kereta api yang ada ACnya termasuk heade
 
 Pilihan 3 sama seperti pilihan 2 tetapi yang membedakan adalah `increment` `j` sebanyak 4 untuk mendapatkan data dari kelas kereta yang memiliki colokan.
 
+Pilihan 4 print untuk meminta user memasukkan jumlah tiket yang akan dipesan yang disimpan di `ticketAmount` kemudian minta user memasukkan nama (nama akan langsung dimasukkan ke dalam `ArrayList`) dan jenis tiket kereta yang akan dipesan, jika jenis tiket yang dipesan tidak sesuai dengan daftar, maka user akan diminta lagi untuk memasukkan lagi input yang diminta + nama penumpang yang sedang diinput, contoh, Dengklek `Enter` pariwis `Enter` pariwis tidak masuk di pilhan manaput, jadi print unutk meminta user memasukkan kembali jenis tiket yang akan dipesan + nama penumpang yang memesan tiket saat ini (`tempValidTicketPrice = false`) di dalam setiap if, akan dihitung tiket sebelum dan setelah diskon yang dimasukkan di `ArrayList`.
+
 #### Kode Praktikukm 2
 
 ```java
