@@ -142,7 +142,11 @@ public class Praktikum1
                         }
                         break;
                     case 5:
-                        //
+                        for (int i = 0; i < ((passengerName.size() + ticketPrice.size()) / 2); i++)
+                        {
+                            System.out.println(passengerName.get(i));
+                            System.out.println(ticketPrice.get(i));
+                        }
                         break;
                 }
             }
