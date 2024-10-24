@@ -166,7 +166,7 @@ Pada baris ke 7, membuat array `Integer` `c[]` dengan panjang `pjg = 9` karena h
 
 ### 14. Jelaskan perbedaan indeks array dan panjang array! Berikan contoh di kelas Array3
 
-A
+Panjang array `namaArray.length` adalah banyak elemen di array `namaArray[]` (jika elemennya `1,2,3,4,5`, maka `namaArray.length` = 5). Sedangkan indeks array adalah penomoran array yang dimulai dari 0. Contoh `int a[] = {2,7,6,8,1};` nilai indeks ke 0 adalah `2`, sedangkan nilai indeks ke 4 adalah `1`
 
 ### 15. Tambahkan variabel dengan nama jumlahGenap dan jumlahGanjil yang bertipe data integer kemudian lakukan penambahan untuk bilangan genap dan ganjil
 
