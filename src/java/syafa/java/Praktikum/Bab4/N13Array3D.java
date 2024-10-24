@@ -1,6 +1,6 @@
 package syafa.java.Praktikum.Bab4;
 
-public class N12Array3D
+public class N13Array3D
 {
     public static void main(String args[])
     {
