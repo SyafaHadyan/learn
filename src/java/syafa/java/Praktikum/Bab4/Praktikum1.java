@@ -32,8 +32,8 @@ public class Praktikum1
             "Memesan Tikat Kereta Api",
             "Melihat Pesanan Tiket"
         };
-        ArrayList<String> passengerName = new ArrayList<>(Arrays.asList("Anda belum memesan tiket"));
-        ArrayList<Integer> ticketPrice = new ArrayList<>(Arrays.asList(0));
+        ArrayList<String> passengerName = new ArrayList<>();
+        ArrayList<Integer> ticketPrice = new ArrayList<>();
         while (repeat)
         {
             repeat = false;
@@ -166,6 +166,11 @@ public class Praktikum1
                         }
                         break;
                     case 5:
+                        if (passengerName.size() == 0 && ticketPrice.size() == 0)
+                        {
+                            System.out.println("Anda belum memesan tiket");
+                            break;
+                        }
                         for (int i = 0; i < ((passengerName.size() + ticketPrice.size()) / 2); i++)
                         {
                             System.out.println(passengerName.get(i));
