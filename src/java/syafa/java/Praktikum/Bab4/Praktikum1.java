@@ -158,6 +158,10 @@ public class Praktikum1
                                         }
                                     }
                                 }
+                                if (!tempValidTicketType)
+                                {
+                                    System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName.getLast());
+                                }
                             }
                         }
                         break;
