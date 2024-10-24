@@ -244,6 +244,8 @@ Jika pilihan 1 hingga 5, akan masuk ke `switch case`. Jika pilihan 1, maka print
 
 Jika pilihan 2, maka print hanya daftar kereta api yang ada ACnya termasuk header dari tabel, jika `i = 0`, print header tabel jenis, jika tidak, print tabel header AC, kemudian masuk ke `for loop` pembatas `=` sebanyak 36 kali kemudian masuk `for loop` yang terluar untuk print ke bawah, dan yang dalam untuk print menyamping, `for loop` yang di dalam `increment` nilai `j` sebanyak sampai nilai `j = 4` karena untuk mendapatkan elemen ke 3 dari `data[][]` yaitu AC kemudian print newline jika sudah 2 kali menyamping.
 
+Pilihan 3 sama seperti pilihan 2 tetapi yang membedakan adalah `increment` `j` sebanyak 4 untuk mendapatkan data dari kelas kereta yang memiliki colokan.
+
 #### Kode Praktikukm 2
 
 ```java
