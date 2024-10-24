@@ -133,9 +133,9 @@ public class Praktikum1
                     case 4:
                         System.out.printf("%-40s%-2c","Masukkan jumlah tiket yang akan dipesan",':');
                         int ticketAmount = Integer.parseInt(input.nextLine());
+                        System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata");
                         for (int i = 0; i < ticketAmount; i++)
                         {
-                            System.out.printf("\n%s%\n%s","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh: Dengklek\nPariwisata");
                             String tempPassengerName = input.nextLine();
                             String tempPassengerTicketBook = input.nextLine();
                         }
