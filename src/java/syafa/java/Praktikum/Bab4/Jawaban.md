@@ -240,6 +240,8 @@ Kode inisialisasi `int option` dan inisialisasi `boolean repeat` ke `true` untuk
 
 Masuk ke `while repeat` kemudian `for loop` print setiap pilihan menu yang diawali nomor (dari 1), dan di saat iterasi terakhir (`i = 4`), akan print opsi keluar (0) dan meminta user untuk memasukkan nilai piliihan. Jika pilihan adalah 1 hingga 5, akan masuk ke menu pilihan, jika 0, program akan keluar dengan `System.exit(0)` Selain dari itu, program akan repeat daftar menu lagi.
 
+Jika pilihan 1 hingga 5, akan masuk ke `switch case`. Jika pilihan 1, maka print seluruh isi tabel termasuk headernya dan program akan print menu lagi untuk user memilih pilihan opsi.
+
 #### Kode Praktikukm 2
 
 ```java
