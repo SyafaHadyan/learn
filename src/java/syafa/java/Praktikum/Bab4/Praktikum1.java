@@ -189,6 +189,10 @@ public class Praktikum1
                             break;
                         }
                         System.out.printf("%-20s%-20s%s\n","Nama Penumpang","Harga Tiket","Harga Setelah Diskon");
+                        for (int i = 0; i < 54; i++)
+                        {
+                            System.out.print('=');
+                        }
                         for (int i = 0; i < ((passengerName.size() + ticketPrice.size()) / 2); i++)
                         {
                             System.out.println(passengerName.get(i));
