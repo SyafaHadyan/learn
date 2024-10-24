@@ -10,7 +10,7 @@ public class N09Array2D
         in.close(); 
         String nama[] = new String[10];
         int[][] coba = {{1,2,3}, {4,5,6}, {7,8,9}, {10,11,12}};
-        float [] bank = new double [2][3];
+        float [][] bank = new float [2][3];
         System.out.println(" i  j coba[i][j]");
         for (int i = 0; i < 4; i++)
         {
@@ -23,7 +23,7 @@ public class N09Array2D
         {
             for (int j = 0; j < 3 ; j++)
             {
-                bank[i][j] = i * 0.5 + j * 0.25;
+                bank[i][j] = (float)(i * 0.5 + j * 0.25);
             }
         }
         for (int i = 0; i <= 1; i++)
