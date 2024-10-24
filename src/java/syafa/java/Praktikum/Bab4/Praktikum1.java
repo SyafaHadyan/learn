@@ -137,6 +137,12 @@ public class Praktikum1
                         System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata");
                         for (int i = 0; i < ticketAmount; i++)
                         {
+                            /*
+                             * TODO
+                             * 
+                             * Add ticket type
+                             * Add user prompt if ticket type is not valid
+                             */
                             passengerName.add(input.nextLine());
                             boolean tempValidTicketType = false;
                             while (!tempValidTicketType)
