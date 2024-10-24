@@ -8,6 +8,22 @@ public class Praktikum0
     {
         public static int[] bubbleSort(int[] array)
         {
+            /*
+             * let arr = [4, 2, 6, 3, 9];
+             * let sorted = false
+             * while(!sorted) {
+             *   sorted = true
+             *   for(var i = 0; i < arr.length; i++) {
+             *     if(arr[i] < arr[i - 1]) {
+             *       let temp = arr[i];
+             *       arr[i] = arr[i - 1];
+             *       arr[i - 1] = temp;
+             *       sorted = false;
+             *     }
+             *   }
+             * }
+             * 
+             */
             return array;
         }
     }
