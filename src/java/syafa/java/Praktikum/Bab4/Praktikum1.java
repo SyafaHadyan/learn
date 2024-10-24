@@ -137,8 +137,26 @@ public class Praktikum1
                         System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata");
                         for (int i = 0; i < ticketAmount; i++)
                         {
-                            String tempPassengerName = input.nextLine();
-                            String tempPassengerTicketBook = input.nextLine();
+                            passengerName.add(input.nextLine());
+                            String tempTicketType = input.nextLine();
+                            switch (tempTicketType)
+                            {
+                                case tempTicketType.equalsIgnoreCase("Ekonomi"):
+                                    ticketPrice.add(50000);
+                                    break;
+                                case "Bisnis":
+                                    ticketPrice.add(100000);
+                                    break;
+                                case "Eksekutif":
+                                    ticketPrice.add(200000);
+                                    break;
+                                case "Pariwisata":
+                                    ticketPrice.add(300000);
+                                    break;
+                                default:
+                                    ticketPrice.add(0);
+                                    break;
+                            }
                         }
                         break;
                     case 5:
