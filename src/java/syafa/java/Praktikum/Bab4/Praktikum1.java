@@ -191,8 +191,7 @@ public class Praktikum1
                         {
                             System.out.printf("%-40s%-20d%-20.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
                         }
-                        double tempTotalDiscountedPriceSum = 0d;
-                        for (double tempTotalDiscountedTicketPrice : discountedTicketPrice) tempTotalDiscountedPriceSum += tempTotalDiscountedTicketPrice;
+                        double tempTotalDiscountedPriceSum = 0d; for (double tempTotalDiscountedTicketPrice : discountedTicketPrice) tempTotalDiscountedPriceSum += tempTotalDiscountedTicketPrice;
                         System.out.printf("%-60s%d%s%.5f\n","Total penumpang",((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3),"Total tiket",tempTotalDiscountedPriceSum);
                         break;
                 }
