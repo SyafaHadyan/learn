@@ -238,6 +238,8 @@ public class N13Array3D
 
 Kode inisialisasi `int option` dan inisialisasi `boolean repeat` ke `true` untuk nanti digunakan di pilihan menu, `String[] tableHeader` untuk print header table saat pilihan 1, 2,dan 3. `String[][] data` yang berisi data dari tabel. `String[] menu` untuk print pilihan nanti di awal. `ArrayList String passengerName`, `Integer ticketPrice`, dan `Double discountedTicketPrice` yang digunakan nanti saat user memesan tiket karena jumlah penumpang yang masih belum diketahui.
 
+Masuk ke `while repeat` kemudian `for loop` print setiap pilihan menu yang diawali nomor (dari 1), dan di saat iterasi terakhir (`i = 4`), akan print opsi keluar (0) dan meminta user untuk memasukkan nilai piliihan. Jika pilihan adalah 1 hingga 5, akan masuk ke menu pilihan, jika 0, program akan keluar dengan `System.exit(0)` Selain dari itu, program akan repeat daftar menu lagi.
+
 #### Kode Praktikukm 2
 
 ```java
