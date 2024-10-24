@@ -153,3 +153,21 @@ public class N11Array2D
     }
 }
 ```
+
+## Array 3D
+
+### 12. Jalankan kelas Array3 dan benahi jika menemukan kesalahan
+
+A
+
+### 13. Jelaskan maksud dari statement baris ke-7
+
+A
+
+### 14. Jelaskan perbedaan indeks array dan panjang array! Berikan contoh di kelas Array3
+
+A
+
+### 15. Tambahkan variabel dengan nama jumlahGenap dan jumlahGanjil yang bertipe data integer kemudian lakukan penambahan untuk bilangan genap dan ganjil
+
+A
