@@ -49,6 +49,7 @@ public class ManajemenDaftarTugas
         int operation = Integer.parseInt(input.nextLine());
         input.close();
         ArrayList<String> taskList = new ArrayList<>();
+        ArrayList<String> result = new ArrayList<>();
         for (int i = 0; i < operation; i++)
         {
             String temp = input.nextLine();
@@ -59,6 +60,10 @@ public class ManajemenDaftarTugas
             else if (temp.contains("HAPUS"))
             {
                 taskList.remove(Integer.parseInt(temp.replace("HAPUS ","")) - 1);
+            }
+            else if (temp.contains("CEKLIS"))
+            {
+                result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
             }
         }
     }
