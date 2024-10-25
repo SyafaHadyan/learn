@@ -63,6 +63,11 @@ public class ManajemenDaftarTugas
             }
             else if (temp.contains("CEKLIS"))
             {
+                if (taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1).equalsIgnoreCase(null))
+                {
+                    result.add("TIDAK ADA TUGAS");
+                    continue;
+                }
                 result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
             }
             else if (temp.equalsIgnoreCase("CEKSEMU"))
