@@ -20,7 +20,7 @@ public class MigratoryBirds
          * sort reverse array of sightings (start from highest type) then when lower type has higher sightings, update mode to current type (which is lower)
          */
         Scanner input = new Scanner(System.in);
-        //int sightingAmount = Integer.parseInt(input.nextLine());
+        int sightingAmount = Integer.parseInt(input.nextLine());
         int[] sighting = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(sighting);
@@ -37,14 +37,11 @@ public class MigratoryBirds
                 {
                     currentMode++;
                 }
-                if ((sighting[i] == sighting[i - 1]) && (currentType < mostType) && (currentMode > mode))
+                if (currentMode > mode)
                 {
                     mostType = sighting[i];
                     mode = currentMode;
-                    if ((currentType != sighting[i - 1]) && (currentMode > mode))
-                    {
-                        currentMode = 0;
-                    }
+                    currentMode = 0;
                 }
             }
             catch (IndexOutOfBoundsException e)
