@@ -21,3 +21,4 @@
 
 $$\sum (y_1-ax_1-b)^2$$
 $$\frac{\sigma\epsilon}{\sigma\alpha}=2\sum(y_1-ax_1-b)x_i=0$$
+$$\sum x_1y_1-a\sum x_i^2=b\sum x_i=0$$
