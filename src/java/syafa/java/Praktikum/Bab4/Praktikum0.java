@@ -24,16 +24,13 @@ public class Praktikum0
              * }
              * 
              */
-            /*
-             * TODO
-             * 
-             * Method to convert to int or double
-             */
             if (checkDataType.isDouble(arrayString))
             {
                 checkDataType.convertArrayDouble(arrayString);
                 return;
             }
+            checkDataType.convertArrayInteger(arrayString);
+            return;
         }
     }
     static class checkDataType
