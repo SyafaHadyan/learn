@@ -234,6 +234,8 @@ Inisialisasi `ArrayList String` karena tidak tahu banyak data yang akan diinput 
 
 Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-6, program akan mengulang kembali print menu. Jika pilihan 1, clear dulu isi dari `ArrayList` karena tidak tahu apakah input data yang ke berapa.
 
+Jika input pilihan ke 2, kode akan print seluruh elemen dari `ArrayList` tadi kemudian print menu kembali.
+
 ### Kode Praktikukm 1
 
 ```java
