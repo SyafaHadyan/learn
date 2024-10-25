@@ -63,7 +63,7 @@ public class Praktikum0
             {
                 try
                 {
-                    Integer.parseInt(arrayString.get(i));
+                    int temp = Integer.parseInt(arrayString.get(i));
                 }
                 catch (NumberFormatException e)
                 {
