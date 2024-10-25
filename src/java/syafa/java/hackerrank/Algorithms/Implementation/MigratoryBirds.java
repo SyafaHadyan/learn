@@ -39,7 +39,6 @@ public class MigratoryBirds
                 }
                 if (currentMode >= mode)
                 {
-                    mostType = currentType;
                     mode = currentMode;
                     if (currentType != sighting[i - 1])
                     {
