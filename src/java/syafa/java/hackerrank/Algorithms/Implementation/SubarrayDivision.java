@@ -59,5 +59,6 @@ public class SubarrayDivision
                 }
             }
         }
+        System.out.print(chocolateAmount);
     }
 }
