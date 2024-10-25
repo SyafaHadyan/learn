@@ -72,7 +72,7 @@ public class LisaWorkbook
                 {
                     specialProblem++;
                 }
-                if (j == book[1] || j == problem[i])
+                if (j % book[1] == 0 || j == problem[i])
                 {
                     pageNumber++;
                 }
