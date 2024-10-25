@@ -6,32 +6,6 @@ public class Praktikum0
 {
     static class sortArray
     {
-        public static void checkConvert(ArrayList<String> arrayString)
-        {
-            /*
-             * let arr = [4, 2, 6, 3, 9];
-             * let sorted = false
-             * while(!sorted) {
-             *   sorted = true
-             *   for(var i = 0; i < arr.length; i++) {
-             *     if(arr[i] < arr[i - 1]) {
-             *       let temp = arr[i];
-             *       arr[i] = arr[i - 1];
-             *       arr[i - 1] = temp;
-             *       sorted = false;
-             *     }
-             *   }
-             * }
-             * 
-             */
-            if (checkDataType.isDouble(arrayString))
-            {
-                checkDataType.convertArrayDouble(arrayString);
-                return;
-            }
-            checkDataType.convertArrayInteger(arrayString);
-            return;
-        }
         public static double[] bubbleSortDouble(double[] array)
         {
             boolean sorted = false;
@@ -67,6 +41,10 @@ public class Praktikum0
                 }
             }
             return array;
+        }
+        public static double getMaxDouble(double[] array)
+        {
+            return array[array.length - 1];
         }
     }
     static class checkDataType
@@ -181,14 +159,10 @@ public class Praktikum0
                         }
                         break;
                     case 5:
-                        double[] array = sortArray.bubbleSort(data);
-                        try
+                        if (checkDataType.isDouble(data))
                         {
-                            System.out.printf("\n%d\n\n",Integer.parseInt(data.get(data.size() - 1)));
-                        }
-                        catch (NumberFormatException e)
-                        {
-                            System.out.printf("\n%.5f\n\n",Double.parseDouble(data.get(data.size() - 1)));
+                            System.out.printf("\n%.5f\n\n",sortArray.getMaxDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
+                            break;
                         }
                         break;
                     case 6:
