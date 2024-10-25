@@ -50,6 +50,14 @@ public class Praktikum0
         {
             return array[array.length - 1];
         }
+        public static double getMinDouble(double[] array)
+        {
+            return array[0];
+        }
+        public static int getMinInteger(int[] array)
+        {
+            return array[0];
+        }
     }
     static class checkDataType
     {
