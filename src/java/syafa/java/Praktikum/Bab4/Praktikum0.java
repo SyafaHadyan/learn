@@ -13,11 +13,18 @@ public class Praktikum0
             {
                 for (int i = 0; i < array.length; i++)
                 {
-                    if (array[i] < array[i - 1])
+                    try
                     {
-                        double tempStore = array[i];
-                        array[i] = array[i - 1];
-                        array[i - 1] = tempStore;
+                        if (array[i] < array[i - 1])
+                        {
+                            double tempStore = array[i];
+                            array[i] = array[i - 1];
+                            array[i - 1] = tempStore;
+                            sorted = false;
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
                         sorted = false;
                     }
                 }
@@ -31,12 +38,19 @@ public class Praktikum0
             {
                 for (int i = 0; i < array.length; i++)
                 {
-                    if (array[i] < array[i - 1])
+                    try
                     {
-                        int tempStore = array[i];
-                        array[i] = array[i - 1];
-                        array[i - 1] = tempStore;
-                        sorted = false;
+                        if (array[i] < array[i - 1])
+                        {
+                            int tempStore = array[i];
+                            array[i] = array[i - 1];
+                            array[i - 1] = tempStore;
+                            sorted = false;
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        //
                     }
                 }
             }
@@ -158,7 +172,7 @@ public class Praktikum0
                             {
                                 tempIntegersum[i] = Integer.parseInt(data.get(i));
                             }
-                            System.out.printf("\n%.5f\n\n",(IntStream.of(tempIntegersum).sum()));
+                            System.out.printf("\n%d\n\n",(IntStream.of(tempIntegersum).sum()));
                         }
                         catch (NumberFormatException e)
                         {
