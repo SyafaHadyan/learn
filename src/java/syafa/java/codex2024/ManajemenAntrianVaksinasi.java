@@ -31,11 +31,14 @@ public class ManajemenAntrianVaksinasi
         Scanner input = new Scanner(System.in);
         int operation = Integer.parseInt(input.nextLine());
         ArrayList<String> operationResult = new ArrayList<>();
-        ArrayList<String> patientRegister = new ArrayList<>();
+        ArrayList<Integer> patientRegister = new ArrayList<>();
         for (int i = 0; i < operation; i++)
         {
             String temp = input.nextLine();
-            if (temp)
+            if (temp.contains("DAFTAR"))
+            {
+                patientRegister.add(Integer.parseInt(temp.replace("DAFTAR ",null)));
+            }
         }
         input.close();
     }
