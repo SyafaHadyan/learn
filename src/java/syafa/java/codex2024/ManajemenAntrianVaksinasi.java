@@ -43,6 +43,13 @@ public class ManajemenAntrianVaksinasi
             {
                 patientRegister.remove(patientRegister.getFirst());
             }
+            else if (temp.equalsIgnoreCase("CEKDEPAN"))
+            {
+                if (patientRegister.size() != 0)
+                {
+                    operationResult.add(String.valueOf(patientRegister.getFirst()));
+                }
+            }
         }
         input.close();
     }
