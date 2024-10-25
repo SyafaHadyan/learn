@@ -23,6 +23,8 @@ public class JumpingOnTheCloudsRevisited
          * 6 -> IndexOutOfBounds = 93 - 1 = 92
          */
         Scanner input = new Scanner(System.in);
+        int[] cloudJump = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
