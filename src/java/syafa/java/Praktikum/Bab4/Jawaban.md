@@ -242,7 +242,7 @@ Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke va
 
 Jika input pilihan 5 maka kode akan memanggil `method` `isDouble` di dalam kelas `checkDataType`. di dalam `isDouble` kode akan looping ke seluruh data dengan `Integer.parseInt()` Jika ada salah satu yang `double`, Java akan `throw` [`NumbereFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html) dan di dalam `catch` `return true`. Jika program berhasil parse seluruh data ke `Integer`, maka `return false`. Kembali ke `case 5`. Di dalam `if` tadi, jika true maka `method` yang dipanggil juga beda dengan `method` yang dipanggil saat seluruh tipe data adalah `Integer`. Jadi ada 2 Bubble Sort dan 2 cek max min. Kembali ke `if`. Di dalam `if`, langsung `printf` dengan maksimal 5 digit di belakang koma dengan memangggil`class` `checkDAtaType` `method` `convertArrayDouble` (Karena tadi sudah dicek dan ada minimal 1 tipe data `double`). Di dalam `convertArrayDouble`, kode akan membuat variabel sementara `double[]` untuk memasukkan seluruh data kemudian `return` hasil. Setelah itu panggil `class` `sortArray` `method` `bubbleSortDouble` (Jika `Integer`, yang dipanggil adalah `bubbleSortInteger`) Di dalam `bubbleSortDouble` ada algoritma standar Bubble Sort yang akan mengcompare indeks ke j apakah lebih besar dengan indeks yang selanjutnya, jika iya akan di swap denga variabel sementara yang kemudian diiterasi / loop lagi (`for loop` luar) sampai sebanyak banyak data kemudian `return array` hasil sorting. Kemudian, hasil tadi akan langsung memanggil `method` `getMaxDouble` di kelas `sortArray` (Jika `Integer` maka yang dipanggil adalah `GetMaxInteger`, jika mau ambil nilai min, yang dipanggil adalah `get[Min atau Max][Double atau Integer]`). Di dalam `getMaxDouble`, akan langsung `return` eleme terakhir yaitu panjang `array` dikurangi 1, sama juga kalau yang dicari adala nilai min, akan langsung `return` indeks pertama yaitu 0.
 
-### Kode Praktikukm 1
+### Kode Praktikum 1
 
 ```java
 package syafa.java.Praktikum.Bab4;
@@ -465,7 +465,7 @@ Pilihan 4 print untuk meminta user memasukkan jumlah tiket yang akan dipesan yan
 
 Pilihan 5 print daftar penumpang yang memesan tiket, jika tidak ada (`ArrayList.size() == 0`) maka print anda belum memesan tiket dan kemudian break dilanjutkan dengan print lagi pilihan menu. Jika sudah ada booking tiket, print header tabel nama penumpang, harga tiket, dan harga setelah diskon kemudian loop border tabel sebanyak 80 kali kemudian print nama penumpang, harga tiket, dan harga tiket setelah diskon. Setelah selesai, buat variabel `double` `tempTotalDiscountedTicketPrice` kemudian `for each` tambahkan semua tiket setelah diskon ke `tempTotalDiscountedPrice` di akhir tabel, print jumlah penumpang dan total harga tiket setelah diskon.
 
-#### Kode Praktikukm 2
+#### Kode Praktikum 2
 
 ```java
 package syafa.java.Praktikum.Bab4;
