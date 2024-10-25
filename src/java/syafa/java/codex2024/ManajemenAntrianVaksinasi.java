@@ -54,5 +54,13 @@ public class ManajemenAntrianVaksinasi
             }
         }
         input.close();
+        for (int i = 0; i < operationResult.size(); i++)
+        {
+            System.out.print(operationResult.get(i));
+            if (operationResult.size() - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
