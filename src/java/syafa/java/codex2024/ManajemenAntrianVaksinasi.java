@@ -39,6 +39,10 @@ public class ManajemenAntrianVaksinasi
             {
                 patientRegister.add(Integer.parseInt(temp.replace("DAFTAR ",null)));
             }
+            else if (temp.equalsIgnoreCase("LAYANI"))
+            {
+                patientRegister.remove(patientRegister.getFirst());
+            }
         }
         input.close();
     }
