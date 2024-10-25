@@ -46,6 +46,12 @@ public class ManajemenDaftarTugas
 
          */
         Scanner input = new Scanner(System.in);
+        int operation = Integer.parseInt(input.nextLine());
         input.close();
+        ArrayList<String> taskList = new ArrayList<>();
+        for (int i = 0; i < operation; i++)
+        {
+            
+        }
     }
 }
