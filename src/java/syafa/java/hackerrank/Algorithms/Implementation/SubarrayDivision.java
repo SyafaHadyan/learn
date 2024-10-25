@@ -66,6 +66,6 @@ public class SubarrayDivision
                 possibleCombination++;
             }
         }
-        System.out.print(chocolateAmount);
+        System.out.print(possibleCombination);
     }
 }
