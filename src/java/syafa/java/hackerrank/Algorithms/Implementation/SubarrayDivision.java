@@ -42,7 +42,8 @@ public class SubarrayDivision
          * print 4
          */
         Scanner input = new Scanner(System.in);
-        int chocolateAmount = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         int[] chocolate = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] request = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
