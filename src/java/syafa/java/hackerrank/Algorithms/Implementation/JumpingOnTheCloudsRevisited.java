@@ -26,5 +26,14 @@ public class JumpingOnTheCloudsRevisited
         int[] cloudJump = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int energy = 100;
+        for (int i = 0; i < cloud.length; i += cloudJump[1])
+        {
+            energy--;
+            if (cloud[i + cloudJump[1]] == 1)
+            {
+                energy -= 2;
+            }
+        }
     }
 }
