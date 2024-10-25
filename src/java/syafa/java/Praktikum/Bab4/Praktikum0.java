@@ -46,6 +46,10 @@ public class Praktikum0
         {
             return array[array.length - 1];
         }
+        public static int getMaxInteger(int[] array)
+        {
+            return array[array.length - 1];
+        }
     }
     static class checkDataType
     {
@@ -164,6 +168,7 @@ public class Praktikum0
                             System.out.printf("\n%.5f\n\n",sortArray.getMaxDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
                             break;
                         }
+                        System.out.printf("\n%.5f\n\n",sortArray.getMaxInteger(((sortArray.bubbleSortInteger(checkDataType.convertArrayInteger(data))))));
                         break;
                     case 6:
                         try
