@@ -13,7 +13,6 @@ public class LisaWorkbook
          * 4 2 6 1 10  arr = [4, 2, 6, 1, 10]
          * 
          * 5 3
-         * 
          * 4 2 6 1 10
          * 
          * 4
@@ -73,11 +72,12 @@ public class LisaWorkbook
                 {
                     specialProblem++;
                 }
-                if (j == book[i] || j == problem[i])
+                if (j == book[1] || j == problem[i])
                 {
                     pageNumber++;
                 }
             }
         }
+        System.out.print(specialProblem);
     }
 }
