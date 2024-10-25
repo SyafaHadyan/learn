@@ -52,10 +52,17 @@ public class SubarrayDivision
             int counter = 0;
             for (int j = 0; j < request[1]; j++)
             {
-                counter += chocolate[i + j];
-                if (counter == request[0])
+                try
                 {
-                    possibleCombination++;
+                    counter += chocolate[i + j];
+                    if (counter == request[0])
+                    {
+                        possibleCombination++;
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
             }
         }
