@@ -36,12 +36,23 @@ public class JumpingOnTheCloudsRevisited
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int energy = 100;
-        for (int i = 0; i < cloud.length && i == cloudJump[0]; i += cloudJump[1])
+        for (int i = 0; i < cloud.length /*&& i == cloudJump[0]*/; i += cloudJump[1])
         {
             energy--;
             if (i + cloudJump[1] > cloudJump[0])
             {
                 i -= cloudJump[0];
+            }
+            try
+            {
+                if (cloud[i] == 1)
+                {
+                    energy -= 2;
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
             }
             /*
             if ((i + cloudJump[i] != cloudJump[0]) && (i > cloudJump[0] - cloudJump[1]) && (i < cloudJump[0]))
@@ -55,6 +66,7 @@ public class JumpingOnTheCloudsRevisited
                 i = cloudJump[1];
             }
             */
+            /*
             try
             {
                 if (cloud[i + cloudJump[1]] == 1)
@@ -66,6 +78,7 @@ public class JumpingOnTheCloudsRevisited
             {
                 //
             }
+            */
         }
         System.out.print(energy);
     }
