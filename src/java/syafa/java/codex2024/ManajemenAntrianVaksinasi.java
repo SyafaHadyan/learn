@@ -37,7 +37,7 @@ public class ManajemenAntrianVaksinasi
             String temp = input.nextLine();
             if (temp.contains("DAFTAR"))
             {
-                patientRegister.add(Integer.parseInt(temp.replace("DAFTAR ",null)));
+                patientRegister.add(Integer.parseInt(temp.replace("DAFTAR ","")));
             }
             else if (temp.equalsIgnoreCase("LAYANI"))
             {
