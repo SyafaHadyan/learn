@@ -89,5 +89,13 @@ public class ManajemenDaftarTugas
             }
         }
         input.close();
+        for (int i = 0; i < result.size(); i++)
+        {
+            System.out.print(result.get(i));
+            if (result.size() - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
