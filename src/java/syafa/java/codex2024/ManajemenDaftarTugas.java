@@ -65,6 +65,13 @@ public class ManajemenDaftarTugas
             {
                 result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
             }
+            else if (temp.equalsIgnoreCase("CEKSEMU"))
+            {
+                for (int j = 0; j < taskList.size(); j++)
+                {
+                    result.add(taskList.get(i));
+                }
+            }
         }
     }
 }
