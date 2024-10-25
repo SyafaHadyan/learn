@@ -55,15 +55,15 @@ public class SubarrayDivision
                 try
                 {
                     counter += chocolate[i + j];
-                    if (counter == request[0])
-                    {
-                        possibleCombination++;
-                    }
                 }
                 catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
+            }
+            if (counter == request[0])
+            {
+                possibleCombination++;
             }
         }
         System.out.print(chocolateAmount);
