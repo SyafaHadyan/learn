@@ -236,6 +236,8 @@ Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-
 
 Jika input pilihan ke 2, kode akan print seluruh elemen dari `ArrayList` tadi kemudian print menu kembali.
 
+Jika input pilihan 3, maka akan hitung rata-rata dari seluruh data dengan membuat variabel `double` sementara untuk kemudian print sum dengan `DoubleStream` kemudian dibagi dengan panjang `array`.
+
 ### Kode Praktikukm 1
 
 ```java
