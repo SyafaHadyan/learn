@@ -70,8 +70,12 @@ public class ManajemenDaftarTugas
                 }
                 result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
             }
-            else if (temp.equalsIgnoreCase("CEKSEMU"))
+            else if (temp.equalsIgnoreCase("CEKSEMUA"))
             {
+                if (taskList.isEmpty())
+                {
+                    result.add("TIDAK ADA TUGAS");
+                }
                 for (int j = 0; j < taskList.size(); j++)
                 {
                     result.add(taskList.get(i));
