@@ -15,11 +15,11 @@ public class Praktikum0
                 {
                     try
                     {
-                        if (array[i] < array[i - 1])
+                        if (array[i] > array[i + 1])
                         {
                             double tempStore = array[i];
-                            array[i] = array[i - 1];
-                            array[i - 1] = tempStore;
+                            array[i] = array[i + 1];
+                            array[i + 1] = tempStore;
                             sorted = false;
                         }
                     }
@@ -33,24 +33,15 @@ public class Praktikum0
         }
         public static int[] bubbleSortInteger(int[] array)
         {
-            boolean sorted = false;
-            while (!sorted)
+            for (int i = 0; i < array.length - 1; i++)
             {
-                for (int i = 0; i < array.length; i++)
+                for (int j = 0; j < array.length - i - 1; j++)
                 {
-                    try
+                    if (array[j] > array[j + 1])
                     {
-                        if (array[i] < array[i - 1])
-                        {
-                            int tempStore = array[i];
-                            array[i] = array[i - 1];
-                            array[i - 1] = tempStore;
-                            sorted = false;
-                        }
-                    }
-                    catch (IndexOutOfBoundsException e)
-                    {
-                        //
+                        int temp = array[j];
+                        array[j] = array[j + 1];
+                        array[j + 1] = temp;
                     }
                 }
             }
