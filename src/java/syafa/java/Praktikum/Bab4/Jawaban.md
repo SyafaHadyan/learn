@@ -238,6 +238,8 @@ Jika input pilihan ke 2, kode akan print seluruh elemen dari `ArrayList` tadi ke
 
 Jika input pilihan 3, maka akan hitung rata-rata dari seluruh data dengan membuat variabel `double` sementara untuk kemudian print sum dengan `DoubleStream` kemudian dibagi dengan panjang `array`.
 
+Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke variabel sementara `int[]` yang kemudian jika ada salah satu data yang bernilai double, Java akan `throw` [`NumbereFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html). Jika iya, maka akan mencoba untuk menggunakan tipe data `double[]` untuk menghitung sum dari seluruh data.
+
 ### Kode Praktikukm 1
 
 ```java
