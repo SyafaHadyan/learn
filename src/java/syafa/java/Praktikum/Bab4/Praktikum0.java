@@ -179,13 +179,9 @@ public class Praktikum0
                         System.out.printf("\n%.5f\n\n",sortArray.getMaxInteger(((sortArray.bubbleSortInteger(checkDataType.convertArrayInteger(data))))));
                         break;
                     case 6:
-                        try
+                        if (checkDataType.isDouble(data))
                         {
-                            System.out.printf("\n%d\n\n",Integer.parseInt(data.get(0)));
-                        }
-                        catch (NumberFormatException e)
-                        {
-                            System.out.printf("\n%.5f\n\n",Double.parseDouble(data.get(0)));
+                            System.out.printf("\n%.5f\n\n",sortArray.getMinDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
                         }
                         break;
                 }
