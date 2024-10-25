@@ -56,6 +56,10 @@ public class ManajemenDaftarTugas
             {
                 taskList.add(temp.replace("TAMBAH ",""));
             }
+            else if (temp.contains("HAPUS"))
+            {
+                taskList.remove(Integer.parseInt(temp.replace("HAPUS ","")) - 1);
+            }
         }
     }
 }
