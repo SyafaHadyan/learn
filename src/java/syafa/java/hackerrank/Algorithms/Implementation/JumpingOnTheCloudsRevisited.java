@@ -28,7 +28,7 @@ public class JumpingOnTheCloudsRevisited
          * 80
          * 
          *              | |    10
-         * x     x     x     x
+         * x   y x   y x y   x
          * 1 1 1 0 1 1 0 0 0 0
          */
         Scanner input = new Scanner(System.in);
@@ -36,13 +36,19 @@ public class JumpingOnTheCloudsRevisited
         int[] cloud = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int energy = 100;
-        for (int i = 0; i < cloud.length; i += cloudJump[1])
+        for (int i = 0; i < cloud.length && i == cloudJump[0]; i += cloudJump[1])
         {
             energy--;
+            if (i + cloudJump[1] > cloudJump[0])
+            {
+                i -= cloudJump[0];
+            }
+            /*
             if ((i + cloudJump[i] != cloudJump[0]) && (i > cloudJump[0] - cloudJump[1]) && (i < cloudJump[0]))
             {
-                //
+                i -= cloudJump[0];
             }
+            */
             /*
             if (i >= cloudJump[0] && i < cloudJump[0] && ((cloud.length - cloudJump[i]) - 1 != cloudJump[0]))
             {
