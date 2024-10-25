@@ -197,7 +197,8 @@ public class Praktikum1
             }
             else
             {
-                repeat = true;
+                input.close();
+                System.exit(0);
             }
         }
     }
