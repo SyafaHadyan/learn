@@ -72,14 +72,21 @@ public class ManajemenDaftarTugas
             }
             else if (temp.equalsIgnoreCase("CEKSEMUA"))
             {
+                StringBuilder tempCheck = new StringBuilder();
                 if (taskList.isEmpty())
                 {
                     result.add("TIDAK ADA TUGAS");
+                    continue;
                 }
                 for (int j = 0; j < taskList.size(); j++)
                 {
-                    result.add(taskList.get(i));
+                    tempCheck.append(taskList.get(i));
+                    if (taskList.size() - j != 1)
+                    {
+                        tempCheck.append(" ");
+                    }
                 }
+                result.add(String.valueOf(tempCheck));
             }
         }
     }
