@@ -27,6 +27,18 @@ public class ManajemenAntrianVaksinasi
          * Saat dicek kembali, orang dengan ID 202 berada di depan.
          * Orang dengan ID 202 dilayani dan keluar dari antrian.
          * Antrian kosong ketika dicek terakhir.
+         * 
+         * 7
+         * DAFTAR 101
+         * DAFTAR 202
+         * CEKDEPAN
+         * LAYANI
+         * CEKDEPAN
+         * LAYANI
+         * CEKDEPAN
+         * 101
+         * 202
+         * ANTRIAN KOSONG
          */
         Scanner input = new Scanner(System.in);
         int operation = Integer.parseInt(input.nextLine());
