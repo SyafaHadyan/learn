@@ -6,7 +6,7 @@ public class Praktikum0
 {
     static class sortArray
     {
-        public static double[] bubbleSort(ArrayList<String> arrayString)
+        public static void bubbleSort(ArrayList<String> arrayString)
         {
             /*
              * let arr = [4, 2, 6, 3, 9];
@@ -29,31 +29,11 @@ public class Praktikum0
              * 
              * Method to convert to int or double
              */
-            boolean sorted = false;
-            if ()
-            while (!sorted)
+            if (checkDataType.isDouble(arrayString))
             {
-                for (int i = 0; i < array.length; i++)
-                {
-                    if (array[i] < array[i - 1])
-                    {
-                        double tempStore = array[i];
-                        array[i] = array[i - 1];
-                        array[i - 1] = tempStore;
-                        sorted = false;
-                    }
-                }
+                checkDataType.convertArrayDouble(arrayString);
+                return;
             }
-            return array;
-        }
-        public static double[] convertArrayDouble(ArrayList<String> arrayString)
-        {
-            double[] convertedArray = new double[arrayString.size()];
-            for (int i = 0; i < convertedArray.length; i++)
-            {
-                convertedArray[i] = Double.parseDouble(arrayString.get(i));
-            }
-            return convertedArray;
         }
     }
     static class checkDataType
@@ -72,6 +52,24 @@ public class Praktikum0
                 }
             }
             return true;
+        }
+        public static double[] convertArrayDouble(ArrayList<String> arrayString)
+        {
+            double[] convertedArray = new double[arrayString.size()];
+            for (int i = 0; i < convertedArray.length; i++)
+            {
+                convertedArray[i] = Double.parseDouble(arrayString.get(i));
+            }
+            return convertedArray;
+        }
+        public static int[] convertArrayInteger(ArrayList<String> arrayString)
+        {
+            int[] convertedArray = new int[arrayString.size()];
+            for (int i = 0; i < convertedArray.length; i++)
+            {
+                convertedArray[i] = Integer.parseInt(arrayString.get(i));
+            }
+            return convertedArray;
         }
     }
     public static void main(String[] args)
