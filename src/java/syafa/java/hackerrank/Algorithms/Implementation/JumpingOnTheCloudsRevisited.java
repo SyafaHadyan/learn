@@ -30,10 +30,18 @@ public class JumpingOnTheCloudsRevisited
         for (int i = 0; i < cloud.length; i += cloudJump[1])
         {
             energy--;
-            if (cloud[i + cloudJump[1]] == 1)
+            try
             {
-                energy -= 2;
+                if (cloud[i + cloudJump[1]] == 1)
+                {
+                    energy -= 2;
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
             }
         }
+        System.out.print(energy);
     }
 }
