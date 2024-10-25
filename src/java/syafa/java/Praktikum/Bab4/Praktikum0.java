@@ -62,7 +62,14 @@ public class Praktikum0
         {
             for (int i = 0; i < arrayString.size(); i++)
             {
-                Integer.parseInt(arrayString.get(i));
+                try
+                {
+                    Integer.parseInt(arrayString.get(i));
+                }
+                catch (NumberFormatException e)
+                {
+                    return false;
+                }
             }
             return true;
         }
