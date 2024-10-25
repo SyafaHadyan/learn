@@ -230,7 +230,7 @@ public class N13Array3D
 
 #### Penjelasan Praktikum 1
 
-a
+Inisialisasi `ArrayList String` karena tidak tahu banyak data yang akan diinput kemudian `String[]` menu untuk print menu pilihan data kemudian masuk ke `while` repeat yang diawali dengan `for loop` print menu yang diakhiri dengan print untuk meminta user memasukkan nilai untuk operasi.
 
 ### Kode Praktikukm 1
 
