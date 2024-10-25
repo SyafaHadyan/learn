@@ -43,9 +43,9 @@ There are some ways to overcome this problem.
 Another area of design focus is the handling of I/O devices.
 
 ```mermaid
-xychart-beta
-  title "Typical I/O Device Data Rates"
-  x_axis [10,20]
-  y_axis 10 --> 100
-  bar [10,20]
+xychart-beta horizontal
+    title "Typical I/O Device Data Rates"
+    x-axis ["Ethernet modem(max speed)","Graphics display","Wi-Fi modem (max speed)","Hard disk","Optitac disc","Laser printer","Scanner","Mouse","Keyboard"]
+    y-axis "Data Rate (bps) 10^n" 1 --> 11
+    bar [11,10,9,8,7,6,5,4,3,2,1]
 ```
