@@ -453,7 +453,7 @@ public class Praktikum0
 
 Kode inisialisasi `int option` dan inisialisasi `boolean repeat` ke `true` untuk nanti digunakan di pilihan menu, `String[] tableHeader` untuk print header table saat pilihan 1, 2,dan 3. `String[][] data` yang berisi data dari tabel. `String[] menu` untuk print pilihan nanti di awal. `ArrayList String passengerName`, `Integer ticketPrice`, dan `Double discountedTicketPrice` yang digunakan nanti saat user memesan tiket karena jumlah penumpang yang masih belum diketahui.
 
-Masuk ke `while repeat` kemudian `for loop` print setiap pilihan menu yang diawali nomor (dari 1), dan di saat iterasi terakhir (`i = 4`), akan print opsi keluar (0) dan meminta user untuk memasukkan nilai piliihan. Jika pilihan adalah 1 hingga 5, akan masuk ke menu pilihan, jika 0, program akan keluar dengan `System.exit(0)` Selain dari itu, program akan repeat daftar menu lagi.
+Masuk ke `while repeat` kemudian `for loop` print setiap pilihan menu yang diawali nomor (dari 1), dan di saat iterasi terakhir (`i = 4`), akan print opsi keluar (0) dan meminta user untuk memasukkan nilai piliihan. Jika pilihan adalah 1 hingga 5, akan masuk ke menu pilihan, jika 0, program akan keluar dengan `System.exit(0)` Selain dari itu, program akan langsung keluar jika input diluar yang diminta.
 
 Jika pilihan 1 hingga 5, akan masuk ke `switch case`. Jika pilihan 1, maka print seluruh isi tabel termasuk headernya dan program akan print menu lagi untuk user memilih pilihan opsi dimulai dari header tabel, pembatas tabel `=` sebanyak 90 kali, dan kemudian isi tabel.
 
@@ -667,7 +667,8 @@ public class Praktikum1
             }
             else
             {
-                repeat = true;
+                input.close();
+                System.exit(0);
             }
         }
     }
