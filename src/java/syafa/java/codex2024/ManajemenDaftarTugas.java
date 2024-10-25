@@ -51,7 +51,11 @@ public class ManajemenDaftarTugas
         ArrayList<String> taskList = new ArrayList<>();
         for (int i = 0; i < operation; i++)
         {
-            
+            String temp = input.nextLine();
+            if (temp.contains("TAMBAH"))
+            {
+                taskList.add(temp.replace("TAMBAH ",""));
+            }
         }
     }
 }
