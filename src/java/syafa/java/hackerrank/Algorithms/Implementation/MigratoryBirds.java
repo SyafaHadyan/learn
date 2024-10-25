@@ -6,21 +6,9 @@ public class MigratoryBirds
 {
     public static void main(String[] args)
     {
-        /*
-         * 6
-         * 1 4 4 4 5 3
-         * 
-         * 4
-         * 
-         * 11
-         * 1 2 3 4 5 4 3 2 1 3 4
-         * 
-         * 3
-         * 
-         * sort reverse array of sightings (start from highest type) then when lower type has higher sightings, update mode to current type (which is lower)
-         */
         Scanner input = new Scanner(System.in);
-        //int sightingAmount = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         int[] sighting = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(sighting);
@@ -52,7 +40,10 @@ public class MigratoryBirds
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                if (i == sighting.length - 1)
+                {
+                    mostType = sighting[sighting.length - 1];
+                }
             }
         }
         System.out.print(mostType);
