@@ -63,14 +63,14 @@ public class Praktikum0
             {
                 try
                 {
-                    int temp = Integer.parseInt(arrayString.get(i));
+                    Integer.parseInt(arrayString.get(i));
                 }
                 catch (NumberFormatException e)
                 {
-                    return false;
+                    return true;
                 }
             }
-            return true;
+            return false;
         }
         public static double[] convertArrayDouble(ArrayList<String> arrayString)
         {
