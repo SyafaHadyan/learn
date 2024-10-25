@@ -45,7 +45,7 @@ Another area of design focus is the handling of I/O devices.
 ```mermaid
 xychart-beta horizontal
     title "Typical I/O Device Data Rates"
-    x-axis ["Ethernet modem(max speed)","Graphics display","Wi-Fi modem (max speed)","Hard disk","Optical disc","Laser printer","Scanner","Mouse","Keyboard"]
+    x-axis ["Ethernet modem (max speed)","Graphics display","Wi-Fi modem (max speed)","Hard disk","Optical disc","Laser printer","Scanner","Mouse","Keyboard"]
     y-axis "Data Rate (bps) 10^n" 1 --> 11
     bar [11,9.8,9.8,9,8.7,7.1,7,2.5,1.9]
 ```
