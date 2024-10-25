@@ -6,7 +6,7 @@ public class Praktikum0
 {
     static class sortArray
     {
-        public static void bubbleSort(ArrayList<String> arrayString)
+        public static void checkConvert(ArrayList<String> arrayString)
         {
             /*
              * let arr = [4, 2, 6, 3, 9];
@@ -31,6 +31,24 @@ public class Praktikum0
             }
             checkDataType.convertArrayInteger(arrayString);
             return;
+        }
+        public static double[] bubbleSortDouble(double[] array)
+        {
+            boolean sorted = false;
+            while (!sorted)
+            {
+                for (int i = 0; i < array.length; i++)
+                {
+                    if (array[i] < array[i - 1])
+                    {
+                        double tempStore = array[i];
+                        array[i] = array[i - 1];
+                        array[i - 1] = tempStore;
+                        sorted = false;
+                    }
+                }
+            }
+            return array;
         }
     }
     static class checkDataType
