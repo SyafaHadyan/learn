@@ -62,11 +62,17 @@ public class LisaWorkbook
         int[] book = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int[] problem = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int specialProblem = 0;
         while (true)
         {
+            int chapter = 1;
+            int pageNumber = 1;
             for (int i = 1; i <= book[1]; i++)
             {
-                //
+                if (i == pageNumber)
+                {
+                    specialProblem++;
+                }
             }
         }
     }
