@@ -6,7 +6,7 @@ public class Praktikum0
 {
     static class sortArray
     {
-        public static int[] bubbleSort(ArrayList<String> arrayString)
+        public static double[] bubbleSort(ArrayList<String> arrayString)
         {
             /*
              * let arr = [4, 2, 6, 3, 9];
@@ -30,7 +30,7 @@ public class Praktikum0
              * Method to convert to int or double
              */
             boolean sorted = false;
-            double[] array = sortArray.convertArrayDouble(arrayString);
+            if ()
             while (!sorted)
             {
                 for (int i = 0; i < array.length; i++)
@@ -54,6 +54,17 @@ public class Praktikum0
                 convertedArray[i] = Double.parseDouble(arrayString.get(i));
             }
             return convertedArray;
+        }
+    }
+    static class checkDataType
+    {
+        public static boolean isDouble(ArrayList<String> arrayString)
+        {
+            for (int i = 0; i < arrayString.size(); i++)
+            {
+                Integer.parseInt(arrayString.get(i));
+            }
+            return true;
         }
     }
     public static void main(String[] args)
@@ -132,6 +143,7 @@ public class Praktikum0
                         }
                         break;
                     case 5:
+                        double[] array = sortArray.bubbleSort(data);
                         try
                         {
                             System.out.printf("\n%d\n\n",Integer.parseInt(data.get(data.size() - 1)));
