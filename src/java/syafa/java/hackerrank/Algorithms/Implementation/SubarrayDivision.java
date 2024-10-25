@@ -49,7 +49,15 @@ public class SubarrayDivision
         int possibleCombination = 0;
         for (int i = 0; i < chocolate.length; i++)
         {
-            //
+            int counter = 0;
+            for (int j = 0; j < request[1]; j++)
+            {
+                counter += chocolate[i + j];
+                if (counter == request[0])
+                {
+                    possibleCombination++;
+                }
+            }
         }
     }
 }
