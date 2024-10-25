@@ -62,12 +62,14 @@ public class ManajemenDaftarTugas
             }
             else if (temp.contains("CEKLIS"))
             {
-                if (taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1).equalsIgnoreCase(null))
+                try
+                {
+                    result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
+                }
+                catch (IndexOutOfBoundsException e)
                 {
                     result.add("TIDAK ADA TUGAS");
-                    continue;
                 }
-                result.add(taskList.get(Integer.parseInt(temp.replace("CEKLIS ","")) - 1));
             }
             else if (temp.equalsIgnoreCase("CEKSEMUA"))
             {
@@ -79,7 +81,7 @@ public class ManajemenDaftarTugas
                 }
                 for (int j = 0; j < taskList.size(); j++)
                 {
-                    tempCheck.append(taskList.get(i));
+                    tempCheck.append(taskList.get(j));
                     if (taskList.size() - j != 1)
                     {
                         tempCheck.append(" ");
