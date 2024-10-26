@@ -7,14 +7,13 @@ public class Day8DictionariesAndMaps
     {
         Scanner input = new Scanner(System.in);
         int phoneBookSize = input.nextInt();
-        input.nextLine();
-        HashMap<String, Integer> phoneBook = new HashMap<String, Integer>();
+        HashMap<String,Integer> phoneBook = new HashMap<String,Integer>();
         for (int i = 0; i < phoneBookSize; i++)
         {
             phoneBook.put(input.next(),input.nextInt());
-            input.nextLine();
         }
-        for (int i = 0; i < phoneBook.size(); i++)
+        input.nextLine();
+        for (int i = 0; i < phoneBookSize; i++)
         {
             String temp = input.nextLine();
             if (phoneBook.containsKey(temp))
