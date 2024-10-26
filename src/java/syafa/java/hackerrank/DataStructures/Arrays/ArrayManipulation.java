@@ -33,7 +33,6 @@ public class ArrayManipulation
             }
         }
         input.close();
-        Arrays.sort(array);
-        System.out.print(array[array.length - 1]);
+        System.out.print(Arrays.stream(array).max().getAsInt());
     }
 }
