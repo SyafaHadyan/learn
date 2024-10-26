@@ -31,6 +31,11 @@ public class Day20Sorting
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        System.out.print("Array is sorted in" + " " + sortArray.bubbleSort(array)[2] + " " + "swaps" + "." + "\n" + "First element" + ":" + " " + 0 + "\n" + "Last element" + ":" + " " + 0);
+        System.out.print
+        (
+            "Array is sorted in" + " " + sortArray.bubbleSort(array)[2] + " " + "swaps" + "." + "\n" +
+            "First element" + ":" + " " + sortArray.bubbleSort(array)[0] + "\n" +
+            "Last element" + ":" + " " + sortArray.bubbleSort(array)[1]
+        );
     }
 }
