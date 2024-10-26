@@ -36,8 +36,8 @@ public class Day20Sorting
         System.out.print
         (
             "Array is sorted in" + " " + sortArray.bubbleSort(array)[2] + " " + "swaps" + "." + "\n" +
-            "First element" + ":" + " " + sortArray.bubbleSort(array)[0] + "\n" +
-            "Last element" + ":" + " " + sortArray.bubbleSort(array)[1]
+            "First Element" + ":" + " " + sortArray.bubbleSort(array)[0] + "\n" +
+            "Last Element" + ":" + " " + sortArray.bubbleSort(array)[1]
         );
     }
 }
