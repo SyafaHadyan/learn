@@ -9,24 +9,29 @@ int main()
     int studentAmount;
     scanf("%d",&studentAmount);
     int studentGrade[studentAmount];
-    char sumGrade;
+    char sumGradeCheck;
+    int sumGrade = 0;
     for (int i = 0; i < studentAmount; i++)
     {
         scanf("%d",&studentGrade[i]);
     }
-    scanf("%c",&sumGrade);
-    if (sumGrade == 'b')
+    scanf("%c",&sumGradeCheck);
+    if (sumGradeCheck == 'b')
     {
         TRY
         {
-            //
+            for (int i = 0; i < studentAmount; i += 2)
+            {
+                sumGrade += studentGrade[i];
+            }
+            
         }
         CATCH
         {
             //
         }
     }
-    else if (sumGrade == 'g')
+    else if (sumGradeCheck == 'g')
     {
         //
     }
