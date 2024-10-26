@@ -6,14 +6,12 @@ public class TwoDimensionArrayDS
 {
     public static void main(String[] args)
     {
+        Scanner input = new Scanner(System.in);
         int[][] hourGlass = new int[6][6];
         int currentMaxValue = Integer.MIN_VALUE;
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < hourGlass.length; i++)
         {
-            for (int j = 0; j < 6; j++)
-            {
-                hourGlass[i][j] = Integer.parseInt(input.next());
-            }
+            hourGlass[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
         for (int i = 0; i < 4; i++)
         {
