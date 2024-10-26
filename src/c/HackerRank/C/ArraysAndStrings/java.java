@@ -10,7 +10,11 @@ public class java
         input.close();
         for (int i = 0; i < inputString.length; i++)
         {
-            
+            System.out.print(inputString[i]);
+            if (inputString.length - i != 1)
+            {
+                System.out.print("\n");
+            }
         }
     }
 }
