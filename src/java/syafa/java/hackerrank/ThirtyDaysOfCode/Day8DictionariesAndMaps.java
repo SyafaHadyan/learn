@@ -19,9 +19,10 @@ public class Day8DictionariesAndMaps
             String temp = input.nextLine();
             if (phoneBook.containsKey(temp))
             {
-                System.out.println(phoneBook.get(temp));
+                System.out.println(temp + "=" + phoneBook.get(temp));
                 continue;
             }
+            System.out.println("Not found");
         }
         input.close();
         /*
