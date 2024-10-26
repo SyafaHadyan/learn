@@ -29,7 +29,12 @@ public class LeftRotation
         input.close();
         for (int i = 0; i < arrayRotation[1]; i++)
         {
-            //
+            int temp = array[0];
+            for (int j = 0; j < array.length - 1; j++)
+            {
+                array[j] = array[j + 1];
+            }
+            array[array.length - 1] = temp;
         }
     }
 }
