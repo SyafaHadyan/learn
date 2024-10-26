@@ -1,4 +1,8 @@
 #include <stdio.h>
+#include <setjmp.h>
+
+#define TRY do{ jmp_buf ex_buf__; if( !setjmp(ex_buf__) ){
+#define CATCH } else {
 
 int main()
 {
@@ -13,9 +17,16 @@ int main()
     scanf("%c",&sumGrade);
     if (sumGrade == 'b')
     {
-        //
+        TRY
+        {
+            //
+        }
+        CATCH
+        {
+            //
+        }
     }
-    else if (sumGrade = 'g')
+    else if (sumGrade == 'g')
     {
         //
     }
