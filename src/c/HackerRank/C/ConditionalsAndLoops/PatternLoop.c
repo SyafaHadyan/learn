@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
@@ -17,19 +18,34 @@ int main()
     */
     int loop;
     scanf("%d",&loop);
-    for (int i = 0; i < loop; i++)
+    int number = loop;
+    bool counter = false;
+    for (int i = number; i <= number;)
     {
-        for (int j = 0; j < loop; j++)
+        for (int j = 0; j <= loop; j++)
         {
             printf("%d",loop);
-            if (loop - j != 1)
+            if (loop - j != 0)
             {
                 printf(" ");
             }
         }
-        if (loop - i != 1)
+        if (loop - i != 0)
         {
             printf("\n");
+        }
+        if (!counter)
+        {
+            i--;
+            continue;
+        }
+        if (i == 1)
+        {
+            counter = true;
+        }
+        if (counter)
+        {
+            i++;
         }
     }
     
