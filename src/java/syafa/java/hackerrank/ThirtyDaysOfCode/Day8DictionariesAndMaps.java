@@ -14,11 +14,16 @@ public class Day8DictionariesAndMaps
             phoneBook.put(input.next(),Integer.parseInt(input.next()));
             input.nextLine();
         }
-        input.close();
         for (int i = 0; i < phoneBook.size(); i++)
         {
-            System.out.print(phoneBook.get(input.nextLine()));
+            String temp = input.nextLine();
+            if (phoneBook.containsKey(temp))
+            {
+                System.out.println(phoneBook.get(temp));
+                continue;
+            }
         }
+        input.close();
         /*
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
