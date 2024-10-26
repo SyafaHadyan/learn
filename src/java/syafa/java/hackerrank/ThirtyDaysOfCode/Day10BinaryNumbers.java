@@ -6,7 +6,12 @@ public class Day10BinaryNumbers
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int[] binary = Integer.toString(Integer.parseInt(input.nextLine())).chars().map(Character::getNumericValue).toArray();
+        String binaryString = Integer.toBinaryString(Integer.parseInt(input.nextLine()));
+        int[] binary = new int[binaryString.length()];
+        for (int i = 0; i < binary.length; i++)
+        {
+            binary[i] = binaryString.charAt(i);
+        }
         input.close();
         int consecutive = 0;
         int currentConsecutive = 1;
@@ -20,7 +25,7 @@ public class Day10BinaryNumbers
                 }
                 if (binary[i] == 0)
                 {
-                    currentConsecutive = 0;
+                    currentConsecutive = 1;
                 }
                 if (currentConsecutive > consecutive)
                 {
@@ -32,5 +37,6 @@ public class Day10BinaryNumbers
                 currentConsecutive++;
             }
         }
+        System.out.print(consecutive);
     }
 }
