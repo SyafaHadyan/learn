@@ -42,7 +42,13 @@ class Result
     public static List<Integer> getMax(List<String> operations)
     {
         // Write your code here
-        if ()
+        for (int i = 0; i < operations.size(); i++)
+        {
+            if (Integer.parseInt(String.valueOf(operations.get(i).charAt(0))) == 1)
+            {
+                //
+            }
+        }
         List<Integer> getMaxResult = new List<Integer>()
         {
             //
