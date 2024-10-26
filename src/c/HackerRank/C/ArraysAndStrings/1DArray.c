@@ -8,7 +8,8 @@ int main()
     scanf("%d",&arraySize);
     for (size_t i = 0; i < arraySize; i++)
     {
-        /* code */
+        array[i] = scanf("%d");
     }
-    
+    printf("%s","Test");
+    return 0;
 }
