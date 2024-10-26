@@ -29,7 +29,7 @@ public class ArrayManipulation
             int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             for (int j = temp[0] - 1; j <= temp[1] - 1; j++)
             {
-                
+                array[j] += temp[2];
             }
         }
         input.close();
