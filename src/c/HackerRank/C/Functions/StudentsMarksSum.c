@@ -16,7 +16,7 @@ int main()
     {
         scanf("%d",&studentGrade[i]);
     }
-    scanf("%c",&sumGradeCheck);
+    scanf(" %c",&sumGradeCheck);
     if (sumGradeCheck == 'b')
     {
         TRY
@@ -49,5 +49,6 @@ int main()
         }
         ENDTRY;
     }
+    printf("%d",sumGrade);
     return 0;
 }
