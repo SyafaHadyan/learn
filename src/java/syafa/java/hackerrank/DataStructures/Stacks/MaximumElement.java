@@ -53,6 +53,10 @@ class Result
             {
                 getMaxResult.add(Integer.parseInt(String.valueOf(operations.get(i).replace("1 ",""))));
             }
+            else if (Integer.parseInt(operations.get(i)) == 2)
+            {
+                getMaxResult.removeLast();
+            }
         }
         return getMaxResult;
     }
