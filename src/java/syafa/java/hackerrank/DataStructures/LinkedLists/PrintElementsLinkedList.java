@@ -13,5 +13,13 @@ public class PrintElementsLinkedList
             data.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
+        for (int i = 0; i < data.size(); i++)
+        {
+            System.out.print(data.get(i));
+            if (data.size() - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
