@@ -47,6 +47,7 @@ class Result
     {
         // Write your code here
         List<Integer> getMaxResult = new ArrayList<Integer>();
+        List<Integer> result = new ArrayList<Integer>();
         for (int i = 0; i < operations.size(); i++)
         {
             if (Integer.parseInt(String.valueOf(operations.get(i).charAt(0))) == 1)
@@ -57,8 +58,12 @@ class Result
             {
                 getMaxResult.removeLast();
             }
+            else if (Integer.parseInt(operations.get(i)) == 3)
+            {
+                result.add(Collections.max(getMaxResult));
+            }
         }
-        return getMaxResult;
+        return result;
     }
 
 }
