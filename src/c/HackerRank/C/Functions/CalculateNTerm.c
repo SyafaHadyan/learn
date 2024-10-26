@@ -7,14 +7,7 @@ int calculateAt(int a,int b,int c,int counter,int currentCount,int result)
     b = c;
     c = result;
     currentCount++;
-    if (currentCount == counter)
-    {
-        return result;
-    }
-    if (currentCount != counter)
-    {
-        calculateAt(a,b,c,counter,currentCount,result);
-    }
+    return result;
 }
 
 int main()
@@ -25,6 +18,14 @@ int main()
     int a,b,c;
     scanf("%d",&dataSize);
     scanf("%d" "%d" "%d",&a,&b,&c);
-    printf("%d",calculateAt(a,b,c,dataSize,currentCount,result));
+    while (currentCount != dataSize)
+    {
+        result = a + b + c;
+        a = b;
+        b = c;
+        c = result;
+        currentCount++;
+    }
+    printf("%d",result);
     return 0;
 }
