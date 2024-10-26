@@ -3,12 +3,12 @@
 
 int main()
 {
-    int input;
+    char input[5];
     int total;
-    scanf("%d",&input);
+    scanf("%s",&input);
     for (int i = 0; i < sizeof(input); i++)
     {
-        /* code */
+        total += atoi(input[i]);
     }
     
 }
