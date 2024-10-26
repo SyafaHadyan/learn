@@ -14,9 +14,17 @@ public class Day10BinaryNumbers
         {
             try
             {
-                if (binary[i - 1] == 1)
+                if (binary[i - 1] == 1 && binary[i] == 1)
                 {
                     currentConsecutive++;
+                }
+                if (binary[i] == 0)
+                {
+                    currentConsecutive = 0;
+                }
+                if (currentConsecutive > consecutive)
+                {
+                    consecutive = currentConsecutive;
                 }
             }
             catch (Exception e)
