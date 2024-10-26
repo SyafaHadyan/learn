@@ -4,6 +4,7 @@ import java.util.stream.*;
 
 public class Matrix
 {
+    @SuppressWarnings("resource")
     static class getMatrix
     {
         public static int[][] getFirstMatrix(int[] matrixRow)
@@ -15,7 +16,7 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return firstMatrix;
         }
         public static int[][] getSecondMatrix(int[] matrixRow)
@@ -27,7 +28,7 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return secondMatrix;
         }
     }
