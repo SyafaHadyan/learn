@@ -1,14 +1,7 @@
 #include <stdio.h>
 
-int main()
+void checkNumber(int min)
 {
-    int min;
-    int max;
-    scanf("%d\n%d",&min,&max);
-    for (int i = min; i <= max; i++)
-    {
-        //
-    }
     if (min == 1)
     {
         printf("%s","one");
@@ -48,6 +41,17 @@ int main()
     else
     {
         printf("%s","Greater than 9");
+    }
+}
+
+int main()
+{
+    int min;
+    int max;
+    scanf("%d\n%d",&min,&max);
+    for (int i = min; i <= max; i++)
+    {
+        //
     }
     return 0;
 }
