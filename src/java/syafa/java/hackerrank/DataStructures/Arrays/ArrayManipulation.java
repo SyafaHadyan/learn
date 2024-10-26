@@ -23,9 +23,14 @@ public class ArrayManipulation
          */
         Scanner input = new Scanner(System.in);
         int[] arraySize = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] array = new int[arraySize[0]];
         for (int i = 0; i < arraySize[1]; i++)
         {
-            //
+            int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            for (int j = temp[0] - 1; j <= temp[1] - 1; j++)
+            {
+                
+            }
         }
         input.close();
     }
