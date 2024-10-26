@@ -10,22 +10,22 @@ public class Day10BinaryNumbers
         int[] binary = new int[binaryString.length()];
         for (int i = 0; i < binary.length; i++)
         {
-            binary[i] = binaryString.charAt(i);
+            binary[i] = Integer.parseInt(String.valueOf(binaryString.charAt(i)));
         }
         input.close();
         int consecutive = 0;
-        int currentConsecutive = 1;
+        int currentConsecutive = 0;
         for (int i = 0; i < binary.length; i++)
         {
             try
             {
-                if (binary[i - 1] == 1 && binary[i] == 1)
-                {
-                    currentConsecutive++;
-                }
                 if (binary[i] == 0)
                 {
                     currentConsecutive = 1;
+                }
+                if (binary[i - 1] == 1 && binary[i] == 1)
+                {
+                    currentConsecutive++;
                 }
                 if (currentConsecutive > consecutive)
                 {
@@ -34,7 +34,10 @@ public class Day10BinaryNumbers
             }
             catch (Exception e)
             {
-                currentConsecutive++;
+                if (binary[i] == 1)
+                {
+                    currentConsecutive++;
+                }
             }
         }
         System.out.print(consecutive);
