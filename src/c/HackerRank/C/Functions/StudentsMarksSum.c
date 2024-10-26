@@ -2,7 +2,13 @@
 
 int main()
 {
-    int studentAmount = scanf("%d",&studentAmount);
-    printf("%d",studentAmount);
+    int studentAmount;
+    scanf("%d",&studentAmount);
+    int studentGrade[studentAmount];
+    for (int i = 0; i < studentAmount; i++)
+    {
+        /* code */
+    }
+    
     return 0;
 }
