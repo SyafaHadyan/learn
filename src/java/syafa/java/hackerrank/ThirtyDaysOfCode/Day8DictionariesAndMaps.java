@@ -7,6 +7,12 @@ public class Day8DictionariesAndMaps
     {
         // TODO: Optimize the code
         Scanner input = new Scanner(System.in);
+        int phoneBookSize = Integer.parseInt(input.nextLine());
+        HashMap<String, Integer> phoneBook = new HashMap<String, Integer>();
+        for (int i = 0; i < phoneBookSize; i++)
+        {
+            
+        }
         input.close();
         /*
         int phoneBookInput = Integer.parseInt(input.nextLine());
