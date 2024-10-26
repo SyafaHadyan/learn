@@ -1,6 +1,7 @@
 package syafa.java.hackerrank.ThirtyDaysOfCode;
 import java.util.*;
-public class Day8
+
+public class Day8DictionariesAndMaps
 {
     public static void main(String[] args)
     {
