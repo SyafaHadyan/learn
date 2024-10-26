@@ -20,7 +20,17 @@ int sum (int count,...)
 
 int min(int count,...)
 {
-    //
+    va_list args;
+    int min = INT_MAX;
+    for (int i = 0; i < count; i++)
+    {
+        if (va_arg (args,int) < min)
+        {
+            min = va_arg (args,int);
+        }
+    }
+    va_end (args);
+    return min;
 }
 
 int max(int count,...)
