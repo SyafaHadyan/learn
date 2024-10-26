@@ -10,7 +10,7 @@ public class PrintElementsLinkedList
         LinkedList<Integer> data = new LinkedList<>();
         for (int i = 0; i < inputAmount; i++)
         {
-            
+            data.add(Integer.parseInt(input.nextLine()));
         }
         input.close();
     }
