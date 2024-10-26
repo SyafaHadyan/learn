@@ -2,12 +2,13 @@
 
 int calculateAt(int a,int b,int c,int counter)
 {
-    while (counter)
+    int result = 0;
+    int currentCount = 3;
+    while (currentCount != counter)
     {
-        
         calculateAt();
     }
-    
+    return result;
 }
 
 int main()
