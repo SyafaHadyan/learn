@@ -15,7 +15,7 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return firstMatrix;
         }
         public static int[][] getSecondMatrix(int[] matrixRow)
@@ -27,7 +27,7 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return secondMatrix;
         }
     }
@@ -48,7 +48,6 @@ public class Matrix
         /*
          * TODO
          * 
-         * Multiply first and Second Matrix
          * Inverse
          * Transpose
          * Add try-catch if user can't read instruction properly
