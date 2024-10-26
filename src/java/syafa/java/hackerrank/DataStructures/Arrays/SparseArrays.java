@@ -18,7 +18,7 @@ public class SparseArrays
         for (int i = 0; i < search; i++)
         {
             String tempSearch = input.nextLine();
-            for (int j = 0 + i; j < search - i; j++)
+            for (int j = 0; j < data.length; j++)
             {
                 if (data[j].equalsIgnoreCase(tempSearch))
                 {
