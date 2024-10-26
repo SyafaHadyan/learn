@@ -17,7 +17,11 @@ public class SparseArrays
         int[] occurence = new int[search];
         for (int i = 0; i < search; i++)
         {
-            //
+            String tempSearch = input.nextLine();
+            for (int j = 0 + i; j < search - i; j++)
+            {
+                //
+            }
         }
         input.close();
     }
