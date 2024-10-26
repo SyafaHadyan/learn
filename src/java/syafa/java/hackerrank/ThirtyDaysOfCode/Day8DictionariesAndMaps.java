@@ -7,6 +7,8 @@ public class Day8DictionariesAndMaps
     {
         // TODO: Optimize the code
         Scanner input = new Scanner(System.in);
+        input.close();
+        /*
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
         int phoneNumberArray[] = new int[phoneBookInput];
@@ -35,5 +37,6 @@ public class Day8DictionariesAndMaps
         {
             System.out.println(result[i]);
         }
+        */
     }
 }
