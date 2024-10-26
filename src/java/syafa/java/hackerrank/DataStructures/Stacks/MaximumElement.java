@@ -11,7 +11,8 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+class Result
+{
 
     /*
      * Complete the 'getMax' function below.
@@ -20,9 +21,33 @@ class Result {
      * The function accepts STRING_ARRAY operations as parameter.
      */
 
-    public static List<Integer> getMax(List<String> operations) {
-    // Write your code here
-
+    /*
+     * STDIN   Function
+     * -----   --------
+     * 10      operations[] size n = 10
+     * 1 97    operations = ['1 97', '2', '1 20', ....]
+     * 2
+     * 1 20
+     * 2
+     * 1 26
+     * 1 20
+     * 2
+     * 3
+     * 1 91
+     * 3
+     * 
+     * 26
+     * 91
+     */
+    public static List<Integer> getMax(List<String> operations)
+    {
+        // Write your code here
+        if ()
+        List<Integer> getMaxResult = new List<Integer>()
+        {
+            //
+        };
+        return getMaxResult;
     }
 
 }
