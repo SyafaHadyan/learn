@@ -38,10 +38,6 @@ void checkNumber(int min)
     {
         printf("%s","nine");
     }
-    else
-    {
-        printf("%s","Greater than 9");
-    }
 }
 
 int main()
@@ -51,9 +47,9 @@ int main()
     scanf("%d\n%d",&min,&max);
     for (int i = min; i <= max; i++)
     {
-        if (min <= 9)
+        if (i <= 9)
         {
-            checkNumber(min);
+            checkNumber(i);
         }
         else
         {
@@ -65,6 +61,10 @@ int main()
             {
                 printf("%s","Odd");
             }
+        }
+        if (max - i  != 0)
+        {
+            printf("\n");
         }
     }
     return 0;
