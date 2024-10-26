@@ -8,7 +8,8 @@ int main()
     scanf("%d",&input);
     for (int i = 1; i <= 5; i++)
     {
-        total += input % 10 * i;
+        total += input % 10;
+        input /= 10;
     }
     printf("%d",total);
     return 0;
