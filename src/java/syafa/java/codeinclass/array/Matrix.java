@@ -128,8 +128,6 @@ public class Matrix
             }
             else if (option == 2)
             {
-                // Temporary Disabled, if selected, it will return previous value or 0v
-                //int counter = 1;
                 if (possibleMultiplication)
                 {
                     for (int i = 0; i < matrixMultiplicationResult.length; i++)
@@ -138,9 +136,6 @@ public class Matrix
                         {
                             matrixMultiplicationResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
                         }
-                        /*
-                         * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
-                         */
                     }
                 }
                 else
