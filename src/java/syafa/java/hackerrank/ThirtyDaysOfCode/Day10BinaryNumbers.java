@@ -32,7 +32,7 @@ public class Day10BinaryNumbers
                     consecutive = currentConsecutive;
                 }
             }
-            catch (Exception e)
+            catch (IndexOutOfBoundsException e)
             {
                 if (binary[i] == 1)
                 {
