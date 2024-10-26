@@ -22,6 +22,10 @@ class Result
      */
 
     /*
+     * 1 x  -Push the element x into the stack.
+     * 2    -Delete the element present at the top of the stack.
+     * 3    -Print the maximum element in the stack.
+     * 
      * STDIN   Function
      * -----   --------
      * 10      operations[] size n = 10
