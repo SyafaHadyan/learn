@@ -25,6 +25,11 @@ int is_lower_than_max_height(box b)
 	/**
 	* Return 1 if the box's height is lower than MAX_HEIGHT and 0 otherwise
 	*/
+    if (b.height < MAX_HEIGHT)
+    {
+        return 1;
+    }
+    return 0;
 }
 
 int main()
