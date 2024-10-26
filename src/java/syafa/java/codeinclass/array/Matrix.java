@@ -15,7 +15,7 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return firstMatrix;
         }
         public static int[][] getSecondMatrix(int[] matrixRow)
@@ -27,15 +27,20 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            input.close();
+            //input.close();
             return secondMatrix;
         }
     }
     static class matrixOperation
     {
-        public static int matrixMultiplicaiton(int[] firstMatrix,int[]secondMatrix,int row,int col)
+        public static int matrixMultiplicaiton(int[][] firstMatrix,int[][] secondMatrix,int row,int col)
         {
-            //
+            int result = 0;
+            for (int i = 0; i < secondMatrix.length; i++)
+            {
+                result += firstMatrix[row][i] * secondMatrix[i][col];
+            }
+            return result;
         }
     }
     public static void main(String[] args)
@@ -78,7 +83,7 @@ public class Matrix
             int[][] matrixResult = new int[matrixRow[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
             int[][] matrixMultiplicationResult = new int[firstMatrix.length][secondMatrix[0].length];
             int[][][] matrixMultiply = new int[2][matrixRow[0]][(firstMatrix.length + secondMatrix.length) / 2];
-            if (matrixRow[0] != matrixCol[1])
+            if (matrixRow[1] != matrixCol[0])
             {
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
@@ -116,7 +121,7 @@ public class Matrix
                     {
                         for (int j = 0; j < matrixResult[i].length; j++)
                         {
-                            matrixResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
+                            matrixResult[i][j] = secondMatrix[i][j] - firstMatrix[i][j];
                         }
                     }    
                 }
@@ -127,11 +132,11 @@ public class Matrix
                 //int counter = 1;
                 if (possibleMultiplication)
                 {
-                    for (int i = 0; i < firstMatrix.length; i++)
+                    for (int i = 0; i < matrixResult.length; i++)
                     {
-                        for (int j = 0; j < secondMatrix[i].length; j++)
+                        for (int j = 0; j < matrixResult[i].length; j++)
                         {
-                            //
+                            matrixResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
                         }
                         /*
                          * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
@@ -214,17 +219,17 @@ public class Matrix
             }
             else if (option == 2)
             {
-                for (int i = 0; i < matrixMultiplicationResult.length; i++)
+                for (int i = 0; i < matrixResult.length; i++)
                 {
-                    for (int j = 0; j < matrixMultiplicationResult[0].length; j++)
+                    for (int j = 0; j < matrixResult[i].length; j++)
                     {
-                        System.out.print(matrixMultiplicationResult[i][j]);
-                        if (matrixMultiplicationResult[i].length - j != 1)
+                        System.out.print(matrixResult[i][j]);
+                        if (matrixResult[i].length - j != 1)
                         {
                             System.out.print(' ');
                         }
                     }
-                    if (matrixMultiplicationResult.length - i != 1)
+                    if (matrixResult.length - i != 1)
                     {
                         System.out.print("\n");
                     }
