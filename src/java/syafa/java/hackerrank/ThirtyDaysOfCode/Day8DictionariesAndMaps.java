@@ -11,9 +11,14 @@ public class Day8DictionariesAndMaps
         HashMap<String, Integer> phoneBook = new HashMap<String, Integer>();
         for (int i = 0; i < phoneBookSize; i++)
         {
-            
+            phoneBook.put(input.next(),Integer.parseInt(input.next()));
+            input.nextLine();
         }
         input.close();
+        for (int i = 0; i < phoneBook.size(); i++)
+        {
+            System.out.print(phoneBook.get(input.nextLine()));
+        }
         /*
         int phoneBookInput = Integer.parseInt(input.nextLine());
         String nameArray[] = new String[phoneBookInput];
