@@ -14,9 +14,11 @@ public class ArrayManipulation
          * 
          * 200
          * 
-         * After the first update the list is 100 100 0 0 0.
-         * After the second update list is 100 200 100 100 100.
-         * After the third update list is 100 200 200 200 100.
+         * requests are 1 indexed
+         * 
+         * After the first update the list is   100 100 0 0 0.
+         * After the second update list is      100 200 100 100 100.
+         * After the third update list is       100 200 200 200 100.
          * The maximum value is 200.
          */
         Scanner input = new Scanner(System.in);
