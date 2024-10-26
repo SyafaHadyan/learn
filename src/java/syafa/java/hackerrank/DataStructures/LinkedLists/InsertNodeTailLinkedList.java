@@ -8,7 +8,7 @@ public class InsertNodeTailLinkedList
         Scanner input = new Scanner(System.in);
         int dataAmount = Integer.parseInt(input.nextLine());
         LinkedList<Integer> data = new LinkedList<>();
-        for (int i = 0; i < args.length; i++)
+        for (int i = 0; i < dataAmount; i++)
         {
             data.add(Integer.parseInt(input.nextLine()));
         }
