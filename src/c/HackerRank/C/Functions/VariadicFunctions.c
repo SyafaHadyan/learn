@@ -5,15 +5,26 @@
 
 #define MIN_ELEMENT 1
 #define MAX_ELEMENT 1000000
-int  sum (int count,...) {
-
+int sum (int count,...)
+{
+    va_list args;
+    int sum = 0;
+    va_start (args,count);
+    for (int i = 0; i < count; i++)
+    {
+        sum += va_arg (args,int);
+    }
+    va_end (args);
+    return sum;
 }
 
-int min(int count,...) {
-
+int min(int count,...)
+{
+    //
 }
 
-int max(int count,...) {
+int max(int count,...)
+{
 
 }
 
