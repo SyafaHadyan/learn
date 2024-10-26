@@ -51,7 +51,21 @@ int main()
     scanf("%d\n%d",&min,&max);
     for (int i = min; i <= max; i++)
     {
-        //
+        if (min <= 9)
+        {
+            checkNumber(min);
+        }
+        else
+        {
+            if (i % 2 == 0)
+            {
+                printf("%s","Even");
+            }
+            else
+            {
+                printf("%s","Odd");
+            }
+        }
     }
     return 0;
 }
