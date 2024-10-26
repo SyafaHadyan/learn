@@ -20,7 +20,10 @@ public class SparseArrays
             String tempSearch = input.nextLine();
             for (int j = 0 + i; j < search - i; j++)
             {
-                //
+                if (data[j].equalsIgnoreCase(tempSearch))
+                {
+                    occurence[i]++;
+                }
             }
         }
         input.close();
