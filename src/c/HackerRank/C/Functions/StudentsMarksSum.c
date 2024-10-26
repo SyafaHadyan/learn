@@ -3,6 +3,7 @@
 
 #define TRY do{ jmp_buf ex_buf__; if( !setjmp(ex_buf__) ){
 #define CATCH } else {
+#define ENDTRY } }while(0)
 
 int main()
 {
@@ -30,10 +31,23 @@ int main()
         {
             //
         }
+        ENDTRY;
     }
     else if (sumGradeCheck == 'g')
     {
-        //
+        TRY
+        {
+            for (int i = 1; i < studentAmount; i += 2)
+            {
+                sumGrade += studentGrade[i];
+            }
+            
+        }
+        CATCH
+        {
+            //
+        }
+        ENDTRY;
     }
     return 0;
 }
