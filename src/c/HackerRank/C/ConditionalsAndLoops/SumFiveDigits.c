@@ -3,12 +3,13 @@
 
 int main()
 {
-    char input[5];
-    int total;
-    scanf("%s",&input);
-    for (int i = 0; i < sizeof(input); i++)
+    int input;
+    int total = 0;
+    scanf("%d",&input);
+    for (int i = 1; i <= 5; i++)
     {
-        total += atoi(input[i]);
+        total += input % 10 * i;
     }
-    
+    printf("%d",total);
+    return 0;
 }
