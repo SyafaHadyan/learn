@@ -47,6 +47,10 @@ int main()
         {
             i++;
         }
+        if (counter && i == number)
+        {
+            break;
+        }
     }
     
 }
