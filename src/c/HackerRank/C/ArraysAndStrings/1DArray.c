@@ -3,9 +3,9 @@
 int main()
 {
     int arraySize;
-    int total;
-    int array[arraySize];
     scanf("%d",&arraySize);
+    int total = 0;
+    int array[arraySize];
     for (int i = 0; i < arraySize; i++)
     {
         scanf("%d",&array[i]);
