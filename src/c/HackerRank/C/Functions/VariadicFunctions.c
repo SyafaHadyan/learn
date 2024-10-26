@@ -35,7 +35,17 @@ int min(int count,...)
 
 int max(int count,...)
 {
-
+    va_list args;
+    int max = INT_MIN;
+    for (int i = 0; i < count; i++)
+    {
+        if (va_arg (args,int) > max)
+        {
+            max = va_arg (args,int);
+        }
+    }
+    va_end (args);
+    return max;
 }
 
 int test_implementations_by_sending_three_elements() {
