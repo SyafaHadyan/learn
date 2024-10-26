@@ -10,5 +10,13 @@ public class ArraysDS
         int arraySize = Integer.parseInt(input.nextLine());
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        for (int i = array.length - 1; i >= 0; i--)
+        {
+            System.out.print(array[i]);
+            if (i != 0)
+            {
+                System.out.print(' ');
+            }
+        }
     }
 }
