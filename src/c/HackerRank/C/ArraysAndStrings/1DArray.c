@@ -4,12 +4,13 @@ int main()
 {
     int arraySize;
     int total;
-    int *array = (int*)malloc(arraySize * sizeof(int));
+    int array[arraySize];
     scanf("%d",&arraySize);
-    for (size_t i = 0; i < arraySize; i++)
+    for (int i = 0; i < arraySize; i++)
     {
-        array[i] = scanf("%d",&array[i]);
+        scanf("%d",&array[i]);
+        total += array[i];
     }
-    printf("%s","Test");
+    printf("%d",total);
     return 0;
 }
