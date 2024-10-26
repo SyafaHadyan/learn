@@ -22,6 +22,8 @@ public class Day20Sorting
                     }
                 }
             }
+            result[0] = array[0];
+            result[1] = array[array.length - 1];
             return result;
         }
     }
