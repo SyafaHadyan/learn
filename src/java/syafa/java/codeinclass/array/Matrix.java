@@ -200,11 +200,11 @@ public class Matrix
                     }
                 }
             }
-            else if (option == 4)
-            {
-                //
-            }
-            if (option != 2 && option != 3 && option != 4 && option >= 0)
+            if
+            (
+                option >= 0 &&
+                !(option >= 2) && !(option <= 4)
+            )
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
@@ -272,6 +272,10 @@ public class Matrix
                         System.out.print("\n\n");
                     }
                 }
+            }
+            else if (option == 4)
+            {
+                //
             }
             System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
