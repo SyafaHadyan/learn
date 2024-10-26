@@ -2,17 +2,19 @@
 
 int calculateAt(int a,int b,int c,int counter,int currentCount,int result)
 {
-    int result = 0;
-    result += a + b + c;
+    result = a + b + c;
     a = b;
     b = c;
     c = result;
     currentCount++;
+    if (currentCount == counter)
+    {
+        return result;
+    }
     if (currentCount != counter)
     {
         calculateAt(a,b,c,counter,currentCount,result);
     }
-    return result;
 }
 
 int main()
