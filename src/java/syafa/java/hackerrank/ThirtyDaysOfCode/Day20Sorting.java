@@ -10,5 +10,6 @@ public class Day20Sorting
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        System.out.print("Array is sorted in" + " " + 0 + " " + "swaps" + "." + "\n" + "First element" + ":" + " " + 0 + "\n" + "Last element" + ":" + " " + 0);
     }
 }
