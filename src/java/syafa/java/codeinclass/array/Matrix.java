@@ -132,11 +132,11 @@ public class Matrix
                 //int counter = 1;
                 if (possibleMultiplication)
                 {
-                    for (int i = 0; i < matrixResult.length; i++)
+                    for (int i = 0; i < matrixMultiplicationResult.length; i++)
                     {
-                        for (int j = 0; j < matrixResult[i].length; j++)
+                        for (int j = 0; j < matrixMultiplicationResult[i].length; j++)
                         {
-                            matrixResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
+                            matrixMultiplicationResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
                         }
                         /*
                          * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
@@ -186,7 +186,7 @@ public class Matrix
                 multiplyMatrix = Integer.parseInt(input.nextLine());
                 for (int i = 0; i < matrixMultiply.length; i++)
                 {
-                    for (int j = 0; j < matrixResult[i].length; j++)
+                    for (int j = 0; j < matrixMultiply[i].length; j++)
                     {
                         matrixMultiply[0][i][j] = firstMatrix[i][j] * multiplyMatrix;
                     }
@@ -219,17 +219,17 @@ public class Matrix
             }
             else if (option == 2)
             {
-                for (int i = 0; i < matrixResult.length; i++)
+                for (int i = 0; i < matrixMultiplicationResult.length; i++)
                 {
-                    for (int j = 0; j < matrixResult[i].length; j++)
+                    for (int j = 0; j < matrixMultiplicationResult[i].length; j++)
                     {
-                        System.out.print(matrixResult[i][j]);
-                        if (matrixResult[i].length - j != 1)
+                        System.out.print(matrixMultiplicationResult[i][j]);
+                        if (matrixMultiplicationResult[i].length - j != 1)
                         {
                             System.out.print(' ');
                         }
                     }
-                    if (matrixResult.length - i != 1)
+                    if (matrixMultiplicationResult.length - i != 1)
                     {
                         System.out.print("\n");
                     }
