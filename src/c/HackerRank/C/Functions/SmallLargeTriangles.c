@@ -10,10 +10,23 @@ struct triangle
 };
 
 typedef struct triangle triangle;
-void sort_by_area(triangle* tr, int n) {
+
+double calculateArea(triangle tr)
+{
+    double area = sqrt((tr.a * tr.b * tr.c) / 2);
+    return area;
+}
+
+void sort_by_area(triangle* tr, int n)
+{
 	/**
 	* Sort an array a of the length n
 	*/
+    for (int i = 0; i < n; i++)
+    {
+        /* code */
+    }
+    
 }
 
 int main()
