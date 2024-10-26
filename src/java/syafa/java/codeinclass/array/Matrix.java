@@ -4,10 +4,9 @@ import java.util.stream.*;
 
 public class Matrix
 {
-    class getMatrix
+    static class getMatrix
     {
-        @SuppressWarnings("resource")
-        public static int[][] getFirstMatrix(int matrixRow[])
+        public static int[][] getFirstMatrix(int[] matrixRow)
         {
             Scanner input = new Scanner(System.in);
             int[][] firstMatrix = new int[matrixRow[0]][];
@@ -16,11 +15,10 @@ public class Matrix
             {
                 firstMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return firstMatrix;
         }
-        @SuppressWarnings("resource")
-        public static int[][] getSecondMatrix(int matrixRow[])
+        public static int[][] getSecondMatrix(int[] matrixRow)
         {
             Scanner input = new Scanner(System.in);
             int[][] secondMatrix = new int[matrixRow[1]][];
@@ -29,8 +27,15 @@ public class Matrix
             {
                 secondMatrix[i] = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             }
-            //input.close();
+            input.close();
             return secondMatrix;
+        }
+    }
+    static class matrixOperation
+    {
+        public static int matrixMultiplicaiton(int[] firstMatrix,int[]secondMatrix,int row,int col)
+        {
+            //
         }
     }
     public static void main(String[] args)
@@ -71,7 +76,7 @@ public class Matrix
             }
             int[] substractOrder = new int[2];
             int[][] matrixResult = new int[matrixRow[0]][(firstMatrix[0].length + secondMatrix[0].length) / 2];
-            int[][] matrixMultiplicationResult = new int[matrixRow[0]][secondMatrix[0].length];
+            int[][] matrixMultiplicationResult = new int[firstMatrix.length][secondMatrix[0].length];
             int[][][] matrixMultiply = new int[2][matrixRow[0]][(firstMatrix.length + secondMatrix.length) / 2];
             if (matrixRow[0] != matrixCol[1])
             {
@@ -111,7 +116,7 @@ public class Matrix
                     {
                         for (int j = 0; j < matrixResult[i].length; j++)
                         {
-                            matrixResult[i][j] = secondMatrix[i][j] - firstMatrix[i][j];
+                            matrixResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
                         }
                     }    
                 }
@@ -126,12 +131,7 @@ public class Matrix
                     {
                         for (int j = 0; j < secondMatrix[i].length; j++)
                         {
-                            if (firstMatrix.length - i != 1)
-                            {
-                                matrixMultiplicationResult[i][j] = (firstMatrix[i][i] * secondMatrix[i][j]) + (firstMatrix[i][i + 1] * secondMatrix[i + 1][j]);
-                                continue;
-                            }
-                            matrixMultiplicationResult[i][j] = (firstMatrix[i][j] * secondMatrix[0][j]) + (firstMatrix[i][j] * secondMatrix[0][j]);
+                            //
                         }
                         /*
                          * matrixMultiplicationResult[i][j + 1] = (firstMatrix[i][j] * secondMatrix[i][j + 1]) + (firstMatrix[i][j + 1]);
