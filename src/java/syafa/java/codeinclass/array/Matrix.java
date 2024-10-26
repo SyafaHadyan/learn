@@ -88,8 +88,14 @@ public class Matrix
                 possibleMultiplication = false;
                 possibleMultiplicationOption = " [Not possible due to matrix size]";
             }
-            System.out.printf("%s\n%s\n%s%s\n%s\n%-20s%-2c",
-                    "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,"(3) Multiply matrix by n","Choose operation",':');
+            System.out.printf
+            (
+                "%s\n%s\n%s%s\n%s\n%s\n%-20s%-2c",
+                "(0) Add","(1) Substract","(2) Multiply",possibleMultiplicationOption,
+                "(3) Multiply matrix by n",
+                "(4) Divide matrix",
+                "Choose operation",':'
+            );
             option = Integer.parseInt(input.nextLine());
             if (option == 0)
             {
@@ -194,7 +200,11 @@ public class Matrix
                     }
                 }
             }
-            if (option != 2 && option != 3 && option >= 0)
+            else if (option == 4)
+            {
+                //
+            }
+            if (option != 2 && option != 3 && option != 4 && option >= 0)
             {
                 for (int i = 0; i < matrixResult.length; i++)
                 {
