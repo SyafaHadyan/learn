@@ -10,7 +10,7 @@ public class SparseArrays
         String[] data = new String[dataAmount];
         for (int i = 0; i < dataAmount; i++)
         {
-            //
+            data[i] = input.nextLine();
         }
         input.close();
     }
