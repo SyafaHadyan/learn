@@ -55,11 +55,11 @@ int main()
         {
             if (i % 2 == 0)
             {
-                printf("%s","Even");
+                printf("%s","even");
             }
             else
             {
-                printf("%s","Odd");
+                printf("%s","odd");
             }
         }
         if (max - i  != 0)
