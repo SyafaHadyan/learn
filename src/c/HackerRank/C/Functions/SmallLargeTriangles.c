@@ -14,7 +14,7 @@ typedef struct triangle triangle;
 double calculateArea(triangle tr)
 {
     double area = sqrt((tr.a * tr.b * tr.c) / 2);
-    printf("%.3f",area * (area - tr.a) * (area - tr.b) * (area - tr.c));
+    printf("%.3f\n",area * (area - tr.a) * (area - tr.b) * (area - tr.c));
     return area * (area - tr.a) * (area - tr.b) * (area - tr.c);
 }
 
@@ -29,6 +29,7 @@ void sort_by_area(triangle* tr, int n)
     {
         /* code */
     }
+    //calculateArea(*tr.a)
     //qsort(tr, n, sizeof(triangle));
 }
 
