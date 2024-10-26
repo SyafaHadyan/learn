@@ -27,5 +27,13 @@ public class SparseArrays
             }
         }
         input.close();
+        for (int i = 0; i < occurence.length; i++)
+        {
+            System.out.print(occurence[i]);
+            if (occurence.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
