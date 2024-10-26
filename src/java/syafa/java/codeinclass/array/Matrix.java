@@ -43,6 +43,10 @@ public class Matrix
             }
             return result;
         }
+        public static int[][] matrixInverse(int[][] matrix)
+        {
+            return matrix;
+        }
     }
     public static void main(String[] args)
     {
