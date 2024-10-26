@@ -3,10 +3,9 @@
   "configurations": [
     {
       "type": "java",
-      "name": "SparseArrays",
+      "name": "Debug (Launch) - Current File",
       "request": "launch",
-      "mainClass": "syafa.java.hackerrank.DataStructures.Arrays.SparseArrays",
-      "projectName": "learn_7d900611"
+      "mainClass": "${file}"
     },
     {
       "name": "C/C++ Runner: Debug Session",
