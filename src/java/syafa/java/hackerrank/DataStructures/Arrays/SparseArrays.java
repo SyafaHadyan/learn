@@ -7,10 +7,17 @@ public class SparseArrays
     {
         Scanner input = new Scanner(System.in);
         int dataAmount = Integer.parseInt(input.nextLine());
+        int search = 0;
         String[] data = new String[dataAmount];
         for (int i = 0; i < dataAmount; i++)
         {
             data[i] = input.nextLine();
+        }
+        search = Integer.parseInt(input.nextLine());
+        int[] occurence = new int[search];
+        for (int i = 0; i < search; i++)
+        {
+            //
         }
         input.close();
     }
