@@ -21,7 +21,7 @@ int sum (int count,...)
 int min(int count,...)
 {
     va_list args;
-    int min = INT_MAX;
+    int min = 2147483647;
     for (int i = 0; i < count; i++)
     {
         if (va_arg (args,int) < min)
@@ -36,7 +36,7 @@ int min(int count,...)
 int max(int count,...)
 {
     va_list args;
-    int max = INT_MIN;
+    int max = -2147483647;
     for (int i = 0; i < count; i++)
     {
         if (va_arg (args,int) > max)
