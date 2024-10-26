@@ -3,7 +3,7 @@
 int main()
 {
     char input[100];
-    scanf("%s",input);
-    printf("Hello, world!\n%s",input);
+    scanf("%[^\n]%*c",input);
+    printf("Hello, World!\n%s",input);
     return 0;
 }
