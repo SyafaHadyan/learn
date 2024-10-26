@@ -9,42 +9,40 @@ int sum (int count,...)
 {
     va_list args;
     int sum = 0;
-    va_start (args,count);
+    va_start(args,count);
     for (int i = 0; i < count; i++)
     {
-        sum += va_arg (args,int);
+        sum += va_arg(args,int);
     }
-    va_end (args);
+    va_end(args);
     return sum;
 }
 
 int min(int count,...)
 {
     va_list args;
-    int min = 2147483647;
-    for (int i = 0; i < count; i++)
+    va_start(args,count);
+    int min = va_arg(args,int);
+    for (int i = 0; i < count - 1; i++)
     {
-        if (va_arg (args,int) < min)
-        {
-            min = va_arg (args,int);
-        }
+        int temp = va_arg(args,int);
+        min = min > temp ? temp : min;
     }
-    va_end (args);
+    va_end(args);
     return min;
 }
 
 int max(int count,...)
 {
     va_list args;
-    int max = -2147483647;
-    for (int i = 0; i < count; i++)
+    va_start(args,count);
+    int max = va_arg(args,int);
+    for (int i = 0; i < count - 1; i++)
     {
-        if (va_arg (args,int) > max)
-        {
-            max = va_arg (args,int);
-        }
+        int temp = va_arg(args,int);
+        max = temp > max ? temp : max;
     }
-    va_end (args);
+    va_end(args);
     return max;
 }
 
