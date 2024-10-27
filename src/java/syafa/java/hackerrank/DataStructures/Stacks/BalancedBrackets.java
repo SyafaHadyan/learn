@@ -3,6 +3,13 @@ import java.util.*;
 
 public class BalancedBrackets
 {
+    static class checkBalance
+    {
+        public static boolean isBalanced(String bracket)
+        {
+            return false;
+        }
+    }
     public static void main(String[] args)
     {
         /*
