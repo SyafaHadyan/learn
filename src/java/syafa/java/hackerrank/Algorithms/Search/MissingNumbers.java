@@ -43,6 +43,7 @@ public class MissingNumbers
         //int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         List<Integer> secondArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        int[] result = compareArray.missingElements(firstArray,secondArray);
         input.close();
     }
 }
