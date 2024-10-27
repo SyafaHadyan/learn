@@ -11,5 +11,18 @@ public class PickingNumbers
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(array);
+        int currentMaxSubArray = 0;
+        int maxSubArray = 0;
+        for (int i = 0; i < array.length - 1; i++)
+        {
+            if (Math.abs(array[i] - array[i + 1]) <= 1)
+            {
+                currentMaxSubArray++;
+            }
+            if (currentMaxSubArray > maxSubArray)
+            {
+                maxSubArray = currentMaxSubArray;
+            }
+        }
     }
 }
