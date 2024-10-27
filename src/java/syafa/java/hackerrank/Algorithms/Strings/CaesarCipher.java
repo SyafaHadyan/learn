@@ -3,6 +3,13 @@ import java.util.*;
 
 public class CaesarCipher
 {
+    static class chiper
+    {
+        public static char characterIndex(char character)
+        {
+            return 'a';
+        }
+    }
     public static void main(String[] args)
     {
         /*
