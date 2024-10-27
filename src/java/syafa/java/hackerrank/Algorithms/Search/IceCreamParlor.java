@@ -32,55 +32,6 @@ public class IceCreamParlor
     }
     public static void main(String[] args)
     {
-        /*
-         * STDIN       Function
-         * -----       --------
-         * 2           t = 2
-         * 4           k = 4
-         * 5           cost[] size n = 5
-         * 1 4 5 3 2   cost = [1, 4, 5, 3, 2]
-         * 4           k = 4
-         * 4           cost[] size n = 4
-         * 2 2 4 3     cost=[2, 2,4, 3]
-         * 
-         * 1 4
-         * 1 2
-         * 
-         * 2
-         * 4
-         * 5
-         * 1 4 5 3 2
-         * 4
-         * 4
-         * 2 2 4 3
-         * 
-         * 
-         * Two friends like to pool their money and go to the ice cream parlor.
-         * They always choose two distinct flavors and they spend all of their money.
-         * Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have.
-         * 
-         * 2 3
-         * 1 4
-         * 4 5
-         * 29 46
-         * 11 56
-         * 4 5
-         * 40 46
-         * 16 35
-         * 55 74
-         * 7 9
-         * 
-         * 0 0
-         * 1 4
-         * 4 5
-         * 29 46
-         * 0 0
-         * 0 0
-         * 0 0
-         * 16 35
-         * 0 0
-         * 7 9
-         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[][] purchasedIceCream = new int[testCase][2];
