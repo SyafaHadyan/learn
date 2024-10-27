@@ -14,29 +14,29 @@ public class BalancedBrackets
         }
         public static boolean matchedPair(String bracket)
         {
-            bracket = checkBalance.sortBracket(bracket);
+            char[] bracketChar = checkBalance.sortBracket(bracket).toCharArray();
             int count = 0;
-            for (int i = 0; i < bracket.length(); i++)
+            for (int i = 0; i < bracketChar.length; i++)
             {
-                for (int j = 0; j < bracket.length(); j++)
+                for (int j = 0; j < bracketChar.length; j++)
                 {
-                    if ((bracket.charAt(i) == '(') && (bracket.charAt(bracket.length() - j - 1) == ')'))
+                    if ((bracketChar[i] == '(') && (bracketChar[bracketChar.length - j - 1] == ')'))
                     {
                         count++;
                         break;
                     }
-                    else if ((bracket.charAt(i) == '{') && (bracket.charAt(bracket.length() - j - 1) == '}'))
+                    else if ((bracketChar[i] == '{') && (bracketChar[bracketChar.length - j - 1] == '}'))
                     {
                         count++;
                         break;
                     }
-                    else if ((bracket.charAt(i) == '[') && (bracket.charAt(bracket.length() - j - 1) == ']'))
+                    else if ((bracketChar[i] == '[') && (bracketChar[bracketChar.length - j - 1] == ']'))
                     {
                         count++;
                         break;
                     }
                     /*
-                    if (bracket.charAt(i) == bracket.charAt(bracket.length() - j - 1))
+                    if (bracketChar[i] == bracketChar[bracketChar.length - j - 1)
                     {
                         count++;
                     }
@@ -65,7 +65,7 @@ public class BalancedBrackets
             /*
             for (int i = 0; i < (bracket.length() / 2); i++)
             {
-                if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i - 1)))
+                if (checkBalance.matchedPair(bracketChar[i],bracket.charAt(bracket.length() - i - 1)))
                 {
                     continue;
                 }
