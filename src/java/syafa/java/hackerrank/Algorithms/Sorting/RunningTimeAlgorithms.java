@@ -14,10 +14,6 @@ public class RunningTimeAlgorithms
             {
                 int k = array[i];
                 int j = i - 1;
-    
-                // Move elements of arr[0..i-1], that are
-                // greater than key, to one position ahead
-                // of their current position
                 while (j >= 0 && array[j] > k)
                 {
                     array[j + 1] = array[j];
@@ -35,6 +31,7 @@ public class RunningTimeAlgorithms
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        System.out.print(sort.insertionSort(array));
         input.close();
     }
 }
