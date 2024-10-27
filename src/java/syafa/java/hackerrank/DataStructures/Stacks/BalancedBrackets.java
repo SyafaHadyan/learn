@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.DataStructures.Stacks;
 import java.util.*;
+import java.util.stream.*;
 
 public class BalancedBrackets
 {
@@ -7,7 +8,13 @@ public class BalancedBrackets
     {
         public static void matchedPair()
         {
-            char[] pair =
+            Map<Character,Character> pair = Stream.of(new Object[][]
+            {
+                {'(',')'},
+                {'{','}'},
+                {'[',']'},
+            }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
+            char[] pairs =
             {
                 ')',
                 '}',
