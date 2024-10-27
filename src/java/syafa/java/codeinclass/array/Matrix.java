@@ -55,12 +55,6 @@ public class Matrix
     }
     public static void main(String[] args)
     {
-        /*
-         * TODO
-         * 
-         * Inverse
-         * Transpose
-         */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
         int[] matrixRow = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
