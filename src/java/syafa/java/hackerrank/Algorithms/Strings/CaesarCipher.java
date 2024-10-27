@@ -5,6 +5,10 @@ public class CaesarCipher
 {
     static class chiper
     {
+        public static boolean isUpperCase(char character)
+        {
+            return isUpperCase(character);
+        }
         public static char characterIndex(char character)
         {
             return 'a';
