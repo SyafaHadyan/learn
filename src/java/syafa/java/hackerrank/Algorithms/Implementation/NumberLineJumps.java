@@ -11,9 +11,12 @@ public class NumberLineJumps
         input.close();
         while (kangarooJump[0] != kangarooJump[2] && !(kangarooJump[0] > kangarooJump[2]))
         {
-            for (int i = 0; i < kangarooJump.length; i++)
+            kangarooJump[0] += kangarooJump[1];
+            kangarooJump[2] += kangarooJump[3];
+            if (kangarooJump[0] == kangarooJump[2])
             {
-                
+                System.out.print("YES");
+                System.exit(0);
             }
         }
     }
