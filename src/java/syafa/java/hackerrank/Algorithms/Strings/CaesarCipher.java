@@ -14,7 +14,7 @@ public class CaesarCipher
             char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
             if ((new String(characterIndex).indexOf(character) + rotation) > 25)
             {
-                return characterIndex[(new String(characterIndex).indexOf(character) + rotation) - 25];
+                return characterIndex[(new String(characterIndex).indexOf(character) + rotation) - 26];
             }
             return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
         }
