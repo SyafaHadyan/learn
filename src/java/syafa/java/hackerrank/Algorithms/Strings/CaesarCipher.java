@@ -9,7 +9,7 @@ public class CaesarCipher
         {
             if (Character.isUpperCase(character))
             {
-                Character.toLowerCase(character);
+                character = Character.toLowerCase(character);
             }
             char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
             if ((new String(characterIndex).indexOf(character) + rotation) > 25)
