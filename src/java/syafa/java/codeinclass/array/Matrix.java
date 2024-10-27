@@ -45,6 +45,11 @@ public class Matrix
         }
         public static int[][] matrixInverse(int[][] matrix)
         {
+            int determinant = matrix[0][0] * matrix[1][1] - (matrix[0][1] * matrix[1][0]);
+            int temp = matrix[0][0];
+            matrix[1][1] = temp;
+            matrix[0][1] = -matrix[0][1];
+            matrix[1][0] = -matrix[1][0];
             return matrix;
         }
     }
@@ -55,7 +60,6 @@ public class Matrix
          * 
          * Inverse
          * Transpose
-         * Add try-catch if user can't read instruction properly
          */
         Scanner input = new Scanner(System.in);
         System.out.printf("%-50s%-2c","Input matrix sizes [First Row] [Second Row]",':');
@@ -203,6 +207,10 @@ public class Matrix
                         matrixMultiply[1][i][j] = secondMatrix[i][j] * multiplyMatrix;
                     }
                 }
+            }
+            else if (option == 4)
+            {
+                //
             }
             if
             (
