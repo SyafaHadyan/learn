@@ -15,6 +15,10 @@ public class MissingNumbers
          * 204 205 206
          */
         Scanner input = new Scanner(System.in);
+        int firstArrayLength = Integer.parseInt(input.nextLine());
+        int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        int secondArrayLength = Integer.parseInt(input.nextLine());
+        int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
