@@ -9,9 +9,13 @@ public class CaesarCipher
         {
             return isUpperCase(character);
         }
-        public static char characterIndex(char character)
+        public static char characterIndex(char character,boolean isUpperCase)
         {
-            return 'a';
+            if (isUpperCase)
+            {
+                return Character.toUpperCase(character);
+            }
+            return character;
         }
     }
     public static void main(String[] args)
