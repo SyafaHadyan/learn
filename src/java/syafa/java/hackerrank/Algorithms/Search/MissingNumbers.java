@@ -13,15 +13,22 @@ public class MissingNumbers
             Collections.sort(secondArray);
             for (int i = 0; i < secondArray.size(); i++)
             {
-                if (secondArray.get(i) == firstArray.get(i))
+                try
                 {
-                    secondArray.remove(i);
-                    firstArray.remove(i);
-                    i--;
+                    if (secondArray.get(i) == firstArray.get(i))
+                    {
+                        secondArray.remove(i);
+                        firstArray.remove(i);
+                        i--;
+                    }
+                    if ((secondArray.get(i) != firstArray.get(i) || i > firstArray.size()))
+                    {
+                        missing[i] = secondArray.get(i);
+                    }
                 }
-                if ((secondArray.get(i) != firstArray.get(i) || i > firstArray.size()))
+                catch (IndexOutOfBoundsException e)
                 {
-                    missing[i] = secondArray.get(i);
+                    //
                 }
             }
             return missing;
@@ -41,6 +48,7 @@ public class MissingNumbers
         int firstArrayLength = Integer.parseInt(input.nextLine());
         List<Integer> firstArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        int secondArrayLength = Integer.parseInt(input.nextLine());
         List<Integer> secondArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int[] result = compareArray.missingElements(firstArray,secondArray);
