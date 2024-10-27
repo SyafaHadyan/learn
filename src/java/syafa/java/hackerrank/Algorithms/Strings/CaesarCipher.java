@@ -16,7 +16,7 @@ public class CaesarCipher
             {
                 return characterIndex[(new String(characterIndex).indexOf(character) + rotation) - 25];
             }
-            return return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
+            return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
         }
     }
     public static void main(String[] args)
@@ -46,6 +46,11 @@ public class CaesarCipher
         int wordLength = Integer.parseInt(input.nextLine());
         char[] originalLetter = input.nextLine().toCharArray();
         int rotation = Integer.parseInt(input.nextLine());
+        StringBuilder result = new StringBuilder();
+        for (int i = 0; i < originalLetter.length; i++)
+        {
+            result.append(chiper.characterIndex(originalLetter[i],rotation));
+        }
         input.close();
     }
 }
