@@ -15,7 +15,7 @@ public class BalancedBrackets
         public static boolean matchedPair(String bracket)
         {
             bracket = checkBalance.sortBracket(bracket);
-            int count = 1;
+            int count = 0;
             for (int i = 0; i < bracket.length(); i++)
             {
                 for (int j = 0; j < bracket.length(); j++)
@@ -43,7 +43,7 @@ public class BalancedBrackets
                     */
                 }
             }
-            if (count == bracket.length())
+            if (count == bracket.length() / 2.0)
             {
                 return true;
             }
@@ -90,6 +90,7 @@ public class BalancedBrackets
          * YES
          * 
          * (, ), {, }, [, or ].
+         * (())[[[]]]]{}
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
