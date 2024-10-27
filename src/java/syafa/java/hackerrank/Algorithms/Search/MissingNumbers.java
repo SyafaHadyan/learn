@@ -6,16 +6,16 @@ public class MissingNumbers
 {
     static class compareArray
     {
-        public static int[] missingElements(List<String> firstArray,List<String> secondArray)
+        public static int[] missingElements(List<Integer> firstArray,List<Integer> secondArray)
         {
-            int[] missing = new int[secondArray.length - firstArray.length];
-            Arrays.sort(firstArray);
-            Arrays.sort(secondArray);
-            for (int i = 0; i < secondArray.length; i++)
+            int[] missing = new int[secondArray.size() - firstArray.size()];
+            Collections.sort(firstArray);
+            Collections.sort(secondArray);
+            for (int i = 0; i < secondArray.size(); i++)
             {
-                if ((secondArray[i] != firstArray[i] || i > firstArray.length))
+                if ((secondArray.get(i) != firstArray.get(i) || i > firstArray.size()))
                 {
-                    missing[i] = secondArray[i];
+                    missing[i] = secondArray.get(i);
                 }
             }
             return missing;
