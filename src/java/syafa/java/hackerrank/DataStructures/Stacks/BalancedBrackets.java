@@ -16,6 +16,8 @@ public class BalancedBrackets
          * YES
          * NO
          * YES
+         * 
+         * (, ), {, }, [, or ].
          */
         Scanner input = new Scanner(System.in);
         input.close();
