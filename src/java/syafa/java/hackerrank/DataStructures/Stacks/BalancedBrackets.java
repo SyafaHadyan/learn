@@ -13,7 +13,7 @@ public class BalancedBrackets
         }
         public static boolean matchedPair(String bracket)
         {
-            ArrayList<String> bracketChar = new ArrayList<>(Arrays.asList(checkBalance.sortBracket(bracket).split("")));
+            ArrayList<String> bracketChar = new ArrayList<>(Arrays.asList((bracket).split("")));
             int count = 0;
             for (int i = 0; i < bracketChar.size(); i++)
             {
@@ -21,22 +21,16 @@ public class BalancedBrackets
                 {
                     if ((bracketChar.get(i).equalsIgnoreCase("(")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase(")")))
                     {
-                        bracketChar.remove(bracketChar.size() - j - 1);
-                        bracketChar.remove(i);
                         count++;
                         break;
                     }
                     else if ((bracketChar.get(i).equalsIgnoreCase("{")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase("}")))
                     {
-                        bracketChar.remove(bracketChar.size() - j - 1);
-                        bracketChar.remove(i);
                         count++;
                         break;
                     }
                     else if ((bracketChar.get(i).equalsIgnoreCase("[")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase("]")))
                     {
-                        bracketChar.remove(bracketChar.size() - j - 1);
-                        bracketChar.remove(i);
                         count++;
                         break;
                     }
@@ -48,7 +42,7 @@ public class BalancedBrackets
                     */
                 }
             }
-            if (count == bracketChar.size() / 2.0)
+            if (count == bracket.length() / 2.0)
             {
                 return true;
             }
