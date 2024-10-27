@@ -50,6 +50,10 @@ public class ClimbingTheLeaderboard
          * 1
          */
         Scanner input = new Scanner(System.in);
+        int rankedAmount = Integer.parseInt(input.nextLine());
+        int[] ranked = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int playerScoreAmount = Integer.parseInt(input.nextLine());
+        int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
