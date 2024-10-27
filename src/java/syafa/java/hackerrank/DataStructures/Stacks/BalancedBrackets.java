@@ -24,7 +24,7 @@ public class BalancedBrackets
         {
             for (int i = 0; i < (bracket.length() / 2); i++)
             {
-                if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i)))
+                if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i - 1)))
                 {
                     return "YES";
                 }
