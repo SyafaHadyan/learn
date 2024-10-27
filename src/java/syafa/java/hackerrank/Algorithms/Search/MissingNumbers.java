@@ -9,6 +9,15 @@ public class MissingNumbers
         public static int[] missingElements(int[] firstArray,int[] secondArray)
         {
             int[] missing = new int[secondArray.length - firstArray.length];
+            Arrays.sort(firstArray);
+            Arrays.sort(secondArray);
+            for (int i = 0; i < secondArray.length; i++)
+            {
+                if ((secondArray[i] != firstArray[i] || i > firstArray.length))
+                {
+                    //
+                }
+            }
             return missing;
         }
     }
