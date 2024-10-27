@@ -50,6 +50,13 @@ public class Matrix
             matrix[1][1] = temp;
             matrix[0][1] = -matrix[0][1];
             matrix[1][0] = -matrix[1][0];
+            for (int i = 0; i < matrix.length; i++)
+            {
+                for (int j = 0; j < matrix[i].length; j++)
+                {
+                    matrix[i][j] /= determinant;
+                }
+            }
             return matrix;
         }
     }
