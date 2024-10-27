@@ -7,12 +7,12 @@ public class CaesarCipher
     {
         public static int characterIndex(char character)
         {
-            if (isUpperCase(character))
+            if (Character.isUpperCase(character))
             {
                 Character.toLowerCase(character);
             }
             char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-            return character;
+            return new String(characterIndex).indexOf(character);
         }
     }
     public static void main(String[] args)
