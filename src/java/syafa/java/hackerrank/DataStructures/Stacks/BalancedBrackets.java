@@ -20,13 +20,17 @@ public class BalancedBrackets
             {
                 for (int j = 0; j < bracket.length(); j++)
                 {
-                    if (bracket.charAt(i) == '(')
+                    if ((bracket.charAt(i) == '(') && (bracket.charAt(bracket.length() - j - 1) == ')'))
                     {
-                        if (bracket.charAt(bracket.length() - j - 1) == ')')
-                        {
-                            count++;
-                            continue;
-                        }
+                        count++;
+                    }
+                    else if ((bracket.charAt(i) == '{') && (bracket.charAt(bracket.length() - j - 1) == '}'))
+                    {
+                        count++;
+                    }
+                    else if ((bracket.charAt(i) == '[') && (bracket.charAt(bracket.length() - j - 1) == ']'))
+                    {
+                        count++;
                     }
                     /*
                     if (bracket.charAt(i) == bracket.charAt(bracket.length() - j - 1))
