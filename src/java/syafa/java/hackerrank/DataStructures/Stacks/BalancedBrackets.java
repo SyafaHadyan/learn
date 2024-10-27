@@ -14,7 +14,11 @@ public class BalancedBrackets
                 {'{','}'},
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
-            if ()
+            if (pair.get(openingBracket).equals(closingBracket))
+            {
+                return true;
+            }
+            return false;
         }
         public static String isBalanced(String bracket)
         {
@@ -22,7 +26,7 @@ public class BalancedBrackets
             {
                 if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i)))
                 {
-                    //
+                    return "YES";
                 }
             }
             return "NO";
