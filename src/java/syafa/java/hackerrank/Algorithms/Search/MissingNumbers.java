@@ -53,6 +53,7 @@ public class MissingNumbers
             return missingNumberArray;
         }
     }
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
@@ -76,6 +77,7 @@ public class MissingNumbers
          * 
          * 3670 3674 3677 3684 3685 3695 3714 3720
          * 3714 3684 3685 3670 3720 3674 3677 3695
+         * 3670 3674 3677 3684 3685 3695 3714 3720
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
