@@ -23,7 +23,7 @@ public class MissingNumbers
                         i--;
                         continue;
                     }
-                    if ((secondArray.get(i) != firstArray.get(i)))
+                    while ((secondArray.get(i) != firstArray.get(i)))
                     {
                         missing[counter] = secondArray.get(i);
                         secondArray.remove(i);
@@ -35,8 +35,8 @@ public class MissingNumbers
                             i--;
                             continue;
                         }
-                        i--;
                     }
+                    i--;
                 }
                 catch (IndexOutOfBoundsException e)
                 {
@@ -59,6 +59,10 @@ public class MissingNumbers
          * 3670 3674 3677 3684 3685 3685 3695 3714 3720
          * 3670 3674 3677 3684 3685      3695 3714 3720
          * 3670 3674 3677 3684 3685 3685 3695 3714 3720
+         * 
+         * 3670 3674 3677 3684 3685 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685 3695 3714 3720
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
