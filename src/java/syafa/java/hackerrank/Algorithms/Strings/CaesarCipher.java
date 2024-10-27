@@ -12,11 +12,11 @@ public class CaesarCipher
                 Character.toLowerCase(character);
             }
             char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-            if ((new String(characterIndex).indexOf(character) + rotation) <= 25)
+            if ((new String(characterIndex).indexOf(character) + rotation) > 25)
             {
-                return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
+                return characterIndex[(new String(characterIndex).indexOf(character) + rotation) - 25];
             }
-            return ;
+            return return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
         }
     }
     public static void main(String[] args)
