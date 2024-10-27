@@ -210,7 +210,14 @@ public class Matrix
             }
             else if (option == 4)
             {
-                //
+                secondMatrix = matrixOperation.matrixInverse(secondMatrix);
+                for (int i = 0; i < matrixMultiplicationResult.length; i++)
+                {
+                    for (int j = 0; j < matrixMultiplicationResult[i].length; j++)
+                    {
+                        matrixMultiplicationResult[i][j] = matrixOperation.matrixMultiplicaiton(firstMatrix,secondMatrix,i,j);
+                    }
+                }
             }
             if
             (
