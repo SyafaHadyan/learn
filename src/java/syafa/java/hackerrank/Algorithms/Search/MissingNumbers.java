@@ -25,6 +25,7 @@ public class MissingNumbers
                     if ((secondArray.get(i) != firstArray.get(i)))
                     {
                         missing[i] = secondArray.get(i);
+                        secondArray.remove(i);
                     }
                 }
                 catch (IndexOutOfBoundsException e)
