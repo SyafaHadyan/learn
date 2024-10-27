@@ -6,9 +6,10 @@ public class MissingNumbers
 {
     static class compareArray
     {
-        public static int[] missingElements(List<Integer> firstArray,List<Integer> secondArray)
+        public static void missingElements(List<Integer> firstArray,List<Integer> secondArray)
         {
             int[] missing = new int[secondArray.size() - firstArray.size()];
+            Set<Integer> missingNumbers = new HashSet<>();
             Collections.sort(firstArray);
             Collections.sort(secondArray);
             int counter = 0;
@@ -23,27 +24,29 @@ public class MissingNumbers
                         i--;
                         continue;
                     }
-                    while ((secondArray.get(i) != firstArray.get(i)))
+                    if ((secondArray.get(i) != firstArray.get(i)))
                     {
                         missing[counter] = secondArray.get(i);
                         secondArray.remove(i);
                         counter++;
-                        if (secondArray.get(i).equals(firstArray.get(i)))
-                        {
-                            secondArray.remove(i);
-                            firstArray.remove(i);
-                            i--;
-                            continue;
-                        }
+                        i--;
+                        continue;
                     }
-                    i--;
                 }
                 catch (IndexOutOfBoundsException e)
                 {
                     //
                 }
             }
-            return missing;
+            for (Integer i : missing)
+            {
+                missingNumbers.add(i);
+            }
+            Collections.sort(missingNumbers);
+            for (Integer i : missingNumbers)
+            {
+                System.out.print(i + " ");
+            }
         }
     }
     public static void main(String[] args)
@@ -63,6 +66,12 @@ public class MissingNumbers
          * 3670 3674 3677 3684 3685 3685 3695 3714 3720
          * 3670 3674 3677 3684 3685 3685 3695 3714 3720
          * 3670 3674 3677 3684 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685 3695 3714 3720
+         * 
+         * 3670 3674 3677 3684 3685 3695 3714 3720
+         * 3714 3684 3685 3670 3720 3674 3677 3695
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
@@ -71,15 +80,7 @@ public class MissingNumbers
         int secondArrayLength = Integer.parseInt(input.nextLine());
         List<Integer> secondArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        int[] result = compareArray.missingElements(firstArray,secondArray);
         input.close();
-        for (int i = 0; i < result.length; i++)
-        {
-            System.out.print(result[i]);
-            if (result.length - i != 1)
-            {
-                System.out.print(" ");
-            }
-        }
+        compareArray.missingElements(firstArray,secondArray);
     }
 }
