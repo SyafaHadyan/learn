@@ -19,5 +19,6 @@ public class NumberLineJumps
                 System.exit(0);
             }
         }
+        System.out.print("NO");
     }
 }
