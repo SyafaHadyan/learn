@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class SherlockAndSquares
 {
@@ -7,14 +8,13 @@ public class SherlockAndSquares
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int minNumber = Integer.parseInt(input.nextLine());
-        int maxNumber = Integer.parseInt(input.nextLine());
         input.close();
         int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
+            int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
             int counter = 0;
-            for (int j = minNumber; j <= maxNumber; j++)
+            for (int j = number[0]; j <= number[1]; j++)
             {
                 if (Math.sqrt(j) == Math.floor(Math.sqrt(j)))
                 {
