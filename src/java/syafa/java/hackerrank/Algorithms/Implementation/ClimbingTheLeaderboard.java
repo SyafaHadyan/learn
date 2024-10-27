@@ -55,13 +55,11 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        
+        int[] result = new int[playerScore.length];
         for (int i = 0; i < playerScore.length; i++)
         {
-            SortedSet<Integer> sortedRanked = new TreeSet();
-            for (int j = 0; j < ranked.length; j++)
-            {
-                sortedRanked.add(ranked[i]);
-            }
+            //
         }
     }
 }
