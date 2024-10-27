@@ -20,6 +20,11 @@ public class BalancedBrackets
          * (, ), {, }, [, or ].
          */
         Scanner input = new Scanner(System.in);
+        int testCase = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < testCase; i++)
+        {
+            //
+        }
         input.close();
     }
 }
