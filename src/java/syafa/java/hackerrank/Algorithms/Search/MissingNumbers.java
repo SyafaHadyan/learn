@@ -13,6 +13,12 @@ public class MissingNumbers
             Collections.sort(secondArray);
             for (int i = 0; i < secondArray.size(); i++)
             {
+                if (secondArray.get(i) == firstArray.get(i))
+                {
+                    secondArray.remove(i);
+                    firstArray.remove(i);
+                    i--;
+                }
                 if ((secondArray.get(i) != firstArray.get(i) || i > firstArray.size()))
                 {
                     missing[i] = secondArray.get(i);
