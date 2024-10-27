@@ -23,14 +23,17 @@ public class BalancedBrackets
                     if ((bracket.charAt(i) == '(') && (bracket.charAt(bracket.length() - j - 1) == ')'))
                     {
                         count++;
+                        break;
                     }
                     else if ((bracket.charAt(i) == '{') && (bracket.charAt(bracket.length() - j - 1) == '}'))
                     {
                         count++;
+                        break;
                     }
                     else if ((bracket.charAt(i) == '[') && (bracket.charAt(bracket.length() - j - 1) == ']'))
                     {
                         count++;
+                        break;
                     }
                     /*
                     if (bracket.charAt(i) == bracket.charAt(bracket.length() - j - 1))
@@ -40,7 +43,7 @@ public class BalancedBrackets
                     */
                 }
             }
-            if (count == bracket.length() / 2)
+            if (count == bracket.length())
             {
                 return true;
             }
