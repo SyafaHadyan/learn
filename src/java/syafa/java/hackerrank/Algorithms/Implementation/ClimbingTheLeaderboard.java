@@ -71,18 +71,22 @@ public class ClimbingTheLeaderboard
         {
             rankedProcessed.add(playerScore[i]);
             Collections.sort(rankedProcessed);
-            for (int j = 0; j < rankedProcessed.size(); j++)
+            for (int j = 0; j < rankedProcessed.size() - 1; j++)
             {
                 if (playerScore[i] == rankedProcessed.get(j))
                 {
                     if (rankedProcessed.get(j) != rankedProcessed.get(j + 1))
                     {
                         result[i] = j;
-                        System.out.println(rankedProcessed.size() - j + 1);
+                        System.out.println(rankedProcessed.size() - j);
                         break;
                     }
-                    System.out.println(rankedProcessed.get(j));;
+                    System.out.println(rankedProcessed.size() - j - 1);;
                     break;
+                }
+                if (rankedProcessed.size() - j == 2)
+                {
+                    System.out.println(1);
                 }
             }
         }
