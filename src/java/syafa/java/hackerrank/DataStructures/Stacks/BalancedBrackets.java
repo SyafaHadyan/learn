@@ -22,6 +22,11 @@ public class BalancedBrackets
         }
         public static String isBalanced(String bracket)
         {
+            /*
+             * TODO
+             * 
+             * Sort string
+             */
             for (int i = 0; i < (bracket.length() / 2); i++)
             {
                 if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i - 1)))
