@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.DataStructures.Stacks;
 import java.util.*;
-import java.util.stream.*;
 
 public class BalancedBrackets
 {
@@ -14,7 +13,7 @@ public class BalancedBrackets
         }
         public static boolean matchedPair(String bracket)
         {
-            char[] bracketChar = checkBalance.sortBracket(bracket).toCharArray();
+            ArrayList<String> bracketChar = new ArrayList<>(Arrays.asList(checkBalance.sortBracket(bracket).split("")));
             int count = 0;
             for (int i = 0; i < bracketChar.length; i++)
             {
@@ -22,6 +21,7 @@ public class BalancedBrackets
                 {
                     if ((bracketChar[i] == '(') && (bracketChar[bracketChar.length - j - 1] == ')'))
                     {
+                        bracketChar.d
                         count++;
                         break;
                     }
