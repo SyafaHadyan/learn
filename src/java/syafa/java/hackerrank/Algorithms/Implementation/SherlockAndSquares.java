@@ -11,18 +11,7 @@ public class SherlockAndSquares
         for (int i = 0; i < testCase; i++)
         {
             int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            System.out.println(Math.ceil(Math.sqrt(number[1])) - Math.floor(Math.sqrt(number[0])) + 1);
-            /*
-            int counter = 0;
-            for (int j = number[0]; j <= number[1]; j++)
-            {
-                if (Math.sqrt(j) == Math.floor(Math.sqrt(j)))
-                {
-                    counter++;
-                }
-            }
-            System.out.println(counter);
-            */
+            System.out.printf("%.0f\n",(Math.floor(Math.sqrt(number[1])) - Math.ceil(Math.sqrt(number[0])) + 1));
         }
         input.close();
     }
