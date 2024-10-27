@@ -15,8 +15,8 @@ public class IceCreamParlor
                 {
                     if (iceCreamType[i] + iceCreamType[j] == money)
                     {
-                        purchasedIceCream[0] = i;
-                        purchasedIceCream[1] = j;
+                        purchasedIceCream[0] = i + 1;
+                        purchasedIceCream[1] = j + 1;
                     }
                 }
             }
