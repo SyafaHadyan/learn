@@ -54,5 +54,13 @@ public class IceCreamParlor
             purchasedIceCream[i] = iceCreamShop.iceCreamPurchase(money,iceCreamTypeAmount,iceCreamType);
         }
         input.close();
+        for (int i = 0; i < purchasedIceCream.length; i++)
+        {
+            System.out.print(purchasedIceCream[i][0] + " " + purchasedIceCream[i][2]);
+            if (purchasedIceCream.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
