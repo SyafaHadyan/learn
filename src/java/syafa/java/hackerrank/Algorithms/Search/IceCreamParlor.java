@@ -39,6 +39,15 @@ public class IceCreamParlor
          * 1 4
          * 1 2
          * 
+         * 2
+         * 4
+         * 5
+         * 1 4 5 3 2
+         * 4
+         * 4
+         * 2 2 4 3
+         * 
+         * 
          * Two friends like to pool their money and go to the ice cream parlor.
          * They always choose two distinct flavors and they spend all of their money.
          * Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have. 
@@ -56,7 +65,7 @@ public class IceCreamParlor
         input.close();
         for (int i = 0; i < purchasedIceCream.length; i++)
         {
-            System.out.print(purchasedIceCream[i][0] + " " + purchasedIceCream[i][2]);
+            System.out.print(purchasedIceCream[i][0] + " " + purchasedIceCream[i][1]);
             if (purchasedIceCream.length - i != 1)
             {
                 System.out.print("\n");
