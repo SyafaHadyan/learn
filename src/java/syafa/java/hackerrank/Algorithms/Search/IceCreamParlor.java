@@ -34,11 +34,13 @@ public class IceCreamParlor
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        int[][] purchasedIceCream = new int[testCase][2];
         for (int i = 0; i < testCase; i++)
         {
             int money = Integer.parseInt(input.nextLine());
             int iceCreamTypeAmount = Integer.parseInt(input.nextLine());
             int[] iceCreamType = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            purchasedIceCream[i] = iceCreamShop.iceCreamPurchase(money,iceCreamTypeAmount,iceCreamType);
         }
         input.close();
     }
