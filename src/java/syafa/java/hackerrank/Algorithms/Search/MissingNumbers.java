@@ -6,7 +6,7 @@ public class MissingNumbers
 {
     static class compareArray
     {
-        public static void missingElements(List<Integer> firstArray,List<Integer> secondArray)
+        public static int[] missingElements(List<Integer> firstArray,List<Integer> secondArray)
         {
             int[] missing = new int[secondArray.size() - firstArray.size()];
             Set<Integer> missingNumbers = new HashSet<>();
@@ -38,15 +38,19 @@ public class MissingNumbers
                     //
                 }
             }
+            counter = 0;
             for (Integer i : missing)
             {
                 missingNumbers.add(i);
             }
-            Collections.sort(missingNumbers);
+            int[] missingNumberArray = new int[missingNumbers.size()];
             for (Integer i : missingNumbers)
             {
-                System.out.print(i + " ");
+                missingNumberArray[counter] = i;
+                counter++;
             }
+            Arrays.sort(missingNumberArray);
+            return missingNumberArray;
         }
     }
     public static void main(String[] args)
@@ -81,6 +85,14 @@ public class MissingNumbers
         List<Integer> secondArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        compareArray.missingElements(firstArray,secondArray);
+        int[] result = compareArray.missingElements(firstArray,secondArray);
+        for (int i = 0; i < result.length; i++)
+        {
+            System.out.print(result[i]);
+            if (result.length - i != 1)
+            {
+                System.out.print(" ");
+            }
+        }
     }
 }
