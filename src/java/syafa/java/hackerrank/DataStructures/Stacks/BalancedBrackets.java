@@ -15,9 +15,13 @@ public class BalancedBrackets
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
         }
-        public static boolean isBalanced(String bracket)
+        public static String isBalanced(String bracket)
         {
-            return false;
+            for (int i = 0; i < (bracket.length() / 2); i++)
+            {
+                if ()
+            }
+            return "NO";
         }
     }
     public static void main(String[] args)
@@ -38,9 +42,10 @@ public class BalancedBrackets
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        String[] result = new String[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            //
+            result[i] = checkBalance.isBalanced(input.nextLine());
         }
         input.close();
     }
