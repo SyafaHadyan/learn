@@ -26,10 +26,11 @@ public class BalancedBrackets
             {
                 if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i - 1)))
                 {
-                    return "YES";
+                    continue;
                 }
+                return "NO";
             }
-            return "NO";
+            return "YES";
         }
     }
     public static void main(String[] args)
