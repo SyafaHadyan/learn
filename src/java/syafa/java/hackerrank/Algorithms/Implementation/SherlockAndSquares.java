@@ -8,7 +8,6 @@ public class SherlockAndSquares
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
             int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
@@ -20,16 +19,8 @@ public class SherlockAndSquares
                     counter++;
                 }
             }
-            result[i] = counter;
+            System.out.println(counter);
         }
         input.close();
-        for (int i = 0; i < result.length; i++)
-        {
-            System.out.print(result[i]);
-            if (result.length - i != 1)
-            {
-                System.out.print("\n");
-            }
-        }
     }
 }
