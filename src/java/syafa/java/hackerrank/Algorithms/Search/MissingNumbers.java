@@ -15,7 +15,7 @@ public class MissingNumbers
             {
                 if ((secondArray[i] != firstArray[i] || i > firstArray.length))
                 {
-                    //
+                    missing[i] = secondArray[i];
                 }
             }
             return missing;
