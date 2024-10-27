@@ -4,6 +4,7 @@ import java.util.stream.*;
 
 public class ClimbingTheLeaderboard
 {
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
@@ -55,7 +56,6 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        int[] result = new int[playerScore.length];
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
         ArrayList<Integer> temp = new ArrayList<>();
         rankedProcessed.add(rankedRaw[0]);
