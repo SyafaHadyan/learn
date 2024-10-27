@@ -14,12 +14,6 @@ public class BalancedBrackets
                 {'{','}'},
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
-            char[] pairs =
-            {
-                ')',
-                '}',
-                ']'
-            };
         }
         public static boolean isBalanced(String bracket)
         {
