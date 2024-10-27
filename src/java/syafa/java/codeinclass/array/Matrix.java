@@ -294,7 +294,21 @@ public class Matrix
             }
             else if (option == 4)
             {
-                //
+                for (int i = 0; i < matrixMultiplicationResult.length; i++)
+                {
+                    for (int j = 0; j < matrixMultiplicationResult[i].length; j++)
+                    {
+                        System.out.print(matrixMultiplicationResult[i][j]);
+                        if (matrixMultiplicationResult[i].length - j != 1)
+                        {
+                            System.out.print(' ');
+                        }
+                    }
+                    if (matrixMultiplicationResult.length - i != 1)
+                    {
+                        System.out.print("\n");
+                    }
+                }
             }
             System.out.printf("\n%-30s%-2c","Repeat calculation (Y/N)",':');
             repeatCalculationConfirmation = input.nextLine();
