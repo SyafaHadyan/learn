@@ -5,14 +5,18 @@ public class CaesarCipher
 {
     static class chiper
     {
-        public static int characterIndex(char character)
+        public static char characterIndex(char character,int rotation)
         {
             if (Character.isUpperCase(character))
             {
                 Character.toLowerCase(character);
             }
             char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-            return new String(characterIndex).indexOf(character);
+            if ((new String(characterIndex).indexOf(character) + rotation) <= 25)
+            {
+                return characterIndex[(new String(characterIndex).indexOf(character) + rotation)];
+            }
+            return ;
         }
     }
     public static void main(String[] args)
