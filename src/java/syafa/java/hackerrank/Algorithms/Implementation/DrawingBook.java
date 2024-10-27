@@ -9,13 +9,14 @@ public class DrawingBook
         int bookPage = Integer.parseInt(input.nextLine());
         int targetPage = Integer.parseInt(input.nextLine());
         input.close();
-        int minimumPageTurn = 0;
+        int minimumPageTurnFront = 0;
+        int minimumPageTurnBack = 0;
         int section = 1;
         for (int i = 1; i < targetPage; i++)
         {
             if (section == 1)
             {
-                minimumPageTurn++;
+                minimumPageTurnFront++;
                 section = 0;
                 continue;
             }
@@ -25,6 +26,20 @@ public class DrawingBook
                 continue;
             }
         }
-        System.out.print(minimumPageTurn);
+        for (int i = bookPage; i > targetPage; i--)
+        {
+            if (section == 1)
+            {
+                minimumPageTurnBack++;
+                section = 0;
+                continue;
+            }
+            if (section == 0)
+            {
+                section++;
+                continue;
+            }
+        }
+        System.out.print(minimumPageTurnFront);
     }
 }
