@@ -11,12 +11,19 @@ public class IceCreamParlor
             int[] purchasedIceCream = new int[2];
             for (int i = 0; i < iceCreamTypeAmount; i++)
             {
-                for (int j = 1 + i; j < iceCreamTypeAmount - i; j++)
+                for (int j = 1 + i; j < iceCreamTypeAmount; j++)
                 {
-                    if (iceCreamType[i] + iceCreamType[j] == money)
+                    try
                     {
-                        purchasedIceCream[0] = i + 1;
-                        purchasedIceCream[1] = j + 1;
+                        if (iceCreamType[i] + iceCreamType[j] == money)
+                        {
+                            purchasedIceCream[0] = i + 1;
+                            purchasedIceCream[1] = j + 1;
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        //
                     }
                 }
             }
@@ -50,7 +57,29 @@ public class IceCreamParlor
          * 
          * Two friends like to pool their money and go to the ice cream parlor.
          * They always choose two distinct flavors and they spend all of their money.
-         * Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have. 
+         * Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have.
+         * 
+         * 2 3
+         * 1 4
+         * 4 5
+         * 29 46
+         * 11 56
+         * 4 5
+         * 40 46
+         * 16 35
+         * 55 74
+         * 7 9
+         * 
+         * 0 0
+         * 1 4
+         * 4 5
+         * 29 46
+         * 0 0
+         * 0 0
+         * 0 0
+         * 16 35
+         * 0 0
+         * 7 9
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
