@@ -49,6 +49,11 @@ public class CaesarCipher
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < originalLetter.length; i++)
         {
+            if (!(Character.isAlphabetic(originalLetter[i])))
+            {
+                result.apend(originalLetter[i]);
+                continue;
+            }
             if (Character.isUpperCase(originalLetter[i]))
             {
                 result.append(Character.toUpperCase(chiper.characterIndex(originalLetter[i],rotation)));
