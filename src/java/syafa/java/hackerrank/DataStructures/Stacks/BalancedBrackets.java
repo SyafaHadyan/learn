@@ -15,24 +15,28 @@ public class BalancedBrackets
         public static boolean matchedPair(String bracket)
         {
             bracket = checkBalance.sortBracket(bracket);
-            Map<Character,Character> pair = Stream.of(new Object[][]
-            {
-                {'(',')'},
-                {'{','}'},
-                {'[',']'},
-            }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
             int count = 1;
             for (int i = 0; i < bracket.length(); i++)
             {
                 for (int j = 0; j < bracket.length(); j++)
                 {
-                    if (bracket.charAt(i) == bracket.charAt(j))
+                    if (bracket.charAt(i) == '(')
+                    {
+                        if (bracket.charAt(bracket.length() - j - 1) == ')')
+                        {
+                            count++;
+                            continue;
+                        }
+                    }
+                    /*
+                    if (bracket.charAt(i) == bracket.charAt(bracket.length() - j - 1))
                     {
                         count++;
                     }
+                    */
                 }
             }
-            if (count == bracket.length())
+            if (count == bracket.length() / 2)
             {
                 return true;
             }
