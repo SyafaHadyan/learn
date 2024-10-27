@@ -11,17 +11,20 @@ public class DrawingBook
         input.close();
         int minimumPageTurn = 0;
         int section = 1;
-        for (int i = 1; i <= targetPage; i++)
+        for (int i = 1; i < targetPage; i++)
         {
-            if (section == 0)
-            {
-                section++;
-            }
             if (section == 1)
             {
                 minimumPageTurn++;
                 section = 0;
+                continue;
+            }
+            if (section == 0)
+            {
+                section++;
+                continue;
             }
         }
+        System.out.print(minimumPageTurn);
     }
 }
