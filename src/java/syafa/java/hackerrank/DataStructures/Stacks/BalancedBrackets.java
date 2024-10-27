@@ -5,6 +5,15 @@ public class BalancedBrackets
 {
     static class checkBalance
     {
+        public static void matchedPair()
+        {
+            char[] pair =
+            {
+                ')',
+                '}',
+                ']'
+            };
+        }
         public static boolean isBalanced(String bracket)
         {
             return false;
