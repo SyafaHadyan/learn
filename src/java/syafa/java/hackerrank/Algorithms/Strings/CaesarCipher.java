@@ -27,6 +27,9 @@ public class CaesarCipher
          * z -> b
          */
         Scanner input = new Scanner(System.in);
+        int wordLength = Integer.parseInt(input.nextLine());
+        char[] originalLetter = input.nextLine().toCharArray();
+        int rotation = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
