@@ -11,6 +11,8 @@ public class SherlockAndSquares
         for (int i = 0; i < testCase; i++)
         {
             int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+            System.out.println(Math.ceil(Math.sqrt(number[1])) - Math.floor(Math.sqrt(number[0])) + 1);
+            /*
             int counter = 0;
             for (int j = number[0]; j <= number[1]; j++)
             {
@@ -20,6 +22,7 @@ public class SherlockAndSquares
                 }
             }
             System.out.println(counter);
+            */
         }
         input.close();
     }
