@@ -3,7 +3,7 @@ import java.util.*;
 
 public class CaesarCipher
 {
-    static class chiper
+    static class cipher
     {
         public static char characterIndex(char character,int rotation)
         {
@@ -56,10 +56,10 @@ public class CaesarCipher
             }
             if (Character.isUpperCase(originalLetter[i]))
             {
-                result.append(Character.toUpperCase(chiper.characterIndex(originalLetter[i],rotation)));
+                result.append(Character.toUpperCase(cipher.characterIndex(originalLetter[i],rotation)));
                 continue;
             }
-            result.append(chiper.characterIndex(originalLetter[i],rotation));
+            result.append(cipher.characterIndex(originalLetter[i],rotation));
         }
         input.close();
         System.out.print(result);
