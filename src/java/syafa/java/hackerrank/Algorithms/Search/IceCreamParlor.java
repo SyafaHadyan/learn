@@ -11,9 +11,13 @@ public class IceCreamParlor
             int[] purchasedIceCream = new int[2];
             for (int i = 0; i < iceCreamTypeAmount; i++)
             {
-                for (int j = 0 + i; j < iceCreamTypeAmount - i; j++)
+                for (int j = 1 + i; j < iceCreamTypeAmount - i; j++)
                 {
-                    //
+                    if (iceCreamType[i] + iceCreamType[j] == money)
+                    {
+                        purchasedIceCream[0] = i;
+                        purchasedIceCream[1] = j;
+                    }
                 }
             }
             return purchasedIceCream;
