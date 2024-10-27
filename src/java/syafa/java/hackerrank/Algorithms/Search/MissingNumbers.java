@@ -15,13 +15,14 @@ public class MissingNumbers
             {
                 try
                 {
-                    if (secondArray.get(i) == firstArray.get(i))
+                    if (secondArray.get(i).equals(firstArray.get(i)))
                     {
                         secondArray.remove(i);
                         firstArray.remove(i);
                         i--;
+                        continue;
                     }
-                    if ((secondArray.get(i) != firstArray.get(i) || i > firstArray.size()))
+                    if ((secondArray.get(i) != firstArray.get(i)))
                     {
                         missing[i] = secondArray.get(i);
                     }
