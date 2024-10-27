@@ -51,7 +51,7 @@ public class CaesarCipher
         {
             if (!(Character.isAlphabetic(originalLetter[i])))
             {
-                result.apend(originalLetter[i]);
+                result.append(originalLetter[i]);
                 continue;
             }
             if (Character.isUpperCase(originalLetter[i]))
@@ -62,5 +62,6 @@ public class CaesarCipher
             result.append(chiper.characterIndex(originalLetter[i],rotation));
         }
         input.close();
+        System.out.print(result);
     }
 }
