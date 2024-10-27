@@ -15,13 +15,14 @@ public class BalancedBrackets
         {
             ArrayList<String> bracketChar = new ArrayList<>(Arrays.asList(checkBalance.sortBracket(bracket).split("")));
             int count = 0;
-            for (int i = 0; i < bracketChar.length; i++)
+            for (int i = 0; i < bracketChar.size(); i++)
             {
-                for (int j = 0; j < bracketChar.length; j++)
+                for (int j = 0; j < bracketChar.size(); j++)
                 {
-                    if ((bracketChar[i] == '(') && (bracketChar[bracketChar.length - j - 1] == ')'))
+                    if ((bracketChar.get(i).equalsIgnoreCase("(")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase(")")))
                     {
-                        bracketChar.d
+                        bracketChar.remove(bracketChar.size() -j - 1);
+                        bracketChar.remove(i);
                         count++;
                         break;
                     }
