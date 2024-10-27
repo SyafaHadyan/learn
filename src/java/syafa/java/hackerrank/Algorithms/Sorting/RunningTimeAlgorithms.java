@@ -29,7 +29,8 @@ public class RunningTimeAlgorithms
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arrayLength = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         System.out.print(sort.insertionSort(array));
         input.close();
