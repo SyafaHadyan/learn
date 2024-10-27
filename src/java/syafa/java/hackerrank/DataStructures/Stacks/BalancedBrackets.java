@@ -12,27 +12,34 @@ public class BalancedBrackets
             Arrays.sort(sort);
             return new String(sort);
         }
-        public static boolean matchedPair(char openingBracket,char closingBracket)
+        public static boolean matchedPair(String bracket)
         {
+            bracket = checkBalance.sortBracket(bracket);
             Map<Character,Character> pair = Stream.of(new Object[][]
             {
                 {'(',')'},
                 {'{','}'},
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
+            for (int i = 0; i < bracket.length(); i++)
+            {
+                
+            }
+            /*
             if (pair.get(openingBracket).equals(closingBracket))
             {
                 return true;
             }
             return false;
+            */
         }
         public static String isBalanced(String bracket)
         {
+            if (checkBalance.matchedPair(bracket))
+            {
+                return "YES";
+            }
             /*
-             * TODO
-             * 
-             * Sort string
-             */
             for (int i = 0; i < (bracket.length() / 2); i++)
             {
                 if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i - 1)))
@@ -41,7 +48,8 @@ public class BalancedBrackets
                 }
                 return "NO";
             }
-            return "YES";
+            */
+            return "NO";
         }
     }
     public static void main(String[] args)
