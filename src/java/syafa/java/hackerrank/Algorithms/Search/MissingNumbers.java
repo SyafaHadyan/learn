@@ -33,8 +33,9 @@ public class MissingNumbers
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
-        int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        int secondArrayLength = Integer.parseInt(input.nextLine());
+        ArrayList<String> firstArray = new ArrayList<>(Arrays.asList(input.nextLine().split("\s")));
+        //int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        ArrayList<String> secondArray = new ArrayList<>(Arrays.asList(input.nextLine().split("\s")));
         int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
