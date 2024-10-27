@@ -23,6 +23,10 @@ public class PickingNumbers
             {
                 maxSubArray = currentMaxSubArray;
             }
+            if (Math.abs(array[i] - array[i + 1]) > 1)
+            {
+                currentMaxSubArray = 0;
+            }
         }
     }
 }
