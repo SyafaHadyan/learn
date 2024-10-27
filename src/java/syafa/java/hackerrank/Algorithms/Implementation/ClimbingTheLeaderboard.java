@@ -55,6 +55,7 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
+        int[] result = new int[playerScore.length];
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
         for (int i = 0; i < rankedRaw.length - 1; i++)
         {
@@ -63,10 +64,15 @@ public class ClimbingTheLeaderboard
                 rankedProcessed.add(rankedRaw[i + 1]);
             }
         }
-        int[] result = new int[playerScore.length];
         for (int i = 0; i < playerScore.length; i++)
         {
-            //
+            for (int j = 0; j < result.length; j++)
+            {
+                if (playerScore[i] == rankedProcessed.get(j))
+                {
+                    result[i] = j;
+                }
+            }
         }
     }
 }
