@@ -25,6 +25,13 @@ public class IceCreamParlor
          * Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have. 
          */
         Scanner input = new Scanner(System.in);
+        int testCase = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < testCase; i++)
+        {
+            int money = Integer.parseInt(input.nextLine());
+            int iceCreamTypeAmount = Integer.parseInt(input.nextLine());
+            int[] iceCreamType = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        }
         input.close();
     }
 }
