@@ -6,6 +6,12 @@ public class BalancedBrackets
 {
     static class checkBalance
     {
+        public static String sortBracket(String unsortedBracket)
+        {
+            char[] sort = unsortedBracket.toCharArray();
+            Arrays.sort(sort);
+            return new String(sort);
+        }
         public static boolean matchedPair(char openingBracket,char closingBracket)
         {
             Map<Character,Character> pair = Stream.of(new Object[][]
