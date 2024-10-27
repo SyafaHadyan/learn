@@ -5,6 +5,27 @@ public class CaesarCipher
 {
     public static void main(String[] args)
     {
+        /*
+         * 11
+         * middle-Outz
+         * 2
+         * 
+         * okffng-Qwvb
+         * 
+         * Original alphabet:      abcdefghijklmnopqrstuvwxyz
+         * Alphabet rotated +2:    cdefghijklmnopqrstuvwxyzab
+         * m -> o
+         * i -> k
+         * d -> f
+         * d -> f
+         * l -> n
+         * e -> g
+         * -    -
+         * O -> Q
+         * u -> w
+         * t -> v
+         * z -> b
+         */
         Scanner input = new Scanner(System.in);
         input.close();
     }
