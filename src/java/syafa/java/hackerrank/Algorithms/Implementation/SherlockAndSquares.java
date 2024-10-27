@@ -10,10 +10,10 @@ public class SherlockAndSquares
         int minNumber = Integer.parseInt(input.nextLine());
         int maxNumber = Integer.parseInt(input.nextLine());
         input.close();
-        ArrayList<Integer> result = new ArrayList<>();
-        int counter = 0;
-        for (int i = 0; i < args.length; i++)
+        int[] result = new int[testCase];
+        for (int i = 0; i < testCase; i++)
         {
+            int counter = 0;
             for (int j = minNumber; j <= maxNumber; j++)
             {
                 if (Math.sqrt(j) == Math.floor(Math.sqrt(j)))
@@ -21,7 +21,11 @@ public class SherlockAndSquares
                     counter++;
                 }
             }
-            System.out.print(counter);
+            result[i] = counter;
+        }
+        for (int i = 0; i < args.length; i++)
+        {
+            System.out.print(result[i]);
         }
     }
 }
