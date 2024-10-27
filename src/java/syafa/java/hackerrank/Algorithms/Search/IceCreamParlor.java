@@ -9,6 +9,13 @@ public class IceCreamParlor
         public static int[] iceCreamPurchase(int money,int iceCreamTypeAmount,int[] iceCreamType)
         {
             int[] purchasedIceCream = new int[2];
+            for (int i = 0; i < iceCreamTypeAmount; i++)
+            {
+                for (int j = 0 + i; j < iceCreamTypeAmount - i; j++)
+                {
+                    //
+                }
+            }
             return purchasedIceCream;
         }
     }
