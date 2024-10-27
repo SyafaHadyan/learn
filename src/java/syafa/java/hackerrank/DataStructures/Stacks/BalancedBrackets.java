@@ -21,10 +21,22 @@ public class BalancedBrackets
                 {'{','}'},
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
+            int count = 1;
             for (int i = 0; i < bracket.length(); i++)
             {
-                
+                for (int j = 0; j < bracket.length(); j++)
+                {
+                    if (bracket.charAt(i) == bracket.charAt(j))
+                    {
+                        count++;
+                    }
+                }
             }
+            if (count == bracket.length())
+            {
+                return true;
+            }
+            return false;
             /*
             if (pair.get(openingBracket).equals(closingBracket))
             {
