@@ -6,7 +6,7 @@ public class MissingNumbers
 {
     static class compareArray
     {
-        public static int[] missingElements(int[] firstArray,int[] secondArray)
+        public static int[] missingElements(List<String> firstArray,List<String> secondArray)
         {
             int[] missing = new int[secondArray.length - firstArray.length];
             Arrays.sort(firstArray);
@@ -33,10 +33,10 @@ public class MissingNumbers
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
-        ArrayList<String> firstArray = new ArrayList<>(Arrays.asList(input.nextLine().split("\s")));
+        List<Integer> firstArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
         //int[] firstArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        ArrayList<String> secondArray = new ArrayList<>(Arrays.asList(input.nextLine().split("\s")));
-        int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        List<Integer> secondArray = Arrays.stream(input.nextLine().split("\s")).map(Integer::valueOf).collect(Collectors.toList());
+        //int[] secondArray = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
