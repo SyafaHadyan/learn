@@ -11,6 +11,7 @@ public class CaesarCipher
         }
         public static char characterIndex(char character,boolean isUpperCase)
         {
+            char[] characterIndex = "abcdefghijklmnopqrstuvwxyz".toCharArray();
             if (isUpperCase)
             {
                 return Character.toUpperCase(character);
