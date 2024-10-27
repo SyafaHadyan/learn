@@ -4,6 +4,14 @@ import java.util.stream.*;
 
 public class MissingNumbers
 {
+    static class compareArray
+    {
+        public static int[] missingElements(int[] firstArray,int[] secondArray)
+        {
+            int[] missing = new int[secondArray.length - firstArray.length];
+            return missing;
+        }
+    }
     public static void main(String[] args)
     {
         /*
