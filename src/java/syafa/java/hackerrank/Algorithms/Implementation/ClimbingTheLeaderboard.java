@@ -51,11 +51,18 @@ public class ClimbingTheLeaderboard
          */
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
-        int[] ranked = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] rankedRaw = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        
+        ArrayList<Integer> rankedProcessed = new ArrayList<>();
+        for (int i = 0; i < rankedRaw.length - 1; i++)
+        {
+            if (rankedProcessed.get(i) != rankedRaw[i + 1])
+            {
+                rankedProcessed.add(rankedRaw[i + 1]);
+            }
+        }
         int[] result = new int[playerScore.length];
         for (int i = 0; i < playerScore.length; i++)
         {
