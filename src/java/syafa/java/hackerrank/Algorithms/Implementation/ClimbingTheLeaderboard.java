@@ -57,6 +57,7 @@ public class ClimbingTheLeaderboard
         input.close();
         int[] result = new int[playerScore.length];
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
+        rankedProcessed.add(rankedRaw[0]);
         for (int i = 0; i < rankedRaw.length - 1; i++)
         {
             if (rankedProcessed.get(i) != rankedRaw[i + 1])
@@ -66,11 +67,12 @@ public class ClimbingTheLeaderboard
         }
         for (int i = 0; i < playerScore.length; i++)
         {
-            for (int j = 0; j < result.length; j++)
+            for (int j = result.length - 1; j >= 0; j--)
             {
                 if (playerScore[i] == rankedProcessed.get(j))
                 {
                     result[i] = j;
+                    System.out.println(j);
                 }
             }
         }
