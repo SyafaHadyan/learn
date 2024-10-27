@@ -58,21 +58,31 @@ public class ClimbingTheLeaderboard
         int[] result = new int[playerScore.length];
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
         rankedProcessed.add(rankedRaw[0]);
+        int counter = 0;
         for (int i = 0; i < rankedRaw.length - 1; i++)
         {
-            if (rankedProcessed.get(i) != rankedRaw[i + 1])
+            if (rankedProcessed.get(counter) != rankedRaw[i + 1])
             {
                 rankedProcessed.add(rankedRaw[i + 1]);
+                counter++;
             }
         }
         for (int i = 0; i < playerScore.length; i++)
         {
-            for (int j = result.length - 1; j >= 0; j--)
+            rankedProcessed.add(playerScore[i]);
+            Collections.sort(rankedProcessed);
+            for (int j = 0; j < rankedProcessed.size(); j++)
             {
                 if (playerScore[i] == rankedProcessed.get(j))
                 {
-                    result[i] = j;
-                    System.out.println(j);
+                    if (rankedProcessed.get(j) != rankedProcessed.get(j + 1))
+                    {
+                        result[i] = j;
+                        System.out.println(rankedProcessed.size() - j + 1);
+                        break;
+                    }
+                    System.out.println(rankedProcessed.get(j));;
+                    break;
                 }
             }
         }
