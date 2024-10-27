@@ -11,6 +11,7 @@ public class MissingNumbers
             int[] missing = new int[secondArray.size() - firstArray.size()];
             Collections.sort(firstArray);
             Collections.sort(secondArray);
+            int counter = 0;
             for (int i = 0; i < secondArray.size(); i++)
             {
                 try
@@ -24,8 +25,10 @@ public class MissingNumbers
                     }
                     if ((secondArray.get(i) != firstArray.get(i)))
                     {
-                        missing[i] = secondArray.get(i);
+                        missing[counter] = secondArray.get(i);
                         secondArray.remove(i);
+                        counter++;
+                        i--;
                     }
                 }
                 catch (IndexOutOfBoundsException e)
