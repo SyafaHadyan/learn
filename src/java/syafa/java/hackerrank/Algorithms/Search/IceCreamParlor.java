@@ -4,6 +4,14 @@ import java.util.stream.*;
 
 public class IceCreamParlor
 {
+    static class iceCreamShop
+    {
+        public static int[] iceCreamPurchase(int money,int iceCreamTypeAmount,int[] iceCreamType)
+        {
+            int[] purchasedIceCream = new int[2];
+            return purchasedIceCream;
+        }
+    }
     public static void main(String[] args)
     {
         /*
