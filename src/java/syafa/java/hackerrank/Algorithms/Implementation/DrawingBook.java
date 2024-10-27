@@ -9,5 +9,19 @@ public class DrawingBook
         int bookPage = Integer.parseInt(input.nextLine());
         int targetPage = Integer.parseInt(input.nextLine());
         input.close();
+        int minimumPageTurn = 0;
+        int section = 1;
+        for (int i = 1; i <= targetPage; i++)
+        {
+            if (section == 0)
+            {
+                section++;
+            }
+            if (section == 1)
+            {
+                minimumPageTurn++;
+                section = 0;
+            }
+        }
     }
 }
