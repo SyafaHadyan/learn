@@ -9,5 +9,13 @@ public class SherlockAndSquares
         int minNumber = Integer.parseInt(input.nextLine());
         int maxNumber = Integer.parseInt(input.nextLine());
         input.close();
+        int counter = 0;
+        for (int i = minNumber; i <= maxNumber; i++)
+        {
+            if (Math.sqrt(i) == Math.floor(Math.sqrt(i)))
+            {
+                counter++;
+            }
+        }
     }
 }
