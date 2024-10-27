@@ -28,5 +28,6 @@ public class PickingNumbers
                 currentMaxSubArray = 0;
             }
         }
+        System.out.print(maxSubArray);
     }
 }
