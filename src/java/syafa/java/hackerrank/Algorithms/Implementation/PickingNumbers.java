@@ -11,18 +11,16 @@ public class PickingNumbers
         int[] array = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Arrays.sort(array);
-        int currentMaxSubArray = 0;
+        int currentMaxSubArray = 1;
         int maxSubArray = 0;
         int currentVal = 0;
-        for (int i = 0; i < array.length; i++)
+        for (int i = 0; i < array.length - 1; i++)
         {
-            if (currentMaxSubArray == 0)
+            if (currentMaxSubArray == 1)
             {
                 currentVal = array[i];
-                currentMaxSubArray++;
-                continue;
             }
-            if (Math.abs(currentVal - array[i]) <= 1)
+            if (Math.abs(currentVal - array[i + 1]) <= 1)
             {
                 currentMaxSubArray++;
             }
@@ -30,9 +28,9 @@ public class PickingNumbers
             {
                 maxSubArray = currentMaxSubArray;
             }
-            if (Math.abs(currentVal - array[i]) > 1)
+            if (Math.abs(currentVal - array[i + 1]) > 1)
             {
-                currentMaxSubArray = 0;
+                currentMaxSubArray = 1;
             }
         }
         System.out.print(maxSubArray);
