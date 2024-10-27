@@ -40,6 +40,6 @@ public class DrawingBook
                 continue;
             }
         }
-        System.out.print(minimumPageTurnFront);
+        System.out.print(Math.min(minimumPageTurnFront,minimumPageTurnBack));
     }
 }
