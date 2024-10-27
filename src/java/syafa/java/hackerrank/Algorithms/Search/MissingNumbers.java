@@ -28,6 +28,13 @@ public class MissingNumbers
                         missing[counter] = secondArray.get(i);
                         secondArray.remove(i);
                         counter++;
+                        if (secondArray.get(i).equals(firstArray.get(i)))
+                        {
+                            secondArray.remove(i);
+                            firstArray.remove(i);
+                            i--;
+                            continue;
+                        }
                         i--;
                     }
                 }
@@ -48,6 +55,10 @@ public class MissingNumbers
          * 203 204 204 205 206 207 205 208 203 206 205 206 204
          * 
          * 204 205 206
+         * 
+         * 3670 3674 3677 3684 3685 3685 3695 3714 3720
+         * 3670 3674 3677 3684 3685      3695 3714 3720
+         * 3670 3674 3677 3684 3685 3685 3695 3714 3720
          */
         Scanner input = new Scanner(System.in);
         int firstArrayLength = Integer.parseInt(input.nextLine());
