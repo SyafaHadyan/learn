@@ -21,18 +21,22 @@ public class BalancedBrackets
                 {
                     if ((bracketChar.get(i).equalsIgnoreCase("(")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase(")")))
                     {
-                        bracketChar.remove(bracketChar.size() -j - 1);
+                        bracketChar.remove(bracketChar.size() - j - 1);
                         bracketChar.remove(i);
                         count++;
                         break;
                     }
-                    else if ((bracketChar[i] == '{') && (bracketChar[bracketChar.length - j - 1] == '}'))
+                    else if ((bracketChar.get(i).equalsIgnoreCase("{")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase("}")))
                     {
+                        bracketChar.remove(bracketChar.size() - j - 1);
+                        bracketChar.remove(i);
                         count++;
                         break;
                     }
-                    else if ((bracketChar[i] == '[') && (bracketChar[bracketChar.length - j - 1] == ']'))
+                    else if ((bracketChar.get(i).equalsIgnoreCase("[")) && (bracketChar.get(bracketChar.size() - j - 1).equalsIgnoreCase("]")))
                     {
+                        bracketChar.remove(bracketChar.size() - j - 1);
+                        bracketChar.remove(i);
                         count++;
                         break;
                     }
@@ -44,7 +48,7 @@ public class BalancedBrackets
                     */
                 }
             }
-            if (count == bracket.length() / 2.0)
+            if (count == bracketChar.size() / 2.0)
             {
                 return true;
             }
