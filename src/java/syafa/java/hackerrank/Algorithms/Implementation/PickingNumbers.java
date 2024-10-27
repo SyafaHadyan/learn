@@ -14,13 +14,15 @@ public class PickingNumbers
         int currentMaxSubArray = 0;
         int maxSubArray = 0;
         int currentVal = 0;
-        for (int i = 0; i < array.length - 1; i++)
+        for (int i = 0; i < array.length; i++)
         {
             if (currentMaxSubArray == 0)
             {
                 currentVal = array[i];
+                currentMaxSubArray++;
+                continue;
             }
-            if (Math.abs(array[i] - array[i + 1]) <= 1)
+            if (Math.abs(currentVal - array[i]) <= 1)
             {
                 currentMaxSubArray++;
             }
@@ -28,7 +30,7 @@ public class PickingNumbers
             {
                 maxSubArray = currentMaxSubArray;
             }
-            if (Math.abs(array[i] - array[i + 1]) > 1)
+            if (Math.abs(currentVal - array[i]) > 1)
             {
                 currentMaxSubArray = 0;
             }
