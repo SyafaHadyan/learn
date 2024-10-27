@@ -6,7 +6,7 @@ public class BalancedBrackets
 {
     static class checkBalance
     {
-        public static void matchedPair()
+        public static boolean matchedPair(char openingBracket,char closingBracket)
         {
             Map<Character,Character> pair = Stream.of(new Object[][]
             {
@@ -14,12 +14,16 @@ public class BalancedBrackets
                 {'{','}'},
                 {'[',']'},
             }).collect(Collectors.toMap(data -> (Character) data[0],data -> (Character) data[1]));
+            if ()
         }
         public static String isBalanced(String bracket)
         {
             for (int i = 0; i < (bracket.length() / 2); i++)
             {
-                if ()
+                if (checkBalance.matchedPair(bracket.charAt(i),bracket.charAt(bracket.length() - i)))
+                {
+                    //
+                }
             }
             return "NO";
         }
