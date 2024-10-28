@@ -8,8 +8,21 @@ public class LonelyInteger
     {
         public static int uniqueElement(int[] array)
         {
-            int uniqueElement = 0;
-            return uniqueElement;
+            for (int i = 0; i < array.length; i++)
+            {
+                try
+                {
+                    if (array[i] != array[i + 1])
+                    {
+                        return i;
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    return array[array.length - 1];
+                }
+            }
+            return array[0];
         }
     }
     public static void main(String[] args)
@@ -17,6 +30,7 @@ public class LonelyInteger
         Scanner input = new Scanner(System.in);
         int numberAmount = Integer.parseInt(input.nextLine());
         int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        System.out.print(checkArray.uniqueElement(number));
         input.close();
     }
 }
