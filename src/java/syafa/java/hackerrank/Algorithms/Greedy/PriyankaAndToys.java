@@ -9,6 +9,15 @@ public class PriyankaAndToys
         public static int splitContainer(int[] array)
         {
             int containerAmount = 0;
+            Arrays.sort(array);
+            for (int i = 0; i < array.length; i++)
+            {
+                int currentMinValRange = array[i];
+                for (int j = array[i]; j < array[i] + 4; j++)
+                {
+                    //
+                }
+            }
             return containerAmount;
         }
     }
@@ -28,6 +37,7 @@ public class PriyankaAndToys
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
         int[] toy = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        System.out.print(packaging.splitContainer(toy));
         input.close();
     }
 }
