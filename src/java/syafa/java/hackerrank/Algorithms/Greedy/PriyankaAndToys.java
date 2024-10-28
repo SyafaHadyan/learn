@@ -4,6 +4,14 @@ import java.util.stream.*;
 
 public class PriyankaAndToys
 {
+    static class packaging
+    {
+        public static int splitContainer(int[] array)
+        {
+            int containerAmount = 0;
+            return containerAmount;
+        }
+    }
     public static void main(String[] args)
     {
         /*
