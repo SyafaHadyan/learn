@@ -20,7 +20,7 @@ public class FlippingBits
                     flippedBits.append(1);
                     continue;
                 }
-                if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 1)
+                if (Integer.parseInt(String.valueOf(String.valueOf(bit).charAt(i))) == 1)
                 {
                     flippedBits.append(0);
                     continue;
