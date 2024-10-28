@@ -8,10 +8,10 @@ public class TheBombermanGame
     {
         Scanner input = new Scanner(System.in);
         int[] configuration = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        char[][] map = new char[configuration[0]][configuration[1]];
+        String[][] map = new String[configuration[0]][configuration[1]];
         for (int i = 0; i < configuration[0]; i++)
         {
-            //
+            map[i] = input.nextLine().split("\s");
         }
         input.close();
     }
