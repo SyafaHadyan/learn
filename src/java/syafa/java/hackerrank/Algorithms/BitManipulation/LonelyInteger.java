@@ -29,7 +29,8 @@ public class LonelyInteger
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int numberAmount = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
         int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         System.out.print(checkArray.uniqueElement(number));
         input.close();
