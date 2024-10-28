@@ -20,9 +20,16 @@ public class TheBombermanGame
             }
             return map;
         }
-        public static void bombNoSimulate(String[][] map)
+        public static String[][] bombNoSimulate(String[][] map)
         {
-            System.exit(0);
+            for (int i = 0; i < map.length; i++)
+            {
+                for (int j = 0; j < map[i].length; j++)
+                {
+                    map[i][j] = "O";
+                }
+            }
+            return map;
         }
     }
     public static void main(String[] args)
@@ -40,5 +47,20 @@ public class TheBombermanGame
             simulate.bombNoSimulate(map);
         }
         map = simulate.bomb(map,configuration[2]);
+        for (int i = 0; i < map.length; i++)
+        {
+            for (int j = 0; j < map[i].length; j++)
+            {
+                System.out.print(map[i][j]);
+                if (map[i].length - j != 1)
+                {
+                    System.out.print(" ");
+                }
+            }
+            if (map.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
