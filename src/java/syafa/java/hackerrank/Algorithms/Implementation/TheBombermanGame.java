@@ -39,7 +39,7 @@ public class TheBombermanGame
         String[][] map = new String[configuration[0]][configuration[1]];
         for (int i = 0; i < configuration[0]; i++)
         {
-            map[i] = input.nextLine().split("\s");
+            map[i] = input.nextLine().split("(?!^)");
         }
         input.close();
         if (configuration[2] % 2 == 0)
@@ -52,10 +52,7 @@ public class TheBombermanGame
             for (int j = 0; j < map[i].length; j++)
             {
                 System.out.print(map[i][j]);
-                if (map[i].length - j != 1)
-                {
-                    System.out.print(" ");
-                }
+
             }
             if (map.length - i != 1)
             {
