@@ -20,6 +20,7 @@ public class ReferensiArray
     {
         Scanner input = new Scanner(System.in);
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        input.close();
         System.out.println("The sum is" + " " + arrayOperation.sumArray(array));
         System.out.println("The sorted array is");
         int[] sortedArray = arrayOperation.sortArray(array);
@@ -31,6 +32,5 @@ public class ReferensiArray
                 System.out.print(' ');
             }
         }
-        input.close();
     }
 }
