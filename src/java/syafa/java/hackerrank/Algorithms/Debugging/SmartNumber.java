@@ -12,22 +12,32 @@ public class SmartNumber
         }
         return false;
     }
-    
+
     public static void main(String[] args)
     {
-        int test_cases;
-        Scanner in = new Scanner(System.in);
-        test_cases = in.nextInt();
+        int testCase;
+        Scanner input = new Scanner(System.in);
+        testCase = input.nextInt();
         int num;
-        for(int i = 0; i < test_cases; i++)
+        String[] result = new String[testCase];
+        for(int i = 0; i < testCase; i++)
         {
-            num = in.nextInt();
+            num = Integer.parseInt(input.nextLine());
             if (isSmartNumber(num))
             {
-                System.out.println("YES");
+                result[i] = "YES";
+                continue;
             }
-            else System.out.println("NO");
+            result[i] = "NO";
         }
-        in.close();
+        input.close();
+        for (int i = 0; i < result.length; i++)
+        {
+            System.out.print(result[i]);
+            if (result.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
