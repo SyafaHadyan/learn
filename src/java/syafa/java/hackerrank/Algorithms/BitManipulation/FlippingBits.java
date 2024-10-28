@@ -7,7 +7,7 @@ public class FlippingBits
     {
         public static int convertToBinary (int number)
         {
-            return 0;
+            return Integer.parseInt(String.format("%32s",Integer.toBinaryString(number).replaceAll("\s","0")));
         }
         public static int flipBit(int bit)
         {
