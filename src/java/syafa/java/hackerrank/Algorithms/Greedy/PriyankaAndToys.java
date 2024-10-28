@@ -8,7 +8,7 @@ public class PriyankaAndToys
     {
         public static int splitContainer(int[] array)
         {
-            int containerAmount = 1;
+            int containerAmount = 0;
             Arrays.sort(array);
             for (int i = 0; i < array.length;)
             {
