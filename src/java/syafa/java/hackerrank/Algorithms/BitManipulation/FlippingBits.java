@@ -22,7 +22,7 @@ public class FlippingBits
                     continue;
                 }
             }
-            return Integer.parseInt(String.valueOf(flippedBits));
+            return Integer.parseInt(String.valueOf(flippedBits),2);
         }
     }
     public static void main(String[] args)
