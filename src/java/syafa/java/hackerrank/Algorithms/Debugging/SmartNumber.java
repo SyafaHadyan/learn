@@ -17,13 +17,11 @@ public class SmartNumber
     {
         int testCase;
         Scanner input = new Scanner(System.in);
-        testCase = input.nextInt();
-        int num;
+        testCase = Integer.parseInt(input.nextLine());
         String[] result = new String[testCase];
         for(int i = 0; i < testCase; i++)
         {
-            num = Integer.parseInt(input.nextLine());
-            if (isSmartNumber(num))
+            if (isSmartNumber(Integer.parseInt(input.nextLine())))
             {
                 result[i] = "YES";
                 continue;
