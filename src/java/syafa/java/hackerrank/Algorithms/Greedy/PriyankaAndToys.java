@@ -18,6 +18,8 @@ public class PriyankaAndToys
          * Container 4 (12 14)  Range 12    14
          */
         Scanner input = new Scanner(System.in);
+        int arraySize = Integer.parseInt(input.nextLine());
+        int[] toy = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
     }
 }
