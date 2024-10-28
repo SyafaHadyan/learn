@@ -8,13 +8,22 @@ public class TheBombermanGame
     {
         public static String[][] bomb(String[][] map,int configuration)
         {
-            for (int i = 0; i < configuration; i += 2)
+            for (int i = 0; i < configuration; i += 3)
             {
                 for (int j = 0; j < map.length; j++)
                 {
                     for (int k = 0; k < map[j].length; k++)
                     {
-                        //
+                        if (map[j][k].equalsIgnoreCase("O"))
+                        {
+                            map[j][k] = ".";
+                            continue;
+                        }
+                        if (map[j][k].equalsIgnoreCase("."));
+                        {
+                            map[j][k] = "O";
+                            continue;
+                        }
                     }
                 }
             }
@@ -52,7 +61,6 @@ public class TheBombermanGame
             for (int j = 0; j < map[i].length; j++)
             {
                 System.out.print(map[i][j]);
-
             }
             if (map.length - i != 1)
             {
