@@ -7,7 +7,20 @@ public class FlippingBits
     {
         public static int flipBit(int bit)
         {
-            int binary = Integer.parseInt(Integer.toBinaryString(bit));
+            String binary = Integer.toBinaryString(bit);
+            for (int i = 0; i < binary.length(); i++)
+            {
+                if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 0)
+                {
+                    //
+                    continue;
+                }
+                if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 1)
+                {
+                    //
+                    continue;
+                }
+            }
             return 0;
         }
     }
