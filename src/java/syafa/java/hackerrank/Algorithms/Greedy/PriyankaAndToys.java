@@ -13,14 +13,22 @@ public class PriyankaAndToys
             for (int i = 0; i < array.length;)
             {
                 int currentMinValRange = array[i];
-                for (int j = array[i]; j <= array[i] + 4; j++)
+                for (int j = array[i]; j <= currentMinValRange + 4; j++)
                 {
-                    if (array[j] >= array[i] && array[j] <= array[i])
+                    try
                     {
-                        i++;
+                        if (array[j] >= currentMinValRange && array[j] <= currentMinValRange + 4)
+                        {
+                            i++;
+                        }
+                    }
+                    catch (IndexOutOfBoundsException e)
+                    {
+                        //
                     }
                 }
                 containerAmount++;
+                i++;
             }
             return containerAmount;
         }
