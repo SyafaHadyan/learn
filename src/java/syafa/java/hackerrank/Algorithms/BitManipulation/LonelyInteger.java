@@ -4,6 +4,14 @@ import java.util.stream.*;
 
 public class LonelyInteger
 {
+    static class checkArray
+    {
+        public static int uniqueElement(int[] array)
+        {
+            int uniqueElement = 0;
+            return uniqueElement;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
