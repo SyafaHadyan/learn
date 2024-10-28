@@ -6,9 +6,9 @@ public class TheBombermanGame
 {
     static class simulate
     {
-        public static String[][] bomb(String[][] map)
+        public static String[][] bomb(String[][] map,int configuration)
         {
-            for (int i = 0; i < configuration[2]; i += 2)
+            for (int i = 0; i < configuration; i += 2)
             {
                 for (int j = 0; j < map.length; j++)
                 {
@@ -39,6 +39,6 @@ public class TheBombermanGame
         {
             simulate.bombNoSimulate(map);
         }
-        map = simulate.bomb(map);
+        map = simulate.bomb(map,configuration[2]);
     }
 }
