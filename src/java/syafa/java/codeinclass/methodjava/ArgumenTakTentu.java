@@ -9,13 +9,20 @@ public class ArgumenTakTentu
         public static double average(double... numbers)
         {
             double average = 0d;
-            return average;
+            int numberCount = 0;
+            for (double i : numbers)
+            {
+                average += i;
+                numberCount++;
+            }
+            return average / numberCount;
         }
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        double[] number = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
+        System.out.print(numberOperation.average(number));
         input.close();
     }
 }
