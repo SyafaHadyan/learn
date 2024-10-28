@@ -5,8 +5,13 @@ public class FlippingBits
 {
     static class bitManipulate
     {
+        public static int convertToBinary (int number)
+        {
+            return 0;
+        }
         public static int flipBit(int bit)
         {
+            bit = bitManipulate.convertToBinary(bit);
             String binary = Integer.toBinaryString(bit);
             StringBuilder flippedBits = new StringBuilder();
             for (int i = 0; i < binary.length(); i++)
