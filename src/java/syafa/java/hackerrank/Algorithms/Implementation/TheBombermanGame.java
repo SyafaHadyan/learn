@@ -14,5 +14,15 @@ public class TheBombermanGame
             map[i] = input.nextLine().split("\s");
         }
         input.close();
+        for (int i = 0; i < configuration[2]; i += 2)
+        {
+            for (int j = 0; j < map.length; j++)
+            {
+                for (int k = 0; k < map[j].length; k++)
+                {
+                    //
+                }
+            }
+        }
     }
 }
