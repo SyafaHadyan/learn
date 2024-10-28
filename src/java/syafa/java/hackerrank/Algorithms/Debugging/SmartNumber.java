@@ -1,17 +1,15 @@
 package syafa.java.hackerrank.Algorithms.Debugging;
-import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class SmartNumber
 {
     public static boolean isSmartNumber(int num)
     {
         int val = (int) Math.sqrt(num);    
-        if(num / val == 1)
+        if (val * val == num)
+        {
             return true;
+        }
         return false;
     }
     
