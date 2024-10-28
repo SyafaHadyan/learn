@@ -12,11 +12,10 @@ public class FlippingBits
         public static int flipBit(int bit)
         {
             bit = bitManipulate.convertToBinary(bit);
-            String binary = Integer.toBinaryString(bit);
             StringBuilder flippedBits = new StringBuilder();
-            for (int i = 0; i < binary.length(); i++)
+            for (int i = 0; i < 32; i++)
             {
-                if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 0)
+                if (Integer.parseInt(String.valueOf(String.valueOf(bit).charAt(i))) == 0)
                 {
                     flippedBits.append(1);
                     continue;
