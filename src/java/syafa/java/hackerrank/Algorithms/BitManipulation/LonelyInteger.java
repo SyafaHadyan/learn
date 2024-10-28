@@ -8,13 +8,14 @@ public class LonelyInteger
     {
         public static int uniqueElement(int[] array)
         {
-            for (int i = 0; i < array.length; i++)
+            Arrays.sort(array);
+            for (int i = 1; i < array.length; i++)
             {
                 try
                 {
-                    if (array[i] != array[i + 1])
+                    if (array[i] != array[i + 1] && array[i] != array[i - 1])
                     {
-                        return i;
+                        return array[i];
                     }
                 }
                 catch (IndexOutOfBoundsException e)
