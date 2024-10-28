@@ -7,6 +7,7 @@ public class FlippingBits
     {
         public static int flipBit(int bit)
         {
+            int binary = Integer.parseInt(Integer.toBinaryString(bit));
             return 0;
         }
     }
