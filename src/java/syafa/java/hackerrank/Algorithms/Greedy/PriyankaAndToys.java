@@ -13,6 +13,7 @@ public class PriyankaAndToys
             for (int i = 0; i < array.length;)
             {
                 int currentMinValRange = array[i];
+                boolean isPossible = false;
                 for (int j = array[i]; j <= currentMinValRange + 4; j++)
                 {
                     try
@@ -20,6 +21,7 @@ public class PriyankaAndToys
                         if (array[j] >= currentMinValRange && array[j] <= currentMinValRange + 4)
                         {
                             i++;
+                            isPossible = true;
                         }
                     }
                     catch (IndexOutOfBoundsException e)
