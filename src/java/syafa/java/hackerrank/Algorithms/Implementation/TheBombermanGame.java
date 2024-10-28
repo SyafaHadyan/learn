@@ -4,6 +4,27 @@ import java.util.stream.*;
 
 public class TheBombermanGame
 {
+    static class simulate
+    {
+        public static String[][] bomb(String[][] map)
+        {
+            for (int i = 0; i < configuration[2]; i += 2)
+            {
+                for (int j = 0; j < map.length; j++)
+                {
+                    for (int k = 0; k < map[j].length; k++)
+                    {
+                        //
+                    }
+                }
+            }
+            return map;
+        }
+        public static void bombNoSimulate(String[][] map)
+        {
+            System.exit(0);
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -14,21 +35,10 @@ public class TheBombermanGame
             map[i] = input.nextLine().split("\s");
         }
         input.close();
-        boolean simulate = true;
         if (configuration[2] % 2 == 0)
         {
-            simulate = false;
+            simulate.bombNoSimulate(map);
         }
-        if (simulate)
-        for (int i = 0; i < configuration[2]; i += 2)
-        {
-            for (int j = 0; j < map.length; j++)
-            {
-                for (int k = 0; k < map[j].length; k++)
-                {
-                    //
-                }
-            }
-        }
+        map = simulate.bomb(map);
     }
 }
