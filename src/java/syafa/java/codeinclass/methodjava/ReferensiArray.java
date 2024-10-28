@@ -20,12 +20,12 @@ public class ReferensiArray
     {
         Scanner input = new Scanner(System.in);
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        System.out.printf("%-30s,%d","The sum is",arrayOperation.sumArray(array));
+        System.out.println("The sum is" + " " + arrayOperation.sumArray(array));
         System.out.println("The sorted array is");
         int[] sortedArray = arrayOperation.sortArray(array);
         for (int i = 0; i < array.length; i++)
         {
-            System.out.print(sortedArray);
+            System.out.print(sortedArray[i]);
             if (array.length - i != 1)
             {
                 System.out.print(' ');
