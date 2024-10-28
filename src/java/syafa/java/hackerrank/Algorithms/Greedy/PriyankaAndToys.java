@@ -10,13 +10,17 @@ public class PriyankaAndToys
         {
             int containerAmount = 0;
             Arrays.sort(array);
-            for (int i = 0; i < array.length; i++)
+            for (int i = 0; i < array.length;)
             {
                 int currentMinValRange = array[i];
-                for (int j = array[i]; j < array[i] + 4; j++)
+                for (int j = array[i]; j <= array[i] + 4; j++)
                 {
-                    //
+                    if (array[j] >= array[i] && array[j] <= array[i])
+                    {
+                        i++;
+                    }
                 }
+                containerAmount++;
             }
             return containerAmount;
         }
