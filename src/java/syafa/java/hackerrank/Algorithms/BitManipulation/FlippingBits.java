@@ -8,20 +8,21 @@ public class FlippingBits
         public static int flipBit(int bit)
         {
             String binary = Integer.toBinaryString(bit);
+            StringBuilder flippedBits = new StringBuilder();
             for (int i = 0; i < binary.length(); i++)
             {
                 if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 0)
                 {
-                    //
+                    flippedBits.append(1);
                     continue;
                 }
                 if (Integer.parseInt(String.valueOf(binary.charAt(i))) == 1)
                 {
-                    //
+                    flippedBits.append(0);
                     continue;
                 }
             }
-            return 0;
+            return Integer.parseInt(String.valueOf(flippedBits));
         }
     }
     public static void main(String[] args)
