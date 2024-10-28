@@ -8,20 +8,21 @@ public class PriyankaAndToys
     {
         public static int splitContainer(int[] array)
         {
-            int containerAmount = 0;
+            int containerAmount = 1;
             Arrays.sort(array);
             for (int i = 0; i < array.length;)
             {
                 int currentMinValRange = array[i];
                 boolean isPossible = false;
+                int counter = i;
                 for (int j = array[i]; j <= currentMinValRange + 4; j++)
                 {
                     try
                     {
-                        if (array[j] >= currentMinValRange && array[j] <= currentMinValRange + 4)
+                        if (array[counter] >= currentMinValRange && array[counter] <= currentMinValRange + 4)
                         {
                             i++;
-                            isPossible = true;
+                            counter++;
                         }
                     }
                     catch (IndexOutOfBoundsException e)
