@@ -29,17 +29,9 @@ function readLine() {
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    nums.sort();
-    let arrayLength = nums.length;
-    var max = nums[arrayLength - 1];
-    for (let i = arrayLength - 1; i >= 0; i--)
-    {
-        if (max > nums[i])
-        {
-            return nums[i];
-        }
-    }
-    return max;
+    nums = [...new Set(nums)];
+    nums.sort ((a,b) => b - a);
+    return nums[1];
 }
 
 
