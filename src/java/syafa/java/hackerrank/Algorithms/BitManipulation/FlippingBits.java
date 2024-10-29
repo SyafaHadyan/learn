@@ -5,22 +5,22 @@ public class FlippingBits
 {
     static class bitManipulate
     {
-        public static int convertToBinary (int number)
+        public static String convertToBinary (int number)
         {
-            return Integer.parseInt(String.format("%32s",Integer.toBinaryString(number).replaceAll("\s","0")));
+            return String.format("%32s",(String.format("%32s",Integer.toBinaryString(number).replaceAll("\s","0"))).replaceAll("\s","0"));
         }
         public static int flipBit(int bit)
         {
-            bit = bitManipulate.convertToBinary(bit);
+            String bitString = bitManipulate.convertToBinary(bit);
             StringBuilder flippedBits = new StringBuilder();
-            for (int i = 0; i < 32; i++)
+            for (int i = 0; i < bitString.length(); i++)
             {
-                if (Integer.parseInt(String.valueOf(String.valueOf(bit).charAt(i))) == 0)
+                if (Integer.parseInt(String.valueOf(bitString.charAt(i))) == 0)
                 {
                     flippedBits.append(1);
                     continue;
                 }
-                if (Integer.parseInt(String.valueOf(String.valueOf(bit).charAt(i))) == 1)
+                if (Integer.parseInt(String.valueOf(bitString.charAt(i))) == 1)
                 {
                     flippedBits.append(0);
                     continue;
@@ -31,6 +31,9 @@ public class FlippingBits
     }
     public static void main(String[] args)
     {
+        /*
+         *  1111111111111111111111111111111
+         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] result = new int[testCase];
