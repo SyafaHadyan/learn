@@ -8,6 +8,7 @@ public class InsertionSortPart2
     {
         public static void insertionSort(int[] array)
         {
+            boolean swap = false;
             for (int i = 1; i < array.length; ++i)
             {
                 int k = array[i];
@@ -16,20 +17,25 @@ public class InsertionSortPart2
                 {
                     array[j + 1] = array[j];
                     j = j - 1;
-                }
-                for (int l = 0; l < array.length; l++)
-                {
-                    System.out.print(array[l]);
-                    if (array.length - l != 1)
-                    {
-                        System.out.print(' ');
-                    }
-                    if (array.length - l == 1)
-                    {
-                        System.out.print("\n");
-                    }
+                    swap = true;
                 }
                 array[j + 1] = k;
+                if (swap)
+                {
+                    swap = false;
+                    for (int l = 0; l < array.length; l++)
+                    {
+                        System.out.print(array[l]);
+                        if (array.length - l != 1)
+                        {
+                            System.out.print(' ');
+                        }
+                        if (array.length - l == 1)
+                        {
+                            System.out.print("\n");
+                        }
+                    }
+                }
             }
         }
     }

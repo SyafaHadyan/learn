@@ -1,23 +1,38 @@
 package syafa.java.hackerrank.OneWeekPreparationKit.Day2;
 import java.util.*;
+import java.util.stream.*;
 
 public class LonelyInteger
 {
+    static class checkArray
+    {
+        public static int uniqueElement(int[] array)
+        {
+            Arrays.sort(array);
+            for (int i = 1; i < array.length; i++)
+            {
+                try
+                {
+                    if (array[i] != array[i + 1] && array[i] != array[i - 1])
+                    {
+                        return array[i];
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    return array[array.length - 1];
+                }
+            }
+            return array[0];
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        //int arraySize = Integer.parseInt(input.nextLine());
-        ArrayList<String> arrayString = new ArrayList<String>(Arrays.asList(input.nextLine().split(" ")));
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0,useless.length());
+        int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        System.out.print(checkArray.uniqueElement(number));
         input.close();
-        ArrayList<Integer> arrayInteger = new ArrayList<Integer>();
-        for (int i = 0; i < arrayString.size(); i++)
-        {
-            arrayInteger.add(Integer.parseInt(arrayString.get(i)));
-        }
-        //Collections.sort(arrayInteger);
-        for (int i = 0; i < arrayInteger.size(); i++)
-        {
-            //if (arrayInteger.get(i)).equals(arrayInteger.get(i + 1));
-        }
     }
 }
