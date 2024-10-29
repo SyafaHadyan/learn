@@ -24,6 +24,10 @@ public class InsertionSortPart2
                     {
                         System.out.print(' ');
                     }
+                    if (array.length - l == 1)
+                    {
+                        System.out.print("\n");
+                    }
                 }
                 array[j + 1] = k;
             }
