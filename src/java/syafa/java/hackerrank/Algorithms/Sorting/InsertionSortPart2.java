@@ -6,7 +6,7 @@ public class InsertionSortPart2
 {
     static class sort
     {
-        public static int insertionSort(int[] array)
+        public static void insertionSort(int[] array)
         {
             for (int i = 1; i < array.length; ++i)
             {
@@ -17,17 +17,16 @@ public class InsertionSortPart2
                     array[j + 1] = array[j];
                     j = j - 1;
                 }
-                for (int j = 0; j < array.length; j++)
+                for (int l = 0; l < array.length; l++)
                 {
-                    System.out.print(array[j]);
-                    if (array.length - j != 1)
+                    System.out.print(array[l]);
+                    if (array.length - l != 1)
                     {
                         System.out.print(' ');
                     }
                 }
                 array[j + 1] = k;
             }
-            return 0;
         }
     }
     public static void main(String[] args)
@@ -85,7 +84,8 @@ public class InsertionSortPart2
          */
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
-        int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        //int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        sort.insertionSort(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         input.close();
     }
 }
