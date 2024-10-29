@@ -8,9 +8,7 @@ public class InsertionSortPart2
     {
         public static int insertionSort(int[] array)
         {
-            int swapAmount = 0;
-            int n = array.length;
-            for (int i = 1; i < n; ++i)
+            for (int i = 1; i < array.length; ++i)
             {
                 int k = array[i];
                 int j = i - 1;
@@ -19,10 +17,9 @@ public class InsertionSortPart2
                     array[j + 1] = array[j];
                     j = j - 1;
                 }
-              
                 array[j + 1] = k;
             }
-            return swapAmount;
+            return 0;
         }
     }
     public static void main(String[] args)
@@ -79,9 +76,8 @@ public class InsertionSortPart2
          * [ ]3 4 5 6 2 1 7
          */
         Scanner input = new Scanner(System.in);
-        int[] number = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int arrayLength = Integer.parseInt(input.nextLine());
+        int[] number = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        int counter = 0;
-        int[] sortArray = number;
     }
 }
