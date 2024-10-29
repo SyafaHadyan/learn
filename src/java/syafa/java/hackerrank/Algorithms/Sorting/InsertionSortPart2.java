@@ -17,6 +17,14 @@ public class InsertionSortPart2
                     array[j + 1] = array[j];
                     j = j - 1;
                 }
+                for (int j = 0; j < array.length; j++)
+                {
+                    System.out.print(array[j]);
+                    if (array.length - j != 1)
+                    {
+                        System.out.print(' ');
+                    }
+                }
                 array[j + 1] = k;
             }
             return 0;
