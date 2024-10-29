@@ -26,14 +26,16 @@ public class FlippingBits
                     continue;
                 }
             }
-            return Integer.parseInt(String.valueOf(flippedBits));
+            //int a = Integer.
+            //int a = Integer.bin
+            return (int) Long.parseLong(String.valueOf(flippedBits),2);
         }
     }
     public static void main(String[] args)
     {
         /*
          *  1111111111111111111111111111111
-         * 1000000000000000000000000000000010000000000000000000000000000000
+         * 10000000000000000000000000000000
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
