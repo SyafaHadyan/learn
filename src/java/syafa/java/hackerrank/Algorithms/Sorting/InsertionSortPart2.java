@@ -4,6 +4,27 @@ import java.util.stream.*;
 
 public class InsertionSortPart2
 {
+    static class sort
+    {
+        public static int insertionSort(int[] array)
+        {
+            int swapAmount = 0;
+            int n = array.length;
+            for (int i = 1; i < n; ++i)
+            {
+                int k = array[i];
+                int j = i - 1;
+                while (j >= 0 && array[j] > k)
+                {
+                    array[j + 1] = array[j];
+                    j = j - 1;
+                }
+              
+                array[j + 1] = k;
+            }
+            return swapAmount;
+        }
+    }
     public static void main(String[] args)
     {
         /*
@@ -62,61 +83,5 @@ public class InsertionSortPart2
         input.close();
         int counter = 0;
         int[] sortArray = number;
-        Arrays.sort(sortArray);
-        for (int i = 0; i < number.length; i++)
-        {
-            try
-            {
-                if (number[counter] < number[counter + 1])
-                {
-                    counter++;
-                    //int tempQuit = number[number.length];
-                }
-                else if (number[counter] > number[counter + 1])
-                {
-                    int[] temp = {number[counter], number[counter + 1]};
-                    number[counter] = temp[1];
-                    number[counter + 1] = temp[0];
-                    int tempCounter = counter;
-                    while (number[tempCounter] < number[tempCounter - 1])
-                    {
-                        temp[0] = number[tempCounter];
-                        temp[1] = number[tempCounter - 1];
-                        number[tempCounter - 1] = temp[0];
-                        number[tempCounter] = temp[1];
-                        tempCounter--;
-                    }
-                    //int tempQuit = number[number.length];
-                }
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                for (int j = 0; j < number.length; j++)
-                {
-                    System.out.print(number[j]);
-                    if (number.length - j != 1)
-                    {
-                        System.out.print(' ');
-                    }
-                }
-                i = -1;
-                counter++;
-                if (number.length - counter == 1)
-                {
-                    return;
-                }
-                else
-                {
-                    System.out.print("\n");
-                }
-                /*
-                if (!(number.equals(sortArray)) && number.length - i == 1)
-                {
-                    i = -1;
-                    counter = 0;
-                }
-                */
-            }
-        }
     }
 }
