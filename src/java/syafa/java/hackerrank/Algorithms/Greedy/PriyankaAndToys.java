@@ -13,7 +13,6 @@ public class PriyankaAndToys
             for (int i = 0; i < array.length;)
             {
                 int currentMinValRange = array[i];
-                boolean isPossible = false;
                 int counter = i;
                 for (int j = array[i]; j <= currentMinValRange + 4; j++)
                 {
@@ -24,14 +23,17 @@ public class PriyankaAndToys
                             i++;
                             counter++;
                         }
+                        else
+                        {
+                            break;
+                        }
                     }
                     catch (IndexOutOfBoundsException e)
                     {
-                        //
+                        break;
                     }
                 }
                 containerAmount++;
-                i++;
             }
             return containerAmount;
         }
