@@ -88,12 +88,11 @@ public class Pangram
         }
         System.out.print("not pangram");
         ArrayList<String> miss = new ArrayList<>();
-        Collections.addAll(miss,alphabet);
         for (int i = 0; i < word.size(); i++)
         {
-            if (miss.get(i) == word.get(i))
+            if (alphabet[i] != word.get(i))
             {
-                miss.remove(i);
+                miss.add(alphabet[i]);
             }
         }
         for (int i = 0; i < miss.size(); i++)
