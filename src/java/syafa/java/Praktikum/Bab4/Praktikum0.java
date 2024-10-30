@@ -96,7 +96,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         //ArrayList<String> data = new ArrayList<>();
-        double[] dataInput = new double[10];
+        double[] dataInput = new double[1000];
         int dataAmount = 0;
         int option = 0;
         boolean repeat = true;
@@ -134,7 +134,7 @@ public class Praktikum0
                         data.clear();
                         data.addAll(Arrays.asList(input.nextLine().split(" ")));
                         */
-                        System.out.printf("%-35s%-2c","Masukkan jumlah data (1 - 10)",':');
+                        System.out.printf("%-35s%-2c",String.valueOf("Masukkan jumlah data (1 -" + " " + dataInput.length + ")"),':');
                         dataAmount = Integer.parseInt(input.nextLine());
                         for (int i = 0; i < dataAmount; i++)
                         {
