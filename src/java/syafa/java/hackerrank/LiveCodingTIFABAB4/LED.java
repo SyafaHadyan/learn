@@ -12,30 +12,36 @@ public class LED
         int limiter = 0;
         int side = led.length - 2;
         int mid = 1;
-        for (int i = 0; i < ledSize; i++)
+        for (int i = 0; i < led.length; i++)
         {
-            led[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        }
-        input.close();
-        for (int i = 0; i < led[0].length; i++)
-        {
-            System.out.print(led[0][i] + " ");
-        }
-        for (int i = 1; i < led.length; i++)
-        {
-            System.out.print(led[i][led.length - 1] + " ");
-        }
-        for (int i = side; i > 0; i--)
-        {
-            System.out.print(led[side][i] + " ");
-        }
-        for (int i = led.length - 1; i > limiter; i--)
-        {
-            System.out.print(led[i][0] + " ");
-        }
-        for (int i = side; i < led[0].length - side - limiter; i++)
-        {
-            System.out.print(led[mid][side]);
+            for (int j = 0; j < ledSize; j++)
+            {
+                led[j] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            }
+            input.close();
+            for (int j = 0; j < led[0].length; j++)
+            {
+                System.out.print(led[0][j] + " ");
+            }
+            for (int j = 1; j < led.length; j++)
+            {
+                System.out.print(led[j][led.length - 1] + " ");
+            }
+            for (int j = side; j > 0; j--)
+            {
+                System.out.print(led[side][j] + " ");
+            }
+            for (int j = led.length - 1; j > limiter; j--)
+            {
+                System.out.print(led[j][0] + " ");
+            }
+            for (int j = side; j < led[0].length - side - limiter; j++)
+            {
+                System.out.print(led[mid][side]);
+            }
+            limiter++;
+            side--;
+            mid++;
         }
     }
 }
