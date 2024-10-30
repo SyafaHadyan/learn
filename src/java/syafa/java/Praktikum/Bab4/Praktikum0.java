@@ -136,22 +136,23 @@ public class Praktikum0
                         */
                         System.out.printf("%-35s%-2c","Masukkan jumlah data (1 - 10)",':');
                         dataAmount = Integer.parseInt(input.nextLine());
-                        for (int i = 0; i < dataAmount - 1; i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
                             dataInput[i] = Double.parseDouble(input.next());
                         }
+                        input.nextLine();
                         break;
                     case 2:
                         System.out.print("\n");
-                        for (int i = 0; i < data.size(); i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
-                            System.out.println(data.get(i));
+                            System.out.println(dataInput[i]);
                         }
                         System.out.print("\n");
                         break;
                     case 3:
                         double tempDoubleAverage = 0d;
-                        for (int i = 0; i < dataAmount - 1; i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
                             tempDoubleAverage += dataInput[i];
                         }
@@ -185,7 +186,7 @@ public class Praktikum0
                         */
                         break;
                     case 5:
-                        for (int i = 0; i < dataAmount - 1; i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
                             for (int j = 0; j < dataAmount - i - 1; j++)
                             {
@@ -208,7 +209,7 @@ public class Praktikum0
                         break;
                         */
                     case 6:
-                        for (int i = 0; i < dataAmount - 1; i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
                             for (int j = 0; j < dataAmount - i - 1; j++)
                             {
