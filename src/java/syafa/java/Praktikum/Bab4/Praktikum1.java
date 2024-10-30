@@ -140,7 +140,7 @@ public class Praktikum1
                         int tempPreviousPassengerAmount = passengerAmount;
                         passengerAmount += Integer.parseInt(input.nextLine());
                         System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata\n");
-                        for (int i = 0; i < passengerAmount; i++)
+                        for (int i = tempPreviousPassengerAmount; i < passengerAmount; i++)
                         {
                             System.out.println("Data penumpang ke" + ' ' + (i + 1) + ':');
                             passengerName[i] = input.nextLine();
@@ -156,7 +156,7 @@ public class Praktikum1
                                             //ticketPrice.add(Integer.parseInt(data[1][j]));
                                             ticketPrice[i] = Integer.parseInt(data[1][j]);
                                             //discountedTicketPrice.add(((100 - Double.parseDouble(data[2][j])) * Double.parseDouble(data[1][j])) / 100);
-                                            discountedTicketPrice[i] = 
+                                            discountedTicketPrice[i] = ((100 - Double.parseDouble(data[2][j])) * Double.parseDouble(data[1][j])) / 100;
                                             tempValidTicketType = true;
                                             break;
                                         }
@@ -164,7 +164,8 @@ public class Praktikum1
                                 }
                                 if (!tempValidTicketType)
                                 {
-                                    System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName.getLast());
+                                    //System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName.getLast());
+                                    System.out.println("Jenis tiket yang anda masukkan salah, silahkan masukkan kembali jenis tiket untuk penumpang" + ' ' + passengerName[i]);
                                 }
                             }
                         }
