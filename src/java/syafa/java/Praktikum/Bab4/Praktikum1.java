@@ -7,6 +7,7 @@ public class Praktikum1
     {
         Scanner input = new Scanner(System.in);
         int option = 0;
+        int passengerAmount = 0;
         boolean repeat = true;
         String[] tableHeader =
         {
@@ -32,9 +33,14 @@ public class Praktikum1
             "Memesan Tikat Kereta Api",
             "Melihat Pesanan Tiket"
         };
+        /*
         ArrayList<String> passengerName = new ArrayList<>();
         ArrayList<Integer> ticketPrice = new ArrayList<>();
         ArrayList<Double> discountedTicketPrice = new ArrayList<>();
+        */
+        String[] passengerName = new String[5];
+        int[] ticketPrice = new int[5];
+        Double[] discountedTicketPrice = new Double[5];
         while (repeat)
         {
             repeat = false;
@@ -131,12 +137,13 @@ public class Praktikum1
                         break;
                     case 4:
                         System.out.printf("%-40s%-2c","Masukkan jumlah tiket yang akan dipesan",':');
-                        int ticketAmount = Integer.parseInt(input.nextLine());
+                        int tempPreviousPassengerAmount = passengerAmount;
+                        passengerAmount += Integer.parseInt(input.nextLine());
                         System.out.printf("\n%s\n%s\n","Masukkan nama penumpang dan jenis tiket (Nama Jenis)","Contoh:\nDengklek\nPariwisata\n");
-                        for (int i = 0; i < ticketAmount; i++)
+                        for (int i = 0; i < passengerAmount; i++)
                         {
                             System.out.println("Data penumpang ke" + ' ' + (i + 1) + ':');
-                            passengerName.add(input.nextLine());
+                            passengerName[i] = input.nextLine();
                             boolean tempValidTicketType = false;
                             while (!tempValidTicketType)
                             {
@@ -146,8 +153,10 @@ public class Praktikum1
                                     if (tempTicketType.equalsIgnoreCase(data[0][j]))
                                     {
                                         {
-                                            ticketPrice.add(Integer.parseInt(data[1][j]));
-                                            discountedTicketPrice.add(((100 - Double.parseDouble(data[2][j])) * Double.parseDouble(data[1][j])) / 100);
+                                            //ticketPrice.add(Integer.parseInt(data[1][j]));
+                                            ticketPrice[i] = Integer.parseInt(data[1][j]);
+                                            //discountedTicketPrice.add(((100 - Double.parseDouble(data[2][j])) * Double.parseDouble(data[1][j])) / 100);
+                                            discountedTicketPrice[i] = 
                                             tempValidTicketType = true;
                                             break;
                                         }
@@ -161,7 +170,7 @@ public class Praktikum1
                         }
                         break;
                     case 5:
-                        if (passengerName.size() == 0 && ticketPrice.size() == 0)
+                        if (passengerAmount == 0)
                         {
                             System.out.println("Anda belum memesan tiket");
                             break;
@@ -172,7 +181,7 @@ public class Praktikum1
                             System.out.print('=');
                         }
                         System.out.print("\n");
-                        for (int i = 0; i < ((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3); i++)
+                        for (int i = 0; i < passengerAmount; i++)
                         {
                             System.out.printf("%-40s%-20d%.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
                         }
