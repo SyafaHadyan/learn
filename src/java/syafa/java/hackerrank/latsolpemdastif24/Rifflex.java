@@ -22,6 +22,11 @@ public class Rifflex
          * 4D 3S 2D 5S 3D 2S 5D 4S
          */
         Scanner input = new Scanner(System.in);
+        String[] card = input.nextLine().split("\s");
         input.close();
+        for (int i = 0; i < card.length; i++)
+        {
+            //
+        }
     }
 }
