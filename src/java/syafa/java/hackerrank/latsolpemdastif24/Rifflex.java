@@ -21,18 +21,21 @@ public class Rifflex
          * 
          * 4D 3S 2D 5S 3D 2S 5D 4S
          * 
-         * A  B  C  D  E  F  G  H
+         * 1  2  3  4  5  6  7  8
          * 2S 3S 4S 5S 2D 3D 4D 5D
          * 
-         * G  B  E  D  F  A  H  C
+         * 7  2  5  4  6  1  8  3
          * 4D 3S 2D 5S 3D 2S 5D 4S
          * 
          * 
-         * A  B  C  D  E  F  G  H
+         * 1  2  3  4  5  6  7  8
          * 2S 3S 4S 5S 2D 3D 4D 5D
          * 
-         * 
+         * 3  5  2  4  7  6  1  8
          * 4S 2D 3S 5S 4D 3D 2S 5D
+         * 
+         * 1  3  5  7  8  6  4  2
+         * 2S 4S 2D 4D 5D 3D 5S 3S
          */
         Scanner input = new Scanner(System.in);
         String[] card = input.nextLine().split("\s");
@@ -43,14 +46,14 @@ public class Rifflex
             {
                 if ((i + 1) % 2 == 0)
                 {
-                    String temp = card[(3 * (i + 1) + 1) - 1];
-                    card[(3 * (i + 1) + 1) - 1] = card[i];
+                    String temp = card[((3 * (i + 1)) + 1)];
+                    card[((3 * (i + 1)) + 1)] = card[i];
                     card[i] = temp;
                 }
                 else if ((i + 1) % 2 != 0)
                 {
-                    String temp = card[((i + 1) / 2) - 1];
-                    card[((i + 1) / 2) - 1] = card[i];
+                    String temp = card[((i + 1) / 2)];
+                    card[((i + 1) / 2)] = card[i];
                     card[i] = temp;
                 }
             }
