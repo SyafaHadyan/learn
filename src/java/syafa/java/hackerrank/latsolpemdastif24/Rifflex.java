@@ -20,13 +20,31 @@ public class Rifflex
          * 2S 3S 4S 5S 2D 3D 4D 5D
          * 
          * 4D 3S 2D 5S 3D 2S 5D 4S
+         * 
+         * A  B  C  D  E  F  G  H
+         * 2S 3S 4S 5S 2D 3D 4D 5D
+         * 
+         * G  B  E  D  F  A  H  C 
+         * 4D 3S 2D 5S 3D 2S 5D 4S
          */
         Scanner input = new Scanner(System.in);
         String[] card = input.nextLine().split("\s");
         input.close();
         for (int i = 0; i < card.length; i++)
         {
-            //
+            try
+            {
+                if ((i + 1) % 2 == 0)
+                {
+                    String temp = card[3 * (i + 1) + 1];
+                    card[3 * (i + 1) + 1] = card[i];
+                    card[i] = temp;
+                }
+            }
+            catch (IndexOutOfBoundsException e)
+            {
+                //
+            }
         }
     }
 }
