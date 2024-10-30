@@ -165,6 +165,7 @@ public class Praktikum0
                             tempDoubleSum += dataInput[i];
                         }
                         System.out.printf("\n%.5f\n\n",(tempDoubleSum));
+                        break;
                         /*try
                         {
                             int[] tempIntegersum = new int[data.size()];
@@ -183,8 +184,8 @@ public class Praktikum0
                             }
                             System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
                         }
-                        */
                         break;
+                        */
                     case 5:
                         for (int i = 0; i < dataAmount; i++)
                         {
@@ -198,7 +199,8 @@ public class Praktikum0
                                 }
                             }
                         }
-                        System.out.printf("\n%.5f\n\n",(dataInput[0]));
+                        System.out.printf("\n%.5f\n\n",dataInput[4]);
+                        break;
                         /*
                         if (checkDataType.isDouble(data))
                         {
@@ -221,7 +223,8 @@ public class Praktikum0
                                 }
                             }
                         }
-                        System.out.printf("\n%.5f\n",(dataInput[dataAmount - 1]));
+                        System.out.printf("\n%.5f\n\n",(dataInput[0]));
+                        break;
                         /*
                         if (checkDataType.isDouble(data))
                         {
