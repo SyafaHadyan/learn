@@ -232,7 +232,9 @@ public class N13Array3D
 
 Inisialisasi `dataInput` sebesar 1000 dan `dataAmount` (nanti yang akan digunakan ketika `for loop` sehingga tidak loop 1000 kali untuk print data)
 
-Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-6, program akan mengulang kembali print menu. Jika pilihan 1, clear dulu isi dari `ArrayList` karena tidak tahu apakah input data yang ke berapa.
+Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-6, program akan mengulang kembali print menu.
+
+Jika pilihan 1, maka input data yang dipisah spasi dan menggunakan `.next()` yang kemudian di loop sebanyak yang dimau user. (variabel `dataAmount` akan digunakan di seluruh kode program untuk membatasi maksimal `for loop`)
 
 Jika input pilihan ke 2, kode akan print seluruh elemen dari `ArrayList` tadi kemudian print menu kembali.
 
