@@ -247,10 +247,10 @@ Jika input pilihan 5 maka kode akan memanggil `method` `isDouble` di dalam kelas
 ```java
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
-import java.util.stream.*;
 
 public class Praktikum0
 {
+    /*
     static class sortArray
     {
         public static double[] bubbleSortDouble(double[] array)
@@ -338,10 +338,13 @@ public class Praktikum0
             return convertedArray;
         }
     }
+    */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> data = new ArrayList<>();
+        //ArrayList<String> data = new ArrayList<>();
+        double[] dataInput = new double[1000];
+        int dataAmount = 0;
         int option = 0;
         boolean repeat = true;
         String[] menu =
@@ -374,27 +377,43 @@ public class Praktikum0
                 switch (option)
                 {
                     case 1:
+                        /*
                         data.clear();
                         data.addAll(Arrays.asList(input.nextLine().split(" ")));
+                        */
+                        System.out.printf("%-35s%-2c",String.valueOf("Masukkan jumlah data (1 -" + " " + dataInput.length + ")"),':');
+                        dataAmount = Integer.parseInt(input.nextLine());
+                        for (int i = 0; i < dataAmount; i++)
+                        {
+                            dataInput[i] = Double.parseDouble(input.next());
+                        }
+                        input.nextLine();
                         break;
                     case 2:
                         System.out.print("\n");
-                        for (int i = 0; i < data.size(); i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
-                            System.out.println(data.get(i));
+                            System.out.println(dataInput[i]);
                         }
                         System.out.print("\n");
                         break;
                     case 3:
-                        double[] tempDoubleAverage = new double[data.size()];
-                        for (int i = 0; i < data.size(); i++)
+                        double tempDoubleAverage = 0d;
+                        for (int i = 0; i < dataAmount; i++)
                         {
-                            tempDoubleAverage[i] = Double.parseDouble(data.get(i));
+                            tempDoubleAverage += dataInput[i];
                         }
-                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleAverage).sum() / tempDoubleAverage.length));
+                        System.out.printf("\n%.5f\n\n",(tempDoubleAverage / Double.parseDouble(String.valueOf(dataAmount))));
                         break;
                     case 4:
-                        try
+                        double tempDoubleSum = 0d;
+                        for (int i = 0; i < dataAmount; i++)
+                        {
+                            tempDoubleSum += dataInput[i];
+                        }
+                        System.out.printf("\n%.5f\n\n",(tempDoubleSum));
+                        break;
+                        /*try
                         {
                             int[] tempIntegersum = new int[data.size()];
                             for (int i = 0; i < data.size(); i++)
@@ -413,7 +432,23 @@ public class Praktikum0
                             System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
                         }
                         break;
+                        */
                     case 5:
+                        for (int i = 0; i < dataAmount; i++)
+                        {
+                            for (int j = 0; j < dataAmount - i - 1; j++)
+                            {
+                                if (dataInput[j] > dataInput[j + 1])
+                                {
+                                    double temp = dataInput[j];
+                                    dataInput[j] = dataInput[j + 1];
+                                    dataInput[j + 1] = temp;
+                                }
+                            }
+                        }
+                        System.out.printf("\n%.5f\n\n",dataInput[4]);
+                        break;
+                        /*
                         if (checkDataType.isDouble(data))
                         {
                             System.out.printf("\n%.5f\n\n",sortArray.getMaxDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
@@ -421,7 +456,23 @@ public class Praktikum0
                         }
                         System.out.printf("\n%d\n\n",sortArray.getMaxInteger(((sortArray.bubbleSortInteger(checkDataType.convertArrayInteger(data))))));
                         break;
+                        */
                     case 6:
+                        for (int i = 0; i < dataAmount; i++)
+                        {
+                            for (int j = 0; j < dataAmount - i - 1; j++)
+                            {
+                                if (dataInput[j] > dataInput[j + 1])
+                                {
+                                    double temp = dataInput[j];
+                                    dataInput[j] = dataInput[j + 1];
+                                    dataInput[j + 1] = temp;
+                                }
+                            }
+                        }
+                        System.out.printf("\n%.5f\n\n",(dataInput[0]));
+                        break;
+                        /*
                         if (checkDataType.isDouble(data))
                         {
                             System.out.printf("\n%.5f\n\n",sortArray.getMinDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
@@ -429,6 +480,7 @@ public class Praktikum0
                         }
                         System.out.printf("\n%d\n\n",sortArray.getMinInteger(((sortArray.bubbleSortInteger(checkDataType.convertArrayInteger(data))))));
                         break;
+                        */
                 }
             }
             else if (option == 7)
