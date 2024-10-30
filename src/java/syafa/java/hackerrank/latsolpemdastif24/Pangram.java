@@ -17,7 +17,7 @@ public class Pangram
          * Praktikum PemDas TIF-A 2024
          * 
          * Input bukan merupakan pangram karena tidak memiliki huruf B, C, G, H, J, L, N, O, Q, V, W, X, Y, Z :(
-    *                                                              A D E F I K M P R S T U
+         *                                                              A D E F I K M P R S T U
          */
         Scanner input = new Scanner(System.in);
         String inputWord = input.nextLine();
@@ -89,7 +89,13 @@ public class Pangram
         System.out.print("not pangram");
         Set<String> alphabetSet = new HashSet<>(Arrays.asList(alphabet));
         Set<String> containWord = new HashSet<>(Arrays.asList(wordChar));
-        ArrayList<String> miss = new ArrayList<>();
+        alphabetSet.removeAll(containWord);
+        for (String missing : alphabetSet)
+        {
+            System.out.print(missing + " ");
+        }
+        //ArrayList<String> miss = new ArrayList<>();
+        /*
         for (int i = 0; i < word.size(); i++)
         {
             if (alphabet[i] != word.get(i))
@@ -105,5 +111,6 @@ public class Pangram
                 System.out.print(" ");
             }
         }
+        */
     }
 }
