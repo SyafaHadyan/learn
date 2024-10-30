@@ -87,6 +87,8 @@ public class Pangram
             return;
         }
         System.out.print("not pangram");
+        Set<String> alphabetSet = new HashSet<>(Arrays.asList(alphabet));
+        Set<String> containWord = new HashSet<>(Arrays.asList(wordChar));
         ArrayList<String> miss = new ArrayList<>();
         for (int i = 0; i < word.size(); i++)
         {
