@@ -1,9 +1,9 @@
 package syafa.java.Praktikum.Bab4;
 import java.util.*;
-import java.util.stream.*;
 
 public class Praktikum0
 {
+    /*
     static class sortArray
     {
         public static double[] bubbleSortDouble(double[] array)
@@ -91,6 +91,7 @@ public class Praktikum0
             return convertedArray;
         }
     }
+    */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
