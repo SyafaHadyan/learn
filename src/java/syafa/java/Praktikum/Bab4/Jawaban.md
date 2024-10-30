@@ -230,7 +230,7 @@ public class N13Array3D
 
 #### Penjelasan Praktikum 1
 
-Inisialisasi `ArrayList String` karena tidak tahu banyak data yang akan diinput kemudian `String[]` menu untuk print menu pilihan data kemudian masuk ke `while` repeat yang diawali dengan `for loop` print menu yang diakhiri dengan print untuk meminta user memasukkan nilai untuk operasi.
+Inisialisasi `dataInput` sebesar 1000 dan `dataAmount` (nanti yang akan digunakan ketika `for loop` sehingga tidak loop 1000 kali untuk print data)
 
 Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-6, program akan mengulang kembali print menu. Jika pilihan 1, clear dulu isi dari `ArrayList` karena tidak tahu apakah input data yang ke berapa.
 
