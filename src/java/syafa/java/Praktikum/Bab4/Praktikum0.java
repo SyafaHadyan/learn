@@ -95,7 +95,7 @@ public class Praktikum0
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> data = new ArrayList<>();
+        //ArrayList<String> data = new ArrayList<>();
         double[] dataInput = new double[10];
         int dataAmount = 0;
         int option = 0;
@@ -160,7 +160,7 @@ public class Praktikum0
                         break;
                     case 4:
                         double tempDoubleSum = 0d;
-                        for (int i = 0; i < menu.length; i++)
+                        for (int i = 0; i < dataAmount; i++)
                         {
                             tempDoubleSum += dataInput[i];
                         }
