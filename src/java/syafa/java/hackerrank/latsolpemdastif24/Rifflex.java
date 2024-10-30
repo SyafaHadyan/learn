@@ -42,6 +42,15 @@ public class Rifflex
         String[] card = input.nextLine().split("\s");
         input.close();
         /*
+         * 2S 3S 4S 5S 2D 3D 4D 5D
+         * 
+         * 4D 3S 2D 5S 3D 2S 5D 4S
+         */
+        for (int i = 0; i < card.length; i++)
+        {
+           //if (i == )
+        }
+        /*
         for (int i = 0; i < card.length; i++)
         {
             try
