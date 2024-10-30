@@ -18,7 +18,7 @@ public class Pangram
         String inputWord = input.nextLine();
         inputWord = inputWord.replaceAll("[^\\p{L}\\p{Nd}]+", "");
         input.close();
-        boolean specialPangram = false;
+        boolean specialPangram = true;
         String[] alphabet =
         {
             "a",
@@ -61,7 +61,7 @@ public class Pangram
                 if (word.get(i).equalsIgnoreCase(word.get(i + 1)))
                 {
                     word.remove(i);
-                    specialPangram = true;
+                    specialPangram = false;
                     i--;
                 }
             }
@@ -75,10 +75,10 @@ public class Pangram
         {
             if (specialPangram)
             {
-                System.out.print("pangram special");
+                System.out.print("Input merupakan pangram sempurna! :D");
                 return;
             }
-            System.out.print("pangram not special");
+            System.out.print("Input hanya pangram biasa saja :)");
             return;
         }
         System.out.print("not pangram");
