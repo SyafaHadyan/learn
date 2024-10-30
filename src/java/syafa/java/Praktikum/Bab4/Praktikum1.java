@@ -187,9 +187,15 @@ public class Praktikum1
                             System.out.printf("%-40s%-20d%.5f\n",passengerName[i],ticketPrice[i],discountedTicketPrice[i]);
                         }
                         double tempTotalDiscountedPriceSum = 0d;
+                        /*
                         for (double tempTotalDiscountedTicketPrice : discountedTicketPrice)
                         {
                             tempTotalDiscountedPriceSum += tempTotalDiscountedTicketPrice;
+                        }
+                        */
+                        for (int i = 0; i < passengerAmount; i++)
+                        {
+                            tempTotalDiscountedPriceSum += discountedTicketPrice[i];
                         }
                         System.out.printf
                         (
