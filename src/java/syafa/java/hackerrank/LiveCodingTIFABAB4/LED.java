@@ -12,13 +12,13 @@ public class LED
         int limiter = 0;
         int side = led.length - 2;
         int mid = 1;
-        for (int i = 0; i < led.length; i++)
+        for (int j = 0; j < ledSize; j++)
         {
-            for (int j = 0; j < ledSize; j++)
-            {
-                led[j] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-            }
-            input.close();
+            led[j] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        }
+        input.close();
+        for (int i = 0; i < led.length; i += 3)
+        {
             for (int j = 0; j < led[0].length; j++)
             {
                 System.out.print(led[0][j] + " ");
