@@ -17,10 +17,10 @@ public class LED
         for (int i = 0; i < led[0].length; i++)
         {
             System.out.print(led[0][i] + " ");
-            for (int j = 0; j < led.length; j++)
-            {
-                //
-            }
+        }
+        for (int i = 1; i < led.length; i++)
+        {
+            System.out.print(led[i][led.length - 1] + " ");
         }
     }
 }
