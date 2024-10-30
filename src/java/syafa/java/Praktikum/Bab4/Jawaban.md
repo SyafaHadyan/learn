@@ -236,9 +236,9 @@ Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-
 
 Jika pilihan 1, maka input data yang dipisah spasi dan menggunakan `.next()` yang kemudian di loop sebanyak yang dimau user. (variabel `dataAmount` akan digunakan di seluruh kode program untuk membatasi maksimal `for loop`)
 
-Jika input pilihan ke 2, kode akan print seluruh elemen dari `ArrayList` tadi kemudian print menu kembali.
+Jika input pilihan ke 2, kode akan print seluruh elemen dari `dataInput` tadi kemudian print menu kembali.
 
-Jika input pilihan 3, maka akan hitung rata-rata dari seluruh data dengan membuat variabel `double` sementara untuk kemudian print sum dengan `DoubleStream` kemudian dibagi dengan panjang `array`.
+Jika input pilihan 3, maka akan hitung rata-rata dari seluruh data dengan membuat variabel `double` sementara untuk kemudian print sum dengan membagi dengan `dataAmount`.
 
 Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke variabel sementara `int[]` yang kemudian jika ada salah satu data yang bernilai double, Java akan `throw` [`NumbereFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html). Jika iya, maka akan mencoba untuk menggunakan tipe data `double[]` untuk menghitung sum dari seluruh data.
 
