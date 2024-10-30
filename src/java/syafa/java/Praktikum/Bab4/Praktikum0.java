@@ -96,6 +96,7 @@ public class Praktikum0
         Scanner input = new Scanner(System.in);
         ArrayList<String> data = new ArrayList<>();
         double[] dataInput = new double[10];
+        int dataAmount = 0;
         int option = 0;
         boolean repeat = true;
         String[] menu =
@@ -133,8 +134,11 @@ public class Praktikum0
                         data.addAll(Arrays.asList(input.nextLine().split(" ")));
                         */
                         System.out.printf("%-35s%-2c","Masukkan jumlah data (1 - 10)",':');
-                        int dataAmount = Integer.parseInt(input.nextLine());
-                        dataInput = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
+                        dataAmount = Integer.parseInt(input.nextLine());
+                        for (int i = 0; i < menu.length; i++)
+                        {
+                            dataInput[i] = Double.parseDouble(input.next());
+                        }
                         break;
                     case 2:
                         System.out.print("\n");
