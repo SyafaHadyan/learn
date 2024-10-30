@@ -36,14 +36,14 @@ public class Rifflex
             {
                 if ((i + 1) % 2 == 0)
                 {
-                    String temp = card[3 * (i + 1) + 1];
-                    card[3 * (i + 1) + 1] = card[i];
+                    String temp = card[(3 * (i + 1) + 1) - 1];
+                    card[(3 * (i + 1) + 1) - 1] = card[i];
                     card[i] = temp;
                 }
                 else if ((i + 1) % 2 != 0)
                 {
-                    String temp = card[(i + 1) / 2];
-                    card[(i + 1) / 2] = card[i];
+                    String temp = card[((i + 1) / 2) - 1];
+                    card[((i + 1) / 2) - 1] = card[i];
                     card[i] = temp;
                 }
             }
