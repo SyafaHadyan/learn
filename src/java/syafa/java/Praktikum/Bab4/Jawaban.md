@@ -246,6 +246,8 @@ Jika input pilihan 4, buat variabel sementara dan loop hingga `dataAmount` kemud
 
 Jika input pilihan 5, maka langsung menggunakan Bubble Sort yang akan iterate 2 kali banyak data yang kemudian print nilai terakhir `dataAmount - 1`
 
+Jika input pilihan 6, sama seperti nomor 5, menggunakan Bubble Sort kemudian print elemen pertama.
+
 ##### Unused
 
 Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke variabel sementara `int[]` yang kemudian jika ada salah satu data yang bernilai double, Java akan `throw` [`NumberFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html). Jika iya, maka akan mencoba untuk menggunakan tipe data `double[]` untuk menghitung sum dari seluruh data.
