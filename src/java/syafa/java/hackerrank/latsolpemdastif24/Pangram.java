@@ -1,4 +1,4 @@
-package syafa.java.hackerrank.Algorithms.Strings;
+package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
 
 public class Pangram
@@ -7,6 +7,7 @@ public class Pangram
     {
         Scanner input = new Scanner(System.in);
         String inputWord = input.nextLine();
+        inputWord = inputWord.replaceAll("[^\\p{L}\\p{Nd}]+", "");
         input.close();
         String[] alphabet =
         {
