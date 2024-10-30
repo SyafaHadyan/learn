@@ -10,7 +10,8 @@ public class LED
         int ledSize = Integer.parseInt(input.nextLine());
         int[][] led = new int[ledSize][];
         int limiter = 0;
-        int side = led.length - 1;
+        int side = led.length - 2;
+        int mid = 1;
         for (int i = 0; i < ledSize; i++)
         {
             led[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
@@ -24,13 +25,17 @@ public class LED
         {
             System.out.print(led[i][led.length - 1] + " ");
         }
-        for (int i = side - 1; i > 0; i--)
+        for (int i = side; i > 0; i--)
         {
             System.out.print(led[side][i] + " ");
         }
         for (int i = led.length - 1; i > limiter; i--)
         {
             System.out.print(led[i][0] + " ");
+        }
+        for (int i = side; i < led[0].length - side - limiter; i++)
+        {
+            System.out.print(led[mid][side]);
         }
     }
 }
