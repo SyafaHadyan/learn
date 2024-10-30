@@ -135,7 +135,7 @@ public class Praktikum0
                         */
                         System.out.printf("%-35s%-2c","Masukkan jumlah data (1 - 10)",':');
                         dataAmount = Integer.parseInt(input.nextLine());
-                        for (int i = 0; i < menu.length; i++)
+                        for (int i = 0; i < dataAmount - 1; i++)
                         {
                             dataInput[i] = Double.parseDouble(input.next());
                         }
@@ -150,14 +150,19 @@ public class Praktikum0
                         break;
                     case 3:
                         double tempDoubleAverage = 0d;
-                        for (int i = 0; i < data.size(); i++)
+                        for (int i = 0; i < dataAmount - 1; i++)
                         {
                             tempDoubleAverage += dataInput[i];
                         }
                         System.out.printf("\n%.5f\n\n",(tempDoubleAverage / Double.parseDouble(String.valueOf(dataAmount))));
                         break;
                     case 4:
-                        //
+                        double tempDoubleSum = 0d;
+                        for (int i = 0; i < menu.length; i++)
+                        {
+                            tempDoubleSum += dataInput[i];
+                        }
+                        System.out.printf("\n%.5f\n",(tempDoubleSum));
                         /*try
                         {
                             int[] tempIntegersum = new int[data.size()];
