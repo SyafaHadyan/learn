@@ -13,10 +13,6 @@ public class Perulangan
         {
             spell.append(word[i]);
             System.out.print(spell);
-            if (word.length - i != 1)
-            {
-                System.out.print("\n");
-            }
         }
     }
 }
