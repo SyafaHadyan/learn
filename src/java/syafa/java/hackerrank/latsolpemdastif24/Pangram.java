@@ -86,14 +86,15 @@ public class Pangram
             System.out.print("Input hanya pangram biasa saja :)");
             return;
         }
-        System.out.print("not pangram");
+        System.out.print("Input bukan merupakan pangram karena tidak memiliki huruf ");
         Set<String> alphabetSet = new HashSet<>(Arrays.asList(alphabet));
         Set<String> containWord = new HashSet<>(Arrays.asList(wordChar));
         alphabetSet.removeAll(containWord);
         for (String missing : alphabetSet)
         {
-            System.out.print(missing + " ");
+            System.out.print((missing.toUpperCase()) + " ");
         }
+        System.out.print(":(");
         //ArrayList<String> miss = new ArrayList<>();
         /*
         for (int i = 0; i < word.size(); i++)
