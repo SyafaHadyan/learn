@@ -89,9 +89,20 @@ public class Pangram
         System.out.print("not pangram");
         ArrayList<String> miss = new ArrayList<>();
         Collections.addAll(miss,alphabet);
-        for (int i = 0; i < wordChar.length; i++)
+        for (int i = 0; i < word.size(); i++)
         {
-            sou
+            if (miss.get(i) == word.get(i))
+            {
+                miss.remove(i);
+            }
+        }
+        for (int i = 0; i < miss.size(); i++)
+        {
+            System.out.print(miss.get(i));
+            if (miss.size() - i != 1)
+            {
+                System.out.print(" ");
+            }
         }
     }
 }
