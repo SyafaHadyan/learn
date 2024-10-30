@@ -157,7 +157,8 @@ public class Praktikum0
                         System.out.printf("\n%.5f\n\n",(tempDoubleAverage / Double.parseDouble(String.valueOf(dataAmount))));
                         break;
                     case 4:
-                        try
+                        //
+                        /*try
                         {
                             int[] tempIntegersum = new int[data.size()];
                             for (int i = 0; i < data.size(); i++)
@@ -175,6 +176,7 @@ public class Praktikum0
                             }
                             System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleSum).sum()));
                         }
+                        */
                         break;
                     case 5:
                         if (checkDataType.isDouble(data))
