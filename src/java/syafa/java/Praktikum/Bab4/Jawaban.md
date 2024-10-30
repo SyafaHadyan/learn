@@ -230,6 +230,8 @@ public class N13Array3D
 
 #### Penjelasan Praktikum 1
 
+> Note: kode sebelumnya (sebelum revisi) diubah menjadi comments.
+
 Inisialisasi `dataInput` sebesar 1000 dan `dataAmount` (nanti yang akan digunakan ketika `for loop` sehingga tidak loop 1000 kali untuk print data)
 
 Jika pilihan adalah 7, program akan keluar dengan `System.exit()` selain dari 1-6, program akan mengulang kembali print menu.
@@ -240,7 +242,15 @@ Jika input pilihan ke 2, kode akan print seluruh elemen dari `dataInput` tadi ke
 
 Jika input pilihan 3, maka akan hitung rata-rata dari seluruh data dengan membuat variabel `double` sementara untuk kemudian print sum dengan membagi dengan `dataAmount`.
 
-Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke variabel sementara `int[]` yang kemudian jika ada salah satu data yang bernilai double, Java akan `throw` [`NumbereFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html). Jika iya, maka akan mencoba untuk menggunakan tipe data `double[]` untuk menghitung sum dari seluruh data.
+Jika input pilihan 4, buat variabel sementara dan loop hingga `dataAmount` kemudian print hasil sum.
+
+//
+
+Jika input pilihan 4, program akan mencoba dulu untuk menaruh seluruh data ke variabel sementara `int[]` yang kemudian jika ada salah satu data yang bernilai double, Java akan `throw` [`NumberFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html). Jika iya, maka akan mencoba untuk menggunakan tipe data `double[]` untuk menghitung sum dari seluruh data.
+
+a
+
+//
 
 Jika input pilihan 5 maka kode akan memanggil `method` `isDouble` di dalam kelas `checkDataType`. di dalam `isDouble` kode akan looping ke seluruh data dengan `Integer.parseInt()` Jika ada salah satu yang `double`, Java akan `throw` [`NumbereFormatException`](https://docs.oracle.com/en/java/javase/23/docs/api/java.base/java/lang/NumberFormatException.html) dan di dalam `catch` `return true`. Jika program berhasil parse seluruh data ke `Integer`, maka `return false`. Kembali ke `case 5`. Di dalam `if` tadi, jika true maka `method` yang dipanggil juga beda dengan `method` yang dipanggil saat seluruh tipe data adalah `Integer`. Jadi ada 2 Bubble Sort dan 2 cek max min. Kembali ke `if`. Di dalam `if`, langsung `printf` dengan maksimal 5 digit di belakang koma dengan memangggil`class` `checkDAtaType` `method` `convertArrayDouble` (Karena tadi sudah dicek dan ada minimal 1 tipe data `double`). Di dalam `convertArrayDouble`, kode akan membuat variabel sementara `double[]` untuk memasukkan seluruh data kemudian `return` hasil. Setelah itu panggil `class` `sortArray` `method` `bubbleSortDouble` (Jika `Integer`, yang dipanggil adalah `bubbleSortInteger`) Di dalam `bubbleSortDouble` ada algoritma standar Bubble Sort yang akan mengcompare indeks ke j apakah lebih besar dengan indeks yang selanjutnya, jika iya akan di swap denga variabel sementara yang kemudian diiterasi / loop lagi (`for loop` luar) sampai sebanyak banyak data kemudian `return array` hasil sorting. Kemudian, hasil tadi akan langsung memanggil `method` `getMaxDouble` di kelas `sortArray` (Jika `Integer` maka yang dipanggil adalah `GetMaxInteger`, jika mau ambil nilai min, yang dipanggil adalah `get[Min atau Max][Double atau Integer]`). Di dalam `getMaxDouble`, akan langsung `return` eleme terakhir yaitu panjang `array` dikurangi 1, sama juga kalau yang dicari adala nilai min, akan langsung `return` indeks pertama yaitu 0.
 
