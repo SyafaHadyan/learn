@@ -5,10 +5,20 @@ public class Pangram
 {
     public static void main(String[] args)
     {
+        /*
+         * Tokoh qari bonceng juru xilofon di vespanya muzawir.
+         * 
+         * Input hanya pangram biasa saja :)
+         * 
+         * Blowzy night-frumps vex'd Jack Q.
+         * 
+         * Input merupakan pangram sempurna! :D
+         */
         Scanner input = new Scanner(System.in);
         String inputWord = input.nextLine();
         inputWord = inputWord.replaceAll("[^\\p{L}\\p{Nd}]+", "");
         input.close();
+        boolean specialPangram = false;
         String[] alphabet =
         {
             "a",
@@ -51,6 +61,7 @@ public class Pangram
                 if (word.get(i).equalsIgnoreCase(word.get(i + 1)))
                 {
                     word.remove(i);
+                    specialPangram = true;
                     i--;
                 }
             }
@@ -62,7 +73,12 @@ public class Pangram
         String[] wordChar = word.toArray(new String[word.size()]);
         if (Arrays.compare(wordChar,alphabet) == 0 && (wordChar.length == 26))
         {
-            System.out.print("pangram");
+            if (specialPangram)
+            {
+                System.out.print("pangram special");
+                return;
+            }
+            System.out.print("pangram not special");
             return;
         }
         System.out.print("not pangram");
