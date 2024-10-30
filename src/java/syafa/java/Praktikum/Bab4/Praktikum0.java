@@ -149,12 +149,12 @@ public class Praktikum0
                         System.out.print("\n");
                         break;
                     case 3:
-                        double[] tempDoubleAverage = new double[data.size()];
+                        double tempDoubleAverage = 0d;
                         for (int i = 0; i < data.size(); i++)
                         {
-                            tempDoubleAverage[i] = Double.parseDouble(data.get(i));
+                            tempDoubleAverage += dataInput[i];
                         }
-                        System.out.printf("\n%.5f\n\n",(DoubleStream.of(tempDoubleAverage).sum() / tempDoubleAverage.length));
+                        System.out.printf("\n%.5f\n\n",(tempDoubleAverage / Double.parseDouble(String.valueOf(dataAmount))));
                         break;
                     case 4:
                         try
