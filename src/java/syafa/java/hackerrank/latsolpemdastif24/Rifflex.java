@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
-import java.util.stream.*;
 
 public class Rifflex
 {
@@ -59,7 +58,40 @@ public class Rifflex
             }
             catch (IndexOutOfBoundsException e)
             {
-                //
+                if ((i + 1) % 2 == 0)
+                {
+                    String temp = card[(((3 * (i + 1)) + 1)) - card.length];
+                    card[(((3 * (i + 1)) + 1)) - card.length] = card[i];
+                    card[i] = temp;
+                }
+                else if ((i + 1) % 2 != 0)
+                {
+                    String temp = card[(((i + 1) / 2)) - card.length];
+                    card[(((i + 1) / 2)) - card.length] = card[i];
+                    card[i] = temp;
+                }
+            }
+            finally
+            {
+                try
+                {
+                    if ((i + 1) % 2 == 0)
+                    {
+                        String temp = card[(((3 * (i + 1)) + 1)) - (card.length * 2)];
+                        card[(((3 * (i + 1)) + 1)) - (card.length * 2)] = card[i];
+                        card[i] = temp;
+                    }
+                    else if ((i + 1) % 2 != 0)
+                    {
+                        String temp = card[(((i + 1) / 2)) - (card.length)];
+                        card[(((i + 1) / 2)) - (card.length)] = card[i];
+                        card[i] = temp;
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
+                }
             }
         }
         for (int i = 0; i < card.length; i++)
