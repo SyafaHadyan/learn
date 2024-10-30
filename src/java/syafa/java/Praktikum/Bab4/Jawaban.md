@@ -456,7 +456,7 @@ public class Praktikum0
                                 }
                             }
                         }
-                        System.out.printf("\n%.5f\n\n",dataInput[4]);
+                        System.out.printf("\n%.5f\n\n",dataInput[dataAmount - 1]);
                         break;
                         /*
                         if (checkDataType.isDouble(data))
