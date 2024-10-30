@@ -14,5 +14,13 @@ public class LED
             led[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
+        for (int i = 0; i < led[0].length; i++)
+        {
+            System.out.print(led[0][i] + " ");
+            for (int j = 0; j < led.length; j++)
+            {
+                //
+            }
+        }
     }
 }
