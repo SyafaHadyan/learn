@@ -13,6 +13,11 @@ public class Pangram
          * Blowzy night-frumps vex'd Jack Q.
          * 
          * Input merupakan pangram sempurna! :D
+         * 
+         * Praktikum PemDas TIF-A 2024
+         * 
+         * Input bukan merupakan pangram karena tidak memiliki huruf B, C, G, H, J, L, N, O, Q, V, W, X, Y, Z :(
+    *                                                              A D E F I K M P R S T U
          */
         Scanner input = new Scanner(System.in);
         String inputWord = input.nextLine();
@@ -82,5 +87,11 @@ public class Pangram
             return;
         }
         System.out.print("not pangram");
+        ArrayList<String> miss = new ArrayList<>();
+        Collections.addAll(miss,alphabet);
+        for (int i = 0; i < wordChar.length; i++)
+        {
+            sou
+        }
     }
 }
