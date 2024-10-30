@@ -38,6 +38,7 @@ public class PriyankaAndToys
             return containerAmount;
         }
     }
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*

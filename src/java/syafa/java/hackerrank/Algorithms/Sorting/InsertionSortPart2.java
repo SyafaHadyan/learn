@@ -39,6 +39,7 @@ public class InsertionSortPart2
             }
         }
     }
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
