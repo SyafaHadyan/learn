@@ -52,5 +52,13 @@ public class Rifflex
                 //
             }
         }
+        for (int i = 0; i < card.length; i++)
+        {
+            System.out.print(card[i]);
+            if (card.length - i != 1)
+            {
+                System.out.print(" ");
+            }
+        }
     }
 }
