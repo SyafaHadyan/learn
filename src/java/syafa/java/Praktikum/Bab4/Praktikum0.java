@@ -184,6 +184,20 @@ public class Praktikum0
                         */
                         break;
                     case 5:
+                        for (int i = 0; i < dataAmount - 1; i++)
+                        {
+                            for (int j = 0; j < dataAmount - i - 1; j++)
+                            {
+                                if (dataInput[j] > dataInput[j + 1])
+                                {
+                                    double temp = dataInput[j];
+                                    dataInput[j] = dataInput[j + 1];
+                                    dataInput[j + 1] = temp;
+                                }
+                            }
+                        }
+                        System.out.printf("\n%.5f\n",(dataInput[0]));
+                        /*
                         if (checkDataType.isDouble(data))
                         {
                             System.out.printf("\n%.5f\n\n",sortArray.getMaxDouble(((sortArray.bubbleSortDouble(checkDataType.convertArrayDouble(data))))));
@@ -199,6 +213,7 @@ public class Praktikum0
                         }
                         System.out.printf("\n%d\n\n",sortArray.getMinInteger(((sortArray.bubbleSortInteger(checkDataType.convertArrayInteger(data))))));
                         break;
+                        */
                 }
             }
             else if (option == 7)
