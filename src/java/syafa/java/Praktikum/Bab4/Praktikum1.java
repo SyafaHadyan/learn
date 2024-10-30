@@ -184,7 +184,7 @@ public class Praktikum1
                         System.out.print("\n");
                         for (int i = 0; i < passengerAmount; i++)
                         {
-                            System.out.printf("%-40s%-20d%.5f\n",passengerName.get(i),ticketPrice.get(i),discountedTicketPrice.get(i));
+                            System.out.printf("%-40s%-20d%.5f\n",passengerName[i],ticketPrice[i],discountedTicketPrice[i]);
                         }
                         double tempTotalDiscountedPriceSum = 0d;
                         for (double tempTotalDiscountedTicketPrice : discountedTicketPrice)
@@ -194,7 +194,7 @@ public class Praktikum1
                         System.out.printf
                         (
                             "%-60s%.5f\n",
-                            String.valueOf("Total penumpang" + ':' + ' ' + ((passengerName.size() + ticketPrice.size() + discountedTicketPrice.size()) / 3)),
+                            String.valueOf("Total penumpang" + ':' + ' ' + passengerAmount),
                             tempTotalDiscountedPriceSum
                         );
                         break;
