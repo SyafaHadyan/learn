@@ -8,5 +8,15 @@ public class Perulangan
         Scanner input = new Scanner(System.in);
         char[] word = input.nextLine().toCharArray();
         input.close();
+        StringBuilder spell = new StringBuilder();
+        for (int i = 0; i < word.length; i++)
+        {
+            spell.append(word[i]);
+            System.out.print(spell);
+            if (word.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
