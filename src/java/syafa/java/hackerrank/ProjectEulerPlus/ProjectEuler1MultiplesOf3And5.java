@@ -12,10 +12,10 @@ public class ProjectEuler1MultiplesOf3And5
             {
                 if (i % 3 == 0 || i % 5 == 0)
                 {
-                    //
+                    multiple += i;
                 }
             }
-            return 0;
+            return multiple;
         }
     }
     public static void main(String[] args)
