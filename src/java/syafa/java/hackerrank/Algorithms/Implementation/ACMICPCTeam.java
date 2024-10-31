@@ -22,6 +22,15 @@ public class ACMICPCTeam
                             tempMaxTopicKnown++;
                         }
                     }
+                    if (tempMaxTopicKnown > maxTopicKnown)
+                    {
+                        maxTopicKnown = tempMaxTopicKnown;
+                        teamTopicKnown = 0;
+                    }
+                    if (maxTopicKnown == tempMaxTopicKnown)
+                    {
+                        teamTopicKnown++;
+                    }
                 }
             }
             return new int[]{maxTopicKnown,teamTopicKnown};
