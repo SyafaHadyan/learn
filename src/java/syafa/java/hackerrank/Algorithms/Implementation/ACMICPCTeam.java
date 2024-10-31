@@ -38,6 +38,23 @@ public class ACMICPCTeam
     }
     public static void main(String[] args)
     {
+        /*
+         * 4 5
+         * 10101
+         * 11100
+         * 11010
+         * 00101
+         * 
+         * 5
+         * 2
+         * 
+         * 10101
+         * 11110
+         * 00010
+         * 
+         * 5
+         * 1
+         */
         Scanner input = new Scanner(System.in);
         int[] config = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int[][] team = new int[config[0]][config[1]];
