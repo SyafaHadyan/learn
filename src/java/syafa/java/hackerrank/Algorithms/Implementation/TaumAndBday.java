@@ -14,7 +14,14 @@ public class TaumAndBday
             }
             else if ((giftPrice[2] < giftPrice[0]) && (giftPrice[2] < giftPrice[1]))
             {
-                //
+                if (/* 1 is higher */)
+                {
+                    //
+                }
+                else if (/*2 is higher */)
+                {
+                    //
+                }
             }
             return 0;
         }
