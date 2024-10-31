@@ -18,9 +18,11 @@ public class ProjectEuler6SumSquareDifference
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            
+            int temp = Integer.parseInt(input.nextLine());
+            result[i] = getDifference.squareNumber(temp) - getDifference.squareNumber(temp);
         }
         input.close();
     }
