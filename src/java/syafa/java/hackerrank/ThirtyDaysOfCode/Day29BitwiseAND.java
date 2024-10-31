@@ -24,7 +24,7 @@ public class Day29BitwiseAND
                     }
                 }
             }
-            return 0;
+            return max;
         }
     }
     public static void main(String[] args)
@@ -37,5 +37,13 @@ public class Day29BitwiseAND
             result[i] = bitOperation.maxBitwise(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         }
         input.close();
+        for (int i = 0; i < result.length; i++)
+        {
+            System.out.print(result[i]);
+            if (result.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
