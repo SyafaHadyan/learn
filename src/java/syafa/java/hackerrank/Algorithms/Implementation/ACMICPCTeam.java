@@ -10,6 +10,13 @@ public class ACMICPCTeam
         {
             int maxTopicKnown = 0;
             int teamTopicKnown = 0;
+            for (int i = 0; i < team.length; i++)
+            {
+                for (int j = 1 + i; j < team.length - i; j++)
+                {
+                    //
+                }
+            }
             return new int[]{maxTopicKnown,teamTopicKnown};
         }
     }
