@@ -1,4 +1,3 @@
-// dilarang melakukan import package selain yang sudah disediakan
 package syafa.java.hackerrank.LiveCoding4TIFC;
 // dilarang melakukan import package selain yang sudah disediakan
 import java.util.Scanner;
