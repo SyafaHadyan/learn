@@ -32,7 +32,7 @@ public class ProjectEuler6SumSquareDifference
         for (int i = 0; i < testCase; i++)
         {
             int temp = Integer.parseInt(input.nextLine());
-            result[i] = getDifference.squareNumber(temp) - getDifference.squareNumber(temp);
+            result[i] = getDifference.squareSum(temp) - getDifference.squareNumber(temp);
         }
         input.close();
         for (int i = 0; i < result.length; i++)
