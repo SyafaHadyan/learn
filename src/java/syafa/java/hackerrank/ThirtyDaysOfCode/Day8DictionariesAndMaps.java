@@ -1,12 +1,13 @@
 package syafa.java.hackerrank.ThirtyDaysOfCode;
-import java.util.*;
+import java.util.Scanner;
+import java.util.HashMap;
 
 public class Day8DictionariesAndMaps
 {
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int phoneBookSize = input.nextInt();
+        int phoneBookSize = Integer.parseInt(input.nextLine());
         HashMap<String,Integer> phoneBook = new HashMap<String,Integer>();
         for (int i = 0; i < phoneBookSize; i++)
         {
