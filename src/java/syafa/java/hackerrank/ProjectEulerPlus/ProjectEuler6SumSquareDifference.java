@@ -8,7 +8,7 @@ public class ProjectEuler6SumSquareDifference
         public static int squareNumber(int number)
         {
             int result = 0;
-            for (int i = 1; i < number; i++)
+            for (int i = 1; i <= number; i++)
             {
                 result += Math.pow(i,2);
             }
@@ -16,7 +16,12 @@ public class ProjectEuler6SumSquareDifference
         }
         public static int squareSum(int number)
         {
-            return 0;
+            int result = 0;
+            for (int i = 1; i <= number; i++)
+            {
+                result += i;
+            }
+            return (int) Math.pow(result,2);
         }
     }
     public static void main(String[] args)
