@@ -14,7 +14,10 @@ public class Day29BitwiseAND
             {
                 for (int j = 1 + i; j < bitwise.length - i; j++)
                 {
-                    //
+                    if ((max < (bitwise[i] & bitwise[j])) && (config[1] > (bitwise[i] & bitwise[j])))
+                    {
+                        max = (bitwise[i] & bitwise[j]);
+                    }
                 }
             }
             return 0;
