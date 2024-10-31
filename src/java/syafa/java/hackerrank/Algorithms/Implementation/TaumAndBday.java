@@ -8,9 +8,13 @@ public class TaumAndBday
     {
         public static int getGift(int[] giftAmount,int[] giftPrice)
         {
-            if ((giftPrice[0] == giftPrice[1]) || (giftPrice[2] > giftPrice[0] && giftPrice[2] > giftPrice[1]))
+            if ((giftPrice[0] == giftPrice[1]) || ((giftPrice[2] > giftPrice[0]) && (giftPrice[2] > giftPrice[1])))
             {
                 return (giftAmount[0] * giftPrice[0]) + (giftAmount[1] * giftPrice[1]);
+            }
+            else if ((giftPrice[2] < giftPrice[0]) && (giftPrice[2] < giftPrice[1]))
+            {
+                //
             }
             return 0;
         }
