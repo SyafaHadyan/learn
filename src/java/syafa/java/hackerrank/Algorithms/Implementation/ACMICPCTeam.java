@@ -8,8 +8,9 @@ public class ACMICPCTeam
     {
         public static int[] teamConfig(int[][] team)
         {
-            int[] result = new int[2];
-            return result;
+            int maxTopicKnown = 0;
+            int teamTopicKnown = 0;
+            return new int[]{maxTopicKnown,teamTopicKnown};
         }
     }
     public static void main(String[] args)
