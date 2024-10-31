@@ -11,7 +11,7 @@ public class Day29BitwiseAND
             int max = 0;
             for (int i = 1; i <= config[0]; i++)
             {
-                for (int j = 1 + i; j <= config[0] - i + 1; j++)
+                for (int j = 1 + i; j <= config[0]; j++)
                 {
                     if ((max < (i & j)) && (config[1] > (i & j)))
                     {
