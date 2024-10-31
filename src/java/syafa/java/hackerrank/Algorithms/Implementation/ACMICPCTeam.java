@@ -4,6 +4,13 @@ import java.util.stream.*;
 
 public class ACMICPCTeam
 {
+    static class team
+    {
+        public static int teamConfig(int[][] team)
+        {
+            return 0;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
