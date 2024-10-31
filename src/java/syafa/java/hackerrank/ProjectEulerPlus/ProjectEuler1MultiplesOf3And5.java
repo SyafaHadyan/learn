@@ -8,7 +8,7 @@ public class ProjectEuler1MultiplesOf3And5
         public static int multipleOfTen(int number)
         {
             int multiple = 0;
-            for (int i = 1; i <= number; i++)
+            for (int i = 1; i < number; i++)
             {
                 if (i % 3 == 0 || i % 5 == 0)
                 {
