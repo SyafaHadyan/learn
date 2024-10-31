@@ -32,7 +32,7 @@ public class TaumAndBday
             System.out.print(result[i]);
             if (result.length - i != 1)
             {
-                System.out.print("\m");
+                System.out.print("\n");
             }
         }
     }
