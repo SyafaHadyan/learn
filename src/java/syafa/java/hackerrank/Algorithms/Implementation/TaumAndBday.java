@@ -11,7 +11,8 @@ public class TaumAndBday
         int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            //
+            int[] giftAmount = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            int[] giftPrice = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
