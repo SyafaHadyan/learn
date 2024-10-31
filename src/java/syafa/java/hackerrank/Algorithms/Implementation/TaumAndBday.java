@@ -1,4 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
+import static java.util.stream.Collectors.reducing;
+
 import java.util.*;
 import java.util.stream.*;;
 
@@ -10,9 +12,9 @@ public class TaumAndBday
         {
             if ((giftPrice[2] < giftPrice[0]) && (giftPrice[2] < giftPrice[1]))
             {
-                if (/* 1 is higher */)
+                if (giftPrice[0] > (giftPrice[1] + giftPrice[2]))
                 {
-                    //
+                    return (giftPrice[1] * (giftAmount[0] + giftAmount[1])) + (giftPrice[2] * giftAmount[0]);
                 }
                 else if (/*2 is higher */)
                 {
