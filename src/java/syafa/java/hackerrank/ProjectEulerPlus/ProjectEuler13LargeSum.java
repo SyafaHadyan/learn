@@ -11,9 +11,11 @@ public class ProjectEuler13LargeSum
         BigInteger sum = BigInteger.ZERO;
         for (int i = 0; i < numberAmount; i++)
         {
-            sum.add(input.nextBigInteger());
+            String temp = input.nextLine();
+            sum = sum.add(new BigInteger(temp));
         }
         input.close();
-        System.out.print(sum.toString().substring(0,11));
+        System.out.print(sum);
+        //System.out.print(sum.toString().substring(0,11));
     }
 }
