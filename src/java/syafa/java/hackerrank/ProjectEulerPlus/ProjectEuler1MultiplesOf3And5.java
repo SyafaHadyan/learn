@@ -5,7 +5,7 @@ public class ProjectEuler1MultiplesOf3And5
 {
     static class getMultiple
     {
-        public static int multipleOfTen(int number)
+        public static int multipleOfTen(int number,int start)
         {
             int multiple = 0;
             for (int i = 1; i < number; i++)
@@ -23,9 +23,16 @@ public class ProjectEuler1MultiplesOf3And5
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         int[] result = new int[testCase];
+        int temp = 0;
         for (int i = 0; i < result.length; i++)
         {
-            result[i] = getMultiple.multipleOfTen(Integer.parseInt(input.nextLine()));
+            int tempInput = Integer.parseInt(input.nextLine());
+            if (tempInput < temp)
+            {
+                temp = getMultiple.multipleOfTen(tempInput,temp);
+            }
+            temp = getMultiple.multipleOfTen(tempInput,0);
+            result[i] = temp;
         }
         input.close();
         for (int i = 0; i < result.length; i++)
