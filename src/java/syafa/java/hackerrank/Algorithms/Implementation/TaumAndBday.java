@@ -12,11 +12,11 @@ public class TaumAndBday
             {
                 return (giftAmount[0] * giftPrice[0]) + (giftAmount[1] * giftPrice[1]);
             }
-            if (giftPrice[0] > (giftPrice[1] + giftPrice[2]))
+            if ((giftPrice[0] > giftPrice[1]) && (giftPrice[0] > giftPrice[2]))
             {
                 return (giftPrice[1] * (giftAmount[0] + giftAmount[1])) + (giftPrice[2] * giftAmount[0]);
             }
-            if (giftPrice[1] > (giftPrice[0] + giftPrice[2]))
+            if ((giftPrice[1] > giftPrice[0]) && (giftPrice[1] > giftPrice[2]))
             {
                 return (giftPrice[0] * (giftAmount[0] + giftAmount[1]) + giftPrice[2] * giftAmount[1]);
             }
