@@ -9,14 +9,13 @@ public class Day29BitwiseAND
         public static int maxBitwise(int[] config)
         {
             int max = 0;
-            int[] bitwise = IntStream.range(1,config[0] + 1).toArray();
-            for (int i = 0; i < bitwise.length; i++)
+            for (int i = 1; i <= config[0]; i++)
             {
-                for (int j = 1 + i; j < bitwise.length - i; j++)
+                for (int j = 1 + i; j <= config[0] - i + 1; j++)
                 {
-                    if ((max < (bitwise[i] & bitwise[j])) && (config[1] > (bitwise[i] & bitwise[j])))
+                    if ((max < (i & j)) && (config[1] > (i & j)))
                     {
-                        max = (bitwise[i] & bitwise[j]);
+                        max = (i & j);
                         if (config[1] - max == 1)
                         {
                             return max;
