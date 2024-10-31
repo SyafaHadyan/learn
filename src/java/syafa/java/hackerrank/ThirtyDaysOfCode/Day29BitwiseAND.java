@@ -12,7 +12,10 @@ public class Day29BitwiseAND
             int[] bitwise = IntStream.range(1,config[0] + 1).toArray();
             for (int i = 0; i < bitwise.length; i++)
             {
-                
+                for (int j = 1 + i; j < bitwise.length - i; j++)
+                {
+                    //
+                }
             }
             return 0;
         }
