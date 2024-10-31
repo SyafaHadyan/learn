@@ -7,7 +7,12 @@ public class ProjectEuler6SumSquareDifference
     {
         public static int squareNumber(int number)
         {
-            return 0;
+            int result = 0;
+            for (int i = 1; i < number; i++)
+            {
+                result += Math.pow(i,2);
+            }
+            return result;
         }
         public static int squareSum(int number)
         {
