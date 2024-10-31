@@ -15,7 +15,6 @@ public class ProjectEuler13LargeSum
             sum = sum.add(new BigInteger(temp));
         }
         input.close();
-        System.out.print(sum);
-        //System.out.print(sum.toString().substring(0,11));
+        System.out.print(sum.toString().substring(0,10));
     }
 }
