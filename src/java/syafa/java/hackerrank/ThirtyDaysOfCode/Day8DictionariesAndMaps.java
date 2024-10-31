@@ -14,7 +14,7 @@ public class Day8DictionariesAndMaps
             phoneBook.put(input.next(),input.nextInt());
         }
         input.nextLine();
-        for (int i = 0; i < phoneBookSize; i++)
+        while (input.hasNextLine())
         {
             String temp = input.nextLine();
             if (phoneBook.containsKey(temp))
