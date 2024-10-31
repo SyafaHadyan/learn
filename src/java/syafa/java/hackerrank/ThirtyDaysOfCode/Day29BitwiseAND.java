@@ -15,9 +15,10 @@ public class Day29BitwiseAND
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            int[] bitwise = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            result[i] = bitOperation.maxBitwise(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         }
         input.close();
     }
