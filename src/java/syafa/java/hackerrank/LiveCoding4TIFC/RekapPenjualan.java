@@ -12,7 +12,7 @@ public class RekapPenjualan
         input.nextLine();
         int maxSell = 0;
         int mostWorker = 0;
-        String[] sellResult = new String[workerAmount];
+        String[][] sellResult = new String[workerAmount][2];
         for (int i = 0; i < workerAmount; i++)
         {
             int tempSell = 0;
@@ -20,7 +20,8 @@ public class RekapPenjualan
             {
                 tempSell += input.nextInt();
             }
-            sellResult[i] = ("Pegawai ke-" + (i + 1) + " melakukan penjualan sebanyak " + tempSell);
+            sellResult[i][0] = "Pegawai ke-" + (i + 1) + " melakukan penjualan sebanyak";
+            sellResult[i][1] = "" + tempSell;
             if (tempSell > maxSell)
             {
                 mostWorker = (i + 1);
@@ -30,7 +31,7 @@ public class RekapPenjualan
         input.close();
         for (int i = 0; i < sellResult.length; i++)
         {
-            System.out.println(sellResult[i]);
+            System.out.println(sellResult[i][0] + " " + sellResult[i][1]);
         }
         System.out.print("\n");
         System.out.print("Penjualan Terbanyak diraih oleh Pegawai ke-" + mostWorker);
