@@ -25,5 +25,13 @@ public class ProjectEuler6SumSquareDifference
             result[i] = getDifference.squareNumber(temp) - getDifference.squareNumber(temp);
         }
         input.close();
+        for (int i = 0; i < result.length; i++)
+        {
+            System.out.print(result[i]);
+            if (result.length - i != 1)
+            {
+                System.out.print("\n");
+            }
+        }
     }
 }
