@@ -1,5 +1,6 @@
 // dilarang melakukan import package selain yang sudah disediakan
 package syafa.java.hackerrank.LiveCoding4TIFC;
+// dilarang melakukan import package selain yang sudah disediakan
 import java.util.Scanner;
 
 public class NilaiAkhirPemdas
@@ -13,6 +14,7 @@ public class NilaiAkhirPemdas
         double[] studentGrade = new double[studentAmount];
         String[] above = new String[studentAmount];
         double average = 0d;
+        int counterStudent = 0;
         for (int i = 0; i < studentAmount; i++)
         {
             studentName[i] = input.next();
@@ -43,26 +45,17 @@ public class NilaiAkhirPemdas
             {
                 above[counter] = studentName[i];
                 counter++;
+                counterStudent++;
             }
         }
         System.out.printf("%s%.2f\n","Rata-rata: ",average);
         System.out.print("Praktikan dengan nilai di atas rata-rata: ");
-        for (int i = 0; i < above.length; i ++)
+        for (int i = 0; i < counterStudent; i ++)
         {
-            if (above[i] != null)
+            System.out.print(above[i]);
+            if (counterStudent - i != 1)
             {
-                System.out.print(above[i]);
-            }
-            try
-            {
-                if (above.length - 1 != 1 && above[i + 1] != null)
-                {
-                    System.out.print(" ");
-                }
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                //
+                System.out.print(" ");
             }
         }
     }
