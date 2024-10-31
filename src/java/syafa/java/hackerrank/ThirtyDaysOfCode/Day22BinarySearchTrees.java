@@ -1,6 +1,5 @@
-package syafa.java.hackerrank.ThirtyDaysOfCode;git a
+package syafa.java.hackerrank.ThirtyDaysOfCode;
 import java.util.*;
-import java.io.*;
 class Node{
     Node left,right;
     int data;
@@ -39,6 +38,7 @@ class Day22BinarySearchTrees{
             return root;
         }
     }
+    @SuppressWarnings("resource")
 	 public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
