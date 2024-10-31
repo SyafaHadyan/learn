@@ -17,6 +17,10 @@ public class Day29BitwiseAND
                     if ((max < (bitwise[i] & bitwise[j])) && (config[1] > (bitwise[i] & bitwise[j])))
                     {
                         max = (bitwise[i] & bitwise[j]);
+                        if (config[1] - max == 1)
+                        {
+                            return max;
+                        }
                     }
                 }
             }
