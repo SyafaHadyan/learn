@@ -29,6 +29,28 @@ public class SherlockAndArray
     }
     public static void main(String[] args)
     {
+        /*
+         * 2
+         * 3
+         * 1 2 3
+         * 4
+         * 1 2 3 3
+         * 
+         * NO
+         * YES
+         * 
+         * 3
+         * 5
+         * 1 1 4 1 1
+         * 4
+         * 2 0 0 0
+         * 4
+         * 0 0 2 0
+         * 
+         * YES
+         * YES
+         * YES
+         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         String[] result = new String[testCase];
