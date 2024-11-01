@@ -8,9 +8,10 @@ public class SherlockAndArray
     {
         public static String equalSum(int[] array)
         {
-            for (int i = 0; i < array.length; i++)
+            for (int i = 1; i < array.length - 1; i++)
             {
-                if (IntStream.of(Arrays.copyOfRange(array,0,i)).sum() == IntStream.of(Arrays.copyOfRange(array,i,array.length - 1)).sum())
+                int temp0 = IntStream.of(Arrays.copyOfRange(array,0,(i - 1))).sum(), temp1 = IntStream.of(Arrays.copyOfRange(array,(i + 1),array.length - 1)).sum();
+                if (temp0 == temp1)
                 {
                     return "YES";
                 }
