@@ -15,10 +15,11 @@ public class SherlockAndArray
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
+        String[] result = new String[testCase];
         for (int i = 0; i < testCase; i++)
         {
             int arrayLength = Integer.parseInt(input.nextLine());
-            //
+            result[i] = arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         }
         input.close();
     }
