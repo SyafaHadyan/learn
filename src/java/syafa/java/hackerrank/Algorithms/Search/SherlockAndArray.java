@@ -12,8 +12,12 @@ public class SherlockAndArray
             {
                 if (IntStream.of(Arrays.copyOfRange(array,0,i)).sum() == IntStream.of(Arrays.copyOfRange(array,i,array.length - 1)).sum())
                 {
-                    //
+                    return "YES";
                 }
+            }
+            if (IntStream.of(Arrays.copyOfRange(array,1,array.length)).sum() == 0)
+            {
+                return "YES";
             }
             return "NO";
         }
