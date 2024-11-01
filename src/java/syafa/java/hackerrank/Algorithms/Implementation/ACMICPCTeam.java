@@ -12,12 +12,12 @@ public class ACMICPCTeam
             int teamTopicKnown = 0;
             for (int i = 0; i < team.length; i++)
             {
-                int tempMaxTopicKnown = 0;
                 for (int j = 1 + i; j < team.length; j++)
                 {
+                    int tempMaxTopicKnown = 0;
                     for (int k = 0; k < team[i].length; k++)
                     {
-                        if ((team[i][k] == 1) && (team[j][k] == 1))
+                        if ((team[i][k] == 1) || (team[j][k] == 1))
                         {
                             tempMaxTopicKnown++;
                         }
@@ -28,10 +28,10 @@ public class ACMICPCTeam
                         maxTopicKnown = tempMaxTopicKnown;
                         teamTopicKnown = 0;
                     }
-                }
-                if (maxTopicKnown == tempMaxTopicKnown)
-                {
-                    teamTopicKnown++;
+                    if (maxTopicKnown == tempMaxTopicKnown)
+                    {
+                        teamTopicKnown++;
+                    }
                 }
             }
             return new int[]{maxTopicKnown,teamTopicKnown};
