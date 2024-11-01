@@ -9,7 +9,7 @@ public class ACMICPCTeam
         public static int[] teamConfig(int[][] team)
         {
             int maxTopicKnown = 0;
-            int teamTopicKnown = 1;
+            int teamTopicKnown = 0;
             for (int i = 0; i < team.length; i++)
             {
                 int tempMaxTopicKnown = 0;
@@ -26,6 +26,7 @@ public class ACMICPCTeam
                     if (tempMaxTopicKnown > maxTopicKnown)
                     {
                         maxTopicKnown = tempMaxTopicKnown;
+                        teamTopicKnown = 0;
                     }
                 }
                 if (maxTopicKnown == tempMaxTopicKnown)
