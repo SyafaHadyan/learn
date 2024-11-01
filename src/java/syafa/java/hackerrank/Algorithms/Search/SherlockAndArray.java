@@ -4,6 +4,13 @@ import java.util.stream.*;
 
 public class SherlockAndArray
 {
+    static class arrayUtil
+    {
+        public static String equalSum(int[] array)
+        {
+            return "NO";
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
