@@ -13,7 +13,7 @@ public class ACMICPCTeam
             for (int i = 0; i < team.length; i++)
             {
                 int tempMaxTopicKnown = 0;
-                for (int j = 1 + i; j < team.length - i; j++)
+                for (int j = 1 + i; j < team.length; j++)
                 {
                     for (int k = 0; k < team[i].length; k++)
                     {
