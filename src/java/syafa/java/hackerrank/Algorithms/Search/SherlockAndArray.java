@@ -6,20 +6,20 @@ public class SherlockAndArray
 {
     static class arrayUtil
     {
-        public static String equalSum(int[] array)
+        public static void equalSum(int[] array)
         {
             for (int i = 1; i < array.length - 1; i++)
             {
                 if (IntStream.of(Arrays.copyOfRange(array,0,(i))).sum() == IntStream.of(Arrays.copyOfRange(array,(i + 1),array.length)).sum())
                 {
-                    return "YES";
+                    System.out.println("YES");
                 }
             }
             if ((IntStream.of(Arrays.copyOfRange(array,1,array.length - 1)).sum() == 0) || (IntStream.of(Arrays.copyOfRange(array,0,array.length - 2)).sum() == 0))
             {
-                return "YES";
+                System.out.println("YES");
             }
-            return "NO";
+            System.out.println("NO");
         }
     }
     public static void main(String[] args)
@@ -52,7 +52,9 @@ public class SherlockAndArray
         for (int i = 0; i < testCase; i++)
         {
             int arrayLength = Integer.parseInt(input.nextLine());
-            result[i] = arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
+            //result[i] = arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
+            //System.out.println(arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray()));
+            arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         }
         input.close();
         for (int i = 0; i < result.length; i++)
