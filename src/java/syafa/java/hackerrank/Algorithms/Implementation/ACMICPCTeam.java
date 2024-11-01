@@ -17,10 +17,11 @@ public class ACMICPCTeam
                 {
                     for (int k = 0; k < team[i].length; k++)
                     {
-                        if (team[i][k] == 1 && team[j][k] == 1)
+                        if ((team[i][k] == 1) && (team[j][k] == 1))
                         {
                             tempMaxTopicKnown++;
                         }
+                        //System.out.println("debug");
                     }
                     if (tempMaxTopicKnown > maxTopicKnown)
                     {
@@ -61,7 +62,7 @@ public class ACMICPCTeam
         int[] result = new int[2];
         for (int i = 0; i < config[0]; i++)
         {
-            team[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            team[i] = Stream.of(input.nextLine().split("")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
         result = teamICPC.teamConfig(team);
