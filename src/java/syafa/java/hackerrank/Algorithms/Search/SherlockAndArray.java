@@ -8,6 +8,13 @@ public class SherlockAndArray
     {
         public static String equalSum(int[] array)
         {
+            for (int i = 0; i < array.length; i++)
+            {
+                if (IntStream.of(Arrays.copyOfRange(array,0,i)).sum() == IntStream.of(Arrays.copyOfRange(array,i,array.length - 1)).sum())
+                {
+                    //
+                }
+            }
             return "NO";
         }
     }
