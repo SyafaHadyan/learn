@@ -10,8 +10,7 @@ public class SherlockAndArray
         {
             for (int i = 1; i < array.length - 1; i++)
             {
-                int temp0 = IntStream.of(Arrays.copyOfRange(array,0,(i))).sum(), temp1 = IntStream.of(Arrays.copyOfRange(array,(i + 1),array.length)).sum();
-                if (temp0 == temp1)
+                if (IntStream.of(Arrays.copyOfRange(array,0,(i))).sum() == IntStream.of(Arrays.copyOfRange(array,(i + 1),array.length)).sum())
                 {
                     return "YES";
                 }
