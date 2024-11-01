@@ -13,11 +13,13 @@ public class SherlockAndArray
                 if (IntStream.of(Arrays.copyOfRange(array,0,(i))).sum() == IntStream.of(Arrays.copyOfRange(array,(i + 1),array.length)).sum())
                 {
                     System.out.println("YES");
+                    return;
                 }
             }
             if ((IntStream.of(Arrays.copyOfRange(array,1,array.length - 1)).sum() == 0) || (IntStream.of(Arrays.copyOfRange(array,0,array.length - 2)).sum() == 0))
             {
                 System.out.println("YES");
+                return;
             }
             System.out.println("NO");
         }
@@ -48,7 +50,6 @@ public class SherlockAndArray
          */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        String[] result = new String[testCase];
         for (int i = 0; i < testCase; i++)
         {
             int arrayLength = Integer.parseInt(input.nextLine());
@@ -57,13 +58,5 @@ public class SherlockAndArray
             arrayUtil.equalSum(Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray());
         }
         input.close();
-        for (int i = 0; i < result.length; i++)
-        {
-            System.out.print(result[i]);
-            if (result.length - i != 1)
-            {
-                System.out.print("\n");
-            }
-        }
     }
 }
