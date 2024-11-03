@@ -11,7 +11,9 @@ public class Day4GeometricDistributionII
         int defectAt = Integer.parseInt(input.nextLine());
         input.close();
         /*
-         * 70% = 0.3^(n-1)0.7
+         * 70% = 0.3^(n-1) * 0.7
+         * 
+         * 1 / 3 = (1-1/3)^4 * 1/3
          */
         System.out.printf("%.3f",);
     }
