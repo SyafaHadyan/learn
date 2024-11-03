@@ -14,6 +14,6 @@ public class Day5PoissonDistributionI
             factorialOfProbabilityValue *= i;
         }
         input.close();
-        System.out.printf("%.3f",(((Math.pow(averageNumberOfSuccess,probabilityValue)) * (Math.pow(Math.E,(-averageNumberOfSuccess)))) / ));
+        System.out.printf("%.3f",(((Math.pow(averageNumberOfSuccess,probabilityValue)) * (Math.pow(Math.E,(-averageNumberOfSuccess)))) / factorialOfProbabilityValue));
     }
 }
