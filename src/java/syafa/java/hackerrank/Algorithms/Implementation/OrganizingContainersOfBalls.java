@@ -13,6 +13,23 @@ public class OrganizingContainersOfBalls
     }
     public static void main(String[] args)
     {
+        /*
+         * 0 2 1
+         * 1 1 1
+         * 2 0 0
+         * 
+         * 0 2 1
+         * 0 1 1
+         * 2 1 0
+         * 
+         * 0 2 1
+         * 0 1 1
+         * 0 1 2
+         * 
+         * 0 1 2
+         * 0 1 1
+         * 0 1 2
+         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
         String[] result = new String[testCase];
