@@ -10,5 +10,9 @@ public class Day4GeometricDistributionII
         int[] probabilityOfDefect = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int defectAt = Integer.parseInt(input.nextLine());
         input.close();
+        /*
+         * 70% = 0.3^(n-1)0.7
+         */
+        System.out.printf("%.3f",);
     }
 }
