@@ -8,7 +8,15 @@ public class OrganizingContainersOfBalls
     {
         public static String sortBall(int[][] ball)
         {
-            return "Impossible";
+            int sum = IntStream.of(ball[0]).sum();
+            for (int i = 1; i < ball.length; i++)
+            {
+                if (IntStream.of(ball[i]).sum() != sum)
+                {
+                    return "Impossible";
+                }
+            }
+            return "Possible";
         }
     }
     public static void main(String[] args)
