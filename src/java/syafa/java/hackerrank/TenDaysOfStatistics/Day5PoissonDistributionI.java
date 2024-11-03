@@ -9,5 +9,6 @@ public class Day5PoissonDistributionI
         double averageNumberOfSuccess = Double.parseDouble(input.nextLine());
         double probabilityValue = Double.parseDouble(input.nextLine());
         input.close();
+        System.out.printf("%.3f",(((Math.pow(averageNumberOfSuccess,probabilityValue)) * (Math.pow(Math.E,(-averageNumberOfSuccess)))) / ()));
     }
 }
