@@ -9,6 +9,19 @@ public class OrganizingContainersOfBalls
         public static String sortBall(int[][] ball)
         {
             int sum = 0;
+            int[] container = new int[ball.length];
+            int[] ballCount = new int[ball.length];
+            for (int i = 0; i < ball.length; i++)
+            {
+                for (int j = 0; j < ball.length; j++)
+                {
+                    container[i] += ball[i][j];
+                    ballCount[i] += ball[j][i];
+                }
+            }
+            Arrays.sort(container);
+            Arrays.sort(ballCount);
+            System.out.println("debug");
             for (int i = 0; i < ball.length; i++)
             {
                 sum += ball[i][0];
