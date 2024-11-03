@@ -21,7 +21,7 @@ public class OrganizingContainersOfBalls
             }
             Arrays.sort(container);
             Arrays.sort(ballCount);
-            if (container.equals(ballCount))
+            if (Arrays.equals(container,ballCount))
             {
                 return "Possible";
             }
