@@ -19,10 +19,10 @@ public class OrganizingContainersOfBalls
                 for (int j = 0; j < ball.length; j++)
                 {
                     tempSum += ball[j][i];
-                    if (tempSum != sum)
-                    {
-                        return "Impossible";
-                    }
+                }
+                if (tempSum != sum)
+                {
+                    return "Impossible";
                 }
             }
             return "Possible";
