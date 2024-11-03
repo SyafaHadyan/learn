@@ -21,6 +21,6 @@ public class Day5PoissonDistributionII
         {
             factorialDailyCostB *= i;
         }
-        System.out.printf("%.3f\n%.3f",);
+        System.out.printf("%.3f\n%.3f",(((Math.pow(machineOperationCost[0],dailyCostA)) * (Math.pow(Math.E,(-machineOperationCost[0])))) / factorialDailyCostA),(((Math.pow(machineOperationCost[1],dailyCostB)) * (Math.pow(Math.E,(-machineOperationCost[1])))) / factorialDailyCostB));
     }
 }
