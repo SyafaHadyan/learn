@@ -8,7 +8,7 @@ public class OrganizingContainersOfBalls
     {
         public static String sortBall(int[][] ball)
         {
-            int sum = 0;
+            //int sum = 0;
             int[] container = new int[ball.length];
             int[] ballCount = new int[ball.length];
             for (int i = 0; i < ball.length; i++)
@@ -21,7 +21,12 @@ public class OrganizingContainersOfBalls
             }
             Arrays.sort(container);
             Arrays.sort(ballCount);
-            System.out.println("debug");
+            if (container.equals(ballCount))
+            {
+                return "Possible";
+            }
+            return "Impossible";
+            /*
             for (int i = 0; i < ball.length; i++)
             {
                 sum += ball[i][0];
@@ -39,6 +44,7 @@ public class OrganizingContainersOfBalls
                 }
             }
             return "Possible";
+            */
         }
     }
     public static void main(String[] args)
