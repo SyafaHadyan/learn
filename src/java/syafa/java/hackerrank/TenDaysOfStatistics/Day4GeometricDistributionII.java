@@ -15,6 +15,6 @@ public class Day4GeometricDistributionII
          * 
          * 1 / 3 = (1-1/3)^4 * 1/3
          */
-        System.out.printf("%.3f",(Math.pow(1 - ((double) probabilityOfDefect[0] / (double) probabilityOfDefect[1]),(defectAt - 1)) * (double) probabilityOfDefect[0] / (double) probabilityOfDefect[1]));
+        System.out.printf("%.3f",1 - (Math.pow(((double) 1) - ((double) probabilityOfDefect[0] / (double) probabilityOfDefect[1]),defectAt)));
     }
 }
