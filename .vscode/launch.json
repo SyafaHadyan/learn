@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Day4BinomialDistributionI",
+      "request": "launch",
+      "mainClass": "syafa.java.hackerrank.TenDaysOfStatistics.Day4BinomialDistributionI",
+      "projectName": "learn_7d900611"
+    },
+    {
+      "type": "java",
       "name": "Debug (Launch) - Current File",
       "request": "launch",
       "mainClass": "${file}"
