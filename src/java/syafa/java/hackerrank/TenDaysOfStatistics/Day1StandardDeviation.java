@@ -6,31 +6,6 @@ public class Day1StandardDeviation
 {
     public static void main(String[] args)
     {
-        /*
-         * 1 2 3 4 5 6 7
-         * 
-         * 
-         * 2 5 2 7 4
-         * sum = 20
-         * mean = 4
-         * 
-         * substract mean from each element > square the result > take sum > average 1 digit precision
-         * 
-         * 5
-         * 10 40 30 50 20
-         * 
-         * 14.1
-         * 
-         * STDIN           Function
-         * -----           --------
-         * 5               arr[] size n = 5
-         * 10 40 30 50 20  arr =[10, 40, 30, 50, 20]
-         * 
-         * 10
-         * 64630 11735 14216 99233 14470 4978 73429 38120 51135 67060
-         * 
-         * 30466.9
-         */
         Scanner input = new Scanner(System.in);
         StringBuilder uselesss = new StringBuilder(input.nextLine());
         uselesss.delete(0,uselesss.length());
