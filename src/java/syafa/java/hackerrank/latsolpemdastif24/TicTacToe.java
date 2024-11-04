@@ -5,7 +5,7 @@ public class TicTacToe
 {
     static class checkBoard
     {
-        public static boolean checkWin(String board[][],String player)
+        public static boolean checkWin(String[][] board,String player)
         {
             for (int i = 0; i < board.length; i++)
             {
