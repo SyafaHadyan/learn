@@ -7,7 +7,8 @@ public class MinimumDistances
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arrayLength = Integer.parseInt(input.nextLine());
+        StringBuilder useless = new StringBuilder(input.nextLine());
+        useless.delete(0, useless.length());
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int minDistance = Integer.MAX_VALUE;
