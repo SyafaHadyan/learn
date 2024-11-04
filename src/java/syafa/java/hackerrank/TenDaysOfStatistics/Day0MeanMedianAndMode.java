@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.TenDaysOfStatistics;
 import java.util.*;
+import java.util.stream.*;
 
 public class Day0MeanMedianAndMode
 {
@@ -7,14 +8,10 @@ public class Day0MeanMedianAndMode
     {
         Scanner input = new Scanner(System.in);
         int dataLength = Integer.parseInt(input.nextLine());
-        int[] data = new int[dataLength];
-        double mean = 0d;
+        double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
+        double mean = Arrays.stream(data).average().orElse(0.0);
         double median = 0d;
         int mode = 0;
-        for (int i = 0; i < data.length; i++)
-        {
-            data[i] = Integer.parseInt(input.next());
-        }
         input.close();
         for (int i = 0; i < data.length; i++)
         {
@@ -38,6 +35,6 @@ public class Day0MeanMedianAndMode
                 mode = i;
             }
         }
-        System.out.printf("%.1f\n%.1f\n%d",mean,median,mode);
+        System.out.printf("%.1f\n%.1f\n%.0f",mean,median,data[mode]);
     }
 }
