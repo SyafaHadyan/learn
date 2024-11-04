@@ -12,7 +12,6 @@ public class Day0MeanMedianAndMode
         double mean = Arrays.stream(data).average().orElse(0.0);
         double median = 0d;
         int maxValue = 0;
-        int counter = 0;
         int mode = 0;
         input.close();
         Arrays.sort(data);
@@ -21,13 +20,22 @@ public class Day0MeanMedianAndMode
         {
             median = data[(data.length / 2)];
         }
-        for (int i = data.length - 2; i >= 0; i--)
+        for (int i = data.length - 1; i >= 0; i--)
         {
-            if (data[i] >= data[mode])
+            int currentMaxVal = 0;
+            for (int j = data.length - 1; j >= 0; j--)
             {
-                mode = i;
+                if (data[i] == data[j])
+                {
+                    currentMaxVal++;
+                }
+            }
+            if (currentMaxVal > maxValue)
+            {
+                maxValue = currentMaxVal;
+                mode = (int) data[i];
             }
         }
-        System.out.printf("%.1f\n%.1f\n%.0f",mean,median,data[mode]);
+        System.out.printf("%.1f\n%.1f\n%d",mean,median,mode);
     }
 }
