@@ -6,6 +6,17 @@ public class MinimumDistances
 {
     public static void main(String[] args)
     {
+        /*
+         * STDIN           Function
+         * -----           --------
+         * 6               arr[] size n = 6
+         * 7 1 3 4 1 7     arr = [7, 1, 3, 4, 1, 7]
+         * 
+         * 3
+         * 
+         * 6
+         * 7 1 3 4 1 7
+         */
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
         int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
@@ -21,5 +32,6 @@ public class MinimumDistances
                 }
             }
         }
+        System.out.print(minDistance);
     }
 }
