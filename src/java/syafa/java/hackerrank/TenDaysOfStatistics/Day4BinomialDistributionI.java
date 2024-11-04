@@ -20,17 +20,11 @@ public class Day4BinomialDistributionI
         input.close();
         double ratioBoy = data[0] / (data[0] + data[1]);
         double result = 0d;
-        int counter = 0;
         for (int i = 3; i < 7; i++)
         {
-            double factorial = 1d;
-            for (int j = i; j > 0; j--)
-            {
-                factorial *= j;
-            }
-            double tempResult = 720 / factorial * factorialN[counter];
-            result += tempResult * Math.pow(ratioBoy,i) * Math.pow((1 - ratioBoy),6 - i);
-            counter++;
+            double binomialCoefficient = 720 / (factorial(i) * factorial(6 - i));
+            double probability = binomialCoefficient * Math.pow(ratioBoy,i) * Math.pow(1 - ratioBoy,6 - i);
+            result += probability;
         }
         System.out.printf("%.3f",result);
     }
