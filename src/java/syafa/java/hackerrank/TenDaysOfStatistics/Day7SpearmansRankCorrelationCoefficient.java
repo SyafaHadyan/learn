@@ -18,5 +18,7 @@ public class Day7SpearmansRankCorrelationCoefficient
             firstSetMap.put(firstSet[i],(i + 1));
             secondSetMap.put(secondSet[i],(i + 1));
         }
+        Arrays.sort(firstSet);
+        Arrays.sort(secondSet);
     }
 }
