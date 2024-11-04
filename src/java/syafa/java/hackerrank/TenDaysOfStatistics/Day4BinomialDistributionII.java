@@ -16,7 +16,7 @@ public class Day4BinomialDistributionII
     public static double factorial(double number)
     {
         double result = 1d;
-        for (int i = (int) number; i > 0; i--)
+        for (double i = number; i > 0; i--)
         {
             result *= i;
         }
@@ -34,9 +34,9 @@ public class Day4BinomialDistributionII
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         double result = 0d;
-        for (int i = 1; i <= 2; i++)
+        for (int i = 0; i <= 2; i++)
         {
-            result += (factorial(10) / (factorial(i) * factorial(data[0] / 100))) * Math.pow((data[1] / (data[0] + data[1])),i) * Math.pow(1 - (data[1] / (data[0] + data[1])),10 - i);
+            result += (factorial(data[1]) / (factorial(i) * factorial(data[1] - i))) * factorial(data[1] - i) * Math.pow((1 - (data[0] / 100)),data[1] - i);
         }
         System.out.printf("%.3f",result);
         result = 0d;
