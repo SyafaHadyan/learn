@@ -32,20 +32,12 @@ public class Day1StandardDeviation
          * 30466.9
          */
         Scanner input = new Scanner(System.in);
-        //int arraySize = Integer.parseInt(input.nextLine());
-        int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int arraySize = Integer.parseInt(input.nextLine());
+        double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         Arrays.sort(data);
-        double mean = 0d;
+        double mean = Arrays.stream(data).average().orElse(0.0);
         double standardDeviation = 0d;
-        if (data.length % 2 != 0)
-        {
-            mean = data[(data.length / 2)];
-        }
-        else if (data.length % 2 == 0)
-        {
-            mean = (data[(data.length / 2) - 1] + data[(data.length / 2) + 1]) / 2.0;
-        }
         for (int i = 0; i < data.length; i++)
         {
             standardDeviation += Math.pow((data[i] - mean),2);
