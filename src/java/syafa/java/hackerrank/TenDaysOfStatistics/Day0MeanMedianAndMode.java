@@ -11,23 +11,16 @@ public class Day0MeanMedianAndMode
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         double mean = Arrays.stream(data).average().orElse(0.0);
         double median = 0d;
+        int maxValue = 0;
+        int counter = 0;
         int mode = 0;
         input.close();
-        for (int i = 0; i < data.length; i++)
-        {
-            mean += data[i];
-            if (i == data.length - 1)
-            {
-                mean /= data.length;
-            }
-        }
         Arrays.sort(data);
         median = (data[(data.length / 2) - 1] + data[data.length / 2]) / 2.0;
         if (data.length % 2 != 0)
         {
             median = data[(data.length / 2)];
         }
-        mode = data.length - 1;
         for (int i = data.length - 2; i >= 0; i--)
         {
             if (data[i] >= data[mode])
