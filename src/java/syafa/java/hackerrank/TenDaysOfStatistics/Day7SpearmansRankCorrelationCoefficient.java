@@ -16,8 +16,8 @@ public class Day7SpearmansRankCorrelationCoefficient
         HashMap<Double,Integer> secondSetMap = new HashMap<Double,Integer>();
         for (int i = 0; i < (firstSet.length + secondSet.length) / 2; i++)
         {
-            firstSetMap.put(firstSet[i],(i + 1));
-            secondSetMap.put(secondSet[i],(i + 1));
+            firstSetMap.put(firstSet[i],(i));
+            secondSetMap.put(secondSet[i],(i));
         }
         Arrays.sort(firstSet);
         Arrays.sort(secondSet);
