@@ -15,7 +15,10 @@ public class MinimumDistances
         {
             for (int j = 1 + i; j < array.length; j++)
             {
-                //
+                if (array[i] == array[j] && Math.abs(j - i) < minDistance)
+                {
+                    minDistance = Math.abs(j - i);
+                }
             }
         }
     }
