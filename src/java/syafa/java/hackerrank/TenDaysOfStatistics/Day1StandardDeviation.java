@@ -32,7 +32,8 @@ public class Day1StandardDeviation
          * 30466.9
          */
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
+        StringBuilder uselesss = new StringBuilder(input.nextLine());
+        uselesss.delete(0,uselesss.length());
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         Arrays.sort(data);
