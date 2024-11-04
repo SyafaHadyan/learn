@@ -12,12 +12,15 @@ public class Day4BinomialDistributionI
         double ratioBoy = data[0] / (data[0] + data[1]);
         double factorialK = 6;
         double factorialN = 720;
+        double result = 0d;
         for (int i = 3; i <= 6; i++)
         {
-            for (int j = 0; j < data.length; j++)
+            double factorial = 1d;
+            for (int j = i; j > 0; j--)
             {
-                
+                factorial *= j;
             }
+            result += factorial;
         }
     }
 }
