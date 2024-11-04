@@ -10,8 +10,8 @@ public class Day4BinomialDistributionI
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         double ratioBoy = data[0] / (data[0] + data[1]);
-        double factorialK = 1;
-        double factorialN = 1;
+        double factorialK = 6;
+        double factorialN = 720;
         for (int i = 3; i <= 6; i++)
         {
             for (int j = 0; j < data.length; j++)
