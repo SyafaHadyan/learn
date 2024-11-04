@@ -32,6 +32,11 @@ public class MinimumDistances
                 }
             }
         }
+        if (minDistance == Integer.MAX_VALUE)
+        {
+            System.out.print(-1);
+            System.exit(0);
+        }
         System.out.print(minDistance);
     }
 }
