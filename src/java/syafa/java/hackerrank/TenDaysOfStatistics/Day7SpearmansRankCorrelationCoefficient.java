@@ -25,6 +25,6 @@ public class Day7SpearmansRankCorrelationCoefficient
         {
             rankDifference += Math.pow((firstSetMap.get(firstSet[i]) - secondSetMap.get(secondSet[i])),2);
         }
-        System.out.print(rankDifference);
+        System.out.printf("%.3f",((6 * rankDifference) / (((firstSet.length + secondSet.length) / 2) * (Math.pow(((firstSet.length + secondSet.length) / 2),2) - 1))));
     }
 }
