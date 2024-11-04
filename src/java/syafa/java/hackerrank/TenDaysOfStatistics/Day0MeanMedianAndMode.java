@@ -21,17 +21,21 @@ public class Day0MeanMedianAndMode
         {
             median = data[(data.length / 2)];
         }
-        for (int i = 0; i < data.length; i++)
+        for (int i = data.length - 1; i >= 0; i--)
         {
             if (modeHash.get((int) data[i]) != null)
             {
                 modeHash.merge((int) data[i],1, Integer::sum);
                 continue;
             }
+            modeHash.put((int) data[i],1);
         }
         for (int i = 0; i < data.length; i++)
         {
-            //
+            if (modeHash.get((int) data[i]) > mode)
+            {
+                mode = modeHash.get((int) data[i]);
+            }
         }
         /*
         for (int i = data.length - 1; i >= 0; i--)
