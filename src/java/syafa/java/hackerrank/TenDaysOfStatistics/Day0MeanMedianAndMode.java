@@ -17,12 +17,12 @@ public class Day0MeanMedianAndMode
         int mode = 1;
         int modeNumber = Integer.MAX_VALUE;
         Arrays.sort(data);
-        median = (data[(data.length / 2) - 1] + data[data.length / 2]) / 2.0;
-        if (data.length % 2 != 0)
+        median = (data[(dataLength / 2) - 1] + data[dataLength / 2]) / 2.0;
+        if (dataLength % 2 != 0)
         {
-            median = data[(data.length / 2)];
+            median = data[(dataLength / 2)];
         }
-        for (int i = data.length - 1; i >= 0; i--)
+        for (int i = dataLength - 1; i >= 0; i--)
         {
             try
             {
