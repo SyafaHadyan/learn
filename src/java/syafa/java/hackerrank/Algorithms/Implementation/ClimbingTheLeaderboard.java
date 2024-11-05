@@ -102,7 +102,7 @@ public class ClimbingTheLeaderboard
                 if (rankHashMap.size() - j == 1)
                 {
                     System.out.print("Debug 1 ");
-                    System.out.println(rankHashMap.size());
+                    System.out.println(rankHashMap.size() + 1);
                     break;
                 }
             }
