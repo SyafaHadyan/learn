@@ -86,7 +86,7 @@ public class ClimbingTheLeaderboard
             rankedNoDuplicateTemp.add(playerScore[i]);
             Collections.sort(rankedNoDuplicateTemp);
             Collections.reverse(rankedNoDuplicateTemp);
-            for (int j = 0; j < rankedNoDuplicateTemp.size(); j++)
+            for (int j = rankedNoDuplicateTemp.size() - 1; j >= 0; j--)
             {
                 if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
                 {
