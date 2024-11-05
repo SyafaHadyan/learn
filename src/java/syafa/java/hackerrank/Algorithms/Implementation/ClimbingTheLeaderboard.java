@@ -68,25 +68,39 @@ public class ClimbingTheLeaderboard
         input.close();
         Set<Integer> rankedProcessed = new HashSet<>();
         HashMap<Integer,Integer> rankedHashMap = new HashMap<>();
+        ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
+        for (int i = 0; i < rankedRaw.length; i++)
+        {
+            if (!(rankedNoDuplicate.contains(rankedRaw[i])))
+            {
+                rankedNoDuplicate.add(rankedRaw[i]);
+            }
+        }
+        /*
+        for (int i = 0; i < rankedRaw.length; i++)
+        {
+            if (rankedHashMap.get(rankedRaw[i]) == null)
+            {
+                rankedHashMap.put(rankedRaw[i],i);
+            }
+        }
+        */
+        /*
         for (int i = 0; i < playerScore.length; i++)
         {
             if (rankedHashMap.get(playerScore[i]) == null)
             {
-                rankedHashMap.put(playerScore[i],i + 1);
+                for (int j = 0; j < playerScore.length; j++)
+                {
+                    if (rankedHashMap.containsKey(playerScore[j]) > playerScore[j] && )
+                    {
+                        //
+                    }
+                }
             }
+            System.out.println(rankedHashMap.get(playerScore[i]));
         }
-        for (int i = 0; i < playerScore.length; i++)
-        {
-            if (rankedProcessed.contains(playerScore[i]))
-            {
-                System.out.println(i);
-                continue;
-            }
-            for (int j = 0; j < rankedProcessed.size(); j++)
-            {
-                if (rankedProcessed.contains(playerScore[i]))
-            }
-        }
+        */
         /*
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
         ArrayList<Integer> temp = new ArrayList<>();
