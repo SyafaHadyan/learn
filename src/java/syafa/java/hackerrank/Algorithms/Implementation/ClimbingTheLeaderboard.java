@@ -77,6 +77,7 @@ public class ClimbingTheLeaderboard
         int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
         ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
+        rankedNoDuplicate.ensureCapacity(rankedRaw.length);
         for (int i = 0; i < rankedRaw.length; i++)
         {
             if (!(rankedNoDuplicate.contains(rankedRaw[i])))
@@ -84,12 +85,10 @@ public class ClimbingTheLeaderboard
                 rankedNoDuplicate.add(rankedRaw[i]);
             }
         }
-        System.out.println("debug");
         for (int i = 0; i < playerScore.length; i++)
         {
             if (rankedNoDuplicate.contains(playerScore[i]))
             {
-                System.out.print("I ");
                 System.out.println(rankedNoDuplicate.indexOf(playerScore[i]) + 1);
                 continue;
             }
@@ -102,9 +101,7 @@ public class ClimbingTheLeaderboard
             {
                 if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
                 {
-                    System.out.print("J ");
                     System.out.println(j + 1);
-                    //break;
                 }
             }
         }
