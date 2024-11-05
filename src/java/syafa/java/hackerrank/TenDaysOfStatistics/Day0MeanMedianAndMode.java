@@ -51,43 +51,6 @@ public class Day0MeanMedianAndMode
                 }
             }
         }
-        /*
-        for (int i = data.length - 1; i >= 0; i--)
-        {
-            if (modeHash.get((int) data[i]) != null)
-            {
-                modeHash.merge((int) data[i],1,Integer::sum);
-                continue;
-            }
-            modeHash.put((int) data[i],1);
-        }
-        for (int i = data.length - 1; i >= 0; i--)
-        {
-            if (modeHash.get((int) data[i]) >= modeCount && mode > (int) data[i])
-            {
-                modeCount = modeHash.get((int) data[i]);
-                mode = (int) data[i];
-            }
-        }
-        */
-        /*
-        for (int i = data.length - 1; i >= 0; i--)
-        {
-            int currentMaxVal = 0;
-            for (int j = data.length - 1; j >= 0; j--)
-            {
-                if (data[i] == data[j])
-                {
-                    currentMaxVal++;
-                }
-            }
-            if (currentMaxVal > maxValue)
-            {
-                maxValue = currentMaxVal;
-                modeCount = (int) data[i];
-            }
-        }
-        */
         System.out.printf("%.1f\n%.1f\n%d",mean,median,modeNumber);
     }
 }
