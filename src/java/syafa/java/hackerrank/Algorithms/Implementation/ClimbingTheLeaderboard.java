@@ -62,6 +62,7 @@ public class ClimbingTheLeaderboard
                 continue;
             }
             ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
+            rankedNoDuplicateTemp.ensureCapacity(rankedRaw.length + 1);
             rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
             rankedNoDuplicateTemp.add(playerScore[i]);
             Collections.sort(rankedNoDuplicateTemp);
