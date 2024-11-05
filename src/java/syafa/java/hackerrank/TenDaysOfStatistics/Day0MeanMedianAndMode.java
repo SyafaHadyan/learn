@@ -6,6 +6,11 @@ public class Day0MeanMedianAndMode
 {
     public static void main(String[] args)
     {
+        /*
+         * 49921.5
+         * 49253.5
+         * 2184
+         */
         Scanner input = new Scanner(System.in);
         int dataLength = Integer.parseInt(input.nextLine());
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
@@ -14,7 +19,7 @@ public class Day0MeanMedianAndMode
         double median = 0d;
         int modeCount = 1;
         int currentMode = 0;
-        int mode = 0;
+        int mode = 1;
         int modeNumber = Integer.MAX_VALUE;
         //HashMap<Integer,Integer> modeHash = new HashMap<>();
         Arrays.sort(data);
@@ -23,22 +28,39 @@ public class Day0MeanMedianAndMode
         {
             median = data[(data.length / 2)];
         }
-        for (int i = 0; i < data.length - 1; i++)
+        for (int i = data.length - 1; i >= 0; i--)
         {
-            currentMode = (int) data[i];
-            if (currentMode == data[i + 1])
+            try
             {
-                modeCount++;
+                currentMode = (int) data[i];
+                if (currentMode == data[i - 1])
+                {
+                    modeCount++;
+                }
+                if ((modeCount >= mode) && (currentMode < modeNumber))
+                {
+                    /*
+                    if (currentMode > modeNumber && modeCount > mode)
+                    {
+                        continue;
+                    }
+                    */
+                    modeNumber = currentMode;
+                    mode = modeCount;
+                    modeCount = 1;
+                }
             }
-            else
+            catch (IndexOutOfBoundsException e)
             {
                 modeCount = 1;
-            }
-            if (currentMode < modeNumber && modeCount >= mode)
-            {
-                modeNumber = currentMode;
-                mode = modeCount;
-                modeCount = 1;
+                if (data[i] == data[i + 1])
+                {
+                    modeCount++;
+                }
+                if (modeCount >= mode && currentMode < modeNumber)
+                {
+                    modeNumber = (int) data[i];
+                }
             }
         }
         /*
