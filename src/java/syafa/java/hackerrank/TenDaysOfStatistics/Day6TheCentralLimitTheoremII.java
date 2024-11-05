@@ -33,8 +33,9 @@ public class Day6TheCentralLimitTheoremII
         double ticketPurchaseMean = Double.parseDouble(input.nextLine());
         double standardDeviation = Double.parseDouble(input.nextLine());
         input.close();
-        double tempResult = Math.sqrt(amountOfStudents) * standardDeviation;
-        double result = (1 + erf(availableTicket - (amountOfStudents * ticketPurchaseMean)) / Math.pow((tempResult * 2),5)) / 2.0;
+        double std = Math.sqrt(amountOfStudents) * standardDeviation;
+        double m = amountOfStudents * ticketPurchaseMean;
+        double result = (1 + erf((availableTicket - m) / (std * Math.sqrt(2.0)))) / 2.0;
         System.out.printf("%.4f",result);
     }
 }
