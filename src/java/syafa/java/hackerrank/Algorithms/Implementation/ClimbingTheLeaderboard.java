@@ -57,7 +57,7 @@ public class ClimbingTheLeaderboard
                 rankedNoDuplicate.add(rankedRaw[i]);
             }
             */
-            if (!(rankHashMap.containsKey(rankedRaw[i])))
+            if (!(rankHashMap.containsValue(rankedRaw[i])))
             {
                 rankHashMap.put(counter,rankedRaw[i]);
                 counter++;
@@ -94,7 +94,7 @@ public class ClimbingTheLeaderboard
                 if (rankHashMap.get(counter) < playerScore[i])
                 {
                     System.out.print("Debug 0 ");
-                    System.out.println(counter);
+                    System.out.println(counter + 1);
                     counter++;
                     break;
                 }
