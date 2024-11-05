@@ -41,21 +41,10 @@ public class ClimbingTheLeaderboard
          */
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
-        //int[] rankedRaw = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        //int playerScoreAmount = Integer.parseInt(input.nextLine());
-        //int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        //ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
         HashMap<Integer,Integer> rankHashMap = new HashMap<>();
-        //rankedNoDuplicate.ensureCapacity(rankedRaw.length);
         int counter = 0;
         for (int i = 0; i < rankedAmount; i++)
         {
-            /*
-            if (!(rankedNoDuplicate.contains(rankedRaw[i])))
-            {
-                rankedNoDuplicate.add(rankedRaw[i]);
-            }
-            */
             int temp = input.nextInt();
             if (!(rankHashMap.containsValue(temp)))
             {
@@ -67,28 +56,6 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         for (int i = 0; i < playerScoreAmount; i++)
         {
-            /*
-            if (rankedNoDuplicate.contains(playerScore[i]))
-            {
-                System.out.println(rankedNoDuplicate.indexOf(playerScore[i]) + 1);
-                continue;
-            }
-            */
-            /*
-            if (rankHashMap.containsValue(playerScore[i]))
-            {
-                System.out.println(rankHashMap.get(i));
-                continue;
-            }
-            */
-            //ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
-            //HashMap<Integer,Integer> rankHashMapTemp = new HashMap<>();
-            //rankedNoDuplicateTemp.ensureCapacity(rankedRaw.length + 1);
-            //rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
-            //rankedNoDuplicateTemp.add(playerScore[i]);
-            //Collections.sort(rankedNoDuplicateTemp);
-            //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
-            //rankHashMapTemp.putAll(rankHashMap);
             int temp = input.nextInt();
             for (int j = 1; j <= rankHashMap.size(); j++)
             {
@@ -104,5 +71,6 @@ public class ClimbingTheLeaderboard
                 }
             }
         }
+        input.close();
     }
 }
