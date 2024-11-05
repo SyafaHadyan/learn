@@ -91,13 +91,11 @@ public class ClimbingTheLeaderboard
             {
                 if (rankHashMap.get(j) < playerScore[i] || rankHashMap.get(j) == playerScore[i])
                 {
-                    System.out.print("Debug 0 ");
                     System.out.println(j);
                     break;
                 }
                 if (rankHashMap.size() - j == 0)
                 {
-                    System.out.print("Debug 1 ");
                     System.out.println(rankHashMap.size() + 1);
                     break;
                 }
