@@ -48,6 +48,7 @@ public class ClimbingTheLeaderboard
         //ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
         HashMap<Integer,Integer> rankHashMap = new HashMap<>();
         //rankedNoDuplicate.ensureCapacity(rankedRaw.length);
+        int counter = 0;
         for (int i = 0; i < rankedRaw.length; i++)
         {
             /*
@@ -58,7 +59,8 @@ public class ClimbingTheLeaderboard
             */
             if (!(rankHashMap.containsKey(rankedRaw[i])))
             {
-                rankHashMap.put(i,rankedRaw[i]);
+                rankHashMap.put(counter,rankedRaw[i]);
+                counter++;
             }
         }
         for (int i = 0; i < playerScore.length; i++)
@@ -85,11 +87,13 @@ public class ClimbingTheLeaderboard
             //Collections.sort(rankedNoDuplicateTemp);
             //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
             //rankHashMapTemp.putAll(rankHashMap);
+            counter = 0;
             for (int j = 0; j < rankHashMap.size(); j++)
             {
-                if (rankHashMap.get(j) < playerScore[i])
+                if (rankHashMap.get(counter) < playerScore[i])
                 {
-                    System.out.println(j + 1);
+                    System.out.println(counter + 1);
+                    counter++;
                     break;
                 }
                 if (rankHashMap.size() - j == 1)
