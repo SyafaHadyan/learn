@@ -24,10 +24,20 @@ class HouseOOP
     {
         System.out.println("Close Window");
     }
+    public static double getArea(double length,double width)
+    {
+        return length * width;
+    }
+    public static double getVolume(double length,double width,double height)
+    {
+        return length * width * height;
+    }
 }
 
 public class House
 {
+    private int test = 5;
+
     public static void main(String[] args)
     {
         HouseOOP house0 = new HouseOOP();
@@ -45,9 +55,16 @@ public class House
         HouseOOP.closeDoor();
         HouseOOP.openWindow();
         HouseOOP.closeWindow();
+        System.out.println(HouseOOP.getArea(house0.length,house0.width));
+        System.out.println(HouseOOP.getVolume(house0.length,house0.width,house0.height));
         //openDoor();
         //closeDoor();
         //openWindow();
         //closeWindow();
+    }
+    public void test()
+    {
+        //this.test = test;
+        System.out.println(test);
     }
 }
