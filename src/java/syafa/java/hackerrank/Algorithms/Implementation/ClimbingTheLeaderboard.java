@@ -76,6 +76,13 @@ public class ClimbingTheLeaderboard
                 rankedNoDuplicate.add(rankedRaw[i]);
             }
         }
+        for (int i = 0; i < playerScore.length; i++)
+        {
+            if (rankedNoDuplicate.contains(playerScore[i]))
+            {
+                System.out.println(i);
+            }
+        }
         /*
         for (int i = 0; i < rankedRaw.length; i++)
         {
