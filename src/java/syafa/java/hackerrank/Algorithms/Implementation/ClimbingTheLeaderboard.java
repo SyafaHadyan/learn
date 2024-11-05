@@ -45,9 +45,9 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
+        //ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
         HashMap<Integer,Integer> rankHashMap = new HashMap<>();
-        rankedNoDuplicate.ensureCapacity(rankedRaw.length);
+        //rankedNoDuplicate.ensureCapacity(rankedRaw.length);
         for (int i = 0; i < rankedRaw.length; i++)
         {
             /*
@@ -70,24 +70,31 @@ public class ClimbingTheLeaderboard
                 continue;
             }
             */
+            /*
             if (rankHashMap.containsValue(playerScore[i]))
             {
-                System.out.println(rankHashMap.get(i + 1));
+                System.out.println(rankHashMap.get(i));
                 continue;
             }
-            ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
-            HashMap<Integer,Integer> rankHashMapTemp = new HashMap<>();
-            rankedNoDuplicateTemp.ensureCapacity(rankedRaw.length + 1);
-            rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
-            rankedNoDuplicateTemp.add(playerScore[i]);
-            Collections.sort(rankedNoDuplicateTemp);
+            */
+            //ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
+            //HashMap<Integer,Integer> rankHashMapTemp = new HashMap<>();
+            //rankedNoDuplicateTemp.ensureCapacity(rankedRaw.length + 1);
+            //rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
+            //rankedNoDuplicateTemp.add(playerScore[i]);
+            //Collections.sort(rankedNoDuplicateTemp);
             //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
-            rankHashMapTemp.putAll(rankHashMap);
-            for (int j = 0; j < playerScore.length; j++)
+            //rankHashMapTemp.putAll(rankHashMap);
+            for (int j = 0; j < rankHashMap.size(); j++)
             {
-                if (rankHashMapTemp.get(j) < playerScore[i])
+                if (rankHashMap.get(j) < playerScore[i])
                 {
                     System.out.println(j + 1);
+                    break;
+                }
+                if (rankHashMap.size() - j == 1)
+                {
+                    System.out.println(playerScore.length);
                 }
             }
         }
