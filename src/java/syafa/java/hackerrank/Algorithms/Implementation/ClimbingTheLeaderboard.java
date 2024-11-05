@@ -59,11 +59,10 @@ public class ClimbingTheLeaderboard
             */
             if (!(rankHashMap.containsValue(rankedRaw[i])))
             {
-                rankHashMap.put(counter,rankedRaw[i]);
+                rankHashMap.put(counter + 1,rankedRaw[i]);
                 counter++;
             }
         }
-        counter = 0;
         for (int i = 0; i < playerScore.length; i++)
         {
             /*
@@ -88,18 +87,15 @@ public class ClimbingTheLeaderboard
             //Collections.sort(rankedNoDuplicateTemp);
             //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
             //rankHashMapTemp.putAll(rankHashMap);
-            counter = 0;
-            for (int j = 0; j < rankHashMap.size(); j++)
+            for (int j = 1; j <= rankHashMap.size(); j++)
             {
-                if (rankHashMap.get(counter) < playerScore[i])
+                if (rankHashMap.get(j) < playerScore[i] || rankHashMap.get(j) == playerScore[i])
                 {
                     System.out.print("Debug 0 ");
-                    System.out.println(counter + 1);
-                    counter++;
+                    System.out.println(j);
                     break;
                 }
-                counter++;
-                if (rankHashMap.size() - j == 1)
+                if (rankHashMap.size() - j == 0)
                 {
                     System.out.print("Debug 1 ");
                     System.out.println(rankHashMap.size() + 1);
@@ -107,6 +103,5 @@ public class ClimbingTheLeaderboard
                 }
             }
         }
-        System.out.print(rankHashMap);
     }
 }
