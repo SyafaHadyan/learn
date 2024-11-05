@@ -65,9 +65,7 @@ public class ClimbingTheLeaderboard
         }
         input.nextLine();
         int playerScoreAmount = Integer.parseInt(input.nextLine());
-        int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-        input.close();
-        for (int i = 0; i < playerScore.length; i++)
+        for (int i = 0; i < playerScoreAmount; i++)
         {
             /*
             if (rankedNoDuplicate.contains(playerScore[i]))
@@ -91,9 +89,10 @@ public class ClimbingTheLeaderboard
             //Collections.sort(rankedNoDuplicateTemp);
             //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
             //rankHashMapTemp.putAll(rankHashMap);
+            int temp = input.nextInt();
             for (int j = 1; j <= rankHashMap.size(); j++)
             {
-                if (rankHashMap.get(j) < playerScore[i] || rankHashMap.get(j) == playerScore[i])
+                if (rankHashMap.get(j) < temp || rankHashMap.get(j) == temp)
                 {
                     System.out.println(j);
                     break;
