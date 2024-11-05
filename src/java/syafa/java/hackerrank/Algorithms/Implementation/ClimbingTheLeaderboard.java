@@ -67,16 +67,6 @@ public class ClimbingTheLeaderboard
             rankedNoDuplicateTemp.add(playerScore[i]);
             Collections.sort(rankedNoDuplicateTemp);
             System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
-            /*
-            for (int j = rankedNoDuplicateTemp.size() - 1; j >= 0; j--)
-            {
-                if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
-                {
-                    System.out.println(j + 1);
-                    break;
-                }
-            }
-            */
         }
     }
 }
