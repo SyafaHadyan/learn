@@ -1,7 +1,5 @@
 package syafa.java.hackerrank.TenDaysOfStatistics;
 import java.util.*;
-import java.math.*;
-import java.math.MathContext;
 
 public class Day6TheCentralLimitTheoremII
 {
@@ -21,7 +19,6 @@ public class Day6TheCentralLimitTheoremII
         if (z >= 0) return  ans;
         else        return -ans;
     }
-    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
@@ -37,6 +34,7 @@ public class Day6TheCentralLimitTheoremII
         double standardDeviation = Double.parseDouble(input.nextLine());
         input.close();
         double tempResult = Math.sqrt(amountOfStudents) * standardDeviation;
-        double result = (1 + (amountOfStudents * Math.) )/ 2;
+        double result = (1 + erf(availableTicket - (amountOfStudents * ticketPurchaseMean)) / Math.pow((tempResult * 2),5)) / 2.0;
+        System.out.printf("%.4f",result);
     }
 }
