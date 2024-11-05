@@ -49,8 +49,8 @@ public class ClimbingTheLeaderboard
             int temp = input.nextInt();
             if (!(rankHashMap.containsValue(temp)))
             {
-                rankHashMap.put(counter + 1,temp);
                 counter++;
+                rankHashMap.put(counter,temp);
             }
         }
         input.nextLine();
