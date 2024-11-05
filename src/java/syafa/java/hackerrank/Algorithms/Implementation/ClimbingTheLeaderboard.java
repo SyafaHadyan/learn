@@ -62,9 +62,9 @@ public class ClimbingTheLeaderboard
          */
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
-        int[] rankedRaw = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] rankedRaw = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int playerScoreAmount = Integer.parseInt(input.nextLine());
-        int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Set<Integer> rankedProcessed = new HashSet<>();
         HashMap<Integer,Integer> rankedHashMap = new HashMap<>();
@@ -80,7 +80,21 @@ public class ClimbingTheLeaderboard
         {
             if (rankedNoDuplicate.contains(playerScore[i]))
             {
+                System.out.print("Debug i ");
                 System.out.println(i);
+                continue;
+            }
+            ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
+            rankedNoDuplicate.addAll(rankedNoDuplicate);
+            rankedNoDuplicateTemp.add(playerScore[i]);
+            for (int j = playerScore.length - 1; j >= 0; j--)
+            {
+                if (rankedNoDuplicateTemp.contains(playerScore[j]))
+                {
+                    System.out.print("Debug j ");
+                    System.out.println(j);
+                    continue;
+                }
             }
         }
         /*
