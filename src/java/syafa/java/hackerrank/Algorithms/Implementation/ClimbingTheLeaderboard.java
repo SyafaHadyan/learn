@@ -72,6 +72,7 @@ public class ClimbingTheLeaderboard
                 if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
                 {
                     System.out.println(j + 1);
+                    break;
                 }
             }
         }
