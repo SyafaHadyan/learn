@@ -6,11 +6,6 @@ public class Day0MeanMedianAndMode
 {
     public static void main(String[] args)
     {
-        /*
-         * 49921.5
-         * 49253.5
-         * 2184
-         */
         Scanner input = new Scanner(System.in);
         int dataLength = Integer.parseInt(input.nextLine());
         double[] data = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
