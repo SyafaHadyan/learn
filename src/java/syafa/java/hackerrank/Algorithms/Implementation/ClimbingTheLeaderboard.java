@@ -63,6 +63,7 @@ public class ClimbingTheLeaderboard
                 counter++;
             }
         }
+        counter = 0;
         for (int i = 0; i < playerScore.length; i++)
         {
             /*
@@ -92,15 +93,20 @@ public class ClimbingTheLeaderboard
             {
                 if (rankHashMap.get(counter) < playerScore[i])
                 {
-                    System.out.println(counter + 1);
+                    System.out.print("Debug 0 ");
+                    System.out.println(counter);
                     counter++;
                     break;
                 }
+                counter++;
                 if (rankHashMap.size() - j == 1)
                 {
-                    System.out.println(playerScore.length);
+                    System.out.print("Debug 1 ");
+                    System.out.println(rankHashMap.size());
+                    break;
                 }
             }
         }
+        System.out.print(rankHashMap);
     }
 }
