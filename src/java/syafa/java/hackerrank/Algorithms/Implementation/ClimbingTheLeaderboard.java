@@ -4,7 +4,6 @@ import java.util.stream.*;
 
 public class ClimbingTheLeaderboard
 {
-    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
@@ -80,7 +79,7 @@ public class ClimbingTheLeaderboard
         {
             if (rankedNoDuplicate.contains(playerScore[i]))
             {
-                System.out.print("Debug i ");
+                System.out.print("I ");
                 System.out.println(i);
                 continue;
             }
@@ -93,7 +92,7 @@ public class ClimbingTheLeaderboard
             {
                 if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
                 {
-                    System.out.print("Debug j ");
+                    System.out.print("J ");
                     System.out.println(j + 1);
                     break;
                 }
