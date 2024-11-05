@@ -1,6 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
-import java.util.*;
-import java.util.stream.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
 public class ClimbingTheLeaderboard
 {
@@ -40,7 +40,8 @@ public class ClimbingTheLeaderboard
          * 1
          */
         Scanner input = new Scanner(System.in);
-        int rankedAmount = Integer.parseInt(input.nextLine());
+        int rankedAmount = input.nextInt();
+        input.nextLine();
         HashMap<Integer,Integer> rankHashMap = new HashMap<>();
         int counter = 0;
         for (int i = 0; i < rankedAmount; i++)
@@ -53,20 +54,22 @@ public class ClimbingTheLeaderboard
             }
         }
         input.nextLine();
-        int playerScoreAmount = Integer.parseInt(input.nextLine());
+        int playerScoreAmount = input.nextInt();
+        input.nextLine();
+        int rankHashMapSize = rankHashMap.size();
         for (int i = 0; i < playerScoreAmount; i++)
         {
             int temp = input.nextInt();
-            for (int j = 1; j <= rankHashMap.size(); j++)
+            for (int j = 1; j <= rankHashMapSize; j++)
             {
                 if (rankHashMap.get(j) < temp || rankHashMap.get(j) == temp)
                 {
                     System.out.println(j);
                     break;
                 }
-                if (rankHashMap.size() - j == 0)
+                if (rankHashMapSize - j == 0)
                 {
-                    System.out.println(rankHashMap.size() + 1);
+                    System.out.println(rankHashMapSize + 1);
                     break;
                 }
             }
