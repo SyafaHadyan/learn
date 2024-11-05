@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "House",
+      "request": "launch",
+      "mainClass": "syafa.java.codeinclass.oop.House",
+      "projectName": "learn_7d900611"
+    },
+    {
+      "type": "java",
       "name": "Day4BinomialDistributionI",
       "request": "launch",
       "mainClass": "syafa.java.hackerrank.TenDaysOfStatistics.Day4BinomialDistributionI",

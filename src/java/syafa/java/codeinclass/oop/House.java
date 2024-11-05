@@ -1,6 +1,6 @@
 package syafa.java.codeinclass.oop;
 
-public class House
+class HouseOOP
 {
     public String outdoorColor;
     public String indoorColor;
@@ -24,11 +24,30 @@ public class House
     {
         System.out.println("Close Window");
     }
+}
+
+public class House
+{
     public static void main(String[] args)
     {
-        openDoor();
-        closeDoor();
-        openWindow();
-        closeWindow();
+        HouseOOP house0 = new HouseOOP();
+        house0.outdoorColor = "White Outdoor";
+        house0.indoorColor = "White";
+        house0.length = 100d;
+        house0.width = 200d;
+        house0.height = 10d;
+        System.out.println(house0.outdoorColor);
+        System.out.println(house0.indoorColor);
+        System.out.println(house0.length);
+        System.out.println(house0.width);
+        System.out.println(house0.height);
+        HouseOOP.openDoor();
+        HouseOOP.closeDoor();
+        HouseOOP.openWindow();
+        HouseOOP.closeWindow();
+        //openDoor();
+        //closeDoor();
+        //openWindow();
+        //closeWindow();
     }
 }
