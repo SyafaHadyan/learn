@@ -14,17 +14,17 @@ public class Day7SpearmansRankCorrelationCoefficient
         double rankDifference = 0;
         HashMap<Double,Integer> firstSetMap = new HashMap<Double,Integer>();
         HashMap<Double,Integer> secondSetMap = new HashMap<Double,Integer>();
-        for (int i = 0; i < (firstSet.length + secondSet.length) / 2; i++)
+        for (int i = 0; i < dataLength; i++)
         {
-            firstSetMap.put(firstSet[i],(i));
-            secondSetMap.put(secondSet[i],(i));
+            firstSetMap.put(firstSet[i],(i + 1));
+            secondSetMap.put(secondSet[i],(i + 1));
         }
         Arrays.sort(firstSet);
         Arrays.sort(secondSet);
-        for (int i = 0; i < (firstSet.length + secondSet.length) / 2; i++)
+        for (int i = 0; i < dataLength; i++)
         {
             rankDifference += Math.pow(Math.abs((firstSetMap.get(firstSet[i]) - secondSetMap.get(secondSet[i]))),2);
         }
-        System.out.printf("%.3f",(1 - ((6 * rankDifference) / (((firstSet.length + secondSet.length) / 2) * (Math.pow(((firstSet.length + secondSet.length) / 2),2) - 1)))));
+        System.out.printf("%.3f",(1 - ((6 * rankDifference) / ((dataLength) * (Math.pow((dataLength),2) - 1)))));
     }
 }
