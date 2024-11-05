@@ -12,15 +12,36 @@ public class Day0MeanMedianAndMode
         input.close();
         double mean = Arrays.stream(data).average().orElse(0.0);
         double median = 0d;
-        int modeCount = 0;
-        int mode = Integer.MAX_VALUE;
-        HashMap<Integer,Integer> modeHash = new HashMap<>();
+        int modeCount = 1;
+        int currentMode = 0;
+        int mode = 0;
+        int modeNumber = Integer.MAX_VALUE;
+        //HashMap<Integer,Integer> modeHash = new HashMap<>();
         Arrays.sort(data);
         median = (data[(data.length / 2) - 1] + data[data.length / 2]) / 2.0;
         if (data.length % 2 != 0)
         {
             median = data[(data.length / 2)];
         }
+        for (int i = 0; i < data.length - 1; i++)
+        {
+            currentMode = (int) data[i];
+            if (currentMode == data[i + 1])
+            {
+                modeCount++;
+            }
+            else
+            {
+                modeCount = 1;
+            }
+            if (currentMode < modeNumber && modeCount >= mode)
+            {
+                modeNumber = currentMode;
+                mode = modeCount;
+                modeCount = 1;
+            }
+        }
+        /*
         for (int i = data.length - 1; i >= 0; i--)
         {
             if (modeHash.get((int) data[i]) != null)
@@ -38,6 +59,7 @@ public class Day0MeanMedianAndMode
                 mode = (int) data[i];
             }
         }
+        */
         /*
         for (int i = data.length - 1; i >= 0; i--)
         {
