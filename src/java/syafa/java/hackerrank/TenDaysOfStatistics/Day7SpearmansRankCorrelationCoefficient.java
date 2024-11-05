@@ -10,6 +10,10 @@ public class Day7SpearmansRankCorrelationCoefficient
         int dataLength = Integer.parseInt(input.nextLine());
         double[] firstSet = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         double[] secondSet = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
+        double[] firstSetOriginalCopy = Arrays.copyOf(firstSet,dataLength);
+        double[] secondSetOriginalCopy = Arrays.copyOf(secondSet,dataLength);
+        Arrays.sort(firstSet);
+        Arrays.sort(secondSet);
         input.close();
         double rankDifference = 0;
         HashMap<Double,Integer> firstSetMap = new HashMap<>();
@@ -19,12 +23,10 @@ public class Day7SpearmansRankCorrelationCoefficient
             firstSetMap.put(firstSet[i],(i));
             secondSetMap.put(secondSet[i],(i));
         }
-        Arrays.sort(firstSet);
-        Arrays.sort(secondSet);
         for (int i = 0; i < dataLength; i++)
         {
-            rankDifference += Math.pow(Math.abs((firstSetMap.get(firstSet[i]) - secondSetMap.get(secondSet[i]))),2);
+            rankDifference += Math.pow(Math.abs((firstSetMap.get(firstSetOriginalCopy[i]) - secondSetMap.get(secondSetOriginalCopy[i]))),2);
         }
-        System.out.printf("%.3f",(1 - ((6 * rankDifference) / ((dataLength) * (Math.pow((dataLength),2) - 1)))));
+        System.out.printf("%.3f",(1 - ((6 * rankDifference) / (dataLength * ((Math.pow(dataLength,2)) - 1)))));
     }
 }
