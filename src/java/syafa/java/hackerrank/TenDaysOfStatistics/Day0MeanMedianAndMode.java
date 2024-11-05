@@ -78,6 +78,6 @@ public class Day0MeanMedianAndMode
             }
         }
         */
-        System.out.printf("%.1f\n%.1f\n%d",mean,median,mode);
+        System.out.printf("%.1f\n%.1f\n%d",mean,median,modeNumber);
     }
 }
