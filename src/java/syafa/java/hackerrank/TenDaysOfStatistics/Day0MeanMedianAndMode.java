@@ -21,7 +21,6 @@ public class Day0MeanMedianAndMode
         int currentMode = 0;
         int mode = 1;
         int modeNumber = Integer.MAX_VALUE;
-        //HashMap<Integer,Integer> modeHash = new HashMap<>();
         Arrays.sort(data);
         median = (data[(data.length / 2) - 1] + data[data.length / 2]) / 2.0;
         if (data.length % 2 != 0)
@@ -39,12 +38,6 @@ public class Day0MeanMedianAndMode
                 }
                 if ((modeCount >= mode) && (currentMode < modeNumber))
                 {
-                    /*
-                    if (currentMode > modeNumber && modeCount > mode)
-                    {
-                        continue;
-                    }
-                    */
                     modeNumber = currentMode;
                     mode = modeCount;
                     modeCount = 1;
@@ -53,13 +46,13 @@ public class Day0MeanMedianAndMode
             catch (IndexOutOfBoundsException e)
             {
                 modeCount = 1;
-                if (data[i] == data[i + 1])
+                if (data[0] == data[1])
                 {
                     modeCount++;
                 }
                 if (modeCount >= mode && currentMode < modeNumber)
                 {
-                    modeNumber = (int) data[i];
+                    modeNumber = (int) data[0];
                 }
             }
         }
