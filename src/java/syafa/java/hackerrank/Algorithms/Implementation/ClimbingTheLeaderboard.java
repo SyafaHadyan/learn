@@ -89,12 +89,12 @@ public class ClimbingTheLeaderboard
             rankedNoDuplicateTemp.add(playerScore[i]);
             Collections.sort(rankedNoDuplicateTemp);
             Collections.reverse(rankedNoDuplicateTemp);
-            for (int j = rankedNoDuplicateTemp.size() - 1; j >= 0; j--)
+            for (int j = 0; j < rankedNoDuplicateTemp.size(); j++)
             {
-                if (rankedNoDuplicateTemp.contains(playerScore[j]))
+                if (rankedNoDuplicateTemp.get(j) == (playerScore[i]))
                 {
                     System.out.print("Debug j ");
-                    System.out.println(j);
+                    System.out.println(j + 1);
                     break;
                 }
             }
