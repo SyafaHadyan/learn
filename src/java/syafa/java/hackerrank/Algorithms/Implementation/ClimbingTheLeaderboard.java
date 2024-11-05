@@ -46,27 +46,50 @@ public class ClimbingTheLeaderboard
         int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
         ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
+        HashMap<Integer,Integer> rankHashMap = new HashMap<>();
         rankedNoDuplicate.ensureCapacity(rankedRaw.length);
         for (int i = 0; i < rankedRaw.length; i++)
         {
+            /*
             if (!(rankedNoDuplicate.contains(rankedRaw[i])))
             {
                 rankedNoDuplicate.add(rankedRaw[i]);
             }
+            */
+            if (!(rankHashMap.containsKey(rankedRaw[i])))
+            {
+                rankHashMap.put(i,rankedRaw[i]);
+            }
         }
         for (int i = 0; i < playerScore.length; i++)
         {
+            /*
             if (rankedNoDuplicate.contains(playerScore[i]))
             {
                 System.out.println(rankedNoDuplicate.indexOf(playerScore[i]) + 1);
                 continue;
             }
+            */
+            if (rankHashMap.containsValue(playerScore[i]))
+            {
+                System.out.println(rankHashMap.get(i + 1));
+                continue;
+            }
             ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
+            HashMap<Integer,Integer> rankHashMapTemp = new HashMap<>();
             rankedNoDuplicateTemp.ensureCapacity(rankedRaw.length + 1);
             rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
             rankedNoDuplicateTemp.add(playerScore[i]);
             Collections.sort(rankedNoDuplicateTemp);
-            System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
+            //System.out.println(rankedNoDuplicateTemp.size() - rankedNoDuplicateTemp.indexOf(playerScore[i]));
+            rankHashMapTemp.putAll(rankHashMap);
+            for (int j = 0; j < playerScore.length; j++)
+            {
+                if (rankHashMapTemp.get(j) < playerScore[i])
+                {
+                    System.out.println(j + 1);
+                }
+            }
         }
     }
 }
