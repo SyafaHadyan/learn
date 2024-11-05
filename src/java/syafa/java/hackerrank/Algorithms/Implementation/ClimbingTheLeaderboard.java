@@ -49,6 +49,16 @@ public class ClimbingTheLeaderboard
          * 4
          * 2
          * 1
+         * 
+         * 7
+         * 100 100 50 40 40 20 10
+         * 4
+         * 5 25 50 120
+         * 
+         * 6
+         * 4
+         * 2
+         * 1
          */
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
@@ -60,6 +70,14 @@ public class ClimbingTheLeaderboard
         for (int i = 0; i < playerScore.length; i++)
         {
             rankedProcessed.add(rankedRaw[i]);
+        }
+        for (int i = 0; i < playerScore.length; i++)
+        {
+            if (rankedProcessed.contains(playerScore[i]))
+            {
+                System.out.println(i);
+                continue;
+            }
         }
         /*
         ArrayList<Integer> rankedProcessed = new ArrayList<>();
