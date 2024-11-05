@@ -67,9 +67,13 @@ public class ClimbingTheLeaderboard
         int[] playerScore = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         input.close();
         Set<Integer> rankedProcessed = new HashSet<>();
+        HashMap<Integer,Integer> rankedHashMap = new HashMap<>();
         for (int i = 0; i < playerScore.length; i++)
         {
-            rankedProcessed.add(rankedRaw[i]);
+            if (rankedHashMap.get(playerScore[i]) == null)
+            {
+                rankedHashMap.put(playerScore[i],i + 1);
+            }
         }
         for (int i = 0; i < playerScore.length; i++)
         {
@@ -77,6 +81,10 @@ public class ClimbingTheLeaderboard
             {
                 System.out.println(i);
                 continue;
+            }
+            for (int j = 0; j < rankedProcessed.size(); j++)
+            {
+                if (rankedProcessed.contains(playerScore[i]))
             }
         }
         /*
