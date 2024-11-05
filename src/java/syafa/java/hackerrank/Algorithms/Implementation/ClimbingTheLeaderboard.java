@@ -65,8 +65,6 @@ public class ClimbingTheLeaderboard
         int playerScoreAmount = Integer.parseInt(input.nextLine());
         int[] playerScore = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        Set<Integer> rankedProcessed = new HashSet<>();
-        HashMap<Integer,Integer> rankedHashMap = new HashMap<>();
         ArrayList<Integer> rankedNoDuplicate = new ArrayList<>();
         for (int i = 0; i < rankedRaw.length; i++)
         {
