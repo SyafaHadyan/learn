@@ -12,8 +12,8 @@ public class Day7SpearmansRankCorrelationCoefficient
         double[] secondSet = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
         input.close();
         double rankDifference = 0;
-        HashMap<Double,Integer> firstSetMap = new HashMap<Double,Integer>();
-        HashMap<Double,Integer> secondSetMap = new HashMap<Double,Integer>();
+        HashMap<Double,Integer> firstSetMap = new HashMap<>();
+        HashMap<Double,Integer> secondSetMap = new HashMap<>();
         for (int i = 0; i < dataLength; i++)
         {
             firstSetMap.put(firstSet[i],(i + 1));
