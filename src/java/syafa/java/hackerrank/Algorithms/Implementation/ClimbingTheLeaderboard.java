@@ -85,15 +85,17 @@ public class ClimbingTheLeaderboard
                 continue;
             }
             ArrayList<Integer> rankedNoDuplicateTemp = new ArrayList<>();
-            rankedNoDuplicate.addAll(rankedNoDuplicate);
+            rankedNoDuplicateTemp.addAll(rankedNoDuplicate);
             rankedNoDuplicateTemp.add(playerScore[i]);
-            for (int j = playerScore.length - 1; j >= 0; j--)
+            Collections.sort(rankedNoDuplicateTemp);
+            Collections.reverse(rankedNoDuplicateTemp);
+            for (int j = rankedNoDuplicateTemp.size() - 1; j >= 0; j--)
             {
                 if (rankedNoDuplicateTemp.contains(playerScore[j]))
                 {
                     System.out.print("Debug j ");
                     System.out.println(j);
-                    continue;
+                    break;
                 }
             }
         }
