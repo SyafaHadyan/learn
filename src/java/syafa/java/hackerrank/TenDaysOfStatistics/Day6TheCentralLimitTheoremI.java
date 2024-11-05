@@ -27,5 +27,9 @@ public class Day6TheCentralLimitTheoremI
         double meanWeight = Double.parseDouble(input.nextLine());
         double standardDeviation = Double.parseDouble(input.nextLine());
         input.close();
+        double std = Math.sqrt(amountOfBox) * standardDeviation;
+        double m = amountOfBox * meanWeight;
+        double result = (1 + erf((elevatorMaximumWeight - m) / (std * Math.sqrt(2.0)))) / 2.0;
+        System.out.printf("%.4f",result);
     }
 }
