@@ -62,8 +62,11 @@ public class N01MethodVoid
         volume = panjang * lebar * tinggi;
         System.out.println("Volume balok : " + volume);
     }
-
 }
 ```
 
 ubah `void volBalok()` menjadi `private static void volBalok()`
+
+### Apa perbedaan dari kedua method void pada program di atas? Jelaskan
+
+//

@@ -55,5 +55,4 @@ public class N01MethodVoid
         volume = panjang * lebar * tinggi;
         System.out.println("Volume balok : " + volume);
     }
-
 }
