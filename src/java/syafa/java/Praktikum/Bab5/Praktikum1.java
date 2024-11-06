@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Praktikum1
 {
-    static int MAX_PRIME_NUMBER = 100;
+    static final int MAX_PRIME_NUMBER = 100;
     public static String checkPrime(int number)
     {
         if (number <= 1)
