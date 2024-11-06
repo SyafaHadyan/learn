@@ -5,13 +5,20 @@ public class Praktikum1
 {
     public static String checkPrime(int number)
     {
+        for (int i = 2; i < number; i++)
+        {
+            if (number % i == 0)
+            {
+                return "Bukan prima";
+            }
+        }
         return "Prima";
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int number = Integer.parseInt(input.nextLine());
-        System.out.printf("%d%s",number,"a");
+        System.out.printf("%d%c%s",(number),' ',checkPrime(number));
         input.close();
     }
 }
