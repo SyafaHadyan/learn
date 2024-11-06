@@ -30,6 +30,7 @@ public class N05MethodVoid
                     propertiSegitiga();
                     break;
                 case 5:
+                    kelilingLuasSegitigaSembarang();
                     break;
             }
         }
@@ -72,5 +73,17 @@ public class N05MethodVoid
         System.out.printf("%-14s%-2c%.2f\n","Luas segitiga",':',((alas * tinggi) / 2d));
         System.out.printf("%-18s%-2c%.2f\n","Keliling segitiga",':',(alas + tinggi + (Math.sqrt((Math.pow(alas,2)) + Math.pow(tinggi,2)))));
         System.out.printf("%-21s%-2c%.2f\n","Sisi miring segitiga",':',(Math.sqrt((Math.pow(alas,2)) + Math.pow(tinggi,2))));
+    }
+    private static void kelilingLuasSegitigaSembarang()
+    {
+        double alas = 0d;
+        double tinggi = 0d;
+        double sisiMiring = 0d;
+        System.out.print("Masukkan nilai alas: ");
+        alas = Double.parseDouble(in.nextLine());
+        System.out.print("Masukkan nilai tinggi");
+        tinggi = Double.parseDouble(in.nextLine());
+        System.out.print("Masukkan nilai sisi miring");
+        sisiMiring = Double.parseDouble(in.nextLine());
     }
 }
