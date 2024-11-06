@@ -12,12 +12,20 @@ public class Praktikum0
         "Menghitung Kombinasi",
         "Keluar"
     };
+    public static int permutation(double n,double r)
+    {
+        return 0;
+    }
+    public static int combination(int n,int r)
+    {
+        return 0;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        double n = 0d;
-        double r = 0d;
+        int n = 0;
+        int r = 0;
         while (menuChoose != 3)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -30,16 +38,16 @@ public class Praktikum0
             if (menuChoose == 1)
             {
                 System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                n = Double.parseDouble(input.nextLine());
+                n = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                r = Double.parseDouble(input.nextLine());
+                r = Integer.parseInt(input.nextLine());
             }
             else if (menuChoose == 2)
             {
                 System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                n = Double.parseDouble(input.nextLine());
+                n = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                r = Double.parseDouble(input.nextLine());
+                r = Integer.parseInt(input.nextLine());
             }
             else if (menuChoose == 3)
             {
