@@ -37,7 +37,7 @@ public class Praktikum0
             System.out.println(WELCOME_MESSAGE);
             for (int i = 0; i < OPTION.length; i++)
             {
-                System.out.println((i + 1) + "." + " " + OPTION[i]);
+                System.out.printf("%d%-2s%s\n",(i + 1),'.',OPTION[i]);
             }
             System.out.printf("%-22s%-2c","Masukkan pilihan anda",':');
             menuChoose = Integer.parseInt(input.nextLine());
