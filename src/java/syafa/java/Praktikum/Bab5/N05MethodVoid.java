@@ -29,12 +29,12 @@ public class N05MethodVoid
                 case 3:
                     propertiSegitiga();
                     break;
-                case 5:
+                case 4:
                     kelilingLuasSegitigaSembarang();
                     break;
             }
         }
-        while (pilih != 6);
+        while (pilih != 5);
         in.close();
     }
     private static void volPrismaSegitiga()
