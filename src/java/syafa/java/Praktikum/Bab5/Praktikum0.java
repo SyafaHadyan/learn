@@ -5,7 +5,6 @@ import java.util.*;
 public class Praktikum0
 {
     static final String WELCOME_MESSAGE = "Program Penghitung Kombinasi dan Permutasi";
-    static final String PROMPT = "Masukkan nilai";
     static final String[] OPTION =
     {
         "Menghitung Permutasi",
