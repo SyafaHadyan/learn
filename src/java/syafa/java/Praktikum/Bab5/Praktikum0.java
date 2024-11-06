@@ -14,16 +14,15 @@ public class Praktikum0
     };
     public static int permutation(int[] number)
     {
-        int[] numeratorDenominator = {1,1};
         number[1] = number[0] - number[1];
-        for (int i = 0; i < number.length; i++)
+        for (int i = 0; i < number.length / 2; i++)
         {
             for (int j = number[i]; j > 0; j--)
             {
-                numeratorDenominator[i] *= j;
+                number[i + 2] *= j;
             }
         }
-        return numeratorDenominator[0] / numeratorDenominator[1];
+        return number[2] / number[3];
     }
     public static int combination(int n,int r)
     {
@@ -50,7 +49,7 @@ public class Praktikum0
                 n = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
                 r = Integer.parseInt(input.nextLine());
-                menuChoose = permutation(new int[]{n,r});
+                menuChoose = permutation(new int[]{n,r,1,1});
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
