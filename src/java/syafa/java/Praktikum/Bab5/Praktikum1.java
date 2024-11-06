@@ -5,6 +5,10 @@ public class Praktikum1
 {
     public static String checkPrime(int number)
     {
+        if (number <= 1)
+        {
+            return "Bukan prima";
+        }
         for (int i = 2; i < number; i++)
         {
             if (number % i == 0)
