@@ -16,7 +16,7 @@ public class N04MethodVoid
             System.out.println("3. Luas, keliling, dan sisi miring segitiga (siku-siku)");
             System.out.println("4. Keluar");
             System.out.print("Masukkan Pilihan Anda : ");
-            pilih = in.nextInt();
+            pilih = Integer.parseInt(in.nextLine());
             switch (pilih)
             {
                 case 1:
@@ -37,12 +37,12 @@ public class N04MethodVoid
     {
         float alas, tinggiSegitiga, luas, tinggiPrisma, volume;
         System.out.print("Masukkan nilai panjang alas :");
-        alas = in.nextFloat();
+        alas = Float.parseFloat(in.nextLine());
         System.out.print("Masukkan nilai tinggi segitiga :");
-        tinggiSegitiga = in.nextFloat();
+        tinggiSegitiga = Float.parseFloat(in.nextLine());
         luas = (alas * tinggiSegitiga) / 2;
         System.out.print("Masukkan nilai tinggi prisma :");
-        tinggiPrisma = in.nextFloat();
+        tinggiPrisma = Float.parseFloat(in.nextLine());
         volume = (luas * tinggiPrisma);
         System.out.println("Volume Prisma Segitiga :" + volume);
     }
@@ -50,11 +50,11 @@ public class N04MethodVoid
     {
         float panjang, lebar, tinggi, volume;
         System.out.print("Masukkan panjang balok : ");
-        panjang = in.nextFloat();
+        panjang = Float.parseFloat(in.nextLine());
         System.out.print("Masukkan lebar balok : ");
-        lebar = in.nextFloat();
+        lebar = Float.parseFloat(in.nextLine());
         System.out.print("Masukkan tinggi balok : ");
-        tinggi = in.nextFloat();
+        tinggi = Float.parseFloat(in.nextLine());
         volume = panjang * lebar * tinggi;
         System.out.println("Volume balok : " + volume);
     }
