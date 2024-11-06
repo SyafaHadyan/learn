@@ -15,7 +15,11 @@ public class NonDivisibleSubset
         {
             for (int j = 1 + i; j < config[0]; j++)
             {
-                //
+                if (data[i] + data[j] % config[1] != 0)
+                {
+                    nonDivisibleSet.putIfAbsent(data[i],true);
+                    nonDivisibleSet.putIfAbsent(data[j],true);
+                }
             }
         }
     }
