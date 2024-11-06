@@ -81,9 +81,9 @@ public class N05MethodVoid
         double sisiMiring = 0d;
         System.out.print("Masukkan nilai alas: ");
         alas = Double.parseDouble(in.nextLine());
-        System.out.print("Masukkan nilai tinggi");
+        System.out.print("Masukkan nilai tinggi: ");
         tinggi = Double.parseDouble(in.nextLine());
-        System.out.print("Masukkan nilai sisi miring");
+        System.out.print("Masukkan nilai sisi miring: ");
         sisiMiring = Double.parseDouble(in.nextLine());
         System.out.printf("%-14s%-2c%.2f\n","Luas segitiga",':',((alas * tinggi) / 2d));
         System.out.printf("%-18s%-2c%.2f\n","Keliling segitiga",':',(alas + tinggi + sisiMiring));
