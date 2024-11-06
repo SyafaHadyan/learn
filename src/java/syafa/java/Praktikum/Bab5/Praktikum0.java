@@ -83,7 +83,7 @@ public class Praktikum0
                 result[0] = combination(nr);
                 System.out.printf
                 (
-                    "%12c\n%-4s%-2c%-12s%-2c%.0f\n%17s\n%-32s%-2c%.0f\n\n",
+                    "%12c\n%-4s%-2c%-12s%-2c%.0f\n%17s\n%-31s%-2c%.0f\n\n",
                     'n',
                     "nCr",'=',"-----------",'=',result[0],
                     "(n-r)! x r!",
