@@ -332,7 +332,7 @@ public class N07MethodReturnValue
     }
     public static String showData(String nim, String nama, String jurusan, String umur)
     {
-        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : " + (2024 - Integer.parseInt(umur.substring(umur.length() - 4,umur.length())) < 20 ? "Teen" : "Adult");
+        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : " + (2024 /* change in 2025 */ - Integer.parseInt(umur.substring(umur.length() - 4,umur.length())) < 20 ? "Teen" : "Adult");
         return show;
     }
 }
