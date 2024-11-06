@@ -26,7 +26,6 @@ public class Praktikum0
             {
                 number[i + 2] *= j;
             }
-            System.out.println("Debug");
         }
         return number[2] / number[3];
     }
