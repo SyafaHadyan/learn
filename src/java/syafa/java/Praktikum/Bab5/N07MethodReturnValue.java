@@ -15,7 +15,7 @@ public class N07MethodReturnValue
         nama1 = in.nextLine();
         System.out.print("Masukkan Jurusan Mahasiswa 1 : ");
         jur1 = in.nextLine();
-        System.out.print("Masukkan Umur Mahasiswa 1 : ");
+        System.out.print("Masukkan Tempat, Tanggal Lahir Mahasiswa 1 : ");
         umur1 = in.nextLine();
         System.out.print("Masukkan NIM Mahasiswa 2 : ");
         nim2 = in.nextLine();
@@ -23,7 +23,7 @@ public class N07MethodReturnValue
         nama2 = in.nextLine();
         System.out.print("Masukkan Jurusan Mahasiswa 2 : ");
         jur2 = in.nextLine();
-        System.out.print("Masukkan Umur Mahasiswa 2 : ");
+        System.out.print("Masukkan Tempat, Tanggal Lahir Mahasiswa 2 : ");
         umur2 = in.nextLine();
         in.close();
         System.out.println("Data Mahasiswa : ");
@@ -32,7 +32,7 @@ public class N07MethodReturnValue
     }
     public static String showData(String nim, String nama, String jurusan, String umur)
     {
-        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : " + (Integer.parseInt(umur) < 20 ? "Teen" : "Adult");
+        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : " + (2024 - Integer.parseInt(umur.substring(umur.length() - 4,umur.length())) < 20 ? "Teen" : "Adult");
         return show;
     }
 }
