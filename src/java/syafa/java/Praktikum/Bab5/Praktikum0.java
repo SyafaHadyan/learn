@@ -31,19 +31,20 @@ public class Praktikum0
     }
     public static double combination(double[] number)
     {
-        double[] result = permutation(number);
-        number[3] = 1;
-        for (double i = number[1]; i > 0; i--)
+        number[2] = number[1];
+        number[4] = 1;
+        for (double i = number[2]; i > 0; i--)
         {
-            number[3] *= i;
+            number[4] *= i;
         }
-        return result[0] / (result[1] * number[3]);
+        double[] result = permutation(number);
+        return result[0] / (result[1] * number[4]);
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        double[] nr = {0,0,1,1};
+        double[] nr = {0,0,1,1,1};
         double[] result = new double[2];
         while (true)
         {
@@ -78,8 +79,8 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = Double.parseDouble(input.nextLine());
                 }
-                //nr[2],nr[3] = combination(nr);
-                System.out.println(nr[4]);
+                result[0] = combination(nr);
+                System.out.println(result[0]);
             }
             else if (menuChoose == 3)
             {
