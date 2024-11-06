@@ -27,12 +27,12 @@ public class N07MethodReturnValue
         umur2 = in.nextLine();
         in.close();
         System.out.println("Data Mahasiswa : ");
-        System.out.println(showData(nim1, nama1, jur1));
-        System.out.print(showData(nim2, nama2, jur2));
+        System.out.println(showData(nim1, nama1, jur1, umur1));
+        System.out.print(showData(nim2, nama2, jur2, umur2));
     }
     public static String showData(String nim, String nama, String jurusan, String umur)
     {
-        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : ";
+        String show = "\nnim : " + nim + "\nnama : " + nama + "\nJurusan : " + jurusan + "\nUmur : " + (Integer.parseInt(umur) < 20 ? "Teen" : "Adult");
         return show;
     }
 }
