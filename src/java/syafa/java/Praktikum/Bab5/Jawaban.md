@@ -344,7 +344,7 @@ public class N07MethodReturnValue
 
 ### 9. Jelaskan perbedaan penggunaan method void dengan return value
 
-//
+`method` `void` tidak `return` value apa pun, sedangkan `method` yang `return` `value` akan mengembalikan hasil dari apa saja yang dilakukan di dalam `method` yang `return` `value`. `method` yang `return` `value` dan `void` keduanya bisa digunakan tergantung dari keperluan program. Contoh, `method` `void` `defaultExit()` yang isinya adalah print terima kasih telah menggunakan program ... kemudian `System.exit(0)` untuk keluar dari program. Contoh untuk `method` `return` `value` adalah di kode Praktikum yang pertama, di kode permutasi, di situ, `method` `permutation()` akan return `array` `double` nilai dari pembilang dan penyebut. Karena kita juga perlu untuk menghitung nilai dari kombinasi yang ada di `method` `combination()` dan yang membedakan perhitungan permutasi dan kombinasi adalah di bagian pembaginya, kita tidak perlu lagi menghitung ulang permutasi dari awal lagi, tetapi, kita tinggal memanggil saja `method` dari permutasi yang kemudian nilai dari penyebutnya kita kalikan dengan faktorial dari r kemudian kita `return` nilai dari perhitungan itu tanpa perlu membuat kode yang sama berulang kali yang artinya, jika ada kesalahan di kode permutasi, kita tinggal memperbaiki di satu tempat saja tanpa perlu meng copy dan menaruhnya di tempat kalkulasi kombinasi.
 
 ## Method Return Value Berparameter Array
 
