@@ -34,7 +34,8 @@ public class Praktikum1
             }
             if (isPrime)
             {
-                System.out.println(i);
+                System.out.print("\n");
+                System.out.print(i);
             }
         }
     }
@@ -45,7 +46,7 @@ public class Praktikum1
         int number = Integer.parseInt(input.nextLine());
         input.close();
         System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
-        System.out.println("Bilangan prima hingga" + " " + MAX_PRIME_NUMBER);
+        System.out.print("Bilangan prima hingga" + " " + MAX_PRIME_NUMBER);
         primeToN();
     }
 }
