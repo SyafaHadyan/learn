@@ -24,6 +24,7 @@ public class SherlockAndArray
             System.out.println("NO");
         }
     }
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
