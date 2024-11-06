@@ -21,8 +21,9 @@ public class Praktikum1
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        System.out.printf("%-15s%-2c","Masukkan nomor",':');
         int number = Integer.parseInt(input.nextLine());
-        System.out.printf("%d%c%s",(number),' ',checkPrime(number));
+        System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
         input.close();
     }
 }
