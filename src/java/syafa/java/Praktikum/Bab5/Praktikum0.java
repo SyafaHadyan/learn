@@ -20,7 +20,7 @@ public class Praktikum0
         for (int i = 0; i < number.length; i++)
         {
             numeratorDenuminator[i] = 1;
-            for (int j = number[0]; j > 0; j--)
+            for (int j = number[i]; j > 0; j--)
             {
                 numeratorDenuminator[i] *= j;
             }
