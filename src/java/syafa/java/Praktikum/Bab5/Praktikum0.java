@@ -63,13 +63,14 @@ public class Praktikum0
                     nr[i] = Double.parseDouble(input.nextLine());
                 }
                 result = permutation(nr);
+                nr[4] = result[0] / result[1];
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%.0f\n%12s\n%-31s%-2c%.0f\n\n",
                     'n',
-                    "nPr",'=',"------",'=',result[0] / result[1],
+                    "nPr",'=',"------",'=',nr[4],
                     "(n-r)!",
-                    "Maka Hasil Permutasinya adalah",':',result[0] / result[1]
+                    "Maka Hasil Permutasinya adalah",':',nr[4]
                 );
             }
             else if (menuChoose == 2)
