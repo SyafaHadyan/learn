@@ -16,10 +16,10 @@ public class Praktikum0
         'n',
         'r'
     };
-    public static double permutation(double[] number)
+    public static double[] permutation(double[] number)
     {
         number[1] = number[0] - number[1];
-        for (int i = 0; i < number.length / 2; i++)
+        for (int i = 0; i < 2; i++)
         {
             number[i + 2] = 1;
             for (double j = number[i]; j > 0; j--)
@@ -27,23 +27,24 @@ public class Praktikum0
                 number[i + 2] *= j;
             }
         }
-        return number[2] / number[3];
+        return new double[]{number[2],number[3]};
     }
-    public static double combination(double[] number)
+    public static double[] combination(double[] number)
     {
+        //number[2] = permutation(number);
         number[3] = 1;
         for (double i = number[1]; i > 0; i--)
         {
             number[3] *= i;
         }
-        number[2] = permutation(number);
-        return number[2] * (1 / number[3]);
+        return new double[]{number[2],number[3]};
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        double[] nr = {0,0,1,1,0};
+        double[] nr = {0,0,1,1};
+        double[] result = new double[2];
         while (true)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -60,14 +61,14 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = Double.parseDouble(input.nextLine());
                 }
-                nr[4] = permutation(nr);
+                result = permutation(nr);
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%.0f\n%12s\n%-31s%-2c%.0f\n\n",
                     'n',
-                    "nPr",'=',"------",'=',nr[4],
+                    "nPr",'=',"------",'=',result[0] / result[1],
                     "(n-r)!",
-                    "Maka Hasil Permutasinya adalah",':',nr[4]
+                    "Maka Hasil Permutasinya adalah",':',result[0] / result[1]
                 );
             }
             else if (menuChoose == 2)
@@ -77,7 +78,8 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = Double.parseDouble(input.nextLine());
                 }
-                nr[4] = permutation(nr);
+                //nr[2],nr[3] = combination(nr);
+                System.out.println(nr[4]);
             }
             else if (menuChoose == 3)
             {
