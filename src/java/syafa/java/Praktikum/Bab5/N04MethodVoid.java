@@ -32,7 +32,6 @@ public class N04MethodVoid
         while (pilih != 4);
         in.close();
     }
-
     private static void volPrismaSegitiga()
     {
         float alas, tinggiSegitiga, luas, tinggiPrisma, volume;
@@ -46,7 +45,6 @@ public class N04MethodVoid
         volume = (luas * tinggiPrisma);
         System.out.println("Volume Prisma Segitiga :" + volume);
     }
-
     private static void volBalok()
     {
         float panjang, lebar, tinggi, volume;
