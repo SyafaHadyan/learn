@@ -14,7 +14,6 @@ public class Praktikum0
     };
     public static int permutation(int[] number)
     {
-        //int result = 1;
         int[] numeratorDenominator = new int[2];
         number[1] = number[0] - number[1];
         for (int i = 0; i < number.length; i++)
