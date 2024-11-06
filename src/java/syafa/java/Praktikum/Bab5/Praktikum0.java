@@ -12,9 +12,14 @@ public class Praktikum0
         "Menghitung Kombinasi",
         "Keluar"
     };
-    public static int permutation(int n,int r)
+    public static int permutation(int[] number)
     {
-        return 0;
+        int result = 1;
+        for (int i = 0; i < 2; i++)
+        {
+            
+        }
+        return result;
     }
     public static int combination(int n,int r)
     {
@@ -41,7 +46,7 @@ public class Praktikum0
                 n = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
                 r = Integer.parseInt(input.nextLine());
-                menuChoose = permutation(n,r);
+                menuChoose = permutation(new int[]{n,r});
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
