@@ -76,6 +76,10 @@ Kedua `method` `void` di atas sama-sama berfungsi untuk menghitung tanpa `return
 
 buat variabel `float` `alas`, `tinggiSegitiga`, `luas`, `tinggiPrisma`, dan `volume` yang kemudian mengambil input dari user untik dimasukkan di `alas` dan `tinggiSegitiga` yang kemudian langsung hitung nilai `luas` dengan cara `(alas * tinggiSegitiga) / 2` kemudian minta user untuk memasukkan nilai `tinggiPrisma` kemudian langsung kalkulasi `volume` dengan `(luas * tinggiPrisma)` kemudian print nilai dari `volume`.
 
+#### `volBalok()`
+
+Buat variabel `float` `panjang`, `lebar`, `tinggi`, dan `volume` yang kemudian akan diberi nilai dari input dari user, kemudian kalulasi nilai `volume` dengan mengalikan `panjang`, `lebar`, dan `tinggi` kemudian print nilai `volume`.
+
 ### 4. Gantilah method void volBalok menjadi method yang menghitung luas, keliling dan sisi miring segitiga siku-siku dengan output 2 angka dibelakang koma
 
 ```java
