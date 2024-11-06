@@ -14,11 +14,10 @@ public class Praktikum0
     };
     public static int permutation(int[] number)
     {
-        int[] numeratorDenominator = new int[2];
+        int[] numeratorDenominator = {1,1};
         number[1] = number[0] - number[1];
         for (int i = 0; i < number.length; i++)
         {
-            numeratorDenominator[i] = 1;
             for (int j = number[i]; j > 0; j--)
             {
                 numeratorDenominator[i] *= j;
