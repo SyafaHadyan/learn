@@ -31,8 +31,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        int n = 0;
-        int r = 0;
+        int[] nr = {0,0,1,1};
         while (true)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -45,10 +44,10 @@ public class Praktikum0
             if (menuChoose == 1)
             {
                 System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                n = Integer.parseInt(input.nextLine());
+                nr[0] = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                r = Integer.parseInt(input.nextLine());
-                menuChoose = permutation(new int[]{n,r,1,1});
+                nr[1] = Integer.parseInt(input.nextLine());
+                menuChoose = permutation(nr);
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
@@ -61,9 +60,9 @@ public class Praktikum0
             else if (menuChoose == 2)
             {
                 System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                n = Integer.parseInt(input.nextLine());
+                nr[0] = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                r = Integer.parseInt(input.nextLine());
+                nr[1] = Integer.parseInt(input.nextLine());
             }
             else if (menuChoose == 3)
             {
