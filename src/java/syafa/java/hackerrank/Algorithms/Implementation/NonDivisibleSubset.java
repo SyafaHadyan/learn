@@ -34,17 +34,13 @@ public class NonDivisibleSubset
                 }
                 else if ((data[i] + data[j]) % config[1] == 0)
                 {
-                    System.out.println(nonDivisibleSet);
                     if (nonDivisibleSet.get(data[i]) != null && nonDivisibleSet.get(data[i]) == data[j])
                     {
                         counter--;
                     }
-                    System.out.println(nonDivisibleSet);
-                    System.out.println("debug");
                 }
             }
         }
-        System.out.println(nonDivisibleSet);
         System.out.println(counter);
     }
 }
