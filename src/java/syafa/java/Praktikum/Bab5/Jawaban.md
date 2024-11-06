@@ -336,3 +336,29 @@ Kode input ke variabel `nimN`, `NamaN`, dan `jurN` yang kemudian diberikan ke `p
 ### 18. Jelaskan perbedaan penggunaan method return value dengan method rekursif
 
 //
+
+## Praktikum
+
+### Praktikum 1 (Permutasi dan Kombinasi)
+
+#### Kode Praktikum 1
+
+```java
+
+```
+
+#### Penjelasan Kode Praktikum 1
+
+//
+
+### Praktikum 2 (Bilangan Prima)
+
+#### Kode Praktikum 2
+
+```java
+
+```
+
+#### Penjelasan Kode Praktikum 2
+
+//
