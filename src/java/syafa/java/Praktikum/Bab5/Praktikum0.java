@@ -21,10 +21,12 @@ public class Praktikum0
         number[1] = number[0] - number[1];
         for (int i = 0; i < number.length / 2; i++)
         {
+            number[i + 2] = 1;
             for (int j = number[i]; j > 0; j--)
             {
                 number[i + 2] *= j;
             }
+            System.out.println("Debug");
         }
         return number[2] / number[3];
     }
@@ -36,7 +38,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        int[] nr = {0,0,1,1};
+        int[] nr = {0,0,1,1,0};
         while (true)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -53,14 +55,14 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = Integer.parseInt(input.nextLine());
                 }
-                menuChoose = permutation(nr);
+                nr[4] = permutation(nr);
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
                     'n',
-                    "nPr",'=',"------",'=',menuChoose,
+                    "nPr",'=',"------",'=',nr[4],
                     "(n-r)!",
-                    "Maka Hasil Permutasinya adalah",':',menuChoose
+                    "Maka Hasil Permutasinya adalah",':',nr[4]
                 );
             }
             else if (menuChoose == 2)
