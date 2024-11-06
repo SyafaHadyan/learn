@@ -26,7 +26,6 @@ public class N06MethodReturnValue
         System.out.println(showData(nim1, nama1, jur1));
         System.out.println(showData(nim2, nama2, jur2));
     }
-
     public static String showData(String nim, String nama, String jurusan)
     {
         String show = "\nnim : \n" + nim + "\nnama : \n" + nama + "\nJurusan : \n" + jurusan;
