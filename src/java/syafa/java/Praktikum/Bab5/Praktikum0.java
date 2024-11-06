@@ -29,15 +29,15 @@ public class Praktikum0
         }
         return new double[]{number[2],number[3]};
     }
-    public static double[] combination(double[] number)
+    public static double combination(double[] number)
     {
-        //number[2] = permutation(number);
+        double[] result = permutation(number);
         number[3] = 1;
         for (double i = number[1]; i > 0; i--)
         {
             number[3] *= i;
         }
-        return new double[]{number[2],number[3]};
+        return result[0] / (result[1] * number[3]);
     }
     public static void main(String[] args)
     {
