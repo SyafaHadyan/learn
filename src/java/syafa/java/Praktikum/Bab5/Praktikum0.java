@@ -44,10 +44,11 @@ public class Praktikum0
                 menuChoose = permutation(n,r);
                 System.out.printf
                 (
-                    "%c\n%s%d\n%s",
+                    "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
                     'n',
                     "nPr",'=',"------",'=',menuChoose,
-                    "(n-r)!"
+                    "(n-r)!",
+                    "Maka Hasil Permutasinya adalah",':',menuChoose
                 );
             }
             else if (menuChoose == 2)
