@@ -16,13 +16,13 @@ public class Praktikum0
         'n',
         'r'
     };
-    public static int permutation(int[] number)
+    public static double permutation(double[] number)
     {
         number[1] = number[0] - number[1];
         for (int i = 0; i < number.length / 2; i++)
         {
             number[i + 2] = 1;
-            for (int j = number[i]; j > 0; j--)
+            for (double j = number[i]; j > 0; j--)
             {
                 number[i + 2] *= j;
             }
@@ -38,7 +38,7 @@ public class Praktikum0
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        int[] nr = {0,0,1,1,0};
+        double[] nr = {0,0,1,1,0};
         while (true)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -53,12 +53,12 @@ public class Praktikum0
                 for (int i = 0; i < VALUE.length; i++)
                 {
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
-                    nr[i] = Integer.parseInt(input.nextLine());
+                    nr[i] = Double.parseDouble(input.nextLine());
                 }
                 nr[4] = permutation(nr);
                 System.out.printf
                 (
-                    "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
+                    "%9c\n%-4s%-2c%-7s%-2c%.0f\n%12s\n%-31s%-2c%.0f\n\n",
                     'n',
                     "nPr",'=',"------",'=',nr[4],
                     "(n-r)!",
@@ -67,10 +67,12 @@ public class Praktikum0
             }
             else if (menuChoose == 2)
             {
-                System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                nr[0] = Integer.parseInt(input.nextLine());
-                System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                nr[1] = Integer.parseInt(input.nextLine());
+                for (int i = 0; i < VALUE.length; i++)
+                {
+                    System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
+                    nr[i] = Double.parseDouble(input.nextLine());
+                }
+                nr[4] = permutation(nr);
             }
             else if (menuChoose == 3)
             {
