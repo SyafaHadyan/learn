@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Praktikum1
 {
+    static int MAX_PRIME_NUMBER = 100;
     public static String checkPrime(int number)
     {
         if (number <= 1)
@@ -20,7 +21,8 @@ public class Praktikum1
     }
     public static void primeToN()
     {
-        for (int i = 2; i < 100; i++)
+        int counter = 1;
+        for (int i = 2; counter <= MAX_PRIME_NUMBER; i++)
         {
             boolean isPrime = true;
             for (int j = 2; j < i; j++)
@@ -33,6 +35,7 @@ public class Praktikum1
             }
             if (isPrime)
             {
+                counter++;
                 System.out.println(i);
             }
         }
@@ -44,6 +47,7 @@ public class Praktikum1
         int number = Integer.parseInt(input.nextLine());
         input.close();
         System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
+        System.out.println("Bilangan prima hingga" + " " + MAX_PRIME_NUMBER);
         primeToN();
     }
 }
