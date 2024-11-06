@@ -21,8 +21,7 @@ public class Praktikum1
     }
     public static void primeToN()
     {
-        int counter = 1;
-        for (int i = 2; counter <= MAX_PRIME_NUMBER; i++)
+        for (int i = 2; i <= MAX_PRIME_NUMBER; i++)
         {
             boolean isPrime = true;
             for (int j = 2; j < i; j++)
@@ -35,7 +34,6 @@ public class Praktikum1
             }
             if (isPrime)
             {
-                counter++;
                 System.out.println(i);
             }
         }
