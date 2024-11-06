@@ -11,6 +11,11 @@ public class Praktikum0
         "Menghitung Kombinasi",
         "Keluar"
     };
+    static final char[] VALUE =
+    {
+        'n',
+        'r'
+    };
     public static int permutation(int[] number)
     {
         number[1] = number[0] - number[1];
@@ -43,10 +48,11 @@ public class Praktikum0
             menuChoose = Integer.parseInt(input.nextLine());
             if (menuChoose == 1)
             {
-                System.out.printf("%-17s%-2c","Masukkan nilai n",':');
-                nr[0] = Integer.parseInt(input.nextLine());
-                System.out.printf("%-17s%-2c","Masukkan nilai r",':');
-                nr[1] = Integer.parseInt(input.nextLine());
+                for (int i = 0; i < VALUE.length; i++)
+                {
+                    System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
+                    nr[i] = Integer.parseInt(input.nextLine());
+                }
                 menuChoose = permutation(nr);
                 System.out.printf
                 (
