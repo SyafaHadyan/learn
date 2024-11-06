@@ -3,7 +3,6 @@ import java.util.*;
 
 public class Prak_retval
 {
-    
     @SuppressWarnings({"unused","resource"})
     public static void main(String[] args)
     {
