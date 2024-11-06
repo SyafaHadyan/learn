@@ -81,7 +81,14 @@ public class Praktikum0
                     nr[i] = Double.parseDouble(input.nextLine());
                 }
                 result[0] = combination(nr);
-                System.out.println(result[0]);
+                System.out.printf
+                (
+                    "%12c\n%-4s%-2c%-12s%-2c%.0f\n%17s\n%-32s%-2c%.0f\n\n",
+                    'n',
+                    "nCr",'=',"-----------",'=',result[0],
+                    "(n-r)! x r!",
+                    "Maka Hasil Kombinasinya adalah",':',result[0]
+                );
             }
             else if (menuChoose == 3)
             {
