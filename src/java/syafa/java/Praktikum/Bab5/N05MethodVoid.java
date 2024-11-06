@@ -14,7 +14,8 @@ public class N05MethodVoid
             System.out.println("1. Volume Prisma Segitiga");
             System.out.println("2. Volume Balok");
             System.out.println("3. Luas, keliling, dan sisi miring segitiga (siku-siku)");
-            System.out.println("4. Keluar");
+            System.out.println("4. Luas dan keliing segitiga sembarang");
+            System.out.println("5. Keluar");
             System.out.print("Masukkan Pilihan Anda : ");
             pilih = Integer.parseInt(in.nextLine());
             switch (pilih)
@@ -28,9 +29,11 @@ public class N05MethodVoid
                 case 3:
                     propertiSegitiga();
                     break;
+                case 5:
+                    break;
             }
         }
-        while (pilih != 4);
+        while (pilih != 6);
         in.close();
     }
     private static void volPrismaSegitiga()
