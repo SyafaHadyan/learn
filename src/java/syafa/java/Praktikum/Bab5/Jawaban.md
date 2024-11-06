@@ -64,7 +64,7 @@ public class N01MethodVoid
 }
 ```
 
-ubah `void volBalok()` menjadi `private static void volBalok()`
+ubah `void volBalok()` menjadi `private static void volBalok()`.
 
 ### 2. Apa perbedaan dari kedua method void pada program di atas? Jelaskan
 
@@ -291,7 +291,7 @@ public class N06MethodReturnValue
 
 ### 7. Jelaskan alur kerja program method return value tersebut
 
-//
+Kode input ke variabel `nimN`, `NamaN`, dan `jurN` yang kemudian diberikan ke `public static String showData();` kemudian buat `String` `show` yang berisi nim, nama, dan jurusan yang dipisah newline dan kemudian return `String` `show` yang kemudian di print di `main` `method` (di `main` `method` ada 2 kali pemanggilan (untuk data mahasiswa pertama dan yang kedua)).
 
 ### 8. Tambahkan masukan untuk menambahkan tempat tanggal lahir untuk menentukan umur. Apabila umur >20 berstatus “Adult” , umur < 20 berstatus “teen”
 
