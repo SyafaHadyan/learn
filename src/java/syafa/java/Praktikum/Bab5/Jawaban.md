@@ -14,7 +14,8 @@ public class N01MethodVoid
     public static void main(String[] args)
     {
         int pilih = 3;
-        do {
+        do
+        {
             System.out.println("Program Menghitung Sederhana ");
             System.out.println("Pilih salah satu :");
             System.out.println("1. Volume Prisma Segitiga");
