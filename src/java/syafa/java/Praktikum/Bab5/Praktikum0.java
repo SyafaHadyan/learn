@@ -17,7 +17,13 @@ public class Praktikum0
         int menuChoose = 0;
         while (menuChoose != 3)
         {
-            System.out.println();
+            System.out.println(WELCOME_MESSAGE);
+            for (int i = 0; i < OPTION.length; i++)
+            {
+                System.out.println((i + 1) + " " + OPTION[i] + " " + ":" + " ");
+            }
+            System.out.print("Masukkan pilihan anda" + ":" + " ");
+            menuChoose = Integer.parseInt(input.nextLine());
             if (menuChoose == 1)
             {
                 //
