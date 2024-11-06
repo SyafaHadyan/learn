@@ -14,12 +14,17 @@ public class Praktikum0
     };
     public static int permutation(int[] number)
     {
-        int result = 1;
-        for (int i = 0; i < 2; i++)
+        //int result = 1;
+        number[1] = number[0] - number[1];
+        for (int i = 0; i < number.length; i++)
         {
-            
+            number[i] = 1;
+            for (int j = number[0]; j > 0; j--)
+            {
+                number[i] *= j;
+            }
         }
-        return result;
+        return number[0] / number[1];
     }
     public static int combination(int n,int r)
     {
