@@ -68,7 +68,7 @@ ubah `void volBalok()` menjadi `private static void volBalok()`.
 
 ### 2. Apa perbedaan dari kedua method void pada program di atas? Jelaskan
 
-//
+Kedua `method` `void` di atas sama-sama berfungsi untuk menghitung tanpa `return` value. `volPrismaSegitiga()` digunakan untuk menghitung volume prisma segitiga dengan mengambil input dari user di dalam `method` ini. `volBalok()` sama alur jalan kodenya tapi variabel dan perhitungannya yang berbeda (untuk volume balok).
 
 ### 3. Jelaskan alur kerja program method void tersebut
 
