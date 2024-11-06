@@ -12,7 +12,7 @@ public class Praktikum0
         "Menghitung Kombinasi",
         "Keluar"
     };
-    public static int permutation(double n,double r)
+    public static int permutation(int n,int r)
     {
         return 0;
     }
@@ -26,7 +26,7 @@ public class Praktikum0
         int menuChoose = 0;
         int n = 0;
         int r = 0;
-        while (menuChoose != 3)
+        while (true)
         {
             System.out.println(WELCOME_MESSAGE);
             for (int i = 0; i < OPTION.length; i++)
@@ -41,6 +41,14 @@ public class Praktikum0
                 n = Integer.parseInt(input.nextLine());
                 System.out.printf("%-17s%-2c","Masukkan nilai r",':');
                 r = Integer.parseInt(input.nextLine());
+                menuChoose = permutation(n,r);
+                System.out.printf
+                (
+                    "%c\n%s%d\n%s",
+                    'n',
+                    "nPr",'=',"------",'=',menuChoose,
+                    "(n-r)!"
+                );
             }
             else if (menuChoose == 2)
             {
