@@ -15,16 +15,17 @@ public class Praktikum0
     public static int permutation(int[] number)
     {
         //int result = 1;
+        int[] numeratorDenuminator = new int[2];
         number[1] = number[0] - number[1];
         for (int i = 0; i < number.length; i++)
         {
-            number[i] = 1;
+            numeratorDenuminator[i] = 1;
             for (int j = number[0]; j > 0; j--)
             {
-                number[i] *= j;
+                numeratorDenuminator[i] *= j;
             }
         }
-        return number[0] / number[1];
+        return numeratorDenuminator[0] / numeratorDenuminator[1];
     }
     public static int combination(int n,int r)
     {
