@@ -66,6 +66,7 @@ public class N04MethodVoid
         alas = Double.parseDouble(in.nextLine());
         System.out.print("Masukkan nilai tinggi: ");
         tinggi = Double.parseDouble(in.nextLine());
-        System.out.printf("%-14s%-2c%.2f","Luas segitiga",':',((alas * tinggi) / 2d));
+        System.out.printf("%-14s%-2c%.2f\n","Luas segitiga",':',((alas * tinggi) / 2d));
+        System.out.printf("%-18s%-2c%.2f\n","Keliling segitiga",':',(alas + tinggi + (Math.sqrt((Math.pow(alas,2)) + Math.pow(tinggi,2)))));
     }
 }
