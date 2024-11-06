@@ -26,6 +26,7 @@ public class N04MethodVoid
                     volBalok();
                     break;
                 case 3:
+                    propertiSegitiga();
                     break;
             }
         }
@@ -56,5 +57,14 @@ public class N04MethodVoid
         tinggi = in.nextFloat();
         volume = panjang * lebar * tinggi;
         System.out.println("Volume balok : " + volume);
+    }
+    private static void propertiSegitiga()
+    {
+        double alas = 0d;
+        double tinggi = 0d;
+        System.out.print("Masukkan nilai alas: ");
+        alas = Double.parseDouble(in.nextLine());
+        System.out.print("Masukkan nilai tinggi: ");
+        tinggi = Double.parseDouble(in.nextLine());
     }
 }
