@@ -18,12 +18,32 @@ public class Praktikum1
         }
         return "Prima";
     }
+    public static void primeToN()
+    {
+        for (int i = 2; i < 100; i++)
+        {
+            boolean isPrime = true;
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime)
+            {
+                System.out.println(i);
+            }
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         System.out.printf("%-15s%-2c","Masukkan nomor",':');
         int number = Integer.parseInt(input.nextLine());
-        System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
         input.close();
+        System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
+        primeToN();
     }
 }
