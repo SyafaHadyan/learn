@@ -36,7 +36,10 @@ public class Praktikum0
             }
             else if (menuChoose == 2)
             {
-                //
+                System.out.printf("%-17s%-2c","Masukkan nilai n",':');
+                n = Double.parseDouble(input.nextLine());
+                System.out.printf("%-17s%-2c","Masukkan nilai r",':');
+                r = Double.parseDouble(input.nextLine());
             }
             else if (menuChoose == 3)
             {
