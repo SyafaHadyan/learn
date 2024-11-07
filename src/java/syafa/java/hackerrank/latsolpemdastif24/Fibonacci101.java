@@ -1,5 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
-import java.util.*;
+import java.util.Scanner;
 
 public class Fibonacci101
 {
@@ -14,7 +14,7 @@ public class Fibonacci101
         int firstNumber = 1;
         int secondNumber = 1;
         int currentNumber = 0;
-        for (int i = 0; i < n; i++)
+        for (int i = 3; i < n; i++)
         {
             currentNumber = firstNumber + secondNumber;
             firstNumber = secondNumber;
