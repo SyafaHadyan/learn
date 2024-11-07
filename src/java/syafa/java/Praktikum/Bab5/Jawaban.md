@@ -470,44 +470,31 @@ public class N16MethodRekursif
 package syafa.java.Praktikum.Bab5;
 import java.util.*;
 
-public class Praktikum1
+public class N17MethodRekursif
 {
-    static final int MAX_PRIME_NUMBER = 100;
-    public static String checkPrime(int number)
+    public static void fibonacci(int firstNumber,int secondNumber,int max,int currentCounter)
     {
-        if (number <= 1)
+        currentCounter++;
+        int currentNumber = firstNumber + secondNumber;
+        if (currentCounter != max)
         {
-            return "Bukan prima";
-        }
-        for (int i = 2; i < number; i++)
-        {
-            if (number % i == 0)
+            if (currentCounter == 1)
             {
-                return "Bukan prima";
+                System.out.println("0\n1\n1");
             }
-        }
-        return "Prima";
-    }
-    public static void primeToN()
-    {
-        for (int i = 2; i <= MAX_PRIME_NUMBER; i++)
-        {
-            if (checkPrime(i).equalsIgnoreCase("Prima"))
+            else
             {
-                System.out.print("\n");
-                System.out.print(i);
+                System.out.println(currentNumber);
             }
+            fibonacci(secondNumber,currentNumber,max,currentCounter);
         }
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.printf("%-15s%-2c","Masukkan nomor",':');
-        int number = Integer.parseInt(input.nextLine());
+        System.out.print("Masukkan batas bilangan fibonacci" + " : ");
+        fibonacci(0,1,Integer.parseInt(input.nextLine()),0);
         input.close();
-        System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
-        System.out.print("Bilangan prima hingga" + " " + MAX_PRIME_NUMBER);
-        primeToN();
     }
 }
 ```
@@ -681,16 +668,7 @@ public class Praktikum1
     {
         for (int i = 2; i <= MAX_PRIME_NUMBER; i++)
         {
-            boolean isPrime = true;
-            for (int j = 2; j < i; j++)
-            {
-                if (i % j == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime)
+            if (checkPrime(i).equalsIgnoreCase("Prima"))
             {
                 System.out.print("\n");
                 System.out.print(i);
