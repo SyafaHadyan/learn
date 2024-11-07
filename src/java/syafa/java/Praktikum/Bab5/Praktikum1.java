@@ -23,16 +23,7 @@ public class Praktikum1
     {
         for (int i = 2; i <= MAX_PRIME_NUMBER; i++)
         {
-            boolean isPrime = true;
-            for (int j = 2; j < i; j++)
-            {
-                if (i % j == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime)
+            if (checkPrime(i).equalsIgnoreCase("Prima"))
             {
                 System.out.print("\n");
                 System.out.print(i);
