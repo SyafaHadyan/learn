@@ -7,12 +7,16 @@ public class N17MethodRekursif
     {
         int firstNumber = 1;
         int secondNumber = 1;
-        int currentNumber = 0;
+        int currentNumber = 1;
+        System.out.println(firstNumber);
+        System.out.print(secondNumber);
         for (int i = 0; i < max; i++)
         {
             currentNumber = firstNumber + secondNumber;
             firstNumber = secondNumber;
             secondNumber = currentNumber;
+            System.out.print("\n");
+            System.out.print(currentNumber);
         }
     }
     public static void main(String[] args)
