@@ -470,31 +470,44 @@ public class N16MethodRekursif
 package syafa.java.Praktikum.Bab5;
 import java.util.*;
 
-public class N17MethodRekursif
+public class Praktikum1
 {
-    public static void fibonacci(int firstNumber,int secondNumber,int max,int currentCounter)
+    static final int MAX_PRIME_NUMBER = 100;
+    public static String checkPrime(int number)
     {
-        currentCounter++;
-        int currentNumber = firstNumber + secondNumber;
-        if (currentCounter != max)
+        if (number <= 1)
         {
-            if (currentCounter == 1)
+            return "Bukan prima";
+        }
+        for (int i = 2; i < number; i++)
+        {
+            if (number % i == 0)
             {
-                System.out.println("0\n1\n1");
+                return "Bukan prima";
             }
-            else
+        }
+        return "Prima";
+    }
+    public static void primeToN()
+    {
+        for (int i = 2; i <= MAX_PRIME_NUMBER; i++)
+        {
+            if (checkPrime(i).equalsIgnoreCase("Prima"))
             {
-                System.out.println(currentNumber);
+                System.out.print("\n");
+                System.out.print(i);
             }
-            fibonacci(secondNumber,currentNumber,max,currentCounter);
         }
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan batas bilangan fibonacci" + " : ");
-        fibonacci(0,1,Integer.parseInt(input.nextLine()),0);
+        System.out.printf("%-15s%-2c","Masukkan nomor",':');
+        int number = Integer.parseInt(input.nextLine());
         input.close();
+        System.out.printf("%d%c%s\n",(number),' ',checkPrime(number));
+        System.out.print("Bilangan prima hingga" + " " + MAX_PRIME_NUMBER);
+        primeToN();
     }
 }
 ```
