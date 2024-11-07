@@ -47,8 +47,8 @@ public class LaundryBebeks
         int itemQuantity3 = input.nextInt();
         input.nextLine();
         int laundryMinute = Integer.parseInt(input.nextLine());
-        int minuteFinish = laundryMinute % 60;
-        int hourFinish = startHour + (laundryMinute / 60);
+        int minuteFinish = (startMinute + laundryMinute) % 60;
+        int hourFinish = startHour + ((laundryMinute + minuteFinish) / 60);
         System.out.println(hourFinish + " " + minuteFinish);
         input.close();
     }
