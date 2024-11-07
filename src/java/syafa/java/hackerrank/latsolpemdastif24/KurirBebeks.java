@@ -9,32 +9,42 @@ public class KurirBebeks
         String deliveryOption = input.nextLine();
         int numberOfItems = Integer.parseInt(input.nextLine());
         int totalWeight = Integer.parseInt(input.nextLine());
+        input.close();
         if (numberOfItems <= 0 || totalWeight <= 0)
         {
             System.out.print("Pengiriman tidak dapat dilakukan.");
             System.exit(0);
         }
-        input.close();
+        int deliveryCost = 0;
         if (deliveryOption.equalsIgnoreCase("Ekonomi"))
         {
-            System.exit(0);
+            deliveryCost = 10000;
+            if (totalWeight <= 15)
+            {
+                deliveryCost += (totalWeight * 3000);
+            }
+            else if (totalWeight > 15)
+            {
+                totalWeight += (15 * 3000) + ((totalWeight - 15) * 4500);
+            }
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
         {
-            System.exit(0);
+            //
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
-            System.exit(0);
+            //
         }
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
-            System.exit(0);
+            //
         }
         else
         {
             System.out.print("Pengiriman tidak dapat dilakukan.");
             System.exit(0);
         }
+        System.out.print("Diperlukan biaya pengiriman sebesar" + " " + deliveryCost);
     }
 }
