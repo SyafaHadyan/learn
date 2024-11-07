@@ -350,7 +350,7 @@ public class N07MethodReturnValue
 
 ### 10. Jalankan program method return value berparameter array dan benahi jika menemukan kesalahan
 
-`method` `sort` untuk mengurutkan `array` `int` yang kemudian diurutkan dari yang terbesar hingga yang terkecil kemudian `return` `array` yang sudah diurutkan. Jika ingin mengurutkan dari yang terkecil hingga yang terbesar, ganti `if (acak[bil1] < acak[bil2])` menjadi `if (acak[bil1] > acak[bil2])` agar bilangan yang diurutkan dari yang terkecil hingga yang terbesar.
+`method` `sort` untuk mengurutkan `array` `int` yang kemudian diurutkan dari yang terbesar hingga yang terkecil kemudian `return` `array` yang sudah diurutkan. Jika ingin mengurutkan dari yang terkecil hingga yang terbesar, ganti `if (acak[bil1] < acak[bil2])` menjadi `if (acak[bil1] > acak[bil2])` agar bilangan yang diurutkan dari yang terkecil hingga yang terbesar dan di dalam kode, ada `import java.util.*;` yang tidak digunakan sama sekali.
 
 ### 11. Jelaskan alur kerja program method return value berparameter array tersebut
 
