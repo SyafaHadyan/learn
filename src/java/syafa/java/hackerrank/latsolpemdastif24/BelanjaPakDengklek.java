@@ -7,7 +7,7 @@ public class BelanjaPakDengklek
     {
         
         Scanner input = new Scanner(System.in);
-        input.nextLine();
+        String name = input.nextLine();
         double firstProduct = Double.parseDouble(input.nextLine());
         firstProduct *= Double.parseDouble(input.nextLine());
         double secondProduct = Double.parseDouble(input.nextLine());
@@ -18,7 +18,7 @@ public class BelanjaPakDengklek
         System.out.printf
         (
             "%s\n%s%-2c%1s%.2f\n%s%-2c%1s%.2f\n%s%-2c%1s%.2f\n%s%-2c%1s%.2f",
-            "Halo Pak Dengklek!",
+            ("Halo Pak " + name + "!"),
             "Total harga sebelum pajak",':',"Rp",(firstProduct + secondProduct + thirdProduct),
             "Jumlah pajak",':',"Rp",(0.1 * (firstProduct + secondProduct + thirdProduct)),
             "Jumlah diskon",':',"Rp",(0.05 * (firstProduct + secondProduct + thirdProduct)),
