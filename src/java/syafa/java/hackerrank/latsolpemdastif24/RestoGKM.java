@@ -26,7 +26,10 @@ public class RestoGKM
                 possibleRedeem[i]++;
             }
             counter += possibleRedeem[i];
-            redeemedType++;
+            if (possibleRedeem[i] > 0)
+            {
+                redeemedType++;
+            }
         }
         if (counter != 0)
         {
@@ -37,7 +40,7 @@ public class RestoGKM
                 if (possibleRedeem[i] != 0)
                 {
                     System.out.print(possibleRedeem[i] + " " + REDEEM_LIST[i]);
-                    if (i > 0 && i < possibleRedeem.length && redeemedType > 0)
+                    if (i > 0 && i < possibleRedeem.length && redeemedType > 1)
                     {
                         System.out.print(", ");
                     }
