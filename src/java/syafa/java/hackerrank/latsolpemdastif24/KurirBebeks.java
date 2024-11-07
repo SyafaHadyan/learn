@@ -3,6 +3,11 @@ import java.util.*;
 
 public class KurirBebeks
 {
+    public static void exit()
+    {
+        System.out.print("Pengiriman tidak dapat dilakukan.");
+        System.exit(0);
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -12,8 +17,7 @@ public class KurirBebeks
         input.close();
         if (totalItem <= 0 || totalWeight <= 0)
         {
-            System.out.print("Pengiriman tidak dapat dilakukan.");
-            System.exit(0);
+            exit();
         }
         int deliveryCost = 0;
         if (deliveryOption.equalsIgnoreCase("Ekonomi"))
@@ -50,7 +54,19 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
-            //
+            deliveryCost = 15000;
+            if (totalItem < 2)
+            {
+                exit();
+            }
+            if (totalWeight <= 10)
+            {
+                deliveryCost += (totalWeight * 9000);
+            }
+            else if (totalWeight > 10)
+            {
+                deliveryCost += ((10 * 5000) + (totalWeight - 10) + 11000);
+            }
         }
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
@@ -58,8 +74,7 @@ public class KurirBebeks
         }
         else
         {
-            System.out.print("Pengiriman tidak dapat dilakukan.");
-            System.exit(0);
+            exit();
         }
         System.out.print("Diperlukan biaya pengiriman sebesar" + " " + deliveryCost);
     }
