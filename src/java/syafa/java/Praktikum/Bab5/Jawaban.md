@@ -64,7 +64,7 @@ public class N01MethodVoid
 }
 ```
 
-ubah `void volBalok()` menjadi `private static void volBalok()`.
+Ubah `void volBalok()` menjadi `private static void volBalok()`.
 
 ### 2. Apa perbedaan dari kedua method void pada program di atas? Jelaskan
 
