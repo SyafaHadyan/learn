@@ -18,6 +18,11 @@ public class RerataArray
   
   	public static double hitungRerata(int[] arr)
     {
-    	return 0d;
+        double result = 0d;
+        for (int i = 0; i < arr.length; i++)
+        {
+            result += arr[i];
+        }
+    	return result / arr.length;
     }
 }
