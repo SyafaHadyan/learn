@@ -95,11 +95,15 @@ public class KurirBebeks
              * 
              * 
              */
-            deliveryCost += (totalWeight * 12000);
-            if (totalWeight / totalItem > 5)
+            if (totalWeight / totalItem <= 5)
             {
+                deliveryCost += (totalWeight * 12000);
+            }
+            else if (totalWeight / totalItem > 5)
+            {
+                deliveryCost += (5 * totalItem * 12000);
                 totalWeight -= (5 * totalItem);
-                deliveryCost += (totalWeight * 15000);
+                deliveryCost += (totalWeight * 3000);
             }
             if (totalItem > 3)
             {
