@@ -501,7 +501,7 @@ public class N17MethodRekursif
 
 ### 18. Jelaskan perbedaan penggunaan method return value dengan method rekursif
 
-//
+`method` `return` `value` bisa dipanggil sekali dan juga bisa dijadikan `rekursif` yang mana sama. Contoh method `faktorial()` yang jika dipanggil sekali akan `return` value dengan `for loop` di dalamnya bukan termasuk `method` `rekursif` karena tidak memanggil dirinya sendiri. Jika kita ubah `for` yang ada di dalam `faktorial()` dengan memanggil dirinya sendiri dengan -1, maka kita bisa memanggil itu sebagai `method` `rekursif`.
 
 ## Praktikum
 
