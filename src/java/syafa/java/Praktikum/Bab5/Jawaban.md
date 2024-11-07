@@ -428,7 +428,9 @@ public class N12MethodReturnValueBerparameterArray
 
 ### 14. Jalankan kelas Input dan benahi jika menemukan kesalahan
 
-//
+```txt
+Nilai dari 5! adalah 120
+```
 
 ### 15. Jelaskan alur kerja program method rekursif tersebut
 
