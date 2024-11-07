@@ -45,8 +45,8 @@ public class DesainerBusana
         input.close();
         System.out.printf
         (
-            "%s%.1f\n%s%.1f",
-            "Jumlah Kain: ",clothAmount,"Jumlah Pita: ",ribbonAmount
+            "%-12s%-2c%.1f\n%-12s%-2c%.1f",
+            "Jumlah Kain",':',clothAmount,"Jumlah Pita",':',ribbonAmount
         );
     }
 }
