@@ -33,16 +33,16 @@ public class RestoGKM
         }
         if (counter != 0)
         {
-            System.out.print("Hyde O'Brien mendapat ");
+            System.out.print("Hyde O'Brien mendapat");
             for (int i = 0; i < possibleRedeem.length; i++)
             {
                 //System.out.printf(" %d %s%s",possibleRedeem[i],REDEEM_LIST[i],(possibleRedeem.length - i != 1) ? "," : "");
                 if (possibleRedeem[i] != 0)
                 {
-                    System.out.print(possibleRedeem[i] + " " + REDEEM_LIST[i]);
-                    if (i > 0 && i < possibleRedeem.length && redeemedType > 1)
+                    System.out.print(" " + possibleRedeem[i] + " " + REDEEM_LIST[i]);
+                    if (i < possibleRedeem.length - 1 && redeemedType > 1)
                     {
-                        System.out.print(", ");
+                        System.out.print(",");
                     }
                 }
             }
