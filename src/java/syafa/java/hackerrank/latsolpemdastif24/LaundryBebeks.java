@@ -67,12 +67,12 @@ Boneka 13000 2
         System.out.printf("%-16s%-2c%s\n%-16s%-2c%d\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
         System.out.println("--------------------------------------------------------------------");
         System.out.printf("%s%-2c%-26s%-2c%-16s%-2c%-16s%c\n","No.",'|',"Nama Pakaian",'|',"Kuantitas",'|',"Harga",'|');
-        System.out.printf("%d%-2c%-26s%-2c%-16d%-2c%-16d%c\n",1,'|',itemName0,'|',itemQuantity0,'|',itemPrice0,'|');
-        System.out.printf("%d%-2c%-26s%-2c%-16d%-2c%-16d%c\n",2,'|',itemName1,'|',itemQuantity1,'|',itemPrice1,'|');
-        System.out.printf("%d%-2c%-26s%-2c%-16d%-2c%-16d%c\n",3,'|',itemName2,'|',itemQuantity2,'|',itemPrice2,'|');
-        System.out.printf("%d%-2c%-26s%-2c%-16d%-2c%-16d%c\n",4,'|',itemName3,'|',itemQuantity3,'|',itemPrice3,'|');
-        System.out.printf("%-38s%s%-2c%-4s %d\n","Total harga",'|',"Rp.",(0));
-        System.out.printf("%-35s%s%-2c%-4s %d %-6s %d\n","Estimasi selesai",':',"Jam",hourFinish,"Menit",minuteFinish);
+        System.out.printf("%-3s%-2c%-26s%-2c%-16d%-2c%-16d%c\n","1.",'|',itemName0,'|',itemQuantity0,'|',itemPrice0,'|');
+        System.out.printf("%-3s%-2c%-26s%-2c%-16d%-2c%-16d%c\n","2.",'|',itemName1,'|',itemQuantity1,'|',itemPrice1,'|');
+        System.out.printf("%-3s%-2c%-26s%-2c%-16d%-2c%-16d%c\n","3.",'|',itemName2,'|',itemQuantity2,'|',itemPrice2,'|');
+        System.out.printf("%-3s%-2c%-26s%-2c%-16d%-2c%-16d%c\n","4.",'|',itemName3,'|',itemQuantity3,'|',itemPrice3,'|');
+        System.out.printf("%-38s%s%-2c%-4s %d\n","","Total harga",'|',"Rp.",((itemPrice0 * itemQuantity0) + (itemPrice1 * itemQuantity1) + (itemPrice2  * itemQuantity2) + (itemPrice3 * itemQuantity3)));
+        System.out.printf("%-35s%s%-2c%-4s%d %-6s%d\n","","Estimasi selesai",':',"Jam",hourFinish,"Menit",minuteFinish);
         System.out.print("====================================================================");
     }
 }
