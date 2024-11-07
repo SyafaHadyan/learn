@@ -51,8 +51,8 @@ public class LaundryBebeks
         int hourFinish = startHour + ((laundryMinute + minuteFinish) / 60);
         input.close();
         System.out.println("====================================================================");
-        System.out.printf("%19s\n","LAUNDRY BEBEKS (BEBAS EKSPRES)");
-        System.out.printf("%26s%-4s%d %-6s%d\n","Jam",startHour,"Menit",startMinute);
+        System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
+        System.out.printf("%-26s%s %d %-6s%d\n","","Jam",startHour,"Menit",startMinute);
         System.out.println("--------------------------------------------------------------------");
     }
 }
