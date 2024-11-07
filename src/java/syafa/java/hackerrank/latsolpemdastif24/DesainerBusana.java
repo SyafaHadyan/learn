@@ -57,7 +57,7 @@ public class DesainerBusana
         input.close();
         System.out.printf
         (
-            "%-12s%-2c%.1f\n%-12s%-2c%.1f\n",
+            "%-11s%-2c%.1f\n%-11s%-2c%.1f\n",
             "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
         );
         int[] product = {1,1,1};
