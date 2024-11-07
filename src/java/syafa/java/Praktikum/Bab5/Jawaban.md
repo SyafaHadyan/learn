@@ -614,6 +614,16 @@ public class Praktikum0
 
 #### Penjelasan Kode Praktikum 1
 
+##### `main()` (Praktikum 1)
+
+//
+
+##### `permutation()` (Praktikum 1)
+
+//
+
+##### `combination()` (Praktikum 1)
+
 //
 
 ### Praktikum 2 (Bilangan Prima)
@@ -676,5 +686,15 @@ public class Praktikum1
 ```
 
 #### Penjelasan Kode Praktikum 2
+
+##### `main()` (Praktikum 2)
+
+//
+
+##### `checkPrime()` (Praktikum 2)
+
+//
+
+##### `primeToN()` (Praktikum 2)
 
 //
