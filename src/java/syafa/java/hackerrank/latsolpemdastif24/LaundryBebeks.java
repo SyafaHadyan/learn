@@ -36,7 +36,7 @@ Boneka 13000 2
     {
         Scanner input = new Scanner(System.in);
         String customerName = input.nextLine();
-        int customerID = Integer.parseInt(input.nextLine().replaceAll("0",""));
+        String customerID = input.nextLine();
         int startHour = input.nextInt();
         int startMinute = input.nextInt();
         input.nextLine();
@@ -64,7 +64,7 @@ Boneka 13000 2
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
         System.out.printf("%-26s%s %d %-6s%d\n","","Jam",startHour,"Menit",startMinute);
         System.out.println("--------------------------------------------------------------------");
-        System.out.printf("%-16s%-2c%s\n%-16s%-2c%d\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
+        System.out.printf("%-16s%-2c%s\n%-16s%-2c%s\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
         System.out.println("--------------------------------------------------------------------");
         System.out.printf("%s%-2c%-26s%-2c%-16s%-2c%-16s%c\n","No.",'|',"Nama Pakaian",'|',"Kuantitas",'|',"Harga",'|');
         System.out.println("--------------------------------------------------------------------");
