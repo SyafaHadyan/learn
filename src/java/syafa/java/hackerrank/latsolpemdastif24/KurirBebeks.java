@@ -13,7 +13,7 @@ public class KurirBebeks
         Scanner input = new Scanner(System.in);
         String deliveryOption = input.nextLine();
         int totalItem = Integer.parseInt(input.nextLine());
-        int totalWeight = Integer.parseInt(input.nextLine());
+        double totalWeight = Double.parseDouble(input.nextLine());
         input.close();
         if (totalItem <= 0 || totalWeight <= 0)
         {
@@ -96,7 +96,7 @@ public class KurirBebeks
              * 
              */
             deliveryCost += (totalWeight * 12000);
-            if (totalWeight / totalItem > 5)
+            if ((double) totalWeight / (double) totalItem > 5d)
             {
                 totalWeight -= (5 * totalItem);
                 deliveryCost += (totalWeight * 3000);
