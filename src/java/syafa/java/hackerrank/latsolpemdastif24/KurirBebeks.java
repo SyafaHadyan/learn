@@ -7,10 +7,10 @@ public class KurirBebeks
     {
         Scanner input = new Scanner(System.in);
         String deliveryOption = input.nextLine();
-        int numberOfItems = Integer.parseInt(input.nextLine());
+        int totalItem = Integer.parseInt(input.nextLine());
         int totalWeight = Integer.parseInt(input.nextLine());
         input.close();
-        if (numberOfItems <= 0 || totalWeight <= 0)
+        if (totalItem <= 0 || totalWeight <= 0)
         {
             System.out.print("Pengiriman tidak dapat dilakukan.");
             System.exit(0);
@@ -25,7 +25,11 @@ public class KurirBebeks
             }
             else if (totalWeight > 15)
             {
-                totalWeight += (15 * 3000) + ((totalWeight - 15) * 4500);
+                deliveryCost += (15 * 3000) + ((totalWeight - 15) * 4500);
+            }
+            if (totalItem > 6)
+            {
+                deliveryCost *= 0.95;
             }
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
