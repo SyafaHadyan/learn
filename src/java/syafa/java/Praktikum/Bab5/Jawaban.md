@@ -620,7 +620,7 @@ Kode akan print menu untuk memberi pilihan user nilai yang akan dihitung (apakah
 
 ##### Pilihan 1
 
-kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `array` `double` `nr` indeks ke 0 dan 1. Kemudian akan memanggil `method` `permutation()` dengan memberikan `array` `nr`.
+kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `array` `BigInteger` `nr` indeks ke 0 dan 1. Kemudian akan memanggil `method` `permutation()` dengan memberikan `array` `nr`.
 
 ###### Fungsi Setiap Elemen di `array` `nr`
 
