@@ -22,7 +22,7 @@ public class Praktikum0
         for (int i = 0; i < 2; i++)
         {
             number[i + 2] = BigInteger.ONE;
-            for (BigInteger j = number[i]; (j.compareTo(j) > 0); j.subtract(BigInteger.ONE))
+            for (BigInteger j = number[i]; (j.compareTo(BigInteger.ZERO) == 1); j.subtract(BigInteger.ONE))
             {
                 number[i + 2].multiply(j);
             }
@@ -33,7 +33,7 @@ public class Praktikum0
     {
         number[2] = number[1];
         number[4] = BigInteger.ONE;
-        for (BigInteger i = number[2]; (i.compareTo(i) > 0); i.subtract(BigInteger.ONE))
+        for (BigInteger i = number[2]; (i.compareTo(BigInteger.ZERO) == 1); i.subtract(BigInteger.ONE))
         {
             number[4].multiply(i);
         }
