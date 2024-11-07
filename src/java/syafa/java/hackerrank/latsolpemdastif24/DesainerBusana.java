@@ -51,10 +51,10 @@ public class DesainerBusana
         input.close();
         System.out.printf
         (
-            "%-12s%-2c%.1f\n%-12s%-2c%.1f",
+            "%-12s%-2c%.1f\n%-12s%-2c%.1f\n",
             "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
         );
-        double[] product = new double[3];
+        double[] product = {1d,1d,1d};
         for (int i = 0; i < CLOTH_RIBBON.length; i++)
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
@@ -67,5 +67,6 @@ public class DesainerBusana
                 System.exit(0);
             }
         }
+        System.out.println(Arrays.toString(product));
     }
 }
