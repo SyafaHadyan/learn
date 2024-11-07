@@ -34,7 +34,19 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
         {
-            //
+            deliveryCost = 15000;
+            if (totalWeight <= 10)
+            {
+                deliveryCost += (totalWeight * 5000);
+            }
+            else if (totalWeight > 10)
+            {
+                deliveryCost += ((10 * 5000) + (totalWeight - 10) * 7000);
+            }
+            if (totalItem > 4)
+            {
+                deliveryCost *= 0.9;
+            }
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
