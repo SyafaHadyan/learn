@@ -54,11 +54,17 @@ public class DesainerBusana
             "%-12s%-2c%.1f\n%-12s%-2c%.1f",
             "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
         );
+        double[] product = new double[3];
         for (int i = 0; i < CLOTH_RIBBON.length; i++)
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
             {
-                //
+                material[i] -= CLOTH_RIBBON[i][j];
+            }
+            if (material[i] < 0)
+            {
+                System.out.print("Bahan tidak cukup untuk membuat baju.");
+                System.exit(0);
             }
         }
     }
