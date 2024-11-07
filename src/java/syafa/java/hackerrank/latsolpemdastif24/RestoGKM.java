@@ -4,6 +4,7 @@ import java.util.*;
 public class RestoGKM
 {
     static final int[] POINT_REDEEM = {10,5,2};
+    static final String[] REDEEM_LIST = {"Ramen","Gyoza","Ocha"};
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -28,6 +29,12 @@ public class RestoGKM
         if (counter != 0)
         {
             System.out.print("Hyde O'Brien mendapat");
+            for (int i = 0; i < possibleRedeem.length; i++)
+            {
+                System.out.printf("%1d %s%s",possibleRedeem[i],REDEEM_LIST[i],(possibleRedeem.length - i != 1) ? "," : "");
+            }
+            System.exit(0);
         }
+        System.out.print("Poin tidak cukup untuk ditukarkan.");
     }
 }
