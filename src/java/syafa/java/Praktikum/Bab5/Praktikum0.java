@@ -32,13 +32,13 @@ public class Praktikum0
     public static BigInteger combination(BigInteger[] number)
     {
         number[2] = number[1];
-        number[4] = 1;
-        for (double i = number[2]; i > 0; i--)
+        number[4] = BigInteger.ONE;
+        for (BigInteger i = number[2]; (i.compareTo(i) > 0); i.subtract(BigInteger.ONE))
         {
-            number[4] *= i;
+            number[4].multiply(i);
         }
         BigInteger[] result = permutation(number);
-        return result[0] / (result[1] * number[4]);
+        return result[0].divide(result[1].multiply(number[4]));
     }
     public static void main(String[] args)
     {
