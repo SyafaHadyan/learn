@@ -66,5 +66,6 @@ Boneka 13000 2
         System.out.println("--------------------------------------------------------------------");
         System.out.printf("%-16s%-2c%s\n%-16s%-2c%d\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
         System.out.println("--------------------------------------------------------------------");
+        System.out.printf("%s%-2c%-26s%-2c%-16s%-2c%-16s%c","No.",'|',"Nama Pakaian",'|',"Kuantitas",'|',"Harga",'|');
     }
 }
