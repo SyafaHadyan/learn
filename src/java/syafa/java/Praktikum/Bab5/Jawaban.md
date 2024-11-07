@@ -634,6 +634,10 @@ kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `a
 
 Di dalam `permutation()` akan set nilai `nr` (indeks ke 1) dengan indeks 0 dikurangi indeks ke 1 $n-r$ yang kemudian masuk 2 `for loop`. `for loop` yang terluar untuk menaruh hasil kalkulasi di pembilang dan penyebut (ref ke tabel). `for loop` di dalam akan hitung faktorial dengan cara dikalikan $n*\left(n-1\right)$. Setelah menghitung nilai dari pembilang dan penyebut, akan `return` value dari pembilang dan penyebut (`return` `array` karena agar nilai dari pembilang dan penyebut bisa digunakan lagi ketika `method` `combination()` dipanggil). Di dalam `main` `array` pembilang dan penyebut akan dimasukkan ke indeks terakhir dari `nr` (indeks ke 4) kemudian `printf` nilai dari pembagian tadi kemudian kembali ke menu utama (dengan print pilihan menu yang sama).
 
+##### Pilihan 2
+
+Di dalam pilhan ke 2, fungsi dari bagian kode ini sama saja seperti di bagian kode yang pilihan 1, tetapi, yang membedakan adalah ketika melakukan kalkulasi, kita memanggil `method` `combination()` dengan cara menghitung nilai dari faktorial dari `r` saja kemudian memanggil `method` `permutation()` yang akan disimpan di variabel baru (`result[]`) kemudian akan return `double` saja (bukan `array`) karena `method` `combination()` tidak bisa dipakai ulang seperti `method` `permutaion()`. yang pembilang dan penyebutnya bisa dipakai lagi di `combination()`.
+
 ### Praktikum 2 (Bilangan Prima)
 
 #### Kode Praktikum 2
