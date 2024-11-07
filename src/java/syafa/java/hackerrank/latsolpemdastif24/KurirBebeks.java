@@ -95,10 +95,12 @@ public class KurirBebeks
         /*
          * 123450 menjadi 123500
          * 123449 menjadi 123400
+         * 73950
+         * 74000
          */
         if (Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
         {
-            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 3) + 1);
+            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Integer.parseInt(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1));
         }
         //else if ()
         {
