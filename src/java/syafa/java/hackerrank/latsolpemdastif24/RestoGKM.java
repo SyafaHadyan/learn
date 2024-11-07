@@ -28,17 +28,19 @@ public class RestoGKM
         }
         if (counter != 0)
         {
+            int printCount = 0;
             System.out.print("Hyde O'Brien mendapat");
             for (int i = 0; i < possibleRedeem.length; i++)
             {
                 //System.out.printf(" %d %s%s",possibleRedeem[i],REDEEM_LIST[i],(possibleRedeem.length - i != 1) ? "," : "");
                 if (possibleRedeem[i] != 0)
                 {
-                    if (i > 0 && i < possibleRedeem.length)
+                    if (printCount > 0 && i < possibleRedeem.length && (possibleRedeem[1] != 0 || possibleRedeem[2] != 0))
                     {
                         System.out.print(",");
                     }
                     System.out.print(" " + possibleRedeem[i] + " " + REDEEM_LIST[i]);
+                    printCount++;
                 }
             }
             System.exit(0);
