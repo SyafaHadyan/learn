@@ -8,6 +8,13 @@ public class DesainerBusana
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        double clothAmount = Double.parseDouble(input.nextLine());
+        double ribbonAmount = Double.parseDouble(input.nextLine());
         input.close();
+        System.out.printf
+        (
+            "%s%.1f\n%s%.1f",
+            "Jumlah Kain: ",clothAmount,"Jumlah Pita: ",ribbonAmount
+        );
     }
 }
