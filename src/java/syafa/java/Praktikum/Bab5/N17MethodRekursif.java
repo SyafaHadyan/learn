@@ -9,25 +9,22 @@ public class N17MethodRekursif
         int currentNumber = firstNumber + secondNumber;
         if (currentCounter != max)
         {
-            System.out.println(currentNumber);
+            if (currentCounter == 1)
+            {
+                System.out.println("0\n1\n1");
+            }
+            else
+            {
+                System.out.println(currentNumber);
+            }
             fibonacci(secondNumber,currentNumber,max,currentCounter);
         }
-        /*
-        for (int i = 0; i < max - 2; i++)
-        {
-            currentNumber = firstNumber + secondNumber;
-            firstNumber = secondNumber;
-            secondNumber = currentNumber;
-            System.out.print("\n");
-            System.out.print(currentNumber);
-        }
-        */
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         System.out.print("Masukkan batas bilangan fibonacci" + " : ");
-        fibonacci(1,1,Integer.parseInt(input.nextLine()),1);
+        fibonacci(0,1,Integer.parseInt(input.nextLine()),0);
         input.close();
     }
 }
