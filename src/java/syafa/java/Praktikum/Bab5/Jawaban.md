@@ -466,7 +466,7 @@ public class N16MethodRekursif
 
 ### 17. Buatlah program yang mencetak deret Fibonacci yang di dalamnya terdapat method rekursif. Deret Fibonacci merupakan suatu deret dimana bilangan berikutnya adalah hasil dari penjumlahan 2 bilangan sebelumnya
 
-``java
+```java
 package syafa.java.Praktikum.Bab5;
 import java.util.*;
 
