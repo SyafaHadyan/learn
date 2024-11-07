@@ -36,7 +36,7 @@ Boneka 13000 2
     {
         Scanner input = new Scanner(System.in);
         String customerName = input.nextLine();
-        int customerID = Integer.parseInt(input.nextLine());
+        int customerID = Integer.parseInt(input.nextLine().replaceAll("0",""));
         int startHour = input.nextInt();
         int startMinute = input.nextInt();
         input.nextLine();
