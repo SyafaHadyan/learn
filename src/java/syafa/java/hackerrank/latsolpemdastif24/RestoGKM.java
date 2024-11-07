@@ -12,6 +12,7 @@ public class RestoGKM
         input.close();
         int[] possibleRedeem = new int[POINT_REDEEM.length];
         int counter = 0;
+        int redeemedType = 0;
         System.out.printf
         (
         "%s%-2c%d\n",
@@ -25,6 +26,7 @@ public class RestoGKM
                 possibleRedeem[i]++;
             }
             counter += possibleRedeem[i];
+            redeemedType++;
         }
         if (counter != 0)
         {
@@ -35,7 +37,7 @@ public class RestoGKM
                 if (possibleRedeem[i] != 0)
                 {
                     System.out.print(possibleRedeem[i] + " " + REDEEM_LIST[i]);
-                    if (i > 0 && i < possibleRedeem.length)
+                    if (i > 0 && i < possibleRedeem.length && redeemedType > 0)
                     {
                         System.out.print(", ");
                     }
