@@ -614,11 +614,21 @@ public class Praktikum0
 
 #### Penjelasan Kode Praktikum 1
 
-Kode akan print menu untuk memberi pilihan user nilai yang akan dihitung (apakah permutasi atau kombinasi), kemudian kode meminta input user untuk memasukkan pilihan (jika 1 atau 2, maka akan masuk ke proses selanjutnya (akan dijelaskan nanti)), jika pilihan adalah 3, maka akan keluar.
+Kode akan print menu untuk memberi pilihan user nilai yang akan dihitung (apakah permutasi atau kombinasi), kemudian kode meminta input user untuk memasukkan pilihan (jika 1 atau 2, maka akan masuk ke proses selanjutnya (akan dijelaskan nanti)), jika pilihan adalah 3, maka akan close `Scanner` dan kemudian keluar.
 
 ##### Pilihan 1
 
-//
+kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `array` `double` `nr` indeks ke 0 dan 1. Kemudian akan memanggil `method` `permutation()` dengan memberikan `array` `nr`.
+
+###### Fungsi Setiap Elemen di `array` `nr`
+
+|Elemen Ke|nilai|Fungsi|
+|:---:|:---:|:---|
+|0|0||
+|1|0||
+|2|1||
+|3|1||
+|4|1||
 
 ### Praktikum 2 (Bilangan Prima)
 
