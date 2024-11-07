@@ -45,7 +45,7 @@ public class Praktikum0
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
         BigInteger[] nr = {BigInteger.ZERO,BigInteger.ZERO,BigInteger.ONE,BigInteger.ONE,BigInteger.ONE};
-        double[] result = new double[2];
+        BigInteger[] result = new BigInteger[2];
         while (true)
         {
             System.out.println(WELCOME_MESSAGE);
@@ -63,7 +63,7 @@ public class Praktikum0
                     nr[i] = input.nextBigInteger();
                 }
                 result = permutation(nr);
-                nr[4] = result[0] / result[1];
+                nr[4] = result[0].divide(result[1]);
                 System.out.printf
                 (
                     "%9c\n%-4s%-2c%-7s%-2c%.0f\n%12s\n%-31s%-2c%.0f\n\n",
@@ -78,7 +78,7 @@ public class Praktikum0
                 for (int i = 0; i < VALUE.length; i++)
                 {
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
-                    nr[i] = Double.parseDouble(input.nextLine());
+                    nr[i] = input.nextBigInteger();
                 }
                 result[0] = combination(nr);
                 System.out.printf
