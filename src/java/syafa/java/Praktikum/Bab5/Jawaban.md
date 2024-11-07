@@ -628,9 +628,11 @@ kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `a
 |1|0|Untuk menaruh value dari input user|
 |2|1|Untuk menaruh hasil dari kalkulasi permutasi (pembilang)|
 |3|1|Untuk menaruh hasil dari kalkulasi permutasi (penyebut)|
-|4|1|Untuk menaruh hasil dari kalkulasi kombinasi (penyebut yang r!)|
+|4|1|Untuk menaruh hasil dari kalkulasi kombinasi (penyebut yang r!) dan juga hasil dari pembagian pembilang dan penyebut hasil dari kalkulasi permutasi|
 
 > Note: nilai dari setiap indeks ke n akan berubah tergantung dari `method` yang dipanggil.
+
+Di dalam `permutation()` akan set nilai `nr` (indeks ke 1) dengan indeks 0 dikurangi indeks ke 1 $n-r$ yang kemudian masuk 2 `for loop`. `for loop` yang terluar untuk menaruh hasil kalkulasi di pembilang dan penyebut (ref ke tabel). `for loop` di dalam akan hitung faktorial dengan cara dikalikan $n*\left(n-1\right)$. Setelah menghitung nilai dari pembilang dan penyebut, akan `return` value dari pembilang dan penyebut (`return` `array` karena agar nilai dari pembilang dan penyebut bisa digunakan lagi ketika `method` `combination()` dipanggil). Di dalam `main` `array` pembilang dan penyebut akan dimasukkan ke indeks terakhir dari `nr` (indeks ke 4) kemudian `printf` nilai dari pembagian tadi kemudian kembali ke menu utama (dengan print pilihan menu yang sama).
 
 ### Praktikum 2 (Bilangan Prima)
 
