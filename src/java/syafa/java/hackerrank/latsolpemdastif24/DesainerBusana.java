@@ -68,5 +68,17 @@ public class DesainerBusana
             }
         }
         System.out.println(Arrays.toString(product));
+        for (int i = 2; i >= 0; i--)
+        {
+            if (material[0] - CLOTH_RIBBON[0][i] >= 0 && material[1] - CLOTH_RIBBON[1][i] >= 0)
+            {
+                for (int j = 0; j < material.length; j++)
+                {
+                    material[j] -= CLOTH_RIBBON[j][i];
+                }
+                product[i]++;
+                i++;
+            }
+        }
     }
 }
