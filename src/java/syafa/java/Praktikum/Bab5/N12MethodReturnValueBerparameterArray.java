@@ -11,6 +11,13 @@ public class N12MethodReturnValueBerparameterArray
         {
             System.out.println("Index ke " + (i + 1) + " : " + arr[i]);
         }
+        arr = sortKecilBesar(arr);
+        System.out.print("Sort kecil ke besar");
+        for (int i = 0; i < arr.length; i++)
+        {
+            System.out.print("\n");
+            System.out.print("Index ke " + (i + 1) + " : " + arr[i]);
+        }
     }
     private static int[] sortBesarKecil(int[] acak)
     {
