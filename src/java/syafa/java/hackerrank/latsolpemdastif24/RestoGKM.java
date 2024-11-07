@@ -10,6 +10,7 @@ public class RestoGKM
         int point = 31 - (Integer.parseInt(input.nextLine()));
         input.close();
         int[] possibleRedeem = new int[POINT_REDEEM.length];
+        int counter = 0;
         System.out.printf
         (
         "%s%-2c%d\n",
@@ -22,6 +23,11 @@ public class RestoGKM
                 point -= POINT_REDEEM[i];
                 possibleRedeem[i]++;
             }
+            counter += possibleRedeem[i];
+        }
+        if (counter != 0)
+        {
+            System.out.print("Hyde O'Brien mendapat");
         }
     }
 }
