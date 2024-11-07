@@ -354,7 +354,7 @@ public class N07MethodReturnValue
 
 ### 11. Jelaskan alur kerja program method return value berparameter array tersebut
 
-//
+`sort()` dengan parameter `array` `int` yang akan mengurutkan bilangan dari yang terbesar ke yang terkecil (dengan menggunakan `while` dengan variabel counter untuk menghitung indeks ke n dan jika indeks ke n itu lebih kecil, dari n + 1, swap dengan variabel sementara dan lanjut (Algoritma Bubble Sort akan loop 2 kali untuk memastikan seluruh elemen sudah dicek)) dengan algoritma Bubble Sort. Di dalam `sort()` kemudian `return` `array` yang sudah di sort tadi kemudian di `main` `method`, akan di print dengan `for-loop` array yang sudah di sort tadi.
 
 ### 12. Tambahkan method untuk mengurutkan angka dari yang terbesar ke terkecil
 
