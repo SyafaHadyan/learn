@@ -75,6 +75,7 @@ public class KurirBebeks
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
             deliveryCost = 25000;
+            /*
             if (totalWeight <= 5)
             {
                 deliveryCost += (totalWeight * 12000);
@@ -82,6 +83,23 @@ public class KurirBebeks
             else if (totalWeight > 5)
             {
                 deliveryCost += ((5 * 12000) + (totalWeight - 5) * 15000);
+            }
+            if (totalItem > 3)
+            {
+                deliveryCost *= 0.8;
+            }
+            */
+            /*
+             * 3
+             * 18
+             * 
+             * 
+             */
+            deliveryCost += (totalWeight * 12000);
+            if (totalWeight / totalItem > 5)
+            {
+                totalWeight -= (5 * totalItem);
+                deliveryCost += (totalWeight * 15000);
             }
             if (totalItem > 3)
             {
