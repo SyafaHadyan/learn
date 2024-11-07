@@ -1,6 +1,6 @@
 package syafa.java.Praktikum.Bab5;
 import java.util.*;
-
+import java.math.*;
 
 public class Praktikum0
 {
@@ -16,20 +16,20 @@ public class Praktikum0
         'n',
         'r'
     };
-    public static double[] permutation(double[] number)
+    public static BigInteger[] permutation(BigInteger[] number)
     {
-        number[1] = number[0] - number[1];
+        number[1] = number[0].subtract(number[1]);
         for (int i = 0; i < 2; i++)
         {
-            number[i + 2] = 1;
-            for (double j = number[i]; j > 0; j--)
+            number[i + 2] = BigInteger.ONE;
+            for (BigInteger j = number[i]; (j.compareTo(j) > 0); j.subtract(BigInteger.ONE))
             {
-                number[i + 2] *= j;
+                number[i + 2].multiply(j);
             }
         }
-        return new double[]{number[2],number[3]};
+        return new BigInteger[]{number[2],number[3]};
     }
-    public static double combination(double[] number)
+    public static BigInteger combination(BigInteger[] number)
     {
         number[2] = number[1];
         number[4] = 1;
@@ -37,14 +37,14 @@ public class Praktikum0
         {
             number[4] *= i;
         }
-        double[] result = permutation(number);
+        BigInteger[] result = permutation(number);
         return result[0] / (result[1] * number[4]);
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int menuChoose = 0;
-        double[] nr = {0,0,1,1,1};
+        BigInteger[] nr = {BigInteger.ZERO,BigInteger.ZERO,BigInteger.ONE,BigInteger.ONE,BigInteger.ONE};
         double[] result = new double[2];
         while (true)
         {
@@ -60,7 +60,7 @@ public class Praktikum0
                 for (int i = 0; i < VALUE.length; i++)
                 {
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
-                    nr[i] = Double.parseDouble(input.nextLine());
+                    nr[i] = input.nextBigInteger();
                 }
                 result = permutation(nr);
                 nr[4] = result[0] / result[1];
