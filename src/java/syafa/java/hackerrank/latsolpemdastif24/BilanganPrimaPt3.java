@@ -7,7 +7,8 @@ public class BilanganPrimaPt3
     {
         Scanner input = new Scanner(System.in);
         int primeStart = Integer.parseInt(input.nextLine());
-        for (int i = 2; i <= primeStart;)
+        System.out.print("Bilangan prima mulai dari 2 hingga ke" + '-' + (primeStart) + ':');
+        for (int i = 2; i <= primeStart; i++)
         {
             if (isPrima(i))
             {
