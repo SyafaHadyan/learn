@@ -17,7 +17,7 @@ public class RestoGKM
         "%s%-2c%d\n",
         "Tanggal awal makan di resto",':',(31 - point)
         );
-        for (int i = 0; i < POINT_REDEEM.length; i--)
+        for (int i = 0; i < POINT_REDEEM.length; i++)
         {
             while (point - POINT_REDEEM[i] >= 0)
             {
@@ -31,7 +31,7 @@ public class RestoGKM
             System.out.print("Hyde O'Brien mendapat");
             for (int i = 0; i < possibleRedeem.length; i++)
             {
-                System.out.printf("%1d %s%s",possibleRedeem[i],REDEEM_LIST[i],(possibleRedeem.length - i != 1) ? "," : "");
+                System.out.printf(" %d %s%s",possibleRedeem[i],REDEEM_LIST[i],(possibleRedeem.length - i != 1) ? "," : "");
             }
             System.exit(0);
         }
