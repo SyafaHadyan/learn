@@ -11,6 +11,15 @@ public class Fibonacci101
     }
     public static int fibo(int n)
     {
-        return 0;
+        int firstNumber = 1;
+        int secondNumber = 1;
+        int currentNumber = 0;
+        for (int i = 0; i < n; i++)
+        {
+            currentNumber = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = currentNumber;
+        }
+        return currentNumber;
     }
 }
