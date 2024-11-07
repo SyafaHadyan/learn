@@ -85,13 +85,13 @@ public class DesainerBusana
                 i++;
             }
         }
-        System.out.println("Nonput dapat membuat");
+        System.out.print("Nonput dapat membuat");
         /*
          * Nonput dapat membuat 2 ukuran S, 1 ukuran M, 4 ukuran L.
          */
         for (int i = 0; i < product.length; i++)
         {
-            System.out.printf(" %2d%-7s%c%c",product[i],"ukuran",SIZE_LIST[i],(product.length - i == 1) ? '.' : ',');
+            System.out.printf(" %-2d%-7s%c%c",product[i],"ukuran",SIZE_LIST[i],(product.length - i == 1) ? '.' : ',');
         }
     }
 }
