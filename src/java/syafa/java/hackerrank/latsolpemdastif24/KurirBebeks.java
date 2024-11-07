@@ -92,6 +92,21 @@ public class KurirBebeks
         {
             exit();
         }
+        /*
+         * 123450 menjadi 123500
+         * 123449 menjadi 123400
+         */
+        if (Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
+        {
+            // ceil
+        }
+        else if ()
+        {
+            // floor
+        }
+        {
+            //
+        }
         System.out.print("Diperlukan biaya pengiriman sebesar" + " " + deliveryCost);
     }
 }
