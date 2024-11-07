@@ -624,11 +624,13 @@ kode akan meminta user untuk memasukkan nilai n dan r yang akan dimasukkan ke `a
 
 |Elemen Ke|nilai|Fungsi|
 |:---:|:---:|:---|
-|0|0||
-|1|0||
-|2|1||
-|3|1||
-|4|1||
+|0|0|Untuk menaruh value dari input user|
+|1|0|Untuk menaruh value dari input user|
+|2|1|Untuk menaruh hasil dari kalkulasi permutasi (pembilang)|
+|3|1|Untuk menaruh hasil dari kalkulasi permutasi (penyebut)|
+|4|1|Untuk menaruh hasil dari kalkulasi kombinasi (penyebut yang r!)|
+
+> Note: nilai dari setiap indeks ke n akan berubah tergantung dari `method` yang dipanggil.
 
 ### Praktikum 2 (Bilangan Prima)
 
