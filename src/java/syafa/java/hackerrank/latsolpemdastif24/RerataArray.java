@@ -7,11 +7,12 @@ public class RerataArray
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
-        double[] data = new double[arrayLength];
+        int[] data = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++)
         {
-            //
+            data[i] = input.nextInt();
         }
+        System.out.printf("%.3f",hitungRerata(data));
         input.close();
     }
   
