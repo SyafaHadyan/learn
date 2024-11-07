@@ -27,6 +27,7 @@ public class LaundryBebeks
         int itemPrice3 = input.nextInt();
         int itemQuantity3 = input.nextInt();
         input.nextLine();
+        int laundryMinute = Integer.parseInt(input.nextLine());
         input.close();
     }
 }
