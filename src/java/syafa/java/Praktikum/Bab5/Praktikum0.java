@@ -22,9 +22,9 @@ public class Praktikum0
         for (int i = 0; i < 2; i++)
         {
             number[i + 2] = BigInteger.ONE;
-            for (BigInteger j = number[i]; (j.compareTo(BigInteger.ZERO) == 1); j.subtract(BigInteger.ONE))
+            for (BigInteger j = number[i]; (j.compareTo(BigInteger.ZERO) == 1); j = j.subtract(BigInteger.ONE))
             {
-                number[i + 2].multiply(j);
+                number[i + 2] = number[i + 2].multiply(j);
             }
         }
         return new BigInteger[]{number[2],number[3]};
@@ -35,7 +35,7 @@ public class Praktikum0
         number[4] = BigInteger.ONE;
         for (BigInteger i = number[2]; (i.compareTo(BigInteger.ZERO) == 1); i.subtract(BigInteger.ONE))
         {
-            number[4].multiply(i);
+            number[4] = number[4].multiply(i);
         }
         BigInteger[] result = permutation(number);
         return result[0].divide(result[1].multiply(number[4]));
@@ -62,11 +62,12 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = input.nextBigInteger();
                 }
+                input.nextLine();
                 result = permutation(nr);
                 nr[4] = result[0].divide(result[1]);
                 System.out.printf
                 (
-                    "%9c\n%-4s%-2c%-7s%-2c%.0f\n%12s\n%-31s%-2c%.0f\n\n",
+                    "%9c\n%-4s%-2c%-7s%-2c%d\n%12s\n%-31s%-2c%d\n\n",
                     'n',
                     "nPr",'=',"------",'=',nr[4],
                     "(n-r)!",
@@ -80,10 +81,11 @@ public class Praktikum0
                     System.out.printf("%-15s%-2c%-2c","Masukkan nilai",VALUE[i],':');
                     nr[i] = input.nextBigInteger();
                 }
+                input.nextLine();
                 result[0] = combination(nr);
                 System.out.printf
                 (
-                    "%12c\n%-4s%-2c%-12s%-2c%.0f\n%17s\n%-31s%-2c%.0f\n\n",
+                    "%12c\n%-4s%-2c%-12s%-2c%d\n%17s\n%-31s%-2c%d\n\n",
                     'n',
                     "nCr",'=',"-----------",'=',result[0],
                     "(n-r)! x r!",
