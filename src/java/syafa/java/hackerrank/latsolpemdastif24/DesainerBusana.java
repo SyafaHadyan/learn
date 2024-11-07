@@ -40,6 +40,12 @@ public class DesainerBusana
         {1.2,1.5,2.0},
         {0.8,1.0,1.3}
     };
+    static final char[] SIZE_LIST =
+    {
+        'S',
+        'M',
+        'L'
+    };
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -67,7 +73,6 @@ public class DesainerBusana
                 System.exit(0);
             }
         }
-        System.out.println(Arrays.toString(product));
         for (int i = 2; i >= 0; i--)
         {
             if (material[0] - CLOTH_RIBBON[0][i] >= 0 && material[1] - CLOTH_RIBBON[1][i] >= 0)
@@ -79,6 +84,11 @@ public class DesainerBusana
                 product[i]++;
                 i++;
             }
+        }
+        System.out.println(Arrays.toString(product));
+        for (int i = 0; i < product.length; i++)
+        {
+            //
         }
     }
 }
