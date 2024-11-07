@@ -422,6 +422,8 @@ public class N12MethodReturnValueBerparameterArray
 
 ### 13. Jelaskan perbedaan penggunaan method return value dengan method return value yang berparameter array
 
+`method` `return` `value` atau `array` keduanya sama saja dan harus ditaruh di variabel yang sesuai, jika ingin mengambil indeks ke n dari `method` yang `return` valuenya adalah `array`, maka kita tinggal tambahkan `variabel = contohMethod(array)[n]`. `method` yang mengambil `array` harus diberi `array` juga, jika masih belum ada `array`, kita harus membuat `array` baru sebelum memanggil `method` yang mengambil nilai `array`.
+
 ## Method Rekursif
 
 ### 14. Jalankan kelas Input dan benahi jika menemukan kesalahan
