@@ -606,6 +606,7 @@ public class Praktikum0
             }
             else if (menuChoose == 3)
             {
+                System.out.print("Keluar...");
                 input.close();
                 System.exit(0);
             }
