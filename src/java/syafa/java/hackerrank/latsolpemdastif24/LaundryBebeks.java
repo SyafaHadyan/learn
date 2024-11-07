@@ -4,6 +4,16 @@ import java.util.*;
 public class LaundryBebeks
 {
     /*
+Gabriel
+1234
+14 37
+Baju_Berkerah 2000 4
+Celana_Jeans 3000 2
+Selimut_Tebal 13000 1
+Boneka 13000 2
+45
+     */
+    /*
      * ====================================================================
      *                    LAUNDRY BEBEKS (BEBAS EKSPRES)
      *                           Jam 14 Menit 37
@@ -53,6 +63,8 @@ public class LaundryBebeks
         System.out.println("====================================================================");
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
         System.out.printf("%-26s%s %d %-6s%d\n","","Jam",startHour,"Menit",startMinute);
+        System.out.println("--------------------------------------------------------------------");
+        System.out.printf("%-16s%-2c%s\n%-16s%-2c%d\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
         System.out.println("--------------------------------------------------------------------");
     }
 }
