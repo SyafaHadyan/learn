@@ -434,7 +434,7 @@ Nilai dari 5! adalah 120
 
 ### 15. Jelaskan alur kerja program method rekursif tersebut
 
-//
+Di `method` `faktorial()`, mengambil nilai `int` . jika nilai dari `int` adalah 1, maka langsung `return 1`, jika tidak, maka akan memanggil dirinya sendiri dengan cara memberi nilai `bil` - 1 yang nilai dari `return` nya adalah `bil` dikalikan dengan nilai pemanggilan tadi.
 
 ### 16. Ubahlah program tersebut menjadi program interaktif menggunakan input user
 
