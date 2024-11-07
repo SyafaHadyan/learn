@@ -614,16 +614,6 @@ public class Praktikum0
 
 #### Penjelasan Kode Praktikum 1
 
-##### `main()` (Praktikum 1)
-
-//
-
-##### `permutation()` (Praktikum 1)
-
-//
-
-##### `combination()` (Praktikum 1)
-
 //
 
 ### Praktikum 2 (Bilangan Prima)
