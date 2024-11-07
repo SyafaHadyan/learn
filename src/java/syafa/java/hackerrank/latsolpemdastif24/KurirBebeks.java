@@ -67,10 +67,26 @@ public class KurirBebeks
             {
                 deliveryCost += ((10 * 5000) + (totalWeight - 10) + 11000);
             }
+            if (totalItem > 4)
+            {
+                deliveryCost *= 0.85;
+            }
         }
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
-            //
+            deliveryCost = 25000;
+            if (totalWeight <= 5)
+            {
+                deliveryCost += (totalWeight * 12000);
+            }
+            else if (totalWeight > 5)
+            {
+                deliveryCost += ((5 * 12000) + (totalWeight - 5) * 15000);
+            }
+            if (totalItem > 3)
+            {
+                deliveryCost *= 0.8;
+            }
         }
         else
         {
