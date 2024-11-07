@@ -62,7 +62,7 @@ Boneka 13000 2
         input.close();
         System.out.println("====================================================================");
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
-        System.out.printf("%46s\n",new String("Jam" + " " + startHour + " " + "Menit" + " " + startMinute));
+        System.out.printf("%41s\n",new String("Jam" + " " + startHour + " " + "Menit" + " " + startMinute));
         System.out.println("--------------------------------------------------------------------");
         System.out.printf("%-16s%-2c%s\n%-16s%-2c%s\n","Nama",':',customerName,"ID Pelanggan",':',customerID);
         System.out.println("--------------------------------------------------------------------");
