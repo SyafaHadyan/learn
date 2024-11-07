@@ -35,14 +35,24 @@ public class DesainerBusana
      * Jumlah Pita: 3.0
      * Bahan tidak cukup untuk membuat baju.
      */
-    static final double[] CLOTH = {1.2,1.5,2.0};
-    static final double[] RIBBON = {0.8,1.0,1.3};
+    static final double[][] CLOTH_RIBBON =
+    {
+        {1.2,1.5,2.0},
+        {0.8,1.0,1.3}
+    };
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         double clothAmount = Double.parseDouble(input.nextLine());
         double ribbonAmount = Double.parseDouble(input.nextLine());
         input.close();
+        for (int i = 0; i < CLOTH_RIBBON.length; i++)
+        {
+            for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
+            {
+                //
+            }
+        }
         System.out.printf
         (
             "%-12s%-2c%.1f\n%-12s%-2c%.1f",
