@@ -20,7 +20,7 @@ public class BelanjaPakDengklek
             "Halo Pak Dengklek!",
             "Total harga sebelum pajak",':',(firstProduct + secondProduct + thirdProduct),
             "Jumlah pajak",':',(0.01 * (firstProduct + secondProduct + thirdProduct)),
-            "Jumlah diskon",':',(0d),
+            "Jumlah diskon",':',(0.05 * (firstProduct + secondProduct + thirdProduct)),
             "Total harga yang harus dibayarkan",':',(0d)
         );
     }
