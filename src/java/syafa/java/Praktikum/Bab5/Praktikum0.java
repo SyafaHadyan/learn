@@ -33,7 +33,7 @@ public class Praktikum0
     {
         number[2] = number[1];
         number[4] = BigInteger.ONE;
-        for (BigInteger i = number[2]; (i.compareTo(BigInteger.ZERO) == 1); i.subtract(BigInteger.ONE))
+        for (BigInteger i = number[2]; (i.compareTo(BigInteger.ZERO) == 1); i = i.subtract(BigInteger.ONE))
         {
             number[4] = number[4].multiply(i);
         }
