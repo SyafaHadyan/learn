@@ -15,5 +15,26 @@ public class KurirBebeks
             System.exit(0);
         }
         input.close();
+        if (deliveryOption.equalsIgnoreCase("Ekonomi"))
+        {
+            System.exit(0);
+        }
+        else if (deliveryOption.equalsIgnoreCase("Reguler"))
+        {
+            System.exit(0);
+        }
+        else if (deliveryOption.equalsIgnoreCase("Kilat"))
+        {
+            System.exit(0);
+        }
+        else if (deliveryOption.equalsIgnoreCase("SameDay"))
+        {
+            System.exit(0);
+        }
+        else
+        {
+            System.out.print("Pengiriman tidak dapat dilakukan.");
+            System.exit(0);
+        }
     }
 }
