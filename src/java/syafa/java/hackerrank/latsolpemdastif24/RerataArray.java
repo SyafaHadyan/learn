@@ -15,7 +15,6 @@ public class RerataArray
         System.out.printf("%.3f",hitungRerata(data));
         input.close();
     }
-  
   	public static double hitungRerata(int[] arr)
     {
         double result = 0d;
