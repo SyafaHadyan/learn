@@ -689,12 +689,4 @@ public class Praktikum1
 
 ##### `main()` (Praktikum 2)
 
-//
-
-##### `checkPrime()` (Praktikum 2)
-
-//
-
-##### `primeToN()` (Praktikum 2)
-
-//
+Kode input dari user ke variabel `number`. Kemudian panggil `checkPrime()` di print dengan pass nilai `number`, jika `number` <= 1, langsung `return` Bukan Prima, jika bukan <= 1, masuk ke for loop yang mencoba untuk membagi `number` dengan nilai `i` (yang dimulai dari 2 hingga `number` - 1). Jika `number` berhasil dibagi dengan nilai `i`, maka `number` bukanlah bilangan prima dan langsung `return` Bukan Prima. Jika tidak bisa dibagi dari semua nilai dari `i`, `return` Prima (yang ada di luar `for loop`).
