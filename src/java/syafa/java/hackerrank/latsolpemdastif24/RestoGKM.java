@@ -9,16 +9,18 @@ public class RestoGKM
         Scanner input = new Scanner(System.in);
         int point = 31 - (Integer.parseInt(input.nextLine()));
         input.close();
+        int[] possibleRedeem = new int[POINT_REDEEM.length];
         System.out.printf
         (
         "%s%-2c%d\n",
         "Tanggal awal makan di resto",':',(31 - point)
         );
-        for (int i = POINT_REDEEM.length; i >= 0; i--)
+        for (int i = 0; i < POINT_REDEEM.length; i--)
         {
             while (point - POINT_REDEEM[i] >= 0)
             {
                 point -= POINT_REDEEM[i];
+                possibleRedeem[i]++;
             }
         }
     }
