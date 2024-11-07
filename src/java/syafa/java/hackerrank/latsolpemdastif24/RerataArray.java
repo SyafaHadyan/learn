@@ -12,8 +12,8 @@ public class RerataArray
         {
             data[i] = input.nextInt();
         }
-        System.out.printf("%.2f",hitungRerata(data));
         input.close();
+        System.out.printf("%.2f",hitungRerata(data));
     }
   	public static double hitungRerata(int[] arr)
     {
