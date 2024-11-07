@@ -614,6 +614,10 @@ public class Praktikum0
 
 #### Penjelasan Kode Praktikum 1
 
+Kode akan print menu untuk memberi pilihan user nilai yang akan dihitung (apakah permutasi atau kombinasi), kemudian kode meminta input user untuk memasukkan pilihan (jika 1 atau 2, maka akan masuk ke proses selanjutnya (akan dijelaskan nanti)), jika pilihan adalah 3, maka akan keluar.
+
+##### Pilihan 1
+
 //
 
 ### Praktikum 2 (Bilangan Prima)
