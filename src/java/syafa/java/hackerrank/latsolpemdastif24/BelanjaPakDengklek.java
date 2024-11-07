@@ -16,10 +16,10 @@ public class BelanjaPakDengklek
         input.close();
         System.out.printf
         (
-            "%s\n%-26s%-2c%.2f",
+            "%s\n%s%-2c%.2f\n%s%-2c%.2f\n%s%-2c%.2f",
             "Halo Pak Dengklek!",
             "Total harga sebelum pajak",':',(firstProduct + secondProduct + thirdProduct),
-            "Jumlah pajak",':',(0d),
+            "Jumlah pajak",':',(0.01 * (firstProduct + secondProduct + thirdProduct)),
             "Jumlah diskon",':',(0d),
             "Total harga yang harus dibayarkan",':',(0d)
         );
