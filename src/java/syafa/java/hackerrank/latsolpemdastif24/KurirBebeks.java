@@ -100,7 +100,7 @@ public class KurirBebeks
          */
         if (Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
         {
-            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Integer.parseInt(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1));
+            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Integer.parseInt(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + 000);
         }
         //else if ()
         {
