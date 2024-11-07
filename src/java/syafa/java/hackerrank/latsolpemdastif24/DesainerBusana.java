@@ -43,9 +43,17 @@ public class DesainerBusana
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double clothAmount = Double.parseDouble(input.nextLine());
-        double ribbonAmount = Double.parseDouble(input.nextLine());
+        double[] material = new double[2];
+        for (int i = 0; i < 2; i++)
+        {
+            material[i] = Double.parseDouble(input.nextLine());
+        }
         input.close();
+        System.out.printf
+        (
+            "%-12s%-2c%.1f\n%-12s%-2c%.1f",
+            "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
+        );
         for (int i = 0; i < CLOTH_RIBBON.length; i++)
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
@@ -53,10 +61,5 @@ public class DesainerBusana
                 //
             }
         }
-        System.out.printf
-        (
-            "%-12s%-2c%.1f\n%-12s%-2c%.1f",
-            "Jumlah Kain",':',clothAmount,"Jumlah Pita",':',ribbonAmount
-        );
     }
 }
