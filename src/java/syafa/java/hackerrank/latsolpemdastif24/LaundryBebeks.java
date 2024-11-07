@@ -59,6 +59,7 @@ Boneka 13000 2
         int laundryMinute = Integer.parseInt(input.nextLine());
         int minuteFinish = (startMinute + laundryMinute) % 60;
         int hourFinish = startHour + ((laundryMinute + minuteFinish) / 60);
+        hourFinish %= 24;
         input.close();
         System.out.println("====================================================================");
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
