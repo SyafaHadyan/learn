@@ -50,10 +50,10 @@ public class DesainerBusana
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double[] material = new double[2];
+        BigDecimal[] material = new BigDecimal[2];
         for (int i = 0; i < 2; i++)
         {
-            material[i] = Double.parseDouble(input.nextLine());
+            material[i] = input.nextBigDecimal();
         }
         input.close();
         System.out.printf
@@ -66,10 +66,10 @@ public class DesainerBusana
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
             {
-                material[i] -= CLOTH_RIBBON[i][j];
+                material[i] = material[i].subtract(CLOTH_RIBBON[i][j]);
             }
             System.out.println(material[i]);
-            if (material[i] < 0d)
+            if (material[i].compareTo(BigDecimal.ZERO) > 0)
             {
                 System.out.print("Bahan tidak cukup untuk membuat baju.");
                 System.exit(0);
@@ -77,11 +77,11 @@ public class DesainerBusana
         }
         for (int i = 2; i >= 0; i--)
         {
-            if (material[0] - CLOTH_RIBBON[0][i] >= 0d && material[1] - CLOTH_RIBBON[1][i] >= 0d)
+            if (material[0].subtract(CLOTH_RIBBON[0][i]).compareTo(BigDecimal.ZERO) >= 0 && material[1].subtract(CLOTH_RIBBON[1][i]).compareTo(BigDecimal.ZERO) >= 0)
             {
                 for (int j = 0; j < material.length; j++)
                 {
-                    material[j] -= CLOTH_RIBBON[j][i];
+                    material[j] = material[j].subtract(CLOTH_RIBBON[j][i]);
                 }
                 product[i]++;
                 i++;
