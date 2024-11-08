@@ -68,8 +68,7 @@ public class DesainerBusana
             {
                 material[i] = material[i].subtract(CLOTH_RIBBON[i][j]);
             }
-            System.out.println(material[i]);
-            if (material[i].compareTo(BigDecimal.ZERO) > 0)
+            if (material[i].compareTo(BigDecimal.ZERO) < 0)
             {
                 System.out.print("Bahan tidak cukup untuk membuat baju.");
                 System.exit(0);
