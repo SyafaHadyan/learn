@@ -24,12 +24,12 @@ public class TekaTekiAngkaPakDengklek
         int secondNumber = Integer.parseInt(input.nextLine());
         int thirdNumber = Integer.parseInt(input.nextLine());
         input.close();
-        int firstResult = 0;
-        int secondResult = 0;
-        System.out.println("Halo Pak" + " " + name + " " + "!");
+        int firstResult = (firstNumber + 4 + 1 + 1 - 1 - secondNumber) * thirdNumber;
+        int secondResult = 2;
+        System.out.printf("%-9s%s%c\n","Halo Pak",name,'!');
         System.out.printf
         (
-            "%s%-2c%d\n%s%-2c%d",
+            "%s%-2c%d\n%s%-2c%d\n",
             "Hasil perhitungan pertama",':',(firstResult),
             "Hasil perhitungan kedua",':',(secondResult)
         );
