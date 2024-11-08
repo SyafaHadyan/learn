@@ -7,12 +7,10 @@ public class ApakahRiilPangram
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[] word = input.nextLine().replaceAll("\\W+","").toLowerCase().split("-");
+        String[] word = input.nextLine().replaceAll("\\W+","").toLowerCase().split("");
         input.close();
         ArrayList<String> validAlphabetList = new ArrayList<>(Arrays.asList("abcdefghijklmnopqrstuvwxyz".split("")));
         ArrayList<String> missingAlphabet = new ArrayList<>();
-        boolean isPerfectPangram = true;
-        Arrays.sort(word);
         for (int i = 0; i < word.length; i++)
         {
             if (validAlphabetList.contains(word[i]))
@@ -22,6 +20,17 @@ public class ApakahRiilPangram
             missingAlphabet.add(validAlphabetList.get(i));
         }
         System.out.println(validAlphabetList);
-        System.out.print(Arrays.toString(word));
+        System.out.println(missingAlphabet);
+        System.out.println(Arrays.toString(word));
+        if (missingAlphabet.isEmpty())
+        {
+            System.out.print("Input merupakan pangram sempurna! :D");
+            System.exit(0);
+        }
+        if (word.length > 26 && missingAlphabet.isEmpty())
+        {
+            System.out.print("Input hanya pangram biasa saja ");
+            System.exit(0);
+        }
     }
 }
