@@ -22,14 +22,14 @@ public class ApakahRiilPangram
         System.out.println(validAlphabetList);
         System.out.println(missingAlphabet);
         System.out.println(Arrays.toString(word));
-        if (missingAlphabet.isEmpty())
-        {
-            System.out.print("Input merupakan pangram sempurna! :D");
-            System.exit(0);
-        }
         if (word.length > 26 && missingAlphabet.isEmpty())
         {
             System.out.print("Input hanya pangram biasa saja ");
+            System.exit(0);
+        }
+        if (missingAlphabet.isEmpty())
+        {
+            System.out.print("Input merupakan pangram sempurna! :D");
             System.exit(0);
         }
     }
