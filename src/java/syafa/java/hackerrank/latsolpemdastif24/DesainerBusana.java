@@ -67,7 +67,7 @@ public class DesainerBusana
             {
                 material[i] -= CLOTH_RIBBON[i][j];
             }
-            if (material[i] < 0)
+            if (material[i] <= -1)
             {
                 System.out.print("Bahan tidak cukup untuk membuat baju.");
                 System.exit(0);
