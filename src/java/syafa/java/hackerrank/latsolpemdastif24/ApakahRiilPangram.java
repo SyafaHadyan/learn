@@ -14,15 +14,15 @@ public class ApakahRiilPangram
         ArrayList<String> inputWord = new ArrayList<>(Arrays.asList(word));
         ArrayList<String> validAlphabetList = new ArrayList<>(Arrays.asList("abcdefghijklmnopqrstuvwxyz".split("")));
         ArrayList<String> missingAlphabet = new ArrayList<>();
-        for (int i = 0; i < word.length; i++)
+        for (int i = 0; i < inputWord.size(); i++)
         {
-            if (validAlphabetList.contains(word[i]))
+            if (validAlphabetList.contains(inputWord.get(i)))
             {
                 continue;
             }
-            for (int j = 0; j < word.length; j++)
+            //if (!(missingAlphabet.contains(inputWord.get(i))))
             {
-                
+                missingAlphabet.add(inputWord.get(i));
             }
         }
         System.out.println(validAlphabetList);
