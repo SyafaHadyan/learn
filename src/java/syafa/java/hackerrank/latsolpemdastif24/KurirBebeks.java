@@ -113,14 +113,7 @@ public class KurirBebeks
         {
             exit();
         }
-        if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
-        {
-            //deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + "000");
-        }
-        else if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) < 50 && Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) != 0)
-        {
-            //deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) - 1) + "000");
-        }
+        deliveryCost = deliveryCost.setScale(-2,RoundingMode.HALF_EVEN);
         System.out.printf("%-36s%.0f","Diperlukan biaya pengiriman sebesar",deliveryCost);
     }
 }
