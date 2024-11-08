@@ -24,14 +24,32 @@ public class TekaTekiAngkaPakDengklek
         int secondNumber = Integer.parseInt(input.nextLine());
         int thirdNumber = Integer.parseInt(input.nextLine());
         input.close();
+        int firstResult = 0;
+        int secondResult = 0;
         System.out.println("Halo Pak" + " " + name + " " + "!");
         System.out.printf
         (
             "%s%-2c%d\n%s%-2c%d",
-            "Hasil perhitungan pertama",':',(0),
-            "Hasil perhitungan kedua",':',(0)
+            "Hasil perhitungan pertama",':',(firstResult),
+            "Hasil perhitungan kedua",':',(secondResult)
         );
-        System.out.print("Apakah hasil pertama lebih besar dari hasil kedua?" + " ");
-        System.out.print(());
+        System.out.printf
+        (
+            "%s%-2c%s\n",
+            "Apakah hasil pertama lebih besar dari hasil kedua",'?',
+            (firstResult > secondResult)
+        );
+        System.out.printf
+        (
+            "%s%-2c%s\n",
+            "Apakah a lebih besar dari b dan b lebih besar dari c",'?',
+            !(firstNumber > secondNumber && secondNumber > thirdNumber)
+        );
+        System.out.printf
+        (
+            "%s%-2c%s",
+            "Apakah a sama dengan b atau b sama dengan c",'?',
+            !(firstNumber == secondNumber || secondNumber == thirdNumber)
+        );
     }
 }
