@@ -4,16 +4,6 @@ import java.math.*;
 
 public class JavaBigInteger
 {
-    /*
-     * 1234
-     * 20
-     * 
-     * 1254
-     * 24680
-     * 
-     * +
-     * *
-     */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -21,5 +11,6 @@ public class JavaBigInteger
         input.nextLine();
         BigInteger secondNumber = input.nextBigInteger();
         input.close();
+        System.out.print(firstNumber.add(secondNumber) + "\n" + firstNumber.multiply(secondNumber));
     }
 }
