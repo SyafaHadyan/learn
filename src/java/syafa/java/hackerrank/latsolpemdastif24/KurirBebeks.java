@@ -12,14 +12,14 @@ public class KurirBebeks
     {
         Scanner input = new Scanner(System.in);
         String deliveryOption = input.nextLine();
-        int totalItem = Integer.parseInt(input.nextLine());
+        long totalItem = Long.parseLong(input.nextLine());
         double totalWeight = Double.parseDouble(input.nextLine());
         input.close();
         if (totalItem <= 0 || totalWeight <= 0)
         {
             exit();
         }
-        int deliveryCost = 0;
+        long deliveryCost = 0;
         if (deliveryOption.equalsIgnoreCase("Ekonomi"))
         {
             deliveryCost = 10000;
@@ -110,13 +110,13 @@ public class KurirBebeks
         {
             exit();
         }
-        if (Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
+        if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
         {
-            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Integer.parseInt(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + "000");
+            deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + "000");
         }
-        else if (Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) < 50 && Integer.parseInt(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) != 0)
+        else if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) < 50 && Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) != 0)
         {
-            deliveryCost = Integer.parseInt((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Integer.parseInt(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) - 1) + "000");
+            deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) - 1) + "000");
         }
         System.out.print("Diperlukan biaya pengiriman sebesar" + " " + deliveryCost);
     }
