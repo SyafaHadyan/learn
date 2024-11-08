@@ -32,11 +32,16 @@ public class ApakahRiilPangram
             /*
              * Input bukan merupakan pangram karena tidak memiliki huruf B, C, G, H, J, L, N, O, Q, V, W, X, Y, Z :(
              */
-            System.out.print("Input bukan merupakan pangram karena tidak memiliki huruf");
+            System.out.print("Input bukan merupakan pangram karena tidak memiliki huruf ");
             for (int i = 0; i < missingAlphabet.size(); i++)
             {
-                
+                System.out.print(missingAlphabet.get(i));
+                if (missingAlphabet.size() - i != 1)
+                {
+                    System.out.print(", ");
+                }
             }
+            System.out.print(" :(");
             System.exit(0);
         }
         if (word.length > 26 && missingAlphabet.isEmpty())
