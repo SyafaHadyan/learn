@@ -56,22 +56,22 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
-            deliveryCost = 15000;
-            if (totalItem < 2)
+            deliveryCost.add(BigDecimal.valueOf(15000));
+            if (totalItem.compareTo(BigDecimal.valueOf(2)) < 2)
             {
                 exit();
             }
-            if (totalWeight <= 10)
+            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 10)
             {
-                deliveryCost += (totalWeight * 9000);
+                deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(9000)));
             }
-            else if (totalWeight > 10)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 10)
             {
-                deliveryCost += ((10 * 5000) + (totalWeight - 10) + 11000);
+                deliveryCost = deliveryCost.add(BigDecimal.valueOf(10 * 5000)).add((totalWeight.subtract(BigDecimal.valueOf(10))).multiply(BigDecimal.valueOf(11000)));
             }
-            if (totalItem > 4)
+            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 4)
             {
-                deliveryCost *= 0.85;
+                deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.85));
             }
         }
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
