@@ -17,6 +17,9 @@ public class JavaBigInteger
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        BigInteger firstNumber = input.nextBigInteger();
+        input.nextLine();
+        BigInteger secondNumber = input.nextBigInteger();
         input.close();
     }
 }
