@@ -1,7 +1,6 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
 import java.math.*;
-import java.text.Bidi;
 
 public class KurirBebeks
 {
@@ -78,26 +77,6 @@ public class KurirBebeks
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
             deliveryCost = BigDecimal.valueOf(25000);
-            /*
-            if (totalWeight <= 5)
-            {
-                deliveryCost += (totalWeight * 12000);
-            }
-            else if (totalWeight > 5)
-            {
-                deliveryCost += ((5 * 12000) + (totalWeight - 5) * 15000);
-            }
-            if (totalItem > 3)
-            {
-                deliveryCost *= 0.8;
-            }
-            */
-            /*
-             * 3
-             * 18
-             * 
-             * 
-             */
             deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(12000)));
             if (totalWeight.divide(totalItem).compareTo(BigDecimal.valueOf(5)) > 0)
             {
