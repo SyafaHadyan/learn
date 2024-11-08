@@ -1,6 +1,7 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
 import java.math.*;
+import java.text.Bidi;
 
 public class KurirBebeks
 {
@@ -40,7 +41,7 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
         {
-            deliveryCost.add(BigDecimal.valueOf(15000));
+            deliveryCost = (BigDecimal.valueOf(15000));
             if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 10)
             {
                 deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(5000)));
@@ -56,7 +57,7 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
-            deliveryCost.add(BigDecimal.valueOf(15000));
+            deliveryCost = (BigDecimal.valueOf(15000));
             if (totalItem.compareTo(BigDecimal.valueOf(2)) < 2)
             {
                 exit();
@@ -76,7 +77,7 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("SameDay"))
         {
-            deliveryCost = 25000;
+            deliveryCost = BigDecimal.valueOf(25000);
             /*
             if (totalWeight <= 5)
             {
@@ -97,15 +98,15 @@ public class KurirBebeks
              * 
              * 
              */
-            deliveryCost += (totalWeight * 12000);
-            if ((double) totalWeight / (double) totalItem > 5d)
+            deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(12000)));
+            if (totalWeight.divide(totalItem).compareTo(BigDecimal.valueOf(5)) > 5)
             {
-                totalWeight -= (5 * totalItem);
-                deliveryCost += (totalWeight * 3000);
+                totalWeight = totalWeight.subtract(totalItem.multiply(BigDecimal.valueOf(5)));
+                deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(3000)));
             }
-            if (totalItem > 3)
+            if (totalItem.compareTo(BigDecimal.valueOf(3)) > 3)
             {
-                deliveryCost *= 0.8;
+                deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.8));
             }
         }
         else
