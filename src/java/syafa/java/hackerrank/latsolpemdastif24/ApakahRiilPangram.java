@@ -1,5 +1,4 @@
 package syafa.java.hackerrank.latsolpemdastif24;
-import java.lang.reflect.Array;
 import java.util.*;
 import java.util.regex.*;
 
@@ -8,26 +7,31 @@ public class ApakahRiilPangram
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[] word = input.nextLine().replaceAll("[\\W+\\d+]","").toLowerCase().split("");
+        String[] word = input.nextLine().replaceAll("[\\W+\\d+]","").toUpperCase().split("");
         input.close();
         Arrays.sort(word);
         ArrayList<String> inputWord = new ArrayList<>(Arrays.asList(word));
-        ArrayList<String> validAlphabetList = new ArrayList<>(Arrays.asList("abcdefghijklmnopqrstuvwxyz".split("")));
+        ArrayList<String> validAlphabetList = new ArrayList<>(Arrays.asList("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")));
         ArrayList<String> missingAlphabet = new ArrayList<>();
-        for (int i = 0; i < inputWord.size(); i++)
+        missingAlphabet.addAll(validAlphabetList);
+        boolean isPangram = true;
+        for (int i = 0; i < validAlphabetList.size(); i++)
         {
-            if (validAlphabetList.contains(inputWord.get(i)))
+            if (inputWord.contains(validAlphabetList.get(i)))
             {
+                missingAlphabet.remove(validAlphabetList.get(i));
                 continue;
             }
-            //if (!(missingAlphabet.contains(inputWord.get(i))))
-            {
-                missingAlphabet.add(inputWord.get(i));
-            }
+            isPangram = false;
         }
         System.out.println(validAlphabetList);
         System.out.println(missingAlphabet);
         System.out.println(Arrays.toString(word));
+        if (!(missingAlphabet.isEmpty()))
+        {
+            System.out.print("Input bukan merupakan pangram karena tidak memiliki huruf");
+            System.exit(0);
+        }
         if (word.length > 26 && missingAlphabet.isEmpty())
         {
             System.out.print("Input hanya pangram biasa saja ");
