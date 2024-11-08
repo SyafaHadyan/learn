@@ -14,7 +14,6 @@ public class ApakahRiilPangram
         ArrayList<String> validAlphabetList = new ArrayList<>(Arrays.asList("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")));
         ArrayList<String> missingAlphabet = new ArrayList<>();
         missingAlphabet.addAll(validAlphabetList);
-        boolean isPangram = true;
         for (int i = 0; i < validAlphabetList.size(); i++)
         {
             if (inputWord.contains(validAlphabetList.get(i)))
@@ -22,16 +21,9 @@ public class ApakahRiilPangram
                 missingAlphabet.remove(validAlphabetList.get(i));
                 continue;
             }
-            isPangram = false;
         }
-        System.out.println(validAlphabetList);
-        System.out.println(missingAlphabet);
-        System.out.println(Arrays.toString(word));
         if (!(missingAlphabet.isEmpty()))
         {
-            /*
-             * Input bukan merupakan pangram karena tidak memiliki huruf B, C, G, H, J, L, N, O, Q, V, W, X, Y, Z :(
-             */
             System.out.print("Input bukan merupakan pangram karena tidak memiliki huruf ");
             for (int i = 0; i < missingAlphabet.size(); i++)
             {
