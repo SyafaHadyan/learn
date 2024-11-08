@@ -31,11 +31,11 @@ public class KurirBebeks
             }
             else if (totalWeight.compareTo(BigDecimal.valueOf(15)) > 15)
             {
-                deliveryCost += (15 * 3000) + ((totalWeight - 15) * 4500);
+                deliveryCost = deliveryCost.add(BigDecimal.valueOf(15 * 3000)).add((totalWeight.subtract(BigDecimal.valueOf(15))).multiply(BigDecimal.valueOf(4500)));
             }
-            if (totalItem > 6)
+            if (totalItem.compareTo(BigDecimal.valueOf(6)) > 6)
             {
-                deliveryCost *= 0.95;
+                deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.95));
             }
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
