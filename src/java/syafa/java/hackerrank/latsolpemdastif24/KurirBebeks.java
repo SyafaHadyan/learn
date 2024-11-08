@@ -1,5 +1,6 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
+import java.math.*;
 
 public class KurirBebeks
 {
@@ -12,22 +13,23 @@ public class KurirBebeks
     {
         Scanner input = new Scanner(System.in);
         String deliveryOption = input.nextLine();
-        long totalItem = Long.parseLong(input.nextLine());
-        double totalWeight = Double.parseDouble(input.nextLine());
+        BigDecimal totalItem = input.nextBigDecimal();
+        input.nextLine();
+        BigDecimal totalWeight = input.nextBigDecimal();
         input.close();
-        if (totalItem <= 0 || totalWeight <= 0)
+        if (totalItem.compareTo(BigDecimal.ZERO) <= 0 || totalWeight.compareTo(BigDecimal.ZERO) <= 0)
         {
             exit();
         }
-        long deliveryCost = 0;
+        BigDecimal deliveryCost = BigDecimal.ZERO;
         if (deliveryOption.equalsIgnoreCase("Ekonomi"))
         {
-            deliveryCost = 10000;
-            if (totalWeight <= 15)
+            deliveryCost = BigDecimal.valueOf(10000);
+            if (totalWeight.compareTo(BigDecimal.valueOf(15)) <= 15)
             {
-                deliveryCost += (totalWeight * 3000);
+                deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(3000)));
             }
-            else if (totalWeight > 15)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(15)) > 15)
             {
                 deliveryCost += (15 * 3000) + ((totalWeight - 15) * 4500);
             }
