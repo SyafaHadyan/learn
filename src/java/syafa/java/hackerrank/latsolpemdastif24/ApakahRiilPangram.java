@@ -36,7 +36,7 @@ public class ApakahRiilPangram
             System.out.print(" :(");
             System.exit(0);
         }
-        if (word.length > 26 && missingAlphabet.isEmpty())
+        if (word.length > validAlphabetList.size() && missingAlphabet.isEmpty())
         {
             System.out.print("Input hanya pangram biasa saja :)");
             System.exit(0);
