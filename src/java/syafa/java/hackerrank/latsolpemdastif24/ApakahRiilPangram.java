@@ -19,7 +19,6 @@ public class ApakahRiilPangram
             if (inputWord.contains(validAlphabetList.get(i)))
             {
                 missingAlphabet.remove(validAlphabetList.get(i));
-                continue;
             }
         }
         if (!(missingAlphabet.isEmpty()))
