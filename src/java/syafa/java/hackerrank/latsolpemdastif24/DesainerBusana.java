@@ -1,4 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
+import java.math.*;
 import java.util.*;
 
 public class DesainerBusana
@@ -35,10 +36,10 @@ public class DesainerBusana
      * Jumlah Pita: 3.0
      * Bahan tidak cukup untuk membuat baju.
      */
-    static final double[][] CLOTH_RIBBON =
+    static final BigDecimal[][] CLOTH_RIBBON =
     {
-        {1.2,1.5,2.0},
-        {0.8,1.0,1.3}
+        {BigDecimal.valueOf(1.2),BigDecimal.valueOf(1.5),BigDecimal.valueOf(2.0)},
+        {BigDecimal.valueOf(0.8),BigDecimal.valueOf(1.0),BigDecimal.valueOf(1.3)}
     };
     static final char[] SIZE_LIST =
     {
@@ -61,19 +62,18 @@ public class DesainerBusana
             "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
         );
         int[] product = {1,1,1};
-        //int tempCount = 0;
-        if (material[0] < 4.7 || material[1] < 3.1)
-        {
-            System.out.print("Bahan tidak cukup untuk membuat baju.");
-            System.exit(0);
-        }
         for (int i = 0; i < CLOTH_RIBBON.length; i++)
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
             {
                 material[i] -= CLOTH_RIBBON[i][j];
             }
-            //tempCount += material[i];
+            System.out.println(material[i]);
+            if (material[i] < 0d)
+            {
+                System.out.print("Bahan tidak cukup untuk membuat baju.");
+                System.exit(0);
+            }
         }
         for (int i = 2; i >= 0; i--)
         {
