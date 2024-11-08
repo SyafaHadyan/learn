@@ -12,6 +12,15 @@ Celana_Jeans 3000 2
 Selimut_Tebal 13000 1
 Boneka 13000 2
 45
+
+Gabriel
+1234
+14 37
+Baju_Berkerah 1000000 1000000
+Celana_Jeans 1000000 2
+Selimut_Tebal 13000 1
+Boneka 13000 2
+45
      */
     /*
      * ====================================================================
@@ -43,27 +52,27 @@ Boneka 13000 2
         int startMinute = input.nextInt();
         input.nextLine();
         String itemName0 = input.next();
-        int itemPrice0 = input.nextInt();
-        int itemQuantity0 = input.nextInt();
+        double itemPrice0 = input.nextDouble();
+        double itemQuantity0 = input.nextDouble();
         input.nextLine();
         String itemName1 = input.next();
-        int itemPrice1 = input.nextInt();
-        int itemQuantity1 = input.nextInt();
+        double itemPrice1 = input.nextDouble();
+        double itemQuantity1 = input.nextDouble();
         input.nextLine();
         String itemName2 = input.next();
-        int itemPrice2 = input.nextInt();
-        int itemQuantity2 = input.nextInt();
+        double itemPrice2 = input.nextDouble();
+        double itemQuantity2 = input.nextDouble();
         input.nextLine();
         String itemName3 = input.next();
-        int itemPrice3 = input.nextInt();
-        int itemQuantity3 = input.nextInt();
+        double itemPrice3 = input.nextDouble();
+        double itemQuantity3 = input.nextDouble();
         input.nextLine();
         int laundryMinute = Integer.parseInt(input.nextLine());
         int minuteFinish = (startMinute + laundryMinute) % 60;
         int hourFinish = startHour + ((startMinute + laundryMinute) / 60);
         hourFinish %= 24;
         input.close();
-        int bill = ((itemPrice0 * itemQuantity0) + (itemPrice1 * itemQuantity1) + (itemPrice2  * itemQuantity2) + (itemPrice3 * itemQuantity3));
+        double bill = ((itemPrice0 * itemQuantity0) + (itemPrice1 * itemQuantity1) + (itemPrice2  * itemQuantity2) + (itemPrice3 * itemQuantity3));
         System.out.println("====================================================================");
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
         System.out.printf("%41s\n",new String("Jam" + " " + startHour + " " + "Menit" + " " + startMinute));
@@ -76,12 +85,12 @@ Boneka 13000 2
         //System.out.printf("%-3s%-2s%-26s%-2s%-16d%-2s%-16d%s\n","2.","|",itemName1,"|",itemQuantity1,"|",itemPrice1,"|");
         //System.out.printf("%-3s%-2s%-26s%-2s%-16d%-2s%-16d%s\n","3.","|",itemName2,"|",itemQuantity2,"|",itemPrice2,"|");
         //System.out.printf("%-3s%-2s%-26s%-2s%-16d%-2s%-16d%s\n","4.","|",itemName3,"|",itemQuantity3,"|",itemPrice3,"|");
-        System.out.printf("%-2s | %-25s | %-15d | %-15d |\n", "1.", itemName0, itemQuantity0, itemPrice0);
-        System.out.printf("%-2s | %-25s | %-15d | %-15d |\n", "2.", itemName1, itemQuantity1, itemPrice1);
-        System.out.printf("%-2s | %-25s | %-15d | %-15d |\n", "3.", itemName2, itemQuantity2, itemPrice2);
-        System.out.printf("%-2s | %-25s | %-15d | %-15d |\n", "4.", itemName3, itemQuantity3, itemPrice3);
+        System.out.printf("%-2s | %-25s | %-15.0f | %-15.0f |\n", "1.", itemName0, itemQuantity0, itemPrice0);
+        System.out.printf("%-2s | %-25s | %-15.0f | %-15.0f |\n", "2.", itemName1, itemQuantity1, itemPrice1);
+        System.out.printf("%-2s | %-25s | %-15.0f | %-15.0f |\n", "3.", itemName2, itemQuantity2, itemPrice2);
+        System.out.printf("%-2s | %-25s | %-15.0f | %-15.0f |\n", "4.", itemName3, itemQuantity3, itemPrice3);
         System.out.println("--------------------------------------------------------------------");
-        System.out.printf("%-38s%s%-2s%-4s%d\n\n","","Total Harga","|","Rp.",(bill));
+        System.out.printf("%-38s%s%-2s%-4s%.0f\n\n","","Total Harga","|","Rp.",(bill));
         System.out.printf("%68s\n",new String("Estimasi selesai" + ":" + " " + "Jam" + " " + hourFinish + " " + "Menit" + " " + minuteFinish));
         System.out.print("====================================================================");
     }
