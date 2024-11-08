@@ -37,6 +37,47 @@ public class Rifflex
          * 2S 4S 2D 4D 5D 3D 5S 3S
          * 
          * 2S 4S 5S 4D 3S 2D 5D 3D
+         * 
+         * 
+         * 
+         * INITIAL
+         * 2S 3S 4S 5S 2D 3D 4D 5D
+         * 
+         * 1 2S -> 4D
+         * 4D 3S 4S 5S 2D 3D 2S 5D
+         * 
+         * 2 4D -> 3S
+         * 3S 4D 4S 5S 2D 3D 2S 5D
+         * 
+         * 3 4D -> 4S
+         * 3S 4S 4D 5S 2D 3D 2S 5D 
+         * 
+         * 4 5S -> 4S
+         * 3S 5S 4D 4S 2D 3D 2S 5D
+         * 
+         * 5 2D-> 5D
+         * 3S 5S 4D 4S 5D 3D 2S 2D
+         * 
+         * 6 3D -> 4D
+         * 3S 5S 3D 4S 5D 4D 2S 2D
+         * 
+         * 7 2S -> 4D
+         * 3S 5S 3D 4S 5D 2S 4D 2D
+         * 
+         * 8 2D -> 4S
+         * 3S 5S 3D 2D 5D 2S 4D 4S
+         * 
+         * 
+         * SWAPPED
+         * 4D 3S 2D 5S 3D 2S 5D 4S
+         * 
+         * 
+         * 
+         * 3S 2S
+         * 
+         * 3S 2S 5S 4S 3D 2D 5D 4D
+         * 
+         * 4D 3S 2D 5S 3D 2S 5D 4S
          */
         Scanner input = new Scanner(System.in);
         String[] card = input.nextLine().split("\s");
