@@ -32,35 +32,6 @@ Boneka 13000 2
      *                                    Estimasi selesai: Jam 15 Menit 22
      * ====================================================================
      */
-    /*
-Gabriel
-1234
-14 37
-Baju_Berkerah 2000 4
-Celana_Jeans 3000 2
-Selimut_Tebal 13000 1
-Boneka 13000 2
-45
-     */
-    /*
-     * ====================================================================
-     *                    LAUNDRY BEBEKS (BEBAS EKSPRES)
-     *                           Jam 14 Menit 37
-     * --------------------------------------------------------------------
-     * Nama            : Gabriel
-     * ID Pelanggan    : 1234
-     * --------------------------------------------------------------------
-     * No.| Nama Pakaian              | Kuantitas       | Harga           |
-     * --------------------------------------------------------------------
-     * 1. | Baju_Berkerah             | 4               | 2000            |
-     * 2. | Celana_Jeans              | 2               | 3000            |
-     * 3. | Selimut_Tebal             | 1               | 13000           |
-     * 4. | Boneka                    | 2               | 13000           |
-     * --------------------------------------------------------------------
-     *                                       Total Harga| Rp. 53000
-     *                                    Estimasi selesai: Jam 15 Menit 22
-     * ====================================================================
-     */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
