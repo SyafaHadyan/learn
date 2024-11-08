@@ -40,18 +40,18 @@ public class KurirBebeks
         }
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
         {
-            deliveryCost = 15000;
-            if (totalWeight <= 10)
+            deliveryCost.add(BigDecimal.valueOf(15000));
+            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 10)
             {
-                deliveryCost += (totalWeight * 5000);
+                deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(5000)));
             }
-            else if (totalWeight > 10)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 10)
             {
-                deliveryCost += ((10 * 5000) + (totalWeight - 10) * 7000);
+                deliveryCost = deliveryCost.add(BigDecimal.valueOf(10 * 5000)).add((totalWeight.subtract(BigDecimal.valueOf(10))).multiply(BigDecimal.valueOf(7000)));
             }
-            if (totalItem > 4)
+            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 4)
             {
-                deliveryCost *= 0.9;
+                deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.9));
             }
         }
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
