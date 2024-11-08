@@ -32,6 +32,35 @@ Boneka 13000 2
      *                                    Estimasi selesai: Jam 15 Menit 22
      * ====================================================================
      */
+    /*
+Gabriel
+1234
+14 37
+Baju_Berkerah 2000 4
+Celana_Jeans 3000 2
+Selimut_Tebal 13000 1
+Boneka 13000 2
+45
+     */
+    /*
+     * ====================================================================
+     *                    LAUNDRY BEBEKS (BEBAS EKSPRES)
+     *                           Jam 14 Menit 37
+     * --------------------------------------------------------------------
+     * Nama            : Gabriel
+     * ID Pelanggan    : 1234
+     * --------------------------------------------------------------------
+     * No.| Nama Pakaian              | Kuantitas       | Harga           |
+     * --------------------------------------------------------------------
+     * 1. | Baju_Berkerah             | 4               | 2000            |
+     * 2. | Celana_Jeans              | 2               | 3000            |
+     * 3. | Selimut_Tebal             | 1               | 13000           |
+     * 4. | Boneka                    | 2               | 13000           |
+     * --------------------------------------------------------------------
+     *                                       Total Harga| Rp. 53000
+     *                                    Estimasi selesai: Jam 15 Menit 22
+     * ====================================================================
+     */
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -58,9 +87,10 @@ Boneka 13000 2
         input.nextLine();
         int laundryMinute = Integer.parseInt(input.nextLine());
         int minuteFinish = (startMinute + laundryMinute) % 60;
-        int hourFinish = startHour + ((laundryMinute + minuteFinish) / 60);
+        int hourFinish = startHour + ((startMinute + laundryMinute) / 60);
         hourFinish %= 24;
         input.close();
+        int bill = ((itemPrice0 * itemQuantity0) + (itemPrice1 * itemQuantity1) + (itemPrice2  * itemQuantity2) + (itemPrice3 * itemQuantity3));
         System.out.println("====================================================================");
         System.out.printf("%-19s%s\n","","LAUNDRY BEBEKS (BEBAS EKSPRES)");
         System.out.printf("%41s\n",new String("Jam" + " " + startHour + " " + "Menit" + " " + startMinute));
@@ -74,7 +104,7 @@ Boneka 13000 2
         System.out.printf("%-3s%-2s%-26s%-2s%-16d%-2s%-16d%s\n","3.","|",itemName2,"|",itemQuantity2,"|",itemPrice2,"|");
         System.out.printf("%-3s%-2s%-26s%-2s%-16d%-2s%-16d%s\n","4.","|",itemName3,"|",itemQuantity3,"|",itemPrice3,"|");
         System.out.println("--------------------------------------------------------------------");
-        System.out.printf("%-38s%s%-2s%-4s%d\n\n","","Total Harga","|","Rp.",((itemPrice0 * itemQuantity0) + (itemPrice1 * itemQuantity1) + (itemPrice2  * itemQuantity2) + (itemPrice3 * itemQuantity3)));
+        System.out.printf("%-38s%s%-2s%-4s%d\n\n","","Total Harga","|","Rp.",(bill));
         System.out.printf("%68s\n",new String("Estimasi selesai" + ":" + " " + "Jam" + " " + hourFinish + " " + "Menit" + " " + minuteFinish));
         System.out.print("====================================================================");
     }
