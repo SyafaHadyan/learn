@@ -74,7 +74,7 @@ public class DesainerBusana
                 System.exit(0);
             }
         }
-        for (int i = 2; i >= 0; i--)
+        for (int i = 2; i >= 0;)
         {
             if (material[0].subtract(CLOTH_RIBBON[0][i]).compareTo(BigDecimal.ZERO) >= 0 && material[1].subtract(CLOTH_RIBBON[1][i]).compareTo(BigDecimal.ZERO) >= 0)
             {
@@ -83,13 +83,11 @@ public class DesainerBusana
                     material[j] = material[j].subtract(CLOTH_RIBBON[j][i]);
                 }
                 product[i]++;
-                i++;
+                continue;
             }
+            i--;
         }
         System.out.print("Nonput dapat membuat");
-        /*
-         * Nonput dapat membuat 2 ukuran S, 1 ukuran M, 4 ukuran L.
-         */
         for (int i = 0; i < product.length; i++)
         {
             System.out.printf(" %-2d%-7s%c%c",product[i],"ukuran",SIZE_LIST[i],(product.length - i == 1) ? '.' : ',');
