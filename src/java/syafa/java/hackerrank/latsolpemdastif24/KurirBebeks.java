@@ -26,15 +26,15 @@ public class KurirBebeks
         if (deliveryOption.equalsIgnoreCase("Ekonomi"))
         {
             deliveryCost = BigDecimal.valueOf(10000);
-            if (totalWeight.compareTo(BigDecimal.valueOf(15)) <= 15)
+            if (totalWeight.compareTo(BigDecimal.valueOf(15)) <= 0)
             {
                 deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(3000)));
             }
-            else if (totalWeight.compareTo(BigDecimal.valueOf(15)) > 15)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(15)) > 0)
             {
                 deliveryCost = deliveryCost.add(BigDecimal.valueOf(15 * 3000)).add((totalWeight.subtract(BigDecimal.valueOf(15))).multiply(BigDecimal.valueOf(4500)));
             }
-            if (totalItem.compareTo(BigDecimal.valueOf(6)) > 6)
+            if (totalItem.compareTo(BigDecimal.valueOf(6)) > 0)
             {
                 deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.95));
             }
@@ -42,15 +42,15 @@ public class KurirBebeks
         else if (deliveryOption.equalsIgnoreCase("Reguler"))
         {
             deliveryCost = (BigDecimal.valueOf(15000));
-            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 10)
+            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 0)
             {
                 deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(5000)));
             }
-            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 10)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 0)
             {
                 deliveryCost = deliveryCost.add(BigDecimal.valueOf(10 * 5000)).add((totalWeight.subtract(BigDecimal.valueOf(10))).multiply(BigDecimal.valueOf(7000)));
             }
-            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 4)
+            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 0)
             {
                 deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.9));
             }
@@ -58,19 +58,19 @@ public class KurirBebeks
         else if (deliveryOption.equalsIgnoreCase("Kilat"))
         {
             deliveryCost = (BigDecimal.valueOf(15000));
-            if (totalItem.compareTo(BigDecimal.valueOf(2)) < 2)
+            if (totalItem.compareTo(BigDecimal.valueOf(2)) < 0)
             {
                 exit();
             }
-            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 10)
+            if (totalWeight.compareTo(BigDecimal.valueOf(10)) <= 0)
             {
                 deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(9000)));
             }
-            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 10)
+            else if (totalWeight.compareTo(BigDecimal.valueOf(10)) > 0)
             {
                 deliveryCost = deliveryCost.add(BigDecimal.valueOf(10 * 5000)).add((totalWeight.subtract(BigDecimal.valueOf(10))).multiply(BigDecimal.valueOf(11000)));
             }
-            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 4)
+            if (totalItem.compareTo(BigDecimal.valueOf(4)) > 0)
             {
                 deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.85));
             }
@@ -99,12 +99,12 @@ public class KurirBebeks
              * 
              */
             deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(12000)));
-            if (totalWeight.divide(totalItem).compareTo(BigDecimal.valueOf(5)) > 5)
+            if (totalWeight.divide(totalItem).compareTo(BigDecimal.valueOf(5)) > 0)
             {
                 totalWeight = totalWeight.subtract(totalItem.multiply(BigDecimal.valueOf(5)));
                 deliveryCost = deliveryCost.add(totalWeight.multiply(BigDecimal.valueOf(3000)));
             }
-            if (totalItem.compareTo(BigDecimal.valueOf(3)) > 3)
+            if (totalItem.compareTo(BigDecimal.valueOf(3)) > 0)
             {
                 deliveryCost = deliveryCost.multiply(BigDecimal.valueOf(0.8));
             }
@@ -115,12 +115,12 @@ public class KurirBebeks
         }
         if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) >= 50)
         {
-            deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + "000");
+            //deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) + 1) + "000");
         }
         else if (Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) < 50 && Long.parseLong(String.valueOf(deliveryCost).substring(String.valueOf(deliveryCost).length() - 2,String.valueOf(deliveryCost).length())) != 0)
         {
-            deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) - 1) + "000");
+            //deliveryCost = Long.parseLong((String.valueOf(deliveryCost).substring(0,String.valueOf(deliveryCost).length() - 4)) + (Long.parseLong(String.valueOf(String.valueOf(deliveryCost).charAt(String.valueOf(deliveryCost).length() - 4))) - 1) + "000");
         }
-        System.out.print("Diperlukan biaya pengiriman sebesar" + " " + deliveryCost);
+        System.out.printf("%-36s%.0f","Diperlukan biaya pengiriman sebesar",deliveryCost);
     }
 }
