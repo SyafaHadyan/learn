@@ -9,11 +9,18 @@ public class JavaBigDecimal
         Scanner input = new Scanner(System.in);
         int arraySize = Integer.parseInt(input.nextLine());
         BigDecimal[] array = new BigDecimal[arraySize];
-        for (int i = 0; i < arraySize; i++)
+        for (int i = 0; i < array.length; i++)
         {
             array[i] = input.nextBigDecimal();
             input.nextLine();
         }
         input.close();
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0 + i; j < array.length; j++)
+            {
+                //
+            }
+        }
     }
 }
