@@ -19,7 +19,20 @@ public class JavaBigDecimal
         {
             for (int j = 0 + i; j < array.length; j++)
             {
-                //
+                if (array[i].compareTo(array[j]) < 0)
+                {
+                    BigDecimal tempSwap = array[i];
+                    array[i] = array[j];
+                    array[j] = tempSwap;
+                }
+            }
+        }
+        for (int i = 0; i < array.length; i++)
+        {
+            System.out.print(array[i]);
+            if (array.length - i != 1)
+            {
+                System.out.print("\n");
             }
         }
     }
