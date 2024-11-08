@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.latsolpemdastif24;
 import java.util.*;
-import java.util.regex.*;
 
 public class ApakahRiilPangram
 {
