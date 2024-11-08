@@ -49,7 +49,7 @@ public class TekaTekiAngkaPakDengklek
         (
             "%s%-2c%s",
             "Apakah a sama dengan b atau b sama dengan c",'?',
-            !(firstNumber == secondNumber || secondNumber == thirdNumber)
+            (firstNumber == secondNumber || secondNumber == thirdNumber)
         );
     }
 }
