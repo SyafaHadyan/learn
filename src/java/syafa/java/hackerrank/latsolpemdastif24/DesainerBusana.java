@@ -61,21 +61,23 @@ public class DesainerBusana
             "Jumlah Kain",':',material[0],"Jumlah Pita",':',material[1]
         );
         int[] product = {1,1,1};
+        //int tempCount = 0;
+        if (material[0] < 4.7 || material[1] < 3.1)
+        {
+            System.out.print("Bahan tidak cukup untuk membuat baju.");
+            System.exit(0);
+        }
         for (int i = 0; i < CLOTH_RIBBON.length; i++)
         {
             for (int j = 0; j < CLOTH_RIBBON[i].length; j++)
             {
                 material[i] -= CLOTH_RIBBON[i][j];
             }
-            if (material[i] <= -0.000000000000000000000000000000000000000000000000000000000000000000000000001)
-            {
-                System.out.print("Bahan tidak cukup untuk membuat baju.");
-                System.exit(0);
-            }
+            //tempCount += material[i];
         }
         for (int i = 2; i >= 0; i--)
         {
-            if (material[0] - CLOTH_RIBBON[0][i] >= -0.000000000000000000000000000000000000000000000000000000000000000000000000001 && material[1] - CLOTH_RIBBON[1][i] >= -0.000000000000000000000000000000000000000000000000000000000000000000000000001)
+            if (material[0] - CLOTH_RIBBON[0][i] >= 0d && material[1] - CLOTH_RIBBON[1][i] >= 0d)
             {
                 for (int j = 0; j < material.length; j++)
                 {
