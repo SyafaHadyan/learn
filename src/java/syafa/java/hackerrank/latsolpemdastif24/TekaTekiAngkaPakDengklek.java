@@ -24,8 +24,8 @@ public class TekaTekiAngkaPakDengklek
         int secondNumber = Integer.parseInt(input.nextLine());
         int thirdNumber = Integer.parseInt(input.nextLine());
         input.close();
-        int firstResult = (firstNumber + 4 + 1 + 1 - 1 - secondNumber) * thirdNumber;
-        int secondResult = 2;
+        int firstResult = (firstNumber+++--secondNumber) * thirdNumber;
+        int secondResult = firstNumber % secondNumber + thirdNumber;
         System.out.printf("%-9s%s%c\n","Halo Pak",name,'!');
         System.out.printf
         (
@@ -43,7 +43,7 @@ public class TekaTekiAngkaPakDengklek
         (
             "%s%-2c%s\n",
             "Apakah a lebih besar dari b dan b lebih besar dari c",'?',
-            !(firstNumber > secondNumber && secondNumber > thirdNumber)
+            (firstNumber > secondNumber && secondNumber > thirdNumber)
         );
         System.out.printf
         (
