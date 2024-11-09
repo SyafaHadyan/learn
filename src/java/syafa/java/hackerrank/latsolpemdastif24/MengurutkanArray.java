@@ -4,15 +4,30 @@ import java.util.stream.*;
 
 public class MengurutkanArray
 {
+    public static int[] sortArray(int[] array)
+    {
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0 + i; j < array.length; j++)
+            {
+                if (array[i] > array[j])
+                {
+                    int tempSwap = array[i];
+                    array[i] = array[j];
+                    array[j] = tempSwap;
+                }
+            }
+        }
+        return array;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        StringBuilder useless = new StringBuilder(input.nextLine());
-        useless.delete(0,useless.length());
-        int[] data = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int arrayLength = Integer.parseInt(input.nextLine());
+        int[] data = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        Arrays.sort(data);
-        for (int i = 0; i < data.length; i++)
+        sortArray(data);
+        for (int i = 0; i < arrayLength; i++)
         {
             System.out.print(data[i]);
             if (data.length - i != 1)
