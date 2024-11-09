@@ -22,7 +22,7 @@ public class Day2CubeConundrum
             int tempRed = 0;
             int tempGreen = 0;
             int tempBlue = 0;
-            String[] currentGame = input.nextLine().split("\s");
+            String[] currentGame = input.nextLine().split("\\W+");
         }
         input.close();
     }
