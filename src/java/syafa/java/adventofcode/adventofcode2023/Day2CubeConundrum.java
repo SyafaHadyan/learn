@@ -23,6 +23,10 @@ public class Day2CubeConundrum
             int tempGreen = 0;
             int tempBlue = 0;
             String[] currentGame = input.nextLine().split("\\W+");
+            for (int i = 2; i < (currentGame.length - 2); i += 2)
+            {
+                //
+            }
         }
         input.close();
     }
