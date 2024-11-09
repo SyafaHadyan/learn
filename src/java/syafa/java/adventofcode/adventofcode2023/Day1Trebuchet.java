@@ -11,7 +11,7 @@ public class Day1Trebuchet
         while (input.hasNextLine())
         {
             int[] inputData = Stream.of(input.nextLine().replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
-            sum += (inputData[0] + inputData[inputData.length - 1]);
+            sum += Integer.parseInt(String.valueOf(inputData[0]) + String.valueOf(inputData[inputData.length - 1]));
         }
         input.close();
         System.out.print(sum);
