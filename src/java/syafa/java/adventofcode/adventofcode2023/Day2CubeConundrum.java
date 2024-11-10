@@ -4,12 +4,12 @@ import java.util.stream.*;
 
 public class Day2CubeConundrum
 {
-    //static final int[] CUBE_CONFIG = {12,13,14};
-    static final Map<String,Integer> CUBE_CONFIG = Map.ofEntries
+    static final int[] CUBE_CONFIG = {12,13,14};
+    static final Map<String,Integer> CUBE_CONFIG_INDEX = Map.ofEntries
         (
-            Map.entry("Red",12),
-            Map.entry("Green",13),
-            Map.entry("Blue",14)
+            Map.entry("Red",0),
+            Map.entry("Green",1),
+            Map.entry("Blue",2)
         );
     public static void main(String[] args)
     {
@@ -24,7 +24,6 @@ public class Day2CubeConundrum
          */
         Scanner input = new Scanner(System.in);
         int possibleIdSum = 0;
-        System.out.println(CUBE_CONFIG);
         while (input.hasNextLine())
         {
             int gameId = 0;
@@ -32,24 +31,11 @@ public class Day2CubeConundrum
             String[] currentGame = input.nextLine().split("\\W+");
             for (int i = 2; i < (currentGame.length - 2); i += 2)
             {
-                //if ()
-                /*
-                if (currentGame[i].equalsIgnoreCase("Red"))
-                {
-                    //
-                }
-                else if (currentGame[i].equalsIgnoreCase("Green"))
-                {
-                    //
-                }
-                else if (currentGame[i].equalsIgnoreCase("Blue"))
-                {
-                    //
-                }
-                */
+                CUBE_CONFIG_INDEX.get(currentGame[i + 1]);
             }
             //if ()
         }
         input.close();
+        System.out.print(CUBE_CONFIG_INDEX);
     }
 }
