@@ -1,6 +1,5 @@
 package syafa.java.adventofcode.adventofcode2023;
 import java.util.*;
-import java.util.stream.*;
 
 public class Day2CubeConundrum
 {
