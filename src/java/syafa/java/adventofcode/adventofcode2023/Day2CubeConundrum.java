@@ -29,7 +29,7 @@ public class Day2CubeConundrum
             String[] currentGame = input.nextLine().split("\\W+");
             for (int i = 2; i < (currentGame.length - 2); i += 2)
             {
-                currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[i + 1].toUpperCase())] = Integer.parseInt(currentGame[i]);
+                currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[i + 1].toUpperCase())] += Integer.parseInt(currentGame[i]);
             }
             for (int i = 0; i < currentCubeConfig.length; i++)
             {
