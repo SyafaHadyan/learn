@@ -31,10 +31,16 @@ public class Day2CubeConundrum
         while (input.hasNextLine())
         {
             int[] currentCubeConfig = new int[CUBE_CONFIG.length];
-            String[] currentGame = input.nextLine().split("\\W+");
-            for (int i = 2; i < currentGame.length; i += 2)
+            String rawInput = input.nextLine();
+            int currentGameId = Integer.parseInt(rawInput.split("\s")[1]);
+            System.out.println(currentGameId);
+            String[] currentGame = rawInput.split("\\W+");
+            for (int i = 0; i < currentGame.length; i++)
             {
-                currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[i + 1].toUpperCase())] += Integer.parseInt(currentGame[i]);
+                for (int j = 2; j < currentGame.length; j += 2)
+                {
+                    currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[j + 1].toUpperCase())] += Integer.parseInt(currentGame[j]);
+                }
             }
             for (int i = 0; i < currentCubeConfig.length; i++)
             {
