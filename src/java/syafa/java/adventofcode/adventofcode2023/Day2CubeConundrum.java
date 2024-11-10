@@ -32,7 +32,6 @@ public class Day2CubeConundrum
         while (input.hasNextLine())
         {
             boolean possibleConfig = true;
-            int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String rawInput = input.nextLine();
             int currentGameId = Integer.parseInt(rawInput.split("\s")[1].replace(":",""));
             rawInput = rawInput.replaceAll("Game \\d+","");
@@ -41,6 +40,7 @@ public class Day2CubeConundrum
             String[] currentGame = rawInput.split(";\\s*");
             for (int i = 0; i < currentGame.length; i++)
             {
+                int[] currentCubeConfig = new int[CUBE_CONFIG.length];
                 String[] currentGameSet = currentGame[i].split("\s");
                 for (int j = 0; j < currentGameSet.length; j += 2)
                 {
