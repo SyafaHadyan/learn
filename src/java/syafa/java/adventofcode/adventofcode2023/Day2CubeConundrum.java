@@ -34,7 +34,6 @@ public class Day2CubeConundrum
             int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String rawInput = input.nextLine();
             int currentGameId = Integer.parseInt(rawInput.split("\s")[1].replace(":",""));
-            System.out.println(currentGameId);
             rawInput = rawInput.replaceAll("Game \\d+","");
             rawInput = rawInput.replaceAll(": ","");
             rawInput = rawInput.replaceAll(",","");
