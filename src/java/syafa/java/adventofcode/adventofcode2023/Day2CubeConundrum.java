@@ -1,5 +1,6 @@
 package syafa.java.adventofcode.adventofcode2023;
 import java.util.*;
+import java.util.regex.*;
 
 public class Day2CubeConundrum
 {
@@ -32,9 +33,13 @@ public class Day2CubeConundrum
         {
             int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String rawInput = input.nextLine();
-            int currentGameId = Integer.parseInt(rawInput.split("\s")[1]);
+            int currentGameId = Integer.parseInt(rawInput.split("\s")[1].replace(":",""));
             System.out.println(currentGameId);
-            String[] currentGame = rawInput.split("\\W+");
+            rawInput = rawInput.replaceAll("Game \\d+","");
+            rawInput = rawInput.replaceAll(": ","");
+            rawInput = rawInput.replaceAll(",","");
+            String[] currentGame = rawInput.split(";\\s*");
+            System.out.println(Arrays.toString(currentGame));
             for (int i = 0; i < currentGame.length; i++)
             {
                 for (int j = 2; j < currentGame.length; j += 2)
