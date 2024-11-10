@@ -21,6 +21,11 @@ public class Day2CubeConundrum
          * 
          * only 12 red cubes, 13 green cubes, and 14 blue cubes
          */
+        /*
+         * TODO
+         * 
+         * Split based on game set
+         */
         Scanner input = new Scanner(System.in);
         int possibleIdSum = 0;
         while (input.hasNextLine())
