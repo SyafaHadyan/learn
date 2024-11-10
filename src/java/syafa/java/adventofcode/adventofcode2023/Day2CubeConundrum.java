@@ -42,9 +42,10 @@ public class Day2CubeConundrum
             System.out.println(Arrays.toString(currentGame));
             for (int i = 0; i < currentGame.length; i++)
             {
-                for (int j = 2; j < currentGame.length; j += 2)
+                String[] currentGameSet = currentGame[i].split("\s");
+                for (int j = 0; j < currentGameSet.length; j += 2)
                 {
-                    currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[j + 1].toUpperCase())] += Integer.parseInt(currentGame[j]);
+                    currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGameSet[j + 1].toUpperCase())] += Integer.parseInt(currentGameSet[j]);
                 }
             }
             for (int i = 0; i < currentCubeConfig.length; i++)
@@ -55,7 +56,7 @@ public class Day2CubeConundrum
                 }
                 if (currentCubeConfig.length - i == 1)
                 {
-                    possibleIdSum += Integer.parseInt(currentGame[1]);
+                    possibleIdSum += currentGameId;
                 }
             }
         }
