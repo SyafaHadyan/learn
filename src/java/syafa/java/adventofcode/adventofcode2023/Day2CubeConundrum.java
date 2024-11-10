@@ -45,6 +45,6 @@ public class Day2CubeConundrum
             }
         }
         input.close();
-        System.out.print(CUBE_CONFIG_INDEX);
+        System.out.print(possibleIdSum);
     }
 }
