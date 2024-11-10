@@ -7,9 +7,9 @@ public class Day2CubeConundrum
     static final int[] CUBE_CONFIG = {12,13,14};
     static final Map<String,Integer> CUBE_CONFIG_INDEX = Map.ofEntries
         (
-            Map.entry("Red",0),
-            Map.entry("Green",1),
-            Map.entry("Blue",2)
+            Map.entry("RED",0),
+            Map.entry("GREEN",1),
+            Map.entry("BLUE",2)
         );
     public static void main(String[] args)
     {
@@ -31,7 +31,7 @@ public class Day2CubeConundrum
             String[] currentGame = input.nextLine().split("\\W+");
             for (int i = 2; i < (currentGame.length - 2); i += 2)
             {
-                CUBE_CONFIG_INDEX.get(currentGame[i + 1]);
+                currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[i + 1].toUpperCase())] = Integer.parseInt(currentGame[i]);
             }
             //if ()
         }
