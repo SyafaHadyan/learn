@@ -31,6 +31,7 @@ public class Day2CubeConundrum
         int possibleIdSum = 0;
         while (input.hasNextLine())
         {
+            boolean possibleConfig = true;
             int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String rawInput = input.nextLine();
             int currentGameId = Integer.parseInt(rawInput.split("\s")[1].replace(":",""));
@@ -45,17 +46,17 @@ public class Day2CubeConundrum
                 {
                     currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGameSet[j + 1].toUpperCase())] += Integer.parseInt(currentGameSet[j]);
                 }
+                for (int j = 0; j < currentCubeConfig.length; j++)
+                {
+                    if (currentCubeConfig[j] > CUBE_CONFIG[j])
+                    {
+                        possibleConfig = false;
+                    }
+                }
             }
-            for (int i = 0; i < currentCubeConfig.length; i++)
+            if (possibleConfig)
             {
-                if (currentCubeConfig[i] > CUBE_CONFIG[i])
-                {
-                    break;
-                }
-                if (currentCubeConfig.length - i == 1)
-                {
-                    possibleIdSum += currentGameId;
-                }
+                possibleIdSum += currentGameId;
             }
         }
         input.close();
