@@ -27,13 +27,23 @@ public class Day2CubeConundrum
         while (input.hasNextLine())
         {
             int gameId = 0;
-            int[] currentCubeConfig = new int[3];
+            int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String[] currentGame = input.nextLine().split("\\W+");
             for (int i = 2; i < (currentGame.length - 2); i += 2)
             {
                 currentCubeConfig[CUBE_CONFIG_INDEX.get(currentGame[i + 1].toUpperCase())] = Integer.parseInt(currentGame[i]);
             }
-            //if ()
+            for (int i = 0; i < currentCubeConfig.length; i++)
+            {
+                if (currentCubeConfig[i] > CUBE_CONFIG[i])
+                {
+                    break;
+                }
+                else
+                {
+                    //
+                }
+            }
         }
         input.close();
         System.out.print(CUBE_CONFIG_INDEX);
