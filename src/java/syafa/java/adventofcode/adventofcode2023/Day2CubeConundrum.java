@@ -39,7 +39,6 @@ public class Day2CubeConundrum
             rawInput = rawInput.replaceAll(": ","");
             rawInput = rawInput.replaceAll(",","");
             String[] currentGame = rawInput.split(";\\s*");
-            System.out.println(Arrays.toString(currentGame));
             for (int i = 0; i < currentGame.length; i++)
             {
                 String[] currentGameSet = currentGame[i].split("\s");
