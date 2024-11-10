@@ -26,7 +26,6 @@ public class Day2CubeConundrum
         int possibleIdSum = 0;
         while (input.hasNextLine())
         {
-            int gameId = 0;
             int[] currentCubeConfig = new int[CUBE_CONFIG.length];
             String[] currentGame = input.nextLine().split("\\W+");
             for (int i = 2; i < (currentGame.length - 2); i += 2)
@@ -39,9 +38,9 @@ public class Day2CubeConundrum
                 {
                     break;
                 }
-                else
+                if (currentCubeConfig.length - i == 1)
                 {
-                    //
+                    possibleIdSum += Integer.parseInt(currentGame[1]);
                 }
             }
         }
