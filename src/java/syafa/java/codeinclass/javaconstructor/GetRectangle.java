@@ -4,6 +4,7 @@ import java.math.*;
 
 public class GetRectangle
 {
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
