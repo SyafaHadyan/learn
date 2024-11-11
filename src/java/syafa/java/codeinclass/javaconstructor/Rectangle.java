@@ -9,7 +9,7 @@ public class Rectangle
     {
         this.width = inputWidth;
         this.height = inputHeight;
-        System.out.print(getArea() + "\n" + getPerimeter());
+        System.out.printf("%-12s%-2c%.3f\n%-17s%-2c%.3f","The area is",':',getArea(),"The perimeter is",':',getPerimeter());
     }
     public BigDecimal getArea()
     {
