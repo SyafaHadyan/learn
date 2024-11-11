@@ -3,19 +3,15 @@ import java.util.*;
 
 public class Rectangle
 {
+    static Scanner input = new Scanner(System.in);
     double width;
     double height;
     public Rectangle()
     {
         //
     }
-    public double getArea()
+    public double getArea(double input)
     {
         return this.width * this.height;
-    }
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        input.close();
     }
 }
