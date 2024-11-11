@@ -1,16 +1,16 @@
 package syafa.java.codeinclass.javaconstructor;
-import java.util.*;
 
 public class Rectangle
 {
-    static Scanner input = new Scanner(System.in);
     double width;
     double height;
-    public Rectangle()
+    public Rectangle(double inputWidth,double inputHeight)
     {
-        //
+        this.width = inputWidth;
+        this.height = inputHeight;
+        System.out.println(getArea(this.width,this.height));
     }
-    public double getArea(double input)
+    public double getArea(double inputWidth,double inputHeight)
     {
         return this.width * this.height;
     }
