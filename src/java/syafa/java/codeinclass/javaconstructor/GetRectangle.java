@@ -11,7 +11,7 @@ public class GetRectangle
         System.out.printf("%-23s%-2s","Enter width and height",':');
         BigDecimal inputWidth = input.nextBigDecimal();
         BigDecimal inputHeight = input.nextBigDecimal();
-        Rectangle inputRectangleData = new Rectangle(inputWidth,inputHeight);
         input.close();
+        Rectangle inputRectangleData = new Rectangle(inputWidth,inputHeight);
     }
 }
