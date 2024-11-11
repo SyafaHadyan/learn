@@ -1,6 +1,6 @@
 package syafa.java.codeinclass.javaconstructor;
 import java.util.*;
-import java.util.stream.*;
+import java.math.*;
 
 public class GetRectangle
 {
@@ -8,8 +8,9 @@ public class GetRectangle
     {
         Scanner input = new Scanner(System.in);
         System.out.printf("%-23s%-2s","Enter width and height",':');
-        double[] inputData = Stream.of(input.nextLine().split("\s")).mapToDouble(Double::parseDouble).toArray();
-        Rectangle inputRectangleData = new Rectangle(inputData[0],inputData[1]);
+        BigDecimal inputWidth = input.nextBigDecimal();
+        BigDecimal inputHeight = input.nextBigDecimal();
+        Rectangle inputRectangleData = new Rectangle(inputWidth,inputHeight);
         input.close();
     }
 }
