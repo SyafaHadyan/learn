@@ -4,7 +4,6 @@ import java.math.*;
 
 public class GetRectangle
 {
-    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -13,5 +12,6 @@ public class GetRectangle
         BigDecimal inputHeight = input.nextBigDecimal();
         input.close();
         Rectangle inputRectangleData = new Rectangle(inputWidth,inputHeight);
+        System.out.printf("%-12s%-2c%.3f\n%-17s%-2c%.3f","The area is",':',inputRectangleData.getArea(),"The perimeter is",':',inputRectangleData.getPerimeter());
     }
 }
