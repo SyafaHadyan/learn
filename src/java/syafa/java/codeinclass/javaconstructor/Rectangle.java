@@ -8,7 +8,7 @@ public class Rectangle
     {
         this.width = inputWidth;
         this.height = inputHeight;
-        System.out.println(getArea(this.width,this.height));
+        System.out.print(getArea(this.width,this.height));
     }
     public double getArea(double inputWidth,double inputHeight)
     {
