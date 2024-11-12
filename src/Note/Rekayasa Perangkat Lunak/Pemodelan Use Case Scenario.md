@@ -36,3 +36,13 @@
 |Aliran alternatif|2a.|Jika *username* dan/atau *password* kosong, maka sistem menampilkan pesan "*Username dan/atau password tidak boleh kosong*".|
 ||2.b|Jika *username* dan/atau *password* tidak valid, maka sistem menampilkan pesan "*Username dan/atau password tidak valid*".|
 |Kondisi akhir||Halaman utama sistem terbukan sesuai dengan hak akses dari pengguna yang sudah dikenali sistem|
+
+## Kesalahan Umum
+
+- Penamaan *use case* yang tidak merepresentasikan tujuan dari aktor saat berinteraksi dengan sistem
+- Deskripsi informasi yang terlalu umum, baik yang dimasukkan oleh aktor ke sistem maupun yang diterima aktor dari sistem
+- Identifikasi aktor yang tidak tepat untuk sebuah *use case*
+- Identifikasi prakondisi dan kondisi akhir yang tidak tepat
+- Tidak ada deskrpisi apapun pada aliran alternatif (opsi dan/atua *error*)
+- Deskripsi aliran utama dan alternatif yang tidak diberikan secara terpisah
+- Deskripsi interaksi yang bersifat *white-box*
