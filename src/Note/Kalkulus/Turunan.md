@@ -40,9 +40,13 @@ $$\frac{df\left(c\right)}{dx},y\rq\left(c\right)$$
 
 Contoh: Diketahui $f\left(x\right)=\frac{1}{x}$ tentukan $f\rq\left(3\right)$
 
-$$f\rq\left(3\right)=\lim_{x\to3}\frac{f\left(x\right)-f\left(3\right)}{x-3}=\lim_{x\to3}\frac{\frac{1}{x}-\frac{1}{3}}{x-3}$$
+$$f\rq\left(3\right)=\lim_{x\to3}\frac{f\left(x\right)-f\left(3\right)}{x-3}$$
 
-$$f\rq\left(3\right)=\lim_{x\to3}\frac{3-x}{3x\left(x-3\right)}=\lim_{x\to3}{-\left(x-3\right)}{3x\left(x-3\right)}$$
+$$f\rq\left(3\right)=\lim_{x\to3}\frac{\frac{1}{x}-\frac{1}{3}}{x-3}$$
+
+$$f\rq\left(3\right)=\lim_{x\to3}\frac{3-x}{3x\left(x-3\right)}$$
+
+$$f\rq\left(3\right)=\lim_{x\to3}{-\left(x-3\right)}{3x\left(x-3\right)}$$
 
 $$f\rq\left(3\right)=\lim_{x\to3}\frac{-1}{3x}$$
 
