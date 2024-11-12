@@ -23,3 +23,13 @@ $$v_{rata-rata}=\frac{f\left(c+h\right)-f\left(c\right)}{h}$$
 Jika $h\to0$, diperoleh kecepatan sesaat di $x=c$:
 
 $$v=\lim_{h\to0}v_{rata-rata}=\lim_{k\to0}\frac{f\left(c+h\right)-f\left(c\right)}{h}$$
+
+Misal $X=c+h$, bentuk di atas dapat dituliskan dalam bentuk
+
+$$v=\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}$$
+
+Dari dua bentuk di atas: kemiringan garis singgung dan kecepatan sesaat terlihat bahwa dua masalah tersebut berada dalam satu tema, yaitu turunan
+
+**Definisi 4.1**: Turunan pertama fungsi $f$ di titik $x=c$, notasi $f\rq\left(c\right)$ didefinisikan sebagai berikut:
+
+$$f\rq\left(c\right)=\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}$$
