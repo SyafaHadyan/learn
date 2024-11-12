@@ -51,3 +51,13 @@ $$f\rq\left(3\right)=\lim_{x\to3}{-\left(x-3\right)}{3x\left(x-3\right)}$$
 $$f\rq\left(3\right)=\lim_{x\to3}\frac{-1}{3x}$$
 
 $$f\rq\left(3\right)=-\frac{1}{9}$$
+
+## Turunan Sepihak
+
+Turunan kiri dari fungsi $f$ di titik $c$, didefinisikan sebagai: $f\rq_-\left(c\right)=\lim_{x\to c^-}\frac{f\left(x\right)-f\left(c\right)}{x-c}$
+
+Turunan kanan dari fungsi $f$ di titik $c$, didefinisikan sebagai: $f\rq_+\left(c\right)=\lim_{x\to c^+}\frac{f\left(x\right)-f\left(c\right)}{x-c}$
+
+Fungsi $f$ dikatakan mempunyai turunan (diferensiabel) di $c$ atau $f\rq\left(c\right)$ ada, jika
+
+$$f\rq_-\left(c\right)=f\rq_+\left(c\right)\space\text{dan}\space f\rq\left(c\right)=f\rq_-\left(c\right)=f\rq_+\left(c\right)$$
