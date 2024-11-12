@@ -139,4 +139,8 @@ Mengaplikaisikan:
 
 ## *Actor-Generalization*
 
-Visual Paradigm
+- Dua atau lebih *sub-actors* digeneralisasi menjadi sebuah *super-actor*
+- *Super-actor* memiliki *behavior* dan *attributes* yang umum dari *sub-actors*
+- *Super-actor should interact with use cases when ALL of its sub-actors interact in the same way*
+- *Sub-actors should interact with use cases when their individual interactions differ from that of the super-actor*
+- **Note**: generalisasi aktor harus tetap memperhatikan kebenaran semantik dari problem domain
