@@ -61,3 +61,9 @@ Turunan kanan dari fungsi $f$ di titik $c$, didefinisikan sebagai: $f\rq_+\left(
 Fungsi $f$ dikatakan mempunyai turunan (diferensiabel) di $c$ atau $f\rq\left(c\right)$ ada, jika
 
 $$f\rq_-\left(c\right)=f\rq_+\left(c\right)\space\text{dan}\space f\rq\left(c\right)=f\rq_-\left(c\right)=f\rq_+\left(c\right)$$
+
+sebaliknya $f$ dikatakan tidak mempunyai turunan di $c$.
+
+Contoh: Diketahui
+
+$$f\left(x\right)={\frac{1}{2}}$$
