@@ -33,3 +33,11 @@ Dari dua bentuk di atas: kemiringan garis singgung dan kecepatan sesaat terlihat
 **Definisi 4.1**: Turunan pertama fungsi $f$ di titik $x=c$, notasi $f\rq\left(c\right)$ didefinisikan sebagai berikut:
 
 $$f\rq\left(c\right)=\lim_{x\to c}\frac{f\left(x\right)-f\left(c\right)}{x-c}$$
+
+Notasi lain:
+
+$$\frac{df\left(c\right)}{dx},y\rq\left(c\right)$$
+
+Contoh: Diketahui $f\left(x\right)=\frac{1}{x}$ tentukan $f\rq\left(3\right)$
+
+$$f\rq\left(3\right)=\lim_{x\to3}\frac{f\left(x\right)-f\left(3\right)}{x-3}=\lim_{x\to3}\frac{\frac{1}{x}-\frac{1}{3}}{x-3}$$
