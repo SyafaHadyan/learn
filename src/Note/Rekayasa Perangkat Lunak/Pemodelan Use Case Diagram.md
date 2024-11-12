@@ -125,11 +125,13 @@ Mengaplikaisikan:
 
 ### *Include*
 
-- n
+- Sebuah use case memanfaatkan use case lainnya (*functional decomposition*) -> *reuse*
+- Proses yang ada pada use case asal terlalu kompleks -> dekomposisi proses menjadi beberapa proses yang lebih sederhana (bersifat ***mandatory***)
 
 ### *Extend*
 
-- n
+- Sebuah use case memperluas use case lainnya
+- Fungsionalitas dari use case asal perlu diperluas -> bersifat **opsional**
 
 ## *Actor-Generalization*
 
