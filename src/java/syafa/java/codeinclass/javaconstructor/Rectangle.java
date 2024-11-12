@@ -10,6 +10,10 @@ public class Rectangle
         this.width = inputWidth;
         this.height = inputHeight;
     }
+    public BigDecimal[] GetRectalngleProperty()
+    {
+        return new BigDecimal[]{width,height};
+    }
     public BigDecimal getArea()
     {
         return this.width.multiply(this.height);
