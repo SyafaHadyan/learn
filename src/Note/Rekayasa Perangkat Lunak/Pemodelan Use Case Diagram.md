@@ -133,6 +133,10 @@ Mengaplikaisikan:
 - Sebuah use case memperluas use case lainnya
 - Fungsionalitas dari use case asal perlu diperluas -> bersifat **opsional**
 
+### Ilustrasi `<<INCLUDE>>` dan `<<EXTEND>>`
+
+![Ilustrasi Include dan Extend](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/IncludeExtend.png)
+
 ## *Actor-Generalization*
 
 Visual Paradigm
