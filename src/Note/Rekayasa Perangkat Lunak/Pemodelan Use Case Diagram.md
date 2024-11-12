@@ -54,6 +54,48 @@ Mengaplikaisikan:
 - Contoh: Klas Mahasiswa -> objek Andi, Eko, Susi
 - *Abstract & concrete class*
 
+#### Kelas Mahasiswa
+
+|Mahasiswa|
+|:---:|
+|Nim|
+|Nama|
+||
+|Buat Skripsi|
+|Ujian|
+
+> Instansiasi: penciptaan objek
+
+##### Mahasiswa: Andi
+
+|Mahasiswa|
+|:---:|
+|Nim: 001|
+|Nama: Andi|
+||
+|Buat Skripsi|
+|Ujian|
+
+##### Mahasiswa: Eko
+
+|Mahasiswa|
+|:---:|
+|Nim: 002|
+|Nama: Eko|
+||
+|Buat Skripsi|
+|Ujian|
+
+##### Mahasiswa: Susi
+
+|Mahasiswa|
+|:---:|
+|Nim: 003|
+|Nama: Susi|
+||
+|Buat Skripsi|
+|Ujian|
+
 ## Diagram UML
 
 - *Use-case diagram* (statis)
@@ -71,7 +113,9 @@ Mengaplikaisikan:
   - Identifikasi aktor
   - Identifikasi *use-case* per aktor
 
-Image here
+![*Use Case diagram* Sistem Administrasi Bank (parsial)](https://github.com/SyafaHadyan/learn/blob/main/src/Note/Rekayasa%20Perangkat%20Lunak/Pictures/UseCaseDiagram.png)
+
+### Note
 
 > *Left -> primary actor.*
 >
