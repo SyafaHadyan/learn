@@ -34,7 +34,7 @@
 ||2.|Pengguna meminta sistem untuk memproses.|
 ||3.|Sistem menampilkan halaman utama sistem sesuai dengan otorisasi pengguna.|
 |Aliran alternatif|2a.|Jika *username* dan/atau *password* kosong, maka sistem menampilkan pesan "*Username dan/atau password tidak boleh kosong*".|
-||2.b|Jika *username* dan/atau *password* tidak valid, maka sistem menampilkan pesan "*Username dan/atau password tidak valid*".|
+||2b.|Jika *username* dan/atau *password* tidak valid, maka sistem menampilkan pesan "*Username dan/atau password tidak valid*".|
 |Kondisi akhir||Halaman utama sistem terbukan sesuai dengan hak akses dari pengguna yang sudah dikenali sistem|
 
 ## Kesalahan Umum
