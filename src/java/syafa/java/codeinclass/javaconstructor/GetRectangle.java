@@ -1,7 +1,6 @@
 package syafa.java.codeinclass.javaconstructor;
 import java.util.*;
 import java.math.*;
-import java.util.regex.*;
 
 public class GetRectangle
 {
