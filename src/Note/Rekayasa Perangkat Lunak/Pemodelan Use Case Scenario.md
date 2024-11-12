@@ -22,3 +22,17 @@
 - Lengkap
   - Deskripsi detil dengan beberapa bagian: nama (*name*), tujuan/deskripsi (*objective/description*), aktor primer (*primary actor*), prakondisi (*preconditions*), aliran utama (*main flow*), aliran alternatif (*alternative flows*), kondisi akhir (*postconditions*)
   - Banyak digunakan dalam praktik
+
+### Contoh Elemen Pemodelan
+
+|Skenario dari use case *Login*|||
+|:---|:---:|:---|
+|Tujuan||Pengguna dapat dikenali otorisasinya untuk bisa mengakses sitem|
+|Aktor||Pengguna|
+|Prakondisi||Halaman *login* sudah terbuka|
+|Aliran utama|1.|Pengguna memasukkan *username* and *password*|
+||2.|Pengguna meminta sistem untuk memproses.|
+||3.|Sistem menampilkan halaman utama sistem sesuai dengan otorisasi pengguna.|
+|Aliran alternatif|2a.|Jika *username* dan/atau *password* kosong, maka sistem menampilkan pesan "*Username dan/atau password tidak boleh kosong*".|
+||2.b|Jika *username* dan/atau *password* tidak valid, maka sistem menampilkan pesan "*Username dan/atau password tidak valid*".|
+|Kondisi akhir||Halaman utama sistem terbukan sesuai dengan hak akses dari pengguna yang sudah dikenali sistem|
