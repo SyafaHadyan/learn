@@ -12,6 +12,7 @@ public class GetRectangle
         BigDecimal inputHeight = input.nextBigDecimal();
         input.close();
         Rectangle inputRectangleData = new Rectangle(inputWidth,inputHeight);
+        System.out.println("Rectangle data" + "\n" + Arrays.toString(inputRectangleData.GetRectalngleProperty()));
         System.out.printf("%-12s%-2c%.3f\n%-17s%-2c%.3f","The area is",':',inputRectangleData.getArea(),"The perimeter is",':',inputRectangleData.getPerimeter());
     }
 }

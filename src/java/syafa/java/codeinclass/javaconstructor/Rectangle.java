@@ -12,7 +12,7 @@ public class Rectangle
     }
     public BigDecimal[] GetRectalngleProperty()
     {
-        return new BigDecimal[]{width,height};
+        return new BigDecimal[]{this.width,this.height};
     }
     public BigDecimal getArea()
     {
