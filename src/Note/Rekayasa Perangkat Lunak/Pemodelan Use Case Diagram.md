@@ -38,13 +38,21 @@ Mengaplikaisikan:
 - Contoh: Andi, Eko, Susi (sistem akademik)
 - Sebuah objek memiliki karatkteristik **Identity** (identitas-pembeda), **state** (sekumpulan atribut) & **behaviour** (sekumpulan operasi, aksi, servis)
 
-|Table|
+### Notasi
+
+|Nama Objek|
 |:---:|
-|Table|
+|Atribut-atribut|
+|Operasi-operasi|
 
 ### Klas (*Class*)
 
-- A **description** of one or more objects with a uniform set of attributes and services,
+- A **description** of one or more objects with a uniform set of attributes and services, including a description of how to create new objects in the class [Yourdon]
+- Gambaran umum (*template*, *blue-print*) yang menjelaskan sekumpulan objek yang memiliki kesamaan karakteristik (atribut dan operasi)
+- Merupakan cetakan dari objek (**instansiasi**)
+- Digunakan untuk menginstansiasi objek yang memiliki identitas yang berbeda
+- Contoh: Klas Mahasiswa -> objek Andi, Eko, Susi
+- *Abstract & concrete class*
 
 ## Diagram UML
 
