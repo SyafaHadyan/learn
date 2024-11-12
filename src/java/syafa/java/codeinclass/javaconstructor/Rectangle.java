@@ -3,8 +3,8 @@ import java.math.*;
 
 public class Rectangle
 {
-    BigDecimal width;
-    BigDecimal height;
+    private BigDecimal width;
+    private BigDecimal height;
     public Rectangle(BigDecimal inputWidth,BigDecimal inputHeight)
     {
         this.width = inputWidth;
