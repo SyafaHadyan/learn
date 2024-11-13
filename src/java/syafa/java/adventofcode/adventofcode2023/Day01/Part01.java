@@ -1,4 +1,4 @@
-package syafa.java.adventofcode.adventofcode2023.Day1;
+package syafa.java.adventofcode.adventofcode2023.Day01;
 import java.util.*;
 import java.util.stream.*;
 

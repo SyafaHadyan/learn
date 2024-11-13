@@ -1,4 +1,4 @@
-package syafa.java.adventofcode.adventofcode2023.Day1;
+package syafa.java.adventofcode.adventofcode2023.Day01;
 import java.util.*;
 import java.util.stream.*;
 
@@ -22,6 +22,11 @@ public class Part02
         int sum = 0;
         while (input.hasNextLine())
         {
+            String temp = input.nextLine();
+            if (NUMBER_WORD.containsKey(temp))
+            {
+                sum += NUMBER_WORD.get(temp);
+            }
             int[] inputData = Stream.of(input.nextLine().replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
             sum += Integer.parseInt(String.valueOf(inputData[0]) + String.valueOf(inputData[inputData.length - 1]));
         }

@@ -1,4 +1,4 @@
-package syafa.java.adventofcode.adventofcode2023.Day2;
+package syafa.java.adventofcode.adventofcode2023.Day02;
 import java.util.*;
 
 public class Part01
