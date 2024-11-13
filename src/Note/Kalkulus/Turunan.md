@@ -77,3 +77,5 @@ $$f\rq_-\left(1\right)=\lim_{x\to1^-}\frac{f\left(x\right)-f\left(1\right)}{x-1}
 $$=\lim_{x\to1}\frac{x^2-x}{x-1}=\lim_{x\to1}\frac{x\left(x-1\right)}{x-1}=1$$
 
 $$f\rq_+\left(1\right)=\lim_{x\to1^+}\frac{f\left(x\right)}{x-1}=\lim_{x\to1}\frac{1+2\sqrt x-\left(1+2\sqrt1\right)}{x-1}$$
+
+$$=\lim_{x\to1}\frac{2\sqrt x-2}{x-1}=2\lim_{x\to1}\frac{\sqrt x-1}{\left(\sqrt x-1\right)\left(\sqrt x+1\right)}=1$$
