@@ -11,27 +11,30 @@ public class Part01
         while (input.hasNextLine())
         {
             int currentCardPoint = 1;
-            String card = input.next();
-            String cardNumber = input.next();
+            input.next();
+            input.next();
             ArrayList<Integer> winningNumbers = new ArrayList<>();
-            try
+            while (input.hasNextInt())
             {
                 winningNumbers.add(input.nextInt());
             }
-            catch (NumberFormatException e)
-            {
-                //
-            }
+            input.next();
             while (input.hasNextInt())
             {
-                if (winningNumbers.contains(input.nextInt()))
+                int tempCardOwn = input.nextInt();
+                if (winningNumbers.contains(tempCardOwn) && currentCardPoint != 0)
                 {
                     currentCardPoint *= 2;
                 }
+                else if (winningNumbers.contains(tempCardOwn) && currentCardPoint == 0)
+                {
+                    currentCardPoint = 1;
+                }
             }
-            if (currentCardPoint > 1)
+            if (currentCardPoint != 0)
             {
                 cardPoint += currentCardPoint;
+                continue;
             }
             /*
             int[] winningNumbers = new int[5];
