@@ -66,4 +66,10 @@ sebaliknya $f$ dikatakan tidak mempunyai turunan di $c$.
 
 Contoh: Diketahui
 
-$$f\left(x\right)={\frac{1}{2}}$$
+$$f\left(x\right)=\{\frac{x^2-x+3,x\lt1}{1+2\sqrt x,x\geq1}\}$$
+
+Selidiki apakah $f\left(x\right)$ diferensiabel di $x=1$. Jika ya, tentukan
+
+Jawab:
+
+$$f\rq_-\left(1\right)=\lim_{x\to1^-}\frac{f\left(x\right)-f\left(1\right)}{x-1}=\lim_{x\to1}\frac{}
