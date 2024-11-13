@@ -1,6 +1,5 @@
 package syafa.java.adventofcode.adventofcode2023.Day04;
 import java.util.*;
-import java.util.stream.*;
 
 public class Part01
 {
@@ -43,13 +42,6 @@ public class Part01
                 cardPoint += currentCardPoint;
                 continue;
             }
-            /*
-            int[] winningNumbers = new int[5];
-            for (int i = 0; i < winningNumbers.length; i++)
-            {
-                
-            }
-            */
         }
         input.close();
         System.out.print(cardPoint);
