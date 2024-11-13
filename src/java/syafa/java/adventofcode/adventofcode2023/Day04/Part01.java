@@ -10,8 +10,15 @@ public class Part01
         int cardPoint = 0;
         while (input.hasNextLine())
         {
-            int currentCardPoint = 1;
-            input.next();
+            int currentCardPoint = 0;
+            try
+            {
+                input.next();
+            }
+            catch (NoSuchElementException e)
+            {
+                break;
+            }
             input.next();
             ArrayList<Integer> winningNumbers = new ArrayList<>();
             while (input.hasNextInt())
