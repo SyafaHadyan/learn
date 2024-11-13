@@ -1,7 +1,7 @@
-package syafa.java.adventofcode.adventofcode2023;
+package syafa.java.adventofcode.adventofcode2023.Day2;
 import java.util.*;
 
-public class Day2CubeConundrum
+public class Part01
 {
     static final int[] CUBE_CONFIG = {12,13,14};
     static final Map<String,Integer> CUBE_CONFIG_INDEX = Map.ofEntries

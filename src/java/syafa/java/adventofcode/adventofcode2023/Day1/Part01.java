@@ -1,8 +1,8 @@
-package syafa.java.adventofcode.adventofcode2023;
+package syafa.java.adventofcode.adventofcode2023.Day1;
 import java.util.*;
 import java.util.stream.*;
 
-public class Day1Trebuchet
+public class Part01
 {
     public static void main(String[] args)
     {
