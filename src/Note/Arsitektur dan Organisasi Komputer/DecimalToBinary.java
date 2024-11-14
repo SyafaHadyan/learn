@@ -15,7 +15,7 @@ public class DecimalToBinary
         }
         while (decimalNumber != 0)
         {
-            resultString.append(String.valueOf(decimalNumber % 2));
+            resultString.append(decimalNumber % 2);
             decimalNumber /= 2;
         }
         System.out.print(resultString.reverse());
