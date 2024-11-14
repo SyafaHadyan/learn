@@ -14,7 +14,10 @@ public class RegresiLinierSatuVariabelBebas
         BigDecimal[] y = new BigDecimal[dataSet];
         BigDecimal sumX = BigDecimal.ZERO;
         BigDecimal sumY = BigDecimal.ZERO;
+        BigDecimal sumXPowTwo = BigDecimal.ZERO;
         BigDecimal sumXY = BigDecimal.ZERO;
+        BigDecimal a = BigDecimal.ZERO;
+        BigDecimal b = BigDecimal.ZERO;
         for (int i = 0; i < dataSet; i++)
         {
             System.out.printf("%-27s%d %-2c","Masukkan nilai x dan y ke-",(i + 1),':');
@@ -22,8 +25,10 @@ public class RegresiLinierSatuVariabelBebas
             y[i] = input.nextBigDecimal();
             sumX = sumX.add(x[i]);
             sumY = sumY.add(y[i]);
+            sumXPowTwo = sumXPowTwo.add(sumX.pow(2));
             sumXY = sumXY.add(sumX.multiply(sumY));
         }
+        b = BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY)).divide(BigDecimal.valueOf(dataSet).multiply(sumX).subtract(sumX.pow(2)));
         input.close();
     }
 }
