@@ -1,8 +1,7 @@
 package syafa.java.stp.regresi;
 import java.util.*;
 import java.math.*;
-import syafa.java.lib.*;
-import syafa.java.lib.BigDecimalUtil.BigDecimalMath;
+import syafa.java.lib.BigDecimalUtil.*;
 
 public class RegresiNonLinierSatuVariabelBebas
 {
@@ -65,6 +64,7 @@ public class RegresiNonLinierSatuVariabelBebas
             sumXPowTwo = sumXPowTwo.add(x[i].pow(2));
             sumXY = sumXY.add(x[i].multiply(y[i]));
         }
+        input.nextLine();
         while (true)
         {
             for (int i = 0; i < CALCULATION_OPTION.length; i++)
