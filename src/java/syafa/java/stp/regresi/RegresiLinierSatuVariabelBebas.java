@@ -4,7 +4,7 @@ import java.math.*;
 
 public class RegresiLinierSatuVariabelBebas
 {
-    static final MathContext ROUNDING_MODE = new MathContext(2,RoundingMode.HALF_UP);
+    static final MathContext ROUNDING_MODE = new MathContext(3,RoundingMode.HALF_UP);
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -25,8 +25,8 @@ public class RegresiLinierSatuVariabelBebas
             y[i] = input.nextBigDecimal();
             sumX = sumX.add(x[i]);
             sumY = sumY.add(y[i]);
-            sumXPowTwo = sumXPowTwo.add(sumX.pow(2));
-            sumXY = sumXY.add(y.multiply(y));
+            sumXPowTwo = sumXPowTwo.add(x[i].pow(2));
+            sumXY = sumXY.add(x[i].multiply(y[i]));
         }
         b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)),ROUNDING_MODE);
         a = (sumY.subtract(b.multiply(sumX))).divide(BigDecimal.valueOf(dataSet));
