@@ -6,10 +6,9 @@ public class Part02
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int cardPoint = 0;
+        int cardAmount = 0;
         while (input.hasNextLine())
         {
-            int currentCardPoint = 0;
             try
             {
                 input.next();
@@ -28,22 +27,14 @@ public class Part02
             while (input.hasNextInt())
             {
                 int tempCardOwn = input.nextInt();
-                if (winningNumbers.contains(tempCardOwn) && currentCardPoint != 0)
+                if (winningNumbers.contains(tempCardOwn))
                 {
-                    currentCardPoint *= 2;
-                }
-                else if (winningNumbers.contains(tempCardOwn) && currentCardPoint == 0)
-                {
-                    currentCardPoint = 1;
+                    cardAmount++;
                 }
             }
-            if (currentCardPoint != 0)
-            {
-                cardPoint += currentCardPoint;
-                continue;
-            }
+            cardAmount++;
         }
         input.close();
-        System.out.print(cardPoint);
+        System.out.print(cardAmount);
     }
 }
