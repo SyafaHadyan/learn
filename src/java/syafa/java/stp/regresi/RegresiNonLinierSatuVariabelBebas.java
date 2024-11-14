@@ -19,15 +19,15 @@ public class RegresiNonLinierSatuVariabelBebas
         a = (sumY.subtract(b.multiply(sumX))).divide(BigDecimal.valueOf(dataSet));
         return new BigDecimal[]{a,b};
     }
-    public static void exponential()
+    public static void exponential(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
         //
     }
-    public static void pow()
+    public static void pow(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
         //
     }
-    public static void polynomial()
+    public static void polynomial(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
         //
     }
@@ -66,17 +66,17 @@ public class RegresiNonLinierSatuVariabelBebas
             int menu = Integer.parseInt(input.nextLine());
             if (menu == 1)
             {
-                //
+                exponential(dataSet,sumX,sumY,sumXPowTwo,sumXY);
                 break;
             }
             else if (menu == 2)
             {
-                //
+                pow(dataSet,sumX,sumY,sumXPowTwo,sumXY);
                 break;
             }
             else if (menu == 3)
             {
-                //
+                polynomial(dataSet,sumX,sumY,sumXPowTwo,sumXY);
                 break;
             }
         }
