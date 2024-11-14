@@ -4,6 +4,7 @@ import java.math.*;
 
 public class RegresiNonLinierSatuVariabelBebas
 {
+    static Scanner input = new Scanner(System.in);
     static final MathContext ROUNDING_MODE = new MathContext(3,RoundingMode.HALF_UP);
     static final String[] CALCULATION_OPTION =
     {
@@ -11,6 +12,11 @@ public class RegresiNonLinierSatuVariabelBebas
         "Pangkat",
         "Polinomial"
     };
+    /*public static BigDecimal BigDecimalPow(BigDecimal a,BigDecimal b)
+    {
+        //return pow(a, b, Constant.MACH_SCALE);
+    }
+    */
     public static BigDecimal[] calculateAB(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
         BigDecimal a = BigDecimal.ZERO;
@@ -21,11 +27,13 @@ public class RegresiNonLinierSatuVariabelBebas
     }
     public static void exponential(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
-        //
+        //BigDecimal[] ab = calculateAB(dataSet,sumX,sumY,sumXPowTwo,sumXY);
+        //System.out.printf("Hasil: %.3f",ab[0].add(ab[1].multiply(input.nextBigDecimal())));
     }
     public static void pow(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
-        //
+        BigDecimal[] ab = calculateAB(dataSet,sumX,sumY,sumXPowTwo,sumXY);
+        System.out.printf("Hasil: %.3f",ab[0].multiply(input.nextBigDecimal().pow(dataSet)));
     }
     public static void polynomial(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
@@ -37,7 +45,6 @@ public class RegresiNonLinierSatuVariabelBebas
     }
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
         System.out.printf("%-25s%-2c","Masukkan jumlah data set",':');
         int dataSet = Integer.parseInt(input.nextLine());
         BigDecimal[] x = new BigDecimal[dataSet];
