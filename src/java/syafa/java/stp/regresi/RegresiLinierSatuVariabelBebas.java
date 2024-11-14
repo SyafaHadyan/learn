@@ -29,7 +29,8 @@ public class RegresiLinierSatuVariabelBebas
             sumXY = sumXY.add(sumX.multiply(sumY));
         }
         b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)));
-        a = 
+        a = (sumY.subtract(b.multiply(sumX))).divide(BigDecimal.valueOf(dataSet));
         input.close();
+        System.out.printf("Nilai A %.3f\n Nilai B %.3f",a,b);
     }
 }
