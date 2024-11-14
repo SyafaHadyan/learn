@@ -1,10 +1,10 @@
 package syafa.java.stp.regresi;
 import java.util.*;
-import java.util.stream.*;;
 import java.math.*;
 
 public class RegresiLinierSatuVariabelBebas
 {
+    static final MathContext ROUNDING_MODE = new MathContext(2,RoundingMode.HALF_UP);
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -28,9 +28,9 @@ public class RegresiLinierSatuVariabelBebas
             sumXPowTwo = sumXPowTwo.add(sumX.pow(2));
             sumXY = sumXY.add(sumX.multiply(sumY));
         }
-        b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)));
+        b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)),ROUNDING_MODE);
         a = (sumY.subtract(b.multiply(sumX))).divide(BigDecimal.valueOf(dataSet));
         input.close();
-        System.out.printf("Nilai A %.3f\n Nilai B %.3f",a,b);
+        System.out.printf("Nilai A %.3f\nNilai B %.3f",a,b);
     }
 }
