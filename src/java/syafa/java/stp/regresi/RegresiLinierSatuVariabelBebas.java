@@ -28,7 +28,8 @@ public class RegresiLinierSatuVariabelBebas
             sumXPowTwo = sumXPowTwo.add(sumX.pow(2));
             sumXY = sumXY.add(sumX.multiply(sumY));
         }
-        b = BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY)).divide(BigDecimal.valueOf(dataSet).multiply(sumX).subtract(sumX.pow(2)));
+        b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)));
+        a = 
         input.close();
     }
 }
