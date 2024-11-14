@@ -30,7 +30,9 @@ public class RegresiLinierSatuVariabelBebas
         }
         b = (BigDecimal.valueOf(dataSet).multiply(sumXY).subtract(sumX.multiply(sumY))).divide(BigDecimal.valueOf(dataSet).multiply(sumXPowTwo).subtract(sumX.pow(2)),ROUNDING_MODE);
         a = (sumY.subtract(b.multiply(sumX))).divide(BigDecimal.valueOf(dataSet));
+        System.out.printf("Nilai A: %.3f\nNilai B: %.3f\n",a,b);
+        System.out.printf("%-38s%-2c","Masukkan nilai x yang akan diprediksi",':');
+        System.out.printf("Hasil: %.3f",a.add(b.multiply(input.nextBigDecimal())));
         input.close();
-        System.out.printf("Nilai A: %.3f\nNilai B: %.3f",a,b);
     }
 }
