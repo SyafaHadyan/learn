@@ -5,7 +5,13 @@ import java.math.*;
 public class RegresiNonLinierSatuVariabelBebas
 {
     static final MathContext ROUNDING_MODE = new MathContext(3,RoundingMode.HALF_UP);
-    public static BigDecimal[] calculateAB(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumPowTwo,BigDecimal sumXY)
+    static final String[] CALCULATION_OPTION =
+    {
+        "Eksponensial",
+        "Pangkat",
+        "Polinomial"
+    };
+    public static BigDecimal[] calculateAB(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
         BigDecimal a = BigDecimal.ZERO;
         BigDecimal b = BigDecimal.ZERO;
@@ -49,6 +55,30 @@ public class RegresiNonLinierSatuVariabelBebas
             sumY = sumY.add(y[i]);
             sumXPowTwo = sumXPowTwo.add(x[i].pow(2));
             sumXY = sumXY.add(x[i].multiply(y[i]));
+        }
+        while (true)
+        {
+            for (int i = 0; i < CALCULATION_OPTION.length; i++)
+            {
+                System.out.println((i + 1) + " " + CALCULATION_OPTION[i]);
+            }
+            System.out.printf("%-26s%-2c","Masukkan bentuk kalkulasi",':');
+            int menu = Integer.parseInt(input.nextLine());
+            if (menu == 1)
+            {
+                //
+                break;
+            }
+            else if (menu == 2)
+            {
+                //
+                break;
+            }
+            else if (menu == 3)
+            {
+                //
+                break;
+            }
         }
         System.out.printf("%-38s%-2c","Masukkan nilai x yang akan diprediksi",':');
         //System.out.printf("Hasil: %.3f",a.add(b.multiply(input.nextBigDecimal())));
