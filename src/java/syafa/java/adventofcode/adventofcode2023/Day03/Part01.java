@@ -89,7 +89,7 @@ public class Part01
                     {
                         try
                         {
-                            if (!(engine[k][j].equalsIgnoreCase(".")) && k != -1 && k != counter)
+                            if (!(engine[k][j].equalsIgnoreCase(".")) && k != -1 && k != counter && j != tempInput.length())
                             {
                                 isEngineSchematic = true;
                             }
