@@ -48,7 +48,7 @@ public class Part01
                 }
                 if (performSymbolCheck)
                 {
-                    for (int k = i - 1; k < 3; k++)
+                    for (int k = i - 1; k <= i + 1; k++)
                     {
                         try
                         {
@@ -77,6 +77,20 @@ public class Part01
                             {
                                 //
                             }
+                        }
+                    }
+                    for (int k = i - 1; k <= i + 1; k++)
+                    {
+                        try
+                        {
+                            if (!(engine[k][j].equalsIgnoreCase(".")))
+                            {
+                                isEngineSchematic = true;
+                            }
+                        }
+                        catch (IndexOutOfBoundsException e)
+                        {
+                            //
                         }
                     }
                     if (isEngineSchematic)
