@@ -17,20 +17,20 @@ public class SnakesAndLadders
         {
             gameBoard[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
-        for (int i = gameBoard.length; i >= 0; i--)
+        for (int i = 0; i < gameBoard.length; i++)
         {
             if ((i + 1) % 2 == 0)
             {
                 for (int j = 0; j < gameBoard[i].length; j++)
                 {
-                    gameBoardFlat[(i * 6) + j] = gameBoard[i][j];
+                    gameBoardFlat[(i * GAME_BOARD_SIZE) + j] = gameBoard[i][j];
                 }
             }
             else if ((i + 1) % 2 != 0)
             {
                 for (int j = gameBoard[i].length - 1; j >= 0; j--)
                 {
-                    gameBoardFlat[(i * 6) + j] = gameBoard[i][j];
+                    gameBoardFlat[(i * GAME_BOARD_SIZE) + j] = gameBoard[i][j];
                 }
             }
         }
