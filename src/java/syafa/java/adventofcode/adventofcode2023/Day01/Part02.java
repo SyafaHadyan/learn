@@ -38,12 +38,29 @@ public class Part02
         int sum = 0;
         while (input.hasNextLine())
         {
-            String temp = input.nextLine();
+            String tempStringInput = input.nextLine();
             for (int i = 0; i < NUMBER_WORD.length; i++)
             {
-                if (temp.startsWith(NUMBER_WORD[i]))
+                if (tempStringInput.startsWith(NUMBER_WORD[i]))
                 {
                     firstNumberStruct = String.valueOf(i + 1);
+                    break;
+                }
+            }
+            for (int i = 0; i < NUMBER_WORD.length; i++)
+            {
+                if (tempStringInput.endsWith(NUMBER_WORD[i]))
+                {
+                    lastNumberStruct = String.valueOf(i + 1);
+                    break;
+                }
+            }
+            if (firstNumberStruct.isEmpty() || lastNumberStruct.isEmpty())
+            {
+                int[] inputData = Stream.of(tempStringInput.replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
+                if (firstNumberStruct.isEmpty())
+                {
+                    firstNumberStruct = String.valueOf(inputData[0]);
                 }
             }
             /*
