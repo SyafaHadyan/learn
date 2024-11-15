@@ -64,9 +64,9 @@ public class Part01
                             //
                         }
                     }
-                    for (int k = j - digitLength; k < j; k++)
+                    for (int k = j - digitLength - 1; k < j; k++)
                     {
-                        for (int l = i - 1; l < 3; l += 2)
+                        for (int l = i - 1; l <= i + 1; l += 2)
                         {
                             try
                             {
@@ -103,6 +103,7 @@ public class Part01
                             //
                         }
                     }
+                    int tempNumberDebug = Integer.parseInt(String.valueOf(numberStruct));
                     if (isEngineSchematic)
                     {
                         engineSchematicSum += Integer.parseInt(String.valueOf(numberStruct));
