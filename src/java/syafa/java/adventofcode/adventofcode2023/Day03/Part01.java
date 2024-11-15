@@ -48,28 +48,18 @@ public class Part01
                 }
                 if (performSymbolCheck)
                 {
-                    boolean first = true;
-                    for (int k = j - digitLength; k < j + digitLength; k++)
+                    for (int l = i - 1; l < engine.length; l++)
                     {
-                        if (first)
+                        try
                         {
-                            for (int l = 0; l < 6; l++)
+                            if (!(engine[l][j - 1].equalsIgnoreCase(".")))
                             {
-                                for (int m = i - 1; m < engine.length; m++)
-                                {
-                                    try
-                                    {
-                                        if (!(engine[m][j - 1].equalsIgnoreCase(".")))
-                                        {
-                                            isEngineSchematic = true;
-                                        }
-                                    }
-                                    catch (IndexOutOfBoundsException e)
-                                    {
-                                        //
-                                    }
-                                }
+                                isEngineSchematic = true;
                             }
+                        }
+                        catch (IndexOutOfBoundsException e)
+                        {
+                            //
                         }
                     }
                     if (isEngineSchematic)
