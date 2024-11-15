@@ -18,7 +18,7 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[][] engine = new String[150][500];
+        String[][] engine = new String[150][150];
         String tempInput = "";
         int counter = 0;
         int engineSchematicSum = 0;
@@ -29,7 +29,7 @@ public class Part01
             counter++;
         }
         input.close();
-        for (int i = 0; i < counter; i++)
+        for (int i = 0; i <= counter; i++)
         {
             for (int j = 0; j < tempInput.length(); j++)
             {

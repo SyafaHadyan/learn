@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Part01",
+      "request": "launch",
+      "mainClass": "syafa.java.adventofcode.adventofcode2023.Day03.Part01",
+      "projectName": "learn_7d900611"
+    },
+    {
+      "type": "java",
       "name": "House",
       "request": "launch",
       "mainClass": "syafa.java.codeinclass.oop.House",
