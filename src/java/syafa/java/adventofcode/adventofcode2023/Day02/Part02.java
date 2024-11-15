@@ -4,11 +4,11 @@ import java.util.*;
 public class Part02
 {
     static final Map<String,Integer> CUBE_CONFIG_INDEX = Map.ofEntries
-        (
-            Map.entry("RED",0),
-            Map.entry("GREEN",1),
-            Map.entry("BLUE",2)
-        );
+    (
+        Map.entry("RED",0),
+        Map.entry("GREEN",1),
+        Map.entry("BLUE",2)
+    );
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
