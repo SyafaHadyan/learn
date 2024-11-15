@@ -23,16 +23,16 @@ public class SnakesAndLadders
             {
                 for (int j = 0; j < gameBoard[i].length; j++)
                 {
-                    //int currentIndex = ((i + 1) * GAME_BOARD_SIZE) + j - 1;
-                    gameBoardFlat[((i + 1) * GAME_BOARD_SIZE) + j - 1] = gameBoard[i][j];
+                    int currentIndex = ((i + 1) * GAME_BOARD_SIZE) - j - 1;
+                    gameBoardFlat[((i + 1) * GAME_BOARD_SIZE) - j - 1] = gameBoard[i][j];
                 }
             }
             else if ((i + 1) % 2 != 0)
             {
                 for (int j = gameBoard[i].length - 1; j >= 0; j--)
                 {
-                    //int currentIndex = ((i + 1) * GAME_BOARD_SIZE) + j - 1;
-                    gameBoardFlat[((i + 1) * GAME_BOARD_SIZE) + j - 1] = gameBoard[i][j];
+                    int currentIndex = ((i + 1) * GAME_BOARD_SIZE) - j + 1;
+                    gameBoardFlat[((i + 1) * GAME_BOARD_SIZE) - j + 1] = gameBoard[i][j];
                 }
             }
         }
