@@ -102,5 +102,6 @@ public class Part01
                 j++;
             }
         }
+        System.out.print(engineSchematicSum);
     }
 }
