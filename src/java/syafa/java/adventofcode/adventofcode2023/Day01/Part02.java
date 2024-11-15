@@ -36,38 +36,64 @@ public class Part02
         int sum = 0;
         while (input.hasNextLine())
         {
-            StringBuilder firstNumberStruct = new StringBuilder();
-            StringBuilder lastNumberStruct = new StringBuilder();
+            //StringBuilder firstNumberStruct = new StringBuilder();
+            //StringBuilder lastNumberStruct = new StringBuilder();
+            boolean firstStringReduce = true;
+            boolean lastStringReduce = true;
+            String firstNumberStruct = "";
+            String lastNumberStruct = "";
+            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
             String tempStringInput = input.nextLine();
-            for (int i = 0; i < NUMBER_WORD.length; i++)
+            while (firstStringReduce)
             {
-                if (tempStringInput.startsWith(NUMBER_WORD[i]))
+                tempStringInput = tempStringInput.replaceFirst("\\w","");
+                for (int i = 0; i < NUMBER_WORD.length; i++)
                 {
-                    firstNumberStruct.append(i + 1);
-                    break;
+                    if (tempStringInput.startsWith(NUMBER_WORD[i]))
+                    {
+                        firstNumberStruct = String.valueOf(i + 1);
+                        firstStringReduce = false;
+                        break;
+                    }
                 }
+                break;
             }
-            for (int i = 0; i < NUMBER_WORD.length; i++)
+            while (lastStringReduce)
             {
-                if (tempStringInput.endsWith(NUMBER_WORD[i]))
+                try
                 {
-                    lastNumberStruct.append(i + 1);
-                    break;
+                    Integer.parseInt(String.valueOf(tempStringInput.charAt(tempStringInput.length())));
                 }
+                catch (NumberFormatException e)
+                {
+                    tempStringInput = tempStringInput.substring(0,tempStringInput.length() - 1);
+                    for (int i = 0; i < NUMBER_WORD.length; i++)
+                    {
+                        if (tempStringInput.endsWith(NUMBER_WORD[i]))
+                        {
+                            lastNumberStruct = String.valueOf(i + 1);
+                            lastStringReduce = false;
+                            break;
+                        }
+                    }
+                }
+                break;
             }
+            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
             if (firstNumberStruct.isEmpty() || lastNumberStruct.isEmpty())
             {
                 int[] inputData = Stream.of(tempStringInput.replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
                 if (firstNumberStruct.isEmpty())
                 {
-                    firstNumberStruct.append(inputData[0]);
+                    firstNumberStruct = String.valueOf(inputData[0]);
                 }
                 if (lastNumberStruct.isEmpty())
                 {
-                    lastNumberStruct.append(inputData[inputData.length - 1]);
+                    lastNumberStruct = String.valueOf(inputData[inputData.length - 1]);
                 }
             }
-            sum += Integer.parseInt(String.valueOf(firstNumberStruct.append(lastNumberStruct)));
+            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
+            sum += Integer.parseInt(String.valueOf(firstNumberStruct.concat(lastNumberStruct)));
         }
         input.close();
         System.out.print(sum);
