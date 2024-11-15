@@ -19,26 +19,24 @@ public class Part01
     {
         Scanner input = new Scanner(System.in);
         String[][] engine = new String[150][150];
+        String tempInput = "";
         int counter = 0;
         int engineSchematicSum = 0;
-        while (input.hasNextLine())
+        while (counter < 10)
         {
-            engine[counter] = input.nextLine().split("");
+            tempInput = input.nextLine();
+            engine[counter] = tempInput.split("");
+            counter++;
         }
         input.close();
         for (int i = 0; i < counter; i++)
         {
-            int j = 0;
-            boolean performSymbolCheck = false;
-            int digitLength = 0;
-            while (engine[i][j].equalsIgnoreCase(null))
+            for (int j = 0; j < tempInput.length(); j++)
             {
-                if (engine[i][j].equalsIgnoreCase(null))
-                {
-                    j = 0;
-                }
+                int digitLength = 0;
                 StringBuilder numberStruct = new StringBuilder();
                 boolean isEngineSchematic = false;
+                boolean performSymbolCheck = false;
                 while (isDigit(engine[i][j]))
                 {
                     performSymbolCheck = true;
@@ -61,8 +59,12 @@ public class Part01
                         {
                             //
                         }
+                        catch (NullPointerException e)
+                        {
+                            //
+                        }
                     }
-                    for (int k = j - digitLength; k <= j; k++)
+                    for (int k = j - digitLength; k < j; k++)
                     {
                         for (int l = i - 1; l < 3; l += 2)
                         {
@@ -74,6 +76,10 @@ public class Part01
                                 }
                             }
                             catch (IndexOutOfBoundsException e)
+                            {
+                                //
+                            }
+                            catch (NullPointerException e)
                             {
                                 //
                             }
@@ -92,14 +98,20 @@ public class Part01
                         {
                             //
                         }
+                        catch (NullPointerException e)
+                        {
+                            //
+                        }
                     }
                     if (isEngineSchematic)
                     {
                         engineSchematicSum += Integer.parseInt(String.valueOf(numberStruct));
                     }
-                    continue;
+                    else
+                    {
+                        System.out.println("Not part number");
+                    }
                 }
-                j++;
             }
         }
         System.out.print(engineSchematicSum);
