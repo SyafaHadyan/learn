@@ -14,7 +14,7 @@ public class SnakesAndLadders
         Scanner input = new Scanner(System.in);
         for (int i = 0; i < GAME_BOARD_SIZE; i++)
         {
-            
+            gameBoard[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
     }
