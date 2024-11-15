@@ -46,12 +46,11 @@ public class Part01
                 }
                 if (performSymbolCheck)
                 {
-                    j--;
-                    for (int k = i - 1; k <= i; k++)
+                    for (int k = i - 1; k <= i + 1; k++)
                     {
                         try
                         {
-                            if (!(engine[k][j - digitLength].equalsIgnoreCase(".")) && k != 0 && k != counter)
+                            if (!(engine[k][j - digitLength - 1].equalsIgnoreCase(".")) && k != -1 && k != counter)
                             {
                                 isEngineSchematic = true;
                             }
@@ -86,11 +85,11 @@ public class Part01
                             }
                         }
                     }
-                    for (int k = i - 1; k <= i; k++)
+                    for (int k = i - 1; k <= i + 1; k++)
                     {
                         try
                         {
-                            if (!(engine[k][j].equalsIgnoreCase(".")) && k != 0 && k != counter)
+                            if (!(engine[k][j].equalsIgnoreCase(".")) && k != -1 && k != counter)
                             {
                                 isEngineSchematic = true;
                             }
@@ -107,10 +106,11 @@ public class Part01
                     if (isEngineSchematic)
                     {
                         engineSchematicSum += Integer.parseInt(String.valueOf(numberStruct));
+                        j--;
                     }
                     else
                     {
-                        System.out.println("Not part number");
+                        System.err.println("Not part number");
                     }
                 }
             }
