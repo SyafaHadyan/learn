@@ -18,11 +18,11 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[][] engine = new String[150][150];
+        String[][] engine = new String[150][500];
         String tempInput = "";
         int counter = 0;
         int engineSchematicSum = 0;
-        while (counter < 10)
+        while (input.hasNextLine())
         {
             tempInput = input.nextLine();
             engine[counter] = tempInput.split("");
@@ -103,15 +103,10 @@ public class Part01
                             //
                         }
                     }
-                    int tempNumberDebug = Integer.parseInt(String.valueOf(numberStruct));
                     if (isEngineSchematic)
                     {
                         engineSchematicSum += Integer.parseInt(String.valueOf(numberStruct));
                         j--;
-                    }
-                    else
-                    {
-                        System.err.println("Not part number");
                     }
                 }
             }
