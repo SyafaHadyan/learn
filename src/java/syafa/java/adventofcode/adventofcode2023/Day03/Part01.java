@@ -52,7 +52,7 @@ public class Part01
                     {
                         try
                         {
-                            if (!(engine[k][j - 1].equalsIgnoreCase(".")))
+                            if (!(engine[k][j - digitLength - 1].equalsIgnoreCase(".")))
                             {
                                 isEngineSchematic = true;
                             }
