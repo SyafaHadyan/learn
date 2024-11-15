@@ -36,63 +36,65 @@ public class Part02
         int sum = 0;
         while (input.hasNextLine())
         {
-            //StringBuilder firstNumberStruct = new StringBuilder();
-            //StringBuilder lastNumberStruct = new StringBuilder();
             boolean firstStringReduce = true;
             boolean lastStringReduce = true;
             String firstNumberStruct = "";
             String lastNumberStruct = "";
-            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
             String tempStringInput = input.nextLine();
-            while (firstStringReduce)
+            int maxCounter = tempStringInput.length();
+            int counterFirst = 0;
+            int counterLast = 0;
+            while (firstStringReduce && counterFirst != maxCounter)
             {
-                tempStringInput = tempStringInput.replaceFirst("\\w","");
                 for (int i = 0; i < NUMBER_WORD.length; i++)
                 {
                     if (tempStringInput.startsWith(NUMBER_WORD[i]))
                     {
                         firstNumberStruct = String.valueOf(i + 1);
                         firstStringReduce = false;
-                        break;
                     }
                 }
-                break;
+                tempStringInput = tempStringInput.replaceFirst("\\D","");
+                counterFirst++;
             }
-            while (lastStringReduce)
+            while (lastStringReduce && counterLast != maxCounter)
             {
                 try
                 {
-                    Integer.parseInt(String.valueOf(tempStringInput.charAt(tempStringInput.length())));
+                    if (tempStringInput.length() != 0)
+                    {
+                        Integer.parseInt(String.valueOf(tempStringInput.charAt(tempStringInput.length() - 1)));
+                    }
                 }
                 catch (NumberFormatException e)
                 {
-                    tempStringInput = tempStringInput.substring(0,tempStringInput.length() - 1);
                     for (int i = 0; i < NUMBER_WORD.length; i++)
                     {
                         if (tempStringInput.endsWith(NUMBER_WORD[i]))
                         {
                             lastNumberStruct = String.valueOf(i + 1);
                             lastStringReduce = false;
-                            break;
                         }
                     }
+                    tempStringInput = tempStringInput.substring(0,tempStringInput.length() - 1);
                 }
-                break;
+                counterLast++;
             }
-            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
             if (firstNumberStruct.isEmpty() || lastNumberStruct.isEmpty())
             {
-                int[] inputData = Stream.of(tempStringInput.replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
-                if (firstNumberStruct.isEmpty())
+                if (tempStringInput.length() != 0)
                 {
-                    firstNumberStruct = String.valueOf(inputData[0]);
-                }
-                if (lastNumberStruct.isEmpty())
-                {
-                    lastNumberStruct = String.valueOf(inputData[inputData.length - 1]);
+                    int[] inputData = Stream.of(tempStringInput.replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
+                    if (firstNumberStruct.isEmpty())
+                    {
+                        firstNumberStruct = String.valueOf(inputData[0]);
+                    }
+                    if (lastNumberStruct.isEmpty())
+                    {
+                        lastNumberStruct = String.valueOf(inputData[inputData.length - 1]);
+                    }
                 }
             }
-            //System.out.println(firstNumberStruct.length() + " " + lastNumberStruct.length());
             sum += Integer.parseInt(String.valueOf(firstNumberStruct.concat(lastNumberStruct)));
         }
         input.close();
