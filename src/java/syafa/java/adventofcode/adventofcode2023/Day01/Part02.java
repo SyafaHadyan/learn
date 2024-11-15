@@ -62,15 +62,12 @@ public class Part02
                 {
                     firstNumberStruct = String.valueOf(inputData[0]);
                 }
+                if (lastNumberStruct.isEmpty())
+                {
+                    lastNumberStruct = String.valueOf(inputData[inputData[inputData.length - 1]]);
+                }
             }
-            /*
-            if (NUMBER_WORD.containsKey(temp))
-            {
-                sum += NUMBER_WORD.get(temp);
-            }
-            int[] inputData = Stream.of(input.nextLine().replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
-            sum += Integer.parseInt(String.valueOf(inputData[0]) + String.valueOf(inputData[inputData.length - 1]));
-            */
+            sum += Integer.parseInt(firstNumberStruct.concat(lastNumberStruct));
         }
         input.close();
         System.out.print(sum);
