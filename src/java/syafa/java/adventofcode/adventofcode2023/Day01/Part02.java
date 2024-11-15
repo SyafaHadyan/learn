@@ -33,17 +33,17 @@ public class Part02
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String firstNumberStruct = "";
-        String lastNumberStruct = "";
         int sum = 0;
         while (input.hasNextLine())
         {
+            StringBuilder firstNumberStruct = new StringBuilder();
+            StringBuilder lastNumberStruct = new StringBuilder();
             String tempStringInput = input.nextLine();
             for (int i = 0; i < NUMBER_WORD.length; i++)
             {
                 if (tempStringInput.startsWith(NUMBER_WORD[i]))
                 {
-                    firstNumberStruct = String.valueOf(i + 1);
+                    firstNumberStruct.append(i + 1);
                     break;
                 }
             }
@@ -51,7 +51,7 @@ public class Part02
             {
                 if (tempStringInput.endsWith(NUMBER_WORD[i]))
                 {
-                    lastNumberStruct = String.valueOf(i + 1);
+                    lastNumberStruct.append(i + 1);
                     break;
                 }
             }
@@ -60,14 +60,14 @@ public class Part02
                 int[] inputData = Stream.of(tempStringInput.replaceAll("\\D+","").split("")).mapToInt(Integer::parseInt).toArray();
                 if (firstNumberStruct.isEmpty())
                 {
-                    firstNumberStruct = String.valueOf(inputData[0]);
+                    firstNumberStruct.append(inputData[0]);
                 }
                 if (lastNumberStruct.isEmpty())
                 {
-                    lastNumberStruct = String.valueOf(inputData[inputData[inputData.length - 1]]);
+                    lastNumberStruct.append(inputData[inputData.length - 1]);
                 }
             }
-            sum += Integer.parseInt(firstNumberStruct.concat(lastNumberStruct));
+            sum += Integer.parseInt(String.valueOf(firstNumberStruct.append(lastNumberStruct)));
         }
         input.close();
         System.out.print(sum);
