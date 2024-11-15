@@ -44,20 +44,30 @@ public class Part02
             int maxCounter = tempStringInput.length();
             int counterFirst = 0;
             int counterLast = 0;
-            while (firstStringReduce && counterFirst != maxCounter)
+            while (firstStringReduce && (counterFirst < maxCounter))
             {
-                for (int i = 0; i < NUMBER_WORD.length; i++)
+                try
                 {
-                    if (tempStringInput.startsWith(NUMBER_WORD[i]))
-                    {
-                        firstNumberStruct = String.valueOf(i + 1);
-                        firstStringReduce = false;
-                    }
+                    Integer.parseInt(String.valueOf(tempStringInput.charAt(0)));
+                    firstStringReduce = false;
+                    counterFirst = maxCounter;
                 }
-                tempStringInput = tempStringInput.replaceFirst("\\D","");
+                catch (NumberFormatException e)
+                {
+                    for (int i = 0; i < NUMBER_WORD.length; i++)
+                    {
+                        if (tempStringInput.startsWith(NUMBER_WORD[i]))
+                        {
+                            firstNumberStruct = String.valueOf(i + 1);
+                            firstStringReduce = false;
+                            counterFirst = maxCounter;
+                        }
+                    }
+                    tempStringInput = tempStringInput.replaceFirst("\\D","");
+                }
                 counterFirst++;
             }
-            while (lastStringReduce && counterLast != maxCounter)
+            while (lastStringReduce && (counterLast < maxCounter))
             {
                 try
                 {
@@ -74,6 +84,7 @@ public class Part02
                         {
                             lastNumberStruct = String.valueOf(i + 1);
                             lastStringReduce = false;
+                            counterLast = maxCounter;
                         }
                     }
                     tempStringInput = tempStringInput.substring(0,tempStringInput.length() - 1);
