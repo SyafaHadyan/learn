@@ -1,7 +1,7 @@
 package syafa.java.stp.regresi;
 import java.util.*;
 import java.math.*;
-import syafa.java.lib.BigDecimalUtil.*;
+//import syafa.java.lib.BigDecimalUtil.*;
 
 public class RegresiNonLinierSatuVariabelBebas
 {
@@ -33,8 +33,8 @@ public class RegresiNonLinierSatuVariabelBebas
     }
     public static void pow(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
-        BigDecimal[] ab = calculateAB(dataSet,sumX,sumY,sumXPowTwo,sumXY);
-        System.out.printf("Hasil: %.3f",ab[0].multiply(BigDecimalMath.pow(input.nextBigDecimal(),ab[1])));;
+        //BigDecimal[] ab = calculateAB(dataSet,sumX,sumY,sumXPowTwo,sumXY);
+        //System.out.printf("Hasil: %.3f",ab[0].multiply(BigDecimalMath.pow(input.nextBigDecimal(),ab[1])));;
     }
     public static void polynomial(int dataSet,BigDecimal sumX,BigDecimal sumY,BigDecimal sumXPowTwo,BigDecimal sumXY)
     {
