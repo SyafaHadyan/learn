@@ -20,6 +20,7 @@ public class Part01
         Scanner input = new Scanner(System.in);
         String[][] engine = new String[150][150];
         int counter = 0;
+        int engineSchematicSum = 0;
         while (input.hasNextLine())
         {
             engine[counter] = input.nextLine().split("");
@@ -28,9 +29,20 @@ public class Part01
         for (int i = 0; i < counter; i++)
         {
             int j = 0;
+            boolean performSymbolCheck = false;
             while (engine[i][j] != null)
             {
-                if (isDigit(engine[i][j]))
+                StringBuilder numberStruct = new StringBuilder();
+                while (isDigit(engine[i][j]))
+                {
+                    performSymbolCheck = true;
+                    numberStruct.append(engine[i][j]);
+                    j++;
+                }
+                if (performSymbolCheck)
+                {
+                    //
+                }
                 j++;
             }
         }
