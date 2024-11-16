@@ -46,9 +46,10 @@ public class SnakesAndLadders
                 }
                 catch (IndexOutOfBoundsException e)
                 {
-                    winPlayer = (j + 1) * playerPosition[j];
-                    i = GAME_ROUND;
-                    j = playerPosition.length;
+                    if (winPlayer == 0)
+                    {
+                        winPlayer = (j + 1) * playerPosition[j];
+                    }
                 }
             }
             input.nextLine();
