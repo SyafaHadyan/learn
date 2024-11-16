@@ -35,7 +35,14 @@ public class SnakesAndLadders
                 }
             }
         }
-        System.out.println(Arrays.toString(gameBoardFlat));
+        for (int i = 0; i < GAME_ROUND; i++)
+        {
+            for (int j = 0; j < playerPosition.length; j++)
+            {
+                playerPosition[j] += (gameBoardFlat[input.nextInt() + playerPosition[j]]);
+            }
+            input.nextLine();
+        }
         input.close();
     }
 }
