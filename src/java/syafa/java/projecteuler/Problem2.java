@@ -3,14 +3,14 @@ import java.math.*;
 
 public class Problem2
 {
-    static final BigInteger MAX_FIBONACCI_SEQUENCE_VALUE = BigInteger.TEN;
+    static final BigInteger MAX_FIBONACCI_SEQUENCE_VALUE = new BigInteger("10");
     public static void main(String[] args)
     {
         BigInteger fibonacciSum = BigInteger.ZERO;
-        BigInteger firstNumber = BigInteger.ONE;
-        BigInteger secondNumber = BigInteger.TWO;
-        BigInteger currentNumber = firstNumber.add(secondNumber);
-        for (BigInteger i = BigInteger.TWO; i.compareTo(MAX_FIBONACCI_SEQUENCE_VALUE) < 0; i = i.add(BigInteger.ONE))
+        BigInteger firstNumber = BigInteger.ZERO;
+        BigInteger secondNumber = BigInteger.ONE;
+        BigInteger currentNumber = BigInteger.ONE;
+        while (currentNumber.compareTo(MAX_FIBONACCI_SEQUENCE_VALUE) < 0)
         {
             if ((currentNumber.divideAndRemainder(BigInteger.TWO)[1]).compareTo(BigInteger.ZERO) == 0)
             {
