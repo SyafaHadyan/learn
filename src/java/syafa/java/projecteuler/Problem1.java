@@ -1,11 +1,18 @@
 package syafa.java.projecteuler;
-import java.util.*;
 
 public class Problem1
 {
+    static final int MAX_CHECK_BELOW = 1000;
     public static void main(String[] args)
     {
-        Scanner input = new Scanner(System.in);
-        input.close();
+        int sum = 0;
+        for (int i = 1; i < MAX_CHECK_BELOW; i++)
+        {
+            if (i % 3 == 0|| i % 5 == 0)
+            {
+                sum += i;
+            }
+        }
+        System.out.print(sum);
     }
 }
