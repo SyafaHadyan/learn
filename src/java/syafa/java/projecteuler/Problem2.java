@@ -1,5 +1,4 @@
 package syafa.java.projecteuler;
-import java.util.*;
 import java.math.*;
 
 public class Problem2
@@ -17,7 +16,7 @@ public class Problem2
             {
                 fibonacciSum = fibonacciSum.add(currentNumber);
             }
-            System.out.println(Arrays.toString(currentNumber.divideAndRemainder(BigInteger.TWO)));
+            System.out.println(currentNumber.divideAndRemainder(BigInteger.TWO)[1]);
             firstNumber = secondNumber;
             secondNumber = currentNumber;
             currentNumber = firstNumber.add(secondNumber);
