@@ -13,6 +13,14 @@ public class SurveyAnAsteroidBelt
             for (int j = 0; j < asteroidOccupation[i].length; j++)
             {
                 asteroidOccupation[i][j] = input.nextInt();
+                try
+                {
+                    //
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
+                }
             }
             input.nextLine();
         }
