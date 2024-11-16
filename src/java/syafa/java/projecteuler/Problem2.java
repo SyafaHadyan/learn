@@ -10,17 +10,15 @@ public class Problem2
         BigInteger firstNumber = BigInteger.ONE;
         BigInteger secondNumber = BigInteger.TWO;
         BigInteger currentNumber = firstNumber.add(secondNumber);
-        for (BigInteger i = BigInteger.TWO; i.compareTo(MAX_FIBONACCI_SEQUENCE_VALUE) < 0; i = i.add(BigInteger.ONE));
+        for (BigInteger i = BigInteger.TWO; i.compareTo(MAX_FIBONACCI_SEQUENCE_VALUE) < 0; i = i.add(BigInteger.ONE))
         {
             if ((currentNumber.divideAndRemainder(BigInteger.TWO)[1]).compareTo(BigInteger.ZERO) == 0)
             {
                 fibonacciSum = fibonacciSum.add(currentNumber);
             }
-            System.out.println(currentNumber.divideAndRemainder(BigInteger.TWO)[1]);
             firstNumber = secondNumber;
             secondNumber = currentNumber;
             currentNumber = firstNumber.add(secondNumber);
-            System.out.println(firstNumber + " " + secondNumber + " " + currentNumber);
         }
         System.out.print(fibonacciSum);
     }
