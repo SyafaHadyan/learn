@@ -10,7 +10,7 @@ public class SnakesAndLadders
     static int[][] gameBoard = new int[GAME_BOARD_SIZE][GAME_BOARD_SIZE];
     static int[] gameBoardFlat = new int[GAME_BOARD_SIZE * GAME_BOARD_SIZE];
     static int[] playerPosition = new int[PLAYER_AMOUNT];
-    static int gameBoardFlatIndexCounter = (GAME_BOARD_SIZE * GAME_BOARD_SIZE) - 1;
+    static int gameBoardFlatIndexCounter = 0;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -22,14 +22,14 @@ public class SnakesAndLadders
         {
             if ((i + 1) % 2 == 0)
             {
-                for (int j = 0; j < gameBoard[i].length; j++,gameBoardFlatIndexCounter--)
+                for (int j = 0; j < gameBoard[i].length; j++,gameBoardFlatIndexCounter++)
                 {
                     gameBoardFlat[gameBoardFlatIndexCounter] = gameBoard[i][j];
                 }
             }
             else if ((i + 1) % 2 != 0)
             {
-                for (int j = gameBoard[i].length - 1; j >= 0; j--,gameBoardFlatIndexCounter--)
+                for (int j = gameBoard[i].length - 1; j >= 0; j--,gameBoardFlatIndexCounter++)
                 {
                     gameBoardFlat[gameBoardFlatIndexCounter] = gameBoard[i][j];
                 }
