@@ -1,9 +1,10 @@
 package syafa.java.projecteuler;
+import java.util.*;
 import java.math.*;
 
 public class Problem2
 {
-    static final BigInteger MAX_FIBONACCI_SEQUENCE_VALUE = new BigInteger("10");
+    static final BigInteger MAX_FIBONACCI_SEQUENCE_VALUE = BigInteger.TEN;
     public static void main(String[] args)
     {
         BigInteger fibonacciSum = BigInteger.ZERO;
@@ -12,13 +13,15 @@ public class Problem2
         BigInteger currentNumber = firstNumber.add(secondNumber);
         for (BigInteger i = BigInteger.TWO; i.compareTo(MAX_FIBONACCI_SEQUENCE_VALUE) < 0; i = i.add(BigInteger.ONE));
         {
-            if (currentNumber.divideAndRemainder(BigInteger.TWO)[1].compareTo(BigInteger.ZERO) == 0)
+            if ((currentNumber.divideAndRemainder(BigInteger.TWO)[1]).compareTo(BigInteger.ZERO) == 0)
             {
                 fibonacciSum = fibonacciSum.add(currentNumber);
             }
+            System.out.println(Arrays.toString(currentNumber.divideAndRemainder(BigInteger.TWO)));
             firstNumber = secondNumber;
             secondNumber = currentNumber;
             currentNumber = firstNumber.add(secondNumber);
+            System.out.println(firstNumber + " " + secondNumber + " " + currentNumber);
         }
         System.out.print(fibonacciSum);
     }
