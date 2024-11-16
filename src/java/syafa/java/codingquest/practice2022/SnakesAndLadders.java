@@ -14,6 +14,7 @@ public class SnakesAndLadders
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int winPlayer = 0;
         for (int i = 0; i < gameBoard.length; i++)
         {
             gameBoard[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
@@ -39,10 +40,20 @@ public class SnakesAndLadders
         {
             for (int j = 0; j < playerPosition.length; j++)
             {
-                playerPosition[j] += (gameBoardFlat[input.nextInt() + playerPosition[j]]);
+                try
+                {
+                    playerPosition[j] += (gameBoardFlat[input.nextInt() + playerPosition[j]]);
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    winPlayer = (j + 1) * playerPosition[j];
+                    i = GAME_ROUND;
+                    j = playerPosition.length;
+                }
             }
             input.nextLine();
         }
         input.close();
+        System.out.print(winPlayer);
     }
 }
