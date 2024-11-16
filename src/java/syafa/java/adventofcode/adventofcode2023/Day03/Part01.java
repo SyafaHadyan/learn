@@ -39,12 +39,19 @@ public class Part01
                 StringBuilder numberStruct = new StringBuilder();
                 boolean isEngineSchematic = false;
                 boolean performSymbolCheck = false;
-                while (isDigit(engine[i][j]))
+                try
                 {
-                    performSymbolCheck = true;
-                    numberStruct.append(engine[i][j]);
-                    digitLength++;
-                    j++;
+                    while (isDigit(engine[i][j]))
+                    {
+                        performSymbolCheck = true;
+                        numberStruct.append(engine[i][j]);
+                        digitLength++;
+                        j++;
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
                 if (performSymbolCheck)
                 {
