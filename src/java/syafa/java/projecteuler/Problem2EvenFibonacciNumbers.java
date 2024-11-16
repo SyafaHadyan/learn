@@ -1,7 +1,7 @@
 package syafa.java.projecteuler;
 import java.math.*;
 
-public class Problem2
+public class Problem2EvenFibonacciNumbers
 {
     static final BigInteger MAX_FIBONACCI_SEQUENCE_VALUE = new BigInteger("4000000");
     public static void main(String[] args)

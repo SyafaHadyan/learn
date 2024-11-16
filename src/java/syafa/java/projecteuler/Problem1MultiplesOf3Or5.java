@@ -1,6 +1,6 @@
 package syafa.java.projecteuler;
 
-public class Problem1
+public class Problem1MultiplesOf3Or5
 {
     static final int MAX_CHECK_BELOW = 1000;
     public static void main(String[] args)
