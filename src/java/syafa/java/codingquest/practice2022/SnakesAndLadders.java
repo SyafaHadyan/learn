@@ -56,12 +56,11 @@ public class SnakesAndLadders
                     {
                         if (winPlayer == 0)
                         {
-                            winPlayer = (j + 1) * i;
+                            winPlayer = (j + 1) * (i + 1);
                         }
                     }
                 }
                 while (posIncrement != 0);
-                //playerPosition[j] += inputPlayer + (gameBoardFlat[inputPlayer + playerPosition[j]]);
             }
             input.nextLine();
         }
