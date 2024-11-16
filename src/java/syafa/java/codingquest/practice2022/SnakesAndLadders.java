@@ -52,17 +52,16 @@ public class SnakesAndLadders
                         posIncrement = gameBoardFlat[playerPosition[j]];
                         inputPlayer = 0;
                     }
-                    catch (Exception e)
+                    catch (IndexOutOfBoundsException e)
                     {
-                        // TODO: handle exception
+                        if (winPlayer == 0)
+                        {
+                            winPlayer = (j + 1) * i;
+                        }
                     }
                 }
                 while (posIncrement != 0);
                 //playerPosition[j] += inputPlayer + (gameBoardFlat[inputPlayer + playerPosition[j]]);
-                if (playerPosition[j] == GAME_BOARD_SIZE * GAME_BOARD_SIZE && winPlayer == 0)
-                {
-                    winPlayer = (j + 1) * i;
-                }
             }
             input.nextLine();
         }
