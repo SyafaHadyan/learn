@@ -3,6 +3,8 @@ import java.util.*;
 
 public class Part01
 {
+    static final int ENGINE_SCHEMATIC_WIDTH = 140;
+    static final int ENGINE_SCHEMATIC_LENGTH = 140;
     public static boolean isDigit(String inputString)
     {
         try
@@ -18,18 +20,18 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[][] engine = new String[150][150];
+        String[][] engine = new String[ENGINE_SCHEMATIC_LENGTH][ENGINE_SCHEMATIC_WIDTH];
         String tempInput = "";
         int counter = 0;
         int engineSchematicSum = 0;
-        while (input.hasNextLine())
+        while (counter < ENGINE_SCHEMATIC_LENGTH)
         {
             tempInput = input.nextLine();
             engine[counter] = tempInput.split("");
             counter++;
         }
         input.close();
-        for (int i = 0; i <= counter; i++)
+        for (int i = 0; i < counter; i++)
         {
             for (int j = 0; j < tempInput.length(); j++)
             {
