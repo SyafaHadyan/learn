@@ -1,28 +1,31 @@
 package syafa.java.hackerrank.LatihanSoalTIFB;
 import java.util.*;
-import java.math.*;
 
 public class PerulanganPrimaKeN
 {
+    public static boolean isPrime(int number)
+    {
+        for (int i = 2; i < number; i++)
+        {
+            if (number % i == 0)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
-        int currentPrimeAt = 0;
-        BigInteger currentPrime = BigInteger.TWO;
-        for (int i = 1; i <= primeAt;)
+        int currentPrimeAt = 1;
+        int currentNumber = 2;
+        while (currentPrimeAt != primeAt)
         {
-            if (currentPrime.isProbablePrime(100))
-            {
-                currentPrimeAt++;
-                if (currentPrimeAt == primeAt)
-                {
-                    System.out.print(currentPrime);
-                    return;
-                }
-            }
-            currentPrime = currentPrime.add(BigInteger.ONE);
+            if (isPrime(currentNumber))
+            currentNumber++;
         }
+        System.out.print(currentNumber);
     }
 }
