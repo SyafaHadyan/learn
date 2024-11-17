@@ -19,12 +19,15 @@ public class PerulanganPrimaKeN
         Scanner input = new Scanner(System.in);
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
-        int currentPrimeAt = 1;
-        int currentNumber = 2;
+        int currentPrimeAt = 0;
+        int currentNumber = 1;
         while (currentPrimeAt != primeAt)
         {
-            if (isPrime(currentNumber))
             currentNumber++;
+            if (isPrime(currentNumber))
+            {
+                currentPrimeAt++;
+            }
         }
         System.out.print(currentNumber);
     }
