@@ -1,5 +1,5 @@
 package syafa.java.hackerrank.LatihanSoalTIFB;
-import java.util.*;
+import java.util.Scanner;
 
 public class PerulanganPrimaKeN
 {
@@ -20,15 +20,15 @@ public class PerulanganPrimaKeN
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
         int currentPrimeAt = 0;
-        int currentNumber = 1;
+        int currentNumber = -1;
         while (currentPrimeAt != primeAt)
         {
-            currentNumber++;
+            currentNumber += 2;
             if (isPrime(currentNumber))
             {
                 currentPrimeAt++;
             }
         }
-        System.out.print(currentNumber);
+        System.out.print((primeAt == 1)? 2 : currentNumber);
     }
 }
