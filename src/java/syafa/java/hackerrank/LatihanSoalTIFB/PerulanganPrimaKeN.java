@@ -5,7 +5,11 @@ public class PerulanganPrimaKeN
 {
     public static boolean isPrime(int number)
     {
-        for (int i = 2; i < number; i++)
+        if (number <= 1)
+        {
+            return false;
+        }
+        for (int i = 2; i < Math.sqrt(number); i++)
         {
             if (number % i == 0)
             {
@@ -19,9 +23,9 @@ public class PerulanganPrimaKeN
         Scanner input = new Scanner(System.in);
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
-        int currentPrimeAt = 0;
-        int currentNumber = -1;
-        while (currentPrimeAt != primeAt)
+        int currentPrimeAt = 1;
+        int currentNumber = 1;
+        while (currentPrimeAt < primeAt)
         {
             currentNumber += 2;
             if (isPrime(currentNumber))
@@ -29,6 +33,6 @@ public class PerulanganPrimaKeN
                 currentPrimeAt++;
             }
         }
-        System.out.print((primeAt == 1)? 2 : currentNumber);
+        System.out.print((primeAt == 1) ? 2 : currentNumber);
     }
 }
