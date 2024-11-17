@@ -21,7 +21,26 @@ public class FlatlandSpaceStations
             int distanceRight = 0;
             if (stationConfig[i] == 0)
             {
-                //
+                int countLeft = 0;
+                int countRight = 0;
+                int indexLeft = i;
+                int indexRight = i;
+                int minCurrentDistance = 0;
+                while (stationConfig[indexLeft] != 1)
+                {
+                    countLeft++;
+                    indexLeft--;
+                }
+                while (stationConfig[indexRight] != 1)
+                {
+                    countRight++;
+                    indexRight++;
+                }
+                minCurrentDistance = Math.min(countLeft,countRight);
+                if (minCurrentDistance > maxCityDistance)
+                {
+                    maxCityDistance = minCurrentDistance;
+                }
             }
         }
         System.out.print(maxCityDistance);
