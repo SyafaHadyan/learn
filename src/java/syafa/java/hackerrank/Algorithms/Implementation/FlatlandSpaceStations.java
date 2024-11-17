@@ -9,7 +9,7 @@ public class FlatlandSpaceStations
         Scanner input = new Scanner(System.in);
         int[] cityConfig = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int[] stationConfig = new int[cityConfig[0]];
-        int maxCityDistance = Integer.MIN_VALUE;
+        int maxCityDistance = 0;
         for (int i = 0; i < cityConfig[1]; i++)
         {
             stationConfig[input.nextInt()] = 1;
@@ -17,8 +17,6 @@ public class FlatlandSpaceStations
         input.close();
         for (int i = 0; i < cityConfig[0]; i++)
         {
-            int distanceLeft = 0;
-            int distanceRight = 0;
             if (stationConfig[i] == 0)
             {
                 int countLeft = 0;
