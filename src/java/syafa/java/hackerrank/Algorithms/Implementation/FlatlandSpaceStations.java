@@ -34,7 +34,7 @@ public class FlatlandSpaceStations
                 }
                 catch (IndexOutOfBoundsException e)
                 {
-                    //
+                    countLeft = Integer.MAX_VALUE;
                 }
                 try
                 {
@@ -46,7 +46,7 @@ public class FlatlandSpaceStations
                 }
                 catch (IndexOutOfBoundsException e)
                 {
-                    //
+                    countRight = Integer.MAX_VALUE;
                 }
                 minCurrentDistance = Math.min(countLeft,countRight);
                 if (minCurrentDistance > maxCityDistance)
