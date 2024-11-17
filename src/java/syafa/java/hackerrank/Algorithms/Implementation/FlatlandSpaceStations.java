@@ -24,15 +24,29 @@ public class FlatlandSpaceStations
                 int indexLeft = i;
                 int indexRight = i;
                 int minCurrentDistance = 0;
-                while (stationConfig[indexLeft] != 1 || indexLeft > 0)
+                try
                 {
-                    countLeft++;
-                    indexLeft--;
+                    while (stationConfig[indexLeft] != 1)
+                    {
+                        countLeft++;
+                        indexLeft--;
+                    }
                 }
-                while (stationConfig[indexRight] != 1 || indexRight < cityConfig[0] - 1)
+                catch (IndexOutOfBoundsException e)
                 {
-                    countRight++;
-                    indexRight++;
+                    //
+                }
+                try
+                {
+                    while (stationConfig[indexRight] != 1)
+                    {
+                        countRight++;
+                        indexRight++;
+                    }
+                }
+                catch (IndexOutOfBoundsException e)
+                {
+                    //
                 }
                 minCurrentDistance = Math.min(countLeft,countRight);
                 if (minCurrentDistance > maxCityDistance)
