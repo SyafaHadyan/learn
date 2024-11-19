@@ -23,10 +23,10 @@ public class Part01
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
-            int move0 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0))) + currentPosition[0];
-            int move1 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + currentPosition[1];
-            currentPosition[0] = move0;
-            currentPosition[1] = move1;
+            for (int j = 0; j < 2; j++)
+            {
+                currentPosition[j] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(j))) + currentPosition[j];
+            }
             currentMove = String.valueOf(currentPosition[0]).concat(String.valueOf(currentPosition[1]));
             if (visitedHouse.get(currentMove) == null)
             {
