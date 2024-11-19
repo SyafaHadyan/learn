@@ -23,18 +23,12 @@ public class Part01
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
-            int move0 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0))) + Integer.parseInt(String.valueOf(currentPosition.charAt(0)));
-            int move1 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + Integer.parseInt(String.valueOf(currentPosition.charAt(1)));
-            //String tempMove = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)) + Integer.parseInt(String.valueOf(currentPosition.charAt(0))))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)) + Integer.parseInt(String.valueOf(currentPosition.charAt(1))))));
-            String tempMove = String.valueOf(move0).concat(String.valueOf(move1));
-            currentPosition = tempMove;
-            if (visitedHouse.get(tempMove) == null)
+            currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0))) + Integer.parseInt(String.valueOf(currentPosition.charAt(0)))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + Integer.parseInt(String.valueOf(currentPosition.charAt(1)))));
+            if (visitedHouse.get(currentPosition) == null)
             {
-                visitedHouse.put(tempMove,true);
+                visitedHouse.put(currentPosition,true);
                 houseVisitCount++;
             }
-            //currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
-            //currentPosition[1] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)));
         }
         System.out.print(houseVisitCount);
     }
