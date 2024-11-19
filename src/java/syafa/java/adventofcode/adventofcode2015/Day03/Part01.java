@@ -16,13 +16,15 @@ public class Part01
         char[] move = input.nextLine().toCharArray();
         input.close();
         int houseVisitCount = 1;
-        int[] currentPosition = new int[2];
+        //int[] currentPosition = new int[2];
+        String currentPosition = "";
         HashMap<String,Boolean> visitedHouse = new HashMap<>();
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
-            currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
-            currentPosition[1] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)));
+            currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)))));
+            //currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
+            //currentPosition[1] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)));
         }
     }
 }
