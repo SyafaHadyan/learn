@@ -13,7 +13,7 @@ public class Part02
         {
             int[] boxDimension = Stream.of(input.nextLine().split("x")).mapToInt(Integer::parseInt).toArray();
             Arrays.sort(boxDimension);
-            ribbonSize += (Math.pow(boxDimension[0],2) + Math.pow(boxDimension[1],2) + (boxDimension[0] * boxDimension[1] * boxDimension[2]));
+            ribbonSize += ((boxDimension[0] * 2) + (boxDimension[1] * 2)) + (boxDimension[0] * boxDimension[1] * boxDimension[2]);
         }
         input.close();
         System.out.print(ribbonSize);
