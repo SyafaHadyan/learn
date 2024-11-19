@@ -14,5 +14,6 @@ public class Part01
             wrappingPaperSize += ((2 * boxDimension[0] * boxDimension[1]) + (2 * boxDimension[1] * boxDimension[2]) + (2 * boxDimension[2] * boxDimension[0]));
         }
         input.close();
+        System.out.print(wrappingPaperSize);
     }
 }
