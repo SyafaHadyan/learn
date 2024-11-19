@@ -22,10 +22,14 @@ public class Part01
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
-            currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)) + Integer.parseInt(String.valueOf(currentPosition.charAt(0))))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)) + Integer.parseInt(String.valueOf(currentPosition.charAt(1))))));
-            if (visitedHouse.get(currentPosition) == null)
+            String move0 = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)) + Integer.parseInt(String.valueOf(currentPosition.charAt(0)))));
+            String move1 = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)) + Integer.parseInt(String.valueOf(currentPosition.charAt(1)))));
+            //String tempMove = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)) + Integer.parseInt(String.valueOf(currentPosition.charAt(0))))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)) + Integer.parseInt(String.valueOf(currentPosition.charAt(1))))));
+            String tempMove = move0.concat(move1)
+            currentPosition = tempMove;
+            if (visitedHouse.get(tempMove) == null)
             {
-                visitedHouse.put(currentPosition,true);
+                visitedHouse.put(tempMove,true);
                 houseVisitCount++;
             }
             //currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
