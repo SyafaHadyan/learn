@@ -27,9 +27,10 @@ public class Part01
             int move1 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + currentPosition[1];
             currentPosition[0] = move0;
             currentPosition[1] = move1;
-            if (visitedHouse.get(String.valueOf(currentPosition)) == null)
+            currentMove = String.valueOf(currentPosition[0]).concat(String.valueOf(currentPosition[1]));
+            if (visitedHouse.get(currentMove) == null)
             {
-                visitedHouse.put(String.valueOf(currentPosition),true);
+                visitedHouse.put(String.valueOf(currentMove),true);
                 houseVisitCount++;
             }
         }
