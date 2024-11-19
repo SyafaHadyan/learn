@@ -5,9 +5,9 @@ public class Part01
 {
     static final Map<Character,String> DEFAULT_MOVE = Map.ofEntries
     (
-        Map.entry('^',"01"),
+        Map.entry('^',"02"),
         Map.entry('V',"00"),
-        Map.entry('>',"11"),
+        Map.entry('>',"12"),
         Map.entry('<',"10")
     );
     public static void main(String[] args)
@@ -20,7 +20,9 @@ public class Part01
         HashMap<String,Boolean> visitedHouse = new HashMap<>();
         for (int i = 0; i < move.length; i++)
         {
-            //
+            String currentMove = DEFAULT_MOVE.get(move[i]);
+            currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
+            currentPosition[1] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)));
         }
     }
 }
