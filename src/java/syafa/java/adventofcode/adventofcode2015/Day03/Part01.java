@@ -5,8 +5,8 @@ public class Part01
 {
     static final Map<Character,String> DEFAULT_MOVE = Map.ofEntries
     (
-        Map.entry('^',"02"),
-        Map.entry('V',"00"),
+        Map.entry('^',"21"),
+        Map.entry('v',"01"),
         Map.entry('>',"12"),
         Map.entry('<',"10")
     );
@@ -23,7 +23,7 @@ public class Part01
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
             currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)))));
-            if (visitedHouse.putIfAbsent(currentPosition,true))
+            if (visitedHouse.get(currentPosition) == null && visitedHouse.put(currentPosition,true))
             {
                 houseVisitCount++;
             }
