@@ -8,15 +8,14 @@ public class Part02
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int wrappingPaperSize = 0;
+        int ribbonSize = 0;
         for (int i = 0; i < MAX_BOX_INPUT; i++)
         {
             int[] boxDimension = Stream.of(input.nextLine().split("x")).mapToInt(Integer::parseInt).toArray();
-            wrappingPaperSize += ((2 * boxDimension[0] * boxDimension[1]) + (2 * boxDimension[1] * boxDimension[2]) + (2 * boxDimension[2] * boxDimension[0]));
             Arrays.sort(boxDimension);
-            wrappingPaperSize += (boxDimension[0] * boxDimension[1]);
+            ribbonSize += (Math.pow(boxDimension[0],2) + Math.pow(boxDimension[1],2) + (boxDimension[0] * boxDimension[1] * boxDimension[2]));
         }
         input.close();
-        System.out.print(wrappingPaperSize);
+        System.out.print(ribbonSize);
     }
 }
