@@ -12,7 +12,9 @@ public class Part01
         for (int i = 0; i < MAX_BOX_INPUT; i++)
         {
             int[] boxDimension = Stream.of(input.nextLine().split("x")).mapToInt(Integer::parseInt).toArray();
-            wrappingPaperSize += ((2 * boxDimension[0] * boxDimension[1]) + (2 * boxDimension[1] * boxDimension[2]) + (2 * boxDimension[2] * boxDimension[0]) + (boxDimension[0] * boxDimension[1]));
+            wrappingPaperSize += ((2 * boxDimension[0] * boxDimension[1]) + (2 * boxDimension[1] * boxDimension[2]) + (2 * boxDimension[2] * boxDimension[0]));
+            Arrays.sort(boxDimension);
+            wrappingPaperSize += (boxDimension[0] * boxDimension[1]);
         }
         input.close();
         System.out.print(wrappingPaperSize);
