@@ -23,8 +23,13 @@ public class Part01
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
             currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)))));
+            if (visitedHouse.putIfAbsent(currentPosition,true))
+            {
+                houseVisitCount++;
+            }
             //currentPosition[0] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0)));
             //currentPosition[1] = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1)));
         }
+        System.out.print(houseVisitCount);
     }
 }
