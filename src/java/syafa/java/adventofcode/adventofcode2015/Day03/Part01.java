@@ -17,16 +17,19 @@ public class Part01
         input.close();
         int houseVisitCount = 1;
         //int[] currentPosition = new int[2];
-        String currentPosition = "00";
+        int[] currentPosition = {0,0};
         HashMap<String,Boolean> visitedHouse = new HashMap<>();
-        visitedHouse.put(currentPosition,true);
+        visitedHouse.put("00",true);
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
-            currentPosition = String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(0))) + Integer.parseInt(String.valueOf(currentPosition.charAt(0)))).concat(String.valueOf(-1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + Integer.parseInt(String.valueOf(currentPosition.charAt(1)))));
-            if (visitedHouse.get(currentPosition) == null)
+            int move0 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(0))) + currentPosition[0];
+            int move1 = -1 + Integer.parseInt(String.valueOf(currentMove.charAt(1))) + currentPosition[1];
+            currentPosition[0] = move0;
+            currentPosition[1] = move1;
+            if (visitedHouse.get(String.valueOf(currentPosition)) == null)
             {
-                visitedHouse.put(currentPosition,true);
+                visitedHouse.put(String.valueOf(currentPosition),true);
                 houseVisitCount++;
             }
         }
