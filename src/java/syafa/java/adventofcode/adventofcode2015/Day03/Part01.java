@@ -16,7 +16,6 @@ public class Part01
         char[] move = input.nextLine().toCharArray();
         input.close();
         int houseVisitCount = 1;
-        //int[] currentPosition = new int[2];
         int[] currentPosition = {0,0};
         HashMap<String,Boolean> visitedHouse = new HashMap<>();
         visitedHouse.put("00",true);
