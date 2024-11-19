@@ -19,6 +19,7 @@ public class Part01
         //int[] currentPosition = new int[2];
         String currentPosition = "00";
         HashMap<String,Boolean> visitedHouse = new HashMap<>();
+        visitedHouse.put(currentPosition,true);
         for (int i = 0; i < move.length; i++)
         {
             String currentMove = DEFAULT_MOVE.get(move[i]);
