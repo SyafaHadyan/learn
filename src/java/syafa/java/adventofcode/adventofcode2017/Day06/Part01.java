@@ -7,7 +7,7 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int[] memoryBlock = Stream.of(input.nextLine().split("\s++")).mapToInt(Integer::parseInt).toArray();
+        int[] memoryBlock = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int distributionLoop = 1;
         HashMap<String,Boolean> memoryBlockDistribution = new HashMap<>();
