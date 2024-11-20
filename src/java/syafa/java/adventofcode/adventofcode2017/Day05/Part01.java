@@ -8,8 +8,7 @@ public class Part01
         Scanner input = new Scanner(System.in);
         ArrayList<Integer> instruction = new ArrayList<>();
         int step = 0;
-        int tempCount = 0;
-        while (tempCount < 5)
+        while (input.hasNextLine())
         {
             instruction.add(Integer.parseInt(input.nextLine()));
             tempCount++;
@@ -25,7 +24,6 @@ public class Part01
                 instruction.set(previousIndex,instruction.get(previousIndex) + 1);
                 previousIndex += index;
                 index = instruction.get(previousIndex);
-                System.err.println(instruction);
             }
             catch (IndexOutOfBoundsException e)
             {
