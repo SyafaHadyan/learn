@@ -11,8 +11,16 @@ public class Part02
         while (input.hasNextLine())
         {
             int[] rowInput = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-            Arrays.sort(rowInput);
-            checkSum += (rowInput[rowInput.length - 1] - rowInput[0]);
+            for (int i = 0; i < rowInput.length; i++)
+            {
+                for (int j = 0 + i; j < rowInput.length; j++)
+                {
+                    if (rowInput[i] % rowInput[j] == 0 && rowInput[i] != rowInput[j])
+                    {
+                        checkSum += rowInput[i] / rowInput[j];
+                    }
+                }
+            }
         }
         input.close();
         System.out.println(checkSum);
