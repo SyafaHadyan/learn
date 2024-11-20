@@ -14,8 +14,12 @@ public class Part01
         {
             if (captchaDigit[i] == captchaDigit[i + 1])
             {
-                validDigitSum++;`
+                validDigitSum++;
             }
+        }
+        if (captchaDigit[0] == captchaDigit[captchaDigit.length - 1])
+        {
+            validDigitSum++;
         }
     }
 }
