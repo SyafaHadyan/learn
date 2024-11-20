@@ -38,6 +38,8 @@ public class Part01
             }
             else
             {
+                System.err.println(Arrays.toString(memoryBlock));
+                System.err.println(memoryBlockDistribution);
                 System.out.println(distributionLoop);
                 return;
             }
