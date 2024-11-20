@@ -14,6 +14,12 @@ public class Part02
             String[] tempInput = input.nextLine().split("\s");
             for (int i = 0; i < tempInput.length; i++)
             {
+                char[] tempSort = tempInput[i].toCharArray();
+                Arrays.sort(tempSort);
+                tempInput[i] = String.valueOf(tempSort);
+            }
+            for (int i = 0; i < tempInput.length; i++)
+            {
                 passphraseInput.add(tempInput[i]);
                 passphraseNoDuplicate.add(tempInput[i]);
             }
