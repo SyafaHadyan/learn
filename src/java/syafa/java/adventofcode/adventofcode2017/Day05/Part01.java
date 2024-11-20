@@ -21,12 +21,10 @@ public class Part01
         {
             try
             {
-                int tempIndex = index;
-                previousIndex = instruction.get(tempIndex);
-                instruction.set(previousIndex,instruction.get(previousIndex) + 1);
-                index = instruction.get(tempIndex);
-                previousIndex = tempIndex;
                 step++;
+                instruction.set(previousIndex,instruction.get(previousIndex) + 1);
+                previousIndex = instruction.get(previousIndex);
+                System.out.println(instruction);
             }
             catch (IndexOutOfBoundsException e)
             {
