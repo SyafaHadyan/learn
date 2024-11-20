@@ -23,8 +23,9 @@ public class Part01
             {
                 step++;
                 instruction.set(previousIndex,instruction.get(previousIndex) + 1);
-                previousIndex = instruction.get(previousIndex);
-                System.out.println(instruction);
+                previousIndex += index;
+                index = instruction.get(previousIndex);
+                System.err.println(instruction);
             }
             catch (IndexOutOfBoundsException e)
             {
