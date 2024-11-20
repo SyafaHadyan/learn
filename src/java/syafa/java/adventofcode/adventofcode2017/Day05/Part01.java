@@ -16,14 +16,16 @@ public class Part01
         }
         input.close();
         int index = 0;
+        int previousIndex = 0;
         while (true)
         {
             try
             {
                 int tempIndex = index;
+                previousIndex = instruction.get(tempIndex);
+                instruction.set(previousIndex,instruction.get(previousIndex) + 1);
                 index = instruction.get(tempIndex);
-                instruction.set(tempIndex,instruction.get(tempIndex) + 1);
-                index = instruction.get(tempIndex);
+                previousIndex = tempIndex;
                 step++;
             }
             catch (IndexOutOfBoundsException e)
