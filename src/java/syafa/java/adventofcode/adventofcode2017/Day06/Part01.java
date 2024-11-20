@@ -9,7 +9,8 @@ public class Part01
         Scanner input = new Scanner(System.in);
         int[] memoryBlock = Stream.of(input.nextLine().split("\s++")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        HashMap<String,Boolean> memoryBlockDistribution = new HashMap<>;
+        int distributionLoop = 0;
+        HashMap<String,Boolean> memoryBlockDistribution = new HashMap<>();
         while (true)
         {
             int choosenBlock = 0;
@@ -30,6 +31,14 @@ public class Part01
                 {
                     memoryBlock[i] = memoryBlock[i] % (memoryBlock.length - 1);
                 }
+            }
+            if (memoryBlockDistribution.get(Arrays.toString(memoryBlock)) == null)
+            {
+                memoryBlockDistribution.put(Arrays.toString(memoryBlock),true);
+            }
+            else
+            {
+                System.out.println(distributionLoop);
             }
         }
     }
