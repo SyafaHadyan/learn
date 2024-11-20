@@ -7,6 +7,13 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int checkSum = 0;
+        while (input.hasNextLine())
+        {
+            int[] rowInput = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            Arrays.sort(rowInput);
+            //
+        }
         input.close();
     }
 }
