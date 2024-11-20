@@ -20,14 +20,7 @@ public class Part02
             try
             {
                 step++;
-                if (instruction.get(previousIndex) < 3)
-                {
-                    instruction.set(previousIndex,instruction.get(previousIndex) + 1);
-                }
-                else
-                {
-                    instruction.set(previousIndex,instruction.get(previousIndex) - 1);
-                }
+                instruction.set(previousIndex,instruction.get(previousIndex) + ((instruction.get(previousIndex) < 3) ? 1 : -1));
                 previousIndex += index;
                 index = instruction.get(previousIndex);
             }
