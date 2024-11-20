@@ -11,7 +11,6 @@ public class Part01
         while (input.hasNextLine())
         {
             instruction.add(Integer.parseInt(input.nextLine()));
-            tempCount++;
         }
         input.close();
         int index = 0;
