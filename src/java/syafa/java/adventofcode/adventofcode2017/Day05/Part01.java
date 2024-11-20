@@ -19,8 +19,10 @@ public class Part01
             int instructionSet = 0;
             try
             {
-                instructionSet = instruction.get(index);
+                int tempIndex = index =  instructionSet = instruction.get(index);
                 instruction.set(index,instruction.get(index) + 1);
+                index = tempIndex;
+                step++;
             }
             catch (IndexOutOfBoundsException e)
             {
