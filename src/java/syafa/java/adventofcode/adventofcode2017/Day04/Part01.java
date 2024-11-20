@@ -11,11 +11,11 @@ public class Part01
         {
             ArrayList<String> passphraseInput = new ArrayList<>();
             Set<String> passphraseNoDuplicate = new HashSet<>();
-            while (input.hasNext())
+            String[] tempInput = input.nextLine().split("\s");
+            for (int i = 0; i < tempInput.length; i++)
             {
-                String tempInput = input.next();
-                passphraseInput.add(tempInput);
-                passphraseNoDuplicate.add(tempInput);
+                passphraseInput.add(tempInput[i]);
+                passphraseNoDuplicate.add(tempInput[i]);
             }
             if (passphraseInput.size() == passphraseNoDuplicate.size())
             {
