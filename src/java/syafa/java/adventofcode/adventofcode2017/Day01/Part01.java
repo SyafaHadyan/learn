@@ -10,7 +10,7 @@ public class Part01
         int[] captchaDigit = Stream.of(input.nextLine().split("")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int validDigitSum = 0;
-        for (int i = 0; i < captchaDigit.length; i++)
+        for (int i = 0; i < captchaDigit.length - 1; i++)
         {
             if (captchaDigit[i] == captchaDigit[i + 1])
             {
@@ -21,5 +21,6 @@ public class Part01
         {
             validDigitSum += captchaDigit[0];
         }
+        System.out.println(validDigitSum);
     }
 }
