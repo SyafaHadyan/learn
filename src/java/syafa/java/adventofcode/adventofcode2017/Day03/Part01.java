@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Part01
 {
+    @SuppressWarnings("unused")
     public static void main(String[] args)
     {
         /*
