@@ -11,6 +11,10 @@ public class Part01
         int step = 0;
         int currentNumber = numberRequest;
         int ring = (int) Math.ceil(Math.sqrt(numberRequest));
+        if (ring % 2 == 0)
+        {
+            ring++;
+        }
         System.out.println(ring);
         while (currentNumber != 1)
         {
