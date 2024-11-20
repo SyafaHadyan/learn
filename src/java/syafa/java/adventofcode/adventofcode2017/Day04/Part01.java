@@ -6,20 +6,23 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        ArrayList<String> passphraseInput = new ArrayList<>();
-        Set<String> passphraseNoDuplicate = new HashSet<>();
-        while (input.hasNext())
+        int validPassphrase = 0;
+        while (input.hasNextLine())
         {
-            String tempInput = input.next();
-            passphraseInput.add(tempInput);
-            passphraseNoDuplicate.add(tempInput);
+            ArrayList<String> passphraseInput = new ArrayList<>();
+            Set<String> passphraseNoDuplicate = new HashSet<>();
+            while (input.hasNext())
+            {
+                String tempInput = input.next();
+                passphraseInput.add(tempInput);
+                passphraseNoDuplicate.add(tempInput);
+            }
+            if (passphraseInput.size() == passphraseNoDuplicate.size())
+            {
+                validPassphrase++;
+            }
         }
         input.close();
-        if (passphraseInput.size() == passphraseNoDuplicate.size())
-        {
-            System.out.println("Valid");
-            return;
-        }
-        System.out.println("Not valid");
+        System.out.println(validPassphrase);
     }
 }
