@@ -17,7 +17,18 @@ public class Part01
             {
                 if (memoryBlock[i] > choosenBlock)
                 {
-                    choosenBlock = memoryBlock[i];
+                    choosenBlock = i;
+                }
+            }
+            for (int i = 0; i < memoryBlock.length; i++)
+            {
+                if (i != choosenBlock)
+                {
+                    memoryBlock[i] += memoryBlock[choosenBlock] / (memoryBlock.length - 1);
+                }
+                else
+                {
+                    memoryBlock[i] = memoryBlock[i] % (memoryBlock.length - 1);
                 }
             }
         }
