@@ -15,5 +15,11 @@ public class Part01
             passphraseNoDuplicate.add(tempInput);
         }
         input.close();
+        if (passphraseInput.size() == passphraseNoDuplicate.size())
+        {
+            System.out.println("Valid");
+            return;
+        }
+        System.out.println("Not valid");
     }
 }
