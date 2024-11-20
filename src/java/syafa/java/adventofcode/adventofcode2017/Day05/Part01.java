@@ -8,25 +8,28 @@ public class Part01
         Scanner input = new Scanner(System.in);
         ArrayList<Integer> instruction = new ArrayList<>();
         int step = 0;
-        while (input.hasNextLine())
+        int tempCount = 0;
+        while (tempCount < 5)
         {
             instruction.add(Integer.parseInt(input.nextLine()));
+            tempCount++;
         }
         input.close();
         int index = 0;
         while (true)
         {
-            int instructionSet = 0;
             try
             {
-                int tempIndex = index =  instructionSet = instruction.get(index);
-                instruction.set(index,instruction.get(index) + 1);
-                index = tempIndex;
+                int tempIndex = index;
+                index = instruction.get(tempIndex);
+                instruction.set(tempIndex,instruction.get(tempIndex) + 1);
+                index = instruction.get(tempIndex);
                 step++;
             }
             catch (IndexOutOfBoundsException e)
             {
                 System.out.println(step);
+                return;
             }
         }
     }
