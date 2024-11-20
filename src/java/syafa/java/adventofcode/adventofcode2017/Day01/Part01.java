@@ -10,16 +10,16 @@ public class Part01
         int[] captchaDigit = Stream.of(input.nextLine().split("")).mapToInt(Integer::parseInt).toArray();
         input.close();
         int validDigitSum = 0;
-        for (int i = 0; i < captchaDigit.length; i += 2)
+        for (int i = 0; i < captchaDigit.length; i++)
         {
             if (captchaDigit[i] == captchaDigit[i + 1])
             {
-                validDigitSum++;
+                validDigitSum += captchaDigit[i];
             }
         }
         if (captchaDigit[0] == captchaDigit[captchaDigit.length - 1])
         {
-            validDigitSum++;
+            validDigitSum += captchaDigit[0];
         }
     }
 }
