@@ -18,6 +18,16 @@ public class Part02
                     if (rowInput[i] % rowInput[j] == 0 && rowInput[i] != rowInput[j])
                     {
                         checkSum += rowInput[i] / rowInput[j];
+                        i = rowInput.length - 1;
+                        j = rowInput.length - 1;
+                        break;
+                    }
+                    if (rowInput[j] % rowInput[i] == 0 && rowInput[j] != rowInput[i])
+                    {
+                        checkSum += rowInput[j] / rowInput[i];
+                        i = rowInput.length - 1;
+                        j = rowInput.length - 1;
+                        break;
                     }
                 }
             }
