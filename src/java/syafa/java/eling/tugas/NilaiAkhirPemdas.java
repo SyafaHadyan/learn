@@ -7,10 +7,6 @@ class Student
     private int totalGrade;
     private int studentAboveAverageAmount;
     private double average;
-    Student()
-    {
-        //
-    }
     void setStudentData(String[][] inputData)
     {
         this.studentDataGrade = inputData;
