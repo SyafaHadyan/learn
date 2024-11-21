@@ -27,7 +27,7 @@ public class Part01
             {
                 register.putIfAbsent(instructionInput[i],0);
             }
-            switch (instructionInput[4])
+            switch (instructionInput[5])
             {
                 case ">":
                     if (register.get(instructionInput[4]) > Integer.parseInt(instructionInput[6]))
