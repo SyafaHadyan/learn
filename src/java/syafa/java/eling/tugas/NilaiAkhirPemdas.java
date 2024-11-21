@@ -1,9 +1,17 @@
 package syafa.java.eling.tugas;
 import java.util.Scanner;
 
-class Mahasiswa
+class Student
 {
-    //
+    String[][] studentDataGrade;
+    Student()
+    {
+        this.studentDataGrade[0] = "Nama 100".split("\s");
+    }
+    Student(String[][] inputData)
+    {
+        this.studentDataGrade = inputData;
+    }
 }
 public class NilaiAkhirPemdas
 {
@@ -19,6 +27,7 @@ public class NilaiAkhirPemdas
      */
     public static void main(String[] args)
     {
+        //Student setStudentData = new Student();
         Scanner input = new Scanner(System.in);
         int studentAmount = Integer.parseInt(input.nextLine());
         String[][] studentData = new String[2][studentAmount];
