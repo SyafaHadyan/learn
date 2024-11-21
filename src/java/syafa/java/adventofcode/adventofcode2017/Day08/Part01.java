@@ -24,9 +24,14 @@ public class Part01
         {
             String[] instructionInput = input.nextLine().split("\s");
             register.putIfAbsent(instructionInput[4],0);
+            register.putIfAbsent(instructionInput[0],0);
             switch (instructionInput[4])
             {
                 case ">":
+                    if (register.get(instructionInput[4]) > Integer.parseInt(instructionInput[6]))
+                    {
+                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                    }
                     break;
                 case "<":
                     break;
