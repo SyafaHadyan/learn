@@ -17,6 +17,10 @@ class Student
     {
         return this.totalGrade / studentDataGrade.length;
     }
+    String[] getStudentAboveAverage()
+    {
+        return new String[]{"Temp"};
+    }
 }
 public class NilaiAkhirPemdas
 {
@@ -35,7 +39,7 @@ public class NilaiAkhirPemdas
         Student studentDataTransfer = new Student();
         Scanner input = new Scanner(System.in);
         int studentAmount = Integer.parseInt(input.nextLine());
-        String[][] studentData = new String[2][studentAmount];
+        String[][] studentData = new String[studentAmount][2];
         for (int i = 0; i < studentAmount; i++)
         {
             studentData[i] = input.nextLine().split("\s");
