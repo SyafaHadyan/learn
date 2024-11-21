@@ -21,7 +21,7 @@ class Student
         {
             this.totalGrade += Integer.parseInt(studentDataGrade[i][1]);
         }
-        this.average = (double) this.totalGrade / studentDataGrade.length;
+        this.average = (double) (((double) this.totalGrade / (double) studentDataGrade.length) / 2d);
         return average;
     }
     String[] getStudentAboveAverage()
@@ -77,7 +77,8 @@ public class NilaiAkhirPemdas
     {
         Student studentDataTransfer = new Student();
         Scanner input = new Scanner(System.in);
-        int studentAmount = Integer.parseInt(input.nextLine());
+        int studentAmount = input.nextInt();
+        input.nextLine();
         String[][] studentData = new String[studentAmount][2];
         for (int i = 0; i < studentAmount; i++)
         {
