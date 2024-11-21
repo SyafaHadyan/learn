@@ -11,6 +11,12 @@ public class Part01
     );
     public static void main(String[] args)
     {
+        /*
+         * b inc 5 if a > 1
+         * a inc 1 if b < 5
+         * c dec -10 if a >= 1
+         * c inc -20 if c == 10
+         */
         Scanner input = new Scanner(System.in);
         int largestRegister = 0;
         HashMap<String,Integer> register = new HashMap<>();
@@ -18,6 +24,21 @@ public class Part01
         {
             String[] instructionInput = input.nextLine().split("\s");
             register.putIfAbsent(instructionInput[4],0);
+            switch (instructionInput[4])
+            {
+                case ">":
+                    break;
+                case "<":
+                    break;
+                case ">=":
+                    break;
+                case "<=":
+                    break;
+                case "==":
+                    break;
+                case "!=":
+                    break;
+            }
         }
         input.close();
     }
