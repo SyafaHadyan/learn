@@ -6,6 +6,7 @@ class Student
     private String[][] studentDataGrade;
     private int totalGrade;
     private int studentAboveAverageAmount;
+    private double average;
     Student()
     {
         //
@@ -20,24 +21,27 @@ class Student
         {
             this.totalGrade += Integer.parseInt(studentDataGrade[i][1]);
         }
-        return (double) this.totalGrade / studentDataGrade.length;
+        this.average = (double) this.totalGrade / studentDataGrade.length;
+        return average;
     }
     String[] getStudentAboveAverage()
     {
+        getAverage();
         sortStudentGrade();
-        double average = getAverage();
         for (int i = 0; i < studentDataGrade.length; i++)
         {
-            if (Integer.parseInt(this.studentDataGrade[i][1]) > average)
+            if (Integer.parseInt(this.studentDataGrade[i][1]) > this.average)
             {
                 this.studentAboveAverageAmount++;
             }
         }
         String[] studentAboveAverage = new String[this.studentAboveAverageAmount + 1];
         studentAboveAverage[0] = String.valueOf(this.studentAboveAverageAmount);
-        for (int i = studentDataGrade.length - this.studentAboveAverageAmount + 1; i < studentAboveAverage.length; i++)
+        int index = 1;
+        for (int i = studentDataGrade.length - this.studentAboveAverageAmount; i < studentDataGrade.length; i++)
         {
-            studentAboveAverage[i] = this.studentDataGrade[i][0];
+            studentAboveAverage[index] = this.studentDataGrade[i][0];
+            index++;
         }
         return studentAboveAverage;
     }
@@ -84,7 +88,7 @@ public class NilaiAkhirPemdas
         String[] studentAboveAverageAmount = studentDataTransfer.getStudentAboveAverage();
         System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
         System.out.print("Praktikan dengan nilai di atas rata-rata:");
-        for (int i = 0; i < studentAboveAverageAmount.length; i++)
+        for (int i = 1 ; i < Integer.parseInt(studentAboveAverageAmount[0]); i++)
         {
             System.out.print(" " + studentAboveAverageAmount[i]);
         }
