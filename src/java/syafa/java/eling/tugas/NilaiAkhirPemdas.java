@@ -46,6 +46,12 @@ public class NilaiAkhirPemdas
         }
         input.close();
         studentDataTransfer.setStudentData(studentData);
+        String[] studentAboveAverage = studentDataTransfer.getStudentAboveAverage();
         System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
+        System.out.print("Praktikan dengan nilai di atas rata-rata:");
+        for (int i = 0; i < studentAboveAverage.length; i++)
+        {
+            System.out.print(" " + studentAboveAverage[i]);
+        }
     }
 }
