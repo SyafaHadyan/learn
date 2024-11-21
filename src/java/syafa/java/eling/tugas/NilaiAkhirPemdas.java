@@ -25,6 +25,21 @@ class Student
     {
         return new String[]{"Temp"};
     }
+    void sortStudentGrade()
+    {
+        for (int i = 0; i < studentDataGrade.length; i++)
+        {
+            for (int j = 0 + i; j < studentDataGrade.length; j++)
+            {
+                if (Integer.parseInt(this.studentDataGrade[i][1]) > Integer.parseInt(this.studentDataGrade[j][1]))
+                {
+                    String[] tempSwap = this.studentDataGrade[j];
+                    this.studentDataGrade[j] = this.studentDataGrade[i];
+                    this.studentDataGrade[i] = tempSwap;
+                }
+            }
+        }
+    }
 }
 public class NilaiAkhirPemdas
 {
