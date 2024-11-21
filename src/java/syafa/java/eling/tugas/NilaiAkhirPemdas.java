@@ -88,7 +88,7 @@ public class NilaiAkhirPemdas
         String[] studentAboveAverageAmount = studentDataTransfer.getStudentAboveAverage();
         System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
         System.out.print("Praktikan dengan nilai di atas rata-rata:");
-        for (int i = 1 ; i < Integer.parseInt(studentAboveAverageAmount[0]); i++)
+        for (int i = 1 ; i < Integer.parseInt(studentAboveAverageAmount[0]) + 1; i++)
         {
             System.out.print(" " + studentAboveAverageAmount[i]);
         }
