@@ -23,8 +23,10 @@ public class Part01
         while (input.hasNextLine())
         {
             String[] instructionInput = input.nextLine().split("\s");
-            register.putIfAbsent(instructionInput[4],0);
-            register.putIfAbsent(instructionInput[0],0);
+            for (int i = 0; i <= 4; i += 4)
+            {
+                register.putIfAbsent(instructionInput[i],0);
+            }
             switch (instructionInput[4])
             {
                 case ">":
@@ -66,5 +68,6 @@ public class Part01
             }
         }
         input.close();
+        System.out.println(register);
     }
 }
