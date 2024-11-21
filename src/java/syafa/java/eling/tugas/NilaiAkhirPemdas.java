@@ -30,7 +30,7 @@ class Student
         sortStudentGrade();
         for (int i = 0; i < studentDataGrade.length; i++)
         {
-            if (Integer.parseInt(this.studentDataGrade[i][1]) > this.average)
+            if (Integer.parseInt(this.studentDataGrade[i][1]) > (this.average * 2d))
             {
                 this.studentAboveAverageAmount++;
             }
