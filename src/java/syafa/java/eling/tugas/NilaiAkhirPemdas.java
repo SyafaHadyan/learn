@@ -5,7 +5,7 @@ class Student
 {
     private String[][] studentDataGrade;
     private int totalGrade;
-    private int studentAboveAverage;
+    private int studentAboveAverageAmount;
     Student()
     {
         //
@@ -22,7 +22,7 @@ class Student
         }
         return (double) this.totalGrade / studentDataGrade.length;
     }
-    int getStudentAboveAverage()
+    String[] getStudentAboveAverage()
     {
         sortStudentGrade();
         double average = getAverage();
@@ -30,10 +30,16 @@ class Student
         {
             if (Integer.parseInt(this.studentDataGrade[i][1]) > average)
             {
-                this.studentAboveAverage++;
+                this.studentAboveAverageAmount++;
             }
         }
-        return this.studentAboveAverage;
+        String[] studentAboveAverage = new String[this.studentAboveAverageAmount + 1];
+        studentAboveAverage[0] = String.valueOf(this.studentAboveAverageAmount);
+        for (int i = studentDataGrade.length - this.studentAboveAverageAmount + 1; i < studentAboveAverage.length; i++)
+        {
+            studentAboveAverage[i] = this.studentDataGrade[i][0];
+        }
+        return studentAboveAverage;
     }
     void sortStudentGrade()
     {
@@ -75,12 +81,12 @@ public class NilaiAkhirPemdas
         }
         input.close();
         studentDataTransfer.setStudentData(studentData);
-        String[] studentAboveAverage = studentDataTransfer.getStudentAboveAverage();
+        String[] studentAboveAverageAmount = studentDataTransfer.getStudentAboveAverage();
         System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
         System.out.print("Praktikan dengan nilai di atas rata-rata:");
-        for (int i = 0; i < studentAboveAverage.length; i++)
+        for (int i = 0; i < studentAboveAverageAmount.length; i++)
         {
-            System.out.print(" " + studentAboveAverage[i]);
+            System.out.print(" " + studentAboveAverageAmount[i]);
         }
     }
 }
