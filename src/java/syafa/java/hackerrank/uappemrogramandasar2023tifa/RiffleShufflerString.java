@@ -14,9 +14,10 @@ public class RiffleShufflerString
         {
             firstString = firstString.concat(inputString[i]);
         }
-        for (int i = inputString.length / 2; i < inputString.length; i++)
+        for (int i = (inputString.length / 2) + (inputString.length % 2); i < inputString.length; i++)
         {
             secondString = secondString.concat(inputString[i]);
         }
+        System.out.println(firstString + "\n" + secondString);
     }
 }
