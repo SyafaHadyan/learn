@@ -3,14 +3,19 @@ import java.util.Scanner;
 
 class Student
 {
-    String[][] studentDataGrade;
+    private String[][] studentDataGrade;
+    private int totalGrade;
     Student()
     {
         this.studentDataGrade[0] = "Nama 100".split("\s");
     }
-    Student(String[][] inputData)
+    void setStudentData(String[][] inputData)
     {
         this.studentDataGrade = inputData;
+    }
+    double getAverage()
+    {
+        return this.totalGrade / studentDataGrade.length;
     }
 }
 public class NilaiAkhirPemdas
