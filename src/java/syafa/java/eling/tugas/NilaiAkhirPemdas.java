@@ -20,6 +20,12 @@ public class NilaiAkhirPemdas
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int studentAmount = Integer.parseInt(input.nextLine());
+        String[][] studentData = new String[2][studentAmount];
+        for (int i = 0; i < studentAmount; i++)
+        {
+            studentData[i] = input.nextLine().split("\s");
+        }
         input.close();
     }
 }
