@@ -32,37 +32,37 @@ public class Part01
                 case ">":
                     if (register.get(instructionInput[4]) > Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
                 case "<":
                     if (register.get(instructionInput[4]) > Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
                 case ">=":
                     if (register.get(instructionInput[4]) >= Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
                 case "<=":
                     if (register.get(instructionInput[4]) <= Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
                 case "==":
                     if (register.get(instructionInput[4]) == Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
                 case "!=":
                     if (register.get(instructionInput[4]) != Integer.parseInt(instructionInput[6]))
                     {
-                        register.merge(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]),Integer::sum);
+                        register.put(instructionInput[0],INSTRUCTION_LIST.get(instructionInput[1]) * Integer.parseInt(instructionInput[2]));
                     }
                     break;
             }
