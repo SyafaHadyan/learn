@@ -17,10 +17,7 @@ public class Part01
         while (input.hasNextLine())
         {
             String[] instructionInput = input.nextLine().split("\s");
-            if (register.get(instructionInput[4]) == null)
-            {
-                register.put(instructionInput[4],0);
-            }
+            register.putIfAbsent(instructionInput[4],0);
         }
         input.close();
     }
