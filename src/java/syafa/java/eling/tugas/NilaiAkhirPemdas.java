@@ -5,6 +5,7 @@ class Student
 {
     private String[][] studentDataGrade;
     private int totalGrade;
+    private int studentAboveAverage;
     Student()
     {
         //
@@ -21,9 +22,18 @@ class Student
         }
         return (double) this.totalGrade / studentDataGrade.length;
     }
-    String[] getStudentAboveAverage()
+    int getStudentAboveAverage()
     {
-        return new String[]{"Temp"};
+        sortStudentGrade();
+        double average = getAverage();
+        for (int i = 0; i < studentDataGrade.length; i++)
+        {
+            if (Integer.parseInt(this.studentDataGrade[i][1]) > average)
+            {
+                this.studentAboveAverage++;
+            }
+        }
+        return this.studentAboveAverage;
     }
     void sortStudentGrade()
     {
