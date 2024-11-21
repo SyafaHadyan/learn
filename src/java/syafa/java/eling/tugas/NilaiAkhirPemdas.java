@@ -32,7 +32,7 @@ public class NilaiAkhirPemdas
      */
     public static void main(String[] args)
     {
-        //Student setStudentData = new Student();
+        Student studentDataTransfer = new Student();
         Scanner input = new Scanner(System.in);
         int studentAmount = Integer.parseInt(input.nextLine());
         String[][] studentData = new String[2][studentAmount];
@@ -41,5 +41,7 @@ public class NilaiAkhirPemdas
             studentData[i] = input.nextLine().split("\s");
         }
         input.close();
+        studentDataTransfer.setStudentData(studentData);
+        System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
     }
 }
