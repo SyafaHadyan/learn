@@ -7,7 +7,7 @@ class Student
     private int totalGrade;
     Student()
     {
-        this.studentDataGrade[0] = "Nama 100".split("\s");
+        //
     }
     void setStudentData(String[][] inputData)
     {
@@ -15,7 +15,11 @@ class Student
     }
     double getAverage()
     {
-        return this.totalGrade / studentDataGrade.length;
+        for (int i = 0; i < studentDataGrade.length; i++)
+        {
+            this.totalGrade += Integer.parseInt(studentDataGrade[i][1]);
+        }
+        return (double) this.totalGrade / studentDataGrade.length;
     }
     String[] getStudentAboveAverage()
     {
