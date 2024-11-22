@@ -9,5 +9,6 @@ public class LC1OutputRataTengah
         String inputString = input.nextLine();
         int space = Integer.parseInt(input.nextLine());
         input.close();
+        System.out.printf("%s%-" + space + "s%s" + "%-" + space + "s" + "%s","##","",inputString,"","##\n");
     }
 }
