@@ -17,7 +17,7 @@ public class RiffleShufflerString
         }
         return new String[]{firstString,secondString};
     }
-    public static String[] shuffleString(String[] originalString)
+    public static String shuffleString(String[] originalString)
     {
         String[] firstString = originalString[0].split("");
         String[] secondString = originalString[1].split("");
@@ -34,9 +34,12 @@ public class RiffleShufflerString
         {
             for (int i = 0; i < secondString.length; i++)
             {
-                //
+                result = result.concat(firstString[0]);
+                result = result.concat(secondString[i]);
             }
+            result = result.concat(firstString[firstString.length - 1]);
         }
+        return result;
     }
     public static void main(String[] args)
     {
