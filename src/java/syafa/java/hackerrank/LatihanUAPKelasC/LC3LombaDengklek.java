@@ -8,8 +8,9 @@ public class LC3LombaDengklek
     {
         Scanner input = new Scanner(System.in);
         int participantWinAmount = Integer.parseInt(input.nextLine());
+        int mostOccurence = 1;
         String[] winningParticipant = new String[participantWinAmount];
-        String[] participantList = new String[PARTICIPANT_AMOUNT];
+        String[][] participantList = new String[PARTICIPANT_AMOUNT][2];
         for (int i = 0; i < participantWinAmount; i++)
         {
             winningParticipant[i] = input.nextLine();
@@ -17,7 +18,19 @@ public class LC3LombaDengklek
         input.close();
         for (int i = 0; i < winningParticipant.length; i++)
         {
-            //
+            for (int j = 0; j < participantList.length; j++)
+            {
+                if (winningParticipant[i].equalsIgnoreCase(participantList[j][0]))
+                {
+                    int currentOccurence = Integer.parseInt(participantList[j][1] + 1);
+                    participantList[j][1] = String.valueOf(currentOccurence);
+                    if (currentOccurence > mostOccurence)
+                    {
+                        mostOccurence = currentOccurence;
+                    }
+                    continue;
+                }
+            }
         }
     }
 }
