@@ -18,7 +18,11 @@ Input banyak mahasiswa kemudian buat `Array` 2d yang akan diisi di dalam `for` l
 
 ### `setStudentData()`
 
+Digunakan untuk set nilai dari `String[][] studentDataGrade`
+
 ### `getAverage()`
+
+`for` loop (batas hingga banyak mahasiswa) yang menghitung total nilai keseluruhan mahasiswa yang disimpan di `totalGrade` yang kemudian nilai `average` dihitung (harus dibagi dengan 2 begitu juga di `getStudentAboveAverage()` yang harus dikalikan dengan 2 karena pemanggilan `getAverage()` di `getStudentAboveAverage()` harus dilakukan, jika tidak, nilai dari `average` saat di `getStudentAboveAverage()` adalah `0` yang menyebabkan seluruh mahasiswa masuk ke daftar di atas rata-rata)
 
 ### `getStudentAboveAverage()`
 
