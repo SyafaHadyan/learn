@@ -11,5 +11,7 @@ public class LC1JamDengklek
         input.nextLine();
         int duration = Integer.parseInt(input.nextLine());
         input.close();
+        int hourEnd = (hourStart + (duration / 60)) % 24;
+        int minuteEnd = (minuteStart + duration) % 60;
     }
 }
