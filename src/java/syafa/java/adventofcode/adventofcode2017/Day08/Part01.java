@@ -61,6 +61,6 @@ public class Part01
         }
         input.close();
         System.err.println(register);
-        System.err.println(Collections.max(register.values()));
+        System.out.println(Collections.max(register.values()));
     }
 }
