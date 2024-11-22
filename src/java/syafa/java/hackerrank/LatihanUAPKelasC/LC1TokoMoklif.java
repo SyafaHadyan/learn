@@ -70,5 +70,10 @@ public class LC1TokoMoklif
         printSeparator('-');
         printLeftRight("Nama Barang","Harga($)");
         printSeparator('-');
+        for (int i = 0; i < item.length; i++)
+        {
+            printLeftRight(item[i][0],item[i][1]);
+        }
+        printSeparator('-');
     }
 }
