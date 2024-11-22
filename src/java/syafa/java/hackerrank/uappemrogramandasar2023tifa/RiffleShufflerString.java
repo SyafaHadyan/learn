@@ -65,5 +65,6 @@ public class RiffleShufflerString
         System.out.println(Arrays.toString(stringSplitFinalFirst));
         String[] stringSplitFinalFinal = {shuffleString(stringSplitFinalFirst[0],stringSplitFinalFirst[1]),shuffleString(stringSplitFinalFirst[2],stringSplitFinalFirst[3])};
         System.out.println(Arrays.toString(stringSplitFinalFinal));
+        System.out.println(shuffleString(stringSplitFinalFinal[0],stringSplitFinalFinal[1]));
     }
 }
