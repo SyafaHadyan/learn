@@ -8,7 +8,7 @@ public class LC3LombaDengklek
     {
         Scanner input = new Scanner(System.in);
         int participantWinAmount = Integer.parseInt(input.nextLine());
-        int mostOccurence = 0;
+        int mostOccurence = 1;
         String mostParticipant = "";
         String[] winningParticipant = new String[participantWinAmount];
         String[][] participantList = new String[PARTICIPANT_AMOUNT][2];
@@ -40,7 +40,16 @@ public class LC3LombaDengklek
                 }
             }
         }
-        System.out.println(mostOccurence);
+        System.err.println(mostParticipant);
+        System.err.println(mostOccurence);
+        if (winningParticipant.length % PARTICIPANT_AMOUNT == 0)
+        {
+            System.out.println("Tidak ada kategori juara terbaik.");
+        }
+        else if (mostOccurence != 1)
+        {
+            System.out.println("Kategori juara terbaik diraih oleh " + mostParticipant + ".");
+        }
         // for (int i = 0; i < winningParticipant.length; i++)
         // {
         //     for (int j = 0 + i; j < participantList.length; j++)
