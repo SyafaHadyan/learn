@@ -11,7 +11,10 @@ public class LC1JamDengklek
         input.nextLine();
         int duration = Integer.parseInt(input.nextLine());
         input.close();
-        int hourEnd = (hourStart + (duration / 60)) % 24;
+        int hourEnd = (hourStart + (duration / 60)) % 23;
         int minuteEnd = (minuteStart + duration) % 60;
+        String hourEndString = String.format("%02d",hourEnd);
+        String minuteEndString = String.format("%02d",minuteEnd);
+        System.out.println("Dengklek belajar pukul " + hourStart + ":" + minuteStart + " selama " + duration + " menit dan selesai pada pukul " + hourEndString + ":" + minuteEndString + ".");
     }
 }
