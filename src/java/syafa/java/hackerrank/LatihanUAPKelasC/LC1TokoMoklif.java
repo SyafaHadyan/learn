@@ -22,9 +22,9 @@ public class LC1TokoMoklif
         }
         System.out.println(string);
     }
-    public static void printLeftRight(String firstString,String secondString)
+    public static void printLeftRight(String firstString,String secondString,boolean printPrice)
     {
-        System.out.printf("%-20s%20s\n",firstString,secondString);
+        System.out.printf("%-20s%20s\n",firstString,(secondString + ((printPrice) ? ".00" : "")));
     }
     public static void main(String[] args)
     {
@@ -69,14 +69,14 @@ public class LC1TokoMoklif
         printSeparator('-');
         System.out.printf("%-9s%-2c%s\n%-9s%-2c%d\n","Name",':',name,"NIM",':',NIM);
         printSeparator('-');
-        printLeftRight("Nama Barang","Harga($)");
+        printLeftRight("Nama Barang","Harga($)",false);
         printSeparator('-');
         for (int i = 0; i < item.length; i++)
         {
-            printLeftRight(item[i][0],item[i][1]);
+            printLeftRight(item[i][0],item[i][1],true);
             totalPrice = totalPrice.add(BigInteger.valueOf(Long.parseLong(item[i][1])));
         }
         printSeparator('-');
-        printLeftRight("subTotal",totalPrice.toString() + ".00");
+        printLeftRight("subTotal",totalPrice.toString(),true);
     }
 }
