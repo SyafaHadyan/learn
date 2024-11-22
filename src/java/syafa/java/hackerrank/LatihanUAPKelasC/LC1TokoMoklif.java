@@ -20,7 +20,7 @@ public class LC1TokoMoklif
         {
             System.out.print(" ");
         }
-        System.out.println(string);
+        System.out.println(" " + string);
     }
     public static void printLeftRight(String firstString,String secondString,boolean printPrice)
     {
@@ -60,7 +60,7 @@ public class LC1TokoMoklif
             }
         }
         int tax = Integer.parseInt(input.nextLine());
-        BigDecimal money = input.nextBigDecimal(); input.nextLine();
+        BigDecimal money = input.nextBigDecimal();
         input.close();
         BigDecimal totalPrice = BigDecimal.ZERO;
         printSeparator('=');
