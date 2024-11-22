@@ -5,6 +5,15 @@ import java.math.*;
 public class LC1TokoMoklif
 {
     static final int ITEM_AMOUNT = 3;
+    static final int BOX_WIDTH = 40;
+    public static void printSeparator(char separator)
+    {
+        for (int i = 0; i < BOX_WIDTH; i++)
+        {
+            System.out.print(separator);
+        }
+        System.out.print("\n");
+    }
     public static void main(String[] args)
     {
         /*
@@ -41,5 +50,7 @@ public class LC1TokoMoklif
         int tax = Integer.parseInt(input.nextLine());
         BigDecimal money = input.nextBigDecimal(); input.nextLine();
         input.close();
+        printSeparator('=');
+        printSeparator('-');
     }
 }
