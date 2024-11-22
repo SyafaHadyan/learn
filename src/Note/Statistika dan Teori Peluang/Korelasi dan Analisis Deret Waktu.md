@@ -92,7 +92,7 @@ Beberapa model yang sering digunakan:
   - **Root Mean Squared Error (RMSE)**
   - **Akaike Information Criterion (AIC)**
 
-### **3. Hubungan Antara Korelasi dan Analisis Deret Waktu**
+## **3. Hubungan Antara Korelasi dan Analisis Deret Waktu**
 
 1. **Autokorelasi dalam Deret Waktu**:
    - Mengukur korelasi antara suatu variabel dengan nilai sebelumnya (lag).
@@ -106,7 +106,7 @@ Beberapa model yang sering digunakan:
      - Apakah perubahan suku bunga memengaruhi inflasi?
      - Apakah nilai mata uang saat ini dipengaruhi oleh nilai masa lalu?
 
-### **Contoh**
+## **4. Contoh**
 
 Misalkan kita memiliki data bulanan jumlah pengunjung suatu taman selama 5 tahun. Berikut adalah langkah analisis:
 
