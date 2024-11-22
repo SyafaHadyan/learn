@@ -39,7 +39,7 @@ public class RiffleShufflerString
             }
             result = result.concat(firstString[firstString.length - 1]);
         }
-        System.out.println(result);
+        System.err.println(result);
         return result;
     }
     public static void main(String[] args)
@@ -62,9 +62,9 @@ public class RiffleShufflerString
             stringSplitFinalFirst[index] = splitStringRight[i];
             index++;
         }
-        System.out.println(Arrays.toString(stringSplitFinalFirst));
+        System.err.println(Arrays.toString(stringSplitFinalFirst));
         String[] stringSplitFinalFinal = {shuffleString(stringSplitFinalFirst[0],stringSplitFinalFirst[1]),shuffleString(stringSplitFinalFirst[2],stringSplitFinalFirst[3])};
-        System.out.println(Arrays.toString(stringSplitFinalFinal));
+        System.err.println(Arrays.toString(stringSplitFinalFinal));
         System.out.println(shuffleString(stringSplitFinalFinal[0],stringSplitFinalFinal[1]));
     }
 }
