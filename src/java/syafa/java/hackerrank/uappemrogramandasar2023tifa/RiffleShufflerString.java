@@ -3,34 +3,27 @@ import java.util.*;
 
 public class RiffleShufflerString
 {
+    public static String[] splitString(String[] originalString)
+    {
+        String firstString = "";
+        String secondString = "";
+        for (int i = 0; i < (originalString.length / 2) + (originalString.length % 2); i++)
+        {
+            firstString = firstString.concat(originalString[i]);
+        }
+        for (int i = (originalString.length / 2) + (originalString.length % 2); i < originalString.length; i++)
+        {
+            secondString = secondString.concat(originalString[i]);
+        }
+        return new String[]{firstString,secondString};
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         String[] inputString = input.nextLine().split("");
         input.close();
-        String firstString = "";
-        String secondString = "";
-        String firstStringFirst = "";
-        String secondStringFirst = "";
-        String firstStringSecond = "";
-        String secondStringSecond = "";
-        for (int i = 0; i < (inputString.length / 2) + (inputString.length % 2); i++)
-        {
-            firstString = firstString.concat(inputString[i]);
-        }
-        for (int i = (inputString.length / 2) + (inputString.length % 2); i < inputString.length; i++)
-        {
-            secondString = secondString.concat(inputString[i]);
-        }
-        System.out.println(firstString + "\n" + secondString);
-        for (int i = 0; i < (firstString.length() / 2) + (firstString.length() % 2); i++)
-        {
-            firstStringFirst = firstStringFirst.concat(String.valueOf(firstString.charAt(i)));
-        }
-        for (int i = (firstString.length() / 2) + (firstString.length() % 2); i < firstString.length(); i++)
-        {
-            secondStringFirst = secondStringFirst.concat(String.valueOf(firstString.charAt(i)));
-        }
-        System.out.println(firstStringFirst + "\n" + secondStringFirst);
+        String[] splitStringFirst = splitString(inputString);
+        String[] splitStringLeftFirst = splitString(splitStringFirst[0].split(""));
+        String[] splitStringLeftSecond = splitString(splitStringFirst[0].split(""));
     }
 }
