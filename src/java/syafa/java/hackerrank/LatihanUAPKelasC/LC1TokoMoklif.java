@@ -4,6 +4,7 @@ import java.math.*;
 
 public class LC1TokoMoklif
 {
+    static final int ITEM_AMOUNT = 3;
     public static void main(String[] args)
     {
         /*
@@ -27,6 +28,18 @@ public class LC1TokoMoklif
          * ========================================
          */
         Scanner input = new Scanner(System.in);
+        String name = input.nextLine();
+        BigInteger NIM = input.nextBigInteger(); input.nextLine();
+        String[][] item = new String[ITEM_AMOUNT][2];
+        for (int i = 0; i < item.length; i++)
+        {
+            for (int j = 0; j < item[i].length; j++)
+            {
+                item[i][j] = input.nextLine();
+            }
+        }
+        int tax = Integer.parseInt(input.nextLine());
+        BigDecimal money = input.nextBigDecimal(); input.nextLine();
         input.close();
     }
 }
