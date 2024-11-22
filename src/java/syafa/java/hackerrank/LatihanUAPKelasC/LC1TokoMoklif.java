@@ -14,6 +14,14 @@ public class LC1TokoMoklif
         }
         System.out.print("\n");
     }
+    public static void printMiddle(String string)
+    {
+        for (int i = 0; i < (BOX_WIDTH / 2) - (string.length() / 2); i++)
+        {
+            System.out.print(" ");
+        }
+        System.out.println(string);
+    }
     public static void main(String[] args)
     {
         /*
@@ -51,6 +59,8 @@ public class LC1TokoMoklif
         BigDecimal money = input.nextBigDecimal(); input.nextLine();
         input.close();
         printSeparator('=');
+        printMiddle("Toko Moklif");
+        printMiddle("14 September 2024");
         printSeparator('-');
     }
 }
