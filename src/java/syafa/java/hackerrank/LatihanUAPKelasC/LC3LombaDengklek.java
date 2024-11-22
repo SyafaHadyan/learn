@@ -16,17 +16,19 @@ public class LC3LombaDengklek
             winningParticipant[i] = input.nextLine();
         }
         input.close();
+        int index = 0;
         for (int i = 0; i < participantList.length; i++)
         {
-            for (int j = 0 + i; j < winningParticipant.length; j++)
+            for (int j = 0; j < winningParticipant.length; j++)
             {
-                if (!(winningParticipant[j].equalsIgnoreCase(participantList[i][0])))
+                if (!(winningParticipant[j].equalsIgnoreCase(participantList[i][0])) && participantList[i] != null && index < participantList.length)
                 {
-                    participantList[i][0] = winningParticipant[j];
+                    participantList[index][0] = winningParticipant[j];
+                    index++;
                 }
             }
         }
-        System.out.println(Arrays.toString(participantList));
+        System.out.println();
         for (int i = 0; i < winningParticipant.length; i++)
         {
             for (int j = 0 + i; j < participantList.length; j++)
