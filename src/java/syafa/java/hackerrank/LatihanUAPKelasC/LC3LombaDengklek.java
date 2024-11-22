@@ -9,6 +9,7 @@ public class LC3LombaDengklek
         Scanner input = new Scanner(System.in);
         int participantWinAmount = Integer.parseInt(input.nextLine());
         int mostOccurence = 1;
+        int occurence = 1;
         String mostParticipant = "";
         String[] winningParticipant = new String[participantWinAmount];
         String[][] participantList = new String[PARTICIPANT_AMOUNT][2];
@@ -37,12 +38,17 @@ public class LC3LombaDengklek
                         mostOccurence = currentOccurence;
                         mostParticipant = participantList[i][0];
                     }
+                    else if (mostOccurence == currentOccurence)
+                    {
+                        occurence++;
+                    }
                 }
             }
         }
+        System.err.println(occurence);
         System.err.println(mostParticipant);
         System.err.println(mostOccurence);
-        if (winningParticipant.length % PARTICIPANT_AMOUNT == 0)
+        if (winningParticipant.length % PARTICIPANT_AMOUNT == 0 || occurence == PARTICIPANT_AMOUNT)
         {
             System.out.println("Tidak ada kategori juara terbaik.");
         }
