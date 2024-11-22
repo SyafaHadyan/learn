@@ -60,8 +60,9 @@ public class LC1TokoMoklif
             }
         }
         int tax = Integer.parseInt(input.nextLine());
-        BigDecimal money = input.nextBigDecimal(); input.nextLine();
+        BigInteger money = input.nextBigInteger(); input.nextLine();
         input.close();
+        BigInteger totalPrice = BigInteger.ZERO;
         printSeparator('=');
         printMiddle("Toko Moklif");
         printMiddle("14 September 2024");
@@ -73,7 +74,9 @@ public class LC1TokoMoklif
         for (int i = 0; i < item.length; i++)
         {
             printLeftRight(item[i][0],item[i][1]);
+            totalPrice = totalPrice.add(BigInteger.valueOf(Long.parseLong(item[i][1])));
         }
         printSeparator('-');
+        printLeftRight("subTotal",totalPrice.toString() + ".00");
     }
 }
