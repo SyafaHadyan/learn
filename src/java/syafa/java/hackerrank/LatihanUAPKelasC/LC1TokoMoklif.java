@@ -16,11 +16,11 @@ public class LC1TokoMoklif
     }
     public static void printMiddle(String string)
     {
-        for (int i = 0; i < (BOX_WIDTH / 2) - (string.length() / 2); i++)
+        for (int i = 1; i < (BOX_WIDTH / 2) - (string.length() / 2); i++)
         {
             System.out.print(" ");
         }
-        System.out.println(" " + string);
+        System.out.println(string);
     }
     public static void printLeftRight(String firstString,String secondString,boolean printPrice)
     {
