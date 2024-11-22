@@ -26,4 +26,8 @@ Digunakan untuk set nilai dari `String[][] studentDataGrade`
 
 ### `getStudentAboveAverage()`
 
+Pemanggilan `getAverage()` (agar nilai `average` pada kondisi sekarang bukan 0) kemudian pemanggilan `sortStudentGrade()`. kemudian masuk ke `for` loop untuk mengecek berapa banyak mahasiswa yang nilainya ada di atas rata-rata. Kemudian buat `String` yang ukurannya `studentAboveAverageAmount` + 1. Kemudian, elemen pertama diisi dengan banyaknya mahasiswa yang nilainya di atas rata-rata kemudian masuk ke `for` loop untuk memasukkan mahasiswa yang nilainya diatas rata-rata. Nilai dari `i` diawali dengan banyak jumlah siswa dikurangi dengan `studentAboveAverageAmount` dengan batas banyak mahasiswa.
+
 ### `sortStudentGrade()`
+
+Implementasi algoritma Bubble Sort untuk swap siswa (akan dicek elemen ke 2 dimensi ke-`i`)
