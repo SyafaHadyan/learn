@@ -17,10 +17,10 @@ public class RiffleShufflerString
         }
         return new String[]{firstString,secondString};
     }
-    public static String shuffleString(String[] originalString)
+    public static String shuffleString(String firstStringRaw,String secondStringRaw)
     {
-        String[] firstString = originalString[0].split("");
-        String[] secondString = originalString[1].split("");
+        String[] firstString = firstStringRaw.split("");
+        String[] secondString = secondStringRaw.split("");
         String result = "";
         if (firstString.length == secondString.length)
         {
@@ -39,6 +39,7 @@ public class RiffleShufflerString
             }
             result = result.concat(firstString[firstString.length - 1]);
         }
+        System.out.println(result);
         return result;
     }
     public static void main(String[] args)
@@ -62,5 +63,7 @@ public class RiffleShufflerString
             index++;
         }
         System.out.println(Arrays.toString(stringSplitFinalFirst));
+        String[] stringSplitFinalFinal = {shuffleString(stringSplitFinalFirst[0],stringSplitFinalFirst[1]),shuffleString(stringSplitFinalFirst[2],stringSplitFinalFirst[3])};
+        System.out.println(Arrays.toString(stringSplitFinalFinal));
     }
 }
