@@ -60,7 +60,7 @@ public class LC1TokoMoklif
             }
         }
         int tax = Integer.parseInt(input.nextLine());
-        BigInteger money = input.nextBigInteger(); input.nextLine();
+        BigDecimal money = input.nextBigDecimal(); input.nextLine();
         input.close();
         BigDecimal totalPrice = BigDecimal.ZERO;
         printSeparator('=');
@@ -79,5 +79,8 @@ public class LC1TokoMoklif
         printSeparator('-');
         printLeftRight("subTotal",totalPrice.toString(),true);
         printLeftRight("Total",String.format("%.0f",(totalPrice.multiply(BigDecimal.valueOf((double)(tax + 100) / 100)))),true);
+        printLeftRight("Bayar",money.toString(),true);
+        printLeftRight("Kembali",String.format("%.0f",(money.subtract(totalPrice.multiply(BigDecimal.valueOf((double)(tax + 100) / 100))))),true);
+        printSeparator('=');
     }
 }
