@@ -22,6 +22,10 @@ public class LC1TokoMoklif
         }
         System.out.println(string);
     }
+    public static void printLeftRight(String firstString,String secondString)
+    {
+        System.out.printf("%-20s%20s\n",firstString,secondString);
+    }
     public static void main(String[] args)
     {
         /*
@@ -62,6 +66,9 @@ public class LC1TokoMoklif
         printMiddle("Toko Moklif");
         printMiddle("14 September 2024");
         printSeparator('-');
-        System.out.printf("%-9s%-2c%s\n%-9s%-2c%d","Name",':',name,"NIM",':',NIM);
+        System.out.printf("%-9s%-2c%s\n%-9s%-2c%d\n","Name",':',name,"NIM",':',NIM);
+        printSeparator('-');
+        printLeftRight("Nama Barang","Harga($)");
+        printSeparator('-');
     }
 }
