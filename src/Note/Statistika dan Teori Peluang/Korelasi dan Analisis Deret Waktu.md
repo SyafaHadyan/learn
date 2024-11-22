@@ -8,14 +8,12 @@ Korelasi adalah ukuran statistik yang menggambarkan tingkat kekuatan dan arah hu
 
 #### **Koefisien Korelasi (r)**
 
-- **Nilai r**: -1 ≤ r ≤ 1.
-  - \(r > 0\): Hubungan positif (kedua variabel bergerak searah).
-  - \(r < 0\): Hubungan negatif (kedua variabel bergerak berlawanan arah).
-  - \(r = 0\): Tidak ada hubungan linier.
+- **Nilai r**: $-1 \leq r \leq 1$.
+  - $\left(r > 0\right)$: Hubungan positif (kedua variabel bergerak searah).
+  - $\left(r < 0\right)$: Hubungan negatif (kedua variabel bergerak berlawanan arah).
+  - $\left(r = 0\right)$: Tidak ada hubungan linier.
 - **Rumus Koefisien Korelasi Pearson:**
-  \[
-  r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}}
-  \]
+$\left(r = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum (X_i - \bar{X})^2 \sum (Y_i - \bar{Y})^2}}\right)$
 
 #### **Jenis Korelasi**
 
@@ -71,18 +69,18 @@ Beberapa model yang sering digunakan:
 
 1. **Model Autoregressive (AR):**
    - Memanfaatkan hubungan antar nilai masa lalu.
-   - Contoh: \( Y_t = \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + \epsilon_t \).
+   - Contoh: $\left( Y_t = \phi_1 Y_{t-1} + \phi_2 Y_{t-2} + \epsilon_t \right)$.
 
 2. **Moving Average (MA):**
    - Menggunakan rata-rata dari kesalahan masa lalu.
-   - Contoh: \( Y_t = \mu + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} \).
+   - Contoh: $\left( Y_t = \mu + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} \right)$.
 
 3. **ARIMA (Autoregressive Integrated Moving Average):**
    - Kombinasi AR, MA, dan integrasi untuk data non-stasioner.
    - Notasi: ARIMA(p, d, q), di mana:
-     - \(p\): Jumlah lag untuk komponen AR.
-     - \(d\): Tingkat differencing untuk stasioneritas.
-     - \(q\): Jumlah lag untuk komponen MA.
+     - $\left(p\right)$: Jumlah lag untuk komponen AR.
+     - $\left(d\right)$: Tingkat differencing untuk stasioneritas.
+     - $\left(q\right)$: Jumlah lag untuk komponen MA.
 
 4. **SARIMA (Seasonal ARIMA):**
    - Memasukkan komponen musiman ke dalam ARIMA.
