@@ -25,18 +25,18 @@ public class RiffleShufflerString
         String[] splitStringFirst = splitString(inputString);
         String[] splitStringLeft = splitString(splitStringFirst[0].split(""));
         String[] splitStringRight = splitString(splitStringFirst[1].split(""));
-        String[] stringSplitFinal = new String[4];
+        String[] stringSplitFinalFirst = new String[4];
         int index = 0;
         for (int i = 0; i < splitStringLeft.length; i++)
         {
-            stringSplitFinal[index] = splitStringLeft[i];
+            stringSplitFinalFirst[index] = splitStringLeft[i];
             index++;
         }
         for (int i = 0; i < splitStringRight.length; i++)
         {
-            stringSplitFinal[index] = splitStringRight[i];
+            stringSplitFinalFirst[index] = splitStringRight[i];
             index++;
         }
-        System.out.println(Arrays.toString(stringSplitFinal));
+        System.out.println(Arrays.toString(stringSplitFinalFirst));
     }
 }
