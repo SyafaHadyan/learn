@@ -62,5 +62,6 @@ public class LC1TokoMoklif
         printMiddle("Toko Moklif");
         printMiddle("14 September 2024");
         printSeparator('-');
+        System.out.printf("%-9s%-2c%s\n%-9s%-2c%d","Name",':',name,"NIM",':',NIM);
     }
 }
