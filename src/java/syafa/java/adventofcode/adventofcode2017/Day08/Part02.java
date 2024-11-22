@@ -1,7 +1,6 @@
 package syafa.java.adventofcode.adventofcode2017.Day08;
 import java.util.*;
 
-@SuppressWarnings("unused")
 public class Part02
 {
     static final Map<String,Integer> INSTRUCTION_LIST = Map.ofEntries
@@ -60,9 +59,14 @@ public class Part02
                     }
                     break;
             }
+            int currentLargestRegister = Collections.max(register.values());
+            if (currentLargestRegister > largestRegister)
+            {
+                largestRegister = currentLargestRegister;
+            }
         }
         input.close();
         System.err.println(register);
-        System.err.println(Collections.max(register.values()));
+        System.out.println(largestRegister);
     }
 }
