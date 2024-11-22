@@ -30,4 +30,4 @@ Pemanggilan `getAverage()` (agar nilai `average` pada kondisi sekarang bukan 0) 
 
 ### `sortStudentGrade()`
 
-Implementasi algoritma Bubble Sort untuk swap siswa (akan dicek elemen ke 2 dimensi ke-`i`)
+Implementasi algoritma Bubble Sort untuk swap siswa (akan dicek elemen ke 2 dimensi ke-`i` yang di parse jadi `Integer`). Jika ada nilai lebih rendah di elemen yang lebih tinggi dibandingkan elemen sekarang, akan ditukar dengan variabel sementara (`tempSwap`).
