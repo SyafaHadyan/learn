@@ -1,7 +1,8 @@
 package syafa.java.adventofcode.adventofcode2017.Day08;
 import java.util.*;
 
-public class Part01
+@SuppressWarnings("unused")
+public class Part02
 {
     static final Map<String,Integer> INSTRUCTION_LIST = Map.ofEntries
     (
@@ -11,6 +12,7 @@ public class Part01
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
+        int largestRegister = 0;
         HashMap<String,Integer> register = new HashMap<>();
         while (input.hasNextLine())
         {
