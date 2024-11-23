@@ -9,7 +9,7 @@ public class LC3BilanganPrimaPt2
         {
             if (number % i == 0)
             {
-                System.err.println("False at " + i);
+                System.err.println("False at " + i + " when " + number);
                 return false;
             }
         }
