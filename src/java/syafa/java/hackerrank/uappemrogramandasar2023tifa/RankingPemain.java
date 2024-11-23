@@ -3,15 +3,8 @@ import java.util.*;
 
 public class RankingPemain
 {
-    public static void showRank(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal)
+    public static void sortRank (int[] playerOffensive,int[] playerDefensive)
     {
-        int[] playerOffensive = new int[playerDefensiveOriginal.length];
-        int[] playerDefensive = new int[playerOffensiveOriginal.length];
-        for (int i = 0; i < playerOffensive.length; i++)
-        {
-            playerOffensive[i] = playerOffensiveOriginal[i];
-            playerDefensive[i] = playerDefensiveOriginal[i];
-        }
         for (int i = 0; i < playerOffensive.length; i++)
         {
             for (int j = 0; j < playerOffensive.length; j++)
@@ -30,6 +23,17 @@ public class RankingPemain
                 }
             }
         }
+    }
+    public static void showRank(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal)
+    {
+        int[] playerOffensive = new int[playerDefensiveOriginal.length];
+        int[] playerDefensive = new int[playerOffensiveOriginal.length];
+        for (int i = 0; i < playerOffensive.length; i++)
+        {
+            playerOffensive[i] = playerOffensiveOriginal[i];
+            playerDefensive[i] = playerDefensiveOriginal[i];
+        }
+        sortRank(playerOffensive,playerDefensive);
     }
     public static void main(String[] args)
     {
