@@ -43,6 +43,18 @@ public class LC5PrimaAtauFibonacci
         }
         return true;
     }
+    public static boolean arithmeticSequence(int[] number)
+    {
+        int difference = number[1] - number[0];
+        for (int i = 0; i < number.length; i++)
+        {
+            if (i != 0 && number[i] - number[i - 1] != difference)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
