@@ -69,6 +69,22 @@ public class RankingPemain
             System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
             System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
             System.out.print("Rank overall:"); showRankSorted(overallRankOriginal,overallRank);
+            return;
+        }
+        if (showOption.equalsIgnoreCase("skill"))
+        {
+            System.out.print("Skill ofensif:");
+            for (int i : playerOffensiveOriginal)
+            {
+                System.out.print(" " + i);
+            }
+            System.out.print("\n");
+            System.out.print("Skill dfensif:");
+            for (int i : playerDefensiveOriginal)
+            {
+                System.out.print(" " + i);
+            }
+            System.out.print("\n");
         }
     }
     public static void main(String[] args)
