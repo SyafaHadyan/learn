@@ -118,11 +118,11 @@ public class RankingPemain
                 if (tempInput[1].equalsIgnoreCase("ofensif"))
                 {
                     playerOffensive[playerAt - 1] += point;
-                    playerDefensive[playerAt - 1]  -=  (point / 2);
+                    playerDefensive[playerAt - 1] -=  (point / 2);
                 }
                 else if (tempInput[1].equalsIgnoreCase("defensif"))
                 {
-                    //
+                    playerDefensive[playerAt - 1] += point;
                 }
                 System.out.println("Melatih skill" + " " + tempInput[1] + " " + "pemain ke-" + playerAt + " " + "sebanyak" + " " + point + " " + "poin");
             }
