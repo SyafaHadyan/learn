@@ -29,6 +29,20 @@ public class LC5PrimaAtauFibonacci
         }
         return true;
     }
+    public static boolean fibonacciSequence(int[] number)
+    {
+        for (int i = 2; i < number.length; i++)
+        {
+            int firstNumber = number[i - 2];
+            int secondNumber = number[i - 1];
+            int currentNumber = firstNumber + secondNumber;
+            if (number[i] != currentNumber)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -41,8 +55,8 @@ public class LC5PrimaAtauFibonacci
         input.close();
     }
     /*
-     * Prime
-     * Fibonacci
-     * Arithmetic
+     * [x] Prime
+     * [x] Fibonacci
+     * [] Arithmetic
      */
 }
