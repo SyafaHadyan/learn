@@ -10,13 +10,15 @@ public class SequenceEquation
         int sequenceAmount = Integer.parseInt(input.nextLine());
         int[] sequence = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         input.close();
-        int[] sortedSequence = Arrays.copyOf(sequence,sequenceAmount);
-        Arrays.sort(sortedSequence);
-        for (int i = 0; i < sequenceAmount; i++)
+        for (int i = 1; i <= sequenceAmount; i++)
         {
-            for (int j = 0; j < sequenceAmount; j++)
+            for (int j = -1 + i; j < sequenceAmount; j++)
             {
-                
+                if (sequence[sequence[j]] == i)
+                {
+                    System.err.println("i " + i + "\n" + "j " + j);
+                    System.out.println(j);
+                }
             }
         }
     }
