@@ -123,7 +123,7 @@ public class RankingPemain
                 {
                     //
                 }
-                System.out.println("Melatih skill" + " " + tempInput[1] + " " + "pemain ke-" + playerAt + " " + "sebanyak" + " " + point + "poin");
+                System.out.println("Melatih skill" + " " + tempInput[1] + " " + "pemain ke-" + playerAt + " " + "sebanyak" + " " + point + " " + "poin");
             }
         }
         input.close();
