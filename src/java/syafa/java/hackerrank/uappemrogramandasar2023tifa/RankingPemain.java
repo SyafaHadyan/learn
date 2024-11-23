@@ -35,26 +35,13 @@ public class RankingPemain
         }
         sortRank(playerOffensive,playerDefensive);
         System.out.print("Rank ofensif:");
-        int currentScore = 0;
-        int currentRank = 0;
-        int rankDecrement = 0;
-        for (int i = playerOffensive.length - 1; i >= 0; i--)
+        for (int i = 0; i < playerOffensive.length; i++)
         {
-            for (int j = 0; j < playerOffensive.length; j++)
+            for (int j = playerOffensive.length - 1; j >= 0; j--)
             {
-                if (playerOffensive[i] == playerOffensiveOriginal[j])
+                if (playerOffensive[j] == playerOffensiveOriginal[i])
                 {
-                    currentScore = playerOffensive[i];
-                    currentRank = j + 1;
-                    if (!(i != playerOffensive.length - 1 && currentScore == playerOffensive[i + 1]))
-                    {
-                        rankDecrement = 0;
-                    }
-                    else
-                    {
-                        rankDecrement++;
-                    }
-                    System.out.print(" " + (currentRank - rankDecrement));
+                    System.out.print(" " + (j + 1));
                 }
             }
         }
