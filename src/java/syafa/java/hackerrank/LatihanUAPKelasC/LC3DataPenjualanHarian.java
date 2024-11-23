@@ -16,6 +16,14 @@ public class LC3DataPenjualanHarian
         for (int i = 0; i < saleEntry.length; i++)
         {
             saleEntry[i] = Integer.parseInt(input.nextLine());
+            if (saleEntry[i] < lowestSale)
+            {
+                lowestSale = saleEntry[i];
+            }
+            if (saleEntry[i] > highestSale)
+            {
+                highestSale = saleEntry[i];
+            }
         }
         input.close();
     }
