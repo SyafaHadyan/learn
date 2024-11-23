@@ -49,6 +49,7 @@ public class RankingPemain
         }
         sortRank(playerOffensive,playerDefensive);
         System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
+        System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
     }
     public static void main(String[] args)
     {
