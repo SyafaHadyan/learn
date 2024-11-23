@@ -111,6 +111,20 @@ public class RankingPemain
             {
                 show(playerOffensive,playerDefensive,tempInput[1]);
             }
+            if (tempInput[0].equalsIgnoreCase("latih"))
+            {
+                int playerAt = Integer.parseInt(tempInput[2]);
+                int point = Integer.parseInt(tempInput[3]);
+                if (tempInput[1].equalsIgnoreCase("ofensif"))
+                {
+                    //
+                }
+                else if (tempInput[1].equalsIgnoreCase("defensif"))
+                {
+                    //
+                }
+                System.out.println("Melatih skill" + " " + tempInput[1] + " " + "pemain ke-" + playerAt + " " + "sebanyak" + " " + point + "poin");
+            }
         }
         input.close();
     }
