@@ -17,6 +17,7 @@ public class SequenceEquation
                 if (sequence[sequence[j] - 1] == i)
                 {
                     System.err.println("i " + i + ", j " + j);
+                    System.err.print("Match at ");
                     System.out.println(j + 1);
                     break;
                 }
