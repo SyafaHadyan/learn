@@ -50,7 +50,7 @@ public class RankingPemain
             }
         }
     }
-    public static void showRank(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal)
+    public static void instruction(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal,String showOverall)
     {
         int[] playerOffensive = new int[playerDefensiveOriginal.length];
         int[] playerDefensive = new int[playerOffensiveOriginal.length];
@@ -66,7 +66,10 @@ public class RankingPemain
         sortRank(playerOffensive,playerDefensive,overallRank);
         System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
         System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
-        System.out.print("Rank overall:"); showRankSorted(overallRankOriginal,overallRank);
+        if (showOverall.equalsIgnoreCase("rank"))
+        {
+            System.out.print("Rank overall:"); showRankSorted(overallRankOriginal,overallRank);
+        }
     }
     public static void main(String[] args)
     {
@@ -85,13 +88,12 @@ public class RankingPemain
         }
         input.nextLine();
         int managerInstructionAmount = Integer.parseInt(input.nextLine());
-        String[] instructionList = new String[managerInstructionAmount];
-        for (int i = 0; i < instructionList.length; i++)
+        for (int i = 0; i < managerInstructionAmount; i++)
         {
-            instructionList[i] = input.nextLine();
-            if (instructionList[i].equalsIgnoreCase("tampil rank"))
+            String[] tempInput = input.nextLine().split("\s");
+            if (tempInput[0].equalsIgnoreCase("tampil"))
             {
-                showRank(playerOffensive,playerDefensive);
+                instruction(playerOffensive,playerDefensive,tempInput[1]);
             }
         }
         input.close();
