@@ -37,6 +37,7 @@ public class LC3LombaDengklek
             if (currrentMostOccurence > mostOccurence)
             {
                 mostOccurence = currrentMostOccurence;
+                mostParticipant = string;
             }
         }
         if (mostOccurence == 1)
@@ -44,6 +45,7 @@ public class LC3LombaDengklek
             System.out.println("Tidak ada kategori juara terbaik.");
             return;
         }
+        System.out.println("Kategori juara terbaik diraih oleh" + " " + mostParticipant + ".");
         // for (int i = 0; i < winningParticipant.length; i++)
         // {
         //     for (int j = 1 + i; j < winningParticipant.length; j++)
