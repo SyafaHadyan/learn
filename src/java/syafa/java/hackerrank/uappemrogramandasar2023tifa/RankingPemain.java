@@ -3,6 +3,10 @@ import java.util.*;
 
 public class RankingPemain
 {
+    public static void showRank(int[] playerOffensive,int[] playerDefensive)
+    {
+        //
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -24,6 +28,10 @@ public class RankingPemain
         for (int i = 0; i < instructionList.length; i++)
         {
             instructionList[i] = input.nextLine();
+            if (instructionList[i].equalsIgnoreCase("tampil rank"))
+            {
+                showRank(playerOffensive,playerDefensive);
+            }
         }
         input.close();
     }
