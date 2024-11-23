@@ -28,9 +28,9 @@ public class LC3BilanganPrimaPt2
             {
                 currentPrimeAt++;
             }
-            System.err.println("CPA " + currentPrimeAt + "\n" + "CPN" + currentNumber);
+            System.err.println("CPA " + currentPrimeAt + "\n" + "CPN " + currentNumber);
         }
-        System.err.println("CPA " + currentPrimeAt + "\n" + "CPN" + currentNumber);
+        System.err.println("CPA " + currentPrimeAt + "\n" + "CPN " + currentNumber);
         System.out.println("Bilangan prima ke" + "-" + primeAt + " " + "adalah" + " " + currentNumber + ".");
     }
 }
