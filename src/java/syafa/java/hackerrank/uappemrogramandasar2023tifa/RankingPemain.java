@@ -79,7 +79,7 @@ public class RankingPemain
                 System.out.print(" " + i);
             }
             System.out.print("\n");
-            System.out.print("Skill dfensif:");
+            System.out.print("Skill defensif:");
             for (int i : playerDefensiveOriginal)
             {
                 System.out.print(" " + i);
