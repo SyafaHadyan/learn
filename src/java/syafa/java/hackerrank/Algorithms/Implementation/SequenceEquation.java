@@ -12,12 +12,13 @@ public class SequenceEquation
         input.close();
         for (int i = 1; i <= sequenceAmount; i++)
         {
-            for (int j = -1 + i; j < sequenceAmount; j++)
+            for (int j = 0; j < sequenceAmount; j++)
             {
-                if (sequence[sequence[j]] == i)
+                if (sequence[sequence[j] - 1] == i)
                 {
-                    System.err.println("i " + i + "\n" + "j " + j);
-                    System.out.println(j);
+                    System.err.println("i " + i + ", j " + j);
+                    System.out.println(j + 1);
+                    break;
                 }
             }
         }
