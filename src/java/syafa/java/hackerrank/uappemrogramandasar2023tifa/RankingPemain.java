@@ -12,12 +12,13 @@ public class RankingPemain
                 if (sorted[j] == original[i])
                 {
                     System.out.print(" " + (j + 1));
+                    break;
                 }
             }
         }
         System.out.print("\n");
     }
-    public static void sortRank (int[] playerOffensive,int[] playerDefensive)
+    public static void sortRank (int[] playerOffensive,int[] playerDefensive,int[] overallRank)
     {
         for (int i = 0; i < playerOffensive.length; i++)
         {
@@ -42,14 +43,19 @@ public class RankingPemain
     {
         int[] playerOffensive = new int[playerDefensiveOriginal.length];
         int[] playerDefensive = new int[playerOffensiveOriginal.length];
+        int[] overallRankOriginal = new int[playerOffensiveOriginal.length];
+        int[] overallRank = new int[playerOffensiveOriginal.length];
         for (int i = 0; i < playerOffensive.length; i++)
         {
             playerOffensive[i] = playerOffensiveOriginal[i];
             playerDefensive[i] = playerDefensiveOriginal[i];
+            overallRankOriginal[i] = playerOffensive[i] + playerDefensive[i];
+            overallRank[i] = playerOffensive[i] + playerDefensive[i];
         }
-        sortRank(playerOffensive,playerDefensive);
+        sortRank(playerOffensive,playerDefensive,overallRank);
         System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
         System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
+        System.out.print("Rank overall:"); showRankSorted(overallRankOriginal,overallRank);
     }
     public static void main(String[] args)
     {
