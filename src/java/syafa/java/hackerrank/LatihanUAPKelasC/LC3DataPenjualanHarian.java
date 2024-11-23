@@ -27,9 +27,11 @@ public class LC3DataPenjualanHarian
             if (i != 0 && saleEntry[i] > saleEntry[i - 1])
             {
                 currentConsecutiveSaleIncrease++;
+                System.err.println("CCS " + currentConsecutiveSaleIncrease);
             }
-            else if ((i != 0 && saleEntry[i] < saleEntry[i - 1]) || saleEntry.length - i == 1)
+            if ((i != 0 && saleEntry[i] < saleEntry[i - 1]) || saleEntry.length - i == 1)
             {
+                System.err.println("CCS " + currentConsecutiveSaleIncrease);
                 if (consecutiveSaleIncrease < currentConsecutiveSaleIncrease)
                 {
                     consecutiveSaleIncrease = currentConsecutiveSaleIncrease;
@@ -39,10 +41,12 @@ public class LC3DataPenjualanHarian
             totalSaleWithoutMinMaxValue += saleEntry[i];
         }
         input.close();
-        totalSaleWithoutMinMaxValue = totalSaleWithoutMinMaxValue - highestSale - lowestSale;
+        System.err.println("TS " + totalSaleWithoutMinMaxValue);
+        totalSaleWithoutMinMaxValue -=  (highestSale + lowestSale);
+        System.err.println("TSF " + totalSaleWithoutMinMaxValue);
         System.out.println("Penjualan tertinggi adalah" + " " + highestSale);
         System.out.println("Penjualan terendah adalah" + " " + lowestSale);
         System.out.println("Jumlah hari berturut-turut dengan kenaikan penjualan" + ": " + consecutiveSaleIncrease);
-        System.out.printf("%s%-2c%.2f\n","Rata-rata penjualan harian tanpa hari tertinggi dan terendah",':',((double) totalSaleWithoutMinMaxValue / (double) saleEntry.length - 2));
+        System.out.printf("%s%-2c%.2f\n","Rata-rata penjualan harian tanpa hari tertinggi dan terendah",':',(totalSaleWithoutMinMaxValue / (double) saleEntry.length - 2));
     }
 }
