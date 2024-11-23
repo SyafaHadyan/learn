@@ -36,7 +36,9 @@ public class LC3DataPenjualanHarian
                     currentConsecutiveSaleIncrease = 0;
                 }
             }
+            totalSaleWithoutMinMaxValue += saleEntry[i];
         }
         input.close();
+        totalSaleWithoutMinMaxValue = totalSaleWithoutMinMaxValue - highestSale - lowestSale;
     }
 }
