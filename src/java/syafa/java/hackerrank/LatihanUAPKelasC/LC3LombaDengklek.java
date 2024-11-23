@@ -46,20 +46,5 @@ public class LC3LombaDengklek
             return;
         }
         System.out.println("Kategori juara terbaik diraih oleh" + " " + mostParticipant + ".");
-        // for (int i = 0; i < winningParticipant.length; i++)
-        // {
-        //     for (int j = 1 + i; j < winningParticipant.length; j++)
-        //     {
-        //         if (winningParticipant[i].equalsIgnoreCase(winningParticipant[j]))
-        //         {
-        //             currrentMostOccurence++;
-        //         }
-        //         if (currrentMostOccurence > mostParticipantOccurence)
-        //         {
-        //             mostParticipantOccurence = currrentMostOccurence;
-        //         }
-        //     }
-        // }
-        // System.out.println(mostParticipantOccurence);
     }
 }
