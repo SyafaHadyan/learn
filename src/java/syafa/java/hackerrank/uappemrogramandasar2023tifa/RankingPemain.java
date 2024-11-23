@@ -50,7 +50,7 @@ public class RankingPemain
             }
         }
     }
-    public static void instruction(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal,String showOverall)
+    public static void show(int[] playerOffensiveOriginal,int[] playerDefensiveOriginal,String showOption)
     {
         int[] playerOffensive = new int[playerDefensiveOriginal.length];
         int[] playerDefensive = new int[playerOffensiveOriginal.length];
@@ -64,10 +64,10 @@ public class RankingPemain
             overallRank[i] = playerOffensive[i] + playerDefensive[i];
         }
         sortRank(playerOffensive,playerDefensive,overallRank);
-        System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
-        System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
-        if (showOverall.equalsIgnoreCase("rank"))
+        if (showOption.equalsIgnoreCase("rank"))
         {
+            System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
+            System.out.print("Rank defensif:"); showRankSorted(playerDefensiveOriginal,playerDefensive);
             System.out.print("Rank overall:"); showRankSorted(overallRankOriginal,overallRank);
         }
     }
@@ -93,7 +93,7 @@ public class RankingPemain
             String[] tempInput = input.nextLine().split("\s");
             if (tempInput[0].equalsIgnoreCase("tampil"))
             {
-                instruction(playerOffensive,playerDefensive,tempInput[1]);
+                show(playerOffensive,playerDefensive,tempInput[1]);
             }
         }
         input.close();
