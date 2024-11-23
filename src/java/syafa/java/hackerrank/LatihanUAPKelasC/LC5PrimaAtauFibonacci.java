@@ -65,10 +65,26 @@ public class LC5PrimaAtauFibonacci
             numberSequence[i] = input.nextInt();
         }
         input.close();
+        if (primeSequence(numberSequence))
+        {
+            System.out.println("Kumpulan Bilangan Prima");
+            return;
+        }
+        if (fibonacciSequence(numberSequence))
+        {
+            System.out.println("Deret Bilangan Fibonacci");
+            return;
+        }
+        if (arithmeticSequence(numberSequence))
+        {
+            System.out.println("Deret Bilangan Aritmetika");
+            return;
+        }
+        System.out.println("Kumpulan bilangan tidak dikenali");
     }
     /*
      * [x] Prime
      * [x] Fibonacci
-     * [] Arithmetic
+     * [x] Arithmetic
      */
 }
