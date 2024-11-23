@@ -14,7 +14,6 @@ public class LC3LombaDengklek
         HashMap<String,Integer> participantList = new HashMap<>();
         for (int i = 0; i < participantWinAmount; i++)
         {
-            // winningParticipant[i] = input.nextLine();
             String tempInput = input.nextLine();
             if (participantList.get(tempInput) == null)
             {
