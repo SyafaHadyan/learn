@@ -19,7 +19,7 @@ public class LC3BilanganPrimaPt2
         Scanner input = new Scanner(System.in);
         int primeAt = Integer.parseInt(input.nextLine());
         input.close();
-        int currentPrimeAt = 1;
+        int currentPrimeAt = 0;
         int currentNumber = 1;
         while (currentPrimeAt != primeAt)
         {
@@ -28,6 +28,9 @@ public class LC3BilanganPrimaPt2
             {
                 currentPrimeAt++;
             }
+            System.err.println("CPA " + currentPrimeAt + "\n" + "CPN" + currentNumber);
         }
+        System.err.println("CPA " + currentPrimeAt + "\n" + "CPN" + currentNumber);
+        System.out.println("Bilangan prima ke" + "-" + primeAt + " " + "adalah" + " " + currentNumber + ".");
     }
 }
