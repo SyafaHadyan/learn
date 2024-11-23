@@ -3,6 +3,20 @@ import java.util.*;
 
 public class RankingPemain
 {
+    public static void showRankSorted (int[] original,int[] sorted)
+    {
+        for (int i = 0; i < original.length; i++)
+        {
+            for (int j = original.length - 1; j >= 0; j--)
+            {
+                if (sorted[j] == original[i])
+                {
+                    System.out.print(" " + (j + 1));
+                }
+            }
+        }
+        System.out.print("\n");
+    }
     public static void sortRank (int[] playerOffensive,int[] playerDefensive)
     {
         for (int i = 0; i < playerOffensive.length; i++)
@@ -34,17 +48,7 @@ public class RankingPemain
             playerDefensive[i] = playerDefensiveOriginal[i];
         }
         sortRank(playerOffensive,playerDefensive);
-        System.out.print("Rank ofensif:");
-        for (int i = 0; i < playerOffensive.length; i++)
-        {
-            for (int j = playerOffensive.length - 1; j >= 0; j--)
-            {
-                if (playerOffensive[j] == playerOffensiveOriginal[i])
-                {
-                    System.out.print(" " + (j + 1));
-                }
-            }
-        }
+        System.out.print("Rank ofensif:"); showRankSorted(playerOffensiveOriginal,playerOffensive);
     }
     public static void main(String[] args)
     {
