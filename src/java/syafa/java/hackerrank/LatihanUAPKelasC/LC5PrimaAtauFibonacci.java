@@ -82,9 +82,4 @@ public class LC5PrimaAtauFibonacci
         }
         System.out.println("Kumpulan bilangan tidak dikenali");
     }
-    /*
-     * [x] Prime
-     * [x] Fibonacci
-     * [x] Arithmetic
-     */
 }
