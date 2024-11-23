@@ -9,6 +9,7 @@ public class LC3BilanganPrimaPt2
         {
             if (number % i == 0)
             {
+                System.err.println("False at " + i);
                 return false;
             }
         }
@@ -31,6 +32,6 @@ public class LC3BilanganPrimaPt2
             System.err.println("CPA " + currentPrimeAt + "\n" + "CPN " + currentNumber);
         }
         System.err.println("CPA " + currentPrimeAt + "\n" + "CPN " + currentNumber);
-        System.out.println("Bilangan prima ke" + "-" + primeAt + " " + "adalah" + " " + currentNumber + ".");
+        System.out.println("bilangan prima ke" + "-" + primeAt + " " + "adalah" + " " + currentNumber + ".");
     }
 }
