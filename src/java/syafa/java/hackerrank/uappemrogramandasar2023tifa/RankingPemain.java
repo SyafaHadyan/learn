@@ -12,6 +12,24 @@ public class RankingPemain
             playerOffensive[i] = playerOffensiveOriginal[i];
             playerDefensive[i] = playerDefensiveOriginal[i];
         }
+        for (int i = 0; i < playerOffensive.length; i++)
+        {
+            for (int j = 0; j < playerOffensive.length; j++)
+            {
+                if (playerOffensive[i] > playerOffensive[j])
+                {
+                    int tempSwap = playerOffensive[j];
+                    playerOffensive[j] = playerOffensive[i];
+                    playerOffensive[i] = tempSwap;
+                }
+                if (playerDefensive[i] > playerDefensive[j])
+                {
+                    int tempSwap = playerDefensive[j];
+                    playerDefensive[j] = playerDefensive[i];
+                    playerDefensive[i] = tempSwap;
+                }
+            }
+        }
     }
     public static void main(String[] args)
     {
