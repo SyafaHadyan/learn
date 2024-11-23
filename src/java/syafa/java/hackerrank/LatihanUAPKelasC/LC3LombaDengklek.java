@@ -10,9 +10,13 @@ public class LC3LombaDengklek
         int participantWinAmount = Integer.parseInt(input.nextLine());
         int mostParticipantOccurence = 0;
         int currrentMostOccurence = 0;
+        int previousMostOccurence = 0;
+        int mostOccurence = 0;
+        int duplicate = 0;
         String mostParticipant = "";
         String[] winningParticipant = new String[participantWinAmount];
         HashMap<String,Integer> participantList = new HashMap<>();
+        ArrayList<Integer> occurence = new ArrayList<>();
         for (int i = 0; i < participantWinAmount; i++)
         {
             // winningParticipant[i] = input.nextLine();
@@ -27,6 +31,19 @@ public class LC3LombaDengklek
             }
         }
         input.close();
+        for (String string : participantList.keySet())
+        {
+            currrentMostOccurence = participantList.get(string);
+            if (currrentMostOccurence > mostOccurence)
+            {
+                mostOccurence = currrentMostOccurence;
+            }
+        }
+        if (mostOccurence == 1)
+        {
+            System.out.println("Tidak ada kategori juara terbaik.");
+            return;
+        }
         // for (int i = 0; i < winningParticipant.length; i++)
         // {
         //     for (int j = 1 + i; j < winningParticipant.length; j++)
@@ -41,6 +58,6 @@ public class LC3LombaDengklek
         //         }
         //     }
         // }
-        System.out.println(mostParticipantOccurence);
+        // System.out.println(mostParticipantOccurence);
     }
 }
