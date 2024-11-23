@@ -24,6 +24,18 @@ public class LC3DataPenjualanHarian
             {
                 highestSale = saleEntry[i];
             }
+            if (i != 0 && saleEntry[i] > saleEntry[i - 1])
+            {
+                currentConsecutiveSaleIncrease++;
+            }
+            else if ((i != 0 && saleEntry[i] < saleEntry[i - 1]) || saleEntry.length - i == 1)
+            {
+                if (consecutiveSaleIncrease < currentConsecutiveSaleIncrease)
+                {
+                    consecutiveSaleIncrease = currentConsecutiveSaleIncrease;
+                    currentConsecutiveSaleIncrease = 0;
+                }
+            }
         }
         input.close();
     }
