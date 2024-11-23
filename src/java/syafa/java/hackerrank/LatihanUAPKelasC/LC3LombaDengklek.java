@@ -9,19 +9,38 @@ public class LC3LombaDengklek
         Scanner input = new Scanner(System.in);
         int participantWinAmount = Integer.parseInt(input.nextLine());
         int mostParticipantOccurence = 0;
+        int currrentMostOccurence = 0;
         String mostParticipant = "";
         String[] winningParticipant = new String[participantWinAmount];
+        HashMap<String,Integer> participantList = new HashMap<>();
         for (int i = 0; i < participantWinAmount; i++)
         {
-            winningParticipant[i] = input.nextLine();
-        }
-        input.close();
-        for (int i = 0; i < winningParticipant.length; i++)
-        {
-            for (int j = 1 + i; j < winningParticipant.length; j++)
+            // winningParticipant[i] = input.nextLine();
+            String tempInput = input.nextLine();
+            if (participantList.get(tempInput) == null)
             {
-                //
+                participantList.put(tempInput,1);
+            }
+            else if (participantList.containsKey(tempInput))
+            {
+                participantList.put(tempInput,participantList.get(tempInput) + 1);
             }
         }
+        input.close();
+        // for (int i = 0; i < winningParticipant.length; i++)
+        // {
+        //     for (int j = 1 + i; j < winningParticipant.length; j++)
+        //     {
+        //         if (winningParticipant[i].equalsIgnoreCase(winningParticipant[j]))
+        //         {
+        //             currrentMostOccurence++;
+        //         }
+        //         if (currrentMostOccurence > mostParticipantOccurence)
+        //         {
+        //             mostParticipantOccurence = currrentMostOccurence;
+        //         }
+        //     }
+        // }
+        System.out.println(mostParticipantOccurence);
     }
 }
