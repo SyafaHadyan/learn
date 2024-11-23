@@ -9,8 +9,13 @@ public class RankingPemain
         {
             for (int j = original.length - 1; j >= 0; j--)
             {
+                System.err.print("");
                 if (sorted[j] == original[i])
                 {
+                    while (j != 0 && sorted[j - 1] == sorted[j])
+                    {
+                        j--;
+                    }
                     System.out.print(" " + (j + 1));
                     break;
                 }
@@ -35,6 +40,12 @@ public class RankingPemain
                     int tempSwap = playerDefensive[j];
                     playerDefensive[j] = playerDefensive[i];
                     playerDefensive[i] = tempSwap;
+                }
+                if (overallRank[i] > overallRank[j])
+                {
+                    int tempSwap = overallRank[j];
+                    overallRank[j] = overallRank[i];
+                    overallRank[i] = tempSwap;
                 }
             }
         }
