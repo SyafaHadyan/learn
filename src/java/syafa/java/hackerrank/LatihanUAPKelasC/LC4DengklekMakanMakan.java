@@ -37,5 +37,15 @@ public class LC4DengklekMakanMakan
                 }
             }
         }
+        for (int i = 0; i < index; i++)
+        {
+            System.out.print(guestAbove[i] + " ");
+        }
+        if (index == 0)
+        {
+            System.out.println("semua tamu cuma datang sekali.");
+            return;
+        }
+        System.out.println("datang lebih dari sekali.");
     }
 }
