@@ -1,0 +1,7 @@
+2 2 2
+air 0 0 0
+dirt 1 0 1
+grass 0 1 0
+wood 1 1 1
+stone 0 0 1
+stop 0 0 0
