@@ -16,9 +16,24 @@ public class LC4DMenambangDanKerajinan
         int x = input.nextInt();
         int y = input.nextInt();
         int z = input.nextInt(); input.nextLine();
+        String[] blockList = new String[128];
+        int blockCounter = 0;
         while (input.hasNextLine())
         {
-            //
+            String blockName = input.next();
+            int tempX = input.nextInt();
+            int tempY = input.nextInt();
+            int tempZ = input.nextInt(); input.nextLine();
+            if
+            (
+                VALID_BLOCK.containsKey(blockName) &&
+                tempX <= x && tempX >= 0 &&
+                tempY <= y && tempY >= 0 &&
+                tempZ <= z && tempZ >= 0
+            );
+            {
+                //
+            }
         }
         input.close();
     }
