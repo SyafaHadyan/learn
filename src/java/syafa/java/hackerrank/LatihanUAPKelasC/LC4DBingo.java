@@ -8,6 +8,7 @@ public class LC4DBingo
         Scanner input = new Scanner(System.in);
         int cardSize = Integer.parseInt(input.nextLine());
         int[][] card = new int[cardSize][cardSize];
+        String[][] markedCard = new String[cardSize][cardSize];
         for (int i = 0; i < card.length; i++)
         {
             for (int j = 0; j < card.length; j++)
@@ -37,7 +38,16 @@ public class LC4DBingo
                         break;
                     }
                 }
-                System.out.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
+                System.err.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
+                markedCard[i][j] = ((marked) ? "o" : ".");
+            }
+        }
+        System.err.println();
+        for (int i = 0; i < markedCard.length; i++)
+        {
+            for (int j = 0; j < markedCard.length; j++)
+            {
+                System.err.print(markedCard[i][j] + ((markedCard.length - j != 1) ? " " : "\n"));
             }
         }
     }
