@@ -3,6 +3,25 @@ import java.util.*;
 
 public class LC4DBingo
 {
+    public static boolean checkCard (String[][] markedCard)
+    {
+        for (int i = 0; i < markedCard.length; i++)
+        {
+            int horizontalCount = 0;
+            int verticalCount = 0;
+            for (int j = 0; j < markedCard.length; j++)
+            {
+                if (markedCard[i][j].equalsIgnoreCase("o"))
+                {
+                    horizontalCount++;
+                }
+                if (markedCard[j][i].equalsIgnoreCase("o"))
+                {
+                    verticalCount++;
+                }
+            }
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
