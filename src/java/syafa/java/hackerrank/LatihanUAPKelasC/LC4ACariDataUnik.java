@@ -36,7 +36,7 @@ public class LC4ACariDataUnik
         System.out.print("daftar angka unik" + " :");
         for (int i = 0; i < dataUniqueAmount; i++)
         {
-            System.out.print(" " + data[i]);
+            System.out.print(" " + dataUnique[i]);
         }
         System.err.println();
     }
