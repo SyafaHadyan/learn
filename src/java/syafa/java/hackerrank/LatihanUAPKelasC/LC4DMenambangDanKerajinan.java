@@ -18,7 +18,7 @@ public class LC4DMenambangDanKerajinan
             {
                 for (int k = 0; k < availableBlock.length; k++)
                 {
-                    if (availableBlock[j][i] > availableBlock[k][i])
+                    if (availableBlock[j][i] < availableBlock[k][i])
                     {
                         int[] tempSwapBlock = availableBlock[k];
                         availableBlock[k] = availableBlock[j];
@@ -28,7 +28,8 @@ public class LC4DMenambangDanKerajinan
                 }
             }
         }
-        System.err.println(Arrays.toString(availableBlock));
+        System.err.println();
+        System.err.println(availableBlock);
     }
     public static void main(String[] args)
     {
@@ -59,8 +60,8 @@ public class LC4DMenambangDanKerajinan
                 tempX <= borderX && tempX >= 0 &&
                 tempY <= borderY && tempY >= 0 &&
                 tempZ <= borderZ && tempZ >= 0 &&
-                (blockName.equalsIgnoreCase("stop"))
-            );
+                !(blockName.equalsIgnoreCase("stop"))
+            )
             {
                 blockList[blockCounter] = new String(blockName + " " + tempX + " " + tempY + " " + tempZ).split("\s");
                 availableBlock[blockCounter][0] = tempX;
