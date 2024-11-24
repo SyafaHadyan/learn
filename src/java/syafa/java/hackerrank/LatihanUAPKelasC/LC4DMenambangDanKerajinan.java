@@ -10,7 +10,7 @@ public class LC4DMenambangDanKerajinan
         "wood",
         "stone"
     );
-    public static void showSortBlock(String[][] blockList,int[] availableBlock,int borderX,int borderY,int borderZ)
+    public static void showSortBlock(String[][] blockList,int[][] availableBlock,int borderX,int borderY,int borderZ)
     {
         for (int i = 0; i < 3; i++)
         {
@@ -18,7 +18,13 @@ public class LC4DMenambangDanKerajinan
             {
                 for (int k = 0; k < availableBlock.length; k++)
                 {
-                    if (availableBlock[])
+                    if (availableBlock[j][i] > availableBlock[k][i])
+                    {
+                        int[] tempSwapBlock = availableBlock[k];
+                        availableBlock[k] = availableBlock[j];
+                        availableBlock[j] = tempSwapBlock;
+                        System.err.println(Arrays.toString(availableBlock));
+                    }
                 }
             }
         }
