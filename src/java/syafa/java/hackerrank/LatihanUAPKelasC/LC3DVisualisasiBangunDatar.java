@@ -3,6 +3,18 @@ import java.util.*;
 
 public class LC3DVisualisasiBangunDatar
 {
+    public static void shapeBuilderTriangle(int shapeSize)
+    {
+        //
+    }
+    public static void shapeBuilderSquare(int shapeSize)
+    {
+        //
+    }
+    public static void shapeBiulderParallelogram(int shapeSize)
+    {
+        //
+    }
     public static void shapeBuilder(int shapeSize,String shapeRequest)
     {
         System.err.println(shapeSize);
