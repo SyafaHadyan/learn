@@ -12,7 +12,11 @@ public class LC3FCatatanPakChanek
         int secondWordOccurence = 0;
         while (input.hasNextLine())
         {
-            //
+            String[] tempInput = input.nextLine().split("\s");
+            for (int i = 0; i < tempInput.length - 1; i++)
+            {
+                //
+            }
         }
         input.close();
     }
