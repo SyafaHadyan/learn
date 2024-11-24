@@ -10,8 +10,8 @@ public class LC4DPetaDanHero
         int row = input.nextInt();
         int col = input.nextInt(); input.nextLine();
         int heroCount = Integer.parseInt(input.nextLine());
-        String[][] heroPosition = new String[Math.abs(row)][Math.abs(col)];
-        for (int i = 0; i < Math.abs(row); i++)
+        String[][] heroPosition = new String[heroCount][3];
+        for (int i = 0; i < heroPosition.length; i++)
         {
             heroPosition[i] = input.nextLine().split("\s");
         }
@@ -29,12 +29,12 @@ public class LC4DPetaDanHero
                 {
                     if (Integer.parseInt(heroPosition[k][0]) == i && Integer.parseInt(heroPosition[k][1]) == j)
                     {
-                        System.out.print(heroPosition[k][2] + ((col - j != 1) ? " " : "\n"));
+                        System.out.print(heroPosition[k][2] + ((col - j != 1) ? "" : "\n"));
                         j++;
                         break;
                     }
                 }
-                System.out.print(EMPTY_SYMBOL + ((col - j != 1) ? " " : "\n"));
+                System.out.print(EMPTY_SYMBOL + ((col - j != 1) ? "" : "\n"));
             }
         }
     }
