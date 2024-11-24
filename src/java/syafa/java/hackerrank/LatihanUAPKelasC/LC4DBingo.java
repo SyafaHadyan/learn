@@ -23,6 +23,7 @@ public class LC4DBingo
             announcement[i] = Integer.parseInt(input.nextLine());
         }
         input.close();
+        System.out.println("Bingo!");
         for (int i = 0; i < card.length; i++)
         {
             for (int j = 0; j < card.length; j++)
@@ -36,7 +37,7 @@ public class LC4DBingo
                         break;
                     }
                 }
-                System.out.print((((marked) ? "O" : ".") + ((card.length - j != 1) ? " " : "\n")));
+                System.out.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
             }
         }
     }
