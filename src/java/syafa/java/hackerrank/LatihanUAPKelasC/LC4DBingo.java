@@ -7,6 +7,8 @@ public class LC4DBingo
     {
         int horizontalCount = 0;
         int verticalCount = 0;
+        int firstDiagonalCount = 0;
+        int secondDiagonalCount = 0;
         for (int i = 0; i < markedCard.length; i++)
         {
             for (int j = 0; j < markedCard.length; j++)
@@ -19,6 +21,13 @@ public class LC4DBingo
                 {
                     verticalCount++;
                 }
+            }
+        }
+        for (int i = 0; i < markedCard.length; i++)
+        {
+            if (markedCard[i][i] != null && markedCard[i][i].equalsIgnoreCase("o"))
+            {
+                firstDiagonalCount++;
             }
         }
         if (horizontalCount == markedCard.length || verticalCount == markedCard.length)
