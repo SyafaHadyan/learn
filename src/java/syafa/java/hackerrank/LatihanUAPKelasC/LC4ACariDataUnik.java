@@ -12,7 +12,20 @@ public class LC4ACariDataUnik
         int[] data = new int[dataAmount];
         for (int i = 0; i < data.length; i++)
         {
-            data[i] = input.nextInt();
+            int tempInput = input.nextInt();
+            boolean duplicate = false;
+            for (int j = 0; j < data.length; j++)
+            {
+                if (data[j] == tempInput)
+                {
+                    duplicate = true;
+                    break;
+                }
+            }
+            if (!(duplicate))
+            {
+                data[dataUniqueAmount] = tempInput;
+            }
         }
         input.close();
         for (int i = 0; i < data.length; i++)
