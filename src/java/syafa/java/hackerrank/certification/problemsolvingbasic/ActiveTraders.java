@@ -15,7 +15,6 @@ public class ActiveTraders
             traderListRaw[i] = input.nextLine();
         }
         input.close();
-        Arrays.sort(traderListRaw);
         for (int i = 0; i < traderAmount; i++)
         {
             if (traderList.containsKey(traderListRaw[i]))
@@ -27,7 +26,8 @@ public class ActiveTraders
                 traderList.put(traderListRaw[i],1);
             }
         }
-        for (String i : traderList.keySet())
+        SortedSet<String> traderListSorted = new TreeSet<>(traderList.keySet());
+        for (String i : traderListSorted)
         {
             if ((double) traderList.get(i) / (double) traderAmount * 100 >= THRESHOLD)
             {
