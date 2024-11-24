@@ -29,8 +29,10 @@ public class LC4ACariDataUnik
             if (unique)
             {
                 dataUniqueAmount++;
-                dataUniqueIndexList = dataUniqueIndexList.concat(String.valueOf(data[i]));
+                dataUniqueIndexList = dataUniqueIndexList.concat(" " + String.valueOf(data[i]));
             }
         }
+        System.out.println("jumlah angka unik" + " : " + dataUniqueAmount);
+        System.out.println("daftar angka unik" + " :" + dataUniqueIndexList);
     }
 }
