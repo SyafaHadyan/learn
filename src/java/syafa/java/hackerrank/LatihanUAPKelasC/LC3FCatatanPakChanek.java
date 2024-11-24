@@ -13,9 +13,16 @@ public class LC3FCatatanPakChanek
         while (input.hasNextLine())
         {
             String[] tempInput = input.nextLine().split("\s");
-            for (int i = 0; i < tempInput.length - 1; i++)
+            for (int i = 0; i < tempInput.length; i++)
             {
-                //
+                if (firstWord.equalsIgnoreCase(tempInput[i]))
+                {
+                    firstWordOccurence++;
+                    if (tempInput.length - i != 1 && secondWord.equalsIgnoreCase(tempInput[i + 1]))
+                    {
+                        secondWordOccurence++;
+                    }
+                }
             }
         }
         input.close();
