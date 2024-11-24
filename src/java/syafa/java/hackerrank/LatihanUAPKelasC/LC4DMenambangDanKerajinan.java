@@ -16,7 +16,7 @@ public class LC4DMenambangDanKerajinan
         int borderX = input.nextInt();
         int borderY = input.nextInt();
         int borderZ = input.nextInt(); input.nextLine();
-        String[] blockList = new String[128];
+        String[][] blockList = new String[128][4];
         int blockCounter = 0;
         while (input.hasNextLine())
         {
@@ -32,7 +32,8 @@ public class LC4DMenambangDanKerajinan
                 tempZ <= borderZ && tempZ >= 0
             );
             {
-                //
+                blockList[blockCounter] = new String(blockName + " " + tempX + " " + tempY + " " + tempZ).split("\s");
+                blockCounter++;
             }
         }
         input.close();
