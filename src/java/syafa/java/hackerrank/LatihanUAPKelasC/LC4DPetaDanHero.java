@@ -3,6 +3,7 @@ import java.util.*;
 
 public class LC4DPetaDanHero
 {
+    static final char EMPTY_SYMBOL = '.';
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -14,6 +15,7 @@ public class LC4DPetaDanHero
         {
             heroPosition[i] = input.nextLine().split("\s");
         }
+        input.close();
         if (row <= 0 || col <= 0)
         {
             System.out.println("Input tidak sesuai");
@@ -27,11 +29,13 @@ public class LC4DPetaDanHero
                 {
                     if (Integer.parseInt(heroPosition[k][0]) == i && Integer.parseInt(heroPosition[k][1]) == j)
                     {
-                        System.out.print(heroPosition[k][2] + ((col - j != 1) ? " " : ""));
+                        System.out.print(heroPosition[k][2] + ((col - j != 1) ? " " : "\n"));
+                        j++;
+                        break;
                     }
                 }
+                System.out.print(EMPTY_SYMBOL + ((col - j != 1) ? " " : "\n"));
             }
-            System.out.print("\n");
         }
     }
 }
