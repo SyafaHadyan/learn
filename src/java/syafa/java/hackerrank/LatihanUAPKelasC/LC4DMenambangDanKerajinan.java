@@ -10,6 +10,22 @@ public class LC4DMenambangDanKerajinan
         "wood",
         "stone"
     );
+    public static void showSortBlock(String[][] blockList,int borderX,int borderY,int borderZ)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < borderX; j++)
+            {
+                for (int k = 0; k < borderY; k++)
+                {
+                    for (int l = 0; l < borderZ; l++)
+                    {
+                        //
+                    }
+                }
+            }
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
