@@ -7,19 +7,24 @@ public class ActiveTraders
     {
         Scanner input = new Scanner(System.in);
         int traderAmount = Integer.parseInt(input.nextLine());
+        String[] traderListRaw = new String[traderAmount];
         HashMap<String,Integer> traderList = new HashMap<>();
         for (int i = 0; i < traderAmount; i++)
         {
-            String tempInput = input.nextLine();
-            if (traderList.containsKey(tempInput))
+            traderListRaw[i] = input.nextLine();
+        }
+        input.close();
+        Arrays.sort(traderListRaw);
+        for (int i = 0; i < traderAmount; i++)
+        {
+            if (traderList.containsKey(traderListRaw[i]))
             {
-                traderList.merge(tempInput,1,Integer::sum);
+                traderList.merge(traderListRaw[i],1,Integer::sum);
             }
             else
             {
-                traderList.put(tempInput,1);
+                traderList.put(traderListRaw[i],1);
             }
         }
-        input.close();
     }
 }
