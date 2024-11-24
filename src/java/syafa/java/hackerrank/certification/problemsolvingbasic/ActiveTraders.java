@@ -3,6 +3,7 @@ import java.util.*;
 
 public class ActiveTraders
 {
+    static final int THRESHOLD = 5;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -24,6 +25,13 @@ public class ActiveTraders
             else
             {
                 traderList.put(traderListRaw[i],1);
+            }
+        }
+        for (String i : traderList.keySet())
+        {
+            if ((double) traderList.get(i) / (double) traderAmount * 100 >= THRESHOLD)
+            {
+                System.out.println(i);
             }
         }
     }
