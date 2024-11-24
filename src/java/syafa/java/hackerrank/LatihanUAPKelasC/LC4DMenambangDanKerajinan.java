@@ -34,6 +34,7 @@ public class LC4DMenambangDanKerajinan
             {
                 blockList[blockCounter] = new String(blockName + " " + tempX + " " + tempY + " " + tempZ).split("\s");
                 blockCounter++;
+                System.err.println("Match " + blockName + " with " + tempX + " " + tempY + " " + tempZ + " " );
             }
         }
         input.close();
