@@ -1,18 +1,19 @@
 {
   "version": "0.2.0",
-  "configurations": [
+  "configurations":
+  [
     {
-      "type": "java",
       "name": "Debug Java",
+      "type": "java",
       "request": "launch",
       "mainClass": "${file}"
     },
     {
-      "type": "java",
       "name": "Debug Java (Redirect Input)",
+      "type": "java",
       "request": "launch",
       "mainClass": "${file}",
-      "args": ["<","${cwd}"]
+      "args": ["<","${file}/${workspaceFolder}"]
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -25,7 +26,8 @@
       "program": "${workspaceFolder}/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
-      "setupCommands": [
+      "setupCommands":
+      [
         {
           "description": "Enable pretty-printing for gdb",
           "text": "-enable-pretty-printing",
