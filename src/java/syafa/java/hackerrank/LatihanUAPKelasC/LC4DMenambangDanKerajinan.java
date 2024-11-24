@@ -13,9 +13,9 @@ public class LC4DMenambangDanKerajinan
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int x = input.nextInt();
-        int y = input.nextInt();
-        int z = input.nextInt(); input.nextLine();
+        int borderX = input.nextInt();
+        int borderY = input.nextInt();
+        int borderZ = input.nextInt(); input.nextLine();
         String[] blockList = new String[128];
         int blockCounter = 0;
         while (input.hasNextLine())
@@ -27,9 +27,9 @@ public class LC4DMenambangDanKerajinan
             if
             (
                 VALID_BLOCK.containsKey(blockName) &&
-                tempX <= x && tempX >= 0 &&
-                tempY <= y && tempY >= 0 &&
-                tempZ <= z && tempZ >= 0
+                tempX <= borderX && tempX >= 0 &&
+                tempY <= borderY && tempY >= 0 &&
+                tempZ <= borderZ && tempZ >= 0
             );
             {
                 //
