@@ -51,6 +51,10 @@ public class LC3DVisualisasiBangunDatar
                 System.out.print(' ');
             }
             spaceBefore--;
+            for (int j = 0; j < shapeSize; j++)
+            {
+                System.out.print(SHAPE + ((shapeSize - j != 1) ? " " : "\n"));
+            }
         }
     }
     public static void shapeBuilder(int shapeSize,String shapeRequest)
@@ -69,7 +73,7 @@ public class LC3DVisualisasiBangunDatar
         }
         if (shapeRequest.equalsIgnoreCase("JajarGenjang"))
         {
-            //
+            shapeBiulderParallelogram(shapeSize);
         }
         else
         {
