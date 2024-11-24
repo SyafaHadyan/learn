@@ -27,8 +27,8 @@ public class LC4DMenambangDanKerajinan
                     }
                 }
             }
-            System.err.println(Arrays.toString(availableBlock));
         }
+        System.err.println(Arrays.toString(availableBlock));
     }
     public static void main(String[] args)
     {
@@ -44,7 +44,15 @@ public class LC4DMenambangDanKerajinan
             String blockName = input.next();
             int tempX = input.nextInt();
             int tempY = input.nextInt();
-            int tempZ = input.nextInt(); input.nextLine();
+            int tempZ = input.nextInt();
+            try
+            {
+                input.nextLine();    
+            }
+            catch (NoSuchElementException e)
+            {
+                //
+            }
             if
             (
                 VALID_BLOCK.contains(blockName) &&
