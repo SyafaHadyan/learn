@@ -35,7 +35,23 @@ public class LC3DVisualisasiBangunDatar
     }
     public static void shapeBiulderParallelogram(int shapeSize)
     {
-        //
+        /*
+         *      * * * * * * 
+         *     * * * * * * 
+         *    * * * * * * 
+         *   * * * * * * 
+         *  * * * * * * 
+         * * * * * * *
+         */
+        int spaceBefore = shapeSize - 1;
+        for (int i = 0; i < shapeSize; i++)
+        {
+            for (int j = 0; j < spaceBefore; j++)
+            {
+                System.out.print(' ');
+            }
+            spaceBefore--;
+        }
     }
     public static void shapeBuilder(int shapeSize,String shapeRequest)
     {
