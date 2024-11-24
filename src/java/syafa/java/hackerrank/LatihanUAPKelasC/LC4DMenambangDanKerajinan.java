@@ -3,12 +3,12 @@ import java.util.*;
 
 public class LC4DMenambangDanKerajinan
 {
-    static final Map<String,Boolean> VALID_BLOCK = Map.ofEntries
+    static final List<String> VALID_BLOCK = Arrays.asList
     (
-        Map.entry("dirt",true),
-        Map.entry("grass",true),
-        Map.entry("wood",true),
-        Map.entry("stone",true)
+        "dirt",
+        "grass",
+        "wood",
+        "stone"
     );
     public static void main(String[] args)
     {
@@ -26,7 +26,7 @@ public class LC4DMenambangDanKerajinan
             int tempZ = input.nextInt(); input.nextLine();
             if
             (
-                VALID_BLOCK.containsKey(blockName) &&
+                VALID_BLOCK.contains(blockName) &&
                 tempX <= borderX && tempX >= 0 &&
                 tempY <= borderY && tempY >= 0 &&
                 tempZ <= borderZ && tempZ >= 0
