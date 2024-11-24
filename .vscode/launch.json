@@ -3,27 +3,6 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Part01",
-      "request": "launch",
-      "mainClass": "syafa.java.adventofcode.adventofcode2023.Day03.Part01",
-      "projectName": "learn_7d900611"
-    },
-    {
-      "type": "java",
-      "name": "House",
-      "request": "launch",
-      "mainClass": "syafa.java.codeinclass.oop.House",
-      "projectName": "learn_7d900611"
-    },
-    {
-      "type": "java",
-      "name": "Day4BinomialDistributionI",
-      "request": "launch",
-      "mainClass": "syafa.java.hackerrank.TenDaysOfStatistics.Day4BinomialDistributionI",
-      "projectName": "learn_7d900611"
-    },
-    {
-      "type": "java",
       "name": "Debug Java",
       "request": "launch",
       "mainClass": "${file}"
@@ -33,7 +12,7 @@
       "name": "Debug Java (Redirect Input)",
       "request": "launch",
       "mainClass": "${file}",
-      "args": ["<","${workspaceFolder}/f${fileBasename}"]
+      "args": ["<","${cwd}"]
     },
     {
       "name": "C/C++ Runner: Debug Session",
