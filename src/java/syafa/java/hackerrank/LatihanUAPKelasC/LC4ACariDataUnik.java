@@ -7,6 +7,8 @@ public class LC4ACariDataUnik
     {
         Scanner input = new Scanner(System.in);
         int dataAmount = Integer.parseInt(input.nextLine());
+        int dataUniqueAmount = 0;
+        String dataUniqueIndexList = "";
         int[] data = new int[dataAmount];
         for (int i = 0; i < data.length; i++)
         {
@@ -23,6 +25,11 @@ public class LC4ACariDataUnik
                     unique = false;
                     break;
                 }
+            }
+            if (unique)
+            {
+                dataUniqueAmount++;
+                dataUniqueIndexList = dataUniqueIndexList.concat(String.valueOf(data[i]));
             }
         }
     }
