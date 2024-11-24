@@ -15,15 +15,24 @@ public class LC3DNoGameNoLoop
         int startPosition = Integer.parseInt(input.nextLine());
         int finishPosition = Integer.parseInt(input.nextLine());
         int coinLocation = Integer.parseInt(input.nextLine());
-        boolean[] gameStatus = new boolean[2];
+        String[] gameStatus = new String[2];
         System.out.println("Game dimulai!");
         while (input.hasNextLine())
         {
             startPosition += MOVE_INSTRUCTION.get(input.nextLine());
+            if (startPosition == coinLocation)
+            {
+                gameStatus[1] = "Koin didapatkan!";
+            }
+            if (startPosition == finishPosition)
+            {
+                gameStatus[0] = "Game finish!";
+            }
             for (int i = 0; i < platformSize; i++)
             {
                 System.out.print((i == startPosition) ? '*' : '.');
             }
+            System.out.print("\n");
         }
         input.close();
     }
