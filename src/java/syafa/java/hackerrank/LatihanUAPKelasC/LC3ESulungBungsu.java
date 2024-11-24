@@ -22,6 +22,6 @@ public class LC3ESulungBungsu
             }
         }
         input.close();
-        System.out.println(lowest + " " + highest);
+        System.out.println(highest + " " + lowest);
     }
 }
