@@ -23,7 +23,11 @@ public class LC4DPetaDanHero
         }
         for (int i = 0; i < heroPosition.length; i++)
         {
-            if (Integer.parseInt(heroPosition[i][0]) < 0 || Integer.parseInt(heroPosition[i][1]) < 0)
+            if
+            (
+                Integer.parseInt(heroPosition[i][0]) < 0 || Integer.parseInt(heroPosition[i][1]) < 0 ||
+                Integer.parseInt(heroPosition[i][0]) > row - 1 || Integer.parseInt(heroPosition[i][1]) > col - 1
+            )
             {
                 System.out.println("Input tidak sesuai");
                 return;
