@@ -31,7 +31,13 @@ public class LC3DVisualisasiBangunDatar
     }
     public static void shapeBuilderSquare(int shapeSize)
     {
-        //
+        for (int i = 0; i < shapeSize; i++)
+        {
+            for (int j = 0; j < shapeSize; j++)
+            {
+                System.out.print(SHAPE + ((shapeSize - j != 1) ? " " : "\n"));
+            }
+        }
     }
     public static void shapeBiulderParallelogram(int shapeSize)
     {
@@ -48,7 +54,8 @@ public class LC3DVisualisasiBangunDatar
         }
         if (shapeRequest.equalsIgnoreCase("Persegi"))
         {
-            //
+            shapeBuilderSquare(shapeSize);
+            return;
         }
         if (shapeRequest.equalsIgnoreCase("JajarGenjang"))
         {
