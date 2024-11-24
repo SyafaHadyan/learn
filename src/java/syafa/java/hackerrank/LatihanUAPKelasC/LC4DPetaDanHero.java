@@ -1,6 +1,8 @@
 package syafa.java.hackerrank.LatihanUAPKelasC;
 import java.util.*;
 
+import javax.lang.model.util.ElementScanner14;
+
 public class LC4DPetaDanHero
 {
     static final char EMPTY_SYMBOL = '.';
@@ -37,16 +39,20 @@ public class LC4DPetaDanHero
         {
             for (int j = 0; j < col; j++)
             {
+                boolean heroExist = false;
                 for (int k = 0; k < heroPosition.length; k++)
                 {
                     if (Integer.parseInt(heroPosition[k][0]) == i && Integer.parseInt(heroPosition[k][1]) == j)
                     {
                         System.out.print(heroPosition[k][2]);
-                        j++;
+                        heroExist = true;
                         break;
                     }
                 }
-                System.out.print(EMPTY_SYMBOL);
+                if (!(heroExist))
+                {
+                    System.out.print(EMPTY_SYMBOL);
+                }
             }
             System.out.print("\n");
         }
