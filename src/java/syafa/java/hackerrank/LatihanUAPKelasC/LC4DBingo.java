@@ -22,6 +22,22 @@ public class LC4DBingo
                     verticalCount++;
                 }
             }
+            if (horizontalCount != markedCard.length)
+            {
+                horizontalCount = 0;
+            }
+            else
+            {
+                break;
+            }
+            if (verticalCount != markedCard.length)
+            {
+                verticalCount = 0;
+            }
+            else
+            {
+                break;
+            }
         }
         for (int i = 0; i < markedCard.length; i++)
         {
