@@ -14,8 +14,10 @@ public class LC3DTooManyLosingEgg
             if (Integer.parseInt(input.nextLine()) >= MINIMUM_EGG_QUALITY)
             {
                 minimumQuality++;
+                System.err.println("Match at index " + i);
             }
         }
         input.close();
+        System.out.println(minimumQuality);
     }
 }
