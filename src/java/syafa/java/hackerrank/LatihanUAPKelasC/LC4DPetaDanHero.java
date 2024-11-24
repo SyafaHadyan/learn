@@ -29,13 +29,14 @@ public class LC4DPetaDanHero
                 {
                     if (Integer.parseInt(heroPosition[k][0]) == i && Integer.parseInt(heroPosition[k][1]) == j)
                     {
-                        System.out.print(heroPosition[k][2] + ((col - j != 1) ? "" : "\n"));
+                        System.out.print(heroPosition[k][2]);
                         j++;
                         break;
                     }
                 }
-                System.out.print(EMPTY_SYMBOL + ((col - j != 1) ? "" : "\n"));
+                System.out.print(EMPTY_SYMBOL);
             }
+            System.out.print("\n");
         }
     }
 }
