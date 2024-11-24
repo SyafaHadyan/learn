@@ -36,7 +36,7 @@ public class LC4DBingo
                         break;
                     }
                 }
-                System.out.print(((marked) ? "O" : "." + ((card.length - j != 1) ? " " : "\n")));
+                System.out.print((((marked) ? "O" : ".") + ((card.length - j != 1) ? " " : "\n")));
             }
         }
     }
