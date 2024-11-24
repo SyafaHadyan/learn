@@ -6,12 +6,6 @@ public class LC3DVisualisasiBangunDatar
     static final char SHAPE = '*';
     public static void shapeBuilderTriangle(int shapeSize)
     {
-        /*
-         *    *
-         *   ***
-         *  *****
-         * *******
-         */
         int spaceBefore = shapeSize - 1;
         int level = 1;
         for (int i = 0; i < shapeSize; i++)
