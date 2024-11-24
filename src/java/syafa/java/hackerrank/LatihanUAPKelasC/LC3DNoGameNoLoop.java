@@ -24,7 +24,7 @@ public class LC3DNoGameNoLoop
         System.out.println();
         while (input.hasNextLine())
         {
-            String tempInput = input.nextLine();
+            String tempInput = input.nextLine().toLowerCase();
             int previousPosition = playerPosition;
             playerPosition += MOVE_INSTRUCTION.get(tempInput);
             if (playerPosition < 0 || playerPosition > platformSize - 1 || playerPosition == finishPosition)
