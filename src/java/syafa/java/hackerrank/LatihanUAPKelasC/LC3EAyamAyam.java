@@ -15,7 +15,9 @@ public class LC3EAyamAyam
             if (i % 3 == 0)
             {
                 initialChickenAmount -= (initialChickenAmount / 4);
+                System.err.println("DV");
             }
+            System.err.println(i + " " + initialChickenAmount);
         }
         System.out.println(initialChickenAmount);
     }
