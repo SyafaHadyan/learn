@@ -26,6 +26,6 @@ public class LC3FCatatanPakChanek
             }
         }
         input.close();
-        System.out.println('P' + '(' + secondWord + '|' + firstWord + ')' + ' ' + '=' + ' ' + (secondWordOccurence) + '/' + (firstWordOccurence));
+        System.out.println("P" + "(" + secondWord + "|" + firstWord + ")" + " " + "=" + " " + (secondWordOccurence) + "/" + (firstWordOccurence));
     }
 }
