@@ -3,6 +3,11 @@ import java.util.*;
 
 public class LC3DNoGameNoLoop
 {
+    static final Map<String,Integer> MOVE_INSTRUCTION = Map.ofEntries
+    (
+        Map.entry("left",-1),
+        Map.entry("right",1)
+    );
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
