@@ -66,6 +66,7 @@ public class LC3DVisualisasiBangunDatar
         if (shapeRequest.equalsIgnoreCase("JajarGenjang"))
         {
             shapeBiulderParallelogram(shapeSize);
+            return;
         }
         else
         {
