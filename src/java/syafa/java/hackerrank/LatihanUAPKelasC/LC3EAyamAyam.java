@@ -17,5 +17,6 @@ public class LC3EAyamAyam
                 initialChickenAmount -= (initialChickenAmount / 4);
             }
         }
+        System.out.println(initialChickenAmount);
     }
 }
