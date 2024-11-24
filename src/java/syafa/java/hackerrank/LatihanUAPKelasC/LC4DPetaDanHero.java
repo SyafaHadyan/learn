@@ -7,16 +7,17 @@ public class LC4DPetaDanHero
     {
         Scanner input = new Scanner(System.in);
         int row = input.nextInt();
-        int col = input.nextInt();
+        int col = input.nextInt(); input.nextLine();
         int heroCount = Integer.parseInt(input.nextLine());
-        for (int i = 0; i < args.length; i++)
+        String[][] heroPosition = new String[Math.abs(row)][Math.abs(col)];
+        for (int i = 0; i < Math.abs(row); i++)
         {
-            
+            heroPosition[i] = input.nextLine().split("\s");
         }
-        boolean print = true;
         if (row <= 0 || col <= 0)
         {
-            print = false;
+            System.out.println("Input tidak sesuai");
+            return;
         }
     }
 }
