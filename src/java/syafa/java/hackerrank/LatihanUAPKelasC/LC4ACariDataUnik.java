@@ -8,7 +8,6 @@ public class LC4ACariDataUnik
         Scanner input = new Scanner(System.in);
         int dataAmount = Integer.parseInt(input.nextLine());
         int dataUniqueAmount = 0;
-        String dataUniqueIndexList = "";
         int[] data = new int[dataAmount];
         for (int i = 0; i < data.length; i++)
         {
@@ -25,27 +24,16 @@ public class LC4ACariDataUnik
             if (!(duplicate))
             {
                 data[dataUniqueAmount] = tempInput;
+                dataUniqueAmount++;
             }
         }
         input.close();
-        for (int i = 0; i < data.length; i++)
-        {
-            boolean unique = true;
-            for (int j = 1 + i; j < data.length; j++)
-            {
-                if (data[i] == data[j])
-                {
-                    unique = false;
-                    break;
-                }
-            }
-            if (unique)
-            {
-                dataUniqueAmount++;
-                dataUniqueIndexList = dataUniqueIndexList.concat(" " + String.valueOf(data[i]));
-            }
-        }
         System.out.println("jumlah angka unik" + " : " + dataUniqueAmount);
-        System.out.println("daftar angka unik" + " :" + dataUniqueIndexList);
+        System.out.println("daftar angka unik" + " :");
+        for (int i = 0; i < dataUniqueAmount; i++)
+        {
+            System.out.print(" " + data[i]);
+        }
+        System.err.println();
     }
 }
