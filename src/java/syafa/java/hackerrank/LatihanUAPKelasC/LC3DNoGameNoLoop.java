@@ -17,6 +17,11 @@ public class LC3DNoGameNoLoop
         int coinLocation = Integer.parseInt(input.nextLine());
         String[] gameStatus = new String[2];
         System.out.println("Game dimulai!");
+        for (int i = 0; i < platformSize; i++)
+        {
+            System.out.print((i == startPosition) ? '*' : '.');
+        }
+        System.out.println();
         while (input.hasNextLine())
         {
             startPosition += MOVE_INSTRUCTION.get(input.nextLine());
