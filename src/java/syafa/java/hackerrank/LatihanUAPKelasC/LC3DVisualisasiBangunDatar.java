@@ -35,14 +35,6 @@ public class LC3DVisualisasiBangunDatar
     }
     public static void shapeBiulderParallelogram(int shapeSize)
     {
-        /*
-         *      * * * * * * 
-         *     * * * * * * 
-         *    * * * * * * 
-         *   * * * * * * 
-         *  * * * * * * 
-         * * * * * * *
-         */
         int spaceBefore = shapeSize - 1;
         for (int i = 0; i < shapeSize; i++)
         {
