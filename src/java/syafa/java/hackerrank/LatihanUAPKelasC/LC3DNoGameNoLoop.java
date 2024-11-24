@@ -25,9 +25,13 @@ public class LC3DNoGameNoLoop
         while (input.hasNextLine())
         {
             String tempInput = input.nextLine();
-            if (!(startPosition == 0 || startPosition == finishPosition))
+            if (gameStatus[0] == null)
             {
                 startPosition += MOVE_INSTRUCTION.get(tempInput);
+            }
+            if (startPosition < 0 || startPosition > platformSize)
+            {
+                startPosition = (startPosition < 0) ? startPosition++ : startPosition--;
             }
             if (startPosition == coinLocation)
             {
