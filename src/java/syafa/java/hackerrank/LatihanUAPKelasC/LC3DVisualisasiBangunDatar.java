@@ -3,6 +3,7 @@ import java.util.*;
 
 public class LC3DVisualisasiBangunDatar
 {
+    static final char SHAPE = '*';
     public static void shapeBuilderTriangle(int shapeSize)
     {
         /*
@@ -12,6 +13,7 @@ public class LC3DVisualisasiBangunDatar
          * *******
          */
         int spaceBefore = shapeSize - 1;
+        int level = 1;
         for (int i = 0; i < shapeSize; i++)
         {
             for (int j = 0; j < spaceBefore; j++)
@@ -19,6 +21,10 @@ public class LC3DVisualisasiBangunDatar
                 System.out.print(' ');
             }
             spaceBefore--;
+            for (int j = 0; j < level; j += 2)
+            {
+                System.out.print(SHAPE);
+            }
         }
     }
     public static void shapeBuilderSquare(int shapeSize)
@@ -35,7 +41,8 @@ public class LC3DVisualisasiBangunDatar
         System.err.println(shapeRequest);
         if (shapeRequest.equalsIgnoreCase("Segitiga"))
         {
-            //
+            shapeBuilderTriangle(shapeSize);
+            return;
         }
         if (shapeRequest.equalsIgnoreCase("Persegi"))
         {
