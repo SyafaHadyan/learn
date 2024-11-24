@@ -11,8 +11,17 @@ public class LC3ESulungBungsu
         int highest = Integer.MIN_VALUE;
         for (int i = 0; i < childAmount; i++)
         {
-            //
+            int tempInput = input.nextInt();
+            if (tempInput < lowest)
+            {
+                lowest = tempInput;
+            }
+            if (tempInput > highest)
+            {
+                highest = tempInput;
+            }
         }
         input.close();
+        System.out.println(lowest + " " + highest);
     }
 }
