@@ -21,10 +21,12 @@ public class LC3DVisualisasiBangunDatar
                 System.out.print(' ');
             }
             spaceBefore--;
-            for (int j = 0; j < level; j += 2)
+            for (int j = 0; j < level; j++)
             {
                 System.out.print(SHAPE);
             }
+            level += 2;
+            System.out.print("\n");
         }
     }
     public static void shapeBuilderSquare(int shapeSize)
