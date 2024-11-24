@@ -5,22 +5,27 @@ public class LC4DBingo
 {
     public static boolean checkCard (String[][] markedCard)
     {
+        int horizontalCount = 0;
+        int verticalCount = 0;
         for (int i = 0; i < markedCard.length; i++)
         {
-            int horizontalCount = 0;
-            int verticalCount = 0;
             for (int j = 0; j < markedCard.length; j++)
             {
-                if (markedCard[i][j].equalsIgnoreCase("o"))
+                if (markedCard[i][j] != null && markedCard[i][j].equalsIgnoreCase("o"))
                 {
                     horizontalCount++;
                 }
-                if (markedCard[j][i].equalsIgnoreCase("o"))
+                if (markedCard[j][i] != null && markedCard[j][i].equalsIgnoreCase("o"))
                 {
                     verticalCount++;
                 }
             }
         }
+        if (horizontalCount == markedCard.length || verticalCount == markedCard.length)
+        {
+            return true;
+        }
+        return false;
     }
     public static void main(String[] args)
     {
@@ -58,7 +63,14 @@ public class LC4DBingo
                     }
                 }
                 System.err.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
-                markedCard[i][j] = ((marked) ? "o" : ".");
+                if (!(checkCard(markedCard)))
+                {
+                    markedCard[i][j] = "o";
+                }
+                else
+                {
+                    markedCard[i][j] = ".";
+                }
             }
         }
         System.err.println();
