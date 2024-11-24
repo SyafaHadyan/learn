@@ -1,8 +1,6 @@
 package syafa.java.hackerrank.LatihanUAPKelasC;
 import java.util.*;
 
-import javax.lang.model.util.ElementScanner14;
-
 public class LC4DPetaDanHero
 {
     static final char EMPTY_SYMBOL = '.';
