@@ -29,8 +29,20 @@ public class LC4DBingo
             {
                 firstDiagonalCount++;
             }
+            if
+            (
+                markedCard[markedCard.length - i - 1][markedCard.length - i - 1] != null &&
+                markedCard[markedCard.length - i - 1][markedCard.length - i - 1].equalsIgnoreCase("o")
+            )
+            {
+                secondDiagonalCount++;
+            }
         }
-        if (horizontalCount == markedCard.length || verticalCount == markedCard.length)
+        if
+        (
+            horizontalCount == markedCard.length || verticalCount == markedCard.length ||
+            firstDiagonalCount == markedCard.length || secondDiagonalCount == markedCard.length
+        )
         {
             return true;
         }
