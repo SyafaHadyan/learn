@@ -9,13 +9,18 @@ public class LC4ACariDataUnik
         int dataAmount = Integer.parseInt(input.nextLine());
         int dataUniqueAmount = 0;
         int[] data = new int[dataAmount];
+        int[] dataUnique = new int[dataAmount];
         for (int i = 0; i < data.length; i++)
         {
-            int tempInput = input.nextInt();
+            data[i] = input.nextInt();
+        }
+        input.close();
+        for (int i = 0; i < data.length; i++)
+        {
             boolean duplicate = false;
-            for (int j = 0; j < data.length; j++)
+            for (int j = 1 + i; j < data.length; j++)
             {
-                if (data[j] == tempInput)
+                if (data[i] == data[j])
                 {
                     duplicate = true;
                     break;
@@ -23,13 +28,12 @@ public class LC4ACariDataUnik
             }
             if (!(duplicate))
             {
-                data[dataUniqueAmount] = tempInput;
+                dataUnique[dataUniqueAmount] = data[i];
                 dataUniqueAmount++;
             }
         }
-        input.close();
         System.out.println("jumlah angka unik" + " : " + dataUniqueAmount);
-        System.out.println("daftar angka unik" + " :");
+        System.out.print("daftar angka unik" + " :");
         for (int i = 0; i < dataUniqueAmount; i++)
         {
             System.out.print(" " + data[i]);
