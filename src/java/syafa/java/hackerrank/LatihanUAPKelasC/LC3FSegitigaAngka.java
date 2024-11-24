@@ -10,9 +10,17 @@ public class LC3FSegitigaAngka
         int staircaseSize = Integer.parseInt(input.nextLine());
         input.close();
         int counter = 0;
-        for (int i = 0; i < staircaseSize; i++)
+        for (int i = 0; i <= staircaseSize; i++)
         {
-            //
+            for (int j = 0; j <= i; j++)
+            {
+                System.out.print(counter + ((i - j != 0) ? " " : ""));
+                counter++;
+                if (counter > NUMBER_LIMIT)
+                {
+                    counter = 0;
+                }
+            }
         }
     }
 }
