@@ -24,7 +24,11 @@ public class LC3DNoGameNoLoop
         System.out.println();
         while (input.hasNextLine())
         {
-            startPosition += MOVE_INSTRUCTION.get(input.nextLine());
+            String tempInput = input.nextLine();
+            if (!(startPosition == 0 || startPosition == finishPosition))
+            {
+                startPosition += MOVE_INSTRUCTION.get(tempInput);
+            }
             if (startPosition == coinLocation)
             {
                 gameStatus[1] = "Koin didapatkan!";
