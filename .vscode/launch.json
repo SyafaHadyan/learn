@@ -13,7 +13,7 @@
       "type": "java",
       "request": "launch",
       "mainClass": "${file}",
-      "args": ["<","${file}/${workspaceFolder}"]
+      "args": ["<","${file}"]
     },
     {
       "name": "C/C++ Runner: Debug Session",
