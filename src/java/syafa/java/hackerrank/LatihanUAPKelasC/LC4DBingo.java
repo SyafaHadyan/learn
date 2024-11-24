@@ -38,6 +38,10 @@ public class LC4DBingo
                 secondDiagonalCount++;
             }
         }
+        System.err.println("HC " + horizontalCount);
+        System.err.println("VC " + verticalCount);
+        System.err.println("FD " + firstDiagonalCount);
+        System.err.println("SD " + secondDiagonalCount);
         if
         (
             horizontalCount == markedCard.length || verticalCount == markedCard.length ||
@@ -84,12 +88,14 @@ public class LC4DBingo
                     }
                 }
                 System.err.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
-                if (!(checkCard(markedCard)))
+                if (!(checkCard(markedCard)) && marked)
                 {
+                    System.err.println("NM");
                     markedCard[i][j] = "o";
                 }
                 else
                 {
+                    System.err.println("M");
                     markedCard[i][j] = ".";
                 }
             }
@@ -99,7 +105,7 @@ public class LC4DBingo
         {
             for (int j = 0; j < markedCard.length; j++)
             {
-                System.err.print(markedCard[i][j] + ((markedCard.length - j != 1) ? " " : "\n"));
+                System.out.print(markedCard[i][j] + ((markedCard.length - j != 1) ? " " : "\n"));
             }
         }
     }
