@@ -87,7 +87,7 @@ public class LC4DBingo
                         break;
                     }
                 }
-                System.err.print((((marked) ? "o" : ".") + ((card.length - j != 1) ? " " : "\n")));
+                System.err.print("\n" + "CR " + ((marked) ? "o" : ".") + "\n\n");
                 if (!(checkCard(markedCard)) && marked)
                 {
                     System.err.println("NM");
@@ -95,7 +95,7 @@ public class LC4DBingo
                 }
                 else
                 {
-                    System.err.println("M");
+                    System.err.println("MC");
                     markedCard[i][j] = ".";
                 }
             }
