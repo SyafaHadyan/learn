@@ -27,6 +27,7 @@ public class LC4DMenambangDanKerajinan
                     }
                 }
             }
+            System.err.println(Arrays.toString(availableBlock));
         }
     }
     public static void main(String[] args)
@@ -49,7 +50,8 @@ public class LC4DMenambangDanKerajinan
                 VALID_BLOCK.contains(blockName) &&
                 tempX <= borderX && tempX >= 0 &&
                 tempY <= borderY && tempY >= 0 &&
-                tempZ <= borderZ && tempZ >= 0
+                tempZ <= borderZ && tempZ >= 0 &&
+                (blockName.equalsIgnoreCase("stop"))
             );
             {
                 blockList[blockCounter] = new String(blockName + " " + tempX + " " + tempY + " " + tempZ).split("\s");
@@ -61,5 +63,6 @@ public class LC4DMenambangDanKerajinan
             }
         }
         input.close();
+        showSortBlock(blockList,availableBlock,borderX,borderY,borderZ);
     }
 }
