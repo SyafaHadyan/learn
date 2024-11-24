@@ -27,7 +27,7 @@ public class LC3DNoGameNoLoop
             String tempInput = input.nextLine();
             int previousPosition = startPosition;
             startPosition += MOVE_INSTRUCTION.get(tempInput);
-            if (startPosition < 0 || startPosition > platformSize || gameStatus[0] != null)
+            if (startPosition < 0 || startPosition > platformSize - 1 || gameStatus[0] != null)
             {
                 startPosition = previousPosition;
             }
