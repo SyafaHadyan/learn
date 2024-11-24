@@ -11,6 +11,7 @@ public class LC3EAyamAyam
         input.close();
         for (int i = 1; i <= dayAmount; i++)
         {
+            initialChickenAmount *= 2;
             if (i % 3 == 0)
             {
                 initialChickenAmount -= (initialChickenAmount / 4);
