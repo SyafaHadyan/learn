@@ -21,6 +21,14 @@ public class LC4DPetaDanHero
             System.out.println("Input tidak sesuai");
             return;
         }
+        for (int i = 0; i < heroPosition.length; i++)
+        {
+            if (Integer.parseInt(heroPosition[i][0]) < 0 || Integer.parseInt(heroPosition[i][1]) < 0)
+            {
+                System.out.println("Input tidak sesuai");
+                return;
+            }
+        }
         for (int i = 0; i < row; i++)
         {
             for (int j = 0; j < col; j++)
