@@ -10,18 +10,15 @@ public class LC4DMenambangDanKerajinan
         "wood",
         "stone"
     );
-    public static void showSortBlock(String[][] blockList,int borderX,int borderY,int borderZ)
+    public static void showSortBlock(String[][] blockList,int[] availableBlock,int borderX,int borderY,int borderZ)
     {
         for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < borderX; j++)
+            for (int j = 0; j < availableBlock.length; j++)
             {
-                for (int k = 0; k < borderY; k++)
+                for (int k = 0; k < availableBlock.length; k++)
                 {
-                    for (int l = 0; l < borderZ; l++)
-                    {
-                        //
-                    }
+                    if (availableBlock[])
                 }
             }
         }
@@ -33,6 +30,7 @@ public class LC4DMenambangDanKerajinan
         int borderY = input.nextInt();
         int borderZ = input.nextInt(); input.nextLine();
         String[][] blockList = new String[128][4];
+        int[][] availableBlock = new int[128][3];
         int blockCounter = 0;
         while (input.hasNextLine())
         {
@@ -49,6 +47,9 @@ public class LC4DMenambangDanKerajinan
             );
             {
                 blockList[blockCounter] = new String(blockName + " " + tempX + " " + tempY + " " + tempZ).split("\s");
+                availableBlock[blockCounter][0] = tempX;
+                availableBlock[blockCounter][1] = tempY;
+                availableBlock[blockCounter][2] = tempZ;
                 blockCounter++;
                 System.err.println("Match " + blockName + " with " + tempX + " " + tempY + " " + tempZ + " " );
             }
