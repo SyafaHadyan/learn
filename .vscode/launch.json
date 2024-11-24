@@ -24,9 +24,16 @@
     },
     {
       "type": "java",
-      "name": "Debug (Launch) - Current File",
+      "name": "Debug Java",
       "request": "launch",
       "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Debug Java (Redirect Input)",
+      "request": "launch",
+      "mainClass": "${file}",
+      "args": ["<","${workspaceFolder}/f${fileBasename}"]
     },
     {
       "name": "C/C++ Runner: Debug Session",
