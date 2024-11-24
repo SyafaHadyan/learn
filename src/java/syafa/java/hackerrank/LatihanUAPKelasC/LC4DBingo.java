@@ -16,6 +16,21 @@ public class LC4DBingo
             }
             input.nextLine();
         }
+        int announcementAmount = Integer.parseInt(input.nextLine());
+        for (int i = 0; i < card.length; i++)
+        {
+            int tempInput = Integer.parseInt(input.nextLine());
+            for (int j = 0; j < card.length; j++)
+            {
+                for (int k = 0; k < card.length; k++)
+                {
+                    if (card[j][k] == tempInput)
+                    {
+                        System.out.print("O" + ((card.length - k != 1) ? " " : "\n"));
+                    }
+                }
+            }
+        }
         input.close();
     }
 }
