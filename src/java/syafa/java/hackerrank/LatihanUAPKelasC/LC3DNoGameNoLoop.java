@@ -12,46 +12,44 @@ public class LC3DNoGameNoLoop
     {
         Scanner input = new Scanner(System.in);
         int platformSize = Integer.parseInt(input.nextLine());
-        int startPosition = Integer.parseInt(input.nextLine());
+        int playerPosition = Integer.parseInt(input.nextLine());
         int finishPosition = Integer.parseInt(input.nextLine());
         int coinLocation = Integer.parseInt(input.nextLine());
-        String[] gameStatus = new String[2];
+        ArrayList<String> gameStatus = new ArrayList<>();
+        Map<Integer,String> gameMapStatus = Map.ofEntries
+        (
+            Map.entry(coinLocation,"Koin didapatkan"),
+            Map.entry(finishPosition,"Game finish")
+        );
         System.out.println("Game dimulai!");
         for (int i = 0; i < platformSize; i++)
         {
-            System.out.print((i == startPosition) ? '*' : '.');
+            System.out.print((i == playerPosition) ? '*' : '.');
         }
         System.out.println();
         while (input.hasNextLine())
         {
             String tempInput = input.nextLine();
-            int previousPosition = startPosition;
-            startPosition += MOVE_INSTRUCTION.get(tempInput);
-            if (startPosition < 0 || startPosition > platformSize - 1 || gameStatus[0] != null)
+            int previousPosition = playerPosition;
+            playerPosition += MOVE_INSTRUCTION.get(tempInput);
+            if (playerPosition < 0 || playerPosition > platformSize - 1)
             {
-                startPosition = previousPosition;
+                playerPosition = previousPosition;
             }
-            if (startPosition == coinLocation)
+            if (gameMapStatus.containsKey(playerPosition) && gameStatus.size() <= 2)
             {
-                gameStatus[1] = "Koin didapatkan!";
-            }
-            if (startPosition == finishPosition)
-            {
-                gameStatus[0] = "Game finish!";
+                gameStatus.add(gameMapStatus.get(playerPosition));
             }
             for (int i = 0; i < platformSize; i++)
             {
-                System.out.print((i == startPosition) ? '*' : '.');
+                System.out.print((i == playerPosition) ? '*' : '.');
             }
             System.out.print("\n");
         }
         input.close();
-        for (int i = 0; i < gameStatus.length; i++)
+        for (int i = 0; i < gameStatus.size(); i++)
         {
-            if (gameStatus[i] != null)
-            {
-                System.out.println(gameStatus[i]);
-            }
+            System.out.println(gameStatus.get(i));
         }
     }
 }
