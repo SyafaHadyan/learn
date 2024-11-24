@@ -18,9 +18,9 @@ public class LC4ACariDataUnik
         for (int i = 0; i < data.length; i++)
         {
             boolean duplicate = false;
-            for (int j = 1 + i; j < data.length; j++)
+            for (int j = 0; j < data.length; j++)
             {
-                if (data[i] == data[j])
+                if (j != i && data[i] == data[j])
                 {
                     duplicate = true;
                     break;
