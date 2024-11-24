@@ -35,5 +35,12 @@ public class LC3DNoGameNoLoop
             System.out.print("\n");
         }
         input.close();
+        for (int i = 0; i < gameStatus.length; i++)
+        {
+            if (gameStatus[i] != null)
+            {
+                System.out.println(gameStatus[i]);
+            }
+        }
     }
 }
