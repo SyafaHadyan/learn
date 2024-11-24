@@ -17,22 +17,27 @@ public class LC4DBingo
             input.nextLine();
         }
         int announcementAmount = Integer.parseInt(input.nextLine());
+        int[] announcement = new int[announcementAmount];
         for (int i = 0; i < announcementAmount; i++)
         {
-            int tempInput = Integer.parseInt(input.nextLine());
-            boolean marked = false;
-            for (int j = 0; j < card.length; j++)
-            {
-                for (int k = 0; k < card.length; k++)
-                {
-                    if (card[j][k] == tempInput)
-                    {
-                        marked = true;
-                    }
-                    System.out.print(((marked) ? "O" : ".") + ((card.length - k != 1) ? " " : "\n"));
-                }
-            }
+            announcement[i] = Integer.parseInt(input.nextLine());
         }
         input.close();
+        for (int i = 0; i < card.length; i++)
+        {
+            for (int j = 0; j < card.length; j++)
+            {
+                boolean marked = false;
+                for (int k = 0; k < announcement.length; k++)
+                {
+                    if (card[i][j] == announcement[k])
+                    {
+                        marked = true;
+                        break;
+                    }
+                }
+                System.out.print(((marked) ? "O" : "." + ((card.length - j != 1) ? " " : "\n")));
+            }
+        }
     }
 }
