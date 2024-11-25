@@ -18,7 +18,7 @@ public class LC4ELaporanKaryawan
         Scanner input = new Scanner(System.in);
         int employeeAmount = Integer.parseInt(input.nextLine());
         String[][] employeeDataList = new String[employeeAmount][DAY_LOG + 2];
-        int[] employeeAttendanceDataList = new int[employeeAmount];
+        int[][] employeeAttendanceDataList = new int[employeeAmount][ATTENDANCE_INDEX.size()];
         for (int i = 0; i < employeeDataList.length; i++)
         {
             for (int j = 0; j < 2; j++)
@@ -29,10 +29,11 @@ public class LC4ELaporanKaryawan
             {
                 String tempInput = input.next();
                 employeeDataList[i][j] = tempInput;
-                employeeAttendanceDataList[ATTENDANCE_INDEX.get(tempInput)]++;
+                employeeAttendanceDataList[i][ATTENDANCE_INDEX.get(tempInput)]++;
             }
             input.nextLine();
             System.err.println(Arrays.toString(employeeDataList[i]));
+            System.err.println("ATDM " + Arrays.toString(employeeAttendanceDataList[i]));
         }
         input.close();
     }
