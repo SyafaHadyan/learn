@@ -11,12 +11,17 @@ public class LC4EPenilaianSoal
     {
         Scanner input = new Scanner(System.in);
         int studentAmount = Integer.parseInt(input.nextLine());
-        int[][] studentGrade = new int[studentAmount][ANSWER_KEY.length];
-        for (int i = 0; i < studentGrade.length; i++)
+        int[][] studentGradeList = new int[studentAmount][ANSWER_KEY.length];
+        int[] studentGrade = new int[studentAmount];
+        for (int i = 0; i < studentGradeList.length; i++)
         {
-            for (int j = 0; j < studentGrade[i].length; j++)
+            for (int j = 0; j < studentGradeList[i].length; j++)
             {
-                studentGrade[i][j] = input.nextInt();
+                studentGradeList[i][j] = input.nextInt();
+                if (studentGradeList[i][j] == ANSWER_KEY[j])
+                {
+                    studentGrade[i]++;
+                }
             }
             input.nextLine();
         }
