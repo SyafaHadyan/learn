@@ -13,6 +13,10 @@ public class LC4ELaporanKaryawan
         Map.entry("D",4),
         Map.entry("T",5)
     );
+    public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
+    {
+        //
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -36,5 +40,6 @@ public class LC4ELaporanKaryawan
             System.err.println("ATDM " + Arrays.toString(employeeAttendanceDataList[i]));
         }
         input.close();
+        reportBuilder(employeeDataList,employeeAttendanceDataList);
     }
 }
