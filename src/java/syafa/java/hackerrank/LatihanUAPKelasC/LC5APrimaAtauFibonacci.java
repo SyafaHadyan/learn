@@ -56,7 +56,11 @@ public class LC5APrimaAtauFibonacci
         input.close();
         for (int i = 0; i < numberList.length; i++)
         {
-            System.out.println(primeSequence(numberList[i]));;
+            int primeAt = primeSequence(numberList[i]);
+            if (primeAt != 0)
+            {
+                System.out.println("Bilangan tersebut merupakan bilangan prima ke" + " - " + primeAt);
+            }
         }
     }
 }
