@@ -1,2 +1,7 @@
 move right
+move up
+move left
+move left
+step 2
+move down
 stop
