@@ -5,7 +5,7 @@ public class LC4EPenilaianSoal
 {
     static final String[] ANSWER_KEY =
     {
-        "D","B","D","C","C","C","D","A","E","A","D"
+        "D","B","D","C","C","D","A","E","A","D"
     };
     public static void main(String[] args)
     {
