@@ -64,7 +64,7 @@ public class LC5DLegendaBilangan
         {
             long tempInput = Long.parseLong(input.nextLine());
             numberList[i] = tempInput;
-            if (tempInput < 0)
+            if (tempInput <= 0)
             {
                 validInput = false;
             }
