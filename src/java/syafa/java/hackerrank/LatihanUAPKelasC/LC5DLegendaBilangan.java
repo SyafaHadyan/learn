@@ -3,6 +3,14 @@ import java.util.*;
 
 public class LC5DLegendaBilangan
 {
+    public static boolean isMultipleOfTen(long number)
+    {
+        while (number >= 0 && number % 10 == 0)
+        {
+            number /= 10;
+        }
+        return number == 1;
+    }
     public static boolean checkKaprekar(long number)
     {
         if (number == 1)
@@ -13,10 +21,10 @@ public class LC5DLegendaBilangan
         number *= number;
         String firstNumber = String.valueOf(number);
         String secondNumber = String.valueOf(number);
-        if (String.valueOf(number).length() == 1)
+        if (String.valueOf(number).length() == 1 || isMultipleOfTen(initialNumber))
         {
-            System.err.println("DGCT 1");
-            System.err.println(number + "\n");
+            System.err.println("DGCT False");
+            System.err.println(initialNumber + "\n" + number + "\n");
             return false;
         }
         for (int i = 1; i < String.valueOf(number).length(); i++)
