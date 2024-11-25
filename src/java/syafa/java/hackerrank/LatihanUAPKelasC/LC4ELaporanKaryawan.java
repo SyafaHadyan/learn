@@ -15,7 +15,7 @@ public class LC4ELaporanKaryawan
             {
                 employeeList[i][j] = input.nextLine();
             }
-            for (int j = employeeList.length - DAY_LOG; j < DAY_LOG; j++)
+            for (int j = 2; j < DAY_LOG; j++)
             {
                 employeeList[i][j] = input.next();
             }
