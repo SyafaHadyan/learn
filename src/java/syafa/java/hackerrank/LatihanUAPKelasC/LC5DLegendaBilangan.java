@@ -55,7 +55,7 @@ public class LC5DLegendaBilangan
         {
             for (int i = 0; i < kaprekarValidity.length; i++)
             {
-                System.out.println(numberList[i] + " " + ((kaprekarValidity[i]) ? "adalah" : "bukan") + " " + "bilangan kaprekar");
+                System.out.println(numberList[i] + " " + ((kaprekarValidity[i]) ? "adalah" : "bukan") + " " + "bilangan Kaprekar");
             }
             return;
         }
