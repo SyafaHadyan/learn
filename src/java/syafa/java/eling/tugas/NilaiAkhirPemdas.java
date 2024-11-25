@@ -3,10 +3,23 @@ import java.util.Scanner;
 
 class Student
 {
-    private String[][] studentDataGrade;
+    String[][] studentDataGrade;
     private int totalGrade;
     private int studentAboveAverageAmount;
     private double average;
+    public Student()
+    {
+        String[][] defaultEmptyDebug = 
+        {
+            {"Dengklek Sengklek Moklif","100"},
+            {"Moklif Sengklek Dengklek","90"}
+        };
+        this.studentDataGrade = defaultEmptyDebug;
+    }
+    Student(String[][] inputData)
+    {
+        setStudentData(inputData);
+    }
     void setStudentData(String[][] inputData)
     {
         this.studentDataGrade = inputData;
@@ -61,7 +74,6 @@ public class NilaiAkhirPemdas
 {
     public static void main(String[] args)
     {
-        Student studentDataTransfer = new Student();
         Scanner input = new Scanner(System.in);
         int studentAmount = input.nextInt();
         input.nextLine();
@@ -71,7 +83,7 @@ public class NilaiAkhirPemdas
             studentData[i] = input.nextLine().split("\s");
         }
         input.close();
-        studentDataTransfer.setStudentData(studentData);
+        Student studentDataTransfer = new Student(studentData);
         String[] studentAboveAverageAmount = studentDataTransfer.getStudentAboveAverage();
         System.out.printf("%s%-2c%.2f\n","Rata-rata",':',studentDataTransfer.getAverage());
         System.out.print("Praktikan dengan nilai di atas rata-rata:");
