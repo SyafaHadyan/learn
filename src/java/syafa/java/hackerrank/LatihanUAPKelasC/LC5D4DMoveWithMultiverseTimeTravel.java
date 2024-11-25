@@ -81,7 +81,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void step(int stepPosition)
     {
-        for (int i = 0; i < position.length; i++)c
+        for (int i = 0; i < position.length; i++)
         {
             for (int j = 0; j < position.length; j++)
             {
