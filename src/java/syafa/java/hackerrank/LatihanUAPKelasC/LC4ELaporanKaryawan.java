@@ -28,14 +28,27 @@ public class LC4ELaporanKaryawan
         Map.entry("Penjualan",1),
         Map.entry("Keuangan",2)
     );
-    static final double[][] ATTENDANCE_PERFORMANCE_CATEGORIES =
+    static final int[][] ATTENDANCE_PERFORMANCE_CATEGORIES =
     {
         {89,80},
         {84,75},
         {79,70}
     };
-    public static String performanceStatus(String division,double attendancePerformance)
+    static final int[][] ATTENDANCE_CONSTRAINTS =
     {
+        {90,1,2},
+        {85,2},
+        {80,1,3}
+    };
+    public static String performanceStatus(String division,double attendancePerformance,int[] attendanceDataSpecialRequest)
+    {
+        if (division.equalsIgnoreCase("Penjualan"))
+        {
+            if (attendanceDataSpecialRequest[0] > 5)
+            {
+
+            }
+        }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
         {
             return "Sangat Baik";
