@@ -56,7 +56,7 @@ public class LC5APrimaAtauFibonacci
         input.close();
         for (int i = 0; i < numberList.length; i++)
         {
-            //
+            System.out.println(primeSequence(numberList[i]));;
         }
     }
 }
