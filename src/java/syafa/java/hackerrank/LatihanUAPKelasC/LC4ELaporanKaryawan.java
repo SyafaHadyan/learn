@@ -20,6 +20,7 @@ public class LC4ELaporanKaryawan
                 employeeList[i][j] = input.next();
             }
             input.nextLine();
+            System.err.println(Arrays.toString(employeeList[i]));
         }
         input.close();
     }
