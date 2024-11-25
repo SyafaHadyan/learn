@@ -31,6 +31,24 @@ public class LC5D4DMoveWithMultiverseTimeTravel
         }
         return currentCoordinate;
     }
+    public static void printUtil()
+    {
+        for (int i = 0; i <= worldCounter; i++)
+        {
+            for (int j = 0; j <= stepCounter[i]; j++)
+            {
+                for (int k = 0; k < WORLD_SIZE_LIMIT; k++)
+                {
+                    for (int l = 0; l < WORLD_SIZE_LIMIT; l++)
+                    {
+                        System.out.print(worldData[i][j][k][l]);
+                    }
+                    System.out.println();
+                }
+            }
+        }
+        System.err.println();
+    }
     public static void initialStartingPosition()
     {
         position[worldCounter][stepCounter[worldCounter]] = INITIAL_POSITION;
@@ -93,6 +111,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             }
             if (tempInput[0].equalsIgnoreCase("Stop"))
             {
+                printUtil();
                 break;
             }
         }
