@@ -19,11 +19,11 @@ public class LC5DLegendaBilangan
             System.err.println(number + "\n");
             return false;
         }
-        for (int i = 0; i < String.valueOf(number).length() - 1; i++)
+        for (int i = 1; i < String.valueOf(number).length(); i++)
         {
-            firstNumber = firstNumber.substring(i,(firstNumber.length() / 2));
-            secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
-            if (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber) == initialNumber)
+            String tempFirstNumber = firstNumber.substring(0,i);
+            String tempSecondNumber = secondNumber.substring(tempFirstNumber.length(),secondNumber.length());
+            if (Integer.parseInt(tempFirstNumber) + Integer.parseInt(tempSecondNumber) == initialNumber)
             {
                 return true;
             }
