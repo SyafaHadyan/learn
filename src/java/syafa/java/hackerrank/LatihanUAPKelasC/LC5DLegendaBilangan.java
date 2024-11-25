@@ -15,10 +15,12 @@ public class LC5DLegendaBilangan
         Scanner input = new Scanner(System.in);
         int numberAmount = Integer.parseInt(input.nextLine());
         boolean[] kaprekarValidity = new boolean[numberAmount];
+        int[] numberList = new int[numberAmount];
         boolean validInput = true;
         for (int i = 0; i < kaprekarValidity.length; i++)
         {
             int tempInput = Integer.parseInt(input.nextLine());
+            numberList[i] = tempInput;
             if (tempInput < 1)
             {
                 validInput = false;
@@ -30,8 +32,10 @@ public class LC5DLegendaBilangan
         {
             for (int i = 0; i < kaprekarValidity.length; i++)
             {
-                
+                System.out.println(numberList[i] + " " + ((kaprekarValidity[i]) ? "adalah" : "bukan") + " " + "bilangan kaprekar");
             }
+            return;
         }
+        System.out.println("Program Error");
     }
 }
