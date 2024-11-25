@@ -36,7 +36,11 @@ public class LC4ELaporanKaryawan
     };
     public static String performanceStatus(String division,double attendancePerformance)
     {
-        if 
+        if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
+        {
+            return "Sangat Baik";
+        }
+        return "Perlu Peningkatan";
     }
     public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
     {
