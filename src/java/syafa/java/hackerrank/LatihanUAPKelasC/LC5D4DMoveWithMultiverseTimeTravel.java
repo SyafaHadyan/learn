@@ -7,6 +7,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     static final int STEP_LIMIT = 16;
     static final int WORLD_DUPLICATE_LIMIT = 8;
     static final int INITIAL_POSITION = 11;
+    static final int DIVIDER_WIDTH = 10;
     static String[][][][] worldData = new String[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][WORLD_SIZE_LIMIT][WORLD_SIZE_LIMIT];
     static int[][] position = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT];
     static int[] stepCounter = new int[WORLD_DUPLICATE_LIMIT];
@@ -45,9 +46,13 @@ public class LC5D4DMoveWithMultiverseTimeTravel
                         System.out.print(worldData[i][j][k][l] + ((WORLD_SIZE_LIMIT - l != 1) ? " " : "\n"));
                     }
                 }
+                for (int k = 0; k < DIVIDER_WIDTH; k++)
+                {
+                    System.out.print('-');
+                }
+                System.out.print("\n");
             }
         }
-        System.err.println();
     }
     public static void initialStartingPosition()
     {
@@ -60,7 +65,6 @@ public class LC5D4DMoveWithMultiverseTimeTravel
                 ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i) + String.valueOf(j)) ? "o" : "."));
             }
         }
-        System.err.println();
     }
     public static void move(String direction)
     {
@@ -74,7 +78,6 @@ public class LC5D4DMoveWithMultiverseTimeTravel
                 ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i) + String.valueOf(j)) ? "o" : "."));
             }
         }
-        System.err.println();
     }
     public static void main(String[] args)
     {
