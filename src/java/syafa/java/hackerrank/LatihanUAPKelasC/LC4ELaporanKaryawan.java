@@ -49,6 +49,10 @@ public class LC4ELaporanKaryawan
             {
                 return "Perlu Pengawasan";
             }
+            if (attendanceDataSpecialRequest[2] > ATTENDANCE_CONSTRAINTS[1][1])
+            {
+                return "Terlambat Berlebihan";
+            }
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
         {
