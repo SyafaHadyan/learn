@@ -20,6 +20,7 @@ public class LC4EPenilaianSoal
             {
                 if (studentAnswerList[i][j].equalsIgnoreCase(ANSWER_KEY[j]))
                 {
+                    System.err.println("MT " + studentAnswerList[i][j]);
                     studentGrade[i]++;
                 }
             }
