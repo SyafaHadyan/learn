@@ -4,6 +4,7 @@ import java.util.*;
 public class LC4ELaporanKaryawan
 {
     static final int DAY_LOG = 30;
+    static final int SALES_SPECIAL_CONSTRAINT = 5;
     static final Map<String,Integer> ATTENDANCE_INDEX = Map.ofEntries
     (
         Map.entry("H",0),
@@ -44,9 +45,9 @@ public class LC4ELaporanKaryawan
     {
         if (division.equalsIgnoreCase("Penjualan"))
         {
-            if (attendanceDataSpecialRequest[0] > 5)
+            if (attendanceDataSpecialRequest[0] > SALES_SPECIAL_CONSTRAINT || attendanceDataSpecialRequest[1] > ATTENDANCE_CONSTRAINTS[1][1])
             {
-
+                return "Perlu Pengawasan";
             }
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
