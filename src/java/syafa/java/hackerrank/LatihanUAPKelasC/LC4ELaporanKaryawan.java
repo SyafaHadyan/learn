@@ -59,25 +59,35 @@ public class LC4ELaporanKaryawan
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
         {
+            boolean returnValue = true;
             if (division.equalsIgnoreCase("Penjualan"))
             {
                 if (attendanceDataSpecialRequest[2] > ATTENDANCE_CONSTRAINTS[1][1])
                 {
                     attendancePerformance = ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1] + 1;
+                    returnValue = false;
                 }
             }
-            return "Sangat Baik";   
+            if (returnValue)
+            {
+                return "Sangat Baik";
+            }
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1])
         {
+            boolean returnValue = true;
             if (division.equalsIgnoreCase("Penjualan"))
             {
                 if (attendanceDataSpecialRequest[2] > ATTENDANCE_CONSTRAINTS[1][1])
                 {
                     attendancePerformance = ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1] - 1;
+                    returnValue = false;
                 }
             }
-            return "Baik";
+            if (returnValue)
+            {
+                return "Baik";
+            }
         }
         return "Perlu Peningkatan";
     }
