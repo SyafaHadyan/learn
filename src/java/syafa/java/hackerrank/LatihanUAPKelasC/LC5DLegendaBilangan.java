@@ -15,6 +15,8 @@ public class LC5DLegendaBilangan
         String secondNumber = String.valueOf(number);
         if (String.valueOf(number).length() == 1)
         {
+            System.err.println("DGCT 1");
+            System.err.println(number + "\n");
             return false;
         }
         if (String.valueOf(number).length() % 2 == 0)
@@ -51,7 +53,7 @@ public class LC5DLegendaBilangan
             kaprekarValidity[i] = checkKaprekar(tempInput);
         }
         input.close();
-        if (validInput)
+        if (validInput && numberAmount > 0)
         {
             for (int i = 0; i < kaprekarValidity.length; i++)
             {
