@@ -54,7 +54,7 @@ public class LC5APrimaAtauFibonacci
         {
             return 1;
         }
-        int numberCounter = 3;
+        int numberCounter = 4;
         int firstNumber = 1;
         int secondNumber = 1;
         int currentNumber = 0;
@@ -91,11 +91,15 @@ public class LC5APrimaAtauFibonacci
             }
             if (fibonacciAt != 0)
             {
-                System.out.println(((primeAt != 0) ? "dan" : "Bilangan tersebut merupakan") + " bilangan fibonachi ke" + " - " + fibonacciAt);
+                System.out.println(((primeAt != 0) ? " dan" : "Bilangan tersebut merupakan") + " bilangan fibonachi ke" + " - " + fibonacciAt + ".");
             }
             else
             {
                 System.out.println(".");
+            }
+            if (primeAt == 0 && fibonacciAt == 0)
+            {
+                System.out.println("Bilangan tersebut bukan bilangan prima maupun fibonachi.");
             }
         }
     }
