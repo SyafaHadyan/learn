@@ -11,11 +11,11 @@ public class LC4ELaporanKaryawan
         String[][] employeeList = new String[employeeAmount][DAY_LOG + 2];
         for (int i = 0; i < employeeList.length; i++)
         {
-            for (int j = 0; j < employeeList[i].length - DAY_LOG; j++)
+            for (int j = 0; j < 2; j++)
             {
                 employeeList[i][j] = input.nextLine();
             }
-            for (int j = 2; j < DAY_LOG; j++)
+            for (int j = 2; j < employeeList[i].length; j++)
             {
                 employeeList[i][j] = input.next();
             }
