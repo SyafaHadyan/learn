@@ -43,6 +43,9 @@ public class LC4ELaporanKaryawan
     };
     public static String performanceStatus(String division,double attendancePerformance,int[] attendanceDataSpecialRequest)
     {
+        /*
+         * [2] Terlambat
+         */
         if (division.equalsIgnoreCase("Penjualan"))
         {
             if (attendanceDataSpecialRequest[0] > SALES_SPECIAL_CONSTRAINT || attendanceDataSpecialRequest[1] > ATTENDANCE_CONSTRAINTS[1][1])
@@ -56,10 +59,21 @@ public class LC4ELaporanKaryawan
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][0])
         {
+            if (division.equalsIgnoreCase("Penjualan"))
+            {
+                if (attendanceDataSpecialRequest[2] > ATTENDANCE_CONSTRAINTS[1][1])
+                {
+                    attendancePerformance = ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1] + 1;
+                }
+            }
             return "Sangat Baik";
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1])
         {
+            if (division.equalsIgnoreCase("Penjualan"))
+            {
+                //
+            }
             return "Baik";
         }
         return "Perlu Peningkatan";
