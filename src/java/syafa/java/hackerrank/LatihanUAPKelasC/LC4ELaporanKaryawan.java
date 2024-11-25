@@ -24,6 +24,13 @@ public class LC4ELaporanKaryawan
     };
     public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
     {
+        /*
+         * x / 100 * 30 = 15
+         * 
+         * 30x = 1500
+         * x = 1500 / 30
+         */
+        double overallAttendancePercentage = 0d;
         for (int i = 0; i < employeeDataList.length; i++)
         {
             System.out.println(employeeDataList[i][0] + " " + "(" + employeeDataList[i][1] + ")");
@@ -31,6 +38,7 @@ public class LC4ELaporanKaryawan
             {
                 System.out.println(VALID_ATTENDANCE_LIST[j] + ":" + " " + employeeAttendanceDataList[i][j] + " " + "hari");
             }
+            System.out.printf("%s%-2c%.2f%c\n","Presentase Kehadiran",':',((double) (((double) employeeAttendanceDataList[i][0] * 100d) / (double) DAY_LOG)),'%');
             System.out.print("\n");
         }
     }
