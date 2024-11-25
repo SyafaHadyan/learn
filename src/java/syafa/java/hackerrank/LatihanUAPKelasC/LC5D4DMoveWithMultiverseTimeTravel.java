@@ -3,22 +3,27 @@ import java.util.*;
 
 public class LC5D4DMoveWithMultiverseTimeTravel
 {
+    static final int INITIAL_POSITION = 11;
     static final int WORLD_SIZE_LIMIT = 3;
     static final int STEP_LIMIT = 16;
     static final int WORLD_DUPLICATE_LIMIT = 8;
+    static final String[] POSITION_MARKER = {".","o"};
     static String[][][][] worldData = new String[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][WORLD_SIZE_LIMIT][WORLD_SIZE_LIMIT];
     static int[][] position = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT];
-    static int[] stepCounter = new int[WORLD_DUPLICATE_LIMIT];
+    static int[] stepCounter = new int[STEP_LIMIT];
     static int worldCounter = 0;
-    public static void move()
+    public static void initialStartingPosition(String direction)
     {
+        position[worldCounter][stepCounter[worldCounter]] = 11;
         for (int i = 0; i < position.length; i++)
         {
             for (int j = 0; j < position.length; j++)
             {
-                worldData[worldCounter][stepCounter[worldCounter]][i][j] = "";
+                // worldData[worldCounter][stepCounter[worldCounter]][i][j] = ((position[worldCounter][stepCounter[Integer.parseInt(String.valueOf(i + j))]]) ? "o" : ".");
+                worldData[worldCounter][stepCounter[worldCounter]][i][j] = POSITION_MARKER[((position[worldCounter][stepCounter[worldCounter]]))];
             }
         }
+        System.err.println();
     }
     public static void main(String[] args)
     {
@@ -42,7 +47,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             String[] tempInput = input.nextLine().split("\s");
             if (tempInput[0].equalsIgnoreCase("Move"))
             {
-                //
+                move
             }
             if (tempInput[0].equalsIgnoreCase("Step"))
             {
@@ -54,7 +59,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             }
             if (tempInput[0].equalsIgnoreCase("Stop"))
             {
-                //
+                break;
             }
         }
         input.close();
