@@ -27,6 +27,11 @@ public class LC4ELaporanKaryawan
         for (int i = 0; i < employeeDataList.length; i++)
         {
             System.out.println(employeeDataList[i][0] + " " + "(" + employeeDataList[i][1] + ")");
+            for (int j = 0; j < (VALID_ATTENDANCE_LIST.length - ((employeeDataList[i][1].equalsIgnoreCase("Penjualan")) ? 0 : 1)); j++)
+            {
+                System.out.println(VALID_ATTENDANCE_LIST[j] + ":" + " " + employeeAttendanceDataList[i][j] + " " + "hari");
+            }
+            System.out.print("\n");
         }
     }
     public static void main(String[] args)
