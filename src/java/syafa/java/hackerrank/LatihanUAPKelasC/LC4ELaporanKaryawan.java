@@ -110,6 +110,7 @@ public class LC4ELaporanKaryawan
             double attendancePercentage = ((double) (((double) employeeAttendanceDataList[i][0] * 100d) / (double) DAY_LOG));
             overallAttendancePercentage += attendancePercentage;
             System.out.printf("%s%-2c%.2f%c\n\n","Presentase Kehadiran",':',attendancePercentage,'%');
+            System.out.println(performanceStatus(employeeDataList[i][0],attendancePercentage,new int[]{employeeAttendanceDataList[i][1],employeeAttendanceDataList[i][2],employeeAttendanceDataList[i][5]}));
         }
         overallAttendancePercentage /= employeeDataList.length;
         System.out.printf("%s%-2c%.2f%c\n\n","Rata-rata persentase kehadiran seluruh karyawan",':',overallAttendancePercentage,'%');
