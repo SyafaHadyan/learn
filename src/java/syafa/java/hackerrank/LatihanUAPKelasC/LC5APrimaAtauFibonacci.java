@@ -37,7 +37,7 @@ public class LC5APrimaAtauFibonacci
             {
                 currentPrimeAt++;
             }
-            if (currentNumber == number)
+            if (currentNumber == number && isPrime(number))
             {
                 return currentPrimeAt;
             }
@@ -93,7 +93,7 @@ public class LC5APrimaAtauFibonacci
             {
                 System.out.println(((primeAt != 0) ? " dan" : "Bilangan tersebut merupakan") + " bilangan fibonachi ke" + " - " + fibonacciAt + ".");
             }
-            else
+            else if (primeAt != 0)
             {
                 System.out.println(".");
             }
