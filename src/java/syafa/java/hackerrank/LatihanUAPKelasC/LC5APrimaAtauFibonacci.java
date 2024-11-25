@@ -52,7 +52,7 @@ public class LC5APrimaAtauFibonacci
         }
         if (number == 1)
         {
-            return 1;
+            return 2;
         }
         int numberCounter = 4;
         int firstNumber = 1;
@@ -69,7 +69,7 @@ public class LC5APrimaAtauFibonacci
             firstNumber = secondNumber;
             secondNumber = currentNumber;
         }
-        return 0;
+        return -1;
     }
     public static void main(String[] args)
     {
@@ -89,7 +89,7 @@ public class LC5APrimaAtauFibonacci
             {
                 System.out.print("Bilangan tersebut merupakan bilangan prima ke" + " - " + primeAt);
             }
-            if (fibonacciAt != 0)
+            if (fibonacciAt != -1)
             {
                 System.out.println(((primeAt != 0) ? " dan" : "Bilangan tersebut merupakan") + " bilangan fibonachi ke" + " - " + fibonacciAt + ".");
             }
@@ -97,7 +97,7 @@ public class LC5APrimaAtauFibonacci
             {
                 System.out.println(".");
             }
-            if (primeAt == 0 && fibonacciAt == 0)
+            if (primeAt == 0 && fibonacciAt == -1)
             {
                 System.out.println("Bilangan tersebut bukan bilangan prima maupun fibonachi.");
             }
