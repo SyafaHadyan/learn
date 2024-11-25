@@ -18,6 +18,15 @@ public class LC5APrimaAtauFibonacci
         }
         return true;
     }
+    public static int primeSequence(int number)
+    {
+        int currentNumber = -1;
+        int currentPrimeAt = 0;
+        while (currentNumber < number)
+        {
+            currentNumber++;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
