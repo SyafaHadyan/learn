@@ -38,9 +38,12 @@ public class LC4ELaporanKaryawan
             {
                 System.out.println(VALID_ATTENDANCE_LIST[j] + ":" + " " + employeeAttendanceDataList[i][j] + " " + "hari");
             }
-            System.out.printf("%s%-2c%.2f%c\n","Presentase Kehadiran",':',((double) (((double) employeeAttendanceDataList[i][0] * 100d) / (double) DAY_LOG)),'%');
-            System.out.print("\n");
+            double attendancePercentage = ((double) (((double) employeeAttendanceDataList[i][0] * 100d) / (double) DAY_LOG));
+            overallAttendancePercentage += attendancePercentage;
+            System.out.printf("%s%-2c%.2f%c\n\n","Presentase Kehadiran",':',attendancePercentage,'%');
         }
+        overallAttendancePercentage /= employeeDataList.length;
+        System.out.printf("%s%-2c%.2f%c\n\n","Rata-rata persentase kehadiran seluruh karyawan",':',overallAttendancePercentage,'%');
     }
     public static void main(String[] args)
     {
