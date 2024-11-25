@@ -9,6 +9,18 @@ public class LC5DMaafKamuBukanTipeku
     {
         return initialNumber + number;
     }
+    public static double decrement(int number)
+    {
+        return initialNumber - number;
+    }
+    public static double multiplication (int number)
+    {
+        return initialNumber * number;
+    }
+    public static double division (int number)
+    {
+        return initialNumber / number;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
