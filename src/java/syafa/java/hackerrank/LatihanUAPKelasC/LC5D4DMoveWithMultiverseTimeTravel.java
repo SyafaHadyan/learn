@@ -8,9 +8,31 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     static final int WORLD_DUPLICATE_LIMIT = 8;
     public static void main(String[] args)
     {
+        /*
+         * move right
+         * move up
+         * move left
+         * move left
+         * step 2
+         * move down
+         * stop
+         */
         Scanner input = new Scanner(System.in);
         String[][][][] worldData = new String[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][WORLD_SIZE_LIMIT][WORLD_SIZE_LIMIT];
-
+        int worldCounter = 0;
+        int stepCounter = 0;
+        while (input.hasNextLine())
+        {
+            String[] tempInput = input.nextLine().split("\s");
+            if (!(tempInput[0].equalsIgnoreCase("Stop")))
+            {
+                //
+            }
+            else if (tempInput[0].equalsIgnoreCase("Stop"))
+            {
+                //
+            }
+        }
         input.close();
     }
 }
