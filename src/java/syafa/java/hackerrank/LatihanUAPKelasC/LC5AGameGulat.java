@@ -3,6 +3,11 @@ import java.util.*;
 
 public class LC5AGameGulat
 {
+    static final String[] PLAYER_LIST =
+    {
+        "Monster",
+        "Dengklek"
+    };
     public static int[] move(String move,int monsterHealth,int playerHealth)
     {
         if (move.equalsIgnoreCase("Punch"))
@@ -30,5 +35,14 @@ public class LC5AGameGulat
             playerData = move(input.nextLine(),playerData[0],playerData[1]);
         }
         input.close();
+        for (int i = 0; i < PLAYER_LIST.length; i++)
+        {
+            System.out.println("HP" + " " + PLAYER_LIST[i] + ": " + playerData[i]);
+        }
+        if (playerData[0] < playerData[1])
+        {
+            System.out.println(PLAYER_LIST[1] + " " + "Menang");
+        }
+        System.out.println(PLAYER_LIST[0] + " " + "Menang");
     }
 }
