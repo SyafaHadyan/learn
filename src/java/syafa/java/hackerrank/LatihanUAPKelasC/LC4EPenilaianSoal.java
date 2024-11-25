@@ -26,5 +26,9 @@ public class LC4EPenilaianSoal
             input.nextLine();
         }
         input.close();
+        for (int i = 0; i < studentGrade.length; i++)
+        {
+            System.out.println("Siswa ke-" + (i + 1) + " benar " + studentGrade[i] + " soal");
+        }
     }
 }
