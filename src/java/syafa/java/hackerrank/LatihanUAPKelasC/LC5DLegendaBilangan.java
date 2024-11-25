@@ -3,19 +3,19 @@ import java.util.*;
 
 public class LC5DLegendaBilangan
 {
-    public static boolean checkKaprekar(int number)
+    public static boolean checkKaprekar(long number)
     {
         if (number == 1)
         {
             return true;
         }
-        int initialNumber = number;
+        long initialNumber = number;
         number *= number;
         String firstNumber = String.valueOf(number);
         String secondNumber = String.valueOf(number);
         if (String.valueOf(number).length() == 1)
         {
-            return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+            return false;
         }
         if (String.valueOf(number).length() % 2 == 0)
         {
@@ -38,13 +38,13 @@ public class LC5DLegendaBilangan
         Scanner input = new Scanner(System.in);
         int numberAmount = Integer.parseInt(input.nextLine());
         boolean[] kaprekarValidity = new boolean[numberAmount];
-        int[] numberList = new int[numberAmount];
+        long[] numberList = new long[numberAmount];
         boolean validInput = true;
         for (int i = 0; i < kaprekarValidity.length; i++)
         {
-            int tempInput = Integer.parseInt(input.nextLine());
+            long tempInput = Long.parseLong(input.nextLine());
             numberList[i] = tempInput;
-            if (tempInput < 1)
+            if (tempInput < 0)
             {
                 validInput = false;
             }
