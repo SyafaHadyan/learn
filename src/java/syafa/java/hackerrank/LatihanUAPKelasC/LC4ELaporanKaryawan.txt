@@ -1,7 +1,4 @@
-2
-Alice
-Teknik
-H H H H H H H H H H H H H H H H H H H H H H H H H A S H H H
-Bob
-Keuangan
-H H H H H H H H H H H H H H H H D D T H A H T H H H H H H H
+1
+John
+Penjualan
+H H H H H H H H H H H H H H H H H H H H H H H H D D T D H A
