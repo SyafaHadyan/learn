@@ -13,9 +13,21 @@ public class LC4ELaporanKaryawan
         Map.entry("D",4),
         Map.entry("T",5)
     );
+    static final String[] VALID_ATTENDANCE_LIST =
+    {
+        "Hadir",
+        "Absen",
+        "Sakit",
+        "Cuti",
+        "Dinas",
+        "Terlambat"
+    };
     public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
     {
-        //
+        for (int i = 0; i < employeeDataList.length; i++)
+        {
+            System.out.println(employeeDataList[i][0] + " " + "(" + employeeDataList[i][1] + ")");
+        }
     }
     public static void main(String[] args)
     {
