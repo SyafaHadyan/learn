@@ -25,6 +25,11 @@ public class LC5DMaafKamuBukanTipeku
     {
         Scanner input = new Scanner(System.in);
         initialNumber = Double.parseDouble(input.nextLine());
+        increment(Integer.parseInt(input.nextLine()));
+        decrement(Integer.parseInt(input.nextLine()));
+        multiplication(Integer.parseInt(input.nextLine()));
+        division(Integer.parseInt(input.nextLine()));
+        System.out.printf("%.2f\n",(initialNumber / 2));
         input.close();
     }
 }
