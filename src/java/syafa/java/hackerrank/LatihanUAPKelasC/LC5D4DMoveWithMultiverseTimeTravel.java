@@ -86,10 +86,13 @@ public class LC5D4DMoveWithMultiverseTimeTravel
         {
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
-                worldData[worldCounter + 1][stepPosition][i][j] = worldData[worldCounter][stepPosition][i][j];
+                worldData[worldCounter + 1][0][i][j] = worldData[worldCounter][stepPosition][i][j];
             }
         }
         worldCounter++;
+        /*
+         * TODO: Fix position
+         */
     }
     public static void world()
     {
