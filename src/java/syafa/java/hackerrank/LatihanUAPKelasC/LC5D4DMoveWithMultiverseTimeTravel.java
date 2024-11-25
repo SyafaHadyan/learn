@@ -29,22 +29,19 @@ public class LC5D4DMoveWithMultiverseTimeTravel
         while (input.hasNextLine())
         {
             String[] tempInput = input.nextLine().split("\s");
-            if (!(tempInput[0].equalsIgnoreCase("Stop")))
+            if (tempInput[0].equalsIgnoreCase("Move"))
             {
-                if (tempInput[0].equalsIgnoreCase("Move"))
-                {
-                    //
-                }
-                if (tempInput[0].equalsIgnoreCase("Step"))
-                {
-                    //
-                }
-                if (tempInput[0].equalsIgnoreCase("World"))
-                {
-                    //
-                }
+                //
             }
-            else
+            if (tempInput[0].equalsIgnoreCase("Step"))
+            {
+                //
+            }
+            if (tempInput[0].equalsIgnoreCase("World"))
+            {
+                //
+            }
+            if (tempInput[0].equalsIgnoreCase("Stop"))
             {
                 //
             }
