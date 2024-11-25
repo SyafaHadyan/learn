@@ -42,6 +42,7 @@ public class LC5AGameGulat
         if (playerData[0] < playerData[1])
         {
             System.out.println(PLAYER_LIST[1] + " " + "Menang");
+            return;
         }
         System.out.println(PLAYER_LIST[0] + " " + "Menang");
     }
