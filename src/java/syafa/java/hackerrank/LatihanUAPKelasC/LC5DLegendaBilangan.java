@@ -31,7 +31,7 @@ public class LC5DLegendaBilangan
         {
             String tempFirstNumber = firstNumber.substring(0,i);
             String tempSecondNumber = secondNumber.substring(tempFirstNumber.length(),secondNumber.length());
-            if (Integer.parseInt(tempFirstNumber) + Integer.parseInt(tempSecondNumber) == initialNumber)
+            if (Long.parseLong(tempFirstNumber) + Long.parseLong(tempSecondNumber) == initialNumber)
             {
                 return true;
             }
@@ -43,15 +43,15 @@ public class LC5DLegendaBilangan
         //     secondNumber = secondNumber.substring((secondNumber.length() / 2),secondNumber.length());
         //     System.err.println("FN " + firstNumber);
         //     System.err.println("SN " + secondNumber);
-        //     System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
-        //     return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+        //     System.err.println("FNSNRS " + (Long.parseLong(firstNumber) + Long.parseLong(secondNumber)) + "\n");
+        //     return (Long.parseLong(firstNumber) + Long.parseLong(secondNumber)) == initialNumber;
         // }
         // firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
         // secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
         // System.err.println("FN " + firstNumber);
         // System.err.println("SN " + secondNumber);
-        // System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
-        // return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+        // System.err.println("FNSNRS " + (Long.parseLong(firstNumber) + Long.parseLong(secondNumber)) + "\n");
+        // return (Long.parseLong(firstNumber) + Long.parseLong(secondNumber)) == initialNumber;
     }
     public static void main(String[] args)
     {
