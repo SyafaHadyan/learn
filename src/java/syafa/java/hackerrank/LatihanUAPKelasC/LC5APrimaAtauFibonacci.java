@@ -44,6 +44,33 @@ public class LC5APrimaAtauFibonacci
         }
         return 0;
     }
+    public static int fibonacciSequence(int number)
+    {
+        if (number == 0)
+        {
+            return 1;
+        }
+        if (number == 1)
+        {
+            return 1;
+        }
+        int numberCounter = 3;
+        int firstNumber = 1;
+        int secondNumber = 1;
+        int currentNumber = 0;
+        while (currentNumber < number)
+        {
+            currentNumber = firstNumber + secondNumber;
+            if (currentNumber == number)
+            {
+                return numberCounter;
+            }
+            numberCounter++;
+            firstNumber = secondNumber;
+            secondNumber = currentNumber;
+        }
+        return 0;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
