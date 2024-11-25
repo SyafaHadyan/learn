@@ -5,6 +5,7 @@ public class LC5DLegendaBilangan
 {
     public static boolean checkKaprekar(int number)
     {
+        int initialNumber = number;
         number *= number;
         String firstNumber = String.valueOf(number);
         String secondNumber = String.valueOf(number);
@@ -13,14 +14,16 @@ public class LC5DLegendaBilangan
             firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
             secondNumber = secondNumber.substring((secondNumber.length() / 2),secondNumber.length());
             System.err.println("FN " + firstNumber);
-            System.err.println("SN " + secondNumber + "\n");
-            return Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber) == number;
+            System.err.println("SN " + secondNumber);
+            System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
+            return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
         }
         firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
         secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
         System.err.println("FN " + firstNumber);
-        System.err.println("SN " + secondNumber + "\n");
-        return Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber) == number;
+        System.err.println("SN " + secondNumber);
+        System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
+        return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
     }
     public static void main(String[] args)
     {
