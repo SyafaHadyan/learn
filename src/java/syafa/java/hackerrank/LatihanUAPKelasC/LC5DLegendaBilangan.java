@@ -5,6 +5,10 @@ public class LC5DLegendaBilangan
 {
     public static boolean checkKaprekar(int number)
     {
+        if (number == 1)
+        {
+            return true;
+        }
         int initialNumber = number;
         number *= number;
         String firstNumber = String.valueOf(number);
