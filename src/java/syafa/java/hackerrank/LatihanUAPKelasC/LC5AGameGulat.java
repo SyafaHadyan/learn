@@ -3,7 +3,7 @@ import java.util.*;
 
 public class LC5AGameGulat
 {
-    public static int[] move(String move,int playerHealth,int monsterHealth)
+    public static int[] move(String move,int monsterHealth,int playerHealth)
     {
         if (move.equalsIgnoreCase("Punch"))
         {
@@ -18,7 +18,7 @@ public class LC5AGameGulat
             monsterHealth -= 50;
             playerHealth -= 10;
         }
-        return new int[]{playerHealth,monsterHealth};
+        return new int[]{monsterHealth,playerHealth};
     }
     public static void main(String[] args)
     {
@@ -27,7 +27,7 @@ public class LC5AGameGulat
         int moveAmount = Integer.parseInt(input.nextLine());
         for (int i = 0; i < moveAmount; i++)
         {
-            
+            playerData = move(input.nextLine(),playerData[0],playerData[1]);
         }
         input.close();
     }
