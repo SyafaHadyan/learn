@@ -22,6 +22,22 @@ public class LC4ELaporanKaryawan
         "Dinas",
         "Terlambat"
     };
+    static final Map<String,Integer> ATTENDANCE_PERFORMANCE_INDEX = Map.ofEntries
+    (
+        Map.entry("Teknik",0),
+        Map.entry("Penjualan",1),
+        Map.entry("Keuangan",2)
+    );
+    static final double[][] ATTENDANCE_PERFORMANCE_CATEGORIES =
+    {
+        {89,80},
+        {84,75},
+        {79,70}
+    };
+    public static String performanceStatus(String division,double attendancePerformance)
+    {
+        if 
+    }
     public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
     {
         /*
