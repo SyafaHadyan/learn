@@ -12,6 +12,26 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     static int[][] stepCounter = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT];
     static int currentStep = 0;
     static int worldCounter = 0;
+    public static int moveUtil(String direction,int currentCoordinate)
+    {
+        if (direction.equalsIgnoreCase("Up"))
+        {
+            return currentCoordinate += 10;
+        }
+        if (direction.equalsIgnoreCase("Down"))
+        {
+            return currentCoordinate -= 10;
+        }
+        if (direction.equalsIgnoreCase("Right"))
+        {
+            return currentCoordinate += 1;
+        }
+        if (direction.equalsIgnoreCase("Left"))
+        {
+            return currentCoordinate -= 1;
+        }
+        return currentCoordinate;
+    }
     public static void initialStartingPosition()
     {
         position[worldCounter][stepCounter[worldCounter][currentStep]][0] = INITIAL_POSITION;
