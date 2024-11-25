@@ -9,6 +9,10 @@ public class LC5DLegendaBilangan
         number *= number;
         String firstNumber = String.valueOf(number);
         String secondNumber = String.valueOf(number);
+        if (String.valueOf(number).length() == 1)
+        {
+            return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+        }
         if (String.valueOf(number).length() % 2 == 0)
         {
             firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
