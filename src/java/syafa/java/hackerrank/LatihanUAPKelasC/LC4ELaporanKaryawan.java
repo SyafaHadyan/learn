@@ -66,13 +66,16 @@ public class LC4ELaporanKaryawan
                     attendancePerformance = ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1] + 1;
                 }
             }
-            return "Sangat Baik";
+            return "Sangat Baik";   
         }
         if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1])
         {
             if (division.equalsIgnoreCase("Penjualan"))
             {
-                //
+                if (attendanceDataSpecialRequest[2] > ATTENDANCE_CONSTRAINTS[1][1])
+                {
+                    attendancePerformance = ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1] - 1;
+                }
             }
             return "Baik";
         }
