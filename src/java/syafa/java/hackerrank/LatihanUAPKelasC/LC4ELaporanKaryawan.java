@@ -27,7 +27,9 @@ public class LC4ELaporanKaryawan
             }
             for (int j = 2; j < employeeDataList[i].length; j++)
             {
-                employeeDataList[i][j] = input.next();
+                String tempInput = input.next();
+                employeeDataList[i][j] = tempInput;
+                employeeAttendanceDataList[ATTENDANCE_INDEX.get(tempInput)]++;
             }
             input.nextLine();
             System.err.println(Arrays.toString(employeeDataList[i]));
