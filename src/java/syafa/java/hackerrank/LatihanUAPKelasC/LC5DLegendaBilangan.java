@@ -19,21 +19,31 @@ public class LC5DLegendaBilangan
             System.err.println(number + "\n");
             return false;
         }
-        if (String.valueOf(number).length() % 2 == 0)
+        for (int i = 0; i < String.valueOf(number).length() - 1; i++)
         {
-            firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
-            secondNumber = secondNumber.substring((secondNumber.length() / 2),secondNumber.length());
-            System.err.println("FN " + firstNumber);
-            System.err.println("SN " + secondNumber);
-            System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
-            return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+            firstNumber = firstNumber.substring(i,(firstNumber.length() / 2));
+            secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
+            if (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber) == initialNumber)
+            {
+                return true;
+            }
         }
-        firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
-        secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
-        System.err.println("FN " + firstNumber);
-        System.err.println("SN " + secondNumber);
-        System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
-        return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+        return false;
+        // if (String.valueOf(number).length() % 2 == 0)
+        // {
+        //     firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
+        //     secondNumber = secondNumber.substring((secondNumber.length() / 2),secondNumber.length());
+        //     System.err.println("FN " + firstNumber);
+        //     System.err.println("SN " + secondNumber);
+        //     System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
+        //     return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
+        // }
+        // firstNumber = firstNumber.substring(0,(firstNumber.length() / 2));
+        // secondNumber = secondNumber.substring(firstNumber.length(),secondNumber.length());
+        // System.err.println("FN " + firstNumber);
+        // System.err.println("SN " + secondNumber);
+        // System.err.println("FNSNRS " + (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "\n");
+        // return (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) == initialNumber;
     }
     public static void main(String[] args)
     {
