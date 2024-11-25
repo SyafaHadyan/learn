@@ -79,6 +79,21 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             }
         }
     }
+    public static void step(int stepPosition)
+    {
+        for (int i = 0; i < position.length; i++)c
+        {
+            for (int j = 0; j < position.length; j++)
+            {
+                worldData[worldCounter + 1][stepPosition][i][j] = worldData[worldCounter][stepPosition][i][j];
+            }
+        }
+        worldCounter++;
+    }
+    public static void world()
+    {
+        //
+    }
     public static void main(String[] args)
     {
         /*
