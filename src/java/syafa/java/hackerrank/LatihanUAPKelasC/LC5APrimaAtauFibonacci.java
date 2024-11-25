@@ -20,12 +20,29 @@ public class LC5APrimaAtauFibonacci
     }
     public static int primeSequence(int number)
     {
-        int currentNumber = -1;
-        int currentPrimeAt = 0;
+        if (number <= 1)
+        {
+            return 0;
+        }
+        if (number == 2)
+        {
+            return 1;
+        }
+        int currentNumber = 1;
+        int currentPrimeAt = 1;
         while (currentNumber < number)
         {
-            currentNumber++;
+            currentNumber += 2;
+            if (isPrime(currentNumber))
+            {
+                currentPrimeAt++;
+            }
+            if (currentNumber == number)
+            {
+                return currentPrimeAt;
+            }
         }
+        return 0;
     }
     public static void main(String[] args)
     {
