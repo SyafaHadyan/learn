@@ -84,9 +84,18 @@ public class LC5APrimaAtauFibonacci
         for (int i = 0; i < numberList.length; i++)
         {
             int primeAt = primeSequence(numberList[i]);
+            int fibonacciAt = fibonacciSequence(numberList[i]);
             if (primeAt != 0)
             {
-                System.out.println("Bilangan tersebut merupakan bilangan prima ke" + " - " + primeAt);
+                System.out.print("Bilangan tersebut merupakan bilangan prima ke" + " - " + primeAt);
+            }
+            if (fibonacciAt != 0)
+            {
+                System.out.println(((primeAt != 0) ? "dan" : "Bilangan tersebut merupakan") + " bilangan fibonachi ke" + " - " + fibonacciAt);
+            }
+            else
+            {
+                System.out.println(".");
             }
         }
     }
