@@ -13,7 +13,7 @@
       "type": "java",
       "request": "launch",
       "mainClass": "${file}",
-      "args": ["<","${file}"]
+      "args": ["<", "${fileDirname}/${fileBasenameNoExtension}.txt"]
     },
     {
       "name": "C/C++ Runner: Debug Session",
