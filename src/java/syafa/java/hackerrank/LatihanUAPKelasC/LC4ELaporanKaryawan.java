@@ -40,6 +40,10 @@ public class LC4ELaporanKaryawan
         {
             return "Sangat Baik";
         }
+        if (attendancePerformance > ATTENDANCE_PERFORMANCE_CATEGORIES[ATTENDANCE_PERFORMANCE_INDEX.get(division)][1])
+        {
+            return "Baik";
+        }
         return "Perlu Peningkatan";
     }
     public static void reportBuilder(String[][] employeeDataList,int[][] employeeAttendanceDataList)
