@@ -43,7 +43,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
         {
             for (int j = 0; j <= stepCounter[i]; j++)
             {
-                System.out.printf("%-2c%-6s%d %-2c%-2c%-5s%d %c\n",'[',"world",i,']','(',"step",j,')');
+                System.out.println("[ " + "world" + " " + i + " ] ( " + "step" + " " + j + " )");
                 for (int k = 0; k < WORLD_SIZE_LIMIT; k++)
                 {
                     for (int l = 0; l < WORLD_SIZE_LIMIT; l++)
