@@ -5,8 +5,8 @@ public class LC5FOperasiString
 {
     public static void moveSwap(String[] inputString)
     {
-        inputString[0] = inputString[inputString.length];
-        for (int i = 1; i < inputString.length; i++)
+        inputString[0] = inputString[inputString.length - 1];
+        for (int i = inputString.length - 1; i > 0; i--)
         {
             inputString[i] = inputString[i - 1];
         }
