@@ -6,31 +6,31 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     static final int WORLD_SIZE_LIMIT = 3;
     static final int STEP_LIMIT = 16;
     static final int WORLD_DUPLICATE_LIMIT = 8;
-    static final int INITIAL_POSITION = 22;
+    static final int[] INITIAL_POSITION = {1,1};
     static final int DIVIDER_WIDTH = 10;
     static String[][][][] worldData = new String[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][WORLD_SIZE_LIMIT][WORLD_SIZE_LIMIT];
-    static int[][] position = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT];
+    static int[][][] position = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][2];
     static int[] stepCounter = new int[WORLD_DUPLICATE_LIMIT];
     static int worldCounter = 0;
-    public static int moveUtil(String direction,int currentCoordinate)
+    public static int[] moveUtil(String direction,int coordinateX,int coordinateY)
     {
         if (direction.equalsIgnoreCase("Up"))
         {
-            return currentCoordinate -= 10;
+            return new int[]{--coordinateX,coordinateY};
         }
         if (direction.equalsIgnoreCase("Down"))
         {
-            return currentCoordinate += 10;
+            return new int[]{++coordinateX,coordinateY};
         }
         if (direction.equalsIgnoreCase("Right"))
         {
-            return currentCoordinate += 1;
+            return new int[]{coordinateX,++coordinateY};
         }
         if (direction.equalsIgnoreCase("Left"))
         {
-            return currentCoordinate -= 1;
+            return new int[]{coordinateX,--coordinateY};
         }
-        return currentCoordinate;
+        return new int[]{coordinateX,coordinateY};
     }
     public static void printUtil()
     {
@@ -63,20 +63,20 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i + 1) + String.valueOf(j + 1)) ? "o" : "."));
+                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
             }
         }
     }
     public static void move(String direction)
     {
+        position[worldCounter][stepCounter[worldCounter] + 1] = moveUtil(direction,position[worldCounter][stepCounter[worldCounter]][0],position[worldCounter][stepCounter[worldCounter]][1]);
         stepCounter[worldCounter]++;
-        position[worldCounter][stepCounter[worldCounter]] = moveUtil(direction,position[worldCounter][stepCounter[worldCounter] - 1]);
         for (int i = 0; i < WORLD_SIZE_LIMIT; i++)
         {
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i + 1) + String.valueOf(j + 1)) ? "o" : "."));
+                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
             }
         }
     }
@@ -89,7 +89,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i + 1) + String.valueOf(j + 1)) ? "o" : "."));
+                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
             }
         }
         /*
