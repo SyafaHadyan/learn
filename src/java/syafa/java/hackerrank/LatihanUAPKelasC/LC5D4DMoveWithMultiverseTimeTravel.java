@@ -12,6 +12,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     static int[][][] position = new int[WORLD_DUPLICATE_LIMIT][STEP_LIMIT][2];
     static int[] stepCounter = new int[WORLD_DUPLICATE_LIMIT];
     static int worldCounter = 0;
+    static int highestWorld = 0;
     public static int[] moveUtil(String direction,int coordinateX,int coordinateY)
     {
         if (direction.equalsIgnoreCase("Up"))
@@ -34,7 +35,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void printUtil()
     {
-        for (int i = 0; i <= worldCounter; i++)
+        for (int i = 0; i <= highestWorld; i++)
         {
             for (int j = 0; j <= stepCounter[i]; j++)
             {
@@ -98,6 +99,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void world(int targetWorld)
     {
+        highestWorld = worldCounter;
         worldCounter = targetWorld;
     }
     public static void main(String[] args)
