@@ -13,5 +13,18 @@ public class LC4ARifflex
         Scanner input = new Scanner(System.in);
         String[] card = input.nextLine().split("\s");
         input.close();
+        String[] initialShuffle = new String[card.length];
+        int index = 0;
+        for (int i = 0; i < card.length; i += 2)
+        {
+            initialShuffle[i] = card[index];
+            index++;
+        }
+        for (int i = 1; i < card.length; i += 2)
+        {
+            initialShuffle[i] = card[index];
+            index++;
+        }
+        System.out.println(Arrays.toString(initialShuffle));
     }
 }
