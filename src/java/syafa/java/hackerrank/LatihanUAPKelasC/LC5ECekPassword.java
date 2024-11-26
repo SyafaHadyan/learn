@@ -23,18 +23,20 @@ public class LC5ECekPassword
                 try
                 {
                     Integer.parseInt(tempInput[i]);
+                    continue;
                 }
                 catch (NumberFormatException e)
                 {
                     digitCount--;
+                    if (tempInput[i].toUpperCase().equals(tempInput[i].toLowerCase()))
+                    {
+                        specialCharacterCount++;
+                        continue;
+                    }
                 }
                 if (tempInput[i].toUpperCase().equals(tempInput[i]))
                 {
                     capitalCharacterCount++;
-                }
-                if (tempInput[i].toUpperCase().equals(tempInput[i].toLowerCase()))
-                {
-                    specialCharacterCount++;
                 }
             }
             if
