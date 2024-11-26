@@ -6,14 +6,15 @@ public class LC5FOperasiString
     static String[] inputString;
     public static void moveSwap(int swapAmount)
     {
-        System.err.println(Arrays.toString(inputString));
         for (int i = 0; i < swapAmount; i++)
         {
-            inputString[0] = inputString[inputString.length - 1];
+            System.err.println(Arrays.toString(inputString));
+            String tempSwap = inputString[inputString.length - 1];
             for (int j = inputString.length - 1; j > 0; j--)
             {
                 inputString[j] = inputString[j - 1];
             }
+            inputString[0] = tempSwap;
             System.err.println(Arrays.toString(inputString));
         }
     }
