@@ -23,7 +23,7 @@ public class LC5FOperasiString
         String[] tempSwap = new String[inputString.length];
         for (int i = tempSwap.length - 1; i >= 0; i--)
         {
-            tempSwap[i] = inputString[i];
+            tempSwap[i] = inputString[tempSwap.length - 1 - i];
         }
         inputString = tempSwap;
     }
@@ -45,5 +45,10 @@ public class LC5FOperasiString
             }
         }
         input.close();
+        for (int i = 0; i < inputString.length; i++)
+        {
+            System.out.print(inputString[i]);
+        }
+        System.out.print("\n");
     }
 }
