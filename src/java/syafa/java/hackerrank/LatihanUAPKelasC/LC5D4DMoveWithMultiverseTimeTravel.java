@@ -35,6 +35,10 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void printUtil()
     {
+        if (worldCounter > highestWorld)
+        {
+            highestWorld = worldCounter;
+        }
         for (int i = 0; i <= highestWorld; i++)
         {
             for (int j = 0; j <= stepCounter[i]; j++)
@@ -87,7 +91,6 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     {
         position[worldCounter + 1][0] = position[worldCounter][stepPosition];
         worldCounter++;
-        highestWorld = worldCounter;
         for (int i = 0; i < WORLD_SIZE_LIMIT; i++)
         {
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
