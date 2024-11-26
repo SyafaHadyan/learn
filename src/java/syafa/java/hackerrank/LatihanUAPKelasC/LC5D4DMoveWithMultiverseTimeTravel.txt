@@ -4,10 +4,4 @@ move left
 move left
 step 2
 move down
-move down
-step 1
-move down
-move left
-world 0
-move down
 stop
