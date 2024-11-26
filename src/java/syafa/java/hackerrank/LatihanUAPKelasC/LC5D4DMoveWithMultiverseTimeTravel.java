@@ -82,14 +82,16 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void step(int stepPosition)
     {
+        position[worldCounter + 1][0] = position[worldCounter][stepPosition];
+        worldCounter++;
         for (int i = 0; i < WORLD_SIZE_LIMIT; i++)
         {
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
-                worldData[worldCounter + 1][0][i][j] = worldData[worldCounter][stepPosition][i][j];
+                worldData[worldCounter][stepCounter[worldCounter]][i][j] =
+                ((position[worldCounter][stepCounter[worldCounter]] == Integer.parseInt(String.valueOf(i + 1) + String.valueOf(j + 1)) ? "o" : "."));
             }
         }
-        worldCounter++;
         /*
          * TODO: Fix position
          */
