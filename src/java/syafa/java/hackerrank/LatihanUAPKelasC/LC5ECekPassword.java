@@ -39,6 +39,18 @@ public class LC5ECekPassword
                     continue;
                 }
             }
+            if
+            (
+                characterLength >= MIN_CHARACTER_LENGTH &&
+                capitalCharacterCount >= MIN_CAPITAL_CHARACTER &&
+                digitCount >= MIN_DIGIT &&
+                specialCharacterCount >= MIN_SPECIAL_CHARACTER
+            )
+            {
+                System.out.println("Password valid!");
+                break;
+            }
+            System.out.println("Password tidak valid! Masukkan password yang valid!");
         }
         input.close();
     }
