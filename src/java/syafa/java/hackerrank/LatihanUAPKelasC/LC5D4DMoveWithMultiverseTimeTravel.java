@@ -95,13 +95,10 @@ public class LC5D4DMoveWithMultiverseTimeTravel
                 (((position[worldCounter][stepCounter[worldCounter]][0] == i) && (position[worldCounter][stepCounter[worldCounter]][1] == j))? "o" : ".");
             }
         }
-        /*
-         * TODO: Fix position
-         */
     }
-    public static void world()
+    public static void world(int targetWorld)
     {
-        //
+        worldCounter = targetWorld;
     }
     public static void main(String[] args)
     {
@@ -134,7 +131,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             }
             if (tempInput[0].equalsIgnoreCase("World"))
             {
-                //
+                world(Integer.parseInt(tempInput[1]));
             }
             if (tempInput[0].equalsIgnoreCase("Stop"))
             {
