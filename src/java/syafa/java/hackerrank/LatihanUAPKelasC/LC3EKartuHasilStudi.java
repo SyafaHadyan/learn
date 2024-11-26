@@ -9,6 +9,7 @@ public class LC3EKartuHasilStudi
         int amount = Integer.parseInt(input.nextLine());
         double[][] data = new double[amount][2];
         double result = 0d;
+        int SKS = 0;
         for (int i = 0; i < data.length; i++)
         {
             input.next();
@@ -17,7 +18,12 @@ public class LC3EKartuHasilStudi
                 data[i][j] = input.nextDouble();
             }
             input.nextLine();
+            SKS += data[i][1];
         }
         input.close();
+        for (int i = 0; i < data.length; i++)
+        {
+            result += data[i][0] * data[i][1] / SKS;
+        }
     }
 }
