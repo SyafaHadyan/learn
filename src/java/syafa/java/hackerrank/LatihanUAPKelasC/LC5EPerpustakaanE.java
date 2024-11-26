@@ -11,6 +11,7 @@ public class LC5EPerpustakaanE
         {16,4000}
     };
     static final long DAY_LATE_COST_ABOVE_LIMIT = 500;
+    static final long MEMBER_DISCOUNT = 10;
 
     public static void main(String[] args)
     {
@@ -34,8 +35,12 @@ public class LC5EPerpustakaanE
             }
             else
             {
-                dayLateCost += ((i > DAY_LATE_COST_INDEX_PRICE[3][0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (DAY_LATE_COST_INDEX_PRICE[3][0] - i)) : 0);
+                System.err.println(((i > DAY_LATE_COST_INDEX_PRICE[3][0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (DAY_LATE_COST_INDEX_PRICE[3][0] - i)) : 0) * -1 + DAY_LATE_COST_INDEX_PRICE[3][1]);
+                dayLateCost += ((i > DAY_LATE_COST_INDEX_PRICE[3][0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (DAY_LATE_COST_INDEX_PRICE[3][0] - i)) : 0) * -1 + DAY_LATE_COST_INDEX_PRICE[3][1];
             }
         }
+        System.out.println("Julah hari keterlambatan" + ": " + dayLate);
+        System.out.println("Status keanggotaan" + ": " + ((isVIPMember) ? "" : "Bukan ") + "Anggota VIP");
+        System.out.println(dayLateCost - ((isVIPMember) ? (MEMBER_DISCOUNT * dayLateCost / 100) : 0));
     }
 }
