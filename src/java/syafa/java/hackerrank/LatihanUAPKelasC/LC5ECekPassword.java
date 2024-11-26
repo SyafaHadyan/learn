@@ -28,6 +28,16 @@ public class LC5ECekPassword
                 {
                     digitCount--;
                 }
+                if (tempInput[i].toUpperCase().equals(tempInput[i]))
+                {
+                    capitalCharacterCount++;
+                    continue;
+                }
+                if (tempInput[i].toUpperCase().equals(tempInput[i].toLowerCase()))
+                {
+                    specialCharacterCount++;
+                    continue;
+                }
             }
         }
         input.close();
