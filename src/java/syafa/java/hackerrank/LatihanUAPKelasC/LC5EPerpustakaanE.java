@@ -8,10 +8,10 @@ public class LC5EPerpustakaanE
         {5,1000},
         {10,2000},
         {15,3000},
-        {16,4000}
     };
     static final long DAY_LATE_COST_ABOVE_LIMIT = 500;
     static final long MEMBER_DISCOUNT = 10;
+    static final long[] DAY_LATE_COST_LIMIT = {16,4000};
 
     public static void main(String[] args)
     {
@@ -22,7 +22,7 @@ public class LC5EPerpustakaanE
         long dayLateCost = 0;
         for (int i = 1; i <= dayLate; i++)
         {
-            if (i < DAY_LATE_COST_INDEX_PRICE[3][0])
+            if (i < DAY_LATE_COST_LIMIT[0])
             {
                 for (int j = 0; j < DAY_LATE_COST_INDEX_PRICE.length - 1; j++)
                 {
@@ -35,8 +35,10 @@ public class LC5EPerpustakaanE
             }
             else
             {
-                System.err.println(((i > DAY_LATE_COST_INDEX_PRICE[3][0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (DAY_LATE_COST_INDEX_PRICE[3][0] - i)) : 0) * -1 + DAY_LATE_COST_INDEX_PRICE[3][1]);
-                dayLateCost += ((i > DAY_LATE_COST_INDEX_PRICE[3][0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (DAY_LATE_COST_INDEX_PRICE[3][0] - i)) : 0) * -1 + DAY_LATE_COST_INDEX_PRICE[3][1];
+                dayLateCost += DAY_LATE_COST_LIMIT[1] + DAY_LATE_COST_ABOVE_LIMIT * (i - DAY_LATE_COST_LIMIT[0]);
+                System.err.println(DAY_LATE_COST_LIMIT[1] + DAY_LATE_COST_ABOVE_LIMIT * (i - DAY_LATE_COST_LIMIT[0]));
+                // System.err.println(((i > DAY_LATE_COST_LIMIT[0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (i - DAY_LATE_COST_LIMIT[0])) : 0) * -1 + DAY_LATE_COST_LIMIT[1]);
+                // dayLateCost += ((i > DAY_LATE_COST_LIMIT[0]) ? (DAY_LATE_COST_ABOVE_LIMIT * (i - DAY_LATE_COST_LIMIT[0])) : 0) * -1 + DAY_LATE_COST_LIMIT[1] + DAY_LATE_COST_LIMIT[1];
             }
         }
         System.out.println("Julah hari keterlambatan" + ": " + dayLate);
