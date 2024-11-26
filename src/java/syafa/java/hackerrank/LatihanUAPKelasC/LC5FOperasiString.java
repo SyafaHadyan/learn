@@ -18,9 +18,14 @@ public class LC5FOperasiString
             System.err.println(Arrays.toString(inputString));
         }
     }
-    public static void reverse(String inputString)
+    public static void reverse()
     {
-        //
+        String[] tempSwap = new String[inputString.length];
+        for (int i = tempSwap.length - 1; i >= 0; i--)
+        {
+            tempSwap[i] = inputString[i];
+        }
+        inputString = tempSwap;
     }
     public static void main(String[] args)
     {
@@ -36,7 +41,7 @@ public class LC5FOperasiString
             }
             if (operation[0].equalsIgnoreCase("Balik"))
             {
-                //
+                reverse();
             }
         }
         input.close();
