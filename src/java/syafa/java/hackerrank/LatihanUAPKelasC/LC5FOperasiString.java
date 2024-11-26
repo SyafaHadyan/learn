@@ -5,7 +5,12 @@ public class LC5FOperasiString
 {
     public static void moveSwap(String[] inputString)
     {
-        //
+        inputString[0] = inputString[inputString.length];
+        for (int i = 1; i < inputString.length; i++)
+        {
+            inputString[i] = inputString[i - 1];
+        }
+        System.err.println(Arrays.toString(inputString));
     }
     public static void reverse(String inputString)
     {
@@ -21,7 +26,7 @@ public class LC5FOperasiString
             String[] operation = input.nextLine().split("\s");
             if (operation[0].equalsIgnoreCase("Geser"))
             {
-                //
+                moveSwap(inputString);
             }
             if (operation[0].equalsIgnoreCase("Balik"))
             {
