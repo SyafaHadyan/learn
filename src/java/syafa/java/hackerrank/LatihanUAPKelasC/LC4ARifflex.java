@@ -36,5 +36,9 @@ public class LC4ARifflex
             initialShuffle[indexSwap] = tempSwap;
             System.err.println(Arrays.toString(initialShuffle));
         }
+        for (int i = 0; i < initialShuffle.length; i++)
+        {
+           System.out.print(initialShuffle[i] + ((initialShuffle.length - i != 1) ? " " : "\n")); 
+        }
     }
 }
