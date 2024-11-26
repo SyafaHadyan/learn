@@ -25,5 +25,6 @@ public class LC3EKartuHasilStudi
         {
             result += data[i][0] * data[i][1] / SKS;
         }
+        System.out.printf("%s%-2c%.2f\n%s%-2c%-9s%d %s\n","IP Semester",':',(result),"Beban Studi",':',"maksimum",(0),"sks");
     }
 }
