@@ -29,13 +29,15 @@ public class BitwiseAND
                     catch (NumberFormatException e)
                     {
                         powerOfTwo = false;
+                        break;
                     }
                 }
-                if (powerOfTwo)
+                if (powerOfTwo || numberAnd == 1)
                 {
                     bitwiseAndCount++;
                 }
             }
         }
+        System.out.println(bitwiseAndCount);
     }
 }
