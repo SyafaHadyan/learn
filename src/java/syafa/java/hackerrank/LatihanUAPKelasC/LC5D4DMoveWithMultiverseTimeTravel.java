@@ -99,7 +99,10 @@ public class LC5D4DMoveWithMultiverseTimeTravel
     }
     public static void world(int targetWorld)
     {
-        highestWorld = ((worldCounter > highestWorld) ? worldCounter : highestWorld);
+        if (worldCounter > highestWorld)
+        {
+            highestWorld = worldCounter;
+        }
         worldCounter = targetWorld;
     }
     public static void main(String[] args)
