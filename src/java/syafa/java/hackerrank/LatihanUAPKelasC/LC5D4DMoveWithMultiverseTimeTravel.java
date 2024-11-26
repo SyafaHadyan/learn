@@ -63,7 +63,10 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
+                (((position[worldCounter][stepCounter[worldCounter]][0] == i) && (position[worldCounter][stepCounter[worldCounter]][1] == j))? "o" : ".");
+                // System.err.println(Arrays.toString(position[worldCounter][stepCounter[worldCounter]]));
+                // System.err.println(worldData[worldCounter][stepCounter[worldCounter]][i][j]);
+                // System.err.println(Arrays.toString((new int[]{i,j})));
             }
         }
     }
@@ -76,7 +79,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
+                (((position[worldCounter][stepCounter[worldCounter]][0] == i) && (position[worldCounter][stepCounter[worldCounter]][1] == j))? "o" : ".");
             }
         }
     }
@@ -89,7 +92,7 @@ public class LC5D4DMoveWithMultiverseTimeTravel
             for (int j = 0; j < WORLD_SIZE_LIMIT; j++)
             {
                 worldData[worldCounter][stepCounter[worldCounter]][i][j] =
-                ((position[worldCounter][stepCounter[worldCounter]] ==  (new int[]{i,j})? "o" : "."));
+                (((position[worldCounter][stepCounter[worldCounter]][0] == i) && (position[worldCounter][stepCounter[worldCounter]][1] == j))? "o" : ".");
             }
         }
         /*
