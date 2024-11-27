@@ -12,7 +12,9 @@ public class EqualizeTheArray
         {
             int tempInput = input.nextInt();
             number.putIfAbsent(tempInput,0);
-            number.merge(tempInput,number.get(tempInput) + 1,Integer::sum);
+            System.err.println(tempInput + " " + number.get(tempInput));
+            number.merge(tempInput,1,Integer::sum);
+            System.err.println(number);
         }
         input.close();
         System.err.println(number);
