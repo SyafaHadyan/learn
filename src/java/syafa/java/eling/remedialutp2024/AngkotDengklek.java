@@ -68,7 +68,7 @@ public class AngkotDengklek
             System.out.printf("%-28s%-2c%d %s\n","msg",':',(childPassengerCounter),"orang");
             System.out.printf("%-28s%-2c%s%d%c%d%s\n","msg",':',"Rp",(currentIncome),'.',(00),",-");
             System.out.printf("%-28s%-2c%s%d%c%d%s\n","msg",':',"Rp",(gasCost),'.',(00),",-");
-            System.out.print("Pak Dengklek " + ((finalIncome < 0) ? "mengalami kerugian" : "mendapat keuntungan") +  " sebesar " + ((finalIncome < 0) ? finalIncome * -1 : finalIncome) + ",-");
+            System.out.print("Pak Dengklek " + ((finalIncome < 0) ? "mengalami kerugian" : "mendapat keuntungan") +  " sebesar " + ((finalIncome < 0) ? finalIncome * -1 : finalIncome) + ".00,-");
 
         }
     }
