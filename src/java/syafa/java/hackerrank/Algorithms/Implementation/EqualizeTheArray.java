@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
-import java.util.stream.*;
 
 public class EqualizeTheArray
 {
@@ -11,8 +10,11 @@ public class EqualizeTheArray
         HashMap<Integer,Integer> number = new HashMap<>();
         for (int i = 0; i < numberAmount; i++)
         {
-            //
+            int tempInput = input.nextInt();
+            number.putIfAbsent(tempInput,0);
+            number.merge(tempInput,number.get(tempInput) + 1,Integer::sum);
         }
         input.close();
+        System.err.println(number);
     }
 }
