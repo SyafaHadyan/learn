@@ -1,6 +1,5 @@
 package syafa.java.hackerrank.LatihanUAPKelasC;
 import java.util.*;
-import java.util.stream.*;
 
 public class LC4EMatriksSpiral
 {
@@ -15,7 +14,14 @@ public class LC4EMatriksSpiral
         int[][] matrix = new int[matrixSize][matrixSize];
         for (int i = 0; i < matrix.length; i++)
         {
-            matrix[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            for (int j = 0; j < matrix[i].length; j++)
+            {
+                matrix[i][j] = input.nextInt();
+            }
+            if (matrix.length - i != 1)
+            {
+                input.nextLine();
+            }
         }
         input.close();
         while (upperBound != matrixSize || leftBound != matrixSize)
