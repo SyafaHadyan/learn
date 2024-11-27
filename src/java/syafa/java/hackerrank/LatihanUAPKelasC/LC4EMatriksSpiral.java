@@ -8,11 +8,19 @@ public class LC4EMatriksSpiral
     {
         Scanner input = new Scanner(System.in);
         int matrixSize = Integer.parseInt(input.nextLine());
+        int upperBound = 0;
+        int lowerBound = matrixSize;
+        int leftBound = 0;
+        int rightBound = matrixSize;
         int[][] matrix = new int[matrixSize][matrixSize];
         for (int i = 0; i < matrix.length; i++)
         {
             matrix[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
+        for (int i = 0; i < rightBound; i++)
+        {
+            System.out.print(matrix[upperBound][i] + " ");
+        }
     }
 }
