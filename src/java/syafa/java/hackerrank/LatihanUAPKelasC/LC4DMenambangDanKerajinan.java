@@ -19,12 +19,16 @@ public class LC4DMenambangDanKerajinan
         {
             for (int j = 0; j < coordinateLimit[1]; j++)
             {
-                for (int k = 0; k < coordinateLimit[3]; k++)
+                for (int k = 0; k < coordinateLimit[2]; k++)
                 {
                     String tempGetKeyVal = registeredBlock.get(Collections.unmodifiableList(Arrays.asList(i,j,k)));
                     if (tempGetKeyVal != null && VALID_BLOCK_LIST.contains(tempGetKeyVal) && !(tempGetKeyVal.equalsIgnoreCase("Air")))
                     {
-                        //
+                        System.out.printf("%s%-2c%d %d %d %-3s%s\n","Block",':',i,j,k,"is",tempGetKeyVal);
+                    }
+                    else if (tempGetKeyVal != null && !(tempGetKeyVal.equalsIgnoreCase("Air")))
+                    {
+                        System.out.printf("%s%-2c%d %d %d %-3s%s\n","Block",':',i,j,k,"is","unknown");
                     }
                 }
             }
@@ -44,14 +48,14 @@ public class LC4DMenambangDanKerajinan
                 (
                     Collections.unmodifiableList
                     (
-                        Arrays.asList(Integer.parseInt(tempInput[1]),Integer.parseInt(tempInput[2],Integer.parseInt(tempInput[3])))
+                        Arrays.asList(Integer.parseInt(tempInput[1]),Integer.parseInt(tempInput[2]),Integer.parseInt(tempInput[3]))
                     ),
                     tempInput[0]
                 );
                 continue;
             }
             printUtil(registeredBlock);
-            return;
+            break;
         }
         input.close();
     }
