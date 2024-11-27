@@ -18,29 +18,29 @@ public class LC4EMatriksSpiral
             matrix[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
-        while (true)
+        while (upperBound != matrixSize || leftBound != matrixSize)
         {
             for (int i = leftBound; i < rightBound; i++)
             {
-                System.out.print(matrix[upperBound][i] + " ");
+                System.out.print(((i == 0) ? "" : " ") + matrix[upperBound][i]);
             }
             upperBound++;
             for (int i = upperBound; i < lowerBound; i++)
             {
-                System.out.print(matrix[i][rightBound - 1] + " ");
+                System.out.print(" " + matrix[i][rightBound - 1]);
             }
             rightBound--;
             for (int i = rightBound; i > leftBound; i--)
             {
-                System.out.print(matrix[lowerBound - 1][i - 1] + " ");
+                System.out.print(" " + matrix[lowerBound - 1][i - 1]);
             }
             lowerBound--;
             for (int i = lowerBound; i > upperBound; i--)
             {
-                System.out.print(matrix[i - 1][leftBound] + " ");
+                System.out.print(" " + matrix[i - 1][leftBound]);
             }
             leftBound++;
-            // break;
         }
+        System.out.print("\n");
     }
 }
