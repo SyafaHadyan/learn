@@ -13,9 +13,15 @@ public class AngkotDengklek
         int hourStart = input.nextInt(); input.nextLine();
         int hourEnd = input.nextInt(); input.nextLine();
         int passengerAmount = input.nextInt(); input.nextLine();
+        long currentIncome = 0;
         for (int i = 0; i < passengerAmount; i++)
         {
-            //
+            if (input.nextLine().equalsIgnoreCase("Dewasa"))
+            {
+                currentIncome += ADULT_TICKET_COST;
+            }
+            currentIncome += CHILD_TICKET_COST;
+            System.err.println(currentIncome);
         }
         input.close();
     }
