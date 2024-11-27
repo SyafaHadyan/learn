@@ -7,6 +7,12 @@ public class AngkotDengklek
     static final long CHILD_TICKET_COST = 8000;
     static final int GAS_TANK = 20;
     static final long GAS_CONSUMPTION = 2;
+    static final long[][] HOURLY_GAS_COST =
+    {
+        {11,10000},
+        {17,12000},
+        {23,11000}
+    };
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
@@ -44,20 +50,14 @@ public class AngkotDengklek
             if (currentGasTank == 0 || i == hourEnd)
             {
                 System.err.println(i);
-                if (i <= 11)
+                for (int j = 0; j < HOURLY_GAS_COST.length; j++)
                 {
-                    System.err.println("CGC " + gasCost);
-                    gasCost += 10000 * (GAS_TANK - currentGasTank);
-                }
-                else if (i <= 17)
-                {
-                    System.err.println("CGC " + gasCost);
-                    gasCost += 12000 * (GAS_TANK - currentGasTank);
-                }
-                else if (i <= 23)
-                {
-                    System.err.println("CGC " + gasCost);
-                    gasCost += 11000 * (GAS_TANK - currentGasTank);
+                    if (i <= HOURLY_GAS_COST[j][0])
+                    {
+                        System.err.println("CGC " + gasCost);
+                        gasCost += HOURLY_GAS_COST[j][1] * (GAS_TANK - currentGasTank);
+                        break;
+                    }
                 }
                 System.err.println("GCA " + gasCost + "\n");
                 currentGasTank = GAS_TANK;
