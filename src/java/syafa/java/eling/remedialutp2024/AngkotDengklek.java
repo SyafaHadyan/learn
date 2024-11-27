@@ -13,7 +13,9 @@ public class AngkotDengklek
         int hourStart = input.nextInt(); input.nextLine();
         int hourEnd = input.nextInt(); input.nextLine();
         int passengerAmount = input.nextInt(); input.nextLine();
+        int currentGasTank = GAS_TANK;
         long currentIncome = 0;
+        long gasCost = 0;
         for (int i = 0; i < passengerAmount; i++)
         {
             System.err.println(i);
@@ -30,5 +32,30 @@ public class AngkotDengklek
             System.err.println("CRINC " + currentIncome + "\n");
         }
         input.close();
+        for (int i = hourStart + 1; i <= hourEnd; i++)
+        {
+            currentGasTank -= 2;
+            if (currentGasTank == 0)
+            {
+                System.err.println(i);
+                if (i <= 11)
+                {
+                    System.err.println("CGC " + gasCost);
+                    gasCost += 10000 * GAS_CONSUMPTION;
+                }
+                else if (i <= 17)
+                {
+                    System.err.println("CGC " + gasCost);
+                    gasCost += 12000 * GAS_CONSUMPTION;
+                }
+                else if (i <= 23)
+                {
+                    System.err.println("CGC " + gasCost);
+                    gasCost += 11000 * GAS_CONSUMPTION;
+                }
+                System.err.println("GCA " + gasCost + "\n");
+                currentGasTank = GAS_TANK;
+            }
+        }
     }
 }
