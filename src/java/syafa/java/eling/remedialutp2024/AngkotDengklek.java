@@ -61,6 +61,12 @@ public class AngkotDengklek
                 System.err.println("GCA " + gasCost + "\n");
                 currentGasTank = GAS_TANK;
             }
+            System.out.printf("%-28s%-2c%d %s\n","msg",':',(hourEnd - hourStart),"jam");
+            System.out.printf("%-28s%-2c%d %s\n","msg",':',(adultPassengerCounter),"orang");
+            System.out.printf("%-28s%-2c%d %s\n","msg",':',(childPassengerCounter),"orang");
+            System.out.printf("%-28s%-2c%s%d%c%d%s\n","msg",':',"Rp",(currentIncome),'.',(00),",-");
+            System.out.printf("%-28s%-2c%s%d%c%d%s","msg",':',"Rp",(gasCost),'.',(00),",-");
+
         }
     }
 }
