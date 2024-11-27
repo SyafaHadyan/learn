@@ -4,6 +4,7 @@ import java.util.stream.*;
 
 public class LC4DMenambangDanKerajinan
 {
+    static int[] coordinateLimit;
     static final ArrayList<String> VALID_BLOCK_LIST = new ArrayList<>(Arrays.asList
     (
         "air",
@@ -12,10 +13,27 @@ public class LC4DMenambangDanKerajinan
         "wood",
         "stone"
     ));
+    public static void printUtil(HashMap<List<Integer>,String> registeredBlock)
+    {
+        for (int i = 0; i < coordinateLimit[0]; i++)
+        {
+            for (int j = 0; j < coordinateLimit[1]; j++)
+            {
+                for (int k = 0; k < coordinateLimit[3]; k++)
+                {
+                    String tempGetKeyVal = registeredBlock.get(Collections.unmodifiableList(Arrays.asList(i,j,k)));
+                    if (tempGetKeyVal != null && VALID_BLOCK_LIST.contains(tempGetKeyVal) && !(tempGetKeyVal.equalsIgnoreCase("Air")))
+                    {
+                        //
+                    }
+                }
+            }
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int[] coordinateLimit = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        coordinateLimit = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         HashMap<List<Integer>,String> registeredBlock = new HashMap<>();
         while (input.hasNextLine())
         {
@@ -30,8 +48,10 @@ public class LC4DMenambangDanKerajinan
                     ),
                     tempInput[0]
                 );
+                continue;
             }
-
+            printUtil(registeredBlock);
+            return;
         }
         input.close();
     }
