@@ -34,24 +34,24 @@ public class AngkotDengklek
         input.close();
         for (int i = hourStart + 1; i <= hourEnd; i++)
         {
-            currentGasTank -= 2;
-            if (currentGasTank == 0)
+            currentGasTank -= GAS_CONSUMPTION;
+            if (currentGasTank == 0 || i == hourEnd)
             {
                 System.err.println(i);
                 if (i <= 11)
                 {
                     System.err.println("CGC " + gasCost);
-                    gasCost += 10000 * GAS_CONSUMPTION;
+                    gasCost += 10000 * (GAS_TANK - currentGasTank);
                 }
                 else if (i <= 17)
                 {
                     System.err.println("CGC " + gasCost);
-                    gasCost += 12000 * GAS_CONSUMPTION;
+                    gasCost += 12000 * (GAS_TANK - currentGasTank);
                 }
                 else if (i <= 23)
                 {
                     System.err.println("CGC " + gasCost);
-                    gasCost += 11000 * GAS_CONSUMPTION;
+                    gasCost += 11000 * (GAS_TANK - currentGasTank);
                 }
                 System.err.println("GCA " + gasCost + "\n");
                 currentGasTank = GAS_TANK;
