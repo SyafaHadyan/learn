@@ -7,6 +7,7 @@ public class EqualizeTheArray
     {
         Scanner input = new Scanner(System.in);
         int numberAmount = Integer.parseInt(input.nextLine());
+        int deletionAmount = 0;
         HashMap<Integer,Integer> number = new HashMap<>();
         for (int i = 0; i < numberAmount; i++)
         {
@@ -18,5 +19,14 @@ public class EqualizeTheArray
         }
         input.close();
         System.err.println(number);
+        int maxValue = Collections.max(number.values());
+        for (int i : number.keySet())
+        {
+            if (number.get(i) != maxValue)
+            {
+                deletionAmount += number.get(i);
+            }
+        }
+        System.out.println(deletionAmount);
     }
 }
