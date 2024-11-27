@@ -13,14 +13,14 @@ public class LC4EMatriksSpiral
         int leftBound = 0;
         int rightBound = matrixSize;
         int[][] matrix = new int[matrixSize][matrixSize];
+        for (int i = 0; i < matrix.length; i++)
+        {
+            matrix[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        }
+        input.close();
         while (true)
         {
-            for (int i = 0; i < matrix.length; i++)
-            {
-                matrix[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-            }
-            input.close();
-            for (int i = 0; i < rightBound; i++)
+            for (int i = leftBound; i < rightBound; i++)
             {
                 System.out.print(matrix[upperBound][i] + " ");
             }
@@ -35,7 +35,12 @@ public class LC4EMatriksSpiral
                 System.out.print(matrix[lowerBound - 1][i - 1] + " ");
             }
             lowerBound--;
-            break;
+            for (int i = lowerBound; i > upperBound; i--)
+            {
+                System.out.print(matrix[i - 1][leftBound] + " ");
+            }
+            leftBound++;
+            // break;
         }
     }
 }
