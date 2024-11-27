@@ -14,6 +14,8 @@ public class AngkotDengklek
         int hourEnd = input.nextInt(); input.nextLine();
         int passengerAmount = input.nextInt(); input.nextLine();
         int currentGasTank = GAS_TANK;
+        int adultPassengerCounter = 0;
+        int childPassengerCounter = 0;
         long currentIncome = 0;
         long gasCost = 0;
         for (int i = 0; i < passengerAmount; i++)
@@ -23,12 +25,15 @@ public class AngkotDengklek
             {
                 System.err.println("AD");
                 currentIncome += ADULT_TICKET_COST;
+                adultPassengerCounter++;
             }
             else
             {
                 System.err.println("CD");
                 currentIncome += CHILD_TICKET_COST;
+                childPassengerCounter++;
             }
+            System.err.println("AD " + adultPassengerCounter + " CD " + childPassengerCounter);
             System.err.println("CRINC " + currentIncome + "\n");
         }
         input.close();
