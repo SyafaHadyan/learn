@@ -22,5 +22,11 @@ public class LC4EMatriksSpiral
         {
             System.out.print(matrix[upperBound][i] + " ");
         }
+        upperBound++;
+        for (int i = 0; i < lowerBound; i++)
+        {
+            System.out.print(matrix[i][rightBound - 1] + " ");
+        }
+        rightBound--;
     }
 }
