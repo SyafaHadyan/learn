@@ -62,13 +62,13 @@ public class AngkotDengklek
                 System.err.println("GCA " + gasCost + "\n");
                 currentGasTank = GAS_TANK;
             }
-            finalIncome = currentIncome - gasCost;
-            System.out.printf("%-28s%-2c%d %s\n","msg",':',(hourEnd - hourStart),"jam");
-            System.out.printf("%-28s%-2c%d %s\n","msg",':',(adultPassengerCounter),"orang");
-            System.out.printf("%-28s%-2c%d %s\n","msg",':',(childPassengerCounter),"orang");
-            System.out.printf("%-28s%-2c%s%d%c%d%s\n","msg",':',"Rp",(currentIncome),'.',(00),",-");
-            System.out.printf("%-28s%-2c%s%d%c%d%s\n","msg",':',"Rp",(gasCost),'.',(00),",-");
-            System.out.print("Pak Dengklek " + ((finalIncome < 0) ? "mengalami kerugian" : "mendapat keuntungan") +  " sebesar " + ((finalIncome < 0) ? finalIncome * -1 : finalIncome) + ".00,-");
         }
+        finalIncome = currentIncome - gasCost;
+        System.out.printf("%-28s%-2c%d %s\n","Durasi operasi",':',(hourEnd - hourStart),"jam");
+        System.out.printf("%-28s%-2c%d %s\n","Jumlah penumpang dewasa",':',(adultPassengerCounter),"orang");
+        System.out.printf("%-28s%-2c%d %s\n","Jumlah penumpang anak kecil",':',(childPassengerCounter),"orang");
+        System.out.printf("%-28s%-2c%s%d%c%d%s\n","Total pendapatan",':',"Rp",(currentIncome),'.',(00),",-");
+        System.out.printf("%-28s%-2c%s%d%c%d%s\n","Pengeluaran bensin",':',"Rp",(gasCost),'.',(00),",-");
+        System.out.print("Pak Dengklek " + ((finalIncome < 0) ? "mengalami kerugian" : "mendapat keuntungan") +  " sebesar " + ((finalIncome < 0) ? finalIncome * -1 : finalIncome) + ".00,-");
     }
 }
