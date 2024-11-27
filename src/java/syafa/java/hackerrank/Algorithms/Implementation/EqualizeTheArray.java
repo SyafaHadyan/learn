@@ -20,11 +20,32 @@ public class EqualizeTheArray
         input.close();
         System.err.println(number);
         int maxValue = Collections.max(number.values());
+        System.err.println("MV " + maxValue);
+        if (number.size() == 1)
+        {
+            System.out.println(0);
+            return;
+        }
+        if (maxValue == 1)
+        {
+            System.out.println(numberAmount - 1);
+            return;
+        }
+        int maxKeyValue = -1;
         for (int i : number.keySet())
         {
-            if (number.get(i) != maxValue)
+            int tempValue = number.get(i);
+            if (tempValue == maxValue && maxKeyValue == -1)
             {
-                deletionAmount += number.get(i);
+                maxKeyValue = i;
+            }
+            if (tempValue < maxValue)
+            {
+                deletionAmount += tempValue;
+            }
+            if (maxKeyValue != -1 && tempValue == maxValue && i != maxKeyValue)
+            {
+                deletionAmount += tempValue;
             }
         }
         System.out.println(deletionAmount);
