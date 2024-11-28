@@ -15,40 +15,53 @@ public class Part01
         {
             int[] tempInput = Stream.of(input.nextLine().split("/")).mapToInt(Integer::parseInt).toArray();
             Arrays.sort(tempInput);
-            bridge.put(Collections.unmodifiableList(Arrays.asList(tempInput[0],tempInput[1])),(tempInput[0] + tempInput[1]));
+            bridge.putIfAbsent(Collections.unmodifiableList(Arrays.asList(tempInput[0],tempInput[1])),(tempInput[0] + tempInput[1]));
             if (tempInput[0] == 0)
             {
                 System.err.println("Possible first port " +  tempInput[0] + " " + tempInput[1]);
+                possibleKeySet.add(Collections.unmodifiableList(Arrays.asList(tempInput[0],tempInput[1])));
             }
-            possibleKeySet.add(Collections.unmodifiableList(Arrays.asList(tempInput[0],tempInput[1])));
-            for (int i = 0; i < tempInput.length; i++)
+            if (tempInput[1] > largestPort)
             {
-                if (tempInput[i] > largestPort)
-                {
-                    System.err.print("Largest port from " + largestPort);
-                    largestPort = tempInput[i];
-                    System.err.println(" to " + largestPort);
-                }
+                System.err.print("Largest port from " + largestPort);
+                largestPort = tempInput[1];
+                System.err.println(" to " + largestPort);
             }
             System.out.println("Current largest port " + largestPort + "\n");
         }
         input.close();
+        System.err.println(bridge);
+        System.err.println(possibleKeySet);
         for (List<Integer> i : possibleKeySet)
         {
             int currentBridgeStrength = 0;
-            for (int j = 1; true; j++)
+            for (int counter = 0, j = 1; j <= largestPort && counter < bridge.size(); j++)
             {
-                List<Integer> getKey = Collections.unmodifiableList(Arrays.asList(i.getFirst(),j));
-                if (bridge.containsKey(getKey) && bridge.get(getKey) > bridgeStrength)
+                ArrayList<Integer> getKey = new ArrayList<Integer>(Arrays.asList(i.getLast(),j));
+                System.err.println(getKey);
+                if (bridge.containsKey(getKey))
                 {
-                    currentBridgeStrength += bridge.get(getKey);
+                    currentBridgeStrength += getKey.getLast();
                     System.err.println(getKey);
-                    System.err.println("Match higher value at " + bridgeStrength);
-                }
-                if (j == largestPort)
-                {
-                    System.err.println("Break");
-                    break;
+                    System.err.println("Match higher value at " + currentBridgeStrength);
+                    getKey.set(0,getKey.getLast());
+                    System.err.println(getKey);
+                    for (int k = 1; k <= largestPort; k++)
+                    {
+                        for (int l = getKey.getFirst(), currentCounter = 0; l <= largestPort && currentCounter < bridge.size(); l++, counter++)
+                        {
+                            getKey.set(1,l);
+                            System.err.println(getKey);
+                            if (bridge.containsKey(getKey))
+                            {
+                                currentBridgeStrength += bridge.get(getKey);
+                                k++;
+                                System.err.println(currentBridgeStrength);
+                                System.err.println(getKey);
+                                System.err.println(bridge);
+                            }
+                        }
+                    }
                 }
             }
             if (currentBridgeStrength > bridgeStrength)
@@ -56,6 +69,7 @@ public class Part01
                 System.err.println("Current higher " + currentBridgeStrength);
                 bridgeStrength = currentBridgeStrength;
                 System.err.println("Current bridge strength " + bridgeStrength);
+                currentBridgeStrength = 0;
             }
             System.err.println();
         }
