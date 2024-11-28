@@ -31,7 +31,7 @@ public class Part01
         input.close();
         for (List<Integer> i : possibleKeySet)
         {
-            for (int j = 1; j <= largestPort || true; j++)
+            for (int j = 1; true; j++)
             {
                 List<Integer> getKey = Collections.unmodifiableList(Arrays.asList(i.getFirst(),j));
                 if (bridge.containsKey(getKey) && bridge.get(getKey) > bridgeStrength)
@@ -44,5 +44,6 @@ public class Part01
                 }
             }
         }
+        System.out.println(bridgeStrength);
     }
 }
