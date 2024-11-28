@@ -37,7 +37,9 @@ public class ContainerWithMostWater
                 if (currentWater > maxWater)
                 {
                     maxWater = currentWater;
+                    System.err.println("WTMX " + maxWater);
                 }
+                System.err.println();
             }
             leftIndex++;
             rightIndex--;
