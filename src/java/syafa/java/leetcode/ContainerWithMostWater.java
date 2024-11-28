@@ -33,7 +33,11 @@ public class ContainerWithMostWater
             }
             for (int j = rightIndex - 1; j > leftIndex; j--)
             {
+                System.err.println("CRIDX " + height[j] + " CRLMT " + height[leftIndex]);
+                System.err.println("CRIDXMN " + Math.min(height[j],height[leftIndex]));
+                System.err.println("CRMTP " + (j - leftIndex));
                 int currentWater = Math.min(height[j],height[leftIndex]) * (j - leftIndex);
+                System.err.println("CRWT " + currentWater);
                 if (currentWater > maxWater)
                 {
                     maxWater = currentWater;
