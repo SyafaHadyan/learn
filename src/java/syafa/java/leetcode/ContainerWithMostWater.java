@@ -19,7 +19,7 @@ public class ContainerWithMostWater
         {
             for (int j = leftIndex; j < rightIndex; j++)
             {
-                int currentWater = Math.min(height[j],height[rightIndex - 1]) * rightIndex - j;
+                int currentWater = Math.min(height[j],height[rightIndex - 1]) * rightIndex - j - 1;
                 if (currentWater > maxWater)
                 {
                     maxWater = currentWater;
