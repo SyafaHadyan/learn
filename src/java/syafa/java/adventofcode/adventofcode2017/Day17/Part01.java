@@ -11,8 +11,9 @@ public class Part01
         input.close();
         ArrayList<Integer> spinlock = new ArrayList<>();
         spinlock.add(0);
+        int previousIndex = 1;
         System.err.println(spinlock);
-        for (int i = 1, previousIndex = 1; i <= operationLookup; i++)
+        for (int i = 1; i <= operationLookup; i++)
         {
             int nextIndex = previousIndex;
             for (int j = 0; j < SPINLOCK_CYCLE; j++)
@@ -28,6 +29,6 @@ public class Part01
             spinlock.add(nextIndex,i);
             System.err.println(spinlock);
         }
-        System.err.println(spinlock);
+        System.out.println(spinlock.get(++previousIndex));
     }
 }
