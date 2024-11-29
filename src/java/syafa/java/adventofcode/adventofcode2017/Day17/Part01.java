@@ -13,7 +13,7 @@ public class Part01
         spinlock.add(0);
         int previousIndex = 1;
         System.err.println(spinlock);
-        for (int i = 1; i <= 2017; i++)
+        for (int i = 1; i <= SPINLOCK_CYCLE; i++)
         {
             int nextIndex = previousIndex;
             for (int j = 0; j < operationLookup; j++)
