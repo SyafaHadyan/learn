@@ -3,20 +3,20 @@ import java.util.*;
 
 public class Part02
 {
-    static final int SPINLOCK_CYCLE = 2017;
+    static final long SPINLOCK_CYCLE = 50000000;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int operationLookup = Integer.parseInt(input.nextLine());
+        long operationLookup = Long.parseLong(input.nextLine());
         input.close();
-        ArrayList<Integer> spinlock = new ArrayList<>();
-        spinlock.add(0);
-        int previousIndex = 1;
-        System.err.println(spinlock);
-        for (int i = 1; i <= 2017; i++)
+        ArrayList<Long> spinlock = new ArrayList<>();
+        spinlock.add(0l);
+        long previousIndex = 1;
+        // System.err.println(spinlock);
+        for (long i = 1; i <= SPINLOCK_CYCLE; i++)
         {
-            int nextIndex = previousIndex;
-            for (int j = 0; j < operationLookup; j++)
+            long nextIndex = previousIndex;
+            for (long j = 0; j < operationLookup; j++)
             {
                 ++nextIndex;
                 if (nextIndex >= spinlock.size())
@@ -26,9 +26,10 @@ public class Part02
             }
             nextIndex++;
             previousIndex = nextIndex;
-            spinlock.add(nextIndex,i);
-            System.err.println(spinlock);
+            spinlock.add((int) nextIndex,i);
+            // System.err.println(spinlock);
         }
-        System.out.println(spinlock.get(++previousIndex));
+        // System.out.println(spinlock.get(++previousIndex));
+        System.out.println(spinlock.get(1));
     }
 }
