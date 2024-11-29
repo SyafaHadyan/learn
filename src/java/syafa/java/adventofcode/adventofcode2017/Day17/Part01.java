@@ -12,18 +12,20 @@ public class Part01
         ArrayList<Integer> spinlock = new ArrayList<>();
         spinlock.add(0);
         System.err.println(spinlock);
-        for (int i = 1, previousIndex = 0; i <= operationLookup; i++)
+        for (int i = 1, previousIndex = 1; i <= operationLookup; i++)
         {
-            int nextIndex = previousIndex + SPINLOCK_CYCLE;
+            int nextIndex = previousIndex;
+            for (int j = 0; j < SPINLOCK_CYCLE; j++)
+            {
+                ++nextIndex;
+                if (nextIndex >= spinlock.size())
+                {
+                    nextIndex = 0;
+                }
+            }
+            nextIndex++;
             previousIndex = nextIndex;
-            try
-            {
-                spinlock.add(nextIndex,i);
-            }
-            catch (IndexOutOfBoundsException e)
-            {
-                spinlock.add(i);
-            }
+            spinlock.add(nextIndex,i);
             System.err.println(spinlock);
         }
         System.err.println(spinlock);
