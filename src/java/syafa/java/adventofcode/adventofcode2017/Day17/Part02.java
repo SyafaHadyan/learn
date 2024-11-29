@@ -12,7 +12,7 @@ public class Part02
         ArrayList<Long> spinlock = new ArrayList<>();
         spinlock.add(0l);
         long previousIndex = 1;
-        // System.err.println(spinlock);
+        System.err.println(spinlock);
         for (long i = 1; i <= SPINLOCK_CYCLE; i++)
         {
             long nextIndex = previousIndex;
@@ -27,9 +27,8 @@ public class Part02
             nextIndex++;
             previousIndex = nextIndex;
             spinlock.add((int) nextIndex,i);
-            // System.err.println(spinlock);
+            System.err.println(spinlock);
         }
-        // System.out.println(spinlock.get(++previousIndex));
         System.out.println(spinlock.get(1));
     }
 }
