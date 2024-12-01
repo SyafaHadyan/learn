@@ -6,7 +6,7 @@ public class Part02
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        HashMap<Long,Long> registeredValues = new HashMap<>();
+        HashMap<Long,Integer> registeredValues = new HashMap<>();
         ArrayList<Long> inputValues = new ArrayList<>();
         long frequency = 0l;
         while (input.hasNextLine())
@@ -14,10 +14,19 @@ public class Part02
             inputValues.add(Long.parseLong(input.nextLine().replace("+","")));
         }
         input.close();
-        for (int i = 0; i < args.length; i++)
+        while (true)
         {
-            
+            for (int i = 0; i < inputValues.size(); i++)
+            {
+                frequency += inputValues.get(i);
+                if (!(registeredValues.containsKey(frequency)))
+                {
+                    registeredValues.put(frequency,i);
+                    continue;
+                }
+                System.out.println(frequency);
+                System.exit(0);
+            }
         }
-        System.out.println(frequency);
     }
 }
