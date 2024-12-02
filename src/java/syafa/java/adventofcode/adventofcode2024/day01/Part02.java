@@ -17,6 +17,17 @@ public class Part02
             secondSet.merge(tempInput[1],1,Integer::sum);
         }
         input.close();
+        for (int i = 0; i < firstSet.size(); i++)
+        {
+            try
+            {
+                difference += (firstSet.get(i) * secondSet.get(firstSet.get(i)));
+            }
+            catch (NullPointerException e)
+            {
+                //
+            }
+        }
         System.out.println(difference);
     }
 }
