@@ -21,7 +21,8 @@ public class Part01
         Collections.sort(secondSet);
         for (int i = 0; i < firstSet.size(); i++)
         {
-            //.
+            difference += Math.abs(firstSet.get(i) - secondSet.get(i));
         }
+        System.out.println(difference);
     }
 }
