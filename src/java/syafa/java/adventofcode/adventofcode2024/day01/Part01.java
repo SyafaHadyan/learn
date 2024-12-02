@@ -13,7 +13,15 @@ public class Part01
         while (input.hasNextLine())
         {
             int[] tempInput = Stream.of(input.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
+            firstSet.add(tempInput[0]);
+            secondSet.add(tempInput[1]);
         }
         input.close();
+        Collections.sort(firstSet);
+        Collections.sort(secondSet);
+        for (int i = 0; i < firstSet.size(); i++)
+        {
+            //.
+        }
     }
 }
