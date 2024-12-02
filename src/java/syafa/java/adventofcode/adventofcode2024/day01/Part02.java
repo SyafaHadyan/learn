@@ -9,20 +9,14 @@ public class Part02
         Scanner input = new Scanner(System.in);
         int difference = 0;
         ArrayList<Integer> firstSet = new ArrayList<>();
-        ArrayList<Integer> secondSet = new ArrayList<>();
+        HashMap<Integer,Integer> secondSet = new HashMap<>();
         while (input.hasNextLine())
         {
             int[] tempInput = Stream.of(input.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
             firstSet.add(tempInput[0]);
-            secondSet.add(tempInput[1]);
+            secondSet.merge(tempInput[1],1,Integer::sum);
         }
         input.close();
-        Collections.sort(firstSet);
-        Collections.sort(secondSet);
-        for (int i = 0; i < firstSet.size(); i++)
-        {
-            difference += Math.abs(firstSet.get(i) - secondSet.get(i));
-        }
         System.out.println(difference);
     }
 }
