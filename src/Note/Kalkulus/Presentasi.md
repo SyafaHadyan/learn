@@ -10,8 +10,6 @@
 **Jawaban:**
 $ f(x) $ meningkat pada $ (-\infty, \infty) $.
 
----
-
 ### Nomor 2
 **$ h(x) = x^3 - 3x^2 $**  
 - $ h'(x) = 3x^2 - 6x = 3x(x - 2) $.  
@@ -25,8 +23,6 @@ $ f(x) $ meningkat pada $ (-\infty, \infty) $.
 - $ h(x) $ meningkat pada $ (0, 2) \cup (2, \infty) $.  
 - $ h(x) $ menurun pada $ (-\infty, 0) $.
 
----
-
 ### Nomor 3
 **$ g(x) = 2x^4 - x^2 $**  
 - $ g'(x) = 8x^3 - 2x = 2x(4x^2 - 1) = 2x(2x - 1)(2x + 1) $.  
@@ -39,8 +35,6 @@ $ f(x) $ meningkat pada $ (-\infty, \infty) $.
 **Jawaban:**
 - $ g(x) $ meningkat pada $ (-\frac{1}{2}, 0) \cup (\frac{1}{2}, \infty) $.  
 - $ g(x) $ menurun pada $ (-\infty, -\frac{1}{2}) \cup (0, \frac{1}{2}) $.
-
----
 
 ### Nomor 4
 **$ f(x) = (x + 1)(x - 2) $**  
@@ -56,8 +50,6 @@ $ f(x) $ meningkat pada $ (-\infty, \infty) $.
 - $ f(x) $ meningkat pada $ (\frac{1}{2}, \infty) $.  
 - $ f(x) $ menurun pada $ (-\infty, \frac{1}{2}) $.
 
----
-
 ### Nomor 5
 **$ f(x) = 4x^2 - x^4 $**  
 - $ f'(x) = 8x - 4x^3 = 4x(2 - x^2) = 4x(2 - x)(2 + x) $.  
@@ -70,8 +62,6 @@ $ f(x) $ meningkat pada $ (-\infty, \infty) $.
 **Jawaban:**
 - $ f(x) $ meningkat pada $ (-2, 0) \cup (2, \infty) $.  
 - $ f(x) $ menurun pada $ (-\infty, -2) \cup (0, 2) $.
-
----
 
 Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 
@@ -88,8 +78,6 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 - $ f(x) $ meningkat pada $ (-1, 1) $.  
 - $ f(x) $ menurun pada $ (-\infty, -1) \cup (1, \infty) $.
 
----
-
 ### Nomor 7
 **$ f(x) = x^4 - 4x^3 $**  
 - $ f'(x) = 4x^3 - 12x^2 = 4x^2(x - 3) $.  
@@ -103,8 +91,6 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 - $ f(x) $ meningkat pada $ (3, \infty) $.  
 - $ f(x) $ menurun pada $ (-\infty, 0) \cup (0, 3) $.
 
----
-
 ### Nomor 8
 **$ f(x) = \ln(x^2 + 4) - 4 $**  
 - $ f'(x) = \frac{1}{x^2 + 4}(2x) = \frac{2x}{x^2 + 4} $.  
@@ -116,8 +102,6 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 **Jawaban:**
 - $ f(x) $ meningkat pada $ (0, \infty) $.  
 - $ f(x) $ menurun pada $ (-\infty, 0) $.
-
----
 
 ### Nomor 9
 **$ H(x) = \sin(x), \, 0 \leq x \leq 2\pi $**  
@@ -132,8 +116,6 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 - $ H(x) $ meningkat pada $ [0, \frac{\pi}{2}] \cup [\frac{3\pi}{2}, 2\pi] $.  
 - $ H(x) $ menurun pada $ [\frac{\pi}{2}, \frac{3\pi}{2}] $.
 
----
-
 ### Nomor 10
 **$ R(x) = \cos(x), \, 0 \leq x \leq 2\pi $**  
 - $ R'(x) = -\sin(x) $.  
@@ -146,14 +128,10 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 - $ R(x) $ meningkat pada $ [\pi, 2\pi] $.  
 - $ R(x) $ menurun pada $ [0, \pi] $.
 
----
-
 Saya akan melanjutkan ke **nomor 11-18**. Harap tunggu!
 
 ### Nomor 11-18
 Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan interval di mana fungsi cekung ke atas (**concave up**) atau ke bawah (**concave down**).
-
----
 
 ### Nomor 11
 **$ F(x) = (x - 1)^3 $**  
@@ -168,8 +146,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 - $ F(x) $ cekung ke bawah pada $ (-\infty, 1) $.  
 - $ F(x) $ cekung ke atas pada $ (1, \infty) $.
 
----
-
 ### Nomor 12
 **$ G(x) = x^4 - 4x^2 $**  
 - $ G'(x) = 4x^3 - 8x $.  
@@ -182,8 +158,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 **Jawaban:**
 - $ G(x) $ cekung ke atas pada $ (-\frac{2}{\sqrt{3}}, \frac{2}{\sqrt{3}}) $.  
 - $ G(x) $ cekung ke bawah pada $ (-\infty, -\frac{2}{\sqrt{3}}) \cup (\frac{2}{\sqrt{3}}, \infty) $.
-
----
 
 ### Nomor 13
 **$ T(x) = 3x^3 - x^2 + 5 $**  
@@ -198,8 +172,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 - $ T(x) $ cekung ke bawah pada $ (-\infty, \frac{1}{9}) $.  
 - $ T(x) $ cekung ke atas pada $ (\frac{1}{9}, \infty) $.
 
----
-
 ### Nomor 14
 **$ f(x) = x^3 - 3x^2 + 3x - 1 $**  
 - $ f'(x) = 3x^2 - 6x + 3 $.  
@@ -213,8 +185,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 - $ f(x) $ cekung ke bawah pada $ (-\infty, 1) $.  
 - $ f(x) $ cekung ke atas pada $ (1, \infty) $.
 
----
-
 ### Nomor 15
 **$ f(x) = x^4 $**  
 - $ f'(x) = 4x^3 $.  
@@ -223,8 +193,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 
 **Jawaban:**
 - $ f(x) $ cekung ke atas pada $ (-\infty, \infty) $.
-
----
 
 ### Nomor 16
 **$ f(x) = 2x^3 - x^2 $**  
@@ -239,8 +207,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 - $ f(x) $ cekung ke bawah pada $ (-\infty, \frac{1}{6}) $.  
 - $ f(x) $ cekung ke atas pada $ (\frac{1}{6}, \infty) $.
 
----
-
 ### Nomor 17
 **$ G(x) = \frac{1}{x^2} $**  
 - $ G'(x) = -\frac{2}{x^3} $.  
@@ -250,8 +216,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 **Jawaban:**
 - $ G(x) $ cekung ke atas pada $ (-\infty, 0) \cup (0, \infty) $.
 
----
-
 ### Nomor 18
 **$ f(x) = \cos(x^2) $**  
 - $ f'(x) = -2x\sin(x^2) $.  
@@ -259,8 +223,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 
 ### Nomor 19-26
 Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menurun, cekung ke atas (**concave up**), atau cekung ke bawah (**concave down**), serta titik belok (**inflection points**) jika ada. 
-
----
 
 ### Nomor 19  
 **$ f(x) = x^3 - 3x^2 + 12 $**  
@@ -293,8 +255,6 @@ Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menur
   **Titik belok:**  
   $ x = 1 $.
 
----
-
 ### Nomor 20  
 **$ f(x) = x^4 - 4x^3 + 6x^2 $**  
 - **Turunan pertama**:  
@@ -322,8 +282,6 @@ Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menur
 
   **Titik belok:**  
   Tidak ada (meskipun $ f''(x) = 0 $ di $ x = 1 $, fungsi tidak berubah cekungannya).
-
----
 
 ### Nomor 21  
 **$ f(x) = 3x^4 - 4x^3 + 12x^2 $**  
@@ -353,13 +311,9 @@ Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menur
   **Titik belok:**  
   Tidak ada.
 
----
-
 Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
 
 ### Nomor 22-26  
-
----
 
 ### Nomor 22  
 **$ f(x) = x^4 - 4x^3 $**  
@@ -393,8 +347,6 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
   **Titik belok:**  
   $ x = 0 $ dan $ x = 2 $.
 
----
-
 ### Nomor 23  
 **$ G(x) = 3x^3 - x^2 $**  
 - **Turunan pertama**:  
@@ -427,8 +379,6 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
   **Titik belok:**  
   $ x = \frac{1}{9} $.
 
----
-
 ### Nomor 24  
 **$ f(x) = x^{1/3}(x - 1) $**  
 - **Turunan pertama**:  
@@ -440,8 +390,6 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
 
 - **Turunan kedua**:  
   Kompleksitas lebih tinggi untuk diferensiasi. Pendekatan grafik akan lebih sesuai untuk menjelaskan cekungan.  
-
----
 
 ### Nomor 25  
 **$ f(x) = \sqrt{x^3} = x^{3/2} $**  
@@ -467,8 +415,6 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
   **Titik belok:**  
   Tidak ada.
 
----
-
 ### Nomor 26  
 **$ f(x) = x^{2/3} $**  
 - **Turunan pertama**:  
@@ -493,13 +439,9 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
   **Titik belok:**  
   Tidak ada.  
 
----
-
 Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
 
 ### Nomor 27-34  
-
----
 
 ### Nomor 27  
 **$ f(x) = x^2 + 1/x^2 $ pada $ x > 0 $**  
@@ -533,8 +475,6 @@ Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
   **Titik belok:**  
   Tidak ada.
 
----
-
 ### Nomor 28  
 **$ g(x) = 8x^10 + x^8 $**  
 - **Turunan pertama**:  
@@ -562,8 +502,6 @@ Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
 
   **Titik belok:**  
   Tidak ada.
-
----
 
 ### Nomor 29  
 **$ f(x) = x^3 - 3x^2 $ pada $ [0, 6] $**  
@@ -596,8 +534,6 @@ Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
   **Titik belok:**  
   $ x = 1 $.
 
----
-
 ### Nomor 30  
 **$ f(x) = x^4 - 4x^3 $ pada $ [0, 6] $**  
 - **Turunan pertama**:  
@@ -628,14 +564,6 @@ Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
 
   **Titik belok:**  
   $ x = 2 $.
-
----
-
-Saya akan menyelesaikan soal **31-34** berikutnya. Harap tunggu!
-
-### Nomor 31-34  
-
----
 
 ### Nomor 31  
 **$ f(x) = x^5 - 5x^4 $ pada $ [0, 6] $**  
@@ -668,8 +596,6 @@ Saya akan menyelesaikan soal **31-34** berikutnya. Harap tunggu!
   **Titik belok:**  
   $ x = 3 $.
 
----
-
 ### Nomor 32  
 **$ f(x) = x^3 - 3x^2 + 3x $ pada $ [0, 3] $**  
 - **Turunan pertama**:  
@@ -698,8 +624,6 @@ Saya akan menyelesaikan soal **31-34** berikutnya. Harap tunggu!
 
   **Titik belok:**  
   $ x = 1 $.
-
----
 
 ### Nomor 33  
 **$ f(x) = \frac{1}{x} + x^2 $ pada $ x > 0 $**  
@@ -732,8 +656,6 @@ Saya akan menyelesaikan soal **31-34** berikutnya. Harap tunggu!
   **Titik belok:**  
   Tidak ada.
 
----
-
 ### Nomor 34  
 **$ f(x) = x^3 + 3x^2 + 3x + 1 $**  
 - **Turunan pertama**:  
@@ -765,10 +687,6 @@ Saya akan menyelesaikan soal **31-34** berikutnya. Harap tunggu!
 
 ## Part 1
 
-Berikut adalah penyelesaian **Problem Set 4.1 (soal 1–14)**:
-
----
-
 ### **Nomor 1**
 $
 \sum_{k=1}^{6}(k - 1)
@@ -783,8 +701,6 @@ $
 $
 **Jawaban:** 15.
 
----
-
 ### **Nomor 2**  
 $
 \sum_{i=1}^{6} i^2
@@ -798,8 +714,6 @@ $
 1 + 4 + 9 + 16 + 25 + 36 = 91.
 $
 **Jawaban:** 91.
-
----
 
 ### **Nomor 3**  
 $
@@ -819,8 +733,6 @@ $
 $
 **Jawaban:** $ \approx 1.676 $.
 
----
-
 ### **Nomor 4**  
 $
 \sum_{l=1}^{8} (l + 1)^2
@@ -834,8 +746,6 @@ $
 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 = 284.
 $
 **Jawaban:** 284.
-
----
 
 ### **Nomor 5**  
 $
@@ -855,8 +765,6 @@ $
 $
 **Jawaban:** -22.
 
----
-
 ### **Nomor 6**  
 $
 \sum_{k=1}^{6} (-1)^k 2^k (k + 1)
@@ -875,8 +783,6 @@ $
 $
 **Jawaban:** 3316.
 
----
-
 ### **Nomor 7**  
 $
 \sum_{n=1}^{6} n \cos(n \pi)
@@ -893,8 +799,6 @@ $
 -1 + 2 - 3 + 4 - 5 + 6 = 3.
 $
 **Jawaban:** 3.
-
----
 
 ### **Nomor 8**  
 $
@@ -918,8 +822,6 @@ $
 $
 **Jawaban:** 3.
 
----
-
 ### **Nomor 9**  
 Tuliskan dalam sigma notasi:  
 $
@@ -930,8 +832,6 @@ $
 \sum_{k=1}^{41} k.
 $
 **Jawaban:** $\sum_{k=1}^{41} k$.
-
----
 
 ### **Nomor 10**  
 Tuliskan dalam sigma notasi:  
@@ -944,16 +844,12 @@ $
 $
 **Jawaban:** $\sum_{k=1}^{25} 2k$.
 
----
-
 ### **Nomor 11**  
 Tuliskan dalam sigma notasi:  
 $
 1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{100}.
 $
 **Jawaban:** $\sum_{k=1}^{100} \frac{1}{k}$.
-
----
 
 ### **Nomor 12**  
 Tuliskan dalam sigma notasi:  
@@ -966,8 +862,6 @@ $
 $
 **Jawaban:** $\sum_{k=1}^{10} \frac{1}{2^k}$.
 
----
-
 ### **Nomor 13**  
 Tuliskan dalam sigma notasi:  
 $
@@ -978,8 +872,6 @@ $
 \sum_{k=1}^{50} a_{2k-1}.
 $
 **Jawaban:** $\sum_{k=1}^{50} a_{2k-1}$.
-
----
 
 ### **Nomor 14**  
 Tuliskan dalam sigma notasi:  
