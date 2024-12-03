@@ -128,11 +128,6 @@ Saya akan melanjutkan dengan nomor 6-10. Harap tunggu.
 - $ R(x) $ meningkat pada $ [\pi, 2\pi] $.  
 - $ R(x) $ menurun pada $ [0, \pi] $.
 
-Saya akan melanjutkan ke **nomor 11-18**. Harap tunggu!
-
-### Nomor 11-18
-Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan interval di mana fungsi cekung ke atas (**concave up**) atau ke bawah (**concave down**).
-
 ### Nomor 11
 **$ F(x) = (x - 1)^3 $**  
 - $ F'(x) = 3(x - 1)^2 $.  
@@ -221,9 +216,6 @@ Dalam soal ini, Anda diminta menggunakan **Concavity Theorem** untuk menentukan 
 - $ f'(x) = -2x\sin(x^2) $.  
 - $ f''(x) = -2\sin(x^2) - 4x^2\cos(x^2) $.  
 
-### Nomor 19-26
-Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menurun, cekung ke atas (**concave up**), atau cekung ke bawah (**concave down**), serta titik belok (**inflection points**) jika ada. 
-
 ### Nomor 19  
 **$ f(x) = x^3 - 3x^2 + 12 $**  
 - **Turunan pertama**:  
@@ -311,9 +303,6 @@ Dalam soal ini, Anda diminta menentukan interval di mana fungsi meningkat, menur
   **Titik belok:**  
   Tidak ada.
 
-Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
-
-### Nomor 22-26  
 
 ### Nomor 22  
 **$ f(x) = x^4 - 4x^3 $**  
@@ -438,10 +427,6 @@ Saya akan melanjutkan soal **nomor 22-26**. Harap tunggu!
 
   **Titik belok:**  
   Tidak ada.  
-
-Saya akan melanjutkan soal **nomor 27-34**. Harap tunggu!
-
-### Nomor 27-34  
 
 ### Nomor 27  
 **$ f(x) = x^2 + 1/x^2 $ pada $ x > 0 $**  
