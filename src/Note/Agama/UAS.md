@@ -76,3 +76,70 @@ Secara substansi, akhlak adalah sifat hati (kondisi hati), jika sifat hatinya ba
 - **Kepada Allah SWT, dengan cara menjalankan seluruh perintah** yang tertuang dalam hukumnya, dan menjauhi seluruh larangan. Baik yang terdapat pada **akidah** yang tercermin pada rukun Iman dan **syariah** pada rukun Islam.
 - **Kepada Manusia, bersikap baik, jujur, dan peduli** pada orang tua, saudara, tetangga, sesama muslim maupun dengan non-muslim.
 - **Kepada alam dan lingkungan, bertanggung jawab melestarikan, merawat** dan menjadi **pengatur** baik pada tumbuhan dan hewan **untuk kebaikannya**.
+
+## Masyarakat Madani
+
+### DAsar Pembentukan Masyarakat Madani
+
+Al-Hujarat: 13
+
+### Pengertian Masyarakat Madani
+
+Masyarakat madani (civilized society) adalah masyarakat yang menganut sistem sosial berdasarkan prisnip moral yang merekonstruksi sikap menjamin keseimbangan antara kebebasan individu dengan kestabilan bagi kehidupan masyarakat.
+
+#### Masyarakat Madani menurut Anwar Ibrahim
+
+Mempunyai ciri khas:
+
+- Kemajemukan budaya
+- Hubungan timbal balik
+- Sikap saling memahami dan menghargai
+
+Konsep kehidupan masyarakat madani adalah merekonstruksi rekomendasi dari surat Al-Mulk 67:23-24.
+
+#### Masyarakat Madani atau Civil Society
+
+Secara umum bisa diartikan ssebagai salah suatu masyarakat atau institusi sosial yang memiliki ciri-ciri antara lain:
+
+- Kemandirian
+- Toleransi
+- Keswadayaan
+- Kerelaan menolong satu sama lain
+- Menjunjung tinggi norma dan etika yang disepakati secara bersama-sama
+
+#### Civil Society
+
+Dimana individu dan kelompok dalam masyarakat dapat saling berinteraksi dengan semanga toleransi.
+
+### Pengertian Militaristic Society
+
+Militaristic Society yaitu masyarakat yang dibentuk dengan otoritarianisme dan fasisme untuk menguasai rakyatnya serta tidak ada kebebasan pendapat ataupun kritik kepada pemerintah.
+
+### Masyarakat Saba
+
+image here
+
+### Masyarakat Madani di Yastrib
+
+Masyarakat Madani merupakan konseptualisasi dari nilai-nilai ajaran Al-Quran yang diaplikasikan Rasulullah SAW, ketika hijrah dari Makkah (Muhajirin) menuju Madinah (Anshar). Dalam masyarakat Madinah/Madani berkumpul berbagai macam agama, suku, dan lain-lain.
+
+### Strategi Rasulullah Membangun Masyarakat Madani
+
+```mermaid
+flowchart TD
+a[Strategi]
+b[Masjid<br>Sumber]
+c[Mempersatukan<br>Muhajirin dan Ansar<br>dalam satu ikatan<br>ukhuwah islaminyah]
+d[Menyatukan<br>umat muslim dan<br>non-muslim]
+e[Pondasi dalam berbagai aspek]
+f[Ekonomi<br>Islam]
+g[Politik<br>Islam]
+h[Hukum<br>Islam]
+a --> b
+a --> c
+a --> d
+a --> e
+e --> f
+e --> g
+e --> h
+```
