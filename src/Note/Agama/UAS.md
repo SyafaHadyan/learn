@@ -126,12 +126,12 @@ Masyarakat Madani merupakan konseptualisasi dari nilai-nilai ajaran Al-Quran yan
 ### Strategi Rasulullah Membangun Masyarakat Madani
 
 ```mermaid
-flowchart TD
+graph TD
 a[Strategi]
 b[Masjid<br>Sumber]
 c[Mempersatukan<br>Muhajirin dan Ansar<br>dalam satu ikatan<br>ukhuwah islaminyah]
 d[Menyatukan<br>umat muslim dan<br>non-muslim]
-e[Pondasi dalam berbagai aspek]
+e[Pondasi dalam<br>berbagai<br>aspek]
 f[Ekonomi<br>Islam]
 g[Politik<br>Islam]
 h[Hukum<br>Islam]
