@@ -143,3 +143,57 @@ e --> f
 e --> g
 e --> h
 ```
+
+### Ekonomi
+
+#### Zakat
+
+Diwajibkan atas orang-orang yang dari golongan Islam yang memilliki harta sampai nisab tertentu.
+
+> Dirjennnya: Zubair bin Awam, Jahm bin Shult.
+
+#### Kharaj
+
+Pajak yang dipungut dari lahan baru yang dikelola non-islam yang berada dalam kekuasaan Islam
+
+> Dirjennya: Khudzifah bin Yaman, Abdullah bin Rabah
+
+#### Fa'i
+
+Harta yang diperoleh umat Islam dari daerah lain dengan atau tanpa perang
+
+#### Ghanimah
+
+Harta yang harus dikeluarkan pajaknya dari harta yang diperoleh dari peperangan yang dimenangkan umat Islam
+
+> Dirjennya: Abdullah bin Auf
+
+#### Jiz'Ah
+
+Pajak yang diambil dari ahli dzimi
+
+> Dirjennya: Muaz bin Jabal, Ubaidah bin Jarah
+
+#### Utang Piutang dan Kas Negara
+
+Utang piutang serta kas negara dipimpin oleh Abdullah bin Arqam, 'Ala bin Ubadah, Hushain bin Numair
+
+### Karakteristik Masyarakat Madani
+
+- **Bertuhan**: Masyarakat beragama, mengakui adanya tuhan serta hukum tuhan mengatur kehidupan sosialnya
+- **Damai**: Elemen masyarakat baik secara kelompok/individu menghormati satu dengan yang lainnya secara adil
+- **Toleran/Tasamuh**, merupakan sifat yang dikembangkan dalam masyarakat madani untuk menunjukkan sikap saling menghargai dan menghormati aktivitas yang dilakukan oleh orang lain.
+- **Berperadaban Tinggi**: Masyarakat yang memiliki kecintaan terhadap ilmu pengetahuan dan memanfaatkan iptek untuk kebaikan manusia
+- **Ber-Akhlak Mulia**, berusaha sebisa mungkin menerapkan akhlak yang diajarkan dan dicontohkan oleh Rasulullah SAW.
+- **Tolong menolong (Ta'awun)**, memiliki rasa peduli dan empati kepada saudara seiman maupun sesama manusia demi kebaikan di dunia dan akhirat.
+- **Keseimbangan antara kewajiban dan Hak (Adil)**, adanya profesionalitas demi kemaslahatan publik dan pribadi muslim.
+
+### Pilar-pilar Masyarakat Madani
+
+- **LSM**: Institusi sosial yang dibentuk oleh swadaya masyarakat dengan tugas:
+  - Membantu perjuangan aspirasi dan kepentingan masyarakat tertindas.
+  - Mengadakan pemberdayaan masyarakat.
+- **Mass Media**: Institusi penting dalam penegakan masyarakat Madani, sebab memungkinkan mengkritisi dan menjadi ***social control*** yang dapat menganalisa serta mempublikasikan berbagai kebijakan pemerintah yagn mengarah pada independensi pers, serta mampu menyajikan berita secara obyektif dan transparan.
+- **Hukum**: Setiap Warga Negara baik yang duduk dalam pemerintahan maupun sebagai rakyat harus tunduk kepada aturan hukum.
+- **Lembaga Pendidikan**: Tempat civitas akademika sebagai bagian dari kekuatan sosial dan Masyarakat Madani yang bergerak pada jalur ***moral force*** untuk menyalurkan aspirasi masyarakat dan mehngikuti berbagai kebijakan pemerintah.
+- **Partai Politik**, banyak partai politik yang berlabel Islam namun tidak sesuai dengan prinsip-prinsip ajaran Islam. Pada dasarnya, politik adalah berjuang demi kemaslahatan publik, tapi pada perjalanannya berlabuh pada kepentingan individu dan kelompok.
