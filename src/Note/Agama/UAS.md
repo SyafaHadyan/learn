@@ -127,14 +127,14 @@ Masyarakat Madani merupakan konseptualisasi dari nilai-nilai ajaran Al-Quran yan
 
 ```mermaid
 graph TD
-a[Strategi]
-b[Masjid<br>Sumber]
-c[Mempersatukan<br>Muhajirin dan Ansar<br>dalam satu ikatan<br>ukhuwah islaminyah]
-d[Menyatukan<br>umat muslim dan<br>non-muslim]
-e[Pondasi dalam<br>berbagai<br>aspek]
-f[Ekonomi<br>Islam]
-g[Politik<br>Islam]
-h[Hukum<br>Islam]
+a(Strategi)
+b(Masjid<br>Sumber)
+c(Mempersatukan<br>Muhajirin dan Ansar<br>dalam satu ikatan<br>ukhuwah islaminyah)
+d(Menyatukan<br>umat muslim dan<br>non-muslim)
+e(Pondasi dalam<br>berbagai<br>aspek)
+f(Ekonomi<br>Islam)
+g(Politik<br>Islam)
+h(Hukum<br>Islam)
 a --> b
 a --> c
 a --> d
@@ -197,3 +197,81 @@ Utang piutang serta kas negara dipimpin oleh Abdullah bin Arqam, 'Ala bin Ubadah
 - **Hukum**: Setiap Warga Negara baik yang duduk dalam pemerintahan maupun sebagai rakyat harus tunduk kepada aturan hukum.
 - **Lembaga Pendidikan**: Tempat civitas akademika sebagai bagian dari kekuatan sosial dan Masyarakat Madani yang bergerak pada jalur ***moral force*** untuk menyalurkan aspirasi masyarakat dan mehngikuti berbagai kebijakan pemerintah.
 - **Partai Politik**, banyak partai politik yang berlabel Islam namun tidak sesuai dengan prinsip-prinsip ajaran Islam. Pada dasarnya, politik adalah berjuang demi kemaslahatan publik, tapi pada perjalanannya berlabuh pada kepentingan individu dan kelompok.
+
+## Paradigma Qur'ani
+
+### Makna IPTEKS
+
+- **Pengetahuan**: segala sesuatu yang diketahui manusia melalui pancaindera, intuisi, dan firasat.
+- **Ilmu**: pengetahuan yang sudah diklasifikasi, diorganisasi, disistemasi, dan diinterpretasi sehingga menghasilkan kebenaran objektif.
+- **Ilmu Pengetahuan**: Himpunan pengetahuan manusia yang dikumpulkan melalui suatu proses pengkajian dan dapat diterima oleh rasio (nalar).
+- **Teknologi**: Produk ilmu pengetahuan
+- **Seni**: Hasil ungkapan akal dan budi manusia dengan segala prosesnya.
+- Kata ilmu dengan berbagai bentuknya terulang 854 kali dalam Al-Qur-an. Kata ini digunakan dalam arti proses pencapaian pengetahuan dari obyek pengetahuan sehingga memperoleh kejelasan.
+- Teknologi adalah produk ilmu pengetahuan. Dalam sudut pandang budaya, teknologi merupakan salah satu unsur budaya sebagai hasil penerapan praktis dari ilmu pengetahuan.
+- Teknologi dapat membawa dampak positif berupa kemajuan dan kesejahteran bagi manusia juga sebaliknya dapat membawa dampak negatif berupa ketimpangan-ketimpangan dalam kehidupan manusia dan lingkungannya yang berakibat kehancuran alam semesta.
+
+### Paradigma Ilmu Pengetahuan
+
+```mermaid
+graph LR
+a(Paradigma<br>IPTEKS)
+b(Sekuler)
+c(Sosialis)
+d(Islam)
+e(Positivistik)
+f(Statistik)
+g(Populasi)
+h(Sample)
+i(Konklusi/teori)
+j(Relatif, nisbi,<br>tentative, temmporal)
+k(Kitisme)
+l(Partisipatif-e<br>mansipatif)
+m(Bayani)
+n(Burhani)
+o(Islami)
+a --> b --> e --> f --> g --> h --> i --> j
+a --> c --> k --> l
+a --> d --> m & n & o
+```
+
+### Tiga Jenis Paradigma
+
+- *Pertama*, **Paradigma sekuler**, yaitu paradigma yang memandang agama dan iptek adalah terpisah satu sama lain. Sebab, dalam ideologi sekularisme Barat, agama telah dipisahkan dari kehidupan (*fash al-din'an al-hayyah*). Agama tidak dinafikan eksistensinya, tapi hanya dibatasi perannya dalam hubungan pribadi manusia dengan tuhannya. Agama tidak mengatur kehidupan umum(publik). Paradigma sekuler tersebut mencapai kematangan pada akhir abad XIX di Barat sebagai jalan keluar dari kontradiksi ajaran Kristen (khususnya teks Bible) dengan penemuan ilmu pengetahuan modern. Semua ajaran Kristen dijadikan standar kebenaran ilmu pengetahuan. Tapi ternyata banyak ayat Bible yang berkontradiksi dan tidak relevan dengan fakta ilmu pengetahuan.
+
+- Kedua, **paradigma sosialis**, yaitu paradigma dari ideologi sosialisme yang manafikan eksistensi agama sama sekali. Agama itu tidak ada, dus, tidak ada hubungan dan kaitan apa pun dengan IPTEK. IPTEK bisa berjalan secara independen dan lepas secara total dari agama. Paradigma ini mirip dengan paradigma sekuler di atas, tapi lebih ekstrim. Dalam paradigma sekuler, agama berfungsi secara sekularistik, yaitu tidak dinafikan keberadaannya, tapi hanya dibatasi perannya dalam hubungan vertikal manusia-tuhan. Sedang dalam paradigma sosialis, agama dipandang secara ateistik, yaitu dinggap tidak ada (*in-exist*) dan dibuang sama sekali dari kehidupan.
+
+- Paradigma tersebut didasarkan pada pemikiran Karl Marx yang ateis dan memandang agama (Kristen) sebagai candu masyarakat, karena agama menurutnya membuat orang terbius dan lupa akan penindasan kapitalistme yang kejam.
+
+- *Ketiga*, **paradigma Islam**, yaitu paradigma yang memandang bahwa agama adalah dasar dan pengatur kehidupan. Aqidah Islam menjadi basis dari segala ilmu pengetahuan. Aqidah Islam yang terwujud dalam apa-apa yang ada dalam Al-Qur'an dan Al-Hadits menjadi qa'idah fikriyah (landasan pemikiran), yaitu suatu asas yang diatasnya dibangun seluruh bangunan pemikiran dan ilmu pengetahuan manusia.
+
+### Paradigma Ilmu dalam Islam
+
+- **Bayani**: Ilmu yang terjelaskan dalam wahyu yaitu Al-Qur'an da sunnah. Cabang dari ilmu ini adalah ilmu-ilmu syariah, fiqih, tafsir, akhlak, hais, falak, dll.
+- **Burhani**: Ilmu yang bersumber dari nalar argumentative yaitu rasio-logis atau akal/ra'yu. Cabang dari ilmu ini adalah segala ilmu yang didapati dari observasi, penelitian, eksperimen, seperti ilmu alam, biologi, fisika, kimia, teknik, dll.
+- **Irfani**: Ilmu yang bersumber dari kalbu, hati, intuisi. Cabang dari ilmu ini adalah tasawuf, spiritual islam, dll.
+
+### Syarat-syarat Ilmu
+
+- Ontologi: objek kajian(studi), baik objek material dan formal
+- Epistemologi: Metode kerja pengetahuan, baik deduksi, induksi, dan edukasi
+- Aksiologi: nilai guna atau kemanfaatan
+- karakteristik sains / ilmu pengetahuan modern: objektif, netral, dan bebas nilai serta nisbi dan relatif
+
+### Teori Kebenaran dalam Sains
+
+- Korespondensi: Pernyataan-pernyataan adalah benar jika berhubungan / sesuai dengan fakta yang ada.
+- Koherensi / Konsistensi: Suatu proposisi (yang terdiri dari ide-ide) dianggap benar bila sesuai dengan proposisi terdahulu yang benar. Pernyataan dianggap benar bila koheren dengan pernyataan sebelumnya yang benar.
+- Pragmatis: proposisi dianggap benar bila memiliki konsekuensi praktis / manfaat.
+- Performatif: kebenaran diputuskan oleh pemegang otoritas tertentu.
+- Konsensus: teori dianggap benar bila berdasarkan paradigma yang diakui ilmuan.
+
+### Sumber Ilmu
+
+||Sains Modern||Sains Islam|
+|:---:|:---|:---:|:---|
+|1.|Akal/rasio|1.|Wahyu (Al-Qur'an & Hadis)|
+|2.|Indera|2.|Akal / rasio|
+|3.|Intuisi|3.|Indera|
+|4.|Naluri / instink|4.|Intuisi|
+|||5.|Naluri / instink|
