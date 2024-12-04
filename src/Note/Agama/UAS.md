@@ -275,3 +275,19 @@ a --> d --> m & n & o
 |3.|Intuisi|3.|Indera|
 |4.|Naluri / instink|4.|Intuisi|
 |||5.|Naluri / instink|
+
+### Sejarah Intelektual Islam
+
+||Darul Arqam $\to$ Masjid $\to$ Halaqah|
+|:---|:---|
+|Klasik(650-1250 M)|- Imam Hanafi, Hambali, Maliki, Syafi'i|
+||- Al-Kindi, Al-Razi, Al-Farabi, Ibn Maskawih, Ibn Sina, Ibn Bajjah, Ibn Rusyd|
+|Pertengahan (1250-1800 M)|- Al-Ghazali (*Tahafutul Falasifah*), Ibn Rusyd (*Tahafutu Tahafut*), Suhrawardi|
+||- Ibn Taimiyah|
+|Modern (1800-sekarang)|- M. Iqbal, M, Abduh, Jamaludin Al-Afghani, Naquib Al-Attas, Nur Kholis Majid|
+
+### Al-Qur'an dan Ilmu Pengetahuan
+
+Ayat-ayat Al-Qur'an yang mengandung pesan ilmiah yang kemudian menjadi cikal bakal lahirnya disiplin ilmu-ilmu tertentu. Misalnya Al-Qur'an surat an-Nahl ayat 4, Al-Qiyamah ayat 37, Al-Mu'minun ayat 13-14, Al-Insan ayat 2, Ath-Thariq ayat 6 yang berbicara tentang **reproduksi manusia**. Kemudian Al-Qur'an surat Qaaf ayat 6, Ali Imra ayat 190-191, Luqman ayat 10 dan 29, Yunus ayat 5, Ath-Thariq ayat 1-3, An-Nuur ayat 35 yang berbicara tentang **langit, matahari, bulan, bumi, bintang-bintang dan planet-planet diruang angkasa**. Al-Qur'an surat An-Nisa ayat 7-14 yang berbicara tentang **pembagian waris**. Kemudian Al-Qur'an surat Al-Baqarah ayat 168 yang berbicara tentang pentingnya **makanan yang halal dan baik**, dan seterusnya.
+
+Al-Qur'an dalam membahas soal **lautan** juga terlihat dari perbandingan jumlah ayat. Dalam Al-Qur'an **terdapat 32 ayat yang menyebut kata 'laut'**. Sedang **kata 'darat' terkandung dalam 13 ayat Al-Qur'an**. Jika dijumlahkan, keduanya menjadi 45 ayat. Angka 32 itu sama dengan 71.11% dari 45. Sedang 13 itu identik dengan 28.22% dari 45. Berdasar ilmu higungan sains, ternyata memang **71.11% bumi ini berupa lautan** dan **28.88% berupa daratan**. Hal demikian menunjukkan bahwa manusia diisyaratkan oleh Allah untuk memperhatikan, memanfaatkan, dan memelihara laut serta isinya lebih banyak daripada yang ada di darat saja.
