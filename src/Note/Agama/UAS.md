@@ -291,3 +291,27 @@ a --> d --> m & n & o
 Ayat-ayat Al-Qur'an yang mengandung pesan ilmiah yang kemudian menjadi cikal bakal lahirnya disiplin ilmu-ilmu tertentu. Misalnya Al-Qur'an surat an-Nahl ayat 4, Al-Qiyamah ayat 37, Al-Mu'minun ayat 13-14, Al-Insan ayat 2, Ath-Thariq ayat 6 yang berbicara tentang **reproduksi manusia**. Kemudian Al-Qur'an surat Qaaf ayat 6, Ali Imra ayat 190-191, Luqman ayat 10 dan 29, Yunus ayat 5, Ath-Thariq ayat 1-3, An-Nuur ayat 35 yang berbicara tentang **langit, matahari, bulan, bumi, bintang-bintang dan planet-planet diruang angkasa**. Al-Qur'an surat An-Nisa ayat 7-14 yang berbicara tentang **pembagian waris**. Kemudian Al-Qur'an surat Al-Baqarah ayat 168 yang berbicara tentang pentingnya **makanan yang halal dan baik**, dan seterusnya.
 
 Al-Qur'an dalam membahas soal **lautan** juga terlihat dari perbandingan jumlah ayat. Dalam Al-Qur'an **terdapat 32 ayat yang menyebut kata 'laut'**. Sedang **kata 'darat' terkandung dalam 13 ayat Al-Qur'an**. Jika dijumlahkan, keduanya menjadi 45 ayat. Angka 32 itu sama dengan 71.11% dari 45. Sedang 13 itu identik dengan 28.22% dari 45. Berdasar ilmu higungan sains, ternyata memang **71.11% bumi ini berupa lautan** dan **28.88% berupa daratan**. Hal demikian menunjukkan bahwa manusia diisyaratkan oleh Allah untuk memperhatikan, memanfaatkan, dan memelihara laut serta isinya lebih banyak daripada yang ada di darat saja.
+
+### Methode Memahami Al-Qur'an
+
+- **Terjemah** adalah menyalin atau memindahkan ke bahasa lain.
+- **Tafsir** adalah pengetahuan untuk memahami kitabullah yang diturunkan Allah kepada Nabi Muhammad dengan menjelaskan makna-maknanya, mengeluarkan hukum-hukum dan hikmah-hikmahnya.
+- **Takwil** artinya mengembalikan makna suatu ayat kepada apa yang dikehendaki-Nya, atau memalingkan makna asalnya deng makna lain yang sejiwa dengannya.
+
+### Manfaat Al-Qur'an bagi Manusia
+
+- Berperan sebagai ***hudan li an-naas*** (petunjuk bagi manusia)
+- Berperan sebagai penjelas segala sesuatu untuk **membimbing akal manusia**.
+- Berperan sebagai **obat bagi pemeliharaan jiwa** manusia.
+
+### Keunikan Redaksi Al-Qur'an
+
+Surat yang didahului huruf hijaiyah, tidak lebih dan tidak kurang satu hurf pun dari kata-kata yang digunakan oleh Al-Qur'an, yang kesemuanya habis dibagi 19, sesuai dengan jumlah huruf-huruf pada basmalah.
+
+### Al Idrisi (1100-1165 M)
+
+Al Idrisi lahir tahun 1100 M di Sabtah, Spanyol. Dia terkenal sebagai **ahli geografi dan kartografi** paling ternama di dunia Islam. Melalui kehaliannya, dia membuat **peta bumi dan globe dengan dilengkapi penjelasan penggunaan kompas**. Al Idrisi wafat tahun 1165 M di kota kelahirannya.
+
+### Yaqut Al Hawami (1179-1229 M)
+
+Yaqut Al Hawami lahir tahun 1179 M di Asia kecil. Dia terkenal sebagai **ahli geografi dan pembuat kamus geografi**. Kamus tersebut dia susun berdasarkan abjad nama kota dan tempat yang dikenal. Al Hawami juga melengkapi kamusnya dengan berbagai **informasi yang akurat mengenai ukuran Bumi, Zona iklim dan sifatnya, geografi, matematia dan politik**. Al Hawami wafat tahun 1299 M di Aleppo, Suriah.
