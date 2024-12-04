@@ -315,3 +315,43 @@ Al Idrisi lahir tahun 1100 M di Sabtah, Spanyol. Dia terkenal sebagai **ahli geo
 ### Yaqut Al Hawami (1179-1229 M)
 
 Yaqut Al Hawami lahir tahun 1179 M di Asia kecil. Dia terkenal sebagai **ahli geografi dan pembuat kamus geografi**. Kamus tersebut dia susun berdasarkan abjad nama kota dan tempat yang dikenal. Al Hawami juga melengkapi kamusnya dengan berbagai **informasi yang akurat mengenai ukuran Bumi, Zona iklim dan sifatnya, geografi, matematia dan politik**. Al Hawami wafat tahun 1299 M di Aleppo, Suriah.
+
+### Ibnu Batutah (1304-1369 M)
+
+Ibnu Batutah menulis liputannya ketika terdampar di Samudera Pasai Asia Tenggara, semasa kerajaan Islam pertama di Nusantara pada abad ke-13 M, yaitu di bumi Aceh Serambi Mekah selama 15 hari pada tahun 1345 M. **Ibnu Batutah melukiskan Samudera Pasai dengan begitu indah yaitu *‘Negeri yang hijau dengan kota pelabuhannya yang besar dan indah.’*** Sesampainya di Nusantara, beliau disambut oleh pemimpin Daulasah, Qadi Syarif Amir Sayyir al-Syirazi, Tajudin al-Ashbahani dan ahli fiqih kesultanan. Menurut Ibnu Batutah, masa itu Samudera Pasai telah menjelma sebagai pusat studi Islam di Asia Tenggara. **Ibnu Batutah telah menjelajah dunia sepanjang hampir 120.000 km, lebih jauh dari yang dilakukan Marco Polo**. Berbagai tempat telah dia singgahi, termasuk Indonesia. **Kitab Rihla adalah peninggalannya yang berharga, berisi perjalanan keliling dunia terlengkap**.
+
+### Al-Karaji
+
+Di era keemasan Islam, para ilmuwan Muslim telah menguasai **bidang hidrologi**. Penguasaan di bidang ini meliputi masalah penyediaan berbagai sarana air bersih, pengendalian gerakan air, serta penemuan berbagai **teknologi hidrologi**. Ilmuwan Muslim pada masa itu telah mampu mengintegrasikan, mengadaptasi dan memperbaiki **teknik irigasi dan metode distribusi air** warisan dari keahlian lokal atau peradaban kuno.
+
+### Piri Reis
+
+Di tengah kesibukannya sebagai Laksamana, Piri Reis masih sempat meluangkan waktu untuk menulis kisah perjalanannya. Pada tahun 1528-1529, Piri Reis berhasil memetakan wilayah Barat Daya Atlantik, sebuah wilayah yang disebut sebagai dunia baru yang terletak antara **Venezuela hingga Greenland** bagian selatan. Keberadaan peta ini melengkapi peta Piri Reis sebelumnya yang terdapat dalam ***I-Bahriye***. Lewat *I-Bahriye*, Piri Reis telah memberikan konstribusi yang sangat besar bagi ilmu pengetahuan, **terutama ilmu geografi dan navigasi**. Tidak hanya berguna bagi para pelaut Muslim, *I-Bahriye* juga berguna bagi pelaut bangsa Barat. Piri Reis sang laksamana adalah pelaut yang telah mengharumkan nama kesultanan Ottoman dan Islam. Piri Reis pun terkenal sebagai **orang pertama yang membuat peta dunia**. Karya ilmiahnya berjudul I-Bahriye yang terkenal dijadikan rujukan navigasi.
+
+### Ibnu Majid
+
+Di Jazirah Arab, nama Ibnu Majid sangat terkenal. Ia seorang pelaut yang mendapat julukan Singa Laut. Di pihak lain, orang-orang Portugis menjulukinya *al-Malandeatau al-Marante* yang berarti Raja Laut. Di abad ke-15 M, **Ibnu Majid sempat menjadi navigator ekspedisi Vasco da Gama** dalam mengarungi lautan untuk menemukan jalur dari Eropa menuju Asia dengan mengelilingi Afrika. Menurut catatan Vasco da Gama, pelaut Arab ini memiliki kemampuan yang luar biasa. **Ibnu Majid menolong Vasco da Gamma menyelesailan pelayarannya dari Tanjung Harapan, Afrika Utara, menuju India**. Ibnu Majid terkenal sebagai **ahli pembuat peta atau kartografer dan kompas**.
+
+### Ibnu Khizr Al Amidi (w. 1314 M)
+
+Ibnu Khizr Al Amidi adalah seorang professor Muslim asal Suriah. Dia terkenal sebagai orang pertama yang menciptakan system **tulisan bagi kaum tunanetra**. Penemuannya mendahului Louise Braille (1809-1852), enam ratus tahun lebih awal. Al Amidi wafat tahun 1314 Masehi.
+
+### Ibnu Al Nafis (1213-1288 M)
+
+Ibnu Al Nafis lahir tahun 1213 M di Damaskus. Dia adalah seorang ahli pengobatan dan banyak menulis tentang buku-buku pengobatan. Selain itu, Ibnu Al Nafis juga terkenal sebagai orang pertama yang menemukan **system sirkulasi peredaran darah** dalam tubuh manusia, bahkan jauh sebelum William Harvey, ahli pengobatan Inggris (1576-1657). Ibnu Al Nafis wafat tahun 1288 M di Kairo, Mesir.
+
+### Al Jazari (1136-1206 M)
+
+Al Jazari lahir tahun 1136 M di Al Jazira, sebuah kawasan yang terletak di antara sisi utara Irak dan timur laut Suriah. Tepatnya antara sungai Tigris dan Eufrat. Dia adalah seorang tokoh besar di bidang mekanik dan industri. Penemuan terbesarnya pada **bidang teknik adalah konsep robotika modern**. Dalam penemuannya tersebut, dia mengembangkan prinsip hidrolik untuk menggerakkan mesin yang pada kemudian hari dikenal sebagai mesin robot. Al Jazari wafat tahun 1206 Masehi.
+
+### Ibnu Rusydi (1128-1198 M)
+
+Ibnu Rusydi lahir tahun 1128 M di Cordoba. Nama lengkapnya Abu Walid Muhammad bin Rusyd. Dia terkenal di bidang kedokteran dan seorang perintis **ilmu jaringan tubuh**. Karyanya yang paling terkenal adalah Al Kulliyat fit At Thib. Buku itu menjadi **rujukan utama di bidang kedokteran, khususnya mengenai kinerja tubuh, baik pada saat sakit maupun sehat**. Ibnu Rusydi wafat tahun 1198 M di Maroko.
+
+### Ibnu Al Haytham (965-1039 M)
+
+Ibnu Al Haytham lahir tahun 965 M di Basra, Irak. Dia pun tercatat sebagai tokoh ahli fisika pertama di dunia dan ilmuwan yang paling disegani sejak abad ke-11. Salah satu karyanya adalah buku berjudul Neraca Hikmah yang berisi berbagai percobaan ilmiah, khususnya tentang **optik atau penglihatan**. Dari hasil percobaannya, terciptalah kacamata, lensa mikroskop, dan teleskop. Al Haytham wafat tahun 1039 M di Kairo, Mesir.
+
+### Al Biruni (973-1048 M)
+
+Al Biruni lahir tanggal 15 September 973 M di Kath, Khawarizm (sekarang Uzbekistan). Para ilmuwan Barat mengenalnya sebagai penemu **Trigonometri**, yaitu ilmu hitung segitiga. Karya tulisnya yang berjudul Tarileh Al Hindi sangat terkenal. Al Biruni wafat tahun 1048 M di Ghazni (sekarang Afganistan).
