@@ -8,11 +8,14 @@ public class ClimbingTheLeaderboard
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
         ArrayList<Integer> ranked = new ArrayList<>();
+        HashMap<Integer,Integer> rankedHashMap = new HashMap<>();
+        int counter = 1;
         for (int i = 0; i < rankedAmount; i++)
         {
             int tempInput = input.nextInt();
             if (!(ranked.contains(tempInput)))
             {
+                rankedHashMap.put(tempInput,counter++);
                 ranked.add(tempInput);
             }
         }
@@ -24,21 +27,29 @@ public class ClimbingTheLeaderboard
         {
             int tempInput = input.nextInt();
             boolean added = false;
-            for (int j = 0; j < ranked.size(); j++)
+            try
             {
-                if (tempInput > ranked.get(j))
+                playerRankResult[i] = rankedHashMap.get(tempInput);
+                added = true;
+            }
+            catch (NullPointerException e)
+            {
+                for (int j = 0; j < ranked.size(); j++)
                 {
-                    playerRankResult[i] = j + 1;
-                    added = true;
-                    System.err.println(Arrays.toString(playerRankResult));
-                    break;
-                }
-                if (tempInput == ranked.get(j))
-                {
-                    playerRankResult[i] = j + 1;
-                    added = true;
-                    System.err.println(Arrays.toString(playerRankResult));
-                    break;
+                    if (tempInput > ranked.get(j))
+                    {
+                        playerRankResult[i] = j + 1;
+                        added = true;
+                        System.err.println(Arrays.toString(playerRankResult));
+                        break;
+                    }
+                    if (tempInput == ranked.get(j))
+                    {
+                        playerRankResult[i] = j + 1;
+                        added = true;
+                        System.err.println(Arrays.toString(playerRankResult));
+                        break;
+                    }
                 }
             }
             if (!(added))
