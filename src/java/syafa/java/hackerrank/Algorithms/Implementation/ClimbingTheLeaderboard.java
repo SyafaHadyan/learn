@@ -7,24 +7,23 @@ public class ClimbingTheLeaderboard
     {
         Scanner input = new Scanner(System.in);
         int rankedAmount = Integer.parseInt(input.nextLine());
-        HashMap<Integer,Integer> ranked = new HashMap<>();
-        int counter = 1;
+        ArrayList<Integer> ranked = new ArrayList<>();
         for (int i = 0; i < rankedAmount; i++)
         {
             int tempInput = input.nextInt();
-            if (!(ranked.containsKey(tempInput)))
+            if (!(ranked.contains(tempInput)))
             {
-                ranked.put(tempInput,counter++);
+                ranked.add(tempInput);
             }
         }
         input.nextLine();
+        System.err.println(ranked);
         int playerScoreAmount = Integer.parseInt(input.nextLine());
-        int[] playerScore = new int[playerScoreAmount];
+        input.nextLine();
         for (int i = 0; i < playerScoreAmount; i++)
         {
-            playerScore[i] = input.nextInt();
+            //
         }
         input.close();
-        System.err.println(ranked);
     }
 }
