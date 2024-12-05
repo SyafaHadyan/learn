@@ -1,79 +1,30 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class ClimbingTheLeaderboard
 {
     public static void main(String[] args)
     {
-        /*
-         * 6
-         * 100 90 90 80 75 60
-         * 5
-         * 50 65 77 90 102
-         * 
-         * 6
-         * 5
-         * 4
-         * 2
-         * 1
-         * 
-         * 7
-         * 100 100 50 40 40 20 10
-         * 4
-         * 5 25 50 120
-         * 
-         * 6
-         * 4
-         * 2
-         * 1
-         * 
-         * 6
-         * 100 90 90 80 75 60
-         * 5
-         * 50 65 77 90 102
-         * 
-         * 6
-         * 5
-         * 4
-         * 2
-         * 1
-         */
         Scanner input = new Scanner(System.in);
-        int rankedAmount = input.nextInt();
-        input.nextLine();
-        HashMap<Integer,Integer> rankHashMap = new HashMap<>();
-        int counter = 0;
-        for (int i = 0; i < rankedAmount; i++)
+        int rankedAmount = Integer.parseInt(input.nextLine());
+        HashMap<Integer,Integer> ranked = new HashMap<>();
+        for (int i = 1; i <= rankedAmount;)
         {
-            int temp = input.nextInt();
-            if (!(rankHashMap.containsValue(temp)))
+            int tempInput = input.nextInt();
+            if (!(ranked.containsKey(tempInput)))
             {
-                counter++;
-                rankHashMap.put(counter,temp);
+                ranked.put(tempInput,i);
+                i++;
             }
         }
         input.nextLine();
-        int playerScoreAmount = input.nextInt();
-        input.nextLine();
-        int rankHashMapSize = rankHashMap.size();
+        int playerScoreAmount = Integer.parseInt(input.nextLine());
+        int[] playerScore = new int[playerScoreAmount];
         for (int i = 0; i < playerScoreAmount; i++)
         {
-            int temp = input.nextInt();
-            for (int j = 1; j <= rankHashMapSize; j++)
-            {
-                if (rankHashMap.get(j) < temp || rankHashMap.get(j) == temp)
-                {
-                    System.out.println(j);
-                    break;
-                }
-                if (rankHashMapSize - j == 0)
-                {
-                    System.out.println(rankHashMapSize + 1);
-                    break;
-                }
-            }
+            playerScore[i] = input.nextInt();
         }
         input.close();
+        System.err.println(ranked);
     }
 }
