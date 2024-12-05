@@ -12,8 +12,7 @@ public class RepeatedString
         input.close();
         long targetCharacterAmount = stringInput.replaceAll("[^" + TARGET_CHARACTER + "]","").length();
         long remainingAdd = repeat % stringInput.length();
-        long result = (repeat /= stringInput.length()) * targetCharacterAmount;
-        result += stringInput.substring(0,(int) remainingAdd).replaceAll("[^" + TARGET_CHARACTER + "]","").length();
+        long result = (stringInput.substring(0,(int) remainingAdd).replaceAll("[^" + TARGET_CHARACTER + "]","").length()) + ((repeat /= stringInput.length()) * targetCharacterAmount);
         System.out.println(result);
     }
 }
