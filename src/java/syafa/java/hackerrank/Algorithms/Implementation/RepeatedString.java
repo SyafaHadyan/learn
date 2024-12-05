@@ -8,14 +8,16 @@ public class RepeatedString
     {
         Scanner input = new Scanner(System.in);
         String stringInput = input.nextLine();
-        int targetCharacterAmount = stringInput.replaceAll("[^" + TARGET_CHARACTER + "]","").length();
+        long targetCharacterAmount = stringInput.replaceAll("[^" + TARGET_CHARACTER + "]","").length();
         long repeat = Long.parseLong(input.nextLine());
         long remainingAdd = repeat % stringInput.length();
         repeat /= stringInput.length();
         input.close();
+        stringInput = stringInput.substring(0,(int) remainingAdd);
         System.err.println("TC " + targetCharacterAmount);
         System.err.println("RP " + repeat);
         System.err.println("MD " + remainingAdd);
+        System.err.println(stringInput);
         System.out.println((repeat) * targetCharacterAmount);
     }
 }
