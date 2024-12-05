@@ -30,20 +30,24 @@ public class ClimbingTheLeaderboard
                 {
                     playerRankResult[i] = j + 1;
                     added = true;
+                    System.err.println(Arrays.toString(playerRankResult));
                     break;
                 }
                 if (tempInput == ranked.get(j))
                 {
                     playerRankResult[i] = j + 1;
                     added = true;
+                    System.err.println(Arrays.toString(playerRankResult));
                     break;
                 }
             }
             if (!(added))
             {
-                playerRankResult[i] = ranked.size();
+                playerRankResult[i] = ranked.size() + 1;
+                System.err.println(Arrays.toString(playerRankResult));
             }
         }
         input.close();
+        System.err.println(Arrays.toString(playerRankResult));
     }
 }
