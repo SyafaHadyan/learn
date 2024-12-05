@@ -7,9 +7,13 @@ public class RepeatedString
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int targetCharacterAmount = input.nextLine().replaceAll("[^" + TARGET_CHARACTER + "]","").length();
+        String stringInput = input.nextLine();
+        int targetCharacterAmount = stringInput.replaceAll("[^" + TARGET_CHARACTER + "]","").length();
         long repeat = Long.parseLong(input.nextLine());
+        repeat /= stringInput.length();
         input.close();
-        System.out.println(repeat * targetCharacterAmount);
+        System.err.println("TC " + targetCharacterAmount);
+        System.err.println("RP " + repeat);
+        System.out.println((repeat) * targetCharacterAmount);
     }
 }
