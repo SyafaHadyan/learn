@@ -19,10 +19,30 @@ public class ClimbingTheLeaderboard
         input.nextLine();
         System.err.println(ranked);
         int playerScoreAmount = Integer.parseInt(input.nextLine());
-        input.nextLine();
+        int[] playerRankResult = new int[playerScoreAmount];
         for (int i = 0; i < playerScoreAmount; i++)
         {
-            //
+            int tempInput = input.nextInt();
+            boolean added = false;
+            for (int j = 0; j < ranked.size(); j++)
+            {
+                if (tempInput > ranked.get(j))
+                {
+                    playerRankResult[i] = j + 1;
+                    added = true;
+                    break;
+                }
+                if (tempInput == ranked.get(j))
+                {
+                    playerRankResult[i] = j + 1;
+                    added = true;
+                    break;
+                }
+            }
+            if (!(added))
+            {
+                playerRankResult[i] = ranked.size();
+            }
         }
         input.close();
     }
