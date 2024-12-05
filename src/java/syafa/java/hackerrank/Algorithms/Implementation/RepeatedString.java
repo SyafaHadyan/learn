@@ -8,6 +8,8 @@ public class RepeatedString
     {
         Scanner input = new Scanner(System.in);
         int targetCharacterAmount = input.nextLine().replaceAll("[^" + TARGET_CHARACTER + "]","").length();
+        long repeat = Long.parseLong(input.nextLine());
         input.close();
+        System.out.println(repeat * targetCharacterAmount);
     }
 }
