@@ -13,7 +13,7 @@ public class RepeatedString
         long targetCharacterAmount = stringInput.replaceAll("[^" + TARGET_CHARACTER + "]","").length();
         long remainingAdd = repeat % stringInput.length();
         long result = (repeat /= stringInput.length()) * targetCharacterAmount;
-        result += stringInput.substring(0,(int) remainingAdd).length();
+        result += stringInput.substring(0,(int) remainingAdd).replaceAll("[^" + TARGET_CHARACTER + "]","").length();
         System.err.println("TC " + targetCharacterAmount);
         System.err.println("RP " + repeat);
         System.err.println("MD " + remainingAdd);
