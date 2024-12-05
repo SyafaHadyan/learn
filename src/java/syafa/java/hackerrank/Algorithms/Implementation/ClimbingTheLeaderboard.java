@@ -49,5 +49,9 @@ public class ClimbingTheLeaderboard
         }
         input.close();
         System.err.println(Arrays.toString(playerRankResult));
+        for (int i : playerRankResult)
+        {
+            System.out.println(i);
+        }
     }
 }
