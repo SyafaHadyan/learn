@@ -1,6 +1,8 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
 
+import syafa.java.hackerrank.Algorithms.Implementation.ACMICPCTeam.teamICPC;
+
 public class ModifiedKaprekarNumbers
 {
     private static boolean isMultipleOfTen(long number)
@@ -33,9 +35,14 @@ public class ModifiedKaprekarNumbers
         {
             try
             {
-                leftNumber = Long.parseLong(numberString.substring(0,(numberString.length() / 2) - 1));
+                String temp = numberString.substring(0,(numberString.length() / 2) - 1);
+                leftNumber = Long.parseLong(temp);
             }
             catch (StringIndexOutOfBoundsException e)
+            {
+                return false;
+            }
+            catch (NumberFormatException e)
             {
                 return false;
             }
