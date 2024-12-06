@@ -25,25 +25,17 @@ public class ModifiedKaprekarNumbers
         long leftNumber = 0;
         long rightNumber = 0;
         rightNumber = Long.parseLong(numberString.substring(numberString.length() / 2,numberString.length()));
-        if (numberString.length() % 2 == 0)
+        try
         {
             leftNumber = Long.parseLong(numberString.substring(0,numberString.length() / 2));
         }
-        else
+        catch (StringIndexOutOfBoundsException e)
         {
-            try
-            {
-                String temp = numberString.substring(0,(numberString.length() / 2) - 1);
-                leftNumber = Long.parseLong(temp);
-            }
-            catch (StringIndexOutOfBoundsException e)
-            {
-                return false;
-            }
-            catch (NumberFormatException e)
-            {
-                return false;
-            }
+            return false;
+        }
+        catch (NumberFormatException e)
+        {
+            return false;
         }
         return ((leftNumber + rightNumber) == number);
     }
