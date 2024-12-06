@@ -3,11 +3,23 @@ import java.util.*;
 
 public class ModifiedKaprekarNumbers
 {
+    private static boolean isMultipleOfTen(long number)
+    {
+        while (number % 10 == 0 && number >= 1)
+        {
+            number /= 10;
+        }
+        return (number == 1);
+    }
     private static boolean isKaprekar(long number)
     {
         if (number == 1)
         {
             return true;
+        }
+        if (isMultipleOfTen(number))
+        {
+            return false;
         }
         String numberString = String.valueOf((long) Math.pow(number,2));
         long leftNumber = 0;
