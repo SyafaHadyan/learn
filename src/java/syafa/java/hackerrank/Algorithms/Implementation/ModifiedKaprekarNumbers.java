@@ -25,9 +25,21 @@ public class ModifiedKaprekarNumbers
         long lowerBound = Long.parseLong(input.nextLine());
         long upperBound = Long.parseLong(input.nextLine());
         input.close();
+        ArrayList<Long> kaprekarNumberList = new ArrayList<>();
         for (long i = lowerBound; i <= upperBound; i++)
         {
-            //
+            if (isKaprekar(i))
+            {
+                kaprekarNumberList.add(i);
+            }
+        }
+        for (int i = 0; i < kaprekarNumberList.size(); i++)
+        {
+            System.out.print(kaprekarNumberList.get(i) + ((kaprekarNumberList.size() - i != 1) ? " " : ""));
+        }
+        if (kaprekarNumberList.size() == 0)
+        {
+            System.out.println("INVALID RANGE");
         }
     }
 }
