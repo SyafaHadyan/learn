@@ -8,16 +8,16 @@ public class ModifiedKaprekarNumbers
         String numberString = String.valueOf(Math.abs(number));
         long leftNumber = 0;
         long rightNumber = 0;
+        rightNumber = Long.parseLong(numberString.substring(numberString.length() / 2,numberString.length()));
         if (numberString.length() % 2 == 0)
         {
             leftNumber = Long.parseLong(numberString.substring(0,numberString.length() / 2));
-            rightNumber = Long.parseLong(numberString.substring(numberString.length() / 2,numberString.length()));
         }
         else
         {
-            //
+            leftNumber = Long.parseLong(numberString.substring(0,(numberString.length() / 2) - 1));
         }
-        return false;
+        return ((leftNumber + rightNumber) == number);
     }
     public static void main(String[] args)
     {
