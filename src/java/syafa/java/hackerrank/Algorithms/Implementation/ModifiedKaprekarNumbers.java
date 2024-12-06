@@ -1,8 +1,6 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
 
-import syafa.java.hackerrank.Algorithms.Implementation.ACMICPCTeam.teamICPC;
-
 public class ModifiedKaprekarNumbers
 {
     private static boolean isMultipleOfTen(long number)
