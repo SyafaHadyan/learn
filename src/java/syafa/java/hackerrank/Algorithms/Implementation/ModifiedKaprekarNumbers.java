@@ -5,7 +5,11 @@ public class ModifiedKaprekarNumbers
 {
     private static boolean isKaprekar(long number)
     {
-        String numberString = String.valueOf(Math.abs(number));
+        if (number == 1)
+        {
+            return true;
+        }
+        String numberString = String.valueOf((long) Math.pow(number,2));
         long leftNumber = 0;
         long rightNumber = 0;
         rightNumber = Long.parseLong(numberString.substring(numberString.length() / 2,numberString.length()));
@@ -15,7 +19,14 @@ public class ModifiedKaprekarNumbers
         }
         else
         {
-            leftNumber = Long.parseLong(numberString.substring(0,(numberString.length() / 2) - 1));
+            try
+            {
+                leftNumber = Long.parseLong(numberString.substring(0,(numberString.length() / 2) - 1));
+            }
+            catch (StringIndexOutOfBoundsException e)
+            {
+                return false;
+            }
         }
         return ((leftNumber + rightNumber) == number);
     }
@@ -35,7 +46,7 @@ public class ModifiedKaprekarNumbers
         }
         for (int i = 0; i < kaprekarNumberList.size(); i++)
         {
-            System.out.print(kaprekarNumberList.get(i) + ((kaprekarNumberList.size() - i != 1) ? " " : ""));
+            System.out.print(kaprekarNumberList.get(i) + ((kaprekarNumberList.size() - i != 1) ? " " : "\n"));
         }
         if (kaprekarNumberList.size() == 0)
         {
