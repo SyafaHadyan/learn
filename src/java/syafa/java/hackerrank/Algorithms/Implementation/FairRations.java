@@ -27,6 +27,11 @@ public class FairRations
                 distributionCounter++;
             }
         }
+        if (data[dataLength - 1] % 2 != 0)
+        {
+            System.out.println("NO");
+            System.exit(0);
+        }
         input.close();
         System.err.println(Arrays.toString(data));
         if (dataLength <= 2)
