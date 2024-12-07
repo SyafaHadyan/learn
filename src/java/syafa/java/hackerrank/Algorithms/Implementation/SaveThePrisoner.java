@@ -6,38 +6,19 @@ public class SaveThePrisoner
 {
     public static void main(String[] args)
     {
-        /*
-         * TODO: Optimize the code
-         */
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int[] notify = new int[testCase];
+        int[] result = new int[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            int[] temp = Stream.of(input.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
-            int counter = 0;
-            for (int j = temp[2]; j <= temp[0]; j++)
-            {
-                counter++;
-                if (j == temp[0] && counter != temp[1])
-                {
-                    j = 0;
-                }
-                else if (counter == temp[1])
-                {
-                    notify[i] = j;
-                    break;
-                }
-            }
+            int[] data = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            int tempCalculate = (data[2] + data[1] - 1) % data[0];
+            result[i] = ((tempCalculate == 0) ? data[0] : tempCalculate);
         }
         input.close();
-        for (int i = 0; i < notify.length; i++)
+        for (int i = 0; i < result.length; i++)
         {
-            System.out.print(notify[i]);
-            if (notify.length - i != 1)
-            {
-                System.out.print("\n");
-            }
+            System.out.println(result[i]);
         }
     }
 }
