@@ -10,14 +10,32 @@ public class FairRations
         int dataLength = Integer.parseInt(input.nextLine());
         int[] data = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         int distributionCounter = 0;
-        for (int i = 0; i < dataLength - 2; i++)
+        for (int i = 0; i < dataLength - 1; i++)
         {
-            if (data[i] % 2 != 0 && data[i + 1] % 2 == 0 && data[i + 2] % 2 != 0)
+            System.err.println(Arrays.toString(data));
+            if (data[i] % 2 != 0)
             {
-                distributionCounter += 4;
+                distributionCounter++;
+                data[i]++;
+                try
+                {
+                    if (data[i - 1] % 2 != 0)
+                    {
+                        data[i - 1]++;
+                        distributionCounter++;
+                        break;
+                    }
+                }
+                catch (ArrayIndexOutOfBoundsException e)
+                {
+                    //
+                }
+                data[i + 1]++;
+                distributionCounter++;
             }
         }
         input.close();
+        System.err.println(Arrays.toString(data));
         if (distributionCounter == 0)
         {
             System.out.println("NO");
