@@ -3,6 +3,18 @@ import java.util.*;
 
 public class BitwiseAND
 {
+    private static boolean isPowerOfTwo(int number)
+    {
+        while (number % 2 == 0)
+        {
+            number /= 2;
+            if (number == 1)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
