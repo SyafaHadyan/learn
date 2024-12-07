@@ -17,14 +17,15 @@ public class HappyLadybugs
             HashMap<String,Integer> bug = new HashMap<>();
             for (int j = 0; j < cellSize; j++)
             {
-                if (!(cell[i].equalsIgnoreCase(EMPTY_CELL)))
+                if (!(cell[j].equalsIgnoreCase(EMPTY_CELL)))
                 {
-                    bug.merge(cell[i],1,Integer::sum);
+                    bug.merge(cell[j],1,Integer::sum);
                 }
             }
             for (String j : bug.keySet())
             {
-                if (bug.get(j) % 2 != 0)
+                int tempGet = bug.get(j);
+                if (tempGet == 1)
                 {
                     isPossible = false;
                     break;
@@ -36,5 +37,14 @@ public class HappyLadybugs
             }
         }
         input.close();
+        for (int i = 0; i < possible.length; i++)
+        {
+            if (possible[i])
+            {
+                System.out.println("YES");
+                continue;
+            }
+            System.out.println("NO");
+        }
     }
 }
