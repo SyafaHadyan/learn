@@ -5,7 +5,11 @@ public class BitwiseAND
 {
     private static boolean isPowerOfTwo(int number)
     {
-        while (number % 2 == 0)
+        if (number == 1)
+        {
+            return true;
+        }
+        while (number % 2 == 0 && number > 0)
         {
             number /= 2;
             if (number == 1)
