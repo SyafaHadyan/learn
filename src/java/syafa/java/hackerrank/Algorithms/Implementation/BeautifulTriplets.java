@@ -15,12 +15,15 @@ public class BeautifulTriplets
         {
             for (int j = 1 + i; j < array.length; j++)
             {
-                for (int k = 1 + j; k < array.length; k++)
+                if (array[j] - array[i] == config[1])
                 {
-                    if (array[j] - array[i] == config[1] && array[k] - array[j] == config[1])
+                    for (int k = 1 + j; k < array.length; k++)
                     {
-                        System.err.println(i + " " + j + " " + k);
-                        tripletCounter++;
+                        if (array[k] - array[j] == config[1])
+                        {
+                            System.err.println(i + " " + j + " " + k);
+                            tripletCounter++;
+                        }
                     }
                 }
             }
