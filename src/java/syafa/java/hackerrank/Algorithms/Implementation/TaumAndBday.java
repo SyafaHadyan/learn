@@ -24,5 +24,9 @@ public class TaumAndBday
             totalGiftCost[i] = purchaseGift(giftAmount,giftCost);
         }
         input.close();
+        for (int i = 0; i < totalGiftCost.length; i++)
+        {
+            System.out.println(totalGiftCost[i]);
+        }
     }
 }
