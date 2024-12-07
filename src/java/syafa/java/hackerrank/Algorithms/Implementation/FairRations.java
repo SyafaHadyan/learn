@@ -12,20 +12,17 @@ public class FairRations
         int distributionCounter = 0;
         for (int i = 0; i < dataLength - 2; i++)
         {
-            try
+            if (data[i] % 2 != 0 && data[i + 1] % 2 == 0 && data[i + 2] % 2 != 0)
             {
-                if (data[i] % 2 != 0 && data[i + 1] % 2 == 0 && data[i + 2] % 2 != 0)
-                {
-                    distributionCounter += 4;
-                }
-            }
-            catch (ArrayIndexOutOfBoundsException e)
-            {
-                System.out.println("NO");
-                System.exit(0);
+                distributionCounter += 4;
             }
         }
         input.close();
+        if (distributionCounter == 0)
+        {
+            System.out.println("NO");
+            System.exit(0);
+        }
         System.out.println(distributionCounter);
     }
 }
