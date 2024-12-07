@@ -13,6 +13,7 @@ public class HappyLadybugs
         {
             int cellSize = Integer.parseInt(input.nextLine());
             boolean isPossible = true;
+            boolean containsEmptyCell = false;
             String[] cell = input.nextLine().split("");
             HashMap<String,Integer> bug = new HashMap<>();
             for (int j = 0; j < cellSize; j++)
@@ -20,6 +21,11 @@ public class HappyLadybugs
                 if (!(cell[j].equalsIgnoreCase(EMPTY_CELL)))
                 {
                     bug.merge(cell[j],1,Integer::sum);
+                    continue;
+                }
+                else
+                {
+                    containsEmptyCell = true;
                 }
             }
             for (String j : bug.keySet())
@@ -31,7 +37,7 @@ public class HappyLadybugs
                     break;
                 }
             }
-            if (isPossible)
+            if (isPossible && containsEmptyCell)
             {
                 possible[i] = true;
             }
