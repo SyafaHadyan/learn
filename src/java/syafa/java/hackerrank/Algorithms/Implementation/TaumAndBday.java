@@ -4,11 +4,11 @@ import java.util.stream.*;
 
 public class TaumAndBday
 {
-    private static int purchaseGift(int[] giftAmount,int[] giftCost)
+    private static long purchaseGift(long[] giftAmount,long[] giftCost)
     {
-        int black = ((giftAmount[0] + giftAmount[1]) * giftCost[0]) + (giftCost[2] * giftAmount[1]);
-        int white = ((giftAmount[0] + giftAmount[1]) * giftCost[1]) + (giftCost[2] * giftAmount[0]);
-        int individual = (giftAmount[0] * giftCost[0]) + (giftAmount[1] * giftCost[1]);
+        long black = ((giftAmount[0] + giftAmount[1]) * giftCost[0]) + (giftCost[2] * giftAmount[1]);
+        long white = ((giftAmount[0] + giftAmount[1]) * giftCost[1]) + (giftCost[2] * giftAmount[0]);
+        long individual = (giftAmount[0] * giftCost[0]) + (giftAmount[1] * giftCost[1]);
         System.err.println(black + " " + white + " " + individual);
         return Math.min(individual,(Math.min(black,white)));
     }
@@ -16,11 +16,11 @@ public class TaumAndBday
     {
         Scanner input = new Scanner(System.in);
         int testCase = Integer.parseInt(input.nextLine());
-        int[] totalGiftCost = new int[testCase];
+        long[] totalGiftCost = new long[testCase];
         for (int i = 0; i < testCase; i++)
         {
-            int[] giftAmount = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-            int[] giftCost = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            long[] giftAmount = Stream.of(input.nextLine().split("\s")).mapToLong(Long::parseLong).toArray();
+            long[] giftCost = Stream.of(input.nextLine().split("\s")).mapToLong(Long::parseLong).toArray();
             totalGiftCost[i] = purchaseGift(giftAmount,giftCost);
         }
         input.close();
