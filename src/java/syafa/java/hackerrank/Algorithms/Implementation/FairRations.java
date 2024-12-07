@@ -17,18 +17,11 @@ public class FairRations
             {
                 distributionCounter++;
                 data[i]++;
-                try
+                if (i != 0 && data[i - 1] % 2 != 0)
                 {
-                    if (data[i - 1] % 2 != 0)
-                    {
-                        data[i - 1]++;
-                        distributionCounter++;
-                        break;
-                    }
-                }
-                catch (ArrayIndexOutOfBoundsException e)
-                {
-                    //
+                    data[i - 1]++;
+                    distributionCounter++;
+                    break;
                 }
                 data[i + 1]++;
                 distributionCounter++;
