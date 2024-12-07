@@ -37,7 +37,7 @@ public class HappyLadybugs
                     break;
                 }
             }
-            if (!(containsEmptyCell))
+            if (!(containsEmptyCell) && cell.length != 1)
             {
                 boolean currentPossible = true;
                 for (int j = 0; j < cell.length - 1; j++)
@@ -69,7 +69,7 @@ public class HappyLadybugs
                     containsEmptyCell = true;
                 }
             }
-            if (isPossible && containsEmptyCell)
+            if ((isPossible && containsEmptyCell))
             {
                 possible[i] = true;
             }
