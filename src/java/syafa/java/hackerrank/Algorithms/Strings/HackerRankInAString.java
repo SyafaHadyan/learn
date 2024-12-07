@@ -3,53 +3,39 @@ import java.util.*;
 
 public class HackerRankInAString
 {
+    static final String[] STRING_ARRAY = "HACKERRANK".split("");
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int check = Integer.parseInt(input.nextLine());
-        String[] checkString = new String[check];
-        String[] hackerrank =
+        int testCase = Integer.parseInt(input.nextLine());
+        boolean[] containString = new boolean[testCase];
+        for (int i = 0; i < testCase; i++)
         {
-            "H",
-            "A",
-            "C",
-            "K",
-            "E",
-            "R",
-            "R",
-            "A",
-            "N",
-            "K"
-        };
-        for (int i = 0; i < check; i++)
-        {
-            checkString[i] = input.nextLine();
-            checkString[i] = checkString[i].toUpperCase();
-        }
-        input.close();
-        for (int i = 0; i < checkString.length; i++)
-        {
-            ArrayList<String> tempCheckString = new ArrayList<>(Arrays.asList(checkString[i].split("")));
-            for (int j = 0; j < tempCheckString.size(); j++)
+            String[] tempInput = input.nextLine().split("");
+            long currentCounter = 0;
+            for (int j = 0, counter = 0; j < tempInput.length; j++)
             {
-                if (!(tempCheckString.get(j).equalsIgnoreCase(hackerrank[j])))
+                if (tempInput[j].equalsIgnoreCase(STRING_ARRAY[counter]))
                 {
-                    tempCheckString.remove(j);
-                    j--;
+                    counter++;
+                    currentCounter++;
+                }
+                if (currentCounter == STRING_ARRAY.length)
+                {
+                    containString[i] = true;
+                    break;
                 }
             }
-            if (tempCheckString.equals(Arrays.asList(hackerrank)))
-            {
-                checkString[i] = "YES";
-            }
-            else
-            {
-                checkString[i] = "NO";
-            }
         }
-        for (int i = 0; i < checkString.length; i++)
+        input.close();
+        for (int i = 0; i < containString.length; i++)
         {
-            System.out.println(checkString[i]);
+            if (containString[i])
+            {
+                System.out.println("YES");
+                continue;
+            }
+            System.out.println("NO");
         }
     }
 }
