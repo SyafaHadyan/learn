@@ -29,10 +29,16 @@ public class FairRations
         }
         input.close();
         System.err.println(Arrays.toString(data));
-        if (distributionCounter == 0)
+        if (dataLength <= 2)
         {
-            System.out.println("NO");
-            System.exit(0);
+            for (int i = 0; i < data.length; i++)
+            {
+                if (data[i] % 2 != 0)
+                {
+                    System.out.println("NO");
+                    System.exit(0);
+                }
+            }
         }
         System.out.println(distributionCounter);
     }
