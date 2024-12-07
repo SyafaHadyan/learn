@@ -12,7 +12,7 @@ public class HackerRankInAString
         for (int i = 0; i < testCase; i++)
         {
             String[] tempInput = input.nextLine().split("");
-            int currentCounter = 0;
+            long currentCounter = 0;
             for (int j = 0, counter = 0; j < tempInput.length; j++)
             {
                 if (tempInput[j].equalsIgnoreCase(STRING_ARRAY[counter]))
@@ -20,8 +20,12 @@ public class HackerRankInAString
                     counter++;
                     currentCounter++;
                 }
+                if (currentCounter == STRING_ARRAY.length)
+                {
+                    containString[i] = true;
+                    break;
+                }
             }
-            containString[i] = (currentCounter == STRING_ARRAY.length);
         }
         input.close();
         for (int i = 0; i < containString.length; i++)
