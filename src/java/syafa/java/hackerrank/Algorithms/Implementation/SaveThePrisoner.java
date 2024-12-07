@@ -12,7 +12,8 @@ public class SaveThePrisoner
         for (int i = 0; i < testCase; i++)
         {
             int[] data = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
-            result[i] = (data[2] + data[1]) % data[0];
+            int tempCalculate = (data[2] + data[1] - 1) % data[0];
+            result[i] = ((tempCalculate == 0) ? data[0] : tempCalculate);
         }
         input.close();
         for (int i = 0; i < result.length; i++)
