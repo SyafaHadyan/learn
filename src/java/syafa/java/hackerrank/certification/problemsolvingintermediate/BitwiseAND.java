@@ -19,6 +19,7 @@ public class BitwiseAND
     {
         Scanner input = new Scanner(System.in);
         int arrayLength = Integer.parseInt(input.nextLine());
+        int bitwiseCounter = 0;
         int[] data = new int[arrayLength];
         for (int i = 0; i < data.length; i++)
         {
@@ -29,8 +30,12 @@ public class BitwiseAND
         {
             for (int j = 1 + i; j < data.length; j++)
             {
-                //
+                if (isPowerOfTwo(data[i] & data[j]))
+                {
+                    bitwiseCounter++;
+                }
             }
         }
+        System.out.println(bitwiseCounter);
     }
 }
