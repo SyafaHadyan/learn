@@ -37,6 +37,38 @@ public class HappyLadybugs
                     break;
                 }
             }
+            if (!(containsEmptyCell))
+            {
+                boolean currentPossible = true;
+                for (int j = 0; j < cell.length - 1; j++)
+                {
+                    if (cell[j].equalsIgnoreCase(cell[j + 1]))
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        j++;
+                        try
+                        {
+                            if (!(cell[j].equalsIgnoreCase(cell[j + 1])))
+                            {
+                                currentPossible = false;
+                                break;
+                            }
+                        }
+                        catch (ArrayIndexOutOfBoundsException e)
+                        {
+                            currentPossible = false;
+                        }
+                    }
+                }
+                if (currentPossible)
+                {
+                    isPossible = true;
+                    containsEmptyCell = true;
+                }
+            }
             if (isPossible && containsEmptyCell)
             {
                 possible[i] = true;
