@@ -3,41 +3,43 @@ import java.util.*;
 
 public class BitwiseAND
 {
+    private static boolean isPowerOfTwo(int number)
+    {
+        if (number == 1)
+        {
+            return true;
+        }
+        while (number % 2 == 0 && number > 0)
+        {
+            number /= 2;
+            if (number == 1)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int numberAmount = Integer.parseInt(input.nextLine());
-        int[] number = new int[numberAmount];
-        int bitwiseAndCount = 0;
-        for (int i = 0; i < number.length; i++)
+        int arrayLength = Integer.parseInt(input.nextLine());
+        int bitwiseCounter = 0;
+        int[] data = new int[arrayLength];
+        for (int i = 0; i < data.length; i++)
         {
-            number[i] = Integer.parseInt(input.nextLine());
+            data[i] = Integer.parseInt(input.nextLine());
         }
         input.close();
-        for (int i = 0; i < number.length; i++)
+        for (int i = 0; i < data.length; i++)
         {
-            for (int j = 1 + i; j < number.length; j++)
+            for (int j = 1 + i; j < data.length; j++)
             {
-                int numberAnd = number[i] & number[j];
-                boolean powerOfTwo = true;
-                while (numberAnd >= 1)
+                if (isPowerOfTwo(data[i] & data[j]))
                 {
-                    try
-                    {
-                        numberAnd = Integer.parseInt(String.valueOf(Math.sqrt(numberAnd)));
-                    }
-                    catch (NumberFormatException e)
-                    {
-                        powerOfTwo = false;
-                        break;
-                    }
-                }
-                if (powerOfTwo || numberAnd == 1)
-                {
-                    bitwiseAndCount++;
+                    bitwiseCounter++;
                 }
             }
         }
-        System.out.println(bitwiseAndCount);
+        System.out.println(bitwiseCounter);
     }
 }
