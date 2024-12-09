@@ -3,33 +3,21 @@ import java.util.*;
 
 public class StrangeCounter
 {
+    static final long COUNTER_INCREASE = 2l;
+    static final long COUNTER_START = 3l;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        double requestTimeValue = Double.parseDouble(input.nextLine());
+        long timeRequest = Long.parseLong(input.nextLine());
         input.close();
-        double initialValue = 3;
-        double currentValue = initialValue;
-        if (requestTimeValue == 1)
+        long currentTime = 0l;
+        long currentValue = COUNTER_START;
+        while (currentTime < timeRequest)
         {
-            System.out.print(3);
-            return;
+            currentTime += currentValue;
+            currentValue *= COUNTER_INCREASE;
         }
-        for (double i = 1; i < requestTimeValue; i++)
-        {
-            currentValue--;
-            if (currentValue == 1)
-            {
-                initialValue *= 2;
-                currentValue = initialValue;
-                i++;
-            }
-            if (requestTimeValue - i == 1)
-            {
-                System.out.printf("%.0f",currentValue);
-                return;
-            }
-        }
-        System.out.print(1);
+        currentValue /= 2;
+        System.out.println(currentTime - timeRequest + 1);
     }
 }
