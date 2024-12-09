@@ -6,15 +6,18 @@ public class RotateArray
 {
     private static void rotateArray(int[][] array)
     {
-        for (int i = 0, j = 0, counter = 0; i < array.length -2; i++, j++)
+        int[] horizontalPosition = new int[2];
+        int[] verticalPosition = new int[2];
+        for (int i = 0; i < array.length - 1; i++)
         {
-            while (i != j)
+            horizontalPosition[1]++;
+            verticalPosition[0]++;
+            //
+            for (int j = 0; j < 2; j++)
             {
-                int temp = array[counter][j];
-                array[counter][j] = array[counter][i];
-                array[counter][i] = temp;
+                horizontalPosition[j] = 0;
+                verticalPosition[j] = 0;
             }
-            counter++;
         }
     }
     public static void main(String[] args)
@@ -31,6 +34,13 @@ public class RotateArray
         for (int i = 0; i < rotationAmount; i++)
         {
             rotateArray(array);
+        }
+        for (int i = 0; i < array.length; i++)
+        {
+            for (int j = 0; j < array.length; j++)
+            {
+                System.out.print(array[i][j] + ((array.length - j != 1) ? " " : "\n"));
+            }
         }
     }
 }
