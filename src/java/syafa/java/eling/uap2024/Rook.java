@@ -6,8 +6,8 @@ public class Rook
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int chessBoardWidth = Integer.parseInt(input.nextLine());
-        int chessBoardLength = Integer.parseInt(input.nextLine());
+        int chessBoardWidth = input.nextInt();
+        int chessBoardLength = input.nextInt(); input.nextLine();
         int rookAmount = Integer.parseInt(input.nextLine());
         int freeCount = 0;
         HashMap<Integer,Integer> rookPositionHorizontal = new HashMap<>();
