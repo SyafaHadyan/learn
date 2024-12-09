@@ -10,12 +10,22 @@ public class StrangeCounter
         Scanner input = new Scanner(System.in);
         long timeRequest = Long.parseLong(input.nextLine());
         input.close();
-        long currentTime = 1;
+        long currentTime = 0l;
         long currentIterate = 0;
-        long curretnValue = COUNTER_START;
-        while (currentTime < timeRequest)
+        long currentValue = COUNTER_START;
+        while (currentTime <= timeRequest)
         {
             currentIterate++;
+            currentTime += currentValue;
+            currentValue *= COUNTER_INCREASE;
+            System.err.println("IT " + currentIterate);
+            System.err.println("TM " + currentTime);
+            System.err.println("VL " + currentValue);
+            System.err.println();
         }
+        currentValue /= 2;
+        System.err.println("IT " + currentIterate);
+        System.err.println("TM " + currentTime);
+        System.err.println("VL " + currentValue);
     }
 }
