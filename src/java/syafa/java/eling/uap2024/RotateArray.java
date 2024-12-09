@@ -8,23 +8,39 @@ public class RotateArray
     {
         int[] horizontalPosition = new int[2];
         int[] verticalPosition = new int[2];
-        for (int i = 0; i < array.length - 1; i++)
+        for (int i = 0; i <= array.length; i++)
         {
-            horizontalPosition[1]++;
-            verticalPosition[0]++;
-            //
-            for (int j = 0; j < 2; j++)
+            do
             {
-                horizontalPosition[j] = 0;
-                verticalPosition[j] = 0;
+                try
+                {
+                    int tempSwap = array[verticalPosition[1]][verticalPosition[0]];
+                    array[verticalPosition[1]][verticalPosition[0]] = array[horizontalPosition[1]][horizontalPosition[0]];
+                    array[horizontalPosition[1]][horizontalPosition[0]] = tempSwap;
+                    horizontalPosition[1]++;
+                    verticalPosition[0]++;
+                }
+                catch (ArrayIndexOutOfBoundsException e)
+                {
+                    break;
+                }
             }
+            while
+            (
+                (horizontalPosition[1] != verticalPosition[0])
+            );
+            horizontalPosition[1] = 0;
+            verticalPosition[0] = 0;
+            horizontalPosition[0]++;
+            verticalPosition[1]++;
+            System.err.println();
         }
     }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        int arraySize = Integer.parseInt(input.nextLine());
-        int rotationAmount = Integer.parseInt(input.nextLine());
+        int arraySize = input.nextInt();
+        int rotationAmount = input.nextInt(); input.nextLine();
         int[][] array = new int[arraySize][arraySize];
         for (int i = 0; i < array.length; i++)
         {
