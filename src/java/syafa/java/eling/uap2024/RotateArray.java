@@ -48,6 +48,15 @@ public class RotateArray
             horizontalPositionBottom[0]--;
             verticalPositionBottom[1]--;
         }
+        for (int i = 0; i < array.length / 2; i++)
+        {
+            for (int j = 0; j < array.length; j++)
+            {
+                int tempSwap = array[j][array.length - 1 - i];
+                array[j][array.length - 1 - i] = array[j][i];
+                array[j][i] = tempSwap;
+            }
+        }
     }
     public static void main(String[] args)
     {
@@ -60,7 +69,7 @@ public class RotateArray
             array[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
         }
         input.close();
-        for (int i = 0; i < rotationAmount; i++)
+        for (int i = 0; i < rotationAmount % 4; i++)
         {
             rotateArray(array);
         }
