@@ -9,12 +9,29 @@ public class Rook
         int chessBoardWidth = Integer.parseInt(input.nextLine());
         int chessBoardLength = Integer.parseInt(input.nextLine());
         int rookAmount = Integer.parseInt(input.nextLine());
-        HashMap<Integer,Integer> rookPositionHorizontal = new HashMap();
+        int freeCount = 0;
+        HashMap<Integer,Integer> rookPositionHorizontal = new HashMap<>();
         HashMap<Integer,Integer> rookPositionVertical = new HashMap<>();
         for (int i = 0; i < rookAmount; i++)
         {
-            //
+            rookPositionHorizontal.putIfAbsent(input.nextInt(),i);
+            rookPositionVertical.putIfAbsent(input.nextInt(),i);
+            input.nextLine();
         }
         input.close();
+        for (int i = 0; i < chessBoardLength; i++)
+        {
+            if (!(rookPositionVertical.containsKey(i)))
+            {
+                for (int j = 0; j < chessBoardWidth; j++)
+                {
+                    if (!(rookPositionHorizontal.containsKey(j)))
+                    {
+                        freeCount++;
+                    }
+                }
+            }
+        }
+        System.out.println(freeCount);
     }
 }
