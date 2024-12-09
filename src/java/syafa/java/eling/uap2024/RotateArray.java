@@ -6,34 +6,47 @@ public class RotateArray
 {
     private static void rotateArray(int[][] array)
     {
-        int[] horizontalPosition = new int[2];
-        int[] verticalPosition = new int[2];
-        for (int i = 0; i <= array.length; i++)
+        int[] horizontalPositionUp = new int[2];
+        int[] horizontalPositionBottom = {array.length - 1,array.length - 1};
+        int[] verticalPositionUp = new int[2];
+        int[] verticalPositionBottom = {array.length - 1,array.length - 1};
+        for (int i = 0; i < array.length; i++)
         {
             do
             {
-                try
-                {
-                    int tempSwap = array[verticalPosition[1]][verticalPosition[0]];
-                    array[verticalPosition[1]][verticalPosition[0]] = array[horizontalPosition[1]][horizontalPosition[0]];
-                    array[horizontalPosition[1]][horizontalPosition[0]] = tempSwap;
-                    horizontalPosition[1]++;
-                    verticalPosition[0]++;
-                }
-                catch (ArrayIndexOutOfBoundsException e)
-                {
-                    break;
-                }
+                int tempSwap = array[verticalPositionUp[1]][verticalPositionUp[0]];
+                array[verticalPositionUp[1]][verticalPositionUp[0]] = array[horizontalPositionUp[1]][horizontalPositionUp[0]];
+                array[horizontalPositionUp[1]][horizontalPositionUp[0]] = tempSwap;
+                horizontalPositionUp[1]++;
+                verticalPositionUp[0]++;
             }
             while
             (
-                (horizontalPosition[1] != verticalPosition[0])
+                (horizontalPositionUp[1] != verticalPositionUp[0])
             );
-            horizontalPosition[1] = 0;
-            verticalPosition[0] = 0;
-            horizontalPosition[0]++;
-            verticalPosition[1]++;
-            System.err.println();
+            horizontalPositionUp[1] = 0;
+            verticalPositionUp[0] = 0;
+            horizontalPositionUp[0]++;
+            verticalPositionUp[1]++;
+            if (array.length - i != 1)
+            {
+                do
+                {
+                    int tempSwap = array[verticalPositionBottom[1]][verticalPositionBottom[0]];
+                    array[verticalPositionBottom[1]][verticalPositionBottom[0]] = array[horizontalPositionBottom[1]][horizontalPositionBottom[0]];
+                    array[horizontalPositionBottom[1]][horizontalPositionBottom[0]] = tempSwap;
+                    horizontalPositionBottom[1]--;
+                    verticalPositionBottom[0]--;
+                }
+                while
+                (
+                    (horizontalPositionBottom[1] != verticalPositionBottom[0])
+                );
+            }
+            horizontalPositionBottom[1] = array.length - 1;
+            verticalPositionBottom[0] = array.length - 1;
+            horizontalPositionBottom[0]--;
+            verticalPositionBottom[1]--;
         }
     }
     public static void main(String[] args)
