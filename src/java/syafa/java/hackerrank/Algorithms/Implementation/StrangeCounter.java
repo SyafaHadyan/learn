@@ -13,7 +13,7 @@ public class StrangeCounter
         long currentTime = 0l;
         long currentIterate = 0;
         long currentValue = COUNTER_START;
-        while (currentTime <= timeRequest)
+        while (currentTime < timeRequest)
         {
             currentIterate++;
             currentTime += currentValue;
@@ -27,5 +27,7 @@ public class StrangeCounter
         System.err.println("IT " + currentIterate);
         System.err.println("TM " + currentTime);
         System.err.println("VL " + currentValue);
+        long result = currentTime - timeRequest + 1;
+        System.out.println(result);
     }
 }
