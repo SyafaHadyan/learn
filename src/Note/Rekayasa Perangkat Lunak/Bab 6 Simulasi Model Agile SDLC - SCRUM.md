@@ -8,9 +8,9 @@
 ```mermaid
 xychart-beta horizontal
     title "Scrum"
-    x-axis ["a","b"]
-    y-axis "In Percentage" 1 --> 25
-    bar [10,20]
+    x-axis ["Accelerate software Delivery","Enhance ability to manage changing priorities","Increase productivity","Improve business / IT alignment","Enhance software quality"]
+    y-axis "In Percentage" 1 --> 100
+    bar [71,63,51,47,42]
 
 ```
 
