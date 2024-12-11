@@ -3,7 +3,7 @@ import java.util.*;
 
 public class RotateArray
 {
-    private static void rotateArrayReturn(int[][] array, int rotationAmount)
+    private static int[][] rotateArrayReturn(int[][] array, int rotationAmount)
     {
         int[][] rotatedArray = new int[array.length][array.length];
         for (int i = 0; i < rotationAmount % 4; i++)
@@ -23,6 +23,7 @@ public class RotateArray
                 }
             }
         }
+        return array;
     }
     private static void rotateArray(int[][] array)
     {
@@ -97,7 +98,7 @@ public class RotateArray
             }
         }
         input.close();
-        rotateArrayReturn(array,rotationAmount);
+        array = rotateArrayReturn(array,rotationAmount);
         for (int i = 0; i < array.length; i++)
         {
             for (int j = 0; j < array.length; j++)
