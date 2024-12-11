@@ -5,7 +5,7 @@ public class Rook
 {
     static final int CHESS_BOARD_SIZE = 8;
     static final String ROOK_MARK = "#";
-    static int[][] rookPosition = new int[CHESS_BOARD_SIZE][2];
+    static int[][] rookPosition = new int[CHESS_BOARD_SIZE * CHESS_BOARD_SIZE][2];
     static int rookPositionCounter = 0;
     private static boolean verticalCheck(int verticalPosition)
     {
