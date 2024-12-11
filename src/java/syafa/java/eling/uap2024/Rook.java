@@ -24,7 +24,7 @@ public class Rook
             }
         }
         input.close();
-        for (int i = 0; i <     CHESS_BOARD_SIZE; i++)
+        for (int i = 0; i < CHESS_BOARD_SIZE; i++)
         {
             if (!(rookPositionVertical.containsKey(i)))
             {
