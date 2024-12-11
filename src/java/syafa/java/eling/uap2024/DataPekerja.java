@@ -51,8 +51,8 @@ public class DataPekerja
             System.out.println("- Total jam kerja: " + workHour[i] + " jam");
             System.out.printf("%s%.1f\n","- Gaji: Rp ",salary[i]);
         }
-        System.out.println("Pekerja terbaik: Tukang Bangunan " + (bestWorker + 1));
+        System.out.println("\n" + "Pekerja terbaik: Tukang Bangunan " + (bestWorker + 1));
         System.out.printf("%s%.1f\n","Bonus tambahan: Rp ",bonusSalary);
-        System.out.printf("%s%d%s%.1f\n","Total Gaji yang diterima Tukang Bangunan ",(bestWorker + 1),": Rp",(bonusSalary + salary[bestWorker]));
+        System.out.printf("%s%d%s%.1f\n","Total Gaji yang diterima Tukang Bangunan ",(bestWorker + 1),": Rp ",(bonusSalary + salary[bestWorker]));
     }
 }
