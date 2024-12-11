@@ -14,7 +14,7 @@ Bidak yang ditempatkan pada petak $\left( i,j \right)$ dapat menangkap bidak yan
 
 Misalnya, bidak yang ditempatkan pada petak $\left( 5,5 \right)$ dapat menangkap bidak yang ditempatkan pada petak yang ditunjukkan dengan warna kuning pada gambar berikut:
 
-![Rook at 5,5](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/eling/uap2024/Rook-0.png)
+![Rook at 5,5](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/eling/uap2024/Pictures/Rook-0.png)
 
 ## Constraints
 
@@ -60,6 +60,6 @@ Cetak jumlah petak kosong tempat anda dapat menempatkan bidak tanpa ditangkap ol
 
 4
 
-![Input 0](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/eling/uap2024/Rook-1.png)
+![Input 0](https://github.com/SyafaHadyan/learn/blob/main/src/java/syafa/java/eling/uap2024/Pictures/Rook-1.png)
 
 Oleh karena itu, anda dapat menempatkan bidak anda tanpa ditangkap pada 4 petak: petak (6,6), petak (6,7), petak (7,6), dan petak (7,7).
