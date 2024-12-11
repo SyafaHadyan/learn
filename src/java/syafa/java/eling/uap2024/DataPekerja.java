@@ -6,6 +6,7 @@ public class DataPekerja
     static final int MIN_WORK_HOUR = 8;
     static final int MAX_WORK_HOUR = 12;
     static final int BELOW_MINIMUM_REDUCE_PERCENTAGE = 50;
+    static final int OVERTIME_BONUS_PERCENTAGE = 50;
     static final double HOUR_SALARY = 15000d;
     public static void main(String[] args)
     {
@@ -29,12 +30,30 @@ public class DataPekerja
             {
                 salary[i] -= (((MIN_WORK_HOUR * dayAmount) - workHour[i]) * (HOUR_SALARY * BELOW_MINIMUM_REDUCE_PERCENTAGE / 100));
             }
+            if (workHour[i] > MAX_WORK_HOUR * dayAmount)
+            {
+                salary[i] += ((workHour[i] - (MAX_WORK_HOUR * dayAmount)) * (HOUR_SALARY * OVERTIME_BONUS_PERCENTAGE / 100));
+            }
         }
         input.close();
         /* 
          * 270000
          * 18 h (-6)
          * 8 * 3 = 24 - 18 = 6
+         * 
+         * 675000
+         * 45h (+(dayAmount * 3))
+         * 67500
+         * 
+         * 45 - (12 * dayAmount)
+         * 
+         * 60 - 36 = 24
+         * 
+         * a = 60 * 15000 = 900000
+         * b = 
+         * 
+         * 180000
+         * 
          */
         for (int i = 0; i < workerAmount; i++)
         {
