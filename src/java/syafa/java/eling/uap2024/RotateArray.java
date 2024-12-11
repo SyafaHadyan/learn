@@ -16,7 +16,10 @@ public class RotateArray
         }
         for (int i = 0; i < rotatedArray.length; i++)
         {
-            array[i] = rotatedArray[i].clone();
+            for (int j = 0; j < rotatedArray.length; j++)
+            {
+                array[i][j] = rotatedArray[i][j];
+            }
         }
     }
     private static void rotateArray(int[][] array)
