@@ -7,12 +7,15 @@ public class DataPekerja
     static final int MAX_WORK_HOUR = 12;
     static final int BELOW_MINIMUM_REDUCE_PERCENTAGE = 50;
     static final int OVERTIME_BONUS_PERCENTAGE = 50;
+    static final int BEST_WORKER_BONUS_PERCENTAGE = 10;
     static final double HOUR_SALARY = 15000d;
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
         int workerAmount = input.nextInt();
         int dayAmount = input.nextInt(); input.nextLine();
+        int bestWorker = 0;
+        int mostHour = 0;
         int[] workHour = new int[workerAmount];
         double[] salary = new double[workerAmount];
         for (int i = 0; i < workerAmount; i++)
@@ -34,32 +37,22 @@ public class DataPekerja
             {
                 salary[i] += ((workHour[i] - (MAX_WORK_HOUR * dayAmount)) * (HOUR_SALARY * OVERTIME_BONUS_PERCENTAGE / 100));
             }
+            if (workHour[i] > mostHour)
+            {
+                mostHour = workHour[i];
+                bestWorker = i;
+            }
         }
         input.close();
-        /* 
-         * 270000
-         * 18 h (-6)
-         * 8 * 3 = 24 - 18 = 6
-         * 
-         * 675000
-         * 45h (+(dayAmount * 3))
-         * 67500
-         * 
-         * 45 - (12 * dayAmount)
-         * 
-         * 60 - 36 = 24
-         * 
-         * a = 60 * 15000 = 900000
-         * b = 
-         * 
-         * 180000
-         * 
-         */
+        double bonusSalary = (salary[bestWorker] * BEST_WORKER_BONUS_PERCENTAGE / 100);
         for (int i = 0; i < workerAmount; i++)
         {
             System.out.println("Tukang Bangunan " + (i + 1) + ":");
             System.out.println("- Total jam kerja: " + workHour[i] + " jam");
             System.out.printf("%s%.1f\n","- Gaji: Rp ",salary[i]);
         }
+        System.out.println("Pekerja terbaik: Tukang Bangunan " + (bestWorker + 1));
+        System.out.printf("%s%.1f\n","Bonus tambahan: Rp ",bonusSalary);
+        System.out.printf("%s%d%s%.1f\n","Total Gaji yang diterima Tukang Bangunan ",(bestWorker + 1),": Rp",(bonusSalary + salary[bestWorker]));
     }
 }
