@@ -1,30 +1,32 @@
 package syafa.java.eling.uap2024;
 import java.util.*;
-import java.util.stream.*;
 
 public class RotateArray
 {
-    private static void rotateArrayReturn(int[][] array)
+    private static void rotateArrayReturn(int[][] array, int rotationAmount)
     {
         int[][] rotatedArray = new int[array.length][array.length];
-        for (int i = 0; i < rotatedArray.length; i++)
+        for (int i = 0; i < rotationAmount % 4; i++)
         {
             for (int j = 0; j < rotatedArray.length; j++)
             {
-                rotatedArray[i][j] = array[rotatedArray.length - 1 - j][i];
+                for (int k = 0; k < rotatedArray.length; k++)
+                {
+                    rotatedArray[j][k] = array[rotatedArray.length - 1 - k][j];
+                }
             }
-        }
-        for (int i = 0; i < rotatedArray.length; i++)
-        {
             for (int j = 0; j < rotatedArray.length; j++)
             {
-                array[i][j] = rotatedArray[i][j];
+                for (int k = 0; k < rotatedArray.length; k++)
+                {
+                    array[j][k] = rotatedArray[j][k];
+                }
             }
         }
     }
     private static void rotateArray(int[][] array)
     {
-        rotateArrayReturn(array);
+        // rotateArrayReturn(array);
         // int[] horizontalPositionUp = new int[2];
         // int[] horizontalPositionBottom = {array.length - 1,array.length - 1};
         // int[] verticalPositionUp = new int[2];
@@ -85,13 +87,17 @@ public class RotateArray
         int[][] array = new int[arraySize][arraySize];
         for (int i = 0; i < array.length; i++)
         {
-            array[i] = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+            for (int j = 0; j < array.length; j++)
+            {
+                array[i][j] = input.nextInt();
+            }
+            if (array.length - i != 1)
+            {
+                input.nextLine();
+            }
         }
         input.close();
-        for (int i = 0; i < rotationAmount % 4; i++)
-        {
-            rotateArray(array);
-        }
+        rotateArrayReturn(array,rotationAmount);
         for (int i = 0; i < array.length; i++)
         {
             for (int j = 0; j < array.length; j++)
