@@ -125,3 +125,16 @@
   - A large table could be useful for this; in each cell, indicate where constraints exist by entering the appropriate sub-ordinate clauses to the requirement; where no constraint is necessary, enter "N/A" in the appropriate cell.
 - Select the boilerplate that best matches the constraint to be expressed, and instantiate it.
 - The process is finished when every "cell" has been considered.
+
+## Requirement Boilerplates
+
+|Type of Constraint|Boiler-Plate|
+|:---|:---|
+|Performance/capability|The `<system>` shall be able to `<function>` `<object>` **not less than `<performance>` times per `<units>`**.|
+|Performance/capability|The `<system>` shall be able to `<function>` `<object>` **of type `<qualification>` within `<performance>` `<units>`**.|
+|Performance/capacity|The `<system>` shall be able to `<function>` **Not less than `<quantity>`** `<object>`|
+|Performance/timeliness|The `<system>` shall be able to `<function>` `<object>` **within `<performance>` `<units>` from `<event>`**.|
+|Performance/periodicity|The `<system>` shall be able to `<function>` **not less than `<quantity>`** `<object>` **within `<performance>` `<units>`**.|
+|Interoperability/capacity|The `<system>` shall be able to `<function>` `<object>` **composed of not less than `<performance>` `<units>` with `<external entity>`**.|
+|Sustainability/periodicity|The `<system>` shall be able to `<function>` `<object>` **for `<performance>` `<units>` every `<performance>` `<units>`**.|
+|Environmental/operability|The `<system>` shall be able to `<function>` `<object>` **while `<operational condition>`**.|
