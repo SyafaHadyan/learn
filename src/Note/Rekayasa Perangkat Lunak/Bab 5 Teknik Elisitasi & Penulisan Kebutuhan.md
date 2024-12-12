@@ -138,3 +138,42 @@
 |Interoperability/capacity|The `<system>` shall be able to `<function>` `<object>` **composed of not less than `<performance>` `<units>` with `<external entity>`**.|
 |Sustainability/periodicity|The `<system>` shall be able to `<function>` `<object>` **for `<performance>` `<units>` every `<performance>` `<units>`**.|
 |Environmental/operability|The `<system>` shall be able to `<function>` `<object>` **while `<operational condition>`**.|
+
+## Rationale Captures the Motivation and Assumptions of a Requirement
+
+- The rationale of each requirement defines
+  - Why a requirement is needed
+  - What assumptions were made
+  - What design effort drove the requirement
+  - Other data that will be needed to maintain the requirement over time
+- Example
+  - Requirement: **“The truck shall have a height of no more than 14 feet.”**
+  - Rationale: 99% of all US interstate highway overpasses have a 14 foot or greater clearance. (Assumptions: The truck will be used primarily on US interstate highways for long-haul freight in the US.)
+
+## Criteria for Writing a Single Requirement Statement
+
+- Atomic: each statement carries a single traceable element.
+- Unique: each statement can be uniquely identified.
+- Feasible: technically possible within cost and schedule.
+- Legal: legally possible.
+- Clear: each statement is clearly understandable.
+- Precise: each statement is precise and concise.
+- Verifiable: each statement is verifiable, and it is known how.
+- Abstract: does not impose a solution of design specific to the layer below.
+
+## Goodness Checklist: Is This Requirement ...()
+
+- Free of ambiguous terms?
+  - Examples: as appropriate, etc., and/or, support, but not limited to, be able to, be capable of
+- Free of indefinite pronouns?
+  - Examples: this, these
+- Free of unverifiable terms?
+  - Examples: flexible, user-friendly, robust, light-weight, maximize, adequate, small portable, easily - other “ly” words and other “ize” words
+- Free of implementation?
+  - Requirement should state WHAT is needed, NOT HOW to provide it, i.e., state the problem not the solution.
+- Necessary?
+  - Ask “Why do you need the requirement?”; the answer may lead you to the real requirement.
+- Free of descriptions of operations?
+  - To distinguish between operations and requirements, ask “Does the developer have control over this?” “Is this a need the product must satisfy or an activity involving the product?”
+- Free of TBDs (To Be Determined)?
+  - Use a best estimate and a TBR (To Be Resolved) with rationale when possible.
