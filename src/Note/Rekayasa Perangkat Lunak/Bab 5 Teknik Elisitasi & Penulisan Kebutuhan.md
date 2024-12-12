@@ -115,3 +115,13 @@
   Example:
 
   The coffee machine shall produce a hot drink every 10 seconds.
+
+## Capturing Constraint Requirements
+
+- Collect all capability requirements first.
+- Construct a list of all the different kinds of constraint that may need to be expressed.
+  - If this list is based of past experience of the same kind of system, then boilerplates should exist for each kind. Otherwise suitable boiler-plates may have to be defined.
+- For each capability, consider each kind of constraint, and determine wheter a constraint needs to be captured.
+  - A large table could be useful for this; in each cell, indicate where constraints exist by entering the appropriate sub-ordinate clauses to the requirement; where no constraint is necessary, enter "N/A" in the appropriate cell.
+- Select the boilerplate that best matches the constraint to be expressed, and instantiate it.
+- The process is finished when every "cell" has been considered.
