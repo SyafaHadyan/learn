@@ -30,3 +30,46 @@
   - pemilihan responded yang tepat dan jumlah yang cukup
   - Pros: ekonomis, jangkauan luas
   - Cons: potensi tidak direspon, kurang bisa menggali aspek-aspek yang lebih luas
+
+## Penulisan Pernyataan Kebutuhan
+
+- Kebutuhan yang baik adalah **SMART**
+- **S**pecific
+  - Membahas satu aspek yang jelas dari sistem
+  - Menyatakan apa (dan kualitas) yang dibutuhkan klien (*what* dan *how well*), bukan solusi (*how*)
+- **M**easurable
+  - Mampu dilakukan pengujian sehingga terukur
+  - Contoh: untuk kerja, ditentukan seberapa cepat (dalam angka) sehingga ukurannya jelas untuk diuji
+- **A**chievable
+  - Mampu dipenuhi secara rasional (biaya, waktu, teknis)
+  - Contoh: karena kendala implementasi, sebuah kebutuhan diabaikan
+- **R**elevant
+  - Sesuai dengan konteks sitem yang sedang dibahas
+  - Contoh: kebutuhan solar cells tidak relevan untuk konteks pesawat ruang angkasa
+- **T**raceable
+  - Hirariki kebutuhan memeiliki struktur yang jelas: kebutuhan pada level yang lebih rendah (*childeren*) harus berasal dari dan mendukung kebutuhan pada level yang lebih tinggi (*parents*).
+  - Kebutuhan yang tidak memiliki induk harus ditinjau ulang
+- Requirements have mandatory characteristics:
+  - Needed
+  - Verifiable
+  - Attainable: technically, cost, schedule
+- Each requirement should
+  - Express one thought
+  - Be concise and simple
+  - Be stated positively
+  - Be gramatically correct; free of typos and misspellings
+  - Be understood only one way; they are unambiguous
+  - Use consistent terminology to refer to the system/product and its lower level entities
+  - Comply with the project's template and style rules
+- What a requirement must state
+  - WHO is responsible
+  - WHAT shall be done
+  - Or **HOW WELL** something shall be done
+  - Or under what **CONSTRAINTS** something shall be done
+- Requirement format: "WHO shall WHAT"
+  - Uses active not pasive voice
+- Example product requirements:
+  - The system shall operate at a power level of ...
+  - The software shall acquire data from the ...
+  - The structure shall withstand loads of ...
+  - The hardware shall have a mass of ...
