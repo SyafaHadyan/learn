@@ -73,3 +73,45 @@
   - The software shall acquire data from the ...
   - The structure shall withstand loads of ...
   - The hardware shall have a mass of ...
+
+## Bahasa Kebutuhan
+
+- Using the following key words to indicate different priorities:
+  - shall
+  - should
+  - may
+- A typicla form to express capability requirements int the problem domain:
+
+  **The `<stakeholder type>` shall be able to `<capability>`**.
+
+- Associating performance and constraint aspects to a requirement:
+
+  **The `<stakeholder type>` shall be able to `<capability>` within `<performance>` of `<event>` while `<operational condition>`**.
+
+- Example:
+
+  **The weapons operation shall be able to fire a missle within 3 seconds of radar sighting while in severe sea conditions**.
+
+- A typicla constraint requirement takes the following form:
+
+  **The `<stakeholder type>` shall not be placed in breach of `<applicable law>`**.
+
+- Example:
+
+  The ambulance driver shall not be placed in breach of national road regulations.
+
+- A typical form to express function requirements associated with performance and constraint aspects in the solution domain:
+
+  **The `<system>` shall `<function>` not less than `<quantity>` `<object>` while `<operational condition>`**
+
+  Example:
+
+  The communications system shall sustain telephone contact with not less than 10 callers while in absence of external power.
+
+- Introductin a periodicity constraint:
+
+  **The `<system>` shall `<function>` `<object>` every `<performance>` `<units>`**.
+
+  Example:
+
+  The coffee machine shall produce a hot drink every 10 seconds.
