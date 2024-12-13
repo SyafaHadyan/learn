@@ -13,11 +13,11 @@ public class MissingNumber
             numberSum++;
         }
         numberSum *= tempCalculate;
-        input.close();
         while (input.hasNextInt())
         {
             numberSum -= input.nextInt();
         }
+        input.close();
         System.out.println(numberSum);
     }
 }
