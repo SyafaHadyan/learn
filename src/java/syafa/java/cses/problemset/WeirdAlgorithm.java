@@ -1,4 +1,4 @@
-package syafa.java.cses.problemset;
+// package syafa.java.cses.problemset;
 import java.util.*;
 
 public class WeirdAlgorithm
@@ -9,7 +9,7 @@ public class WeirdAlgorithm
         int initialNumber = Integer.parseInt(input.nextLine());
         input.close();
         System.out.print(initialNumber);
-        for (int i = 0; initialNumber != 1; i++)
+        while (initialNumber != 1)
         {
             if (initialNumber % 2 != 0)
             {
