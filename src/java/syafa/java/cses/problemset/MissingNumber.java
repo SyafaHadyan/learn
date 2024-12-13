@@ -14,6 +14,10 @@ public class MissingNumber
         }
         numberSum *= tempCalculate;
         input.close();
+        while (input.hasNextInt())
+        {
+            numberSum -= input.nextInt();
+        }
         System.out.println(numberSum);
     }
 }
