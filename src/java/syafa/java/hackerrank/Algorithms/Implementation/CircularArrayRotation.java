@@ -9,18 +9,11 @@ public class CircularArrayRotation
     private static void rotateArray(int[] array)
     {
         tempArray = new int[array.length];
-        System.err.println(Arrays.toString(array));
         for (int i = 0; i < array.length; i++)
         {
-            System.err.println();
             int tempIndexSwap = (rotationAmount + i) % (array.length);
-            System.err.println("TIDX " + tempIndexSwap);
-            System.err.println("AIDX " + array[i]);
             tempArray[tempIndexSwap] = array[i];
-            System.err.println(Arrays.toString(tempArray));
-            System.err.println();
         }
-        System.err.println(Arrays.toString(tempArray));
     }
     public static void main(String[] args)
     {
