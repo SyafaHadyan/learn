@@ -1,48 +1,32 @@
 package syafa.java.hackerrank.Algorithms.Implementation;
 import java.util.*;
+import java.util.stream.*;
 
 public class CircularArrayRotation
 {
-    // TODO: Optimize the code
+    static int rotationAmount;
+    static int[] tempArray;
+    private static void rotateArray(int[] array)
+    {
+        tempArray = new int[array.length];
+        for (int i = 0; i < array.length; i++)
+        {
+            int tempIndexSwap = (rotationAmount + i) % (array.length);
+            tempArray[tempIndexSwap] = array[i];
+        }
+    }
     public static void main(String[] args)
     {
         Scanner input = new Scanner(System.in);
-        String[] request = input.nextLine().split(" ");
-        int[] integerArray = new int[Integer.parseInt(request[0])];
-        int[] queries = new int[Integer.parseInt(request[2])];
-        int[] swapTemp = new int[integerArray.length];
-        for (int i = 0; i < Integer.parseInt(request[0]); i++)
+        input.nextInt();
+        rotationAmount = input.nextInt();
+        int queryCount = input.nextInt(); input.nextLine();
+        int[] array = Stream.of(input.nextLine().split("\s")).mapToInt(Integer::parseInt).toArray();
+        rotateArray(array);
+        for (int i = 0; i < queryCount; i++)
         {
-            integerArray[i] = Integer.parseInt(input.next());
-        }
-        for (int i = 0; i < Integer.parseInt(request[1]); i++)
-        {
-            for (int j = 0; j < integerArray.length; j++)
-            {
-                if (j == 0)
-                {
-                    swapTemp[0] = integerArray[integerArray.length - 1];
-                    continue;
-                }
-                swapTemp[j] = integerArray[j - 1];
-            }
-            for (int j = 0; j < integerArray.length; j++)
-            {
-                integerArray[j] = swapTemp[j];
-            }
-        }
-        for (int i = 0; i < Integer.parseInt(request[2]); i++)
-        {
-            queries[i] = swapTemp[input.nextInt()];
+            System.out.println(tempArray[Integer.parseInt(input.nextLine())]);
         }
         input.close();
-        for (int i = 0; i < queries.length; i++)
-        {
-            System.out.print(queries[i]);
-            if (i != queries.length - 1)
-            {
-                System.out.print("\n");
-            }
-        }
     }
 }
