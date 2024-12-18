@@ -28,6 +28,8 @@ E. $\left( 2x + 15 \right)$
 
 $$\left( g \left( x \right) = f\left( x \right) + 5 = \left( 2x + 3 \right) + 5 = 2x + 8 \right)$$
 
+Jawaban: **A**
+
 ## Survey
 
 a
