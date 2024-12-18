@@ -12,7 +12,7 @@ Buat masing-masing 3 soal (pilihan ganda (ABCDE)) dan solusi tentang Transformas
 
 ### Soal 1
 
-Diberikan fungsi $\left( f \left( x \right) = 2x + 3 \right)$. Jika $\left( g \left( x \right) = f \left( x \right) + 5 \right)$, maka bentuk dari $\left( g \left( x \right) \right)$ adalah:
+Diberikan fungsi $\left( f \left( x \right) = 2x + 3 \right)$. Jika $\left( g \left( x \right) = f \left( x \right) + 5 \right)$, maka bentuk dari $\left( g \left( x \right) \right)$ adalah
 
 A. $\left( 2x + 8 \right)$
 
@@ -29,6 +29,26 @@ E. $\left( 2x + 15 \right)$
 $$\left( g \left( x \right) = f\left( x \right) + 5 = \left( 2x + 3 \right) + 5 = 2x + 8 \right)$$
 
 Jawaban: **A**
+
+### Soal 2
+
+Jika $\left( h(x) = 3x^2 - 4x + 1 \right)$, maka bentuk dari $\left( h(x+1) \right)$ adalah
+
+A. $\left( 3x^2 - 4x + 1 \right)$
+
+B. $\left( 3(x+1)^2 - 4(x+1) + 1 \right)$
+
+C. $\left( 3x^2 + 2x + 1 \right)$
+
+D. $\left( 3x^2 + 2x - 2 \right)$
+
+E. $\left( 3x^2 + 2x + 3 \right)$
+
+### Solusi Soal 2
+
+Solusi: $\left( h(x+1) = 3(x+1)^2 - 4(x+1) + 1 = 3(x^2 + 2x + 1) - 4x - 4 + 1 = 3x^2 + 6x + 3 - 4x - 4 + 1 = 3x^2 + 2x \right)$
+
+Jawaban: **C**
 
 ## Survey
 
