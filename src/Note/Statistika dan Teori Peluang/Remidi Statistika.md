@@ -46,13 +46,50 @@ E. $\left( 3x^2 + 2x + 3 \right)$
 
 ### Solusi Soal 2
 
-Solusi: $\left( h(x+1) = 3(x+1)^2 - 4(x+1) + 1 = 3(x^2 + 2x + 1) - 4x - 4 + 1 = 3x^2 + 6x + 3 - 4x - 4 + 1 = 3x^2 + 2x \right)$
+$$\left( h(x+1) = 3(x+1)^2 - 4(x+1) + 1 = 3(x^2 + 2x + 1) - 4x - 4 + 1 = 3x^2 + 6x + 3 - 4x - 4 + 1 = 3x^2 + 2x \right)$$
 
 Jawaban: **C**
 
 ## Survey
 
-a
+### Soal 3
+
+Jika populasi terdiri dari $1000$ orang dan kita ingin mengambil sampel acak sederhana sebanyak $100$ orang, berapa probabilitas seseorang terpilih dalam sampel?
+
+A. 0.01
+
+B. 0.05
+
+C. 0.1
+
+D. 0.2
+
+E. 0.5
+
+### Solusi Soal 3
+
+$$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
+
+Jawaban: **C**
+
+### Soal 4
+
+Dalam sampling berstrata, jika strata pertama memiliki 200 orang dan strata kedua memiliki 300 orang, berapa banyak sampel yang harus diambil dari strata pertama jika total sampel adalah 50?
+
+A. 10
+
+B. 20
+
+C. 30
+
+D. 40
+
+E. 50
+
+$$\text{Proporsi strata pertama} = \left( \frac{200}{500} = 0.4 \right)$$
+$$\text{Sampel dari strata pertama} = \left( 0.4 \times 50 = 20 \right)$$
+
+Jawaban: **B**
 
 ## Sampling
 
