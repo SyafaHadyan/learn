@@ -12,24 +12,21 @@ Buat masing-masing 3 soal (pilihan ganda (ABCDE)) dan solusi tentang Transformas
 
 ### Soal 1
 
-Sebuah data tinggi badan diubah menjadi skala $z-score$. Nilai rata-rata tinggi badan adalah $165 cm$, dan standar deviasinya adalah $10 cm$. Berapakah $z-score$ untuk tinggi badan $180 cm$?
+Diberikan fungsi $\left( f \left( x \right) = 2x + 3 \right)$. Jika $\left( g \left( x \right) = f \left( x \right) + 5 \right)$, maka bentuk dari $\left( g \left( x \right) \right)$ adalah:
 
-A. 1.0
+A. $\left( 2x + 8 \right)$
 
-**`B. 1.5`**
+B. $\left( 2x + 3 \right)$
 
-C. 2.0
+C. $\left( 2x + 5 \right)$
 
-D. 2.5
+D. $\left( 2x + 10 \right)$
 
-E. 3.0
+E. $\left( 2x + 15 \right)$
 
 ### Solusi Soal 1
 
-$$z = x− \mu \sigma$$
-$$z = \sigma x− \mu​$$
-$$z = 180 − 16510 = 1.5$$
-$$z = 10180 − 165 ​= 1.5$$
+$$\left( g \left( x \right) = f\left( x \right) + 5 = \left( 2x + 3 \right) + 5 = 2x + 8 \right)$$
 
 ## Survey
 
