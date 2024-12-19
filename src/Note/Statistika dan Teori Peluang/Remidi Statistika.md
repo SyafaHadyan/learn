@@ -181,4 +181,42 @@ Jawaban: **B**
 
 ## Anova
 
-a
+### Soal 9
+
+Dalam ANOVA satu arah, jika F-statistik lebih besar dari nilai kritis, maka:
+
+A. Tidak ada perbedaan signifikan antara kelompok
+
+B. Ada perbedaan signifikan antara kelompok
+
+C. Tidak ada cukup informasi
+
+D. Semua kelompok sama
+
+E. Semua kelompok berbeda
+
+### Solusi Soal 9
+
+Jawaban: **B**
+
+### Soal 10
+
+Jika total sum of squares $\left( SST \right)$ adalah $100$ dan sum of squares within $\left( SSW \right)$ adalah $60$, berapa sum of squares between $\left( SSB \right)$?
+
+A. $20$
+
+B. $30$
+
+C. $40$
+
+D. $50$
+
+E. $60$
+
+### Solusi Soal 10
+
+$$SST = SSB + SSW$$
+$$100 = SSB + 60$$
+$$SSB = 40$$
+
+Jawaban: **C**
