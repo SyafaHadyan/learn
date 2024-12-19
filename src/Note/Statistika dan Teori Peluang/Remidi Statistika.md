@@ -1,6 +1,6 @@
 # Remidi Statistika
 
-Tugas ini membuat soal dan solusi tentang :
+Tugas ini membuat soal dan solusi tentang:
 
 Materi setelah UTS, setiap mahasiswa membuat 2 soal dan solusi multiple choice (A,B,C,D,E)yang berbeda setiap topik : Transformasi, Survey dan Sampling, Regresi, Deret Waktu, Anova. Sehingga total ada 10 soal setiap mahasiswa, ditulis di word, direncanakan ada Kuis Remidi yang diambil dari soal-soal yang mirip dengan soal” yang dikumpulkan.
 
@@ -24,7 +24,7 @@ E. $\left( 2x + 15 \right)$
 
 ### Solusi Soal 1
 
-$$\left( g \left( x \right) = f\left( x \right) + 5 = \left( 2x + 3 \right) + 5 = 2x + 8 \right)$$
+$$g \left( x \right) = f\left( x \right) + 5 = \left( 2x + 3 \right) + 5 = 2x + 8$$
 
 Jawaban: **A**
 
@@ -44,11 +44,11 @@ E. $\left( 3x^2 + 2x + 3 \right)$
 
 ### Solusi Soal 2
 
-$$\left( h(x+1) = 3(x+1)^2 - 4(x+1) + 1 = 3(x^2 + 2x + 1) - 4x - 4 + 1 = 3x^2 + 6x + 3 - 4x - 4 + 1 = 3x^2 + 2x \right)$$
+$$h(x+1) = 3(x+1)^2 - 4(x+1) + 1 = 3(x^2 + 2x + 1) - 4x - 4 + 1 = 3x^2 + 6x + 3 - 4x - 4 + 1 = 3x^2 + 2x$$
 
 Jawaban: **C**
 
-## Survey
+## Survey dan Sampling
 
 ### Soal 3
 
@@ -70,32 +70,11 @@ $\left( n = \frac{Z^2 \cdot p \cdot (1-p)}{E^2} \right)$
 
 $\left( Z = 1.96 \right)$, $\left( p = 0.5 \right)$ $\left( E = 0.05 \right)$
 
-$$\left( n = \frac{(1.96)^2 \cdot 0.5 \cdot 0.5}{(0.05)^2} = 384.16 \approx 400 \right)$$
+$$n = \frac{(1.96)^2 \cdot 0.5 \cdot 0.5}{(0.05)^2} = 384.16 \approx 400$$
 
 Jawaban: **C**
 
 ### Soal 4
-
-Dalam sampling berstrata, jika strata pertama memiliki $200$ orang dan strata kedua memiliki $300$ orang, berapa banyak sampel yang harus diambil dari strata pertama jika total sampel adalah $50$?
-
-A. 10
-
-B. 20
-
-C. 30
-
-D. 40
-
-E. 50
-
-$$\text{Proporsi strata pertama} = \left( \frac{200}{500} = 0.4 \right)$$
-$$\text{Sampel dari strata pertama} = \left( 0.4 \times 50 = 20 \right)$$
-
-Jawaban: **B**
-
-## Sampling
-
-### Soal 5
 
 Jika populasi terdiri dari $1000$ orang dan kita ingin mengambil sampel acak sederhana sebanyak $100$ orang, berapa probabilitas seseorang terpilih dalam sampel?
 
@@ -109,23 +88,15 @@ D. 0.2
 
 E. 0.5
 
-### Solusi Soal 5
+### Solusi Soal 4
 
 $$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
 
 Jawaban: **C**
 
-### Soal 6
-
-a
-
-### Solusi Soal 6
-
-a
-
 ## Regresi
 
-### Soal 7
+### Soal 5
 
 Jika persamaan regresi adalah $\left( y = 2x + 3 \right)$, berapa nilai $\left( y \right)$ jika $\left( x = 4 \right)$?
 
@@ -139,14 +110,14 @@ D. $11$
 
 E. $12$
 
-### Solusi Soal 7
+### Solusi Soal 5
 
 $$y = 2 \left( 4 \right) + 3$$
 $$y = 8 + 3 = 11$$
 
 Jawaban: **D**
 
-### Soal 8
+### Soal 6
 
 Jika nilai $\left( y \right)$ diprediksi oleh persamaan regresi $\left( y = 5x - 2 \right)$, berapa nilai $\left( x \right)$ jika $\left( y = 13 \right)$?
 
@@ -160,7 +131,7 @@ D. $5$
 
 E. $6$
 
-### Solusi Soal 8
+### Solusi Soal 6
 
 $$13 = 5x - 2$$
 $$15 = 5x$$
@@ -170,7 +141,34 @@ Jawaban: **B**
 
 ## Deret Waktu
 
-a
+### Soal 7
+
+Jika data deret waktu menunjukkan tren linear dengan persamaan $\left( y = 3t + 2 \right)$, berapa nilai prediksi untuk $\left( t = 5 \right)$?
+
+A. $15$
+
+B. $16$
+
+C. $17$
+
+D. $18$
+
+E. $19$
+
+### Solusi Soal 7
+
+$$y = 3(5) + 2 = 15 + 2 = 17$$
+
+Jawaban: **C**
+
+Soal 3
+Jika data deret waktu memiliki komponen musiman dengan periode 12 bulan, berapa banyak data yang diperlukan untuk satu siklus penuh? A. 6
+B. 12
+C. 18
+D. 24
+E. 36
+
+Solusi: Jawaban: B
 
 ## Anova
 
