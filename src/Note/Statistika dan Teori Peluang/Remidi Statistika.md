@@ -6,8 +6,6 @@ Materi setelah UTS, setiap mahasiswa membuat 2 soal dan solusi multiple choice (
 
 Tugas di upload di brone max Kamis (19 Des 2024) jam 17.00. Direncanakan Kuis Remidi diadakan jumat jam 13.00 secara online
 
-Buat masing-masing 3 soal (pilihan ganda (ABCDE)) dan solusi tentang Transformasi, Survey dan Sampling, Regresi, Deret Waktu, dan Anova
-
 ## Transformasi
 
 ### Soal 1
@@ -52,10 +50,6 @@ Jawaban: **C**
 
 ## Survey
 
-$$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
-
-Jawaban: **C**
-
 ### Soal 3
 
 Jika margin of error dari sebuah survey adalah $5\%$ dengan tingkat kepercayaan $95\%$, berapa banyak sampel yang diperlukan?
@@ -74,7 +68,7 @@ E. $800$
 
 $\left( n = \frac{Z^2 \cdot p \cdot (1-p)}{E^2} \right)$
 
-$\left( Z = 1.96 \right)$, $\left( p = 0.5 \right)$, dan $\left( E = 0.05 \right)$
+$\left( Z = 1.96 \right)$, $\left( p = 0.5 \right)$ $\left( E = 0.05 \right)$
 
 $$\left( n = \frac{(1.96)^2 \cdot 0.5 \cdot 0.5}{(0.05)^2} = 384.16 \approx 400 \right)$$
 
@@ -82,7 +76,7 @@ Jawaban: **C**
 
 ### Soal 4
 
-Dalam sampling berstrata, jika strata pertama memiliki 200 orang dan strata kedua memiliki 300 orang, berapa banyak sampel yang harus diambil dari strata pertama jika total sampel adalah 50?
+Dalam sampling berstrata, jika strata pertama memiliki $200$ orang dan strata kedua memiliki $300$ orang, berapa banyak sampel yang harus diambil dari strata pertama jika total sampel adalah $50$?
 
 A. 10
 
@@ -117,9 +111,62 @@ E. 0.5
 
 ### Solusi Soal 5
 
-## Regresi
+$$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
+
+Jawaban: **C**
+
+### Soal 6
 
 a
+
+### Solusi Soal 6
+
+a
+
+## Regresi
+
+### Soal 7
+
+Jika persamaan regresi adalah $\left( y = 2x + 3 \right)$, berapa nilai $\left( y \right)$ jika $\left( x = 4 \right)$?
+
+A. $8$
+
+B. $9$
+
+C. $10$
+
+D. $11$
+
+E. $12$
+
+### Solusi Soal 7
+
+$$y = 2 \left( 4 \right) + 3$$
+$$y = 8 + 3 = 11$$
+
+Jawaban: **D**
+
+### Soal 8
+
+Jika nilai $\left( y \right)$ diprediksi oleh persamaan regresi $\left( y = 5x - 2 \right)$, berapa nilai $\left( x \right)$ jika $\left( y = 13 \right)$?
+
+A. $2$
+
+B. $3$
+
+C. $4$
+
+D. $5$
+
+E. $6$
+
+### Solusi Soal 8
+
+$$13 = 5x - 2$$
+$$15 = 5x$$
+$$x = 3$$
+
+Jawaban: **B**
 
 ## Deret Waktu
 
