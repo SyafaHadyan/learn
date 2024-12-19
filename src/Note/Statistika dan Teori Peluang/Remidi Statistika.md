@@ -52,23 +52,31 @@ Jawaban: **C**
 
 ## Survey
 
+$$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
+
+Jawaban: **C**
+
 ### Soal 3
 
-Jika populasi terdiri dari $1000$ orang dan kita ingin mengambil sampel acak sederhana sebanyak $100$ orang, berapa probabilitas seseorang terpilih dalam sampel?
+Jika margin of error dari sebuah survey adalah $5\%$ dengan tingkat kepercayaan $95\%$, berapa banyak sampel yang diperlukan?
 
-A. 0.01
+A. $100$
 
-B. 0.05
+B. $200$
 
-C. 0.1
+C. $400$
 
-D. 0.2
+D. $600$
 
-E. 0.5
+E. $800$
 
 ### Solusi Soal 3
 
-$$\text{Probabilitas terpilih} = \left( \frac{100}{1000} = 0.1 \right)$$
+$\left( n = \frac{Z^2 \cdot p \cdot (1-p)}{E^2} \right)$
+
+$\left( Z = 1.96 \right)$, $\left( p = 0.5 \right)$, dan $\left( E = 0.05 \right)$
+
+$$\left( n = \frac{(1.96)^2 \cdot 0.5 \cdot 0.5}{(0.05)^2} = 384.16 \approx 400 \right)$$
 
 Jawaban: **C**
 
@@ -93,7 +101,21 @@ Jawaban: **B**
 
 ## Sampling
 
-a
+### Soal 5
+
+Jika populasi terdiri dari $1000$ orang dan kita ingin mengambil sampel acak sederhana sebanyak $100$ orang, berapa probabilitas seseorang terpilih dalam sampel?
+
+A. 0.01
+
+B. 0.05
+
+C. 0.1
+
+D. 0.2
+
+E. 0.5
+
+### Solusi Soal 5
 
 ## Regresi
 
