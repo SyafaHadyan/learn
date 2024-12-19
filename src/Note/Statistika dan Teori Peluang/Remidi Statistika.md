@@ -161,14 +161,23 @@ $$y = 3(5) + 2 = 15 + 2 = 17$$
 
 Jawaban: **C**
 
-Soal 3
-Jika data deret waktu memiliki komponen musiman dengan periode 12 bulan, berapa banyak data yang diperlukan untuk satu siklus penuh? A. 6
-B. 12
-C. 18
-D. 24
-E. 36
+### Soal 8
 
-Solusi: Jawaban: B
+Jika data deret waktu memiliki komponen musiman dengan periode $12 \space \text{bulan}$, berapa banyak data yang diperlukan untuk satu siklus penuh?
+
+A. $6$
+
+B. $12$
+
+C. $18$
+
+D. $24$
+
+E. $36$
+
+### Solusi Soal 8
+
+Jawaban: **B**
 
 ## Anova
 
