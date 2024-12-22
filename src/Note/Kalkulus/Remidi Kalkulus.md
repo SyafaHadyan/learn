@@ -111,7 +111,45 @@ Jawaban: **C**
 
 ## Integral
 
-a
+### Soal 5
+
+Hitunglah integral dari $\left( \int (3x^2 + 2x + 1) , dx \right)$.
+
+A. $\left( x^3 + x^2 + x + C \right)$
+
+B. $\left( x^3 + x^2 + x \right)$
+
+C. $\left( x^3 + x^2 + x + 1 \right)$
+
+D. $\left( x^3 + x^2 + x + 2 \right)$
+
+E. $\left( x^3 + x^2 + x + 3 \right)$
+
+### Solusi Soal 5
+
+$$x^3 + x^2 + x + C$$
+
+Jawaban: **A**
+
+### Soal 6
+
+Hitunglah integral dari $\left( \int (e^x) , dx \right)$.
+
+A. $\left( e^x + C \right)$
+
+B. $\left( e^x \right)$
+
+C. $\left( xe^x + C \right)$
+
+D. $\left( e^{x+1} + C \right)$
+
+E. $\left( e^{x-1} + C \right)$
+
+### Solusi Soal 6
+
+$$e^x + C$$
+
+Jawaban: **A**
 
 ## Teknik-teknik Integral
 
