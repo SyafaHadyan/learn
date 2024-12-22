@@ -153,7 +153,51 @@ Jawaban: **A**
 
 ## Teknik-teknik Integral
 
-a
+### Soal 7
+
+Hitunglah integral dari $\left( \int x e^x , dx \right)$ menggunakan metode integrasi parsial.
+
+A. $\left( x e^x - e^x + C \right)$
+
+B. $\left( x e^x + e^x + C \right)$
+
+C. $\left( x e^x - e^x \right)$
+
+D. $\left( x e^x + e^x \right)$
+
+E. $\left( x e^x - x + C \right)$
+
+### Solusi Soal 7
+
+$$\int x e^x dx = x e^x - \int e^x dx$$
+$$\int e^x dx = e^x$$
+$$\int x e^x dx = x e^x - e^x + C$$
+$$x e^x - e^x + C$$
+
+Jawaban: **A**
+
+### Soal 8
+
+Hitunglah integral dari $\left( \int x \cos(x) , dx \right)$ menggunakan metode integrasi parsial.
+
+A. $\left( x \sin(x) + \cos(x) + C \right)$
+
+B. $\left( x \sin(x) - \cos(x) + C \right)$
+
+C. $\left( x \cos(x) - \sin(x) + C \right)$
+
+D. $\left( x \sin(x) + \sin(x) + C \right)$
+
+E. $\left( x \cos(x) + \sin(x) + C \right)$
+
+### Solusi Soal 8
+
+$$\int x \cos \left( x \right) dx = x \sin \left( x \right) - \int \sin \left( x \right) dx$$
+$$\int \sin \left( x \right) dx = - \cos \left( x \right)$$
+$$\int x \cos \left( x \right) dx = x \sin \left( x \right) + \cos \left( x \right) + C$$
+$$x \sin \left( x \right) + \cos \left( x \right) + C$$
+
+Jawaban: **A**
 
 ## Aplikasi Integral
 
