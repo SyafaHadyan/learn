@@ -13,7 +13,7 @@ Materi setelah UTS, setiap mahasiswa membuat 2 soal dan solusi multiple choice (
 
 ### Soal 1
 
-Diketahui fungsi $\left( f(x) = 3x^2 + 2x - 5 \right)$. Berapakah turunan pertama dari fungsi tersebut?
+Diketahui fungsi $\left( f \left( x \right) = 3x^2 + 2x - 5 \right)$. Berapakah turunan pertama dari fungsi tersebut?
 
 A. $\left( 6x + 2 \right)$
 
@@ -27,13 +27,13 @@ E. $\left( 6x + 5 \right)$
 
 ### Solusi Soal 1
 
-$f'(x) = 6x + 2$
+$$f' \left( x \right) = 6x + 2$$
 
 Jawaban: **A**
 
 ### Soal 2
 
-Diketahui fungsi $\left( g(x) = x^3 - 4x^2 + x - 7 \right)$. Berapakah turunan pertama dari fungsi tersebut?
+Diketahui fungsi $\left( g \left( x \right) = x^3 - 4x^2 + x - 7 \right)$. Berapakah turunan pertama dari fungsi tersebut?
 
 A. $\left( 3x^2 - 8x + 1 \right)$
 
@@ -47,13 +47,67 @@ E. $\left( 3x^2 - 8x - 7 \right)$
 
 ### Solusi Soal 2
 
-$g'(x) = 3x^2 - 8x + 1$
+$$g' \left( x \right) = 3x^2 - 8x + 1$$
 
 Jawaban: **A**
 
 ## Aplikasi Turunan
 
-a
+### Soal 3
+
+Diketahui fungsi $\left( f \left( x \right) = x^2 - 4x + 4 \right)$. Tentukan titik stasioner dari fungsi tersebut.
+
+A. $\left( x = 2 \right)$
+
+B. $\left( x = -2 \right)$
+
+C. $\left( x = 4 \right)$
+
+D. $\left( x = -4 \right)$
+
+E. $\left( x = 0 \right)$
+
+### Solusi Soal 3
+
+$$f' \left( x \right) = 2x - 4$$
+$$2x - 4 = 0$$
+$$2x = 4$$
+$$x = 2$$
+
+Jawaban: **A**
+
+### Soal 4
+
+Diketahui fungsi $\left( g \left( x \right) = x^3 - 3x^2 + 2 \right)$. Tentukan titik maksimum lokal dari fungsi tersebut.
+
+A. $\left( x = 1 \right)$
+
+B. $\left( x = 2 \right)$
+
+C. $\left( x = 0 \right)$
+
+D. $\left( x = -1 \right)$
+
+E. $\left( x = -2 \right)$
+
+### Solusi Soal 4
+
+$$g'\left( x \right) = 3x^2 - 6x$$
+$$3x^2 - 6x = 0$$
+$$3x \left( x - 2 \right) = 0$$
+$$x = 0 \space \text{atau} \space x = 2$$
+
+$$g'' \left( x \right) = 6x - 6$$
+
+$x = 0$
+
+$$g'' \left( 0 \right) = 6 \times 0 - 6 = -6 \space \text{negatif, maksimum lokal}$$
+
+$x = 2$
+
+$$g'' \left( 2 \right) = 6 \times 2 - 6 = 6 \space \text{positif, minimum lokal}$$
+
+Jawaban: **C**
 
 ## Integral
 
