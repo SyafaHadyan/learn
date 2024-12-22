@@ -33,11 +33,23 @@ Jawaban: **A**
 
 ### Soal 2
 
-a
+Diketahui fungsi $\left( g(x) = x^3 - 4x^2 + x - 7 \right)$. Berapakah turunan pertama dari fungsi tersebut?
+
+A. $\left( 3x^2 - 8x + 1 \right)$
+
+B. $\left( 3x^2 - 4x + 1 \right)$
+
+C. $\left( 3x^2 - 8x - 1 \right)$
+
+D. $\left( 3x^2 + 8x + 1 \right)$
+
+E. $\left( 3x^2 - 8x - 7 \right)$
 
 ### Solusi Soal 2
 
-a
+$g'(x) = 3x^2 - 8x + 1$
+
+Jawaban: **A**
 
 ## Aplikasi Turunan
 
