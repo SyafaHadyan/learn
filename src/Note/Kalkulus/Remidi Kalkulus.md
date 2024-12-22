@@ -201,4 +201,74 @@ Jawaban: **A**
 
 ## Aplikasi Integral
 
-a
+### Soal 9
+
+Hitunglah luas daerah yang dibatasi oleh kurva $\left( y = x^2 \right)$ dan $\left( y = 4 \right)$.
+
+A. $\left( \frac{16}{3} \right)$
+
+B. $\left( \frac{32}{3} \right)$
+
+C. $\left( \frac{8}{3} \right)$
+
+D. $\left( \frac{4}{3} \right)$
+
+E. $\left( \frac{2}{3} \right)$
+
+### Solusi Soal 9
+
+$$A = \int_a^b \left( \text{fungsi atas} - \text{fungsi bawah} \right) dx$$
+
+$y = x^2$
+
+$y = 4$
+
+$x^2 = 4$
+
+$x = \pm 2$
+
+$$\int_{-2}^2 \left( 4 - x^2 \right) dx$$
+$$\left[ 4x - \frac{x^3}{3} \right]_{-2}^2$$
+
+$x = 2$
+
+$$4 \left ( 2 \right) - \frac{\left ( 2 \right)^3}{3} = 8 - \frac{8}{3} = \frac{24}{3} - \frac{8}{3} = \frac{16}{3}$$
+
+$x = -2$
+
+$$4 \left ( -2 \right) - \frac{\left ( -2 \right)^3}{3} = -8 + \frac{8}{3} = - \frac{24}{3} + \frac{8}{3} = - \frac{16}{3}$$
+
+$$\frac{16}{3} - \left( - \frac{16}{3} \right)$$
+$$\frac{32}{3}$$
+
+Jawaban: **B**
+
+### Soal 10
+
+Hitunglah volume benda putar yang dihasilkan oleh kurva $\left( y = x^2 \right)$ yang diputar mengelilingi sumbu x dari $\left( x = 0 \right)$ sampai $\left( x = 1 \right)$.
+
+A. $\left( \frac{\pi}{2} \right)$
+
+B. $\left( \frac{\pi}{3} \right)$
+
+C. $\left( \frac{\pi}{4} \right)$
+
+D. $\left( \frac{\pi}{5} \right)$
+
+E. $\left( \frac{\pi}{6} \right)$
+
+### Solusi Soal 10
+
+$$V = \pi \int_a^b \left[ f \left( x \right) \right]^2 dx$$
+
+- $f \left( x \right) = x^2$
+- $a = 0$ dan $b = 1$
+
+$$V = \pi \int_0^1 \left( x^2 \right)^2 dx$$
+$$V = \pi \int_0^1 x^4 dx$$
+$$\int x^4 dx = \frac{x^5}{5}$$
+$$\pi \left[ \frac{1^5}{5} - \frac{0^5}{5} \right]$$
+$$\pi \left( \frac{1}{5} - 0 \right)$$
+$$\frac{\pi}{5}$$
+
+Jawaban: **D**
