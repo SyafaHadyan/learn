@@ -16,16 +16,16 @@ class Result
 {
 
     /*
-     * Complete the 'simpleArraySum' function below.
+     * Complete the 'aVeryBigSum' function below.
      *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY ar as parameter.
+     * The function is expected to return a LONG_INTEGER.
+     * The function accepts LONG_INTEGER_ARRAY ar as parameter.
      */
 
-    public static int simpleArraySum(List<int> ar)
+    public static long aVeryBigSum(List<long> ar)
     {
-        int result = 0;
-        foreach (int i in ar)
+        long result = 0l;
+        foreach (long i in ar)
         {
             result += i;
         }
@@ -36,15 +36,15 @@ class Result
 
 class Solution
 {
-    public static void simpleArraySum(string[] args)
+    public static void Main(string[] args)
     {
         TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
 
         int arCount = Convert.ToInt32(Console.ReadLine().Trim());
 
-        List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
+        List<long> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt64(arTemp)).ToList();
 
-        int result = Result.simpleArraySum(ar);
+        long result = Result.aVeryBigSum(ar);
 
         textWriter.WriteLine(result);
 
