@@ -1,8 +1,7 @@
-public class Car
+public class Car extends Vehicle
 {
     private String brand = "";
     private String color = "";
-    private long speed = 0l;
     void setBrand(String brand)
     {
         this.brand = brand;
